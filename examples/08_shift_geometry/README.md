@@ -70,6 +70,8 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 
 ## 6. Figure-reading guide
 
+`GeS_shift_vector_methods` uses a shared color contract for Geometric and Wilson maps; `GeS_qhc_methods` places Conventional, Geometric, and Wilson maps in declared panel order. They expose method differences without classifying those differences as numerical errors.
+
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
 
 ## 7. Relation to the manuscript

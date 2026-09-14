@@ -51,10 +51,10 @@
       "sha256": "45453ce06025dc2e39fb7520596f98285f8132234d7582b9bfd4b63c40e8014b"
     },
     {
-      "bytes": 716,
+      "bytes": 714,
       "path": "./examples/08_shift_geometry/plot_configs/kslice_quantum_hermitian_connection_conventional.json",
       "role": "visualization_config",
-      "sha256": "daba566e46a068aac3bd919ad206ef5aa17b0b5567a3f84e8ee05184eb166fd8"
+      "sha256": "051ded7bd3808e51fd653459d6db9b4b2a244413510beb09bcf98de82ba13539"
     },
     {
       "bytes": 785191,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 135976,
+      "bytes": 133236,
       "path": "./examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "e52ff2d7821389ec32a776b6e06aac450db0141b10891617cd2bd5da608e9138"
+      "sha256": "96c30ec0069a73e5211dee279eeb4a2061b0de89b6c3aac5dd307fdffcebf530"
     },
     {
-      "bytes": 260079,
+      "bytes": 250398,
       "path": "./examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_conventional.png",
       "role": "plot_png",
-      "sha256": "95eb5df5e627eada741f001d23a73e51c41adf74812bf162810dbbbde64bf366"
+      "sha256": "7b358b2129a8f89ccb1b8a15ba41658e95ee589272154b130e3228d3cffd32b6"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/08_shift_geometry/plot_configs/kslice_quantum_hermitian_connection_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

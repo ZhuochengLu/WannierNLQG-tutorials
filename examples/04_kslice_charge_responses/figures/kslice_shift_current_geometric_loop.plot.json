@@ -51,10 +51,10 @@
       "sha256": "c4de1b583a4360f99469546aaa0263837c89400daad72dc218b630e754268aa2"
     },
     {
-      "bytes": 675,
+      "bytes": 673,
       "path": "./examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_geometric_loop.json",
       "role": "visualization_config",
-      "sha256": "2d90fbe56b6af48258543e6bb2605b25faa95709c6581d7cc35f77782615a89d"
+      "sha256": "a06303979059b7b2e384799a16624a4c7714ed0d392df1306136313a313f340d"
     },
     {
       "bytes": 713574,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 112309,
+      "bytes": 117442,
       "path": "./examples/04_kslice_charge_responses/figures/kslice_shift_current_geometric_loop.pdf",
       "role": "plot_pdf",
-      "sha256": "c94ef12b9105543cf1436084012c0bcbbca60d96af9365877968691394a8fe8c"
+      "sha256": "54908adae58c2f4d1b565a38159df7c32333ca305cbfcbe2fb1abb2a25e943bf"
     },
     {
-      "bytes": 238415,
+      "bytes": 229965,
       "path": "./examples/04_kslice_charge_responses/figures/kslice_shift_current_geometric_loop.png",
       "role": "plot_png",
-      "sha256": "2c45ac9478f645fc783a6f0ce13f5805c332dbd11cd34c8ccd71058afa765dfd"
+      "sha256": "6a4bd69d54a78caeb7bc1f5d6994a476c3da94d93273465a737f075781bb6ee2"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_geometric_loop.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

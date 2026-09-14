@@ -51,10 +51,10 @@
       "sha256": "27c594400838bd146e75da852fa00a64bf788dbf11afb522866772364db91dc7"
     },
     {
-      "bytes": 671,
+      "bytes": 669,
       "path": "./examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json",
       "role": "visualization_config",
-      "sha256": "540aeb267f1ef7bcade9ad154c10a8936b2d0aa7f7682083f8eef089ebbaa3e6"
+      "sha256": "e8ddc379779568e14ba1586c0183a53187ed7efaf0bc5805808d53e4afc4a171"
     },
     {
       "bytes": 620487,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 111210,
+      "bytes": 113069,
       "path": "./examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "a43b3f58c4ed7d2e98190fe76c8855fa8f743836b5497bbc34eb51c63cadd75f"
+      "sha256": "2c0608a3ae141f088bd368af2aaccd042a89bdd5ccb948ba0a4c93d44aaf72f2"
     },
     {
-      "bytes": 223457,
+      "bytes": 213830,
       "path": "./examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.png",
       "role": "plot_png",
-      "sha256": "1d1b9b509bb39d1d7bbbb43c8e1cbc72b1b20be0924738ed4120c7fb85c2a311"
+      "sha256": "490ee756e082e648fb2f95b39e65c1f1b6690cddea6cc25cdd5b97ebf019e562"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

@@ -67,6 +67,8 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 
 ## 6. Figure-reading guide
 
+`GeS_shift_current_methods` overlays Conventional, Geometric Loop, and Wilson Loop on the identical photon-energy grid without interpolation. The plot is a method comparison, not an error plot.
+
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
 
 ## 7. Relation to the manuscript

@@ -50,10 +50,10 @@
       "sha256": "b88d6224ec03142e9c7270f8cf437cc4e0f95392c00955ff7393f3990e259559"
     },
     {
-      "bytes": 676,
+      "bytes": 674,
       "path": "./examples/06_qg_pairwise/plot_configs/kslice_berry_curvature_conventional.json",
       "role": "visualization_config",
-      "sha256": "822d0ebeef1585d0be809822b7584d30246f83e731305fe0b382d7a4517634de"
+      "sha256": "cc81df1b96963996c163e13161b1f9c21578ac15bca18629b72afa292228e5f1"
     },
     {
       "bytes": 774296,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 110041,
+      "bytes": 107111,
       "path": "./examples/06_qg_pairwise/figures/kslice_berry_curvature_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "992f6591e73d251029789b64dfa2aa2ab80b39cef9b999601db25f50f46aa122"
+      "sha256": "126e7f5e5f436297c6aacadf4c82ff3f19e34ccf7a56172668aec05f7789494b"
     },
     {
-      "bytes": 211188,
+      "bytes": 205004,
       "path": "./examples/06_qg_pairwise/figures/kslice_berry_curvature_conventional.png",
       "role": "plot_png",
-      "sha256": "34a4dfd8bba1556885574ba6648d7a15a03e3b72c10cec44d5553c43fd6c2380"
+      "sha256": "c32a481ced48b6b2e4ff32c2ae6352b7f8345e4bab071b4098b8af2806796416"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/06_qg_pairwise/plot_configs/kslice_berry_curvature_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

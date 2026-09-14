@@ -50,10 +50,10 @@
       "sha256": "f576c760433a9bb1c6ada5f87af7fbd96029726f5700c3b05285de1935eb5261"
     },
     {
-      "bytes": 721,
+      "bytes": 719,
       "path": "./examples/07_qg_multipoles/plot_configs/kslice_quantum_christoffel_symbol_conventional.json",
       "role": "visualization_config",
-      "sha256": "773f130ad10912149c22da3b896373a4040dd7c425931210f310dd394b936170"
+      "sha256": "9efe3ec790968ff626336fef78bf2c9fc78935506581ba6ddf784a1c40226646"
     },
     {
       "bytes": 758476,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 99469,
+      "bytes": 93571,
       "path": "./examples/07_qg_multipoles/figures/kslice_quantum_christoffel_symbol_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "6d611590a853f429260c67577a1a326ce430efa0b9b6c0062e1fcadad98802ed"
+      "sha256": "a2eaf75af57cff7061527ae8e5c8fff6ef5327b6475ce3eb44cc70efd92f855f"
     },
     {
-      "bytes": 225092,
+      "bytes": 215703,
       "path": "./examples/07_qg_multipoles/figures/kslice_quantum_christoffel_symbol_conventional.png",
       "role": "plot_png",
-      "sha256": "0db8d34eb981a07e1bb649f53416b5b6431fd07f3ca0a3f9a8eb174d959ba740"
+      "sha256": "b79e702be2a4389a048d3720f287cacccfea01b8ba790ac3a00ec38ef0f6e6d4"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/07_qg_multipoles/plot_configs/kslice_quantum_christoffel_symbol_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

@@ -265,10 +265,10 @@
   ],
   "outputs": [
     {
-      "bytes": 96819,
+      "bytes": 96818,
       "path": "./examples/01_band_structure/figures/GeS_band_comparison.pdf",
       "role": "plot_pdf",
-      "sha256": "6ffad7ddf54f247e4333e9c61044444215581f97da46e030bfc19bddd19b2c1c"
+      "sha256": "24a20c6b2e33ccaa371a7a7eb0e4c581f2ca54abc250b36728f8b6555534e7c0"
     },
     {
       "bytes": 699587,

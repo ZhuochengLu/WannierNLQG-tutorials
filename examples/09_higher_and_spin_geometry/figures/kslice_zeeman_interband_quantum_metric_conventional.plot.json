@@ -50,10 +50,10 @@
       "sha256": "f5f210dea9530239123c4d7ca189f24502a8101416eca0d8e932d0a88996bc0a"
     },
     {
-      "bytes": 727,
+      "bytes": 725,
       "path": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_quantum_metric_conventional.json",
       "role": "visualization_config",
-      "sha256": "393248369aaa86a2f74d364ee452427fb7e5198560e52a67c9057b7425bbf3a0"
+      "sha256": "87d969ced79cc3dc126e5b390e6c531f45e1eaaca9c5a0724958c6f40d84e1e2"
     },
     {
       "bytes": 893999,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 127362,
+      "bytes": 125616,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_quantum_metric_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "6c7fcb470b06c194c067cc562d79812bfbe20fc62085e22e50b163d0378fb01c"
+      "sha256": "125a55f3f75d32e5a5be79a3f2514da46b5bd64d386adca410d5f7a893f440c5"
     },
     {
-      "bytes": 267086,
+      "bytes": 258640,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_quantum_metric_conventional.png",
       "role": "plot_png",
-      "sha256": "49d72c47b5c3c0453b9045be6ef792354c8f9f183c5c614230bf34a963689182"
+      "sha256": "92527524a02bc060e44e24f63e62acc4bbfd758d369fe333878dc2b28538c272"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_quantum_metric_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

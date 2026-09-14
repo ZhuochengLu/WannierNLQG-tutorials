@@ -44,10 +44,10 @@
   ],
   "outputs": [
     {
-      "bytes": 61579,
+      "bytes": 61580,
       "path": "./examples/02_integral_charge_responses/figures/integral_shift_current_wilson_loop.pdf",
       "role": "plot_pdf",
-      "sha256": "19b60edc4eb62680399a1019baa54d8b3091b2ad9eb825b9396ce4d2f9f7151b"
+      "sha256": "967648e88c2f391413985f30e68138421d1ab8a9d9ebb3778d9f14343112db51"
     },
     {
       "bytes": 194569,

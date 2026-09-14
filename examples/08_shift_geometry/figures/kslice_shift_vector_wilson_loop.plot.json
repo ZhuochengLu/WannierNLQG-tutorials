@@ -51,10 +51,10 @@
       "sha256": "907846ada8a02fe3ca22c1d4f1f31a6da514c054559f4a38b9c0fad31e723ff2"
     },
     {
-      "bytes": 662,
+      "bytes": 660,
       "path": "./examples/08_shift_geometry/plot_configs/kslice_shift_vector_wilson_loop.json",
       "role": "visualization_config",
-      "sha256": "3a87b015f9e70b1afa250d20e0e703268534f3a1a903737032ae51233bf184eb"
+      "sha256": "7407947d84cf4ebb08acfc31a0edb54fe732bb0f3499e468158846fc5baef4c9"
     },
     {
       "bytes": 763855,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 127006,
+      "bytes": 126059,
       "path": "./examples/08_shift_geometry/figures/kslice_shift_vector_wilson_loop.pdf",
       "role": "plot_pdf",
-      "sha256": "30c0f6883f97763d20a49b9b59c61f3a71443775c1679b2fd2dbf1b244de4705"
+      "sha256": "9471c16135021831fd75f99e34ab7d3dd5ad9d1cdaa0474e6ae986521bc54c10"
     },
     {
-      "bytes": 254375,
+      "bytes": 249422,
       "path": "./examples/08_shift_geometry/figures/kslice_shift_vector_wilson_loop.png",
       "role": "plot_png",
-      "sha256": "e46d9097bec8101429362eaca7657d4e9ef2cb85751773546eee8bfed8177543"
+      "sha256": "4c9d5a41b9348ce699ce10a7d5ab6755901467d8ffdf6d502e9ecb78d742fcf6"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/08_shift_geometry/plot_configs/kslice_shift_vector_wilson_loop.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

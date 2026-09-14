@@ -50,10 +50,10 @@
       "sha256": "3d82d4ecb57c08ed4622c0ecfc009587e9986548b2fad68e158c9931ecaada62"
     },
     {
-      "bytes": 701,
+      "bytes": 699,
       "path": "./examples/07_qg_multipoles/plot_configs/kslice_quantum_metric_dipole_conventional.json",
       "role": "visualization_config",
-      "sha256": "7e1cbaa7474fc386ad07895f0d87b634e6dca0b3dd501f67c6db870abc271d0c"
+      "sha256": "9f879656df370063c5420a346c0f172398bae3402a2768c6d00615e03f935ff2"
     },
     {
       "bytes": 757582,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 98613,
+      "bytes": 92722,
       "path": "./examples/07_qg_multipoles/figures/kslice_quantum_metric_dipole_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "6ff4c4e8f56f1602b24a38e0c8ef13b70692cf520bbe38c26977035e1f40e84e"
+      "sha256": "b885fc1d18bde937e8b8e66cfebdbe367e71a718fe66e8ac1dd994f3b998ef24"
     },
     {
-      "bytes": 220818,
+      "bytes": 211275,
       "path": "./examples/07_qg_multipoles/figures/kslice_quantum_metric_dipole_conventional.png",
       "role": "plot_png",
-      "sha256": "340333649027adbb23e847436a3ec39b4c6dc7e1fa5fea4d38e3aaf74cb016ab"
+      "sha256": "c93d2c4c041b0bbc141a6953f21d696e3563bdf62378a761bb35eeea9f077782"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/07_qg_multipoles/plot_configs/kslice_quantum_metric_dipole_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

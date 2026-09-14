@@ -50,10 +50,10 @@
       "sha256": "62637309c246be75fdc8f5bf5ae758a44eea287ff71718faf6908bcf3d405aa6"
     },
     {
-      "bytes": 698,
+      "bytes": 696,
       "path": "./examples/06_qg_pairwise/plot_configs/kslice_interband_quantum_metric_conventional.json",
       "role": "visualization_config",
-      "sha256": "28e800fa059395ee502e6d46311c8d9109005198308379837de3a9d58e259553"
+      "sha256": "e0a24618d6f3bb46be49813359f5ab26843fb3ee634d94563134a6f443d362fb"
     },
     {
       "bytes": 786448,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 127972,
+      "bytes": 126478,
       "path": "./examples/06_qg_pairwise/figures/kslice_interband_quantum_metric_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "66ebb8f5a575afaae6c51b0b1d62dcf87a47728300affb3349b447895ba33a65"
+      "sha256": "e9d190732765c15f972855ef935f092df85c3aa8708043ddd2c06555588ebe40"
     },
     {
-      "bytes": 232261,
+      "bytes": 223634,
       "path": "./examples/06_qg_pairwise/figures/kslice_interband_quantum_metric_conventional.png",
       "role": "plot_png",
-      "sha256": "b8e4279788b2898c5e411b997bb114a9a75f0fc748ba8b70d226e0e34ae94aef"
+      "sha256": "bd90d4b9730b2ee772a20cf5ff7deb77211553d7bc2e71e815100d9b36efbe3c"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/06_qg_pairwise/plot_configs/kslice_interband_quantum_metric_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

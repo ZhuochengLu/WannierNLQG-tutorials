@@ -50,10 +50,10 @@
       "sha256": "03d1f28334b498d960804fcfc4cb4a7720af831afe37e180bb71bd7a6151f004"
     },
     {
-      "bytes": 672,
+      "bytes": 670,
       "path": "./examples/06_qg_pairwise/plot_configs/kslice_quantum_metric_conventional.json",
       "role": "visualization_config",
-      "sha256": "1ae214cba19e264ef09ac2d0238c62dca0cf1c24473d0add9dd20632b8323f8b"
+      "sha256": "4ad3954cbd0d8da70b3c4cc90c142611fd37d46055d02602cc336d156cb5009e"
     },
     {
       "bytes": 730898,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 83641,
+      "bytes": 79573,
       "path": "./examples/06_qg_pairwise/figures/kslice_quantum_metric_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "d4ecc69cb49196ecc8901c1d1009d43ffb686fd82b752ef4f9c55437df6a03bb"
+      "sha256": "ced424da9444e3302aa17753a72f4df34e2be413d1543f4ac21dcdf7eae67aa1"
     },
     {
-      "bytes": 226492,
+      "bytes": 219324,
       "path": "./examples/06_qg_pairwise/figures/kslice_quantum_metric_conventional.png",
       "role": "plot_png",
-      "sha256": "f1144faee3eb885654e8d60464f56f8d1ab909b6f9c39e2be55f86c32f2c0971"
+      "sha256": "3ae9fac8f42e49b7705dc4fb4dbd806bb6af761ab79744b1e6df249f33d67bd1"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/06_qg_pairwise/plot_configs/kslice_quantum_metric_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

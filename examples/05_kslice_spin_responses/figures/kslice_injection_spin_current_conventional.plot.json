@@ -51,10 +51,10 @@
       "sha256": "957faf867f78b22cc233d0941cd09f69e3f86e64adf6a2d2f5d18b987dd16d91"
     },
     {
-      "bytes": 692,
+      "bytes": 690,
       "path": "./examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json",
       "role": "visualization_config",
-      "sha256": "1d14ea63b5c820bf6fc4808764b86ae52c01be1b126088d9e9794168f3bfce25"
+      "sha256": "8ae82cab32376eb9b9c41a7685683429b925d7a0ce4d5e92bc13a4d48994f8fd"
     },
     {
       "bytes": 694445,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 118957,
+      "bytes": 127211,
       "path": "./examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "d1313e05365ac0742d750b8ab997fb05c2a5467b0e743042767ef8eb6c01b641"
+      "sha256": "8a0d5b933cead03ec8282f408c69e8cbe5982bb6ec26ccc67f6cf6a373b0ef28"
     },
     {
-      "bytes": 263181,
+      "bytes": 255164,
       "path": "./examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.png",
       "role": "plot_png",
-      "sha256": "771149e3f4f429a67006f28672e55f5e3b8d175749523b0c4e4b07df88885223"
+      "sha256": "14947284bc372137245bc84cf7d78d4e650e9871f215bf1dd41cbfe97cc88b68"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

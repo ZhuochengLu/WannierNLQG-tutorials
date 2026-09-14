@@ -16,5 +16,9 @@ for chapter in sort(filter(name -> occursin(r"^\d\d_", name), readdir(joinpath(R
         run(`$(Base.julia_cmd()) --project=$(ROOT) $(joinpath(package_root, "scripts", script)) --config $(config_path)`)
     end
 end
+withenv("WANNIERNLQG_VISUALIZATION_ROOT" => joinpath(package_root, "scripts")) do
+    run(`python3 $(joinpath(@__DIR__, "plot_shift_current_methods.py"))`)
+    run(`python3 $(joinpath(@__DIR__, "plot_geometry_method_comparisons.py"))`)
+end
 run(`python3 $(joinpath(@__DIR__, "sanitize_public_metadata.py"))`)
 println("VISUALIZATION_ALL_OK")

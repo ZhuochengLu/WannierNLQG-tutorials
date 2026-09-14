@@ -1,0 +1,51 @@
+{
+  "schema": "wanniernlqg.presentation-plot",
+  "schema_version": "1.0",
+  "qualification": "PRESENTATION_ONLY",
+  "renderer": "v1.0.1 visualization style",
+  "inputs": [
+    {
+      "path": "./examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_conventional/GeS_qhck_r_conv.dat",
+      "role": "kslice_matrix",
+      "bytes": 785191,
+      "sha256": "28598052c79382cdeabaf4aa23f70a5b81aac7b0dd5fe20f26de57a932aa7340"
+    },
+    {
+      "path": "./examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_geometric_loop/GeS_qhck_r_geo.dat",
+      "role": "kslice_matrix",
+      "bytes": 787585,
+      "sha256": "2b4a8f0d23c0b25fc86987b710eb2040764167b681549132577848624028e2ab"
+    },
+    {
+      "path": "./examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_wilson_loop/GeS_qhck_r_wilson.dat",
+      "role": "kslice_matrix",
+      "bytes": 785231,
+      "sha256": "b3a3247b405774f6507d261d152fc54048a039af9dce4913fbdad1459032ae47"
+    }
+  ],
+  "transform": {
+    "operations": [
+      "fftshift",
+      "transpose"
+    ],
+    "part": "real",
+    "percentile": 99.5,
+    "shared_vmin": -16.53633884348212,
+    "shared_vmax": 16.53633884348212,
+    "interpolation": "none"
+  },
+  "outputs": [
+    {
+      "path": "./examples/08_shift_geometry/figures/GeS_qhc_methods.pdf",
+      "role": "plot_pdf",
+      "bytes": 258890,
+      "sha256": "403389e42c400979941ca5d344d889d5c1b019bcc27179a9e37e476af1004b10"
+    },
+    {
+      "path": "./examples/08_shift_geometry/figures/GeS_qhc_methods.png",
+      "role": "plot_png",
+      "bytes": 583138,
+      "sha256": "51bbc1ce911580427172a91b67eb425219e70123d8ee25620f26a24072dceed1"
+    }
+  ]
+}

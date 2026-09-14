@@ -51,10 +51,10 @@
       "sha256": "f6291a540637d2cde7e8df10bc63d2ad67de9b592fd07317a0c89965a36b4e40"
     },
     {
-      "bytes": 708,
+      "bytes": 706,
       "path": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_hermitian_curvature_tensor_conventional.json",
       "role": "visualization_config",
-      "sha256": "1f988a128b0e69b93d3bfcc9af82dff936f9739e4a491178e4a59e92a66c6e8e"
+      "sha256": "bac661a26748da3b17b344d1f08050594097905208876e881848af92ebd21a92"
     },
     {
       "bytes": 835683,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 142880,
+      "bytes": 149277,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "8141b29d341442f6f8d8f7fdbfb86e829093a16a3a2b82ce522f665576c9807a"
+      "sha256": "6954b1d6906521c46a520201bdb3ffa83eaafa5bd6f7d0612a61593e9ae66094"
     },
     {
-      "bytes": 293099,
+      "bytes": 287214,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.png",
       "role": "plot_png",
-      "sha256": "488dc8f2421b2fc38e924d944da3e24432501056b4bc25068e642d9d89eca5dc"
+      "sha256": "87d8e4d3d77906c1e20dff571b315fba39a594e15f48517eb48b8b7f10df1a21"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_hermitian_curvature_tensor_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

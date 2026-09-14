@@ -41,7 +41,7 @@ for chapter in sorted(EXAMPLES.glob("[0-9][0-9]_*")):
             config = {"mode": "single-map", "metadata": f"../results/reference/{task.name}/metadata.txt",
                 "panels": [{"id": "real_part", "real": f"../results/reference/{task.name}/{real.name}",
                     "title": panel_title, "order": 1}],
-                "coordinate": "fractional", "projection": "intrinsic-plane",
+                "coordinate": "centered", "projection": "intrinsic-plane",
                 "periodic_centered": True, "part": "real", "norm": "diverging",
                 "percentile": 99.5, "cmap": "RdBu_r", "colorbar_label": "native output units",
                 "output": output}
@@ -76,4 +76,5 @@ if (band / "results/reference/band_structure/GeS_bands.dat").is_file():
                 "path": "../results/reference/band_structure/GeS_kpath.json"}],
             "energy_window": [-5.0, 5.0],
             "output": {"stem": "../figures/GeS_band_comparison", "formats": ["pdf", "png"]}})
+
 print("PLOT_CONFIGS_OK")

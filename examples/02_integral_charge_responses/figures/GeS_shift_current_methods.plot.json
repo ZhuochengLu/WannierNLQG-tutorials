@@ -1,0 +1,116 @@
+{
+  "schema": "wanniernlqg.presentation-plot",
+  "schema_version": "1.0",
+  "qualification": "PRESENTATION_ONLY",
+  "renderer": "v1.0.1 visualization parser/style",
+  "datasets": [
+    {
+      "label": "Conventional",
+      "omega_count": 200,
+      "omega_minimum_ev": 0.0,
+      "omega_maximum_ev": 4.0,
+      "component_count": 8,
+      "components": [
+        "xxx",
+        "xxy",
+        "xyx",
+        "xyy",
+        "yxx",
+        "yxy",
+        "yyx",
+        "yyy"
+      ],
+      "array_shape": [
+        200,
+        8
+      ],
+      "energy_unit": "eV",
+      "response_unit": "output units"
+    },
+    {
+      "label": "Geometric Loop",
+      "omega_count": 200,
+      "omega_minimum_ev": 0.0,
+      "omega_maximum_ev": 4.0,
+      "component_count": 8,
+      "components": [
+        "xxx",
+        "xxy",
+        "xyx",
+        "xyy",
+        "yxx",
+        "yxy",
+        "yyx",
+        "yyy"
+      ],
+      "array_shape": [
+        200,
+        8
+      ],
+      "energy_unit": "eV",
+      "response_unit": "output units"
+    },
+    {
+      "label": "Wilson Loop",
+      "omega_count": 200,
+      "omega_minimum_ev": 0.0,
+      "omega_maximum_ev": 4.0,
+      "component_count": 8,
+      "components": [
+        "xxx",
+        "xxy",
+        "xyx",
+        "xyy",
+        "yxx",
+        "yxy",
+        "yyx",
+        "yyy"
+      ],
+      "array_shape": [
+        200,
+        8
+      ],
+      "energy_unit": "eV",
+      "response_unit": "output units"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "./examples/02_integral_charge_responses/results/reference/integral_shift_current_conventional/GeS_sc_conv.dat",
+      "role": "response_tensor",
+      "bytes": 104435,
+      "sha256": "2776210b18ce3b1dae9c2324b4bbdac63a09abafbc654ba11add8c79a1781b4c"
+    },
+    {
+      "path": "./examples/02_integral_charge_responses/results/reference/integral_shift_current_geometric_loop/GeS_sc_geo.dat",
+      "role": "response_tensor",
+      "bytes": 104121,
+      "sha256": "87ad128e7517deb7454f2d443458d5c4768f4fa741117652a80d2f787b5d421e"
+    },
+    {
+      "path": "./examples/02_integral_charge_responses/results/reference/integral_shift_current_wilson_loop/GeS_sc_wilson.dat",
+      "role": "response_tensor",
+      "bytes": 104491,
+      "sha256": "b5f3156219612bea3216151e6aa7112907cf071d4f1c6b8e595558171f9a5cd7"
+    }
+  ],
+  "transform": {
+    "component": "yyy",
+    "part": "real",
+    "interpolation": "none"
+  },
+  "outputs": [
+    {
+      "path": "./examples/02_integral_charge_responses/figures/GeS_shift_current_methods.pdf",
+      "role": "plot_pdf",
+      "bytes": 65406,
+      "sha256": "2b91966dd099a4c777e0ca7d114c3d27b325cee1371f92ae11ee03a15995768f"
+    },
+    {
+      "path": "./examples/02_integral_charge_responses/figures/GeS_shift_current_methods.png",
+      "role": "plot_png",
+      "bytes": 332423,
+      "sha256": "643668f0db1556dc1775c7c3a07a31bbd9bee419211c8aeeb9bc4555d1b37484"
+    }
+  ]
+}

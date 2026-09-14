@@ -50,10 +50,10 @@
       "sha256": "7179ab060c67023782c789da547edb091a8ed468aa512c8260d3e2d7162a4a09"
     },
     {
-      "bytes": 705,
+      "bytes": 703,
       "path": "./examples/07_qg_multipoles/plot_configs/kslice_berry_curvature_dipole_conventional.json",
       "role": "visualization_config",
-      "sha256": "9f0f231caeac2893b1679e206bfde24c173d5e1f307a25616573df4356502a5a"
+      "sha256": "141da9263713ffd88e71900f1e65673797076879ec8b80794edbec79177875b8"
     },
     {
       "bytes": 760731,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 100218,
+      "bytes": 94979,
       "path": "./examples/07_qg_multipoles/figures/kslice_berry_curvature_dipole_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "ede1b07f37f5df4e12314a37da5abbb3ac7dd17f7632123b023dc669452057fd"
+      "sha256": "56334a99a20c465a60806c92ca7c58b92b68c010ce6d4e8c1ccb0c1d9bce4e04"
     },
     {
-      "bytes": 231036,
+      "bytes": 223997,
       "path": "./examples/07_qg_multipoles/figures/kslice_berry_curvature_dipole_conventional.png",
       "role": "plot_png",
-      "sha256": "0d80fbe170421a5f59e166a9ede10dbf87d1679ff5898bf70ca7ac74977ed169"
+      "sha256": "017db1859609458860f4d82a0d845bde439e47ff88c860830969dbae31e894b3"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/07_qg_multipoles/plot_configs/kslice_berry_curvature_dipole_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

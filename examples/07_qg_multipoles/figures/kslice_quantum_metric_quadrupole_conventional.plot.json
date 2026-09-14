@@ -50,10 +50,10 @@
       "sha256": "74c2c78283675ba26b02cec07524753aff98c766bd64f8f7fb86a82632f8b4ed"
     },
     {
-      "bytes": 717,
+      "bytes": 715,
       "path": "./examples/07_qg_multipoles/plot_configs/kslice_quantum_metric_quadrupole_conventional.json",
       "role": "visualization_config",
-      "sha256": "f75ed5068c770bce807c7389208191ff6868aa59ca436613e4a60110e389d93f"
+      "sha256": "b66d5e89b70c79324d62d7d28d58c4f570617699b7538aec6e43f40f6308aefc"
     },
     {
       "bytes": 752956,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 97161,
+      "bytes": 92082,
       "path": "./examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "24fbecfbd31d03c80dbe4d716f8918daf5f6ef23afe691c37d264942ff938ce8"
+      "sha256": "9da0935bb46d9148fbe5dc57d0e87c3f48b01478cdd4f8b64c66728119a71bf7"
     },
     {
-      "bytes": 212101,
+      "bytes": 204798,
       "path": "./examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.png",
       "role": "plot_png",
-      "sha256": "72d72e1137bdbcd6e1c90f0364fc8991ae33f4dfa2859dac503dffaaa17c5b61"
+      "sha256": "ce0b490886d80f043eaaa01ee9a3f9f7f3fe526d9e0bc194c985db23c122a4d7"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/07_qg_multipoles/plot_configs/kslice_quantum_metric_quadrupole_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

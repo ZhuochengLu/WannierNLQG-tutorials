@@ -51,10 +51,10 @@
       "sha256": "6aa17213503e08f61c6e659f294038e1800307aceb53a433d7c9e9fcb607eac7"
     },
     {
-      "bytes": 684,
+      "bytes": 682,
       "path": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_triple_phase_product_conventional.json",
       "role": "visualization_config",
-      "sha256": "29026467196f4753005aa9e3a8f9d6c04d7441154d7c0aea83fb46202bfb71e8"
+      "sha256": "fce86554db1a4af9b24fac0c2efa760cbd273b32c0aaf56667aa264a7e835f4a"
     },
     {
       "bytes": 855996,
@@ -69,16 +69,16 @@
   ],
   "outputs": [
     {
-      "bytes": 119057,
+      "bytes": 122362,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_triple_phase_product_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "12451b97a24d4eadb22d9051d777becd7a0f343703b67f2d27cb51af7a24b7a8"
+      "sha256": "119cb594bbbca9d6e441262fbdd2e11af50f3fe39656150d4742f40077d6b742"
     },
     {
-      "bytes": 245196,
+      "bytes": 239374,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_triple_phase_product_conventional.png",
       "role": "plot_png",
-      "sha256": "eaabb80a9895cfa21911d84b7f0c6b584c554992e70e7e65dd86f3effe955433"
+      "sha256": "e9c6cb03c630dfdbd563796b6239f2cc897d25ba753d068fe046716e65411e27"
     }
   ],
   "plot_kind": "kslice",
@@ -89,7 +89,7 @@
     "_config_source": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_triple_phase_product_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -197,10 +197,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

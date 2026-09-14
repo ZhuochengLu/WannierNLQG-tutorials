@@ -1,0 +1,45 @@
+{
+  "schema": "wanniernlqg.presentation-plot",
+  "schema_version": "1.0",
+  "qualification": "PRESENTATION_ONLY",
+  "renderer": "v1.0.1 visualization style",
+  "inputs": [
+    {
+      "path": "./examples/08_shift_geometry/results/reference/kslice_shift_vector_geometric_loop/GeS_svk_r_geo.dat",
+      "role": "kslice_matrix",
+      "bytes": 763752,
+      "sha256": "7a78e2d9d3f5930c523b713c4d3463081a0483c48847bffad4de4c7a87954038"
+    },
+    {
+      "path": "./examples/08_shift_geometry/results/reference/kslice_shift_vector_wilson_loop/GeS_svk_r_wilson.dat",
+      "role": "kslice_matrix",
+      "bytes": 763855,
+      "sha256": "6d6e88ac16d2a3731256ce5cc5f7755bf293fe24539d52b3bd0f30d7e5b6a132"
+    }
+  ],
+  "transform": {
+    "operations": [
+      "fftshift",
+      "transpose"
+    ],
+    "part": "real",
+    "percentile": 99.5,
+    "shared_vmin": -177.53280973777123,
+    "shared_vmax": 177.53280973777123,
+    "interpolation": "none"
+  },
+  "outputs": [
+    {
+      "path": "./examples/08_shift_geometry/figures/GeS_shift_vector_methods.pdf",
+      "role": "plot_pdf",
+      "bytes": 184682,
+      "sha256": "04e18a57a9538cfd9d58f87bdf57bfddaf4ed402c1541ad7c9e902ae3901e16c"
+    },
+    {
+      "path": "./examples/08_shift_geometry/figures/GeS_shift_vector_methods.png",
+      "role": "plot_png",
+      "bytes": 363510,
+      "sha256": "5df331fc661e71146d302ce27084cf3a405d7540334c9859091470ac1714c3d6"
+    }
+  ]
+}

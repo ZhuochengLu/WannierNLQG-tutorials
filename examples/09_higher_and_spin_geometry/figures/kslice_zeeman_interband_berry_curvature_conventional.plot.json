@@ -50,10 +50,10 @@
       "sha256": "f90d870c8fd5ec1ff05203d6a9ba1a57c648551c2a49460cb554199ea720f66b"
     },
     {
-      "bytes": 731,
+      "bytes": 729,
       "path": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_berry_curvature_conventional.json",
       "role": "visualization_config",
-      "sha256": "795ebe2a09eba46c8ce03399a8feeb50009ab4f43011ae0a1bbca002ab1d5455"
+      "sha256": "65b817de0974356f8581f03cac3ff85bba1dcb0a2fed9d2c63af41691330d65e"
     },
     {
       "bytes": 882732,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 138247,
+      "bytes": 137087,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_berry_curvature_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "2ed7390e0a28a5d5b38d8e323c1b73b636d618ab365947e7c45a21c8e5f1c696"
+      "sha256": "d4d0768240735d8e97f21d11da8f4f7bd485b1b0f0283948b643ac87d96e3bcd"
     },
     {
-      "bytes": 282842,
+      "bytes": 275400,
       "path": "./examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_berry_curvature_conventional.png",
       "role": "plot_png",
-      "sha256": "116015d4b7be8d0c5893b16ef7905e47e4a462280c4d5acd4baa400404568975"
+      "sha256": "612646607e0e01321da2453e630e678cbaffb1fb40893549248d987d6a3556a1"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_berry_curvature_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,

@@ -60,10 +60,10 @@
   ],
   "outputs": [
     {
-      "bytes": 61102,
+      "bytes": 61101,
       "path": "./examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "d5a538e4c6db8f9d98401a1eac04683dad5fa0cc9230ee889fac38c07cd49009"
+      "sha256": "674e1b0e3f58ea0fc16c131b761d09158d9f265fb65ce839c7db4355f4d6d0ed"
     },
     {
       "bytes": 183164,

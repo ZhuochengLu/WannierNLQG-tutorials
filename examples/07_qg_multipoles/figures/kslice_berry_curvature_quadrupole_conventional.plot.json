@@ -50,10 +50,10 @@
       "sha256": "95ab5b9d03107690028a044b50925bcab545eb8020c989fb70b5062134d40abe"
     },
     {
-      "bytes": 721,
+      "bytes": 719,
       "path": "./examples/07_qg_multipoles/plot_configs/kslice_berry_curvature_quadrupole_conventional.json",
       "role": "visualization_config",
-      "sha256": "f3b6abf1e2e369e065f777e867d73283b0a25469b433cc62e831ecd09b793f2e"
+      "sha256": "38ef4167a366568b0255c164e6c9363fbe7a2077dcea97b4fdafa8c82102f951"
     },
     {
       "bytes": 757146,
@@ -68,16 +68,16 @@
   ],
   "outputs": [
     {
-      "bytes": 97681,
+      "bytes": 98409,
       "path": "./examples/07_qg_multipoles/figures/kslice_berry_curvature_quadrupole_conventional.pdf",
       "role": "plot_pdf",
-      "sha256": "a8b452eebd10b2e5b25f1985b1608306136df4c9088dcbe0087092e39ebd46ee"
+      "sha256": "4eb12cb1a013ce043195beb49ab15e7ad0bc93538731b1b137cb5c6100fc5c20"
     },
     {
-      "bytes": 198904,
+      "bytes": 192795,
       "path": "./examples/07_qg_multipoles/figures/kslice_berry_curvature_quadrupole_conventional.png",
       "role": "plot_png",
-      "sha256": "d4b8f68663e125bb9282e08c4d0ec038ad45033875f9a47b25425d58d4b2c129"
+      "sha256": "f9da7248468db8ed3c68acb8bc7211723494e644ca709044ebd5857fbd003148"
     }
   ],
   "plot_kind": "kslice",
@@ -88,7 +88,7 @@
     "_config_source": "./examples/07_qg_multipoles/plot_configs/kslice_berry_curvature_quadrupole_conventional.json",
     "cmap": "RdBu_r",
     "colorbar_label": "native output units",
-    "coordinate": "fractional",
+    "coordinate": "centered",
     "data": [],
     "diagnostic_banner": "",
     "explicit_projection_axes": null,
@@ -196,10 +196,13 @@
         "y1_difference_output_pixels": 0.0
       },
       "complex_part": "real",
-      "coordinate": "fractional",
+      "coordinate": "centered",
       "linthresh": 0.001,
       "norm": "diverging",
-      "operations": [],
+      "operations": [
+        "fftshift",
+        "transpose"
+      ],
       "order": 1,
       "panel_id": "real_part",
       "percentile": 99.5,
