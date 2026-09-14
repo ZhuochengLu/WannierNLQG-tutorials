@@ -1,9 +1,36 @@
 # WannierNLQG tutorials
 
-Reproducible GeS examples for WannierNLQG v1.0.1, pinned to commit
-`1e98f4841d10b6f86aecec8417d3a7da317c0f49`. The repository covers band interpolation, charge and spin
-photocurrents, and momentum-resolved quantum geometry. Projector methods, photon-drag
-responses, SHG, and model construction are intentionally outside the first release.
+Reproducible tutorials for real-material studies with WannierNLQG, including runnable
+workflows, reference results, visualization, and interpretation for band,
+nonlinear-response, and quantum-geometry calculations.
+
+## Tutorials at a glance
+
+The current collection contains nine chapters and 31 independently runnable cases:
+
+1. [Band structure](examples/01_band_structure/) — interpolate bands along a
+   high-symmetry path and compare the model bands with a first-principles reference.
+2. [Integrated charge responses](examples/02_integral_charge_responses/) — calculate
+   shift and injection currents and compare the available shift-current methods.
+3. [Integrated spin responses](examples/03_integral_spin_responses/) — calculate
+   frequency-dependent injection and shift spin currents using optional spin data.
+4. [Momentum-resolved charge responses](examples/04_kslice_charge_responses/) — map
+   charge photocurrent contributions across a two-dimensional momentum slice.
+5. [Momentum-resolved spin responses](examples/05_kslice_spin_responses/) — map spin
+   photocurrent contributions using the optional spin dataset.
+6. [Pairwise quantum geometry](examples/06_qg_pairwise/) — visualize Berry curvature,
+   quantum metric, and their interband counterparts.
+7. [Quantum-geometric multipoles](examples/07_qg_multipoles/) — explore dipoles,
+   quadrupoles, and the quantum Christoffel symbol.
+8. [Shift geometry](examples/08_shift_geometry/) — compare shift-vector and quantum
+   Hermitian-connection formulations across supported methods.
+9. [Higher-order and spin geometry](examples/09_higher_and_spin_geometry/) — examine
+   Hermitian curvature, triple phase products, and Zeeman quantum geometry.
+
+For a focused first pass, follow chapters 01, 02, 04, and 06. Chapters 03 and 05,
+as well as the Zeeman cases in chapter 09, require the optional spin dataset. Each
+chapter includes its own parameter definitions, run commands, reference outputs,
+visualization settings, and interpretation notes.
 
 ## Quick start
 
@@ -19,17 +46,6 @@ examples require the optional release asset described in
 
 Reference settings are 100 x 100 x 1 for Brillouin-zone integrals and 200 x 200 for
 k-slices. These settings are tutorial reference settings, not convergence claims.
-
-## Scientific scope
-
-The parameter choices and band subspaces follow the GeS discussion in the associated
-manuscript: V=[19,20], C1=[21,22], C2=[23,24], Fermi energy -2.5 eV, temperature 0 K,
-Gaussian broadening 0.060 eV, denominator regularization 0.001 eV, and degeneracy
-threshold 0.002 eV. The repository uses the ordinary exported GeS model and therefore
-does not reproduce the manuscript's symmetrized SAWF data bundle byte for byte.
-
-All numerical outputs are labelled `TUTORIAL_NUMERICAL_EVIDENCE`. Plot sidecars remain
-`PRESENTATION_ONLY`; neither label establishes Physics or Production qualification.
 
 ## Repository map
 
