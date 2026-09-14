@@ -1,0 +1,364 @@
+{
+  "schema": "wanniernlqg-tutorials.reference-results",
+  "schema_version": "1.0",
+  "package_version": "1.0.1",
+  "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+  "count": 31,
+  "entries": [
+    {
+      "chapter": "01_band_structure",
+      "task_id": "band_structure",
+      "summary": "examples/01_band_structure/results/reference/band_structure/summary.json",
+      "summary_sha256": "95068ee734037a3c9bdecf8ab031453036e33105eb316835880b0cf2637873a5",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_bands.dat": "39b8f0b92856c38b9efbeb91d4b7ab270c6537f19bb6cf5739fa87c450262a1a",
+        "GeS_kpath.json": "a1f7ede91f1bd4d4d9efb21687f261b64646dd7777f1ae08e4c583bd22e12782"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "task_id": "integral_injection_current_conventional",
+      "summary": "examples/02_integral_charge_responses/results/reference/integral_injection_current_conventional/summary.json",
+      "summary_sha256": "57707ec4d787dcb0b6b191594685af40c8a21f4917c2e468a81fddabb82bd690",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_ic_conv.dat": "281363c9a596a4e1d2e0145e18602e86774fdd84537526492df90202c419d716"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "task_id": "integral_shift_current_conventional",
+      "summary": "examples/02_integral_charge_responses/results/reference/integral_shift_current_conventional/summary.json",
+      "summary_sha256": "40fa104454cf5d771961d51503f34f3f1fa1b8e494bfbf260299d44545dc38d9",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_sc_conv.dat": "2776210b18ce3b1dae9c2324b4bbdac63a09abafbc654ba11add8c79a1781b4c"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "task_id": "integral_shift_current_geometric_loop",
+      "summary": "examples/02_integral_charge_responses/results/reference/integral_shift_current_geometric_loop/summary.json",
+      "summary_sha256": "3b779aeb9cd5a5f5618b72815483bb68d94e8ba82187d38f75efd61cda84e6b5",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_sc_geo.dat": "87ad128e7517deb7454f2d443458d5c4768f4fa741117652a80d2f787b5d421e"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "task_id": "integral_shift_current_wilson_loop",
+      "summary": "examples/02_integral_charge_responses/results/reference/integral_shift_current_wilson_loop/summary.json",
+      "summary_sha256": "f98186815b2846a62f086a7e08fc04c0768c15168bdd68f5e5cf81d7cf283b4d",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_sc_wilson.dat": "b5f3156219612bea3216151e6aa7112907cf071d4f1c6b8e595558171f9a5cd7"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "03_integral_spin_responses",
+      "task_id": "integral_injection_spin_current_conventional",
+      "summary": "examples/03_integral_spin_responses/results/reference/integral_injection_spin_current_conventional/summary.json",
+      "summary_sha256": "a0e0337bba3786e67eb95a93b61eefdbd2500194aeda4b30fcb15641a93d0f03",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_isc_conv.dat": "45ebae7247bcc2e19a802db658babebea54f26fb4ff54ffa4485e3ebde55f64b"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "03_integral_spin_responses",
+      "task_id": "integral_shift_spin_current_conventional",
+      "summary": "examples/03_integral_spin_responses/results/reference/integral_shift_spin_current_conventional/summary.json",
+      "summary_sha256": "6f43f637554af14bf27a484f3742db9d5384abe2268edd230add67028d16f803",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_ssc_conv.dat": "20438bbb3280d74c4fc5d0e6e005cb413e250bc20993453c237387c5a38a6ba2"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "task_id": "kslice_injection_current_conventional",
+      "summary": "examples/04_kslice_charge_responses/results/reference/kslice_injection_current_conventional/summary.json",
+      "summary_sha256": "08b6af29d221f79b830c7b04dc048d8e0656b03dc5965d71d6db2e74688533cb",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_ick_r_conv.dat": "17e5ccbeb6e29d1f999b61b74a74f653dca9d1c3b72f1e49e599e9d9dcc17f06",
+        "GeS_ick_i_conv.dat": "46af8bbef434f8921a1efbe3a90ba159403385ee269419fd1c76f949f837ba18"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "task_id": "kslice_shift_current_conventional",
+      "summary": "examples/04_kslice_charge_responses/results/reference/kslice_shift_current_conventional/summary.json",
+      "summary_sha256": "155f711fccab34c85d1d01d48badffaacad96f156e1dd1e8707a583fa808d9ed",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_sck_r_conv.dat": "144f90759edfec21ae08b72cf7f77a59cd4214e7a0ff07d7d6e493d63deecff5",
+        "GeS_sck_i_conv.dat": "43faa26dd021ce7f8980480a96cc7e343a1bc99814a08ebe6592b85065baa6a0"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "task_id": "kslice_shift_current_geometric_loop",
+      "summary": "examples/04_kslice_charge_responses/results/reference/kslice_shift_current_geometric_loop/summary.json",
+      "summary_sha256": "baa89abddd490af33e1b0f6c788dc3fdce259d37f82abbc503bc3d2104de92fd",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_sck_r_geo.dat": "7c6b887d04689979baaa1dab222672188a8a1ac1ed7200654a12696c01336a1d",
+        "GeS_sck_i_geo.dat": "0fb24f8f5a82f50914e94e8ecd3c26618f5a20fc478784534a8fa3d5fb851869"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "task_id": "kslice_shift_current_wilson_loop",
+      "summary": "examples/04_kslice_charge_responses/results/reference/kslice_shift_current_wilson_loop/summary.json",
+      "summary_sha256": "23fa14acdb25360e7eb1470cc3239786bda5f9170be3decc88e31cf168739d5d",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_sck_i_wilson.dat": "6546e83ef5a45938d334dffdbba0df0e7ba51ce2748de1fcd9c12e8318271c1c",
+        "GeS_sck_r_wilson.dat": "54beb17424fa1d84603dccb2c34a954417c75ce6ca0ea7dd8bb92edbda0208ee"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "05_kslice_spin_responses",
+      "task_id": "kslice_injection_spin_current_conventional",
+      "summary": "examples/05_kslice_spin_responses/results/reference/kslice_injection_spin_current_conventional/summary.json",
+      "summary_sha256": "6b1e014dab4c9cad3cfacfd5c73b42b24fa5ad5f4572d10a79675a4373753de2",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_isck_i_conv.dat": "dbaa64d15e0e97efa0364ea45a34f156dc4e1d688daa595318fe6a723855598c",
+        "GeS_isck_r_conv.dat": "475d7989ca0f83ca1cd0ec39575d567c447f54828be255f496cd2ce4935a76ea"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "05_kslice_spin_responses",
+      "task_id": "kslice_shift_spin_current_conventional",
+      "summary": "examples/05_kslice_spin_responses/results/reference/kslice_shift_spin_current_conventional/summary.json",
+      "summary_sha256": "efebff41b2c424887aeab516fb5c30b5f8974400af5e3285a0b08dd278d6349a",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_ssck_r_conv.dat": "7586a865ca98c8c68ecbff04dc3a12cf7a9a870dcc18eb46d0ce57a8c3b2dac3",
+        "GeS_ssck_i_conv.dat": "372bf100b5872d2cf0f38560beac68964b3a67b78c0b1ec6790c7729d957bcf6"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "task_id": "kslice_berry_curvature_conventional",
+      "summary": "examples/06_qg_pairwise/results/reference/kslice_berry_curvature_conventional/summary.json",
+      "summary_sha256": "97eccebad1c9d917b1eefcd4a2ae1cc28e443ccf57d00de4451402aa6d72cf3e",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_bck_subspace_19_20_conv.dat": "fbd395a547cfdbb212f93189c7fa92dc3d3eaab2f330e4c0d4a05544b7b9d02d"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "task_id": "kslice_interband_berry_curvature_conventional",
+      "summary": "examples/06_qg_pairwise/results/reference/kslice_interband_berry_curvature_conventional/summary.json",
+      "summary_sha256": "c4006e4b0dbbd0cbdfff81d71e8b7f36fa1a1b182bd4b7d979dd4f9f7732ac1c",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_ibck_conv.dat": "fd687cd5191d9b7ea8bdb7ae6794939109f598ff30e7a7f4e757632a44ea4d5c"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "task_id": "kslice_interband_quantum_metric_conventional",
+      "summary": "examples/06_qg_pairwise/results/reference/kslice_interband_quantum_metric_conventional/summary.json",
+      "summary_sha256": "6c1b64cac966d9a3dc4c92c30cd04665e79d59a7d4eae762874784e45926b1de",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_iqmk_conv.dat": "90c9e90495034132ae35ef0aadeddd51b655de006a79b360afac73e6789850bd"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "task_id": "kslice_quantum_metric_conventional",
+      "summary": "examples/06_qg_pairwise/results/reference/kslice_quantum_metric_conventional/summary.json",
+      "summary_sha256": "7d8e5bd8a432a0f18edfb2cd44a4f9cabe486574a913e88fd404037df2d0023e",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qmk_subspace_19_20_conv.dat": "de1768aa418b0cf11a146d3d80790357e22fd5254851c04c5046aff63198f893"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "task_id": "kslice_berry_curvature_dipole_conventional",
+      "summary": "examples/07_qg_multipoles/results/reference/kslice_berry_curvature_dipole_conventional/summary.json",
+      "summary_sha256": "32be4aeae36448eddf82dff7f31c2a1c1353af35fc7906d1b112e9153d472c54",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_bcdk_subspace_19_20_conv.dat": "8b486b049dfb20e0e37fb6f5b07870f7860331827980ebd9dd068db702df2161"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "task_id": "kslice_berry_curvature_quadrupole_conventional",
+      "summary": "examples/07_qg_multipoles/results/reference/kslice_berry_curvature_quadrupole_conventional/summary.json",
+      "summary_sha256": "ed41edd22ac04cd3adfb438a984ceb37296fe243d5e092b47a272ec336134a6d",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_bcqk_subspace_19_20_conv.dat": "cc89347b4fc8fc345e85ff64ceb017f8c141e7a7706aedb2e811be051cada461"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "task_id": "kslice_quantum_christoffel_symbol_conventional",
+      "summary": "examples/07_qg_multipoles/results/reference/kslice_quantum_christoffel_symbol_conventional/summary.json",
+      "summary_sha256": "9f3d04852efc819002832d2de052663a45b8338a32602ba510e596cbd2df4b3d",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qcsk_subspace_19_20_conv.dat": "578e0a428b5f538262240ff8bcb1e12689d83d095e226c148f7885e741e5e364"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "task_id": "kslice_quantum_metric_dipole_conventional",
+      "summary": "examples/07_qg_multipoles/results/reference/kslice_quantum_metric_dipole_conventional/summary.json",
+      "summary_sha256": "29ea75ef0518e06abe7f8b5ddd4ccadc8a065c63e1fd849fb9467d94f5c962f1",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qmdk_subspace_19_20_conv.dat": "997dec43a300726bc8469f03b3be6d5539bba936ad4fca6f435a66400d14063a"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "task_id": "kslice_quantum_metric_quadrupole_conventional",
+      "summary": "examples/07_qg_multipoles/results/reference/kslice_quantum_metric_quadrupole_conventional/summary.json",
+      "summary_sha256": "55875e088fbf67c0360c199afcc88249d16a7ac74d22c6a98ca4203f72c7f97e",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qmqk_subspace_19_20_conv.dat": "d3e667eebdd2658aee90704c30d14b695ce0179183bc83a4f089c7c0626fc60a"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "task_id": "kslice_quantum_hermitian_connection_conventional",
+      "summary": "examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_conventional/summary.json",
+      "summary_sha256": "ea296848187d6880d2558461fca64a376569c3fa5bd510dc8f3c4b238b63236b",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qhck_i_conv.dat": "3113dc1edcd50ad30fbf147d1bcc5211effe8a29d010a413bffe57cfd41b8f12",
+        "GeS_qhck_r_conv.dat": "28598052c79382cdeabaf4aa23f70a5b81aac7b0dd5fe20f26de57a932aa7340"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "task_id": "kslice_quantum_hermitian_connection_geometric_loop",
+      "summary": "examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_geometric_loop/summary.json",
+      "summary_sha256": "2b20b2c418024ef86b1586971f020de628cad822bb754a222baf365ffa42230c",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qhck_r_geo.dat": "2b4a8f0d23c0b25fc86987b710eb2040764167b681549132577848624028e2ab",
+        "GeS_qhck_i_geo.dat": "a28be6821dbe3b9e270a86ac726e1f87f845f7fe9f40f58dbde8d49b31432484"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "task_id": "kslice_quantum_hermitian_connection_wilson_loop",
+      "summary": "examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_wilson_loop/summary.json",
+      "summary_sha256": "7eb8c94844825c12dad7569e82d28b15f13503f25b0e354d0f696b802a60504d",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_qhck_r_wilson.dat": "b3a3247b405774f6507d261d152fc54048a039af9dce4913fbdad1459032ae47",
+        "GeS_qhck_i_wilson.dat": "3b399b4dd8c1860cd57ba86abe1dcf60ad0ebb2fa83955ffa47a558a0e0ffb36"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "task_id": "kslice_shift_vector_geometric_loop",
+      "summary": "examples/08_shift_geometry/results/reference/kslice_shift_vector_geometric_loop/summary.json",
+      "summary_sha256": "50296641d84b30d9f506089a557af9683050324c33eeb721cefb0c1e9674e8f7",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_svk_i_geo.dat": "ebe9357d0adf02e5fedba7c4718d842efc5657444dec06bf09bd220aa89acfb1",
+        "GeS_svk_r_geo.dat": "7a78e2d9d3f5930c523b713c4d3463081a0483c48847bffad4de4c7a87954038"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "task_id": "kslice_shift_vector_wilson_loop",
+      "summary": "examples/08_shift_geometry/results/reference/kslice_shift_vector_wilson_loop/summary.json",
+      "summary_sha256": "a82a1db122c18a8ac9cc23ee117afcb1c23a3b98a41e786282a84c92576dcea9",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_svk_r_wilson.dat": "6d6e88ac16d2a3731256ce5cc5f7755bf293fe24539d52b3bd0f30d7e5b6a132",
+        "GeS_svk_i_wilson.dat": "52156e2609af3119cb2081e7f89864d5873caa64ee138f75ddd004929a54ca3c"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "task_id": "kslice_hermitian_curvature_tensor_conventional",
+      "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/summary.json",
+      "summary_sha256": "6a3fcf15f007f5fcbcc320da6c7a5eaeb2cddc4e2c98b0d1d9a7e4dc6c31bbaf",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_hctk_i_conv.dat": "8fad4cf6e93a800c906dfa47ce13ad13e983ff51be3016b0277a05fe5396c495",
+        "GeS_hctk_r_conv.dat": "326556f503632f3e8cdb88664f6f6787aa7f606fdca4e5061728805d4e783ac8"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "task_id": "kslice_triple_phase_product_conventional",
+      "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_triple_phase_product_conventional/summary.json",
+      "summary_sha256": "211b817af1ac91c13a992f4c90cfbdcb66e8d45dc9895039ddfae9e9a27fe76c",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_tppk_i_conv.dat": "09175859151dfc0a3563c04e1177b72c338bd3442aec7e2f0fb97935d1cdf7e6",
+        "GeS_tppk_r_conv.dat": "e8dcb746d98e12b4f137a224d8a454e6ca66642a44a8d4c22de49d7f354f066c"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "task_id": "kslice_zeeman_interband_berry_curvature_conventional",
+      "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_zeeman_interband_berry_curvature_conventional/summary.json",
+      "summary_sha256": "fe0de3ccafed372115d985f646c7c58770d8c89e5cf029a0a03329001cc01564",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_zibck_conv.dat": "5a2f5ed57c7880cad8351d285847d457c36d76a32c4dab7ca05f7d51b5c39e83"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "task_id": "kslice_zeeman_interband_quantum_metric_conventional",
+      "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_zeeman_interband_quantum_metric_conventional/summary.json",
+      "summary_sha256": "04502406a2dd871211c46c205b6c5f431d8b1d4ab8aa646fbf91211cf2eefd66",
+      "finite_values": true,
+      "output_sha256": {
+        "GeS_ziqmk_conv.dat": "3f054d9df8a5255efd122edfe5df48cf9104805777d4c9adcbb61e464ed4f35b"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    }
+  ]
+}

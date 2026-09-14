@@ -1,0 +1,41 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_sck_i_geo.dat",
+        "GeS_sck_r_geo.dat"
+    ],
+    "calculation": "K-slice",
+    "mesh": [
+        200,
+        200
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "task_id": "kslice_shift_current_geometric_loop",
+    "component": [
+        2,
+        2,
+        2
+    ],
+    "band_selection": {
+        "conduction": [
+            21,
+            22
+        ],
+        "valence": [
+            19,
+            20
+        ]
+    },
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_sck_r_geo.dat": "7c6b887d04689979baaa1dab222672188a8a1ac1ed7200654a12696c01336a1d",
+        "GeS_sck_i_geo.dat": "0fb24f8f5a82f50914e94e8ecd3c26618f5a20fc478784534a8fa3d5fb851869"
+    },
+    "photon_energy_ev": 3
+}

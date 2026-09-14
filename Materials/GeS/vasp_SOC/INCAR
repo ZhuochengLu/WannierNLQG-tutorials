@@ -1,0 +1,105 @@
+SYSTEM  = GeS
+NWRITE  = 2
+#NCORE   = 3
+# add the following line to VASP INCAR for constrained relaxation,
+# M_FIXLATVEC   = 0 0 1  # relax a and b, fix c
+
+## Ionic Relaxation:
+NSW     = 0
+POTIM   = 0.2
+SMASS   = 0
+IBRION  = 2
+ISIF    = 4
+
+## Electronic Relaxation 1:
+PREC    = Accurate
+ISMEAR  = 0       # 0: semiconductor  1/2: for metals
+SIGMA   = 0.050000
+EDIFF   = 1e-06
+EDIFFG  = -0.01
+NELM    = 300
+ENCUT   = 400.000000
+
+## Spin and Orbital configuration:
+LSORBIT = T
+LORBMOM = F
+SAXIS   = 0 0 1
+GGA_COMPAT  = F
+MAGMOM  = 12*0.0
+#ISPIN   = 2 # spin polarization
+
+LMAXMIX = 4
+LREAL   = F
+## Electronic Relaxation 2:
+ALGO    = Fast
+ISTART  = 0      #  0:scratch, 1:WAVECAR(ecut), 2:WAVECAR(pw), 3:MD
+ICHARG  = 2      #  0:WAVECAR, 1:full scf(CHGCAR), 11:nscf(CHGCAR), 2: atom
+ISYM    = -1     # -1/0: off (AFM calculation),  1: on for USPP,  2: on for PAW
+LCHARG  = T
+LWAVE   = T
+LELF    = F
+LVTOT   = F
+LAECHG  = F
+
+#LDA+U
+#LDAU      =.TRUE. #Switch on the LSDA + U
+#LDAUTYPE  = 2     #The type of LSDA + U approach : 2 -- Dudarev et al. method
+#LDAUL     = 2 -1  #'l' quantum number for which onsite interactions are added
+#LDAUU     = 2.00 0.00 #Effective onsite Coloumbic interaction parameter - U (eV)
+#LDAUJ     = 0.00 0.00 #Effective onsite Exchange interaction parameter  - J(eV)
+#LDAUPRINT = 2
+
+#LVHAR = .TRUE. 
+
+#IDIPOL =.TRUE.
+#IDIPOL = 3
+#
+## VASP2WANNIER90
+LWANNIER90     = T
+LWRITE_MMN_AMN = T
+LWRITE_UNK     = F
+#LSCDM         = T
+NBANDS         = 144     # 2 * nbands of collinear run
+#NEDOS  = 2001
+# LASPH   = T  # for f elements, 3d elements, LDA+U etc.
+
+# Wannier90 input
+NUM_WANN = 32
+
+WANNIER90_WIN = "
+#exclude_bands     = 1-24,119-144
+
+begin projections
+Ge:l=0;l=1
+S:l=0;l=1
+end projections
+
+guiding_centres   = .true.
+spinors = .true.
+
+dis_froz_max      = 0.5
+dis_froz_min      = -18.0
+dis_win_max       =  3.5
+#dis_win_min       = -17.0
+
+dis_num_iter      = 1000
+dis_conv_tol      = 1.0e-10
+num_iter          = 0
+#num_print_cycles  = 50 
+#conv_tol          = 1.0e-10
+
+#restart           = default
+write_hr          = .true.
+write_tb          = .true.
+#write_rmn         = .true. 
+
+# bands_plot
+#bands_plot        = .true.
+#bands_num_points  = 50
+#
+#begin kpoint_path
+#G 0.00000 0.00000 0.00000   M 0.50000 0.00000 0.00000
+#M 0.50000 0.00000 0.00000   K 0.66667 0.33333 0.00000
+#K 0.66667 0.33333 0.00000   G 0.00000 0.00000 0.00000
+#end kpoint_path
+"

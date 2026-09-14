@@ -1,0 +1,27 @@
+{
+  "mode": "single-map",
+  "metadata": "../results/reference/kslice_berry_curvature_quadrupole_conventional/metadata.txt",
+  "panels": [
+    {
+      "id": "real_part",
+      "real": "../results/reference/kslice_berry_curvature_quadrupole_conventional/GeS_bcqk_subspace_19_20_conv.dat",
+      "title": "Berry Curvature Quadrupole",
+      "order": 1
+    }
+  ],
+  "coordinate": "fractional",
+  "projection": "intrinsic-plane",
+  "periodic_centered": true,
+  "part": "real",
+  "norm": "diverging",
+  "percentile": 99.5,
+  "cmap": "RdBu_r",
+  "colorbar_label": "native output units",
+  "output": {
+    "stem": "../figures/kslice_berry_curvature_quadrupole_conventional",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

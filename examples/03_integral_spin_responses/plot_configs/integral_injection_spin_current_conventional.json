@@ -1,0 +1,29 @@
+{
+  "mode": "single",
+  "input": "../results/reference/integral_injection_spin_current_conventional/GeS_isc_conv.dat",
+  "label": "integral_injection_spin_current_conventional",
+  "components": "yyyy",
+  "part": "real",
+  "unit": "native output units",
+  "x_window": [
+    0.0,
+    4.0
+  ],
+  "panel_size_inches": [
+    4.8,
+    3.4
+  ],
+  "curves": {
+    "integral_injection_spin_current_conventional": {
+      "marker": "",
+      "linewidth": 1.6
+    }
+  },
+  "output": {
+    "stem": "../figures/integral_injection_spin_current_conventional",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

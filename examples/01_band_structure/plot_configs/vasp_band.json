@@ -1,0 +1,27 @@
+{
+  "mode": "single",
+  "reference": {
+    "type": "vasp_eigenval_kpoints",
+    "id": "vasp",
+    "label": "VASP",
+    "eigenval": "../../../Materials/GeS/vasp_SOC/EIGENVAL",
+    "kpoints": "../../../Materials/GeS/vasp_SOC/KPOINTS.band_path",
+    "poscar": "../../../Materials/GeS/vasp_SOC/POSCAR",
+    "energy_reference_ev": -2.5,
+    "energy_unit": "ev",
+    "energy_convention": "absolute",
+    "kpoint_coordinate_convention": "fractional_crystal",
+    "spin_channel": 1
+  },
+  "energy_window": [
+    -5.0,
+    5.0
+  ],
+  "output": {
+    "stem": "../figures/GeS_vasp_band",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

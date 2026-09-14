@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If these tutorials help your work, please cite the WannierNLQG software and the associated paper."
+title: "WannierNLQG tutorials"
+type: software
+authors:
+  - name: "WannierNLQG contributors"
+repository-code: "https://github.com/ZhuochengLu/WannierNLQG-tutorials"
+license: GPL-2.0-only
+version: 1.0.0
+date-released: 2026-09-14

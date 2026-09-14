@@ -1,0 +1,27 @@
+{
+  "mode": "single-map",
+  "metadata": "../results/reference/kslice_shift_current_wilson_loop/metadata.txt",
+  "panels": [
+    {
+      "id": "real_part",
+      "real": "../results/reference/kslice_shift_current_wilson_loop/GeS_sck_r_wilson.dat",
+      "title": "Shift Current Wilson Loop",
+      "order": 1
+    }
+  ],
+  "coordinate": "fractional",
+  "projection": "intrinsic-plane",
+  "periodic_centered": true,
+  "part": "real",
+  "norm": "diverging",
+  "percentile": 99.5,
+  "cmap": "RdBu_r",
+  "colorbar_label": "native output units",
+  "output": {
+    "stem": "../figures/kslice_shift_current_wilson_loop",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

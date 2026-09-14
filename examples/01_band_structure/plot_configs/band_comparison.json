@@ -1,0 +1,39 @@
+{
+  "mode": "compare",
+  "comparison_audit": "display_only",
+  "diagnostic_banner": "DIAGNOSTIC DISPLAY ONLY",
+  "reference": {
+    "type": "table",
+    "id": "vasp",
+    "label": "VASP",
+    "data": "../derived/GeS_vasp_band_path.dat",
+    "path": "../derived/GeS_vasp_band_path.json",
+    "x_column": 0,
+    "energy_columns": {
+      "start": 1,
+      "stop": 145
+    },
+    "energy_unit": "ev",
+    "energy_convention": "absolute"
+  },
+  "models": [
+    {
+      "type": "wanniernlqg",
+      "id": "GeS_tb",
+      "label": "GeS ordinary TB",
+      "bands": "../results/reference/band_structure/GeS_bands.dat",
+      "path": "../results/reference/band_structure/GeS_kpath.json"
+    }
+  ],
+  "energy_window": [
+    -5.0,
+    5.0
+  ],
+  "output": {
+    "stem": "../figures/GeS_band_comparison",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

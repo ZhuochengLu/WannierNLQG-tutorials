@@ -1,0 +1,35 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_qcsk_subspace_19_20_conv.dat"
+    ],
+    "calculation": "K-slice",
+    "mesh": [
+        200,
+        200
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "task_id": "kslice_quantum_christoffel_symbol_conventional",
+    "component": [
+        2,
+        2,
+        2
+    ],
+    "band_selection": {
+        "subspace": [
+            19,
+            20
+        ]
+    },
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_qcsk_subspace_19_20_conv.dat": "578e0a428b5f538262240ff8bcb1e12689d83d095e226c148f7885e741e5e364"
+    },
+    "photon_energy_ev": null
+}

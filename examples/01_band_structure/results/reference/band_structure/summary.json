@@ -1,0 +1,28 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_bands.dat",
+        "GeS_kpath.json"
+    ],
+    "calculation": "K-path",
+    "segments": [
+        51,
+        51,
+        51,
+        51
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 8,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "fermi_energy_ev": -2.5,
+    "task_id": "band_structure",
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_bands.dat": "39b8f0b92856c38b9efbeb91d4b7ab270c6537f19bb6cf5739fa87c450262a1a",
+        "GeS_kpath.json": "a1f7ede91f1bd4d4d9efb21687f261b64646dd7777f1ae08e4c583bd22e12782"
+    }
+}

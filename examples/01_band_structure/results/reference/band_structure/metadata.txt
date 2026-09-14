@@ -1,0 +1,158 @@
+[Run]
+execution_mode         = kpath_band_structure
+system_name            = GeS
+calculation            = kpath
+tasks.count            = 1
+quantity               = band_structure
+method                 = conventional
+task                   = band_structure
+normalized_quantity    = band_structure
+normalized_method      = conventional
+normalized_calculation = kpath
+
+[Input]
+case_root                       = .
+run_dir                         = EPHEMERAL_RUN_DIRECTORY_OMITTED
+model_file                      = Materials/GeS/vasp_SOC/GeS_tb.dat
+model_sha256                    = dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d
+model_input_mode                = legacy
+operator_demand                 = hamiltonian,position
+bloch_phase_convention_storage  = Convention_II_R_only
+bloch_phase_convention_runtime  = Convention_II
+wannier_center_source           = tb_position_R0_diagonal
+spin_enabled                    = false
+wannier_center_count            = 32
+wannier_center_cartesian_min_A  = -1.135987600000e+01
+wannier_center_cartesian_max_A  = 1.205206600000e+01
+wannier_center_cartesian_sha256 = f1c3869ca82bc2c74c7500fbfb25ab7abfb6e56a75a7066f48a510aa1114c22d
+
+[Tasks]
+matrix_families   = [spectrum]
+task.1.requested  = ("band_structure", "conventional", "k_path")
+task.1.normalized = (:band_structure, :conventional, :kpath, :band_structure)
+task.1.label      = band_structure/k_path/conventional
+task.1.output     = GeS_bands.dat
+
+[Numerics]
+fourier_backend               = direct
+energy_reference_E_ref_eV     = -2.5
+kpath_nodes                   = [("Γ", (0.0, 0.0, 0.0)), ("X", (0.5, 0.0, 0.0)), ("S", (0.5, 0.5, 0.0)), ("Y", (0.0, 0.5, 0.0)), ("Γ", (0.0, 0.0, 0.0))]
+kpoints_per_segment           = [51, 51, 51, 51]
+real_space_replica_policy     = input
+wsvec_file                    = nothing
+mp_grid                       = nothing
+wigner_seitz_tolerance        = 1.0e-5
+wigner_seitz_search_size      = 3
+band_hermiticity_tolerance    = 1.0e-10
+fractional_coordinates_folded = false
+segment_endpoint_convention   = counts include both endpoints; shared endpoint written once
+
+[Replica]
+schema                               = wanniernlqg.runtime-replica-summary
+requested_policy                     = input
+effective_policy                     = input
+source                               = input
+mapping_sha256                       = b5b17e4108141a12a50a4c4ab95ed1e92887f06a23e5d67c318be46a037fc5ec
+mapping_digest_scheme                = sha256:replica-map-v2/source-r/n-r/ordered-pair-absolute-images
+wsvec_file                           = nothing
+wsvec_sha256                         = nothing
+mp_grid                              = nothing
+wigner_seitz_tolerance               = 1.0e-5
+wigner_seitz_search_size             = 3
+input_minimum_distance_materialized  = false
+output_minimum_distance_materialized = false
+replica_transformed_this_run         = false
+input_num_r_vectors                  = 165
+effective_num_r_vectors              = 165
+scalar_degeneracy_applied            = false
+pair_degeneracy_applied              = false
+
+[Fourier]
+backend                = direct
+NKdiv                  = nothing
+NKFFT                  = nothing
+factor_source          = arbitrary_fractional_path
+estimated_memory_bytes = 0
+memory_limit_bytes     = 0
+path_kpoint_count      = 201
+mpi_size               = 1
+julia_threads          = 8
+
+[Band]
+schema                                = wanniernlqg.band-metadata
+total_kpoints                         = 201
+node_count                            = 5
+segment_count                         = 4
+E_ref_eV                              = -2.5
+energy_unit                           = eV
+distance_unit                         = A^-1
+energy_convention                     = ascending_eigenvalues_minus_E_ref
+fourier_phase                         = exp(2pi*i*R_dot_k)/wannier90_degeneracy
+reciprocal_lattice                    = B=2pi*A^(-T), row-lattice A
+maximum_hermiticity_residual          = 1.0115913325732306e-14
+hermiticity_tolerance                 = 1.0e-10
+requested_replica_policy              = input
+effective_replica_policy              = input
+replica_source                        = input
+mp_grid                               = nothing
+wigner_seitz_tolerance                = 1.0e-5
+wigner_seitz_search_size              = 3
+replica_mapping_sha256                = b5b17e4108141a12a50a4c4ab95ed1e92887f06a23e5d67c318be46a037fc5ec
+replica_mapping_digest_scheme         = sha256:replica-map-v2/source-r/n-r/ordered-pair-absolute-images
+wsvec_file                            = nothing
+wsvec_sha256                          = nothing
+input_minimum_distance_materialized   = false
+output_minimum_distance_materialized  = false
+replica_transformed_this_run          = false
+input_num_r_vectors                   = 165
+effective_num_r_vectors               = 165
+lattice_A                             = [3.6410803 0.0 0.0; 0.0 4.5437956 0.0; 0.0 0.0 25.3960572]
+reciprocal_lattice_A_inverse          = [1.725637665057699 0.0 0.0; 0.0 1.3828054473180058 0.0; 0.0 0.0 0.24740790500265472]
+r_vector_support_minimum              = (-7, -5, 0)
+r_vector_support_maximum              = (7, 5, 0)
+r_vector_support_sha256               = f04aa7ac67a5174606661858747e9ab74e9135e3fbe2e6934d62b165634b309c
+degeneracy_count                      = 165
+degeneracy_minimum                    = 1
+degeneracy_maximum                    = 4
+degeneracy_sum                        = 221
+degeneracy_sha256                     = 7284c4a13ace6ccbc7bb5bb44f704fca2705150d9813a3e123ffc4f2357b54e3
+wannier90_degeneracy_applied          = true
+model_num_orbitals                    = 32
+qualification                         = INPUT_QUALIFICATION_NOT_PROVIDED
+production_eligible                   = false
+qualification_note                    = Numerical Hermiticity does not promote physical or production qualification.
+manifest_schema                       = nothing
+manifest_scientific_sha256            = nothing
+manifest_geometry_sha256              = nothing
+manifest_file_sha256                  = nothing
+manifest_paired_tb_sha256             = nothing
+manifest_hamiltonian_component_sha256 = nothing
+manifest_diagnostic_only              = nothing
+manifest_physics_qualification        = nothing
+manifest_tb_usability                 = nothing
+manifest_final_physics_qualification  = nothing
+manifest_final_production_eligible    = nothing
+kpath_json                            = EPHEMERAL_RUN_PATH_OMITTED
+
+[Progress]
+progress_enabled          = false
+progress_percent_interval = nothing
+progress_verbosity        = normal
+progress_out_path         = 
+progress_jsonl_path       = 
+
+[Outputs]
+outputs.count = 2
+output.1      = GeS_bands.dat
+output.2      = GeS_kpath.json
+
+[EffectiveTaskConfiguration]
+id          = band_structure
+quantity    = band_structure
+method      = conventional
+calculation = k_path
+physics     = (fermi_energy = -2.5,)
+numerics    = (hermiticity_tolerance = 1.0e-10,)
+observable  = (kind = "band_spectrum",)
+output_root = EPHEMERAL_RUN_DIRECTORY_OMITTED
+

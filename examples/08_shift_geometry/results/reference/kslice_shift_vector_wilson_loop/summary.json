@@ -1,0 +1,41 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_svk_i_wilson.dat",
+        "GeS_svk_r_wilson.dat"
+    ],
+    "calculation": "K-slice",
+    "mesh": [
+        200,
+        200
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "task_id": "kslice_shift_vector_wilson_loop",
+    "component": [
+        2,
+        2,
+        2
+    ],
+    "band_selection": {
+        "conduction": [
+            21,
+            22
+        ],
+        "valence": [
+            19,
+            20
+        ]
+    },
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_svk_r_wilson.dat": "6d6e88ac16d2a3731256ce5cc5f7755bf293fe24539d52b3bd0f30d7e5b6a132",
+        "GeS_svk_i_wilson.dat": "52156e2609af3119cb2081e7f89864d5873caa64ee138f75ddd004929a54ca3c"
+    },
+    "photon_energy_ev": null
+}

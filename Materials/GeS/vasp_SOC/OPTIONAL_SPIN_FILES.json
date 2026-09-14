@@ -1,0 +1,30 @@
+{
+  "schema": "wanniernlqg-tutorials.optional-spin-files",
+  "schema_version": "1.0",
+  "files": [
+    {
+      "path": "GeS.spn",
+      "bytes": 70158004,
+      "sha256": "611b19e4f3e97077188e72919962c998331cc963b2266382f9af571507384fab",
+      "role": "optional_spin_runtime"
+    },
+    {
+      "path": "GeS.chk",
+      "bytes": 26464233,
+      "sha256": "cebd55919a12b613bb10125de745cafe7b061fb9ee0b34d780b7f4fc7e51b5c9",
+      "role": "optional_spin_runtime"
+    },
+    {
+      "path": "GeS.eig",
+      "bytes": 947520,
+      "sha256": "5faba0f725c6463c66f249bdcf94c56fd4afba2ee647b3d665159786c9638dc7",
+      "role": "optional_spin_runtime"
+    },
+    {
+      "path": "GeS.mmn",
+      "bytes": 644496822,
+      "sha256": "3ae1dacbd259bce8dc8c761bdf513cf0afdec6bac1c55eb852379fc1724af5ce",
+      "role": "optional_spin_runtime"
+    }
+  ]
+}

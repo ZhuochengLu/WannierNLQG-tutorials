@@ -1,0 +1,55 @@
+{
+  "schema": "wanniernlqg-tutorials.source-inputs",
+  "schema_version": "1.0",
+  "material": "GeS",
+  "files": [
+    {
+      "path": "Materials/GeS/vasp_SOC/POSCAR",
+      "bytes": 743,
+      "sha256": "6fb4623d399f51858e130c41b5bb958c39bedd0e54261cfbcc0e842d58b843c1",
+      "role": "provenance_input"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/INCAR",
+      "bytes": 2381,
+      "sha256": "0d02e54a25726249aed0ee5ecf9b3ae799d18d4a82c7d0550623c15a9ecaaebc",
+      "role": "provenance_input"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/KPOINTS",
+      "bytes": 40,
+      "sha256": "8bf9261000ce93768a52fba84c5d08c34c3d243d6aa0969c639dc8730a729454",
+      "role": "provenance_input"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/KPOINTS.band_path",
+      "bytes": 300,
+      "sha256": "07b2bf5375acf6d8086dfffd3d024bb6d12cd45dd8ee3f7fda15c36525215914",
+      "role": "provenance_input"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/EIGENVAL",
+      "bytes": 982453,
+      "sha256": "76621fdb17a6024f3161a091c4fc68b329e804b8ce762102e89b3ccb9a0d321e",
+      "role": "provenance_input"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/GeS.win",
+      "bytes": 9811,
+      "sha256": "eb229b7120d892207774ffa16ddc22597f7b47400cac79aa9df9bee503df584a",
+      "role": "provenance_input"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/GeS_tb.dat",
+      "bytes": 26026566,
+      "sha256": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d",
+      "role": "runtime_model"
+    },
+    {
+      "path": "Materials/GeS/vasp_SOC/POTCAR.txt",
+      "bytes": 381,
+      "sha256": "6b82825773577b8d6187b30a15939edafb0d3a312dcc7994acbf96de4e3638fb",
+      "role": "pseudopotential_provenance_only"
+    }
+  ]
+}

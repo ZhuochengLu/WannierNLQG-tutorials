@@ -1,0 +1,333 @@
+{
+  "comparisons": [],
+  "datasets": [
+    {
+      "array_shape": [
+        200,
+        24
+      ],
+      "component_count": 24,
+      "components": [
+        "xxxx",
+        "xxxy",
+        "xxyx",
+        "xxyy",
+        "xyxx",
+        "xyxy",
+        "xyyx",
+        "xyyy",
+        "xzxx",
+        "xzxy",
+        "xzyx",
+        "xzyy",
+        "yxxx",
+        "yxxy",
+        "yxyx",
+        "yxyy",
+        "yyxx",
+        "yyxy",
+        "yyyx",
+        "yyyy",
+        "yzxx",
+        "yzxy",
+        "yzyx",
+        "yzyy"
+      ],
+      "energy_unit": "eV",
+      "label": "integral_injection_spin_current_conventional",
+      "omega_count": 200,
+      "omega_maximum_ev": 4.0,
+      "omega_minimum_ev": 0.0,
+      "response_unit": "output units"
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 292682,
+      "path": "./examples/03_integral_spin_responses/results/reference/integral_injection_spin_current_conventional/GeS_isc_conv.dat",
+      "role": "response_tensor",
+      "sha256": "45ebae7247bcc2e19a802db658babebea54f26fb4ff54ffa4485e3ebde55f64b"
+    },
+    {
+      "bytes": 599,
+      "path": "./examples/03_integral_spin_responses/plot_configs/integral_injection_spin_current_conventional.json",
+      "role": "visualization_config",
+      "sha256": "2cbb31d266018509ca8180d264299f2f874b26d0041b52839d14266685c1840b"
+    }
+  ],
+  "notes": [
+    "Omega interpolation is not implemented; comparison requires an exactly identical grid."
+  ],
+  "outputs": [
+    {
+      "bytes": 61102,
+      "path": "./examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.pdf",
+      "role": "plot_pdf",
+      "sha256": "d5a538e4c6db8f9d98401a1eac04683dad5fa0cc9230ee889fac38c07cd49009"
+    },
+    {
+      "bytes": 183164,
+      "path": "./examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.png",
+      "role": "plot_png",
+      "sha256": "d617090851f4ee6b3f4a698c6dd87a94febf7cb27f3c790c2b86a92b9d63f09f"
+    }
+  ],
+  "plot_kind": "response_integral",
+  "production_eligible": false,
+  "qualification": "PRESENTATION_ONLY",
+  "qualification_note": "Visualization does not recompute or promote numerical, physical, or production qualification.",
+  "resolved_config": {
+    "_config_source": "./examples/03_integral_spin_responses/plot_configs/integral_injection_spin_current_conventional.json",
+    "compare": "",
+    "compare_label": "Comparison",
+    "components": "yyyy",
+    "curves": {
+      "integral_injection_spin_current_conventional": {
+        "linewidth": 1.6,
+        "marker": ""
+      }
+    },
+    "diagnostic_banner": "",
+    "effective_curves": {
+      "integral_injection_spin_current_conventional": {
+        "color": "#606060",
+        "linestyle": "-",
+        "linewidth": 1.6,
+        "marker": "",
+        "markeredgecolor": "",
+        "markerfacecolor": "none",
+        "markersize": 4.0,
+        "markevery": 8,
+        "zorder": 2
+      }
+    },
+    "effective_panel_labels": [
+      {
+        "component": "yyyy",
+        "title": "$\\sigma^{\\mathrm{yyyy}}$",
+        "ylabel": "$\\mathrm{Re}\\,\\sigma^{\\mathrm{yyyy}}\\ \\mathrm{(native\\ output\\ units)}$"
+      }
+    ],
+    "effective_shared_ylabel": "$\\mathrm{Re}\\,\\sigma\\ \\mathrm{(native\\ output\\ units)}$",
+    "effective_x_window": [
+      0.0,
+      4.0
+    ],
+    "effective_xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "effective_xlabel_layout": {
+      "font_size_source": "style.axis_font_size",
+      "placements": [
+        {
+          "bottom_layout_adjustment_figure_fraction": 0.0,
+          "font_size_source": "style.axis_font_size",
+          "horizontal_center_difference_canvas_pixels": 0.0,
+          "inside_figure": true,
+          "labelpad_points": 4.0,
+          "minimum_canvas_padding_pixels": 2.0,
+          "page": 1,
+          "placement_scope": "axes_panel",
+          "position_source": "axes.set_xlabel",
+          "rendered_font_size_points": 14.0,
+          "requested_font_size_points": 14.0,
+          "shared_y_figure_fraction": null,
+          "target_axes_union_bbox_canvas_pixels": [
+            76.8,
+            54.40000000000001,
+            470.4,
+            319.59999999999997
+          ],
+          "target_panel": "yyyy",
+          "vertical_gap_canvas_pixels": 24.16853682371662,
+          "xlabel_bbox_canvas_pixels": [
+            241.6559035074633,
+            12.33193449234426,
+            305.54409649253665,
+            30.23146317628339
+          ]
+        }
+      ],
+      "text": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+      "text_source": "automatic"
+    },
+    "input": "./examples/03_integral_spin_responses/results/reference/integral_injection_spin_current_conventional/GeS_isc_conv.dat",
+    "label": "integral_injection_spin_current_conventional",
+    "legend_bbox_to_anchor": null,
+    "legend_columns": null,
+    "legend_frame": null,
+    "legend_location": "",
+    "maximum_page_pixels": 32000000,
+    "mode": "single",
+    "output": {
+      "formats": [
+        "pdf",
+        "png"
+      ],
+      "stem": "./examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional"
+    },
+    "panel_columns": 3,
+    "panel_size_inches": [
+      4.8,
+      3.4
+    ],
+    "panels_per_page": 27,
+    "part": "real",
+    "scale": 1.0,
+    "share_y": false,
+    "style": {
+      "axes_linewidth": 1.1,
+      "axis_font_size": 14.0,
+      "colorbar_tick_font_size": 11.0,
+      "dpi": 600,
+      "figsize": [
+        6.4,
+        4.4
+      ],
+      "font_family": "Times New Roman",
+      "font_size": 12.0,
+      "latex": true,
+      "legend": {
+        "bbox_to_anchor": null,
+        "columns": 1,
+        "edgecolor": "#808080",
+        "facecolor": "white",
+        "frame": true,
+        "framealpha": 0.9,
+        "location": "best"
+      },
+      "legend_font_size": 11.0,
+      "major_tick_length": 3.5,
+      "margins": {
+        "bottom": 0.16,
+        "left": 0.16,
+        "right": 0.98,
+        "top": 0.94
+      },
+      "minor_tick_length": 2.8,
+      "minor_ticks": false,
+      "subplot_spacing": {
+        "hspace": 0.34,
+        "wspace": 0.34
+      },
+      "tick_direction": "in",
+      "tick_font_size": 11.0,
+      "tick_width": 1.0,
+      "title_font_size": 14.0
+    },
+    "title": "",
+    "unit": "native output units",
+    "x_window": [
+      0.0,
+      4.0
+    ],
+    "x_window_source": "explicit",
+    "xlabel": "",
+    "xlabel_source": "automatic",
+    "ylabel": "",
+    "ylabel_layout": "per_panel",
+    "ylabel_source": "automatic"
+  },
+  "schema": "wanniernlqg.presentation-plot",
+  "schema_version": "1.0",
+  "script": {
+    "bytes": 207,
+    "path": "package://WannierNLQG@1.0.1/scripts/plot_response_integral.jl",
+    "role": "entry_script",
+    "sha256": "1fa4a5325cf6acc4f38df54545aa0567b0e1c47134bed30a1df379d5149a7cf8"
+  },
+  "transforms": [
+    {
+      "name": "complex_part",
+      "value": "real"
+    },
+    {
+      "name": "scale",
+      "unit": "native output units",
+      "value": 1.0
+    },
+    {
+      "maximum_page_pixels": 32000000,
+      "name": "automatic_pagination",
+      "panel_size_inches": [
+        4.8,
+        3.4
+      ],
+      "panels_per_page": 1,
+      "planned_page_pixel_upper_bound": 5875200,
+      "requested_panels_per_page": 27
+    },
+    {
+      "axis_method": "set_xlim",
+      "final_x_window_ev": [
+        0.0,
+        4.0
+      ],
+      "name": "response_axis_contract",
+      "omega_ev_maximum": 4.0,
+      "omega_ev_minimum": 0.0,
+      "panel_labels": [
+        {
+          "component": "yyyy",
+          "title": "$\\sigma^{\\mathrm{yyyy}}$",
+          "ylabel": "$\\mathrm{Re}\\,\\sigma^{\\mathrm{yyyy}}\\ \\mathrm{(native\\ output\\ units)}$"
+        }
+      ],
+      "shared_ylabel": "$\\mathrm{Re}\\,\\sigma\\ \\mathrm{(native\\ output\\ units)}$",
+      "x_window_source": "explicit",
+      "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+      "xlabel_layout": {
+        "font_size_source": "style.axis_font_size",
+        "placements": [
+          {
+            "bottom_layout_adjustment_figure_fraction": 0.0,
+            "font_size_source": "style.axis_font_size",
+            "horizontal_center_difference_canvas_pixels": 0.0,
+            "inside_figure": true,
+            "labelpad_points": 4.0,
+            "minimum_canvas_padding_pixels": 2.0,
+            "page": 1,
+            "placement_scope": "axes_panel",
+            "position_source": "axes.set_xlabel",
+            "rendered_font_size_points": 14.0,
+            "requested_font_size_points": 14.0,
+            "shared_y_figure_fraction": null,
+            "target_axes_union_bbox_canvas_pixels": [
+              76.8,
+              54.40000000000001,
+              470.4,
+              319.59999999999997
+            ],
+            "target_panel": "yyyy",
+            "vertical_gap_canvas_pixels": 24.16853682371662,
+            "xlabel_bbox_canvas_pixels": [
+              241.6559035074633,
+              12.33193449234426,
+              305.54409649253665,
+              30.23146317628339
+            ]
+          }
+        ],
+        "text": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+        "text_source": "automatic"
+      },
+      "xlabel_source": "automatic",
+      "ylabel_layout": "per_panel",
+      "ylabel_source": "automatic"
+    },
+    {
+      "bbox_source": "none",
+      "bbox_to_anchor": null,
+      "columns": 1,
+      "edgecolor": "#808080",
+      "facecolor": "white",
+      "frame": true,
+      "framealpha": 0.9,
+      "location": "best",
+      "location_source": "style.legend",
+      "minor_ticks": false,
+      "name": "response_legend_layout",
+      "placement_scope": "axes_internal",
+      "placements": [],
+      "requested_location": "best"
+    }
+  ]
+}

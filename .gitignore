@@ -1,0 +1,11 @@
+.DS_Store
+Manifest.toml.bak
+Materials/GeS/vasp_SOC/GeS.spn
+Materials/GeS/vasp_SOC/GeS.chk
+Materials/GeS/vasp_SOC/GeS.eig
+Materials/GeS/vasp_SOC/GeS.mmn
+examples/*/results/smoke/
+examples/*/results/*/metadata.txt
+examples/*/results/*/WannierNLQG.out
+examples/*/results/*/progress.jsonl
+release-assets/

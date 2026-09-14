@@ -1,0 +1,38 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_iqmk_conv.dat"
+    ],
+    "calculation": "K-slice",
+    "mesh": [
+        200,
+        200
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "task_id": "kslice_interband_quantum_metric_conventional",
+    "component": [
+        2,
+        2
+    ],
+    "band_selection": {
+        "second": [
+            19,
+            20
+        ],
+        "first": [
+            21,
+            22
+        ]
+    },
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_iqmk_conv.dat": "90c9e90495034132ae35ef0aadeddd51b655de006a79b360afac73e6789850bd"
+    },
+    "photon_energy_ev": null
+}

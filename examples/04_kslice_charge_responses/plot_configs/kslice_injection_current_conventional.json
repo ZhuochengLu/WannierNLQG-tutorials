@@ -1,0 +1,27 @@
+{
+  "mode": "single-map",
+  "metadata": "../results/reference/kslice_injection_current_conventional/metadata.txt",
+  "panels": [
+    {
+      "id": "real_part",
+      "real": "../results/reference/kslice_injection_current_conventional/GeS_ick_r_conv.dat",
+      "title": "Injection Current",
+      "order": 1
+    }
+  ],
+  "coordinate": "fractional",
+  "projection": "intrinsic-plane",
+  "periodic_centered": true,
+  "part": "real",
+  "norm": "diverging",
+  "percentile": 99.5,
+  "cmap": "RdBu_r",
+  "colorbar_label": "native output units",
+  "output": {
+    "stem": "../figures/kslice_injection_current_conventional",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

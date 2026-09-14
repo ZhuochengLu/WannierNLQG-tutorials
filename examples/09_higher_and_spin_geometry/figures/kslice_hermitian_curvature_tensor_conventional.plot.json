@@ -1,0 +1,211 @@
+{
+  "comparisons": [],
+  "datasets": [
+    {
+      "calculation": "kslice",
+      "case_root": ".",
+      "k_mesh": [
+        200,
+        200
+      ],
+      "kslice_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kslice_vector_1": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "kslice_vector_2": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "method": "conventional",
+      "model_file": "Materials/GeS/vasp_SOC/GeS_tb.dat",
+      "model_input_mode": "legacy",
+      "model_sha256": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d",
+      "outputs": [
+        "GeS_hctk_r_conv.dat",
+        "GeS_hctk_i_conv.dat"
+      ],
+      "quantity": "hermitian_curvature_tensor"
+    },
+    {
+      "array_shape": [
+        200,
+        200
+      ],
+      "imag": null,
+      "panel_id": "real_part",
+      "real": "./examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/GeS_hctk_r_conv.dat"
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 8215,
+      "path": "./examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/metadata.txt",
+      "role": "kslice_metadata",
+      "sha256": "f6291a540637d2cde7e8df10bc63d2ad67de9b592fd07317a0c89965a36b4e40"
+    },
+    {
+      "bytes": 708,
+      "path": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_hermitian_curvature_tensor_conventional.json",
+      "role": "visualization_config",
+      "sha256": "1f988a128b0e69b93d3bfcc9af82dff936f9739e4a491178e4a59e92a66c6e8e"
+    },
+    {
+      "bytes": 835683,
+      "path": "./examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/GeS_hctk_r_conv.dat",
+      "role": "kslice_real:real_part",
+      "sha256": "326556f503632f3e8cdb88664f6f6787aa7f606fdca4e5061728805d4e783ac8"
+    }
+  ],
+  "notes": [
+    "No transform or real/imag pairing is inferred from a filename; panel pairing is explicit.",
+    "Cartesian plots use the declared model lattice after SHA-256 validation and pcolormesh cell geometry."
+  ],
+  "outputs": [
+    {
+      "bytes": 142880,
+      "path": "./examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.pdf",
+      "role": "plot_pdf",
+      "sha256": "8141b29d341442f6f8d8f7fdbfb86e829093a16a3a2b82ce522f665576c9807a"
+    },
+    {
+      "bytes": 293099,
+      "path": "./examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.png",
+      "role": "plot_png",
+      "sha256": "488dc8f2421b2fc38e924d944da3e24432501056b4bc25068e642d9d89eca5dc"
+    }
+  ],
+  "plot_kind": "kslice",
+  "production_eligible": false,
+  "qualification": "PRESENTATION_ONLY",
+  "qualification_note": "Visualization does not recompute or promote numerical, physical, or production qualification.",
+  "resolved_config": {
+    "_config_source": "./examples/09_higher_and_spin_geometry/plot_configs/kslice_hermitian_curvature_tensor_conventional.json",
+    "cmap": "RdBu_r",
+    "colorbar_label": "native output units",
+    "coordinate": "fractional",
+    "data": [],
+    "diagnostic_banner": "",
+    "explicit_projection_axes": null,
+    "imag": [],
+    "linthresh": 0.001,
+    "metadata": "./examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/metadata.txt",
+    "mode": "single-map",
+    "model_file": "",
+    "norm": "diverging",
+    "output": {
+      "formats": [
+        "pdf",
+        "png"
+      ],
+      "stem": "./examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional"
+    },
+    "panel_columns": 3,
+    "panel_manifest": "",
+    "panels": [
+      {
+        "id": "real_part",
+        "order": 1,
+        "real": "./examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/GeS_hctk_r_conv.dat",
+        "title": "Hermitian Curvature Tensor"
+      }
+    ],
+    "part": "real",
+    "percentile": 99.5,
+    "periodic_centered": true,
+    "projection": "intrinsic-plane",
+    "style": {
+      "axes_linewidth": 1.1,
+      "axis_font_size": 14.0,
+      "colorbar_tick_font_size": 11.0,
+      "dpi": 600,
+      "figsize": [
+        6.4,
+        4.4
+      ],
+      "font_family": "Times New Roman",
+      "font_size": 12.0,
+      "latex": true,
+      "legend": {
+        "bbox_to_anchor": null,
+        "columns": 1,
+        "edgecolor": "#808080",
+        "facecolor": "white",
+        "frame": true,
+        "framealpha": 0.9,
+        "location": "best"
+      },
+      "legend_font_size": 11.0,
+      "major_tick_length": 3.5,
+      "margins": {
+        "bottom": 0.16,
+        "left": 0.16,
+        "right": 0.98,
+        "top": 0.94
+      },
+      "minor_tick_length": 2.8,
+      "minor_ticks": false,
+      "subplot_spacing": {
+        "hspace": 0.34,
+        "wspace": 0.34
+      },
+      "tick_direction": "in",
+      "tick_font_size": 11.0,
+      "tick_width": 1.0,
+      "title_font_size": 14.0
+    },
+    "title": "",
+    "vmax": null,
+    "vmin": null,
+    "xlabel": "",
+    "ylabel": ""
+  },
+  "schema": "wanniernlqg.presentation-plot",
+  "schema_version": "1.0",
+  "script": {
+    "bytes": 205,
+    "path": "package://WannierNLQG@1.0.1/scripts/plot_kslice.jl",
+    "role": "entry_script",
+    "sha256": "6013be650f0f634939c8005dafd9f47561aaa4bb3823769f6bff5747fbb744e9"
+  },
+  "transforms": [
+    {
+      "cmap": "RdBu_r",
+      "colorbar_label": "native output units",
+      "colorbar_layout": {
+        "axes_bbox_pixels": [
+          180.61999999999998,
+          70.40000000000002,
+          523.8199999999999,
+          413.6
+        ],
+        "colorbar_bbox_pixels": [
+          531.8199999999999,
+          70.40000000000002,
+          548.98,
+          413.6
+        ],
+        "output_dpi": 600,
+        "placement": "axes_grid1_explicit_cax",
+        "y0_difference_output_pixels": 0.0,
+        "y1_difference_output_pixels": 0.0
+      },
+      "complex_part": "real",
+      "coordinate": "fractional",
+      "linthresh": 0.001,
+      "norm": "diverging",
+      "operations": [],
+      "order": 1,
+      "panel_id": "real_part",
+      "percentile": 99.5,
+      "vmax": 0.8971027524558804,
+      "vmin": -0.8971027524558804
+    }
+  ]
+}

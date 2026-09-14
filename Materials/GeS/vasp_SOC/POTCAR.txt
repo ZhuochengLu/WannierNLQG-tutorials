@@ -1,0 +1,9 @@
+POTCAR is intentionally not distributed.
+
+The source calculation used the following licensed VASP PAW-PBE datasets, in this order:
+
+1. PAW_PBE Ge 05Jan2001 (ENMAX 173.807 eV)
+2. PAW_PBE S 06Sep2000 (ENMAX 258.689 eV)
+
+The INCAR uses ENCUT = 400 eV. Obtain the corresponding POTCAR data from a licensed
+VASP distribution and concatenate the datasets in the Ge, S order shown above.

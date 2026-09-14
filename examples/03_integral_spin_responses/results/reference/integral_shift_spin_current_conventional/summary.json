@@ -1,0 +1,32 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_ssc_conv.dat"
+    ],
+    "calculation": "Integral",
+    "mesh": [
+        100,
+        100,
+        1
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "fermi_energy_ev": -2.5,
+    "task_id": "integral_shift_spin_current_conventional",
+    "temperature_k": 0,
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_ssc_conv.dat": "20438bbb3280d74c4fc5d0e6e005cb413e250bc20993453c237387c5a38a6ba2"
+    },
+    "component_for_plot": [
+        2,
+        2,
+        2,
+        2
+    ]
+}

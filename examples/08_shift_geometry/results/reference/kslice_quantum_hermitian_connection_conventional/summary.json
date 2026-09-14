@@ -1,0 +1,41 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_qhck_i_conv.dat",
+        "GeS_qhck_r_conv.dat"
+    ],
+    "calculation": "K-slice",
+    "mesh": [
+        200,
+        200
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "task_id": "kslice_quantum_hermitian_connection_conventional",
+    "component": [
+        2,
+        2,
+        2
+    ],
+    "band_selection": {
+        "conduction": [
+            21,
+            22
+        ],
+        "valence": [
+            19,
+            20
+        ]
+    },
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_qhck_i_conv.dat": "3113dc1edcd50ad30fbf147d1bcc5211effe8a29d010a413bffe57cfd41b8f12",
+        "GeS_qhck_r_conv.dat": "28598052c79382cdeabaf4aa23f70a5b81aac7b0dd5fe20f26de57a932aa7340"
+    },
+    "photon_energy_ev": null
+}

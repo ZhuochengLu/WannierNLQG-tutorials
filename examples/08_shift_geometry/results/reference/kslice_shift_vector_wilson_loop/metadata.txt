@@ -1,0 +1,163 @@
+[Run]
+execution_mode         = shared_sampling_per_task
+system_name            = GeS
+calculation            = kslice
+tasks.count            = 1
+quantity               = shift_vector
+method                 = wilson_loop
+task                   = shift_vector_kslice
+normalized_quantity    = shift_vector
+normalized_method      = wilson_loop
+normalized_calculation = kslice
+
+[Input]
+case_root                       = .
+run_dir                         = EPHEMERAL_RUN_DIRECTORY_OMITTED
+model_file                      = Materials/GeS/vasp_SOC/GeS_tb.dat
+model_sha256                    = dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d
+model_input_mode                = legacy
+operator_demand                 = hamiltonian,position
+bloch_phase_convention_storage  = Convention_II_R_only
+bloch_phase_convention_runtime  = Convention_II
+wannier_center_source           = tb_position_R0_diagonal
+spin_enabled                    = false
+wannier_center_count            = 32
+wannier_center_cartesian_min_A  = -1.135987600000e+01
+wannier_center_cartesian_max_A  = 1.205206600000e+01
+wannier_center_cartesian_sha256 = f1c3869ca82bc2c74c7500fbfb25ab7abfb6e56a75a7066f48a510aa1114c22d
+
+[Tasks]
+matrix_families   = [wilson_loop_response_shift_vector_q0]
+task.1.requested  = ("shift_vector", "wilson_loop", "k_slice")
+task.1.normalized = (:shift_vector, :wilson_loop, :kslice, :shift_vector_kslice)
+task.1.label      = shift_vector/k_slice/wilson_loop
+task.1.output     = GeS_svk_r_wilson.dat
+
+[Numerics]
+k_mesh                                = (200, 200)
+fourier_backend                       = direct
+real_space_replica_policy             = input
+wsvec_file                            = nothing
+mp_grid                               = nothing
+wigner_seitz_tolerance                = 1.0e-5
+wigner_seitz_search_size              = 3
+NKdiv                                 = nothing
+NKFFT                                 = nothing
+fermi_energy                          = 0.0
+temperature                           = 0.0
+broadening                            = 0.04
+broadening_type                       = Gaussian
+transition_window_factor              = 5.0
+denominator_regularization            = 0.001
+spatial_dimension                     = 2
+band_window_size                      = -1
+response_output_digits                = 17
+response_symmetry_report_enabled      = false
+tensor_indices                        = (2, 2, 2)
+band_selection                        = ([21, 22], [19, 20])
+shift_vector_band_selection_expanded  = ([21, 22], [19, 20])
+shift_vector_output_r_wilson_loop     = GeS_svk_r_wilson.dat
+shift_vector_output_i_wilson_loop     = GeS_svk_i_wilson.dat
+kslice_origin                         = (0.0, 0.0, 0.0)
+kslice_vector_1                       = (1.0, 0.0, 0.0)
+kslice_vector_2                       = (0.0, 1.0, 0.0)
+photon_momentum                       = (0.0, 0.0, 0.0)
+finite_difference_step                = 0.0001
+wannier_center_convention_requested   = Convention_II
+wannier_center_convention_resolved    = Convention_II
+projector_algorithm                   = Native
+projector_common_source_transport     = false
+geometric_loop_algorithm              = BlockProjectedSubspaceCovariantSplit
+geometric_loop_link_definition        = U_left_dagger_B_frame_U_right
+geometric_loop_frame_connector        = Convention_I_identity_Convention_II_Dleft_Dright_dagger
+geometric_loop_derivative_definition  = block_transported_partial_minus_i_aVV_JVC_plus_i_JVC_aCC
+geometric_loop_external_connection    = SourceBerryPlusIHsourceNAligned
+geometric_loop_transport_scope        = central_degeneracy_block_endpoints
+geometric_loop_connection_scope       = central_valence_and_conduction_blocks_only
+geometric_loop_cache_key              = valence_group_start_conduction_group_start_derivative_axis_insertion_direction
+geometric_loop_q0_wilson_reference    = CovariantWilson_SubspaceCovariantSplit
+geometric_loop_shift_vector_algorithm = CovariantLogLoop
+geometric_loop_polar_normalization    = false
+wilson_derivative_algorithm           = SubspaceCovariantSplit
+wilson_derivative_definition          = transported_partial_minus_i_AintV_X_plus_i_X_AintC
+wilson_loop_link_definition           = U_left_dagger_B_frame_U_right
+wilson_frame_connector                = Convention_I_identity_Convention_II_Dleft_Dright_dagger
+wilson_polar_normalization            = false
+wilson_shift_vector_algorithm         = CovariantLogLoop
+external_terms_enabled                = true
+degeneracy_threshold                  = 0.002
+
+[Replica]
+schema                               = wanniernlqg.runtime-replica-summary
+requested_policy                     = input
+effective_policy                     = input
+source                               = input
+mapping_sha256                       = b5b17e4108141a12a50a4c4ab95ed1e92887f06a23e5d67c318be46a037fc5ec
+mapping_digest_scheme                = sha256:replica-map-v2/source-r/n-r/ordered-pair-absolute-images
+wsvec_file                           = nothing
+wsvec_sha256                         = nothing
+mp_grid                              = nothing
+wigner_seitz_tolerance               = 1.0e-5
+wigner_seitz_search_size             = 3
+input_minimum_distance_materialized  = false
+output_minimum_distance_materialized = false
+replica_transformed_this_run         = false
+input_num_r_vectors                  = 165
+effective_num_r_vectors              = 165
+scalar_degeneracy_applied            = false
+pair_degeneracy_applied              = false
+
+[Fourier]
+backend                      = direct
+NKdiv                        = nothing
+NKFFT                        = nothing
+factor_source                = not_applicable
+estimated_memory_bytes       = 0
+memory_limit_bytes           = 0
+load_imbalance               = 1.0
+blocks_per_rank              = Int64[]
+kpoints_per_rank             = Int64[]
+task_signatures              = [shift_vector/wilson_loop/kslice]
+union_capabilities           = Symbol[]
+union_fourier_groups         = Symbol[]
+union_offset_signatures      = []
+union_group_offset_counts    = NamedTuple[]
+groups                       = []
+offset_count                 = 0
+cache_entries                = 0
+allocated_bytes              = 0
+allocated_memory_limit_bytes = 0
+pack_seconds                 = 0.0
+fft_seconds                  = 0.0
+extract_seconds              = 0.0
+fft_calls                    = 0
+cache_hits                   = 0
+
+[PhotonEnergies]
+photon_energies.count     = 0
+photon_energies.min_eV    = n/a
+photon_energies.max_eV    = n/a
+photon_energies.values_eV = (empty)
+
+[Progress]
+progress_enabled          = false
+progress_percent_interval = 5
+progress_verbosity        = normal
+progress_out_path         = 
+progress_jsonl_path       = 
+
+[Outputs]
+outputs.count = 2
+output.1      = GeS_svk_r_wilson.dat
+output.2      = GeS_svk_i_wilson.dat
+
+[EffectiveTaskConfiguration]
+id          = kslice_shift_vector_wilson_loop
+quantity    = shift_vector
+method      = wilson_loop
+calculation = k_slice
+physics     = NamedTuple()
+numerics    = (denominator_regularization = 0.001, degeneracy_threshold = 0.002, finite_difference_step = 0.0001)
+observable  = (kind = "kslice", component = (2, 2, 2), bands = (kind = "transition", conduction = [21, 22], valence = [19, 20]))
+output_root = EPHEMERAL_RUN_DIRECTORY_OMITTED
+

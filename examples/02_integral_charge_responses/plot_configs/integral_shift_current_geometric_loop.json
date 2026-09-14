@@ -1,0 +1,29 @@
+{
+  "mode": "single",
+  "input": "../results/reference/integral_shift_current_geometric_loop/GeS_sc_geo.dat",
+  "label": "integral_shift_current_geometric_loop",
+  "components": "yyy",
+  "part": "real",
+  "unit": "native output units",
+  "x_window": [
+    0.0,
+    4.0
+  ],
+  "panel_size_inches": [
+    4.8,
+    3.4
+  ],
+  "curves": {
+    "integral_shift_current_geometric_loop": {
+      "marker": "",
+      "linewidth": 1.6
+    }
+  },
+  "output": {
+    "stem": "../figures/integral_shift_current_geometric_loop",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  }
+}

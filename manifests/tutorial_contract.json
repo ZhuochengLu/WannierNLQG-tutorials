@@ -1,0 +1,36 @@
+{
+  "schema": "wanniernlqg-tutorials.contract",
+  "schema_version": "1.0",
+  "package_version": "1.0.1",
+  "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+  "integral_reference_mesh": [
+    100,
+    100,
+    1
+  ],
+  "kslice_reference_mesh": [
+    200,
+    200
+  ],
+  "fermi_energy_ev": -2.5,
+  "temperature_k": 0.0,
+  "broadening_ev": 0.06,
+  "denominator_regularization_ev": 0.001,
+  "finite_difference_step_A_inverse": 0.0001,
+  "degeneracy_threshold_ev": 0.002,
+  "subspaces": {
+    "V": [
+      19,
+      20
+    ],
+    "C1": [
+      21,
+      22
+    ],
+    "C2": [
+      23,
+      24
+    ]
+  },
+  "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+}

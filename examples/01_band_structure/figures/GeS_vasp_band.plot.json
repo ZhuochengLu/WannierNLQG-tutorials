@@ -1,0 +1,392 @@
+{
+  "comparisons": [],
+  "datasets": [
+    {
+      "EIGENVAL_kpoints_authoritative": true,
+      "KPOINTS_coordinate_mode": "reciprocal",
+      "KPOINTS_role": "line_mode_segment_contract_only",
+      "array_shape": [
+        204,
+        144
+      ],
+      "band_count": 144,
+      "complete_source_band_set_loaded": true,
+      "duplicate_segment_endpoints_retained": true,
+      "energy_convention": "absolute",
+      "energy_reference_ev": -2.5,
+      "energy_unit": "eV",
+      "id": "vasp",
+      "kpoint_count": 204,
+      "label": "VASP",
+      "lattice_convention": "row_lattice_A",
+      "lattice_rows_angstrom": [
+        [
+          3.6410803001967427,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.543795571986208,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          25.39605724121797
+        ]
+      ],
+      "points_per_segment": 51,
+      "qualification_label": "PRESENTATION_ONLY",
+      "reciprocal_lattice_convention": "B=2pi*A^{-T}",
+      "reciprocal_rows_inverse_angstrom": [
+        [
+          1.7256376649644556,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.3828054558433946,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.24740790460111006
+        ]
+      ],
+      "segment_count": 4,
+      "selected_band_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "source_band_count": 144,
+      "source_type": "vasp_eigenval_kpoints",
+      "spin_channel": 1,
+      "spin_count": 1
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 982453,
+      "path": "./Materials/GeS/vasp_SOC/EIGENVAL",
+      "role": "vasp_eigenval",
+      "sha256": "76621fdb17a6024f3161a091c4fc68b329e804b8ce762102e89b3ccb9a0d321e"
+    },
+    {
+      "bytes": 300,
+      "path": "./Materials/GeS/vasp_SOC/KPOINTS.band_path",
+      "role": "vasp_kpoints_line_mode",
+      "sha256": "07b2bf5375acf6d8086dfffd3d024bb6d12cd45dd8ee3f7fda15c36525215914"
+    },
+    {
+      "bytes": 743,
+      "path": "./Materials/GeS/vasp_SOC/POSCAR",
+      "role": "vasp_poscar",
+      "sha256": "6fb4623d399f51858e130c41b5bb958c39bedd0e54261cfbcc0e842d58b843c1"
+    },
+    {
+      "bytes": 631,
+      "path": "./examples/01_band_structure/plot_configs/vasp_band.json",
+      "role": "visualization_config",
+      "sha256": "76f7d2c8f80e17308d90f25ca4f284cd7eeead1df369267cbbf63c95c1d93026"
+    }
+  ],
+  "notes": [
+    "No interpolation, fitted offset, or dataset-specific energy shift was applied.",
+    "Equal-bandwise numerical comparison was computed."
+  ],
+  "outputs": [
+    {
+      "bytes": 76274,
+      "path": "./examples/01_band_structure/figures/GeS_vasp_band.pdf",
+      "role": "plot_pdf",
+      "sha256": "8b7f089b866974ed913205f175f77c27dd3ddfe8d369604c3f083d2ee7e4fe1a"
+    },
+    {
+      "bytes": 470506,
+      "path": "./examples/01_band_structure/figures/GeS_vasp_band.png",
+      "role": "plot_png",
+      "sha256": "6b1efd4dde9d73fb9e7737ba23b1106dc7673b660af77489fe431fcd67b4ee1f"
+    }
+  ],
+  "plot_kind": "band_structure",
+  "production_eligible": false,
+  "qualification": "PRESENTATION_ONLY",
+  "qualification_note": "Visualization does not recompute or promote numerical, physical, or production qualification.",
+  "resolved_config": {
+    "_config_source": "./examples/01_band_structure/plot_configs/vasp_band.json",
+    "comparison_audit": "equal_bandwise",
+    "curves": {},
+    "diagnostic_banner": "",
+    "display_window_policy": {
+      "maximum_unmatched_reference_states_per_k": null,
+      "minimum_unmatched_reference_states_per_k": 0,
+      "mode": "as_configured",
+      "padding_ev": 0.0,
+      "unfitted_reference_bands_above": 1,
+      "unfitted_reference_bands_below": 1
+    },
+    "effective_curves": {
+      "vasp": {
+        "color": "#606060",
+        "linestyle": "-",
+        "linewidth": 1.4,
+        "marker": "",
+        "markeredgecolor": "",
+        "markerfacecolor": "none",
+        "markersize": 4.0,
+        "markevery": 1,
+        "zorder": 2
+      }
+    },
+    "energy_window": [
+      -5.0,
+      5.0
+    ],
+    "error_assessment": {
+      "energy_tolerance_ev": 1e-10,
+      "legend_columns": 2,
+      "legend_location": "upper right",
+      "maps": [],
+      "mode": "none",
+      "output_suffix": "_errors",
+      "title": "",
+      "y_window": null,
+      "ylabel": "Matched energy error (eV)"
+    },
+    "mode": "single",
+    "models": [],
+    "output": {
+      "formats": [
+        "pdf",
+        "png"
+      ],
+      "stem": "./examples/01_band_structure/figures/GeS_vasp_band"
+    },
+    "reference": {
+      "eigenval": "./Materials/GeS/vasp_SOC/EIGENVAL",
+      "energy_convention": "absolute",
+      "energy_reference_ev": -2.5,
+      "energy_unit": "ev",
+      "id": "vasp",
+      "kpoint_coordinate_convention": "fractional_crystal",
+      "kpoints": "./Materials/GeS/vasp_SOC/KPOINTS.band_path",
+      "label": "VASP",
+      "poscar": "./Materials/GeS/vasp_SOC/POSCAR",
+      "spin_channel": 1,
+      "type": "vasp_eigenval_kpoints"
+    },
+    "style": {
+      "axes_linewidth": 1.1,
+      "axis_font_size": 14.0,
+      "colorbar_tick_font_size": 11.0,
+      "dpi": 600,
+      "figsize": [
+        6.4,
+        4.4
+      ],
+      "font_family": "Times New Roman",
+      "font_size": 12.0,
+      "latex": true,
+      "legend": {
+        "bbox_to_anchor": null,
+        "columns": 1,
+        "edgecolor": "#808080",
+        "facecolor": "white",
+        "frame": true,
+        "framealpha": 0.9,
+        "location": "best"
+      },
+      "legend_font_size": 11.0,
+      "major_tick_length": 3.5,
+      "margins": {
+        "bottom": 0.16,
+        "left": 0.16,
+        "right": 0.98,
+        "top": 0.94
+      },
+      "minor_tick_length": 2.8,
+      "minor_ticks": false,
+      "subplot_spacing": {
+        "hspace": 0.34,
+        "wspace": 0.34
+      },
+      "tick_direction": "in",
+      "tick_font_size": 11.0,
+      "tick_width": 1.0,
+      "title_font_size": 14.0
+    },
+    "title": "",
+    "unfitted_reference_curve": {
+      "color": "#C2C2C2",
+      "linestyle": "-",
+      "linewidth": 0.9,
+      "marker": "",
+      "markeredgecolor": "",
+      "markerfacecolor": "none",
+      "markersize": 4.0,
+      "markevery": 1,
+      "zorder": 1
+    },
+    "xlabel": "",
+    "ylabel": ""
+  },
+  "schema": "wanniernlqg.presentation-plot",
+  "schema_version": "1.0",
+  "script": {
+    "bytes": 1099,
+    "path": "package://WannierNLQG@1.0.1/scripts/plot_band_structure.jl",
+    "role": "entry_script",
+    "sha256": "415d47b82d17a47aab9689b00bb97ea0128d1c0bb51ec04ae543bdf9ab709f8b"
+  },
+  "transforms": [
+    {
+      "name": "common_energy_reference",
+      "value_ev": -2.5
+    }
+  ]
+}

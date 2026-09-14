@@ -1,0 +1,42 @@
+{
+    "finite_values": true,
+    "output_files": [
+        "GeS_isck_i_conv.dat",
+        "GeS_isck_r_conv.dat"
+    ],
+    "calculation": "K-slice",
+    "mesh": [
+        200,
+        200
+    ],
+    "input_sha256": {
+        "GeS_tb.dat": "dc32b12845c43d0f9a33fa485462613ddd053aaae087312e13354050082fd61d"
+    },
+    "profile": "reference",
+    "julia_threads": 16,
+    "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+    "task_id": "kslice_injection_spin_current_conventional",
+    "component": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "band_selection": {
+        "conduction": [
+            21,
+            22
+        ],
+        "valence": [
+            19,
+            20
+        ]
+    },
+    "package_version": "1.0.1",
+    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "output_sha256": {
+        "GeS_isck_i_conv.dat": "dbaa64d15e0e97efa0364ea45a34f156dc4e1d688daa595318fe6a723855598c",
+        "GeS_isck_r_conv.dat": "475d7989ca0f83ca1cd0ec39575d567c447f54828be255f496cd2ce4935a76ea"
+    },
+    "photon_energy_ev": 3
+}

@@ -1,0 +1,193 @@
+{
+  "schema": "wanniernlqg-tutorials.tasks",
+  "schema_version": "1.0",
+  "count": 31,
+  "tasks": [
+    {
+      "chapter": "01_band_structure",
+      "case_file": "examples/01_band_structure/cases/band_structure.jl",
+      "task_id": "band_structure",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "case_file": "examples/02_integral_charge_responses/cases/shift_current_conventional.jl",
+      "task_id": "integral_shift_current_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "case_file": "examples/02_integral_charge_responses/cases/shift_current_geometric_loop.jl",
+      "task_id": "integral_shift_current_geometric_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "case_file": "examples/02_integral_charge_responses/cases/shift_current_wilson_loop.jl",
+      "task_id": "integral_shift_current_wilson_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "02_integral_charge_responses",
+      "case_file": "examples/02_integral_charge_responses/cases/injection_current_conventional.jl",
+      "task_id": "integral_injection_current_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "03_integral_spin_responses",
+      "case_file": "examples/03_integral_spin_responses/cases/injection_spin_current_conventional.jl",
+      "task_id": "integral_injection_spin_current_conventional",
+      "optional_spin_data": true
+    },
+    {
+      "chapter": "03_integral_spin_responses",
+      "case_file": "examples/03_integral_spin_responses/cases/shift_spin_current_conventional.jl",
+      "task_id": "integral_shift_spin_current_conventional",
+      "optional_spin_data": true
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "case_file": "examples/04_kslice_charge_responses/cases/shift_current_conventional.jl",
+      "task_id": "kslice_shift_current_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "case_file": "examples/04_kslice_charge_responses/cases/shift_current_geometric_loop.jl",
+      "task_id": "kslice_shift_current_geometric_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "case_file": "examples/04_kslice_charge_responses/cases/shift_current_wilson_loop.jl",
+      "task_id": "kslice_shift_current_wilson_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "04_kslice_charge_responses",
+      "case_file": "examples/04_kslice_charge_responses/cases/injection_current_conventional.jl",
+      "task_id": "kslice_injection_current_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "05_kslice_spin_responses",
+      "case_file": "examples/05_kslice_spin_responses/cases/injection_spin_current_conventional.jl",
+      "task_id": "kslice_injection_spin_current_conventional",
+      "optional_spin_data": true
+    },
+    {
+      "chapter": "05_kslice_spin_responses",
+      "case_file": "examples/05_kslice_spin_responses/cases/shift_spin_current_conventional.jl",
+      "task_id": "kslice_shift_spin_current_conventional",
+      "optional_spin_data": true
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "case_file": "examples/06_qg_pairwise/cases/berry_curvature_conventional.jl",
+      "task_id": "kslice_berry_curvature_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "case_file": "examples/06_qg_pairwise/cases/quantum_metric_conventional.jl",
+      "task_id": "kslice_quantum_metric_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "case_file": "examples/06_qg_pairwise/cases/interband_berry_curvature_conventional.jl",
+      "task_id": "kslice_interband_berry_curvature_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "06_qg_pairwise",
+      "case_file": "examples/06_qg_pairwise/cases/interband_quantum_metric_conventional.jl",
+      "task_id": "kslice_interband_quantum_metric_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "case_file": "examples/07_qg_multipoles/cases/berry_curvature_dipole_conventional.jl",
+      "task_id": "kslice_berry_curvature_dipole_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "case_file": "examples/07_qg_multipoles/cases/berry_curvature_quadrupole_conventional.jl",
+      "task_id": "kslice_berry_curvature_quadrupole_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "case_file": "examples/07_qg_multipoles/cases/quantum_metric_dipole_conventional.jl",
+      "task_id": "kslice_quantum_metric_dipole_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "case_file": "examples/07_qg_multipoles/cases/quantum_metric_quadrupole_conventional.jl",
+      "task_id": "kslice_quantum_metric_quadrupole_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "07_qg_multipoles",
+      "case_file": "examples/07_qg_multipoles/cases/quantum_christoffel_symbol_conventional.jl",
+      "task_id": "kslice_quantum_christoffel_symbol_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "case_file": "examples/08_shift_geometry/cases/shift_vector_geometric_loop.jl",
+      "task_id": "kslice_shift_vector_geometric_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "case_file": "examples/08_shift_geometry/cases/shift_vector_wilson_loop.jl",
+      "task_id": "kslice_shift_vector_wilson_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "case_file": "examples/08_shift_geometry/cases/quantum_hermitian_connection_conventional.jl",
+      "task_id": "kslice_quantum_hermitian_connection_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "case_file": "examples/08_shift_geometry/cases/quantum_hermitian_connection_geometric_loop.jl",
+      "task_id": "kslice_quantum_hermitian_connection_geometric_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "08_shift_geometry",
+      "case_file": "examples/08_shift_geometry/cases/quantum_hermitian_connection_wilson_loop.jl",
+      "task_id": "kslice_quantum_hermitian_connection_wilson_loop",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "case_file": "examples/09_higher_and_spin_geometry/cases/hermitian_curvature_tensor_conventional.jl",
+      "task_id": "kslice_hermitian_curvature_tensor_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "case_file": "examples/09_higher_and_spin_geometry/cases/triple_phase_product_conventional.jl",
+      "task_id": "kslice_triple_phase_product_conventional",
+      "optional_spin_data": false
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "case_file": "examples/09_higher_and_spin_geometry/cases/zeeman_interband_berry_curvature_conventional.jl",
+      "task_id": "kslice_zeeman_interband_berry_curvature_conventional",
+      "optional_spin_data": true
+    },
+    {
+      "chapter": "09_higher_and_spin_geometry",
+      "case_file": "examples/09_higher_and_spin_geometry/cases/zeeman_interband_quantum_metric_conventional.jl",
+      "task_id": "kslice_zeeman_interband_quantum_metric_conventional",
+      "optional_spin_data": true
+    }
+  ]
+}

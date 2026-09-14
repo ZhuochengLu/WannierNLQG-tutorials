@@ -1,0 +1,18 @@
+{
+  "mode": "single",
+  "reference": {
+    "type": "wanniernlqg",
+    "id": "GeS_tb",
+    "label": "GeS ordinary TB",
+    "bands": "../results/reference/band_structure/GeS_bands.dat",
+    "path": "../results/reference/band_structure/GeS_kpath.json"
+  },
+  "output": {
+    "stem": "../figures/band_structure",
+    "formats": [
+      "pdf",
+      "png"
+    ]
+  },
+  "ylabel": "$E-E_F$ (eV)"
+}
