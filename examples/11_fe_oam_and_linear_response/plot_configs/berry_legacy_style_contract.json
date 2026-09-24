@@ -1,0 +1,58 @@
+{
+  "schema": "wanniernlqg.fe.berry-legacy-presentation.v2",
+  "status": "PASS",
+  "presentation_only": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "figures": {
+    "sos": {
+      "data_sha256": "92131079c526c50b7d322fc5916df623ec27523c88d4439f1329fe7e718f7b0b",
+      "png_sha256": "e29f93de138a6da9a2f4a66c994c0a09fce0089274eed3b1d4c0141f09b0e39d",
+      "pdf_sha256": "6651c8bbaf4a60c8e6615727eee243549a149672c13c2c78c80d08f869a2ae81",
+      "shape": [
+        200,
+        200
+      ],
+      "coordinate": "legacy_uncentered_periodic_cell",
+      "corner_labels": [
+        "H(001)",
+        "Gamma(101)",
+        "Gamma(000)",
+        "H(100)"
+      ],
+      "norm": "signed-log-exponent-with-linear-core",
+      "linthresh": 1.0,
+      "zero_color": "green",
+      "fixed_symmetric_color_limit": 10000,
+      "clipped_negative_count": 0,
+      "clipped_positive_count": 0,
+      "raw_min": -3415.3709189439833,
+      "raw_max": 4498.9900835459575,
+      "contour_fermi_energy_ev": 5.7156290716733436
+    },
+    "transport_equivalent": {
+      "data_sha256": "68d2342b253922bbdb2acd114dcc46937956e1b112020ce98944fdbdcedbf4a9",
+      "png_sha256": "4d2ed18d2d3c0a288e27ce29947540e47d6b3fd10b836144ee127a490ccda180",
+      "pdf_sha256": "e9e2a7f9914196c9c2988bad4f0bb508347b87f9bd8c468f6843bfb61996fb5d",
+      "shape": [
+        200,
+        200
+      ],
+      "coordinate": "legacy_uncentered_periodic_cell",
+      "corner_labels": [
+        "H(001)",
+        "Gamma(101)",
+        "Gamma(000)",
+        "H(100)"
+      ],
+      "norm": "signed-log-exponent-with-linear-core",
+      "linthresh": 1.0,
+      "zero_color": "green",
+      "fixed_symmetric_color_limit": 10000,
+      "clipped_negative_count": 0,
+      "clipped_positive_count": 0,
+      "raw_min": -272.265713709602,
+      "raw_max": 2717.44225401392,
+      "contour_fermi_energy_ev": 5.7156290716733436
+    }
+  }
+}

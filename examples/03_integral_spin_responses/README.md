@@ -15,7 +15,7 @@ Rank-4 order is `(current direction, electric-field direction 1, electric-field 
 
 ## 2. Inputs
 
-- Model: `Materials/GeS/vasp_SOC/GeS_tb.dat`.
+- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
 - Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
 - This chapter requires the optional `GeS.spn`, `GeS.chk`, `GeS.eig`, and `GeS.mmn` release asset. If absent, `run.jl` prints `SKIPPED_MISSING_OPTIONAL_DATA` and creates no result.
 - Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
@@ -62,6 +62,16 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 ## 6. Figure-reading guide
 
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+
+Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+
+![integral injection spin current conventional](figures/integral_injection_spin_current_conventional.png)  [PDF](figures/integral_injection_spin_current_conventional.pdf) [Plot audit](figures/integral_injection_spin_current_conventional.plot.json)
+
+*Conventional integrated injection spin current, component (2,2,2,2), 0–4 eV; native output units; presentation only.*
+
+![integral shift spin current conventional](figures/integral_shift_spin_current_conventional.png)  [PDF](figures/integral_shift_spin_current_conventional.pdf) [Plot audit](figures/integral_shift_spin_current_conventional.plot.json)
+
+*Conventional integrated shift spin current, component (2,2,2,2), 0–4 eV; native output units; presentation only.*
 
 ## 7. Relation to the manuscript
 

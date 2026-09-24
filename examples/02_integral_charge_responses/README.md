@@ -17,7 +17,7 @@ The component and ordered band selection are explicit in every case file and rep
 
 ## 2. Inputs
 
-- Model: `Materials/GeS/vasp_SOC/GeS_tb.dat`.
+- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
 - Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
 - This chapter needs only the committed ordinary `GeS_tb.dat` model.
 - Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
@@ -70,6 +70,28 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 `GeS_shift_current_methods` overlays Conventional, Geometric Loop, and Wilson Loop on the identical photon-energy grid without interpolation. The plot is a method comparison, not an error plot.
 
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+
+Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+
+![integral shift current conventional](figures/integral_shift_current_conventional.png)  [PDF](figures/integral_shift_current_conventional.pdf) [Plot audit](figures/integral_shift_current_conventional.plot.json)
+
+*Conventional integrated shift current, component (2,2,2), 0–4 eV; native output units; presentation only.*
+
+![integral shift current geometric loop](figures/integral_shift_current_geometric_loop.png)  [PDF](figures/integral_shift_current_geometric_loop.pdf) [Plot audit](figures/integral_shift_current_geometric_loop.plot.json)
+
+*Geometric Loop integrated shift current, component (2,2,2), 0–4 eV; native output units; presentation only.*
+
+![integral shift current wilson loop](figures/integral_shift_current_wilson_loop.png)  [PDF](figures/integral_shift_current_wilson_loop.pdf) [Plot audit](figures/integral_shift_current_wilson_loop.plot.json)
+
+*Wilson Loop integrated shift current, component (2,2,2), 0–4 eV; native output units; presentation only.*
+
+![integral injection current conventional](figures/integral_injection_current_conventional.png)  [PDF](figures/integral_injection_current_conventional.pdf) [Plot audit](figures/integral_injection_current_conventional.plot.json)
+
+*Conventional integrated injection current, component (2,2,2), 0–4 eV; native output units; presentation only.*
+
+![GeS shift current methods](figures/GeS_shift_current_methods.png)  [PDF](figures/GeS_shift_current_methods.pdf) [Plot audit](figures/GeS_shift_current_methods.plot.json)
+
+*Conventional, Geometric Loop, and Wilson Loop shift-current methods on one photon-energy grid; component (2,2,2), native output units; presentation only.*
 
 ## 7. Relation to the manuscript
 

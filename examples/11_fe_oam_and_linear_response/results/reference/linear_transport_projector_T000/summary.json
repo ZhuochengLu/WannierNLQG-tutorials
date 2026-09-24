@@ -1,0 +1,57 @@
+{
+  "task_id": "linear_transport_projector_T000",
+  "package_version": "1.1.0",
+  "package_commit": null,
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "profile": "reference",
+  "reference_reused": false,
+  "mesh": [
+    40,
+    40,
+    40
+  ],
+  "fermi_energy_ev": 5.7156290716733436,
+  "temperature_k": 0,
+  "method": "projector",
+  "family": "linear_transport",
+  "input_sha256": {
+    "Fe_tb.dat": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+    "Fe_fixed_full.h5": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+  },
+  "output_files": [
+    "linear_transport_drude.dat",
+    "linear_transport_quantum_metric.dat",
+    "linear_transport_berry_curvature.dat",
+    "linear_transport_total.dat"
+  ],
+  "output_sha256": {
+    "linear_transport_drude.dat": "0a598c63d694af8d2085786a523c2650f2fbbf9e083884892d9f18240805e085",
+    "linear_transport_quantum_metric.dat": "c715d36b6870bed6b67bb6f3dd4dd32d963242010270491b6548240ef3955770",
+    "linear_transport_berry_curvature.dat": "80b6c4425bd578b88d9a294ed117c7039b35d6b0567197dbce158ddb5383894c",
+    "linear_transport_total.dat": "ee0ef8ead99e8417e9a8f23630152123af2576e6847427f401b186846fbb2339"
+  },
+  "source_provenance": {
+    "linear_transport_drude.dat": {
+      "source_relative": "linear_transport_projector_T000/linear_transport_projector_T000/linear_transport_drude.dat",
+      "sha256": "0a598c63d694af8d2085786a523c2650f2fbbf9e083884892d9f18240805e085"
+    },
+    "linear_transport_quantum_metric.dat": {
+      "source_relative": "linear_transport_projector_T000/linear_transport_projector_T000/linear_transport_quantum_metric.dat",
+      "sha256": "c715d36b6870bed6b67bb6f3dd4dd32d963242010270491b6548240ef3955770"
+    },
+    "linear_transport_berry_curvature.dat": {
+      "source_relative": "linear_transport_projector_T000/linear_transport_projector_T000/linear_transport_berry_curvature.dat",
+      "sha256": "80b6c4425bd578b88d9a294ed117c7039b35d6b0567197dbce158ddb5383894c"
+    },
+    "linear_transport_total.dat": {
+      "source_relative": "linear_transport_projector_T000/linear_transport_projector_T000/linear_transport_total.dat",
+      "sha256": "ee0ef8ead99e8417e9a8f23630152123af2576e6847427f401b186846fbb2339"
+    }
+  },
+  "finite_values": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "wannierization_status": "MAX_ITERATIONS"
+}

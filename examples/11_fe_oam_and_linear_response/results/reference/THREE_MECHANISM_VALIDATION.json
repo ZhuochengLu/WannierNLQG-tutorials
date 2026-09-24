@@ -1,0 +1,21 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-three-mechanism-validation",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "model_source_tree_sha256": "aaf92433a5b3a87849162d0fef744a59544fde97f10e558aa3cb1a1bf151ec2c",
+  "optical_terms": [
+    "drude",
+    "quantum_metric",
+    "berry_curvature",
+    "total"
+  ],
+  "transport_terms": [
+    "drude",
+    "quantum_metric",
+    "berry_curvature",
+    "total"
+  ],
+  "native_file_names": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "export_contract": "THREE_MECHANISM_VALIDATED"
+}

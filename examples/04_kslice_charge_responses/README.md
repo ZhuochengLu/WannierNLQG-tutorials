@@ -17,7 +17,7 @@ The component and ordered band selection are explicit in every case file and rep
 
 ## 2. Inputs
 
-- Model: `Materials/GeS/vasp_SOC/GeS_tb.dat`.
+- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
 - Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
 - This chapter needs only the committed ordinary `GeS_tb.dat` model.
 - Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
@@ -68,6 +68,24 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 ## 6. Figure-reading guide
 
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+
+Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+
+![kslice shift current conventional](figures/kslice_shift_current_conventional.png)  [PDF](figures/kslice_shift_current_conventional.pdf) [Plot audit](figures/kslice_shift_current_conventional.plot.json)
+
+*Conventional shift-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
+
+![kslice shift current geometric loop](figures/kslice_shift_current_geometric_loop.png)  [PDF](figures/kslice_shift_current_geometric_loop.pdf) [Plot audit](figures/kslice_shift_current_geometric_loop.plot.json)
+
+*Geometric Loop shift-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
+
+![kslice shift current wilson loop](figures/kslice_shift_current_wilson_loop.png)  [PDF](figures/kslice_shift_current_wilson_loop.pdf) [Plot audit](figures/kslice_shift_current_wilson_loop.plot.json)
+
+*Wilson Loop shift-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
+
+![kslice injection current conventional](figures/kslice_injection_current_conventional.png)  [PDF](figures/kslice_injection_current_conventional.pdf) [Plot audit](figures/kslice_injection_current_conventional.plot.json)
+
+*Conventional injection-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
 
 ## 7. Relation to the manuscript
 

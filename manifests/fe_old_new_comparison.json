@@ -1,0 +1,654 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-old-new-comparison",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "tasks": {
+    "berry_sos_occupied_xy": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "Fe_bck_sum_conv.dat": {
+          "old_sha256": "92131079c526c50b7d322fc5916df623ec27523c88d4439f1329fe7e718f7b0b",
+          "new_sha256": "92131079c526c50b7d322fc5916df623ec27523c88d4439f1329fe7e718f7b0b",
+          "old_shape": [
+            200,
+            200
+          ],
+          "new_shape": [
+            200,
+            200
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        }
+      }
+    },
+    "berry_transport_equivalent_xy": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "berry_ky0_transport_equivalent.dat": {
+          "old_sha256": "f4d4b2feb8320fb92574ce00cdb6b546723f4a98bf47bace6f1afccb072ef63a",
+          "new_sha256": "68d2342b253922bbdb2acd114dcc46937956e1b112020ce98944fdbdcedbf4a9",
+          "old_shape": [
+            200,
+            200
+          ],
+          "new_shape": [
+            200,
+            200
+          ],
+          "max_abs": 1.000444171950221e-11,
+          "max_relative_to_max_1": 1.0036971911451136e-14,
+          "rms": 6.793937711979443e-14,
+          "nonfinite_count": 0
+        },
+        "linear_transport_berry_curvature.dat": {
+          "old_hall_sha256": "ddf3dfb1bfd4401163e4863f45ab8913d845da3d6c1fb58e30cfe9a1095db531",
+          "old_contact_sha256": "e7990a6c2be36bfa1c13a086e95d65e9f7227af8c118936d7a8e47c118ac20d8",
+          "new_sha256": "69728888de056a98edbe4ee3c57d5b2a84074b65e9b62079a39cbab92c812b76",
+          "max_abs": 8.275480229788904e-36
+        }
+      }
+    },
+    "linear_optical_conventional_T000": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_optical_response_drude.dat": {
+          "old_sha256": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+          "new_sha256": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_total.dat": {
+          "old_sha256": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+          "new_sha256": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_quantum_metric.dat": {
+          "old_sha256": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+          "new_sha256": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+          "max_abs": 0.0
+        },
+        "linear_optical_response_berry_curvature.dat": {
+          "old_hall_sha256": "613e6a426960f051000e23d029727166f79075172bfddd219837854956805934",
+          "old_contact_sha256": "d109116270f3202746901e975d9aade8dbe19275288d3fb7c266ae1d658a2ac6",
+          "new_sha256": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+          "max_abs": 1.3096723705530167e-10
+        }
+      }
+    },
+    "linear_optical_conventional_T300": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_optical_response_drude.dat": {
+          "old_sha256": "35f47876fc6f47be922bd4ae5e2d9680ea860e02f0745018c76584b00a8107ba",
+          "new_sha256": "35f47876fc6f47be922bd4ae5e2d9680ea860e02f0745018c76584b00a8107ba",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_total.dat": {
+          "old_sha256": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+          "new_sha256": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_quantum_metric.dat": {
+          "old_sha256": "dc53ef95613799c153104b428ca370fd68fb7d433ef90e150286fa3d0c28b5e1",
+          "new_sha256": "dc53ef95613799c153104b428ca370fd68fb7d433ef90e150286fa3d0c28b5e1",
+          "max_abs": 0.0
+        },
+        "linear_optical_response_berry_curvature.dat": {
+          "old_hall_sha256": "3633c072bc1d38e4ec3c89a32b33199f9f7a6ac491b37b76f8049af7c164779d",
+          "old_contact_sha256": "168c0c1e11b6099012e016ef29a92272027cefa6909abd1bb5574ef946f1e45f",
+          "new_sha256": "a71a1460f3dea635248d62ddb07469b1ef2435e1b06431f491a2bd485f1c05ee",
+          "max_abs": 6.548361852765083e-11
+        }
+      }
+    },
+    "linear_optical_projector_T000": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_optical_response_drude.dat": {
+          "old_sha256": "ade94329ed6ad0aa57531cd24b92fd64566d583966e3f786054e7b1e11e4f2e0",
+          "new_sha256": "ade94329ed6ad0aa57531cd24b92fd64566d583966e3f786054e7b1e11e4f2e0",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_total.dat": {
+          "old_sha256": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+          "new_sha256": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_quantum_metric.dat": {
+          "old_sha256": "53d4a2c9e2bb568bc3abb5a5e1b6ee8f82cd0d5044170d9b5d915134971c79db",
+          "new_sha256": "53d4a2c9e2bb568bc3abb5a5e1b6ee8f82cd0d5044170d9b5d915134971c79db",
+          "max_abs": 0.0
+        },
+        "linear_optical_response_berry_curvature.dat": {
+          "old_hall_sha256": "0a32e59ca6f32b873ed93621cbf26c40d0d18579877f27338fae419e7a76cac5",
+          "old_contact_sha256": "46c0d7d73b90c8d15b23be0e50ad6b82692c8ee9e0171b10bd613a29d714b9ff",
+          "new_sha256": "4ad5057ecbc2f87f53c5237f4df9f04ad59b2fa1155d5a9482be4a33164a9d38",
+          "max_abs": 1.2369127944111824e-10
+        }
+      }
+    },
+    "linear_optical_projector_T300": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_optical_response_drude.dat": {
+          "old_sha256": "cdceab91f7f9ff6837e2becc7b4056262672e81b4111b08e2eea79342f742424",
+          "new_sha256": "cdceab91f7f9ff6837e2becc7b4056262672e81b4111b08e2eea79342f742424",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_total.dat": {
+          "old_sha256": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339",
+          "new_sha256": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339",
+          "old_shape": [
+            401,
+            19
+          ],
+          "new_shape": [
+            401,
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_optical_response_quantum_metric.dat": {
+          "old_sha256": "f8545a2142ebdfafeef5784e0a4fe81566329e4fac92229f3ecfa3d2eb5744e5",
+          "new_sha256": "f8545a2142ebdfafeef5784e0a4fe81566329e4fac92229f3ecfa3d2eb5744e5",
+          "max_abs": 0.0
+        },
+        "linear_optical_response_berry_curvature.dat": {
+          "old_hall_sha256": "e7788ef9d965c0f2c7bb6f8ec1a1c1338f16fb8ebb4325d8f3ffd83db22132fb",
+          "old_contact_sha256": "31e5313d7fc362fcfcb8c8d272ccec4851bf028c2abfe3e3b353096ba8b94003",
+          "new_sha256": "c034219dec3b7176b4dfcc9f5c09a57263260ae1339843cfc8e1362bb6823e0b",
+          "max_abs": 6.548361852765083e-11
+        }
+      }
+    },
+    "linear_transport_conventional_T000": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_transport_drude.dat": {
+          "old_sha256": "0bcd7baafb3540080d7c27481f580c71322ee15177a0251193bb292108569001",
+          "new_sha256": "eca772baa4d4a1cdf138886ecafe78f240c2433a19974bab974241ede3316f1b",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_total.dat": {
+          "old_sha256": "0c20822b3bc559a98f57884f5314d411026d76d05ca4f81d149c4373bf9acd70",
+          "new_sha256": "416e861d4dc228cda586d61f939d888dd5faabc5856985456c3b0d0f81c1d616",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_quantum_metric.dat": {
+          "old_sha256": "d024103169131383d227173f072319fe11e0a2c156578192263f3ffb39a38587",
+          "new_sha256": "5a38a08108991bbcb7be274e884ef574d1fa3403952da4828c435dfb9a476f5f",
+          "max_abs": 0.0
+        },
+        "linear_transport_berry_curvature.dat": {
+          "old_hall_sha256": "af8d25bb8fb5a53f0b6f97dd6ad92a1a136d1c27f8e977553de6de2396d35c6a",
+          "old_contact_sha256": "276d15c45b98c0f38c70d18498fb2497c1d8354e4826f45e016a30bd7ebed5e0",
+          "new_sha256": "8461c8ddb2af1057d6202dd5f14f80eb5e27a61c467ce6738e184783710a5de0",
+          "max_abs": 2.9103830456733704e-11
+        }
+      }
+    },
+    "linear_transport_conventional_T300": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_transport_drude.dat": {
+          "old_sha256": "88a27af22206ef19f1cc32b05047802135e5c921147ef9aad30848b1ad45411e",
+          "new_sha256": "72c12fac1f52162a156fcc51698758c3b823e809339583b560815d6849a87ead",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_total.dat": {
+          "old_sha256": "877817ed2616f4b65735f7ed46f9b642374d845fd83e84679b4bbfc9ff214a4e",
+          "new_sha256": "61105b08cda9f44b8f0a3cbf98158709620740ea12ce9687a15edb800a14419a",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_quantum_metric.dat": {
+          "old_sha256": "e8c819a565edccadf8a3f710a3aa8080510cc0b28002859b69fec89d5564caf5",
+          "new_sha256": "9b1405952a12e8667cfa188f3295b0c300215f3c285e972a32165136ee279b32",
+          "max_abs": 0.0
+        },
+        "linear_transport_berry_curvature.dat": {
+          "old_hall_sha256": "d4d99c1c3ff117abdaf93ff57f7df6589987390362603605b190a13e13e706b8",
+          "old_contact_sha256": "68b7e9d037ff2f2965a61c99017a35b83673cb411e7d047a76d42201cdb42b76",
+          "new_sha256": "44ca976d33f1daedbf6f8536ccbb357952c2e2de81f735854f365a8c8984bad4",
+          "max_abs": 7.275957614183426e-12
+        }
+      }
+    },
+    "linear_transport_projector_T000": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_transport_drude.dat": {
+          "old_sha256": "72d97b37566fb19fdeca9f8d0b56c437cda3c92aeb8fc3fd507ec23e8a8b18ab",
+          "new_sha256": "0a598c63d694af8d2085786a523c2650f2fbbf9e083884892d9f18240805e085",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_total.dat": {
+          "old_sha256": "27eccb4387e22fe20b131f110de1684766cb8b6171e0031b992cac2bcc35b4dd",
+          "new_sha256": "ee0ef8ead99e8417e9a8f23630152123af2576e6847427f401b186846fbb2339",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_quantum_metric.dat": {
+          "old_sha256": "3e51dbad4314e178c4846aee9dc44a66e9a84021cba68aefa18a2aa442d729c1",
+          "new_sha256": "c715d36b6870bed6b67bb6f3dd4dd32d963242010270491b6548240ef3955770",
+          "max_abs": 0.0
+        },
+        "linear_transport_berry_curvature.dat": {
+          "old_hall_sha256": "b30a2ce480887981543ec8bf31492ac2b4bec8a1c32b172c12ac3111723a0918",
+          "old_contact_sha256": "9d9a7fba0f8066237fa479873805e76bb621ab2ea4021b6cde826beb8811eb9b",
+          "new_sha256": "80b6c4425bd578b88d9a294ed117c7039b35d6b0567197dbce158ddb5383894c",
+          "max_abs": 1.4551915228366852e-11
+        }
+      }
+    },
+    "linear_transport_projector_T300": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "linear_transport_drude.dat": {
+          "old_sha256": "c2226eac6b195da3f2f9d0a13e500146c2b7f51db9597fe927a430b402d55e96",
+          "new_sha256": "a0622e9385fd8feadf5c459c881ac766d3b3bfcd3a67306500dc6085fff033a3",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_total.dat": {
+          "old_sha256": "a1803db9bc79a1830683cd81a3d776f2d7dfed673c2e2f24621736bdffd9e926",
+          "new_sha256": "eee3ef87e2368632df2288f960104eef8f44524d84265c00e0f7c609e82c426a",
+          "old_shape": [
+            19
+          ],
+          "new_shape": [
+            19
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "linear_transport_quantum_metric.dat": {
+          "old_sha256": "f6920311ef7b5e90133377352fb196bd43564da74a7ff269c742eae5c11fbfcb",
+          "new_sha256": "db54117cd25e1644c2330575d0291f0205c4f7dab0a79a3cec7f87ed2ca79b43",
+          "max_abs": 0.0
+        },
+        "linear_transport_berry_curvature.dat": {
+          "old_hall_sha256": "c8ff80c41c65e195b2d149c3f0c5ee15dabee2666e948d4d8c31128afed273e6",
+          "old_contact_sha256": "12e4331b5f1fb0966babcf9b9560f1d2e29069ad537d9a135e23a3e7ae3a9c9d",
+          "new_sha256": "63e6dab06dc441c95dda16bee3e5896ab085720805e756c45a9c2aaddb93daa9",
+          "max_abs": 5.093170329928398e-11
+        }
+      }
+    },
+    "oam_conventional_T000": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "orbital_magnetization_cmocc.dat": {
+          "old_sha256": "56bb918c43037790492132a8b8b4a2d0d63a8b35d451ab05578ba44739076f05",
+          "new_sha256": "c1d7d1264dd0403586994023049cddb83db642a8f26e63d7565b6dfe945ea9ba",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_srocc.dat": {
+          "old_sha256": "c886cbdb8b8920de0a6c72089ddeb0f266e80af5883bfbfce0cf37e99b52ce9f",
+          "new_sha256": "2856dc5904db2fa50574e09b66559b0f4da69fbfd3c295efb969b72fd3f319f8",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_total.dat": {
+          "old_sha256": "ee3d9a0d5ef30c42668960d37f4e324b1f319d998454452170d7ccdda475bbb3",
+          "new_sha256": "50dfb6d6c7d26c323b20d183657011b0d7abcba91840501a36773b404f1b2f6f",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        }
+      }
+    },
+    "oam_conventional_T300": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "orbital_magnetization_cmocc.dat": {
+          "old_sha256": "dab52e1bb5035ed90cf0784fdd3d49db0e106f2967af21c7824ca74adde7b482",
+          "new_sha256": "3213a925bc34853443f93e1e67c345b11f1d32cb1dd59bee42e02ae284089549",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_srocc.dat": {
+          "old_sha256": "c8ae6030405c3906cd61ba62912010ad74ca6030a389d7a9567781803f976d90",
+          "new_sha256": "57d0c4ac8c3575664c2e72493715b8df385fc20dabe851fe77e7716f3d1fe5b6",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_total.dat": {
+          "old_sha256": "eb43308e2d51747a30524e26679b9dfe4097ef4a594b920ef3a6df509622bf98",
+          "new_sha256": "9c486a122d683bbef382d462c24b9128604d4e780d30e661cf026e118b7f3b07",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        }
+      }
+    },
+    "oam_projector_T000": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "orbital_magnetization_cmocc.dat": {
+          "old_sha256": "2bc72044e8fa4cd2cb5b48edd1be4f09d2daf5b0d4f57e40edc2ccfd3c43825f",
+          "new_sha256": "f8abad787725f352bee5a1bb1f773d2a5cadba26a221926dcd3ef92c21cccd71",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_srocc.dat": {
+          "old_sha256": "e9d0f19d88cf73ef536005784214ee72eebc267ca4b5e4e13d959f541d72caee",
+          "new_sha256": "1aca0edef2b42391c4d1d1e55162ce331443300093f3e48c17ff8e7c758a591d",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_total.dat": {
+          "old_sha256": "6fdfd90e4d936d33f28c5b1dfdf59e4e0d9beccacc4c3d86d84a4ab33518a3a4",
+          "new_sha256": "6ce6211d3216bba63a41e5dfeabefd3310616ec5598bab4a63906522cf344d08",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        }
+      }
+    },
+    "oam_projector_T300": {
+      "old_source_tree_sha256": "3bcd25e3959d806d273ff2a0820b675fcd97dfbd52bea85e5b79a4c86c6aa7d1",
+      "new_source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+      "old_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "new_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+      "files": {
+        "orbital_magnetization_cmocc.dat": {
+          "old_sha256": "23130a247416b0b828554be0d902cee287f8ded195a6b0071d85771a3de57a7b",
+          "new_sha256": "547907bb8b787f4534cdb878de955e5974efd3b4976212cd2f6a34a7621df93a",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_srocc.dat": {
+          "old_sha256": "f2253585a6eb24b8f1a1b2918d6806a0f4a5cb597691a179580f109d68cf4d4e",
+          "new_sha256": "4348a674adc3dab14973ab28240569ed573480aef43d4e567d1da668661e5f2e",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        },
+        "orbital_magnetization_total.dat": {
+          "old_sha256": "9ef65ee00d1cdee88ad37123678d41c64f2304787f8e791f1cf52c2d215cfa06",
+          "new_sha256": "a6cff8f351d8ade7c7876acc8ddd994aeb1c918721de2b405653d3c9a7e60c48",
+          "old_shape": [
+            7
+          ],
+          "new_shape": [
+            7
+          ],
+          "max_abs": 0.0,
+          "max_relative_to_max_1": 0.0,
+          "rms": 0.0,
+          "nonfinite_count": 0
+        }
+      }
+    }
+  },
+  "optical_export_contract": "native_three_mechanism_filenames",
+  "comparison_note": "Fe model remains Physics HOLD; numerical closeness or differences are not a material qualification gate. Berry-curvature response is the anomalous-Hall mechanism and combines historical contact and interband Hall terms."
+}

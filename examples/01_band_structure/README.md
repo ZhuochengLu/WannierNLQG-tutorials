@@ -14,7 +14,7 @@ The component and ordered band selection are explicit in every case file and rep
 
 ## 2. Inputs
 
-- Model: `Materials/GeS/vasp_SOC/GeS_tb.dat`.
+- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
 - Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
 - This chapter needs only the committed ordinary `GeS_tb.dat` model.
 - Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
@@ -59,6 +59,20 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 ## 6. Figure-reading guide
 
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+
+Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+
+![GeS vasp band](figures/GeS_vasp_band.png)  [PDF](figures/GeS_vasp_band.pdf) [Plot audit](figures/GeS_vasp_band.plot.json)
+
+*VASP path bands; energy relative to the shared Fermi level (eV); presentation only.*
+
+![band structure](figures/band_structure.png)  [PDF](figures/band_structure.pdf) [Plot audit](figures/band_structure.plot.json)
+
+*Conventional TB path bands; energy relative to the shared Fermi level (eV); presentation only.*
+
+![GeS band comparison](figures/GeS_band_comparison.png)  [PDF](figures/GeS_band_comparison.pdf) [Plot audit](figures/GeS_band_comparison.plot.json)
+
+*DFT/TB path-band comparison on one energy reference (eV); diagnostic display, not a band-fit qualification.*
 
 ## 7. Relation to the manuscript
 

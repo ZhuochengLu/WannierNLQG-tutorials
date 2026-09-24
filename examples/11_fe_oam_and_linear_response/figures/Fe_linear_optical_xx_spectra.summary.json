@@ -1,0 +1,15 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-figure",
+  "schema_version": "1.0",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "inputs_sha256": {
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T300/linear_optical_response_total.dat": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T000/linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T300/linear_optical_response_total.dat": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+  },
+  "png_sha256": "068a9439a798ee6832b63016ea3ea5d32af8fa3717126e08c669e1d43247fb32",
+  "pdf_sha256": "6f1e6b483035d86231f3b8b97fd285e7ed5b9c4d52f54dc6c25d8b46f6c1c6c0"
+}

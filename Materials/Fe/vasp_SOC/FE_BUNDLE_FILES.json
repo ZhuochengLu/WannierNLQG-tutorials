@@ -1,0 +1,15 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-optional-bundle",
+  "schema_version": "1.0",
+  "release_status": "SEPARATE_RELEASE_ASSET",
+  "archive": "Fe_full_operators_v1.1.0_rerun.tar.gz",
+  "archive_sha256": "d3384745c0a41ee8a9336c0ad9c8dc0ce4796a4bc6e3f35599eb1e3fe41be2b9",
+  "archive_bytes": 279428707,
+  "files": [
+    {
+      "path": "Fe_fixed_full.h5",
+      "sha256": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115",
+      "bytes": 319169364
+    }
+  ]
+}

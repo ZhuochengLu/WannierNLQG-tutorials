@@ -11,6 +11,7 @@ for path in ROOT.glob("examples/*/results/*/*/metadata.txt"):
     text = re.sub(r"(?m)^case_root\s*=.*$", "case_root                       = .", text)
     text = re.sub(r"(?m)^run_dir\s*=.*$", "run_dir                         = EPHEMERAL_RUN_DIRECTORY_OMITTED", text)
     text = re.sub(r"(?m)^output_root\s*=.*$", "output_root = EPHEMERAL_RUN_DIRECTORY_OMITTED", text)
+    text = re.sub(r"(?m)^model_file\s*=\s*(?!\S*Materials/GeS/vasp_SOC/GeS_tb\.dat).*(?:Fe_fixed_full\.h5).*$", "model_file = EXTERNAL_INPUT_PATH_OMITTED", text)
     text = text.replace(str(ROOT), ".")
     text = re.sub(r"/var/folders/\S+", "EPHEMERAL_RUN_PATH_OMITTED", text)
     path.write_text(text)
@@ -33,6 +34,10 @@ def portable(value):
     return value
 
 for path in ROOT.glob("examples/*/figures/*.plot.json"):
+    value = portable(json.loads(path.read_text()))
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
+
+for path in ROOT.glob("examples/11_fe_oam_and_linear_response/figures/*.json"):
     value = portable(json.loads(path.read_text()))
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
 

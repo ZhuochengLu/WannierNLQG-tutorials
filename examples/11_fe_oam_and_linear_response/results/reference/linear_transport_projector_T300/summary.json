@@ -1,0 +1,57 @@
+{
+  "task_id": "linear_transport_projector_T300",
+  "package_version": "1.1.0",
+  "package_commit": null,
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "profile": "reference",
+  "reference_reused": false,
+  "mesh": [
+    40,
+    40,
+    40
+  ],
+  "fermi_energy_ev": 5.7156290716733436,
+  "temperature_k": 300,
+  "method": "projector",
+  "family": "linear_transport",
+  "input_sha256": {
+    "Fe_tb.dat": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+    "Fe_fixed_full.h5": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+  },
+  "output_files": [
+    "linear_transport_drude.dat",
+    "linear_transport_quantum_metric.dat",
+    "linear_transport_berry_curvature.dat",
+    "linear_transport_total.dat"
+  ],
+  "output_sha256": {
+    "linear_transport_drude.dat": "a0622e9385fd8feadf5c459c881ac766d3b3bfcd3a67306500dc6085fff033a3",
+    "linear_transport_quantum_metric.dat": "db54117cd25e1644c2330575d0291f0205c4f7dab0a79a3cec7f87ed2ca79b43",
+    "linear_transport_berry_curvature.dat": "63e6dab06dc441c95dda16bee3e5896ab085720805e756c45a9c2aaddb93daa9",
+    "linear_transport_total.dat": "eee3ef87e2368632df2288f960104eef8f44524d84265c00e0f7c609e82c426a"
+  },
+  "source_provenance": {
+    "linear_transport_drude.dat": {
+      "source_relative": "linear_transport_projector_T300/linear_transport_projector_T300/linear_transport_drude.dat",
+      "sha256": "a0622e9385fd8feadf5c459c881ac766d3b3bfcd3a67306500dc6085fff033a3"
+    },
+    "linear_transport_quantum_metric.dat": {
+      "source_relative": "linear_transport_projector_T300/linear_transport_projector_T300/linear_transport_quantum_metric.dat",
+      "sha256": "db54117cd25e1644c2330575d0291f0205c4f7dab0a79a3cec7f87ed2ca79b43"
+    },
+    "linear_transport_berry_curvature.dat": {
+      "source_relative": "linear_transport_projector_T300/linear_transport_projector_T300/linear_transport_berry_curvature.dat",
+      "sha256": "63e6dab06dc441c95dda16bee3e5896ab085720805e756c45a9c2aaddb93daa9"
+    },
+    "linear_transport_total.dat": {
+      "source_relative": "linear_transport_projector_T300/linear_transport_projector_T300/linear_transport_total.dat",
+      "sha256": "eee3ef87e2368632df2288f960104eef8f44524d84265c00e0f7c609e82c426a"
+    }
+  },
+  "finite_values": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "wannierization_status": "MAX_ITERATIONS"
+}

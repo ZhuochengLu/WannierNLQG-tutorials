@@ -1,0 +1,27 @@
+# schema=wanniernlqg.linear-transport-vector/2.0
+# quantity=linear_transport
+# method=conventional
+# temperature_K=0.0
+# fermi_energies_count=1
+# fermi_energies_sha256=9a7ea69e94abeb039e2130393029137d27ab61d0485136f50533cebf475181dd
+# release_tree_sha256=0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523
+# model_sha256=8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115
+# input_identity_sha256=e6696c827972b1562483b51329d1f9a4f8e79e4424188dc8cf977f8ff2a0cc94
+# gamma_intra_ev=0.05
+# gamma_inter_ev=0.05
+# fs_kind=gaussian
+# eta_fs_ev=0.05
+# mpi_size=8
+# julia_threads_per_rank=1
+# qualification_status=DIAGNOSTIC_ONLY
+# input_semantics=effective_position_operator_model
+# operator_inventory=hamiltonian,position,hamiltonian_weighted_connection,hamiltonian_weighted_axial_derivative_overlap,derivative_overlap_tensor,axial_derivative_overlap,symmetric_derivative_overlap,spin,spin_times_hamiltonian,spin_times_position,spin_times_hamiltonian_position
+# target_contract_sha256=NOT_RECORDED
+# authoritative_hamiltonian_sha256=c61d404bd60a5145770770bcb094cd7c3bc3c3e69868fbd64d4096a5bcaa3a25
+# band_frame_contract_sha256=7e615b7f5bb19397766f1b118ebc6735e22b546bb7c75f8e9eb41471b400a12e
+# operator_selection_sha256=NOT_RECORDED
+# task_sha256=8904ddd8e9b0589c735b3c77e14c435b7373814649cdfd5ec3f279b1cdcbfda2
+# term=total
+# units=S/m
+# mu_eV xx_real xx_imag xy_real xy_imag xz_real xz_imag yx_real yx_imag yy_real yy_imag yz_real yz_imag zx_real zx_imag zy_real zy_imag zz_real zz_imag
+5.7156290716733436e+00 1.2184751761233408e+07 0.0000000000000000e+00 -5.7522024050574772e+04 0.0000000000000000e+00 -4.1378729452065745e+03 0.0000000000000000e+00 6.0007764294165449e+04 0.0000000000000000e+00 1.2200160742959291e+07 0.0000000000000000e+00 8.5652815902916864e+03 0.0000000000000000e+00 -2.6592060605284400e+03 0.0000000000000000e+00 6.7098690798365596e+03 0.0000000000000000e+00 1.2157921442566089e+07 0.0000000000000000e+00

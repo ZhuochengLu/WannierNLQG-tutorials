@@ -1,0 +1,22 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-vasp-path-bands",
+  "schema_version": "1.0",
+  "source": "validated fixed-charge LMAXMIX=4 path attempt04; VASP not rerun",
+  "scf_fermi_energy_ev": 5.7156290716733436,
+  "path": "Gamma-H-P-N-Gamma",
+  "shape": [
+    801,
+    64
+  ],
+  "fractional_kpoint_max_abs_difference": 1.1102230246251565e-16,
+  "gamma_near_fermi_max_abs_ev": 0.00013500000000021828,
+  "gamma_gate_threshold_ev": 0.005,
+  "input_sha256": {
+    "POSCAR": "0706c1b1c7630dc2f92e886e49ef07c124c00748051f17e85de513e30d286071",
+    "KPOINTS": "40d272fe7e9c7d6df1a33896a5d5dea316eb741e249a3da421248ceaf2ec42c8",
+    "EIGENVAL": "7e21132de34b59445847ed2c2f5d485daab72c2f54ead42b43cc3c9c48e72b4a",
+    "SCF_EIGENVAL": "f37745c1515dbe7156ab05bd7ef424d5a60817656b7981d67c865f974c5a8aa6"
+  },
+  "table_sha256": "d3daf4767334e0121b952d3fa61e4438ac0bb49b016ab35bd983ab75ae7b8f21",
+  "qualification": "DIAGNOSTIC_ONLY"
+}

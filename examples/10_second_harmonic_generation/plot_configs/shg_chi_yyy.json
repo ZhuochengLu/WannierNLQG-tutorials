@@ -1,0 +1,10 @@
+{
+  "input": "../results/reference/integral_second_harmonic_generation_conventional/shg_chi_yyy.dat",
+  "output_stem": "../figures/GeS_shg_chi_yyy",
+  "component": "yyy",
+  "quantity": "chi",
+  "unit": "pm/V",
+  "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+  "ylabel": "$\\chi^{yyy}(2\\omega;\\omega,\\omega)\\ \\mathrm{(pm/V)}$",
+  "xlim": [0.0, 4.0]
+}

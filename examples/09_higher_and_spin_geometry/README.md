@@ -17,7 +17,7 @@ HCT selects `(2,2,1,2)` on ordered `C1,V`; TPP selects `(2,2,2)` on ordered `C1,
 
 ## 2. Inputs
 
-- Model: `Materials/GeS/vasp_SOC/GeS_tb.dat`.
+- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
 - Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
 - This chapter requires the optional `GeS.spn`, `GeS.chk`, `GeS.eig`, and `GeS.mmn` release asset. If absent, `run.jl` prints `SKIPPED_MISSING_OPTIONAL_DATA` and creates no result.
 - Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
@@ -68,6 +68,24 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 ## 6. Figure-reading guide
 
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+
+Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+
+![kslice hermitian curvature tensor conventional](figures/kslice_hermitian_curvature_tensor_conventional.png)  [PDF](figures/kslice_hermitian_curvature_tensor_conventional.pdf) [Plot audit](figures/kslice_hermitian_curvature_tensor_conventional.plot.json)
+
+*Conventional Hermitian-curvature tensor, component (2,2,1,2); native output units; presentation only.*
+
+![kslice triple phase product conventional](figures/kslice_triple_phase_product_conventional.png)  [PDF](figures/kslice_triple_phase_product_conventional.pdf) [Plot audit](figures/kslice_triple_phase_product_conventional.plot.json)
+
+*Conventional triple-phase product, component (2,2,2) for the declared three subspaces; native output units; presentation only.*
+
+![kslice zeeman interband berry curvature conventional](figures/kslice_zeeman_interband_berry_curvature_conventional.png)  [PDF](figures/kslice_zeeman_interband_berry_curvature_conventional.pdf) [Plot audit](figures/kslice_zeeman_interband_berry_curvature_conventional.plot.json)
+
+*Conventional Zeeman interband Berry curvature, component (1,3), using optional spin data; native output units; presentation only.*
+
+![kslice zeeman interband quantum metric conventional](figures/kslice_zeeman_interband_quantum_metric_conventional.png)  [PDF](figures/kslice_zeeman_interband_quantum_metric_conventional.pdf) [Plot audit](figures/kslice_zeeman_interband_quantum_metric_conventional.plot.json)
+
+*Conventional Zeeman interband quantum metric, component (1,3), using optional spin data; native output units; presentation only.*
 
 ## 7. Relation to the manuscript
 

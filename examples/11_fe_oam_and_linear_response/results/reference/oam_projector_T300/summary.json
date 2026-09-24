@@ -1,0 +1,51 @@
+{
+  "task_id": "oam_projector_T300",
+  "package_version": "1.1.0",
+  "package_commit": null,
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "profile": "reference",
+  "reference_reused": false,
+  "mesh": [
+    40,
+    40,
+    40
+  ],
+  "fermi_energy_ev": 5.7156290716733436,
+  "temperature_k": 300,
+  "method": "projector",
+  "family": "oam",
+  "input_sha256": {
+    "Fe_tb.dat": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+    "Fe_fixed_full.h5": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+  },
+  "output_files": [
+    "orbital_magnetization_srocc.dat",
+    "orbital_magnetization_cmocc.dat",
+    "orbital_magnetization_total.dat"
+  ],
+  "output_sha256": {
+    "orbital_magnetization_srocc.dat": "4348a674adc3dab14973ab28240569ed573480aef43d4e567d1da668661e5f2e",
+    "orbital_magnetization_cmocc.dat": "547907bb8b787f4534cdb878de955e5974efd3b4976212cd2f6a34a7621df93a",
+    "orbital_magnetization_total.dat": "a6cff8f351d8ade7c7876acc8ddd994aeb1c918721de2b405653d3c9a7e60c48"
+  },
+  "source_provenance": {
+    "orbital_magnetization_srocc.dat": {
+      "source_relative": "oam_projector_T300/oam_projector_T300/orbital_magnetization_srocc.dat",
+      "sha256": "4348a674adc3dab14973ab28240569ed573480aef43d4e567d1da668661e5f2e"
+    },
+    "orbital_magnetization_cmocc.dat": {
+      "source_relative": "oam_projector_T300/oam_projector_T300/orbital_magnetization_cmocc.dat",
+      "sha256": "547907bb8b787f4534cdb878de955e5974efd3b4976212cd2f6a34a7621df93a"
+    },
+    "orbital_magnetization_total.dat": {
+      "source_relative": "oam_projector_T300/oam_projector_T300/orbital_magnetization_total.dat",
+      "sha256": "a6cff8f351d8ade7c7876acc8ddd994aeb1c918721de2b405653d3c9a7e60c48"
+    }
+  },
+  "finite_values": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "wannierization_status": "MAX_ITERATIONS"
+}

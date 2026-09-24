@@ -18,7 +18,7 @@ Derivative indices precede the underlying geometry indices: BCD `(d,a,b)`, BCQ `
 
 ## 2. Inputs
 
-- Model: `Materials/GeS/vasp_SOC/GeS_tb.dat`.
+- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
 - Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
 - This chapter needs only the committed ordinary `GeS_tb.dat` model.
 - Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
@@ -71,6 +71,28 @@ Every task directory also contains native `metadata.txt` and a tutorial `summary
 ## 6. Figure-reading guide
 
 K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+
+Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+
+![kslice berry curvature dipole conventional](figures/kslice_berry_curvature_dipole_conventional.png)  [PDF](figures/kslice_berry_curvature_dipole_conventional.pdf) [Plot audit](figures/kslice_berry_curvature_dipole_conventional.plot.json)
+
+*Conventional Berry-curvature dipole of subspace [19,20], component (1,2,2); native output units; presentation only.*
+
+![kslice berry curvature quadrupole conventional](figures/kslice_berry_curvature_quadrupole_conventional.png)  [PDF](figures/kslice_berry_curvature_quadrupole_conventional.pdf) [Plot audit](figures/kslice_berry_curvature_quadrupole_conventional.plot.json)
+
+*Conventional Berry-curvature quadrupole of subspace [19,20], component (1,2,2,2); native output units; presentation only.*
+
+![kslice quantum metric dipole conventional](figures/kslice_quantum_metric_dipole_conventional.png)  [PDF](figures/kslice_quantum_metric_dipole_conventional.pdf) [Plot audit](figures/kslice_quantum_metric_dipole_conventional.plot.json)
+
+*Conventional quantum-metric dipole of subspace [19,20], component (2,2,2); native output units; presentation only.*
+
+![kslice quantum metric quadrupole conventional](figures/kslice_quantum_metric_quadrupole_conventional.png)  [PDF](figures/kslice_quantum_metric_quadrupole_conventional.pdf) [Plot audit](figures/kslice_quantum_metric_quadrupole_conventional.plot.json)
+
+*Conventional quantum-metric quadrupole of subspace [19,20], component (2,2,2,2); native output units; presentation only.*
+
+![kslice quantum christoffel symbol conventional](figures/kslice_quantum_christoffel_symbol_conventional.png)  [PDF](figures/kslice_quantum_christoffel_symbol_conventional.pdf) [Plot audit](figures/kslice_quantum_christoffel_symbol_conventional.plot.json)
+
+*Conventional quantum Christoffel symbol of subspace [19,20], component (2,2,2); native output units; presentation only.*
 
 ## 7. Relation to the manuscript
 

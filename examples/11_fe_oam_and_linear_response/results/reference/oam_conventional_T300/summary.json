@@ -1,0 +1,51 @@
+{
+  "task_id": "oam_conventional_T300",
+  "package_version": "1.1.0",
+  "package_commit": null,
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "profile": "reference",
+  "reference_reused": false,
+  "mesh": [
+    40,
+    40,
+    40
+  ],
+  "fermi_energy_ev": 5.7156290716733436,
+  "temperature_k": 300,
+  "method": "conventional",
+  "family": "oam",
+  "input_sha256": {
+    "Fe_tb.dat": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+    "Fe_fixed_full.h5": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+  },
+  "output_files": [
+    "orbital_magnetization_srocc.dat",
+    "orbital_magnetization_cmocc.dat",
+    "orbital_magnetization_total.dat"
+  ],
+  "output_sha256": {
+    "orbital_magnetization_srocc.dat": "57d0c4ac8c3575664c2e72493715b8df385fc20dabe851fe77e7716f3d1fe5b6",
+    "orbital_magnetization_cmocc.dat": "3213a925bc34853443f93e1e67c345b11f1d32cb1dd59bee42e02ae284089549",
+    "orbital_magnetization_total.dat": "9c486a122d683bbef382d462c24b9128604d4e780d30e661cf026e118b7f3b07"
+  },
+  "source_provenance": {
+    "orbital_magnetization_srocc.dat": {
+      "source_relative": "oam_conventional_T300/oam_conventional_T300/orbital_magnetization_srocc.dat",
+      "sha256": "57d0c4ac8c3575664c2e72493715b8df385fc20dabe851fe77e7716f3d1fe5b6"
+    },
+    "orbital_magnetization_cmocc.dat": {
+      "source_relative": "oam_conventional_T300/oam_conventional_T300/orbital_magnetization_cmocc.dat",
+      "sha256": "3213a925bc34853443f93e1e67c345b11f1d32cb1dd59bee42e02ae284089549"
+    },
+    "orbital_magnetization_total.dat": {
+      "source_relative": "oam_conventional_T300/oam_conventional_T300/orbital_magnetization_total.dat",
+      "sha256": "9c486a122d683bbef382d462c24b9128604d4e780d30e661cf026e118b7f3b07"
+    }
+  },
+  "finite_values": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "wannierization_status": "MAX_ITERATIONS"
+}

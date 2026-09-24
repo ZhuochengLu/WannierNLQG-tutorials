@@ -1,0 +1,57 @@
+{
+  "task_id": "linear_transport_conventional_T000",
+  "package_version": "1.1.0",
+  "package_commit": null,
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "profile": "reference",
+  "reference_reused": false,
+  "mesh": [
+    40,
+    40,
+    40
+  ],
+  "fermi_energy_ev": 5.7156290716733436,
+  "temperature_k": 0,
+  "method": "conventional",
+  "family": "linear_transport",
+  "input_sha256": {
+    "Fe_tb.dat": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+    "Fe_fixed_full.h5": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+  },
+  "output_files": [
+    "linear_transport_drude.dat",
+    "linear_transport_quantum_metric.dat",
+    "linear_transport_berry_curvature.dat",
+    "linear_transport_total.dat"
+  ],
+  "output_sha256": {
+    "linear_transport_drude.dat": "eca772baa4d4a1cdf138886ecafe78f240c2433a19974bab974241ede3316f1b",
+    "linear_transport_quantum_metric.dat": "5a38a08108991bbcb7be274e884ef574d1fa3403952da4828c435dfb9a476f5f",
+    "linear_transport_berry_curvature.dat": "8461c8ddb2af1057d6202dd5f14f80eb5e27a61c467ce6738e184783710a5de0",
+    "linear_transport_total.dat": "416e861d4dc228cda586d61f939d888dd5faabc5856985456c3b0d0f81c1d616"
+  },
+  "source_provenance": {
+    "linear_transport_drude.dat": {
+      "source_relative": "linear_transport_conventional_T000/linear_transport_conventional_T000/linear_transport_drude.dat",
+      "sha256": "eca772baa4d4a1cdf138886ecafe78f240c2433a19974bab974241ede3316f1b"
+    },
+    "linear_transport_quantum_metric.dat": {
+      "source_relative": "linear_transport_conventional_T000/linear_transport_conventional_T000/linear_transport_quantum_metric.dat",
+      "sha256": "5a38a08108991bbcb7be274e884ef574d1fa3403952da4828c435dfb9a476f5f"
+    },
+    "linear_transport_berry_curvature.dat": {
+      "source_relative": "linear_transport_conventional_T000/linear_transport_conventional_T000/linear_transport_berry_curvature.dat",
+      "sha256": "8461c8ddb2af1057d6202dd5f14f80eb5e27a61c467ce6738e184783710a5de0"
+    },
+    "linear_transport_total.dat": {
+      "source_relative": "linear_transport_conventional_T000/linear_transport_conventional_T000/linear_transport_total.dat",
+      "sha256": "416e861d4dc228cda586d61f939d888dd5faabc5856985456c3b0d0f81c1d616"
+    }
+  },
+  "finite_values": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "wannierization_status": "MAX_ITERATIONS"
+}

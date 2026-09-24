@@ -1,0 +1,16 @@
+{
+  "qualification": "PRESENTATION_ONLY",
+  "config_sha256": "ee657c142ebe4c4f9010ba01cad0fabfccfa701662e6351a103e3ff09a4ce44c",
+  "input_sha256": "4f58279548284c1ffa3dab431e7a6402014c46a2830143684950169907dbda2a",
+  "png_sha256": "12ff55a35ebe304ef40e3627a9f617b707d6edd40d5324955fb72dbaa3bf236c",
+  "pdf_sha256": "0592ddb13a761ee68ba84350c854d5416cb9679920e21eca20f21370f4107456",
+  "rows": 200,
+  "unit": "A/V^2",
+  "display_scale": 1000000.0,
+  "component": "yyy",
+  "columns": [
+    "energy_eV",
+    "total_re",
+    "total_im"
+  ]
+}

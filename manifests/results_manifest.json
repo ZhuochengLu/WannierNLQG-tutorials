@@ -1,15 +1,20 @@
 {
   "schema": "wanniernlqg-tutorials.reference-results",
-  "schema_version": "1.0",
-  "package_version": "1.0.1",
-  "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
-  "count": 31,
+  "schema_version": "1.1",
+  "package_versions": [
+    "1.0.1",
+    "1.1.0"
+  ],
+  "count": 46,
   "entries": [
     {
       "chapter": "01_band_structure",
       "task_id": "band_structure",
       "summary": "examples/01_band_structure/results/reference/band_structure/summary.json",
       "summary_sha256": "95068ee734037a3c9bdecf8ab031453036e33105eb316835880b0cf2637873a5",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_bands.dat": "39b8f0b92856c38b9efbeb91d4b7ab270c6537f19bb6cf5739fa87c450262a1a",
@@ -22,6 +27,9 @@
       "task_id": "integral_injection_current_conventional",
       "summary": "examples/02_integral_charge_responses/results/reference/integral_injection_current_conventional/summary.json",
       "summary_sha256": "57707ec4d787dcb0b6b191594685af40c8a21f4917c2e468a81fddabb82bd690",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_ic_conv.dat": "281363c9a596a4e1d2e0145e18602e86774fdd84537526492df90202c419d716"
@@ -33,6 +41,9 @@
       "task_id": "integral_shift_current_conventional",
       "summary": "examples/02_integral_charge_responses/results/reference/integral_shift_current_conventional/summary.json",
       "summary_sha256": "40fa104454cf5d771961d51503f34f3f1fa1b8e494bfbf260299d44545dc38d9",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_sc_conv.dat": "2776210b18ce3b1dae9c2324b4bbdac63a09abafbc654ba11add8c79a1781b4c"
@@ -44,6 +55,9 @@
       "task_id": "integral_shift_current_geometric_loop",
       "summary": "examples/02_integral_charge_responses/results/reference/integral_shift_current_geometric_loop/summary.json",
       "summary_sha256": "3b779aeb9cd5a5f5618b72815483bb68d94e8ba82187d38f75efd61cda84e6b5",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_sc_geo.dat": "87ad128e7517deb7454f2d443458d5c4768f4fa741117652a80d2f787b5d421e"
@@ -55,6 +69,9 @@
       "task_id": "integral_shift_current_wilson_loop",
       "summary": "examples/02_integral_charge_responses/results/reference/integral_shift_current_wilson_loop/summary.json",
       "summary_sha256": "f98186815b2846a62f086a7e08fc04c0768c15168bdd68f5e5cf81d7cf283b4d",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_sc_wilson.dat": "b5f3156219612bea3216151e6aa7112907cf071d4f1c6b8e595558171f9a5cd7"
@@ -66,6 +83,9 @@
       "task_id": "integral_injection_spin_current_conventional",
       "summary": "examples/03_integral_spin_responses/results/reference/integral_injection_spin_current_conventional/summary.json",
       "summary_sha256": "a0e0337bba3786e67eb95a93b61eefdbd2500194aeda4b30fcb15641a93d0f03",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_isc_conv.dat": "45ebae7247bcc2e19a802db658babebea54f26fb4ff54ffa4485e3ebde55f64b"
@@ -77,6 +97,9 @@
       "task_id": "integral_shift_spin_current_conventional",
       "summary": "examples/03_integral_spin_responses/results/reference/integral_shift_spin_current_conventional/summary.json",
       "summary_sha256": "6f43f637554af14bf27a484f3742db9d5384abe2268edd230add67028d16f803",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_ssc_conv.dat": "20438bbb3280d74c4fc5d0e6e005cb413e250bc20993453c237387c5a38a6ba2"
@@ -88,6 +111,9 @@
       "task_id": "kslice_injection_current_conventional",
       "summary": "examples/04_kslice_charge_responses/results/reference/kslice_injection_current_conventional/summary.json",
       "summary_sha256": "08b6af29d221f79b830c7b04dc048d8e0656b03dc5965d71d6db2e74688533cb",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_ick_r_conv.dat": "17e5ccbeb6e29d1f999b61b74a74f653dca9d1c3b72f1e49e599e9d9dcc17f06",
@@ -100,6 +126,9 @@
       "task_id": "kslice_shift_current_conventional",
       "summary": "examples/04_kslice_charge_responses/results/reference/kslice_shift_current_conventional/summary.json",
       "summary_sha256": "155f711fccab34c85d1d01d48badffaacad96f156e1dd1e8707a583fa808d9ed",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_sck_r_conv.dat": "144f90759edfec21ae08b72cf7f77a59cd4214e7a0ff07d7d6e493d63deecff5",
@@ -112,6 +141,9 @@
       "task_id": "kslice_shift_current_geometric_loop",
       "summary": "examples/04_kslice_charge_responses/results/reference/kslice_shift_current_geometric_loop/summary.json",
       "summary_sha256": "baa89abddd490af33e1b0f6c788dc3fdce259d37f82abbc503bc3d2104de92fd",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_sck_r_geo.dat": "7c6b887d04689979baaa1dab222672188a8a1ac1ed7200654a12696c01336a1d",
@@ -124,6 +156,9 @@
       "task_id": "kslice_shift_current_wilson_loop",
       "summary": "examples/04_kslice_charge_responses/results/reference/kslice_shift_current_wilson_loop/summary.json",
       "summary_sha256": "23fa14acdb25360e7eb1470cc3239786bda5f9170be3decc88e31cf168739d5d",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_sck_i_wilson.dat": "6546e83ef5a45938d334dffdbba0df0e7ba51ce2748de1fcd9c12e8318271c1c",
@@ -136,6 +171,9 @@
       "task_id": "kslice_injection_spin_current_conventional",
       "summary": "examples/05_kslice_spin_responses/results/reference/kslice_injection_spin_current_conventional/summary.json",
       "summary_sha256": "6b1e014dab4c9cad3cfacfd5c73b42b24fa5ad5f4572d10a79675a4373753de2",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_isck_i_conv.dat": "dbaa64d15e0e97efa0364ea45a34f156dc4e1d688daa595318fe6a723855598c",
@@ -148,6 +186,9 @@
       "task_id": "kslice_shift_spin_current_conventional",
       "summary": "examples/05_kslice_spin_responses/results/reference/kslice_shift_spin_current_conventional/summary.json",
       "summary_sha256": "efebff41b2c424887aeab516fb5c30b5f8974400af5e3285a0b08dd278d6349a",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_ssck_r_conv.dat": "7586a865ca98c8c68ecbff04dc3a12cf7a9a870dcc18eb46d0ce57a8c3b2dac3",
@@ -160,6 +201,9 @@
       "task_id": "kslice_berry_curvature_conventional",
       "summary": "examples/06_qg_pairwise/results/reference/kslice_berry_curvature_conventional/summary.json",
       "summary_sha256": "97eccebad1c9d917b1eefcd4a2ae1cc28e443ccf57d00de4451402aa6d72cf3e",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_bck_subspace_19_20_conv.dat": "fbd395a547cfdbb212f93189c7fa92dc3d3eaab2f330e4c0d4a05544b7b9d02d"
@@ -171,6 +215,9 @@
       "task_id": "kslice_interband_berry_curvature_conventional",
       "summary": "examples/06_qg_pairwise/results/reference/kslice_interband_berry_curvature_conventional/summary.json",
       "summary_sha256": "c4006e4b0dbbd0cbdfff81d71e8b7f36fa1a1b182bd4b7d979dd4f9f7732ac1c",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_ibck_conv.dat": "fd687cd5191d9b7ea8bdb7ae6794939109f598ff30e7a7f4e757632a44ea4d5c"
@@ -182,6 +229,9 @@
       "task_id": "kslice_interband_quantum_metric_conventional",
       "summary": "examples/06_qg_pairwise/results/reference/kslice_interband_quantum_metric_conventional/summary.json",
       "summary_sha256": "6c1b64cac966d9a3dc4c92c30cd04665e79d59a7d4eae762874784e45926b1de",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_iqmk_conv.dat": "90c9e90495034132ae35ef0aadeddd51b655de006a79b360afac73e6789850bd"
@@ -193,6 +243,9 @@
       "task_id": "kslice_quantum_metric_conventional",
       "summary": "examples/06_qg_pairwise/results/reference/kslice_quantum_metric_conventional/summary.json",
       "summary_sha256": "7d8e5bd8a432a0f18edfb2cd44a4f9cabe486574a913e88fd404037df2d0023e",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qmk_subspace_19_20_conv.dat": "de1768aa418b0cf11a146d3d80790357e22fd5254851c04c5046aff63198f893"
@@ -204,6 +257,9 @@
       "task_id": "kslice_berry_curvature_dipole_conventional",
       "summary": "examples/07_qg_multipoles/results/reference/kslice_berry_curvature_dipole_conventional/summary.json",
       "summary_sha256": "32be4aeae36448eddf82dff7f31c2a1c1353af35fc7906d1b112e9153d472c54",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_bcdk_subspace_19_20_conv.dat": "8b486b049dfb20e0e37fb6f5b07870f7860331827980ebd9dd068db702df2161"
@@ -215,6 +271,9 @@
       "task_id": "kslice_berry_curvature_quadrupole_conventional",
       "summary": "examples/07_qg_multipoles/results/reference/kslice_berry_curvature_quadrupole_conventional/summary.json",
       "summary_sha256": "ed41edd22ac04cd3adfb438a984ceb37296fe243d5e092b47a272ec336134a6d",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_bcqk_subspace_19_20_conv.dat": "cc89347b4fc8fc345e85ff64ceb017f8c141e7a7706aedb2e811be051cada461"
@@ -226,6 +285,9 @@
       "task_id": "kslice_quantum_christoffel_symbol_conventional",
       "summary": "examples/07_qg_multipoles/results/reference/kslice_quantum_christoffel_symbol_conventional/summary.json",
       "summary_sha256": "9f3d04852efc819002832d2de052663a45b8338a32602ba510e596cbd2df4b3d",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qcsk_subspace_19_20_conv.dat": "578e0a428b5f538262240ff8bcb1e12689d83d095e226c148f7885e741e5e364"
@@ -237,6 +299,9 @@
       "task_id": "kslice_quantum_metric_dipole_conventional",
       "summary": "examples/07_qg_multipoles/results/reference/kslice_quantum_metric_dipole_conventional/summary.json",
       "summary_sha256": "29ea75ef0518e06abe7f8b5ddd4ccadc8a065c63e1fd849fb9467d94f5c962f1",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qmdk_subspace_19_20_conv.dat": "997dec43a300726bc8469f03b3be6d5539bba936ad4fca6f435a66400d14063a"
@@ -248,6 +313,9 @@
       "task_id": "kslice_quantum_metric_quadrupole_conventional",
       "summary": "examples/07_qg_multipoles/results/reference/kslice_quantum_metric_quadrupole_conventional/summary.json",
       "summary_sha256": "55875e088fbf67c0360c199afcc88249d16a7ac74d22c6a98ca4203f72c7f97e",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qmqk_subspace_19_20_conv.dat": "d3e667eebdd2658aee90704c30d14b695ce0179183bc83a4f089c7c0626fc60a"
@@ -259,6 +327,9 @@
       "task_id": "kslice_quantum_hermitian_connection_conventional",
       "summary": "examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_conventional/summary.json",
       "summary_sha256": "ea296848187d6880d2558461fca64a376569c3fa5bd510dc8f3c4b238b63236b",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qhck_i_conv.dat": "3113dc1edcd50ad30fbf147d1bcc5211effe8a29d010a413bffe57cfd41b8f12",
@@ -271,6 +342,9 @@
       "task_id": "kslice_quantum_hermitian_connection_geometric_loop",
       "summary": "examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_geometric_loop/summary.json",
       "summary_sha256": "2b20b2c418024ef86b1586971f020de628cad822bb754a222baf365ffa42230c",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qhck_r_geo.dat": "2b4a8f0d23c0b25fc86987b710eb2040764167b681549132577848624028e2ab",
@@ -283,6 +357,9 @@
       "task_id": "kslice_quantum_hermitian_connection_wilson_loop",
       "summary": "examples/08_shift_geometry/results/reference/kslice_quantum_hermitian_connection_wilson_loop/summary.json",
       "summary_sha256": "7eb8c94844825c12dad7569e82d28b15f13503f25b0e354d0f696b802a60504d",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_qhck_r_wilson.dat": "b3a3247b405774f6507d261d152fc54048a039af9dce4913fbdad1459032ae47",
@@ -295,6 +372,9 @@
       "task_id": "kslice_shift_vector_geometric_loop",
       "summary": "examples/08_shift_geometry/results/reference/kslice_shift_vector_geometric_loop/summary.json",
       "summary_sha256": "50296641d84b30d9f506089a557af9683050324c33eeb721cefb0c1e9674e8f7",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_svk_i_geo.dat": "ebe9357d0adf02e5fedba7c4718d842efc5657444dec06bf09bd220aa89acfb1",
@@ -307,6 +387,9 @@
       "task_id": "kslice_shift_vector_wilson_loop",
       "summary": "examples/08_shift_geometry/results/reference/kslice_shift_vector_wilson_loop/summary.json",
       "summary_sha256": "a82a1db122c18a8ac9cc23ee117afcb1c23a3b98a41e786282a84c92576dcea9",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_svk_r_wilson.dat": "6d6e88ac16d2a3731256ce5cc5f7755bf293fe24539d52b3bd0f30d7e5b6a132",
@@ -319,6 +402,9 @@
       "task_id": "kslice_hermitian_curvature_tensor_conventional",
       "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_hermitian_curvature_tensor_conventional/summary.json",
       "summary_sha256": "6a3fcf15f007f5fcbcc320da6c7a5eaeb2cddc4e2c98b0d1d9a7e4dc6c31bbaf",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_hctk_i_conv.dat": "8fad4cf6e93a800c906dfa47ce13ad13e983ff51be3016b0277a05fe5396c495",
@@ -331,6 +417,9 @@
       "task_id": "kslice_triple_phase_product_conventional",
       "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_triple_phase_product_conventional/summary.json",
       "summary_sha256": "211b817af1ac91c13a992f4c90cfbdcb66e8d45dc9895039ddfae9e9a27fe76c",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_tppk_i_conv.dat": "09175859151dfc0a3563c04e1177b72c338bd3442aec7e2f0fb97935d1cdf7e6",
@@ -343,6 +432,9 @@
       "task_id": "kslice_zeeman_interband_berry_curvature_conventional",
       "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_zeeman_interband_berry_curvature_conventional/summary.json",
       "summary_sha256": "fe0de3ccafed372115d985f646c7c58770d8c89e5cf029a0a03329001cc01564",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_zibck_conv.dat": "5a2f5ed57c7880cad8351d285847d457c36d76a32c4dab7ca05f7d51b5c39e83"
@@ -354,11 +446,292 @@
       "task_id": "kslice_zeeman_interband_quantum_metric_conventional",
       "summary": "examples/09_higher_and_spin_geometry/results/reference/kslice_zeeman_interband_quantum_metric_conventional/summary.json",
       "summary_sha256": "04502406a2dd871211c46c205b6c5f431d8b1d4ab8aa646fbf91211cf2eefd66",
+      "package_version": "1.0.1",
+      "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+      "source_manifest_sha256": null,
       "finite_values": true,
       "output_sha256": {
         "GeS_ziqmk_conv.dat": "3f054d9df8a5255efd122edfe5df48cf9104805777d4c9adcbb61e464ed4f35b"
       },
       "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "10_second_harmonic_generation",
+      "task_id": "integral_second_harmonic_generation_conventional",
+      "summary": "examples/10_second_harmonic_generation/results/reference/integral_second_harmonic_generation_conventional/summary.json",
+      "summary_sha256": "2a0f2ea59fee18df00bf487b4481c0f142e66fc6ec30e58b5c6444b3abcbef00",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "5bb4904fb1f5f17a03faf4cba555743e906898cd0146f8328f7191ea498f3186",
+      "finite_values": true,
+      "output_sha256": {
+        "shg_sigma_xxy.dat": "ba250567712831221b292048b5405e1fd94d4008c34e29714a00ba53d44fcb33",
+        "shg_chi_zzz.dat": "daa9e9be52295ad48caf44b23e65db2b41e2612f15d1cb97d639bf4f9011b525",
+        "shg_chi_xxx.dat": "29ce585e7c7bc16de491cc02e081efa5cc5dcdffefbec6a04bde275ec6002d93",
+        "shg_chi_xxz.dat": "7ddc2b7fdf5880ab9b01a851aa5c0ca268e8b67f5ac2c6162aec92da5b2e871d",
+        "shg_chi_zyy.dat": "1bffeffbd1b8ebb641c3c562070b0881fdd496cbf58a67dd40c94f60884404f7",
+        "shg_sigma_xxz.dat": "25179c2b9b44ac9557fa8e3abfd20fd120fb2d2b6ef2ad6a3d02e7f485c28316",
+        "shg_sigma_yxy.dat": "4d264bf360482d1be54f35da515c0b4eefdc03337a368b49e2ca60a15421e02d",
+        "shg_sigma_xxx.dat": "47564b4966f0bd155631efd0bba5ffc573fbc7c26e66e0df83e302b9938d186e",
+        "shg_chi_zxy.dat": "ac4f112b2c9d1adcdab014a74d72ea0bc204d3658e0a22864709d4109a6ddc0b",
+        "shg_chi_zxz.dat": "367d36ecfcabc7988066ac7e97f024ee3460a4c065a1fabe99afe7f7e540559e",
+        "shg_chi_zyz.dat": "4d1c2b9938268c76543049815f24d795b28f168b6c14bed19a7adfffc4105c37",
+        "shg_sigma_yxz.dat": "e10087d5ece427c4612ea14c9e2119488d3cad51a1f3123c547f93a1236938b0",
+        "shg_sigma_xyz.dat": "2416a48219a5cc080c29492fd48cf5da289fe31456e874c34728181f19420f8c",
+        "shg_chi_zxx.dat": "ed0f5428e768e562160b47df277ebac0ede246483e129ff746167cca1ac09591",
+        "shg_sigma_yyy.dat": "4f58279548284c1ffa3dab431e7a6402014c46a2830143684950169907dbda2a",
+        "shg_sigma_yyz.dat": "2fc0caca1419a19aa344e2fdea8c73d9ce81d3ebb6521c70315935611a51a9d7",
+        "shg_sigma_zyz.dat": "18a8f3325c2a1b16770e386dac8aa26b9ec472311d697bda2828619c8c7422a0",
+        "shg_chi_yzz.dat": "0a00ea35a1e4795f6eeb6970ee12ab08a474b620237342d0407017b6c9e6ad33",
+        "shg_chi_yxz.dat": "dc83d2fe32469f5d6f5fd5524d313a10bcf845f88658634ec00ab61357a4fef2",
+        "shg_sigma_zxz.dat": "91964882b28be3fae0f2f145cd4e35ee62d3aa8dabf234927af33c5f3ba20748",
+        "shg_chi_xyy.dat": "03d61ea113fe39b2044d36f0f391eb0c6f8883f854eb4b12e29c2576673ac19a",
+        "shg_sigma_zzz.dat": "819e7912941189c1dc5d499d3a00442a004a2553203a497f8efb4e436ccf7bff",
+        "shg_chi_xyz.dat": "ab3377262cf71e34c44c1cb6b8f02d09336720df31f79cb4d9604f7ed60f5a72",
+        "shg_chi_xxy.dat": "dfc9b23261b6422dc6c704d4cbc77fc4a8cced899c89f796bffe541a1f783ec9",
+        "shg_chi_yyy.dat": "6e94084b26712b446ca3584c40d8e6f4137e87e55fc52f543832b732cac55797",
+        "shg_sigma_xyy.dat": "ff555ebed27fd50c450016ce0f7e14c01334ee6c17859faf243b11f652a92fde",
+        "shg_sigma_zxy.dat": "9752bdb509a2813f2559f5beb30a6f2564883a9d1acbe601464edc0a1fd81e5b",
+        "shg_chi_yxx.dat": "e504a0fb4545c198354124d3313dc16c1db92e91a20da3a1f023bd8bd4168343",
+        "shg_chi_yxy.dat": "5514ad622bc13cb788b1e31809fa8d43cf646f2e0bf91f35e93fd595a38860c0",
+        "shg_chi_xzz.dat": "8cc96c83d0fe83c898d3a31b24e2516fc413cafe251310652b069ba3ffe6a192",
+        "shg_sigma_xzz.dat": "52be7ed725e6521a21b0ced96b8fa7dea93b16db34002edfda50de24dcedc2ad",
+        "shg_sigma_zxx.dat": "2af2e46106781c417cf9bc1c6bbd3d3097b73efd7696856f3ec22e1a9daeff43",
+        "shg_sigma_zyy.dat": "d9cd6d07c50ea3d5b4cd404130521a84b4962fc81647a4c185cb6d6da3088121",
+        "shg_sigma_yxx.dat": "2624c92788e43bad7e1ee75b54924ae511f070a9ab9d3761e6cb6bca5e806e85",
+        "shg_sigma_yzz.dat": "9978a55cf895132ae99744f25cba209c0d2a4f92a6de89addaf2bf7d28408eb7",
+        "shg_chi_yyz.dat": "4059b718890e9f617868cefcb45a9c4c6ee09397bd0b750742c5c11f75e99952"
+      },
+      "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "berry_sos_occupied_xy",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/berry_sos_occupied_xy/summary.json",
+      "summary_sha256": "4b53b909342a0c8fe36b12ae347bba1245423013ba72a49783811b7b94f5493e",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "Fe_bck_sum_conv.dat": "92131079c526c50b7d322fc5916df623ec27523c88d4439f1329fe7e718f7b0b"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "berry_transport_equivalent_xy",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/berry_transport_equivalent_xy/summary.json",
+      "summary_sha256": "d1a0a596a341ddf988e14c54e465e04bcd1325d8e78f54872d6a6fc0d00af172",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_transport_berry_curvature.dat": "69728888de056a98edbe4ee3c57d5b2a84074b65e9b62079a39cbab92c812b76",
+        "berry_ky0_transport_equivalent.dat": "68d2342b253922bbdb2acd114dcc46937956e1b112020ce98944fdbdcedbf4a9"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_optical_conventional_T000",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/summary.json",
+      "summary_sha256": "06df0d5870c0631c3496c114d4ce051a2ab9ab760832f22bf95917bc656f75f1",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_optical_response_drude.dat": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+        "linear_optical_response_quantum_metric.dat": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+        "linear_optical_response_berry_curvature.dat": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+        "linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_optical_conventional_T300",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T300/summary.json",
+      "summary_sha256": "d2efd2bcf5e596b99d05726496954ef3d04f74e785fde45fb70bd9a630e01b23",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_optical_response_drude.dat": "35f47876fc6f47be922bd4ae5e2d9680ea860e02f0745018c76584b00a8107ba",
+        "linear_optical_response_quantum_metric.dat": "dc53ef95613799c153104b428ca370fd68fb7d433ef90e150286fa3d0c28b5e1",
+        "linear_optical_response_berry_curvature.dat": "a71a1460f3dea635248d62ddb07469b1ef2435e1b06431f491a2bd485f1c05ee",
+        "linear_optical_response_total.dat": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_optical_projector_T000",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T000/summary.json",
+      "summary_sha256": "1b93e33d5044070ed93588157967774682927b9c1ba2c9dd89489b7753dc672f",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_optical_response_drude.dat": "ade94329ed6ad0aa57531cd24b92fd64566d583966e3f786054e7b1e11e4f2e0",
+        "linear_optical_response_quantum_metric.dat": "53d4a2c9e2bb568bc3abb5a5e1b6ee8f82cd0d5044170d9b5d915134971c79db",
+        "linear_optical_response_berry_curvature.dat": "4ad5057ecbc2f87f53c5237f4df9f04ad59b2fa1155d5a9482be4a33164a9d38",
+        "linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_optical_projector_T300",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T300/summary.json",
+      "summary_sha256": "fde96c05ac39480d2259f46cc45303fb55d83e939bc652caaf29a86b1bfac4fe",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_optical_response_drude.dat": "cdceab91f7f9ff6837e2becc7b4056262672e81b4111b08e2eea79342f742424",
+        "linear_optical_response_quantum_metric.dat": "f8545a2142ebdfafeef5784e0a4fe81566329e4fac92229f3ecfa3d2eb5744e5",
+        "linear_optical_response_berry_curvature.dat": "c034219dec3b7176b4dfcc9f5c09a57263260ae1339843cfc8e1362bb6823e0b",
+        "linear_optical_response_total.dat": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_transport_conventional_T000",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_transport_conventional_T000/summary.json",
+      "summary_sha256": "0b90f05748dc7d201b91ae97c98086f2224592eea663e592627a7a2034739e2e",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_transport_drude.dat": "eca772baa4d4a1cdf138886ecafe78f240c2433a19974bab974241ede3316f1b",
+        "linear_transport_quantum_metric.dat": "5a38a08108991bbcb7be274e884ef574d1fa3403952da4828c435dfb9a476f5f",
+        "linear_transport_berry_curvature.dat": "8461c8ddb2af1057d6202dd5f14f80eb5e27a61c467ce6738e184783710a5de0",
+        "linear_transport_total.dat": "416e861d4dc228cda586d61f939d888dd5faabc5856985456c3b0d0f81c1d616"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_transport_conventional_T300",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_transport_conventional_T300/summary.json",
+      "summary_sha256": "8749fbb3c5172e5bc58af8d46a03b7b4ca451bb1f695887aa2af6baf077c5329",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_transport_drude.dat": "72c12fac1f52162a156fcc51698758c3b823e809339583b560815d6849a87ead",
+        "linear_transport_quantum_metric.dat": "9b1405952a12e8667cfa188f3295b0c300215f3c285e972a32165136ee279b32",
+        "linear_transport_berry_curvature.dat": "44ca976d33f1daedbf6f8536ccbb357952c2e2de81f735854f365a8c8984bad4",
+        "linear_transport_total.dat": "61105b08cda9f44b8f0a3cbf98158709620740ea12ce9687a15edb800a14419a"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_transport_projector_T000",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_transport_projector_T000/summary.json",
+      "summary_sha256": "0dabbaa26638aa1d5d22f31af32f752c319832ce1a9b9f6f3b0eced5b1d6c3e2",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_transport_drude.dat": "0a598c63d694af8d2085786a523c2650f2fbbf9e083884892d9f18240805e085",
+        "linear_transport_quantum_metric.dat": "c715d36b6870bed6b67bb6f3dd4dd32d963242010270491b6548240ef3955770",
+        "linear_transport_berry_curvature.dat": "80b6c4425bd578b88d9a294ed117c7039b35d6b0567197dbce158ddb5383894c",
+        "linear_transport_total.dat": "ee0ef8ead99e8417e9a8f23630152123af2576e6847427f401b186846fbb2339"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "linear_transport_projector_T300",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/linear_transport_projector_T300/summary.json",
+      "summary_sha256": "bb274ed5fe671e82a7bf98589c367048768d4709edf782b535e1e9181732d12c",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "linear_transport_drude.dat": "a0622e9385fd8feadf5c459c881ac766d3b3bfcd3a67306500dc6085fff033a3",
+        "linear_transport_quantum_metric.dat": "db54117cd25e1644c2330575d0291f0205c4f7dab0a79a3cec7f87ed2ca79b43",
+        "linear_transport_berry_curvature.dat": "63e6dab06dc441c95dda16bee3e5896ab085720805e756c45a9c2aaddb93daa9",
+        "linear_transport_total.dat": "eee3ef87e2368632df2288f960104eef8f44524d84265c00e0f7c609e82c426a"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "oam_conventional_T000",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/oam_conventional_T000/summary.json",
+      "summary_sha256": "50bd228077e5471d2da749cb6bd94f06fc45e8d78743cb84b7d15246d947522c",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "orbital_magnetization_srocc.dat": "2856dc5904db2fa50574e09b66559b0f4da69fbfd3c295efb969b72fd3f319f8",
+        "orbital_magnetization_cmocc.dat": "c1d7d1264dd0403586994023049cddb83db642a8f26e63d7565b6dfe945ea9ba",
+        "orbital_magnetization_total.dat": "50dfb6d6c7d26c323b20d183657011b0d7abcba91840501a36773b404f1b2f6f"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "oam_conventional_T300",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/oam_conventional_T300/summary.json",
+      "summary_sha256": "b73fec6cf07bf501841f544e92298d762e110577e9b8ebbe27208d2e4a0b205e",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "orbital_magnetization_srocc.dat": "57d0c4ac8c3575664c2e72493715b8df385fc20dabe851fe77e7716f3d1fe5b6",
+        "orbital_magnetization_cmocc.dat": "3213a925bc34853443f93e1e67c345b11f1d32cb1dd59bee42e02ae284089549",
+        "orbital_magnetization_total.dat": "9c486a122d683bbef382d462c24b9128604d4e780d30e661cf026e118b7f3b07"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "oam_projector_T000",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/oam_projector_T000/summary.json",
+      "summary_sha256": "37ec07d082f255e227b4e81b9744bf8d047048ac699504afcce23ff2007a305d",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "orbital_magnetization_srocc.dat": "1aca0edef2b42391c4d1d1e55162ce331443300093f3e48c17ff8e7c758a591d",
+        "orbital_magnetization_cmocc.dat": "f8abad787725f352bee5a1bb1f773d2a5cadba26a221926dcd3ef92c21cccd71",
+        "orbital_magnetization_total.dat": "6ce6211d3216bba63a41e5dfeabefd3310616ec5598bab4a63906522cf344d08"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "chapter": "11_fe_oam_and_linear_response",
+      "task_id": "oam_projector_T300",
+      "summary": "examples/11_fe_oam_and_linear_response/results/reference/oam_projector_T300/summary.json",
+      "summary_sha256": "5cfb35f8ee04af87b42f1205457566fb2347c0016b45357918700d0b7448cfd8",
+      "package_version": "1.1.0",
+      "package_commit": null,
+      "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+      "finite_values": true,
+      "output_sha256": {
+        "orbital_magnetization_srocc.dat": "4348a674adc3dab14973ab28240569ed573480aef43d4e567d1da668661e5f2e",
+        "orbital_magnetization_cmocc.dat": "547907bb8b787f4534cdb878de955e5974efd3b4976212cd2f6a34a7621df93a",
+        "orbital_magnetization_total.dat": "a6cff8f351d8ade7c7876acc8ddd994aeb1c918721de2b405653d3c9a7e60c48"
+      },
+      "qualification": "DIAGNOSTIC_ONLY"
     }
   ]
 }

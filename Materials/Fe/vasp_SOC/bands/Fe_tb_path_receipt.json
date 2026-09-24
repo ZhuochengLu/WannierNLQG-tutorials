@@ -1,0 +1,16 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-tb-path-bands",
+  "schema_version": "1.0",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "scf_fermi_energy_ev": 5.7156290716733436,
+  "source_bands_sha256": "5979bdd9c68acbbd83542bb7884c14a4c13ee406a9eeef1c1de39fe42194aa38",
+  "tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+  "vasp_table_sha256": "d3daf4767334e0121b952d3fa61e4438ac0bb49b016ab35bd983ab75ae7b8f21",
+  "fractional_kpoint_max_abs_difference": 4.163336342344337e-17,
+  "distance_max_abs_difference_A_inverse": 2.0052700655526223e-07,
+  "table_sha256": "d2962f8fea12cf501d4ceeeebd7eb7c47003a3d6d1dd3d1652cea89d8f71f68b",
+  "shape": [
+    801,
+    18
+  ]
+}

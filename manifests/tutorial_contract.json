@@ -32,5 +32,48 @@
       24
     ]
   },
-  "qualification": "TUTORIAL_NUMERICAL_EVIDENCE"
+  "qualification": "TUTORIAL_NUMERICAL_EVIDENCE",
+  "fe_oam_and_linear_response": {
+    "package_version": "1.1.0",
+    "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+    "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+    "model_source_tree_sha256": "aaf92433a5b3a87849162d0fef744a59544fde97f10e558aa3cb1a1bf151ec2c",
+    "model_status_file": "Materials/Fe/vasp_SOC/MODEL_STATUS.json",
+    "wannierization_status": "MAX_ITERATIONS",
+    "qualification": "DIAGNOSTIC_ONLY",
+    "physics_status": "HOLD",
+    "production_eligible": false,
+    "publication_status": "LOCAL_EXPORT_CONTRACT_ACCEPTED_PHYSICS_HOLD_NOT_PUBLISHED",
+    "response_decomposition_validation_file": "examples/11_fe_oam_and_linear_response/results/reference/THREE_MECHANISM_VALIDATION.json",
+    "response_terms": ["drude", "quantum_metric", "berry_curvature", "total"],
+    "tb_file": "Materials/Fe/vasp_SOC/Fe_tb.dat",
+    "bundle_file": "Fe_fixed_full.h5",
+    "bundle_sha256": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115",
+    "bundle_release_status": "SEPARATE_RELEASE_ASSET",
+    "integral_mesh": [40, 40, 40],
+    "berry_kslice_mesh": [200, 200],
+    "fermi_energy_ev": 5.7156290716733436,
+    "temperatures_k": [0, 300],
+    "methods": ["Conventional", "Projector"],
+    "linear_optical_energies_ev": [0, 8, 0.02],
+    "relaxation_ev": [0.05, 0.05],
+    "berry_denominator_regularization_ev": 0.001
+  },
+  "shg": {
+    "package_version": "1.1.0",
+    "source_manifest_sha256": "5bb4904fb1f5f17a03faf4cba555743e906898cd0146f8328f7191ea498f3186",
+    "remote_pin_status": "HISTORICAL_LOCAL_SOURCE_DIGEST",
+    "input_model": "Materials/GeS/vasp_SOC/GeS_tb.dat",
+    "calculation": "Integral",
+    "mesh": [100, 100, 1],
+    "photon_energies_ev": [0.0, 4.0, 200],
+    "fermi_energy_ev": -2.5,
+    "temperature_k": 0.0,
+    "response": "both",
+    "output": "total",
+    "broadening_ev": 0.04,
+    "low_frequency_broadening_ev": 0.001,
+    "intermediate_regularization_ev": 0.001,
+    "degeneracy_threshold_ev": 0.0001
+  }
 }

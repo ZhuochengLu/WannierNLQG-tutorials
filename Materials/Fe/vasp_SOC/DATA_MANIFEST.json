@@ -1,0 +1,94 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-data",
+  "schema_version": "1.0",
+  "model_status": "MAX_ITERATIONS",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "source_frozen_vasp_inputs": {
+    "POSCAR": "0706c1b1c7630dc2f92e886e49ef07c124c00748051f17e85de513e30d286071",
+    "INCAR": "a9580130eb190236880990d06a273ad9d702e92b6615b907908fd68512dde84f",
+    "KPOINTS": "66d57bd04d37f858dff87938ff011af8ba58d86df48e9c277638f5366f27b00c",
+    "POTCAR_NOT_DISTRIBUTED": "cd5a22d9368cc8b5cc476bea79732366149640da08ac9009b0e1b7fc627eea28"
+  },
+  "files": [
+    {
+      "path": "Materials/Fe/vasp_SOC/POSCAR",
+      "bytes": 316,
+      "sha256": "d6b050709fb21f6166c179a64f437c724446191ca4f3f9297be11ff007c9c410"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/INCAR",
+      "bytes": 4162,
+      "sha256": "a9580130eb190236880990d06a273ad9d702e92b6615b907908fd68512dde84f"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/KPOINTS",
+      "bytes": 36,
+      "sha256": "66d57bd04d37f858dff87938ff011af8ba58d86df48e9c277638f5366f27b00c"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/POTCAR.txt",
+      "bytes": 423,
+      "sha256": "d2ca1300c13cee3173855d80229717a5a90298253e7a0f4f9b73aaa37322d79b"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/Fe_ordinary_full_driver.jl",
+      "bytes": 29530,
+      "sha256": "7ea276ab675a9031c9d06da880ee91bcf43ef1d5c0c2932486c541cef3e8309f"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/run_vasp.sh",
+      "bytes": 442,
+      "sha256": "5eb551a1317c30aa3dca418f6fcf065adcb901853e0991ce1cfee9c136d5b966"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/Fe_tb.dat",
+      "bytes": 71573382,
+      "sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/MODEL_STATUS.json",
+      "bytes": 833,
+      "sha256": "9f9da068bc413df815c84b5ccd5cb84a7dfaadb4daf42c0253905cd91910b1e8"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/bands/INCAR_path_lmaxmix4",
+      "bytes": 493,
+      "sha256": "1107a1beda3fcdf07b1709519fb034eacbfdbc7e843e896e15c1917e832e5e3c"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/bands/KPOINTS_path_lmaxmix4",
+      "bytes": 51337,
+      "sha256": "40d272fe7e9c7d6df1a33896a5d5dea316eb741e249a3da421248ceaf2ec42c8"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "bytes": 1095018,
+      "sha256": "d3daf4767334e0121b952d3fa61e4438ac0bb49b016ab35bd983ab75ae7b8f21"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/bands/Fe_vasp_path_receipt.json",
+      "bytes": 919,
+      "sha256": "9712abacf98a12c5db8c74013721a027ec9a6137befa35883408065054311058"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/bands/Fe_tb_path_absolute.dat",
+      "bytes": 320388,
+      "sha256": "d2962f8fea12cf501d4ceeeebd7eb7c47003a3d6d1dd3d1652cea89d8f71f68b"
+    },
+    {
+      "path": "Materials/Fe/vasp_SOC/bands/Fe_tb_path_receipt.json",
+      "bytes": 686,
+      "sha256": "d35b52347b9abb55c5f4bf4c5d420c6d742c02625fc8eeefed2e7430c82a747e"
+    }
+  ],
+  "forbidden": [
+    "POTCAR",
+    "WAVECAR",
+    "OUTCAR",
+    "CHGCAR",
+    "*.amn",
+    "*.mmn",
+    "*.eig",
+    "*.chk"
+  ]
+}

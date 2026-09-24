@@ -10,6 +10,9 @@ def write(path, value):
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
 
 for chapter in sorted(EXAMPLES.glob("[0-9][0-9]_*")):
+    if chapter.name == "10_second_harmonic_generation":
+        # SHG has native one-file-per-complex-component tables and dedicated configs.
+        continue
     results = chapter / "results" / "reference"
     configs = chapter / "plot_configs"
     if not results.is_dir():

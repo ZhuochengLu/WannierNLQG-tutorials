@@ -1,0 +1,11 @@
+{
+  "input": "../results/reference/integral_second_harmonic_generation_conventional/shg_sigma_yyy.dat",
+  "output_stem": "../figures/GeS_shg_sigma_yyy",
+  "component": "yyy",
+  "quantity": "sigma",
+  "unit": "A/V^2",
+  "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+  "ylabel": "$\\sigma^{yyy}(2\\omega;\\omega,\\omega)\\ \\mathrm{(\\mu A/V^2)}$",
+  "display_scale": 1000000.0,
+  "xlim": [0.0, 4.0]
+}

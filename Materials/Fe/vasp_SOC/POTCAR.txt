@@ -1,0 +1,9 @@
+POTCAR is intentionally not distributed.
+
+The source calculation used the licensed VASP PAW-PBE Fe dataset
+PAW_PBE Fe 06Sep2000 (ENMAX 267.882 eV). Obtain this dataset from a
+licensed VASP distribution. The supplied INCAR uses ENCUT = 450 eV.
+
+POTCAR SHA-256 in the source calculation:
+cd5a22d9368cc8b5cc476bea79732366149640da08ac9009b0e1b7fc627eea28
+This digest is a provenance check, not a substitute for a VASP license.

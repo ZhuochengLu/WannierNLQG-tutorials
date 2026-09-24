@@ -1,0 +1,15 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-figure",
+  "schema_version": "1.0",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "inputs_sha256": {
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_drude.dat": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_quantum_metric.dat": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_berry_curvature.dat": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+    "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+  },
+  "png_sha256": "7a30069ab25f8271c25fa0332c91265a5863af2d482cd52c5602b8f1af906128",
+  "pdf_sha256": "047e80ca98cd92a8fea8aa9eda4b74d8b7a96b957976e89d7a565989e4ea3d9f"
+}

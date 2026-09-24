@@ -10,6 +10,10 @@ for chapter in sort(filter(name -> occursin(r"^\d\d_", name), readdir(joinpath(R
     isdir(config_root) || continue
     for config in sort(filter(name -> endswith(name, ".json"), readdir(config_root)))
         config_path = joinpath(config_root, config)
+        if startswith(chapter, "10_")
+            run(`python3 $(joinpath(@__DIR__, "plot_shg_spectrum.py")) $(config_path)`)
+            continue
+        end
         text = read(config_path, String)
         script = startswith(chapter, "01_") ? "plot_band_structure.jl" :
                  occursin("integral_", config) ? "plot_response_integral.jl" : "plot_kslice.jl"

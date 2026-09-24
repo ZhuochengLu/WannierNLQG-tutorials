@@ -1,0 +1,394 @@
+{
+  "manifest": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_bands.figure.json",
+  "profile": "Times New Roman + LaTeX/newtx/textgreek",
+  "outputs": [
+    "./examples/11_fe_oam_and_linear_response/figures/Fe_vasp_path_bands.png",
+    "./examples/11_fe_oam_and_linear_response/figures/Fe_vasp_path_bands.pdf"
+  ],
+  "data": [
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": -2.638353,
+      "max": 2.225212
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": -2.487301,
+      "max": 2.75485
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 2.371602,
+      "max": 3.543578
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 2.73752,
+      "max": 4.236878
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 3.464395,
+      "max": 5.783796
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 3.910451,
+      "max": 5.817858
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 4.625208,
+      "max": 6.084361
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 4.745985,
+      "max": 7.964689
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 5.006611,
+      "max": 8.001266
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 5.365726,
+      "max": 8.035569
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 6.037472,
+      "max": 15.483387
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 7.343575,
+      "max": 15.559205
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 13.019155,
+      "max": 30.418103
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 13.565135,
+      "max": 30.424659
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 15.110999,
+      "max": 30.43388
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 15.960794,
+      "max": 30.679176
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 20.607492,
+      "max": 30.688675
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 21.231388,
+      "max": 30.695302
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 22.28658,
+      "max": 35.726938
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 22.28742,
+      "max": 35.794879
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 26.324808,
+      "max": 40.322592
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 27.408476,
+      "max": 40.614256
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 34.91405,
+      "max": 45.0856
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 35.052304,
+      "max": 45.262685
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 36.666721,
+      "max": 52.576854
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 37.009046,
+      "max": 52.62468
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 37.972852,
+      "max": 52.684636
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 38.441516,
+      "max": 53.619391
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 38.530626,
+      "max": 54.550326
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 38.567451,
+      "max": 55.330764
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 38.634221,
+      "max": 60.11164
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 39.360055,
+      "max": 60.117466
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 39.488765,
+      "max": 60.631932
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 39.604506,
+      "max": 61.784943
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 49.831392,
+      "max": 61.792427
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 50.21394,
+      "max": 62.902174
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 55.826821,
+      "max": 63.419668
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 56.585457,
+      "max": 64.48165
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 58.448638,
+      "max": 66.118616
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 59.857722,
+      "max": 66.157919
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 59.935552,
+      "max": 67.850977
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 61.678732,
+      "max": 67.854905
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 64.147016,
+      "max": 71.739364
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 65.123576,
+      "max": 74.151747
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 65.390444,
+      "max": 78.311512
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 65.891272,
+      "max": 78.315238
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 66.695686,
+      "max": 78.318728
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 67.2859,
+      "max": 78.623857
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 69.785572,
+      "max": 79.339576
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 69.947307,
+      "max": 79.343086
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 70.892349,
+      "max": 80.877298
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 71.091248,
+      "max": 82.128774
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 73.441227,
+      "max": 83.672698
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 73.750733,
+      "max": 84.785461
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 74.923501,
+      "max": 91.304581
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 76.529892,
+      "max": 92.422961
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 78.17613,
+      "max": 93.051929
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 79.846715,
+      "max": 94.028528
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 80.334504,
+      "max": 100.708841
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 81.476862,
+      "max": 100.75591
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 82.470661,
+      "max": 100.827997
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 83.200344,
+      "max": 100.917475
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 84.584875,
+      "max": 101.023616
+    },
+    {
+      "kind": "line",
+      "source": "./Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat",
+      "min": 84.614257,
+      "max": 101.369225
+    }
+  ]
+}

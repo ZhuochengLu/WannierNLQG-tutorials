@@ -13,15 +13,17 @@ for path in sorted(ROOT.glob("examples/*/results/reference/*/summary.json")):
         "task_id": summary["task_id"],
         "summary": str(path.relative_to(ROOT)),
         "summary_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "package_version": summary["package_version"],
+        "package_commit": summary.get("package_commit"),
+        "source_manifest_sha256": summary.get("source_manifest_sha256"),
         "finite_values": summary["finite_values"],
         "output_sha256": summary["output_sha256"],
         "qualification": summary["qualification"],
     })
 manifest = {
     "schema": "wanniernlqg-tutorials.reference-results",
-    "schema_version": "1.0",
-    "package_version": "1.0.1",
-    "package_commit": "1e98f4841d10b6f86aecec8417d3a7da317c0f49",
+    "schema_version": "1.1",
+    "package_versions": sorted({entry["package_version"] for entry in entries}),
     "count": len(entries),
     "entries": entries,
 }

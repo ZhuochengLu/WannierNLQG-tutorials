@@ -1,0 +1,58 @@
+{
+  "task_id": "linear_optical_projector_T000",
+  "package_version": "1.1.0",
+  "package_commit": null,
+  "source_manifest_sha256": "55f1867fe07e6f8f278769919380b03e0d4061b12dc7a9f800d29145950d60f9",
+  "source_tree_sha256": "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+  "profile": "reference",
+  "reference_reused": false,
+  "mesh": [
+    40,
+    40,
+    40
+  ],
+  "fermi_energy_ev": 5.7156290716733436,
+  "temperature_k": 0,
+  "method": "projector",
+  "family": "linear_optical",
+  "input_sha256": {
+    "Fe_tb.dat": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+    "Fe_fixed_full.h5": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+  },
+  "output_files": [
+    "linear_optical_response_drude.dat",
+    "linear_optical_response_quantum_metric.dat",
+    "linear_optical_response_berry_curvature.dat",
+    "linear_optical_response_total.dat"
+  ],
+  "output_sha256": {
+    "linear_optical_response_drude.dat": "ade94329ed6ad0aa57531cd24b92fd64566d583966e3f786054e7b1e11e4f2e0",
+    "linear_optical_response_quantum_metric.dat": "53d4a2c9e2bb568bc3abb5a5e1b6ee8f82cd0d5044170d9b5d915134971c79db",
+    "linear_optical_response_berry_curvature.dat": "4ad5057ecbc2f87f53c5237f4df9f04ad59b2fa1155d5a9482be4a33164a9d38",
+    "linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb"
+  },
+  "source_provenance": {
+    "linear_optical_response_drude.dat": {
+      "source_relative": "linear_optical_projector_T000/linear_optical_projector_T000/linear_optical_response_drude.dat",
+      "sha256": "ade94329ed6ad0aa57531cd24b92fd64566d583966e3f786054e7b1e11e4f2e0"
+    },
+    "linear_optical_response_quantum_metric.dat": {
+      "source_relative": "linear_optical_projector_T000/linear_optical_projector_T000/linear_optical_response_quantum_metric.dat",
+      "sha256": "53d4a2c9e2bb568bc3abb5a5e1b6ee8f82cd0d5044170d9b5d915134971c79db"
+    },
+    "linear_optical_response_berry_curvature.dat": {
+      "source_relative": "linear_optical_projector_T000/linear_optical_projector_T000/linear_optical_response_berry_curvature.dat",
+      "sha256": "4ad5057ecbc2f87f53c5237f4df9f04ad59b2fa1155d5a9482be4a33164a9d38"
+    },
+    "linear_optical_response_total.dat": {
+      "source_relative": "linear_optical_projector_T000/linear_optical_projector_T000/linear_optical_response_total.dat",
+      "sha256": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb"
+    }
+  },
+  "finite_values": true,
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "wannierization_status": "MAX_ITERATIONS",
+  "optical_export_contract": "native_three_mechanism_filenames"
+}

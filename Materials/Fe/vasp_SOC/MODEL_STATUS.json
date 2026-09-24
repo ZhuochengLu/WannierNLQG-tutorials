@@ -1,0 +1,19 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-model-status",
+  "schema_version": "1.0",
+  "package_version": "1.1.0",
+  "source_tree_sha256": "aaf92433a5b3a87849162d0fef744a59544fde97f10e558aa3cb1a1bf151ec2c",
+  "source_manifest_sha256": "5bb4904fb1f5f17a03faf4cba555743e906898cd0146f8328f7191ea498f3186",
+  "status": "MAX_ITERATIONS",
+  "selected_attempt": "attempt2",
+  "readback_status": "PASS",
+  "orbitals": 18,
+  "full_operator_count": 11,
+  "target_contract_sha256": "d49a15f922e3788011792b48efb29e999ae6a4dcaa413b31e947cb10e2e1e84c",
+  "tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+  "bundle_sha256": "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "vasp_recomputed": false
+}

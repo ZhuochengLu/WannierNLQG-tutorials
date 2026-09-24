@@ -133,4 +133,8 @@ Committed outputs are `TUTORIAL_NUMERICAL_EVIDENCE`: finite, hashed, and reprodu
 """
     (chapter_root / "README.md").write_text(readme)
 
-print("CHAPTER_READMES_OK chapters=9")
+if not (EXAMPLES / "10_second_harmonic_generation" / "README.md").is_file():
+    raise FileNotFoundError("the hand-authored SHG chapter README is missing")
+if not (EXAMPLES / "11_fe_oam_and_linear_response" / "README.md").is_file():
+    raise FileNotFoundError("the hand-authored Fe chapter README is missing")
+print("CHAPTER_READMES_OK chapters=11 (nine legacy chapters plus SHG and Fe)")

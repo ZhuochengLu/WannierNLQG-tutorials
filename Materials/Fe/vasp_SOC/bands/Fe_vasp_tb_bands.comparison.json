@@ -1,0 +1,84 @@
+{
+  "output": {
+    "stem": "../../../../examples/11_fe_oam_and_linear_response/figures/Fe_vasp_tb_path_comparison",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "comparison": {
+    "purpose": "diagnostic",
+    "title": "Fe SOC: DFT and 18-WF TB bands",
+    "energy_reference": {
+      "value_ev": 5.7156290716733436,
+      "label": "verified SOC SCF Fermi energy"
+    },
+    "degeneracy_tolerance_ev": 0.01,
+    "reference": {
+      "id": "fe_vasp",
+      "label": "VASP SOC",
+      "data": "Fe_vasp_path_absolute.dat",
+      "x_column": 0,
+      "energy_columns": {
+        "start": 1,
+        "stop": 65
+      },
+      "fitted_band_indices": {
+        "start": 0,
+        "stop": 64
+      },
+      "display_band_indices": "all"
+    },
+    "models": [
+      {
+        "id": "fe_tb",
+        "label": "Fe 18-WF TB",
+        "data": "Fe_tb_path_absolute.dat",
+        "x_column": 0,
+        "energy_columns": {
+          "start": 1,
+          "stop": 19
+        },
+        "usable_for_bands": false,
+        "qualification_label": "Physics HOLD",
+        "matching": {
+          "mode": "automatic"
+        }
+      }
+    ],
+    "metric_windows": [
+      {
+        "id": "near_fermi",
+        "label": "within 1 eV of Fermi energy",
+        "min_ev": -1.0,
+        "max_ev": 1.0
+      },
+      {
+        "id": "display",
+        "label": "display window",
+        "min_ev": -8.0,
+        "max_ev": 8.0
+      }
+    ],
+    "error_window_id": "near_fermi",
+    "xticks": [
+      0.0,
+      2.21234904570045,
+      5.53087261425112,
+      7.44682308986596,
+      9.01119010243226
+    ],
+    "xticklabels": [
+      "\\textGamma",
+      "\\textnormal{H}",
+      "\\textnormal{P}",
+      "\\textnormal{N}",
+      "\\textGamma"
+    ],
+    "ylim": [
+      -8.0,
+      8.0
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-figure",
+  "schema_version": "1.0",
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "inputs_sha256": {
+    "examples/11_fe_oam_and_linear_response/results/reference/oam_conventional_T000/orbital_magnetization_total.dat": "50dfb6d6c7d26c323b20d183657011b0d7abcba91840501a36773b404f1b2f6f",
+    "examples/11_fe_oam_and_linear_response/results/reference/oam_conventional_T300/orbital_magnetization_total.dat": "9c486a122d683bbef382d462c24b9128604d4e780d30e661cf026e118b7f3b07",
+    "examples/11_fe_oam_and_linear_response/results/reference/oam_projector_T000/orbital_magnetization_total.dat": "6ce6211d3216bba63a41e5dfeabefd3310616ec5598bab4a63906522cf344d08",
+    "examples/11_fe_oam_and_linear_response/results/reference/oam_projector_T300/orbital_magnetization_total.dat": "a6cff8f351d8ade7c7876acc8ddd994aeb1c918721de2b405653d3c9a7e60c48"
+  },
+  "png_sha256": "a36c24b058b77c70f8572bf994cb9f2237af85a09bb7e17d3f5d831dbf1b7ad1",
+  "pdf_sha256": "7685f843f54a101d420814e6c887f02c4a4eaef7f89c45cb449da64616bbacff"
+}

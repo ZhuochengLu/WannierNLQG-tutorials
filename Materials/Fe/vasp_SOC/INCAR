@@ -1,0 +1,103 @@
+SYSTEM = bcc Fe
+
+# ==============================================================================
+# Electronic structure
+# ==============================================================================
+PREC   = Accurate
+ENCUT  = 450
+LREAL  = .FALSE.          # Evaluate projectors in reciprocal space
+ALGO   = Normal           # Davidson: robust recovery after Fast/RMM-DIIS ZHEGV failures
+ISYM   = -1               # Disable symmetry for the SOC/noncollinear calculation
+
+# NCORE = 4               # Optional parallelization setting; tune for the machine
+
+# ==============================================================================
+# Initialization and electronic convergence
+# ==============================================================================
+ISTART = 0                # Start from scratch
+ICHARG = 2                # Superposition of atomic charge densities
+LCHARG = .TRUE.           # Preserve the self-consistent charge density
+LWAVE  = .TRUE.           # Required by the native VASP PAW full-profile route
+NELM   = 200
+NELMIN = 6
+EDIFF  = 1.0E-05
+NBANDS = 64               # Matches num_bands = 64 in the reference Wannier90 input
+AMIX     = 0.20           # Conservative charge mixing for metallic SOC Fe
+BMIX     = 0.0001
+AMIX_MAG = 0.20           # Dampen noncollinear magnetization oscillations
+BMIX_MAG = 0.0001
+
+# EDIFFG = -1.0E-03       # Used only for ionic relaxation
+
+# ==============================================================================
+# Static calculation and occupations
+# ==============================================================================
+IBRION = -1               # No ionic update
+ISMEAR = 1                # Metallic Methfessel-Paxton smearing for SCF recovery
+SIGMA  = 0.20             # Authorized metallic broadening (eV)
+
+# NSW   = 200             # Ionic steps; inactive for this static calculation
+# POTIM = 0.2
+# ISIF  = 3
+
+# ==============================================================================
+# Noncollinear magnetism and spin-orbit coupling
+# ==============================================================================
+ISPIN          = 1
+LNONCOLLINEAR  = .TRUE.
+LSORBIT        = .TRUE.
+SAXIS          = 0.000  0.000  1.000
+MAGMOM         = 0.0 0.0 3.0   # Initial Fe moment along +z (mu_B)
+GGA_COMPAT     = .FALSE.
+
+# ==============================================================================
+# VASP2WANNIER90 interface
+# ==============================================================================
+LWANNIER90     = T               # Generate Wannier90 interface files
+LWRITE_MMN_AMN = T               # Write overlap and projection matrices
+LWRITE_UNK     = F               # Do not write periodic Bloch functions
+NUM_WANN       = 18              # Number of spinor Wannier functions
+
+# LSCDM = T                      # Optional SCDM initial projections
+# NEDOS = 2001                   # DOS sampling; unused in this run
+# LASPH = T                      # Recommended for 3d/f and DFT+U calculations
+
+# ==============================================================================
+# Embedded Wannier90 input
+# VASP writes wannier90.win from this block; no separate input file is required.
+# ==============================================================================
+WANNIER90_WIN = "
+# Full s/p/d shell: 9 orbital channels × two spinor components = 18 WF.
+# This explicit form is required by the native VASP PAW AMN generator.
+begin projections
+Fe:l=0;l=1;l=2
+end projections
+
+spinors           = .true.
+
+# Outer and frozen disentanglement windows (eV)
+dis_win_min       = -8.0
+dis_win_max       = 50.0
+dis_froz_min      = -8.0
+dis_froz_max      = 20.0
+
+# Disentanglement and localization controls
+dis_num_iter      = 1000
+dis_mix_ratio     = 1.0
+num_iter          = 1000
+
+# restart          = default
+
+# Tight-binding outputs
+write_hr          = .true.
+write_tb          = .true.
+write_rmn         = .true.
+
+# Optional bcc-Fe band path: G-H-P
+# bands_plot       = .true.
+# bands_num_points = 50
+# begin kpoint_path
+# G  0.00000  0.00000  0.00000   H  0.50000 -0.50000 -0.50000
+# H  0.50000 -0.50000 -0.50000   P  0.75000  0.25000 -0.25000
+# end kpoint_path
+"

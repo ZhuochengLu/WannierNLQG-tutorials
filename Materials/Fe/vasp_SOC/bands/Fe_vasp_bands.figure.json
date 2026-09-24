@@ -1,0 +1,505 @@
+{
+  "output": {
+    "stem": "../../../../examples/11_fe_oam_and_linear_response/figures/Fe_vasp_path_bands",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "line",
+    "figsize": [
+      6.4,
+      4.6
+    ],
+    "title": "Fe SOC first-principles bands",
+    "xlabel": "$k$-path distance ($\\mathrm{\\AA}^{-1}$)",
+    "ylabel": "$E$ (eV)",
+    "xlim": [
+      0.0,
+      9.01119010243226
+    ],
+    "ylim": [
+      -2.2843709283266564,
+      13.715629071673344
+    ],
+    "yticks": [-2, 0, 2, 4, 6, 8, 10, 12],
+    "yticklabels": ["\\textnormal{-2}", "$0$", "$2$", "$4$", "$6$", "$8$", "$10$", "$12$"],
+    "xticks": [
+      0.0,
+      2.21234904570045,
+      5.53087261425112,
+      7.44682308986596,
+      9.01119010243226
+    ],
+    "xticklabels": [
+      "\\textGamma",
+      "\\textnormal{H}",
+      "\\textnormal{P}",
+      "\\textnormal{N}",
+      "\\textGamma"
+    ],
+    "guide_x": [
+      0.0,
+      2.21234904570045,
+      5.53087261425112,
+      7.44682308986596,
+      9.01119010243226
+    ],
+    "guide_y": [
+      5.7156290716733436
+    ],
+    "legend": false,
+    "series": [
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 1,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 2,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 3,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 4,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 5,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 6,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 7,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 8,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 9,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 10,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 11,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 12,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 13,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 14,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 15,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 16,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 17,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 18,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 19,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 20,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 21,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 22,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 23,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 24,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 25,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 26,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 27,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 28,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 29,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 30,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 31,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 32,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 33,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 34,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 35,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 36,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 37,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 38,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 39,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 40,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 41,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 42,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 43,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 44,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 45,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 46,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 47,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 48,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 49,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 50,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 51,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 52,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 53,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 54,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 55,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 56,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 57,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 58,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 59,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 60,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 61,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 62,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 63,
+        "color": "#606060",
+        "linewidth": 0.65
+      },
+      {
+        "data": "Fe_vasp_path_absolute.dat",
+        "x_column": 0,
+        "y_column": 64,
+        "color": "#606060",
+        "linewidth": 0.65
+      }
+    ]
+  }
+}

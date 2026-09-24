@@ -1,0 +1,22 @@
+{
+  "Fe_vasp_path_bands.png": "e087d81af95ef77696d59c13bd341acd93c84b311ce4926caf19314d7efd652c",
+  "Fe_vasp_path_bands.pdf": "127dd9b9c2eca2ad0bf7eb8d48cf149c489c96843d628d2ce7b5cb64d35c668f",
+  "Fe_vasp_tb_path_comparison_bands.png": "fc81ea1a8dbb60a82a7c76bc46aaacd8a2bfe5f42c7d7a5b06058fb540e08cb7",
+  "Fe_vasp_tb_path_comparison_bands.pdf": "f21952bfa8a811fd6bcaf06116bbff09877cb3da029ff444496f2047550fdb8c",
+  "Fe_vasp_tb_path_comparison_errors.png": "87a7d04be19acb5f8ce7fb071c12ddc73b7beee4d2d5613e5bc7cf2a0616e87e",
+  "Fe_vasp_tb_path_comparison_errors.pdf": "aa97a765d548c62af7d997b54341fbdd743e0063586033605692d5ca9d7ad1d3",
+  "Fe_oam_40x40x40_integral.png": "a36c24b058b77c70f8572bf994cb9f2237af85a09bb7e17d3f5d831dbf1b7ad1",
+  "Fe_oam_40x40x40_integral.pdf": "7685f843f54a101d420814e6c887f02c4a4eaef7f89c45cb449da64616bbacff",
+  "Fe_linear_optical_xx_spectra.png": "068a9439a798ee6832b63016ea3ea5d32af8fa3717126e08c669e1d43247fb32",
+  "Fe_linear_optical_xx_spectra.pdf": "6f1e6b483035d86231f3b8b97fd285e7ed5b9c4d52f54dc6c25d8b46f6c1c6c0",
+  "Fe_linear_optical_xy_spectra.png": "79ab6544c1bab2b8f051d21de9cae60571d7082aa17c9bb7746a6368affbdec9",
+  "Fe_linear_optical_xy_spectra.pdf": "330975798299aa6d910cd81c94a7f7287c2b32a9b1295ffd855a3e5c2ae9aae4",
+  "Fe_linear_optical_decomposition_xx.png": "6d5e0ad19a6124c19c6dfc533a2c1d69aed5d58fac9c10a74552487780b6d9ca",
+  "Fe_linear_optical_decomposition_xx.pdf": "250ed54ee4e6298e8379f7db87b57f145fe9bb10160e3261cc4be2af6dd930b2",
+  "Fe_linear_optical_decomposition_xy.png": "7a30069ab25f8271c25fa0332c91265a5863af2d482cd52c5602b8f1af906128",
+  "Fe_linear_optical_decomposition_xy.pdf": "047e80ca98cd92a8fea8aa9eda4b74d8b7a96b957976e89d7a565989e4ea3d9f",
+  "berry_legacy_style_sos.png": "e29f93de138a6da9a2f4a66c994c0a09fce0089274eed3b1d4c0141f09b0e39d",
+  "berry_legacy_style_sos.pdf": "6651c8bbaf4a60c8e6615727eee243549a149672c13c2c78c80d08f869a2ae81",
+  "berry_legacy_style_transport_equivalent.png": "4d2ed18d2d3c0a288e27ce29947540e47d6b3fd10b836144ee127a490ccda180",
+  "berry_legacy_style_transport_equivalent.pdf": "e9e2a7f9914196c9c2988bad4f0bb508347b87f9bd8c468f6843bfb61996fb5d"
+}

@@ -8,8 +8,7 @@ module ExampleSupport
     const MATERIAL_ROOT = joinpath(REPOSITORY_ROOT, "Materials", "GeS", "vasp_SOC")
     const GES_MODEL_FILE = joinpath(MATERIAL_ROOT, "GeS_tb.dat")
     const GES_SEED_PREFIX = joinpath(MATERIAL_ROOT, "GeS")
-    const PACKAGE_VERSION = "1.0.1"
-    const PACKAGE_COMMIT = "1e98f4841d10b6f86aecec8417d3a7da317c0f49"
+    const LEGACY_PACKAGE_COMMIT = "1e98f4841d10b6f86aecec8417d3a7da317c0f49"
     const OPTIONAL_FILES = ["GeS.spn", "GeS.chk", "GeS.eig", "GeS.mmn"]
 
     function profile_from_args(args)
@@ -48,17 +47,31 @@ module ExampleSupport
         return bytes2hex(open(SHA.sha256, path))
     end
 
+    function package_identity()
+        version = string(Base.pkgversion(WannierNLQG))
+        version in ("1.0.1", "1.1.0") || error("unsupported tutorial package version: $(version)")
+        package_root = normpath(joinpath(dirname(pathof(WannierNLQG)), ".."))
+        manifest = joinpath(package_root, "SHA256SUMS")
+        return Dict{String, Any}(
+            "package_version" => version,
+            "package_commit" => version == "1.0.1" ? LEGACY_PACKAGE_COMMIT : nothing,
+            "source_manifest_sha256" => isfile(manifest) ? file_sha256(manifest) : nothing,
+        )
+    end
+
     function contains_nonfinite_token(path::AbstractString)
         endswith(lowercase(path), ".dat") || return false
         pattern = r"(?i)(^|[\s,])[+-]?(nan|inf)([\s,]|$)"
         return occursin(pattern, read(path, String))
     end
 
-    function copy_result_tree(source::AbstractString, destination::AbstractString)
+    function copy_result_tree(source::AbstractString, destination::AbstractString; retain_outputs=nothing)
         ispath(destination) && error("refusing to overwrite existing result directory: $(destination)")
         mkpath(destination)
         for name in readdir(source)
             name in ("progress.jsonl", "WannierNLQG.out") && continue
+            retain_outputs !== nothing &&
+                !(name in retain_outputs || name in ("metadata.txt", "spectral_response_metadata.txt")) && continue
             source_path = joinpath(source, name)
             destination_path = joinpath(destination, name)
             isdir(source_path) ? cp(source_path, destination_path; force=false) : cp(source_path, destination_path)
@@ -75,6 +88,9 @@ module ExampleSupport
                 lines[index] = "run_dir                         = EPHEMERAL_RUN_DIRECTORY_OMITTED"
             elseif occursin(r"^output_root\s*=", lines[index])
                 lines[index] = "output_root = EPHEMERAL_RUN_DIRECTORY_OMITTED"
+            elseif occursin(r"^model_file\s*=", lines[index]) &&
+                   !occursin(REPOSITORY_ROOT, lines[index])
+                lines[index] = "model_file = EXTERNAL_INPUT_PATH_OMITTED"
             else
                 lines[index] = replace(lines[index], REPOSITORY_ROOT => ".")
                 occursin("/var/folders/", lines[index]) &&
@@ -90,6 +106,9 @@ module ExampleSupport
         task_id::AbstractString,
         args=ARGS,
         requires_optional::Bool=false,
+        input_files=Dict("GeS_tb.dat" => GES_MODEL_FILE),
+        retain_outputs=nothing,
+        qualification="TUTORIAL_NUMERICAL_EVIDENCE",
         summary_fields=Dict{String, Any}(),
     )
         profile = profile_from_args(args)
@@ -104,23 +123,22 @@ module ExampleSupport
             config = build_config(profile=profile, output_root=scratch, progress_enabled=false)
             result = WannierNLQG.run(config)
             child = only(result.task_results)
-            copy_result_tree(child.run_dir, destination)
+            copy_result_tree(child.run_dir, destination; retain_outputs=retain_outputs)
             sanitize_metadata!(joinpath(destination, "metadata.txt"))
-            output_names = sort(basename.(child.outputs))
+            output_names = sort(filter(name -> isfile(joinpath(destination, name)), basename.(child.outputs)))
             copied_outputs = [joinpath(destination, name) for name in output_names]
             finite_values = !any(contains_nonfinite_token, copied_outputs)
             hashes = Dict(name => file_sha256(joinpath(destination, name)) for name in output_names)
             summary = Dict{String, Any}(
                 "task_id" => task_id,
-                "package_version" => PACKAGE_VERSION,
-                "package_commit" => PACKAGE_COMMIT,
+                package_identity()...,
                 "profile" => profile,
                 "julia_threads" => Threads.nthreads(),
-                "input_sha256" => Dict("GeS_tb.dat" => file_sha256(GES_MODEL_FILE)),
+                "input_sha256" => Dict(name => file_sha256(path) for (name, path) in input_files),
                 "output_files" => output_names,
                 "output_sha256" => hashes,
                 "finite_values" => finite_values,
-                "qualification" => "TUTORIAL_NUMERICAL_EVIDENCE",
+                "qualification" => qualification,
             )
             merge!(summary, summary_fields)
             open(joinpath(destination, "summary.json"), "w") do io

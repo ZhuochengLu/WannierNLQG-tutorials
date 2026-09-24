@@ -1,7 +1,7 @@
 {
   "schema": "wanniernlqg-tutorials.tasks",
   "schema_version": "1.0",
-  "count": 31,
+  "count": 46,
   "tasks": [
     {
       "chapter": "01_band_structure",
@@ -188,6 +188,26 @@
       "case_file": "examples/09_higher_and_spin_geometry/cases/zeeman_interband_quantum_metric_conventional.jl",
       "task_id": "kslice_zeeman_interband_quantum_metric_conventional",
       "optional_spin_data": true
-    }
+    },
+    {
+      "chapter": "10_second_harmonic_generation",
+      "case_file": "examples/10_second_harmonic_generation/cases/second_harmonic_generation_conventional.jl",
+      "task_id": "integral_second_harmonic_generation_conventional",
+      "optional_spin_data": false
+    },
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"oam_conventional_T000","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"oam_conventional_T300","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"oam_projector_T000","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"oam_projector_T300","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_transport_conventional_T000","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_transport_conventional_T300","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_transport_projector_T000","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_transport_projector_T300","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_optical_conventional_T000","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_optical_conventional_T300","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_optical_projector_T000","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"linear_optical_projector_T300","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"berry_sos_occupied_xy","optional_spin_data":false,"optional_fe_bundle":true},
+    {"chapter":"11_fe_oam_and_linear_response","case_file":"examples/11_fe_oam_and_linear_response/cases/fe_response.jl","task_id":"berry_transport_equivalent_xy","optional_spin_data":false,"optional_fe_bundle":true}
   ]
 }
