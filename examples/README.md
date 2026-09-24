@@ -16,5 +16,6 @@ Chapter 10 uses WannierNLQG v1.1.0 and is documented separately in its README.
 Chapter 11 also uses a frozen v1.1.0 source. Its Fe bundle is optional for
 cloning; the rerun's actual Wannierization status is in `MODEL_STATUS.json`,
 and all Fe results remain diagnostic only with Physics on hold.
-Chapter 12 verifies the supplied Fe Wannierization output offline and documents
-an explicit licensed rebuild; it does not add a response reference case.
+Chapter 12 keeps the supplied Fe Wannierization output as offline smoke evidence
+and adds an explicit licensed solver-to-bands lesson. It does not add a response
+reference case or treat Fe band agreement as material qualification.

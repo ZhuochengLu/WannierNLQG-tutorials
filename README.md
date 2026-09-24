@@ -1,7 +1,8 @@
 # WannierNLQG tutorials
 
-This collection contains Fe results from WannierNLQG v1.1.0 and an
-offline Fe Wannierization readback; see [VALIDATION.md](VALIDATION.md).
+This collection contains Fe results from WannierNLQG v1.1.0, an
+offline Fe Wannierization readback, and an explicit Fe solver-to-bands lesson;
+see [VALIDATION.md](VALIDATION.md).
 The frozen three-mechanism source, 14-case Fe rerun, and local tutorial gates
 passed as recorded there. Fe remains diagnostic and not production eligible.
 
@@ -12,8 +13,9 @@ nonlinear-response, and quantum-geometry calculations.
 ## Tutorials at a glance
 
 The prepared collection contains twelve chapters and 46 response/band cases.
-Chapter 12 is an offline model readback and licensed rebuild guide, not another
-response reference case:
+Chapter 12 adds an explicit licensed Fe Wannierization and diagnostic band
+comparison alongside its offline model readback; it is not another response
+reference case:
 
 1. [Band structure](examples/01_band_structure/) — interpolate bands along a
    high-symmetry path and compare the model bands with a first-principles reference.
@@ -37,8 +39,9 @@ response reference case:
     complex susceptibility and conductivity spectra with WannierNLQG v1.1.0.
 11. [Fe OAM and linear response](examples/11_fe_oam_and_linear_response/) — follow a VASP-to-WannierNLQG
     input chain and compare OAM, linear responses, and two ky=0 Berry routes.
-12. [Fe Wannierization](examples/12_fe_wannierization/) — verify the supplied
-    18-WF model and path bands, or explicitly stage a licensed reconstruction.
+12. [Fe Wannierization](examples/12_fe_wannierization/) — learn the solver call,
+    compute bands from a new 18-WF model, and compare them with VASP; the default
+    smoke command still verifies the supplied historical model offline.
 
 For a focused first pass, follow chapters 01, 02, 04, and 06. Chapters 03 and 05,
 as well as the Zeeman cases in chapter 09, require the optional spin dataset. Each

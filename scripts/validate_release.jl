@@ -1,4 +1,5 @@
 #!/usr/bin/env julia
+using DelimitedFiles
 using JSON3
 using SHA
 const ROOT = normpath(joinpath(@__DIR__, ".."))
@@ -13,7 +14,10 @@ required = ["README.md", "LICENSE", "CITATION.cff", "Project.toml",
             "Materials/Fe/vasp_SOC/bands/Fe_tb_path_receipt.json",
             "examples/11_fe_oam_and_linear_response/figures/FIGURE_SHA256.json",
             "examples/11_fe_oam_and_linear_response/results/reference/THREE_MECHANISM_VALIDATION.json",
-            "examples/11_fe_oam_and_linear_response/README.md"]
+            "examples/11_fe_oam_and_linear_response/README.md",
+            "examples/12_fe_wannierization/results/native_paw_2026-09-25/RESULT.json",
+            "examples/12_fe_wannierization/results/native_paw_2026-09-25/Fe_new_tb_path_absolute.dat",
+            "examples/12_fe_wannierization/results/native_paw_2026-09-25/Fe_new_tb_vs_vasp.png"]
 for relative in required
     isfile(joinpath(ROOT, relative)) || push!(failures, "missing $(relative)")
 end
@@ -45,6 +49,61 @@ for record in fe_manifest.files
     digest = bytes2hex(open(SHA.sha256, path))
     digest == String(record.sha256) || push!(failures, "Fe input hash mismatch $(record.path)")
     filesize(path) == Int(record.bytes) || push!(failures, "Fe input size mismatch $(record.path)")
+end
+result_dir = joinpath(ROOT, "examples/12_fe_wannierization/results/native_paw_2026-09-25")
+result_receipt_path = joinpath(result_dir, "RESULT.json")
+if isfile(result_receipt_path)
+    result = JSON3.read(read(result_receipt_path, String))
+    String(result.schema) == "wanniernlqg-tutorials.fe-wannierization-public-result" ||
+        push!(failures, "wrong Fe tutorial result schema")
+    String(result.profile) == "hamiltonian_position" && Int(result.operator_count) == 2 ||
+        push!(failures, "wrong Fe tutorial operator profile")
+    String(result.qualification) == "DIAGNOSTIC_ONLY" && !Bool(result.production_eligible) ||
+        push!(failures, "Fe tutorial result incorrectly qualified")
+    String(result.selected_attempt) == "attempt1" && Int(result.solver_max_iterations) == 2500 &&
+        Int(result.selected_accepted_iteration) <= 2500 && !Bool(result.auto_restart) ||
+        push!(failures, "Fe tutorial result exceeds the selected first-run ceiling")
+    Int(result.path_points) == 801 && Int(result.wannier_functions) == 18 &&
+        Int(result.vasp_bands) == 64 || push!(failures, "wrong Fe tutorial band dimensions")
+    reference_receipt = JSON3.read(read(joinpath(ROOT,
+        "Materials/Fe/vasp_SOC/bands/Fe_vasp_path_receipt.json"), String))
+    String(result.reference_table_sha256) == String(reference_receipt.table_sha256) ||
+        push!(failures, "Fe tutorial VASP reference hash mismatch")
+    published_names = Set{String}()
+    for record in result.published_files
+        name = String(record.path)
+        if !(name in ("Fe_new_tb_path_absolute.dat", "Fe_new_tb_vs_vasp.png"))
+            push!(failures, "unexpected Fe tutorial result $(name)")
+            continue
+        end
+        push!(published_names, name)
+        path = joinpath(result_dir, name)
+        if !isfile(path)
+            push!(failures, "missing Fe tutorial result $(name)")
+            continue
+        end
+        filesize(path) == Int(record.bytes) || push!(failures, "Fe result size mismatch $(name)")
+        bytes2hex(open(SHA.sha256, path)) == String(record.sha256) ||
+            push!(failures, "Fe result hash mismatch $(name)")
+    end
+    published_names == Set(["Fe_new_tb_path_absolute.dat", "Fe_new_tb_vs_vasp.png"]) ||
+        push!(failures, "wrong Fe tutorial public result inventory")
+    plotted_hashes = Dict(String(record.file) => String(record.sha256)
+                          for record in result.plot_input_sha256)
+    public_hashes = Dict(String(record.path) => String(record.sha256)
+                         for record in result.published_files)
+    get(plotted_hashes, "Fe_new_tb_path_absolute.dat", "") ==
+        get(public_hashes, "Fe_new_tb_path_absolute.dat", "") ||
+        push!(failures, "Fe plot is not bound to the public TB band table")
+    all(haskey(plotted_hashes, name) for name in
+        ("Fe_vasp_aligned_path_absolute.dat", "Fe_visualization_path.json", "band_plot.json")) ||
+        push!(failures, "Fe plot input hash inventory incomplete")
+    table_path = joinpath(result_dir, "Fe_new_tb_path_absolute.dat")
+    if isfile(table_path)
+        table = readdlm(table_path, comments=true)
+        size(table) == (801, 19) && all(isfinite, table) ||
+            push!(failures, "invalid Fe tutorial band table")
+    end
 end
 manifest = JSON3.read(read(joinpath(ROOT, "Materials/GeS/vasp_SOC/DATA_MANIFEST.json"), String))
 for record in manifest.files

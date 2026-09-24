@@ -123,3 +123,36 @@ the seven component source gates, 14-case rerun, and tutorial acceptance
 above. This does not authorize GitHub publication or claim a public 1.1.0
 tag. Fe's `MAX_ITERATIONS`, Physics HOLD, and Production ineligibility remain
 unchanged.
+
+## 2026-09-25 chapter 12 solver-to-bands addition
+
+This is a separate, explicit Fe Wannierization lesson. It reuses the matching
+local Fe VASP source files without rerunning VASP and selects the first
+accepted-state export. The requested solver ceiling was 2500 total iterations;
+the two stage-specific 1000-step caps ended the run at iteration 2000 with
+`MAX_ITERATIONS`. The revised tutorial script does not auto-restart. A
+continuation that had already started before that correction reached iteration
+2001; its outputs are preserved privately but are **not** the selected model.
+That abandoned continuation had a 5000-step ceiling but stopped at 2001;
+no trajectory reached 5000 iterations.
+
+The current v1.1.0 `SOURCE_MANIFEST.tsv` SHA-256 is
+`5911b050475f86346f1023f8187311d78d7804d389fe047d526e8030d4921f01`;
+all 735 listed source files matched their size and hash records at final
+check. This differs from the earlier model-generation source identity, so no
+new/old TB byte parity is claimed. The selected first-run TB SHA-256 is
+`d1efec338cc5ff374f12b78b8b8f457f43b09d3d6d2daec3e83dcefac4a7b3e0`.
+Independent readback found 18 WFs, a checkpoint with an accepted state, and
+exactly Hamiltonian and position in the H/r bundle. The model is
+`DIAGNOSTIC_ONLY / Physics HOLD / Production NOT_ELIGIBLE`.
+
+The new `Band` calculation produced 801×18 values on Γ–H–P–N–Γ. Comparison
+against the published 801×64 VASP table verified the same source POSCAR,
+zero lattice difference, fractional path difference at most `4.17×10⁻¹⁷`,
+distance difference at most `2.01×10⁻⁷ Å⁻¹`, and the common SCF reference
+`5.7156290716733436 eV`. The many-to-one nearest-energy-set RMS within 1 eV
+of that reference was `0.009811 eV`; this is descriptive, not a band-match or
+material gate. The [public result receipt](examples/12_fe_wannierization/results/native_paw_2026-09-25/RESULT.json)
+binds input, private-model, public table, and PNG hashes. The PDF generated
+for local QA was withheld because its rendered negative ticks lost minus
+glyphs; the checked PNG is the published figure.

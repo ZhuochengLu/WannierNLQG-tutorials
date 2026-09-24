@@ -1,0 +1,110 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-wannierization-public-result",
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-09-24T17:29:58.187663+00:00",
+  "package_version": "1.1.0",
+  "source_manifest_sha256": "5911b050475f86346f1023f8187311d78d7804d389fe047d526e8030d4921f01",
+  "source_input_sha256": {
+    "OUTCAR": "97c98306cd64ea2df0d333772dd537162a7c830e1e95f1430e2afc1374646cb9",
+    "wannier90.eig": "d12550dc87ef798745067f58c40c1f93830a910768ba6e84e7d846cea76c33ec",
+    "wannier90.mmn": "86161e733b3e5237e2ebefc69dd74936759c772d122cc261d7737bb3d76c1e4e",
+    "POSCAR": "0706c1b1c7630dc2f92e886e49ef07c124c00748051f17e85de513e30d286071",
+    "INCAR": "a9580130eb190236880990d06a273ad9d702e92b6615b907908fd68512dde84f",
+    "POTCAR": "cd5a22d9368cc8b5cc476bea79732366149640da08ac9009b0e1b7fc627eea28",
+    "wannier90.win": "7a937cc2ceac53894533feed1c4d34438d92fd4eb3f6828e31c9a8d5fc704a2c",
+    "WAVECAR": "44af2ecd04b1389b3de07286ce037bfef4c3efc7e4c0db9b08a6b4ddc48278a0"
+  },
+  "solver_status": "MAX_ITERATIONS",
+  "selected_attempt": "attempt1",
+  "selected_accepted_iteration": 2000,
+  "solver_max_iterations": 2500,
+  "auto_restart": false,
+  "attempts": [
+    {
+      "name": "attempt1",
+      "status": "MAX_ITERATIONS",
+      "history_count": 2000,
+      "accepted_iteration": 2000
+    }
+  ],
+  "unselected_attempts": [
+    {
+      "name": "attempt2",
+      "status": "MAX_ITERATIONS",
+      "history_count": 2001,
+      "accepted_iteration": 2001
+    }
+  ],
+  "profile": "hamiltonian_position",
+  "operator_count": 2,
+  "wannier_functions": 18,
+  "private_model_artifact_sha256": {
+    "wannier90_tb": "d1efec338cc5ff374f12b78b8b8f457f43b09d3d6d2daec3e83dcefac4a7b3e0",
+    "packed_hdf5": "72da4cb0691eef2509ac877347df4e4b7c85020da50ae5770e7ddbaa0c8aae4c",
+    "checkpoint_hdf5": "0dccc4e01d504491d9fcc918663a2181bf478b06f6748932167c81384516ed0a"
+  },
+  "path_points": 801,
+  "vasp_bands": 64,
+  "reference_table_sha256": "d3daf4767334e0121b952d3fa61e4438ac0bb49b016ab35bd983ab75ae7b8f21",
+  "common_energy_reference_ev": 5.7156290716733436,
+  "lattice_max_abs_angstrom": 0.0,
+  "fractional_kpoint_max_abs": 4.163336342344337e-17,
+  "distance_max_abs_A_inverse": 2.0052700655526223e-07,
+  "nearest_vasp_energy_set_error_ev": {
+    "near_fermi": {
+      "tb_value_count": 2461,
+      "mean_abs_ev": 0.005381874813171555,
+      "rms_ev": 0.009810683761626504,
+      "max_abs_ev": 0.05504118108563549
+    },
+    "display": {
+      "tb_value_count": 9615,
+      "mean_abs_ev": 0.012507364481503764,
+      "rms_ev": 0.019361932956771716,
+      "max_abs_ev": 0.09266538735279184
+    }
+  },
+  "plot_input_sha256": [
+    {
+      "role": "band_table",
+      "file": "Fe_vasp_aligned_path_absolute.dat",
+      "sha256": "f4581c3526cdffbba502ed89e6751f79652f4c4052a3fc3887855a99c8c9cae3"
+    },
+    {
+      "role": "band_path",
+      "file": "Fe_visualization_path.json",
+      "sha256": "35072c7c072a5277ef7a9eb8e0b3837c5db65d67c2940dc4652e24840ae63f95"
+    },
+    {
+      "role": "band_table",
+      "file": "Fe_new_tb_path_absolute.dat",
+      "sha256": "de6766659609ca62e12e08866d2eca4973a7644e9a21efcdb19c4a5f83c42deb"
+    },
+    {
+      "role": "band_path",
+      "file": "Fe_visualization_path.json",
+      "sha256": "35072c7c072a5277ef7a9eb8e0b3837c5db65d67c2940dc4652e24840ae63f95"
+    },
+    {
+      "role": "visualization_config",
+      "file": "band_plot.json",
+      "sha256": "da34f7c85151d13033ceed1c174ecc490a43bc42443b3cbc52805044488f97c7"
+    }
+  ],
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "comparison_scope": "energy-set display only; no wavefunction matching or material pass",
+  "published_files": [
+    {
+      "path": "Fe_new_tb_path_absolute.dat",
+      "bytes": 320388,
+      "sha256": "de6766659609ca62e12e08866d2eca4973a7644e9a21efcdb19c4a5f83c42deb"
+    },
+    {
+      "path": "Fe_new_tb_vs_vasp.png",
+      "bytes": 938327,
+      "sha256": "752c331a755d046a951e26190a8b524afac20b8cc3fca6be2d5499ac2c8e4295"
+    }
+  ]
+}
