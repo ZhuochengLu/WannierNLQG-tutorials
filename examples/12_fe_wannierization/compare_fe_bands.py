@@ -42,6 +42,9 @@ def main():
     args = parser.parse_args()
     workdir, output = args.workdir.resolve(), args.output_dir.resolve()
     selected = json.loads((output / "selected_model.json").read_text())
+    matrix_source_kind = selected.get("matrix_source_kind", "native_vasp_paw")
+    require(matrix_source_kind in ("native_vasp_paw", "external_wannier90"),
+            "unknown matrix source in selected TB")
     bands = json.loads((output / "bands_result.json").read_text())
     reference = json.loads((MATERIAL / "bands/Fe_vasp_path_receipt.json").read_text())
     raw_bands = Path(bands["table_path"])
@@ -130,13 +133,18 @@ def main():
         "energy_unit": "ev", "energy_convention": "absolute",
         "path": str(visualization_path), "x_column": 0,
     }
+    tb_label = ("External MMN/AMN 18-WF TB (diagnostic)"
+                if matrix_source_kind == "external_wannier90"
+                else "Native PAW 18-WF TB (diagnostic)")
+    source_label = ("external MMN/AMN" if matrix_source_kind == "external_wannier90"
+                    else "native PAW")
     config = {
         "mode": "compare", "comparison_audit": "display_only",
         "energy_window": [-8.0, 8.0],
-        "title": "Fe SOC: diagnostic bands (Physics HOLD)",
+        "title": f"Fe SOC: {source_label} diagnostic bands (Physics HOLD)",
         "reference": dict(common, type="table", id="fe_vasp", label="VASP SOC",
                           data=str(aligned_reference), energy_columns={"start": 1, "stop": 65}),
-        "models": [dict(common, type="table", id="new_fe_tb", label="New 18-WF TB (diagnostic)",
+        "models": [dict(common, type="table", id="new_fe_tb", label=tb_label,
                         data=str(table), energy_columns={"start": 1, "stop": 19})],
         "output": {"stem": str(output / "Fe_new_tb_vs_vasp"), "formats": ["png"]},
     }
@@ -145,6 +153,7 @@ def main():
         "schema": "wanniernlqg-tutorials.fe-wannierization-comparison",
         "schema_version": "1.0", "qualification": "DIAGNOSTIC_ONLY",
         "solver_status": selected["status"], "selected_attempt": selected["selected_attempt"],
+        "matrix_source_kind": matrix_source_kind,
         "profile": selected["profile"], "source_manifest_sha256": selected["source_manifest_sha256"],
         "source_input_sha256": selected["input_sha256"],
         "tb_sha256": bands["tb_sha256"],

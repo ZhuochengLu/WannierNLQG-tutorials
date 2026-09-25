@@ -1,0 +1,99 @@
+{
+  "schema": "wanniernlqg-tutorials.fe-wannierization-public-result",
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-09-25T05:52:36.526219+00:00",
+  "matrix_source_kind": "external_wannier90",
+  "solver_source_commit": "8f5e7c824d625c18da5bc9dcd337a37d1602f9b0",
+  "package_version": "1.1.0",
+  "source_manifest_sha256": "5911b050475f86346f1023f8187311d78d7804d389fe047d526e8030d4921f01",
+  "source_input_sha256": {
+    "OUTCAR": "97c98306cd64ea2df0d333772dd537162a7c830e1e95f1430e2afc1374646cb9",
+    "wannier90.eig": "d12550dc87ef798745067f58c40c1f93830a910768ba6e84e7d846cea76c33ec",
+    "wannier90.mmn": "86161e733b3e5237e2ebefc69dd74936759c772d122cc261d7737bb3d76c1e4e",
+    "wannier90.amn": "91ce321f04f9e473eed144bfc9171d41bb1cb3d237c10a66f665307ab5615e2d",
+    "POSCAR": "0706c1b1c7630dc2f92e886e49ef07c124c00748051f17e85de513e30d286071",
+    "wannier90.win": "7a937cc2ceac53894533feed1c4d34438d92fd4eb3f6828e31c9a8d5fc704a2c"
+  },
+  "solver_status": "MAX_ITERATIONS",
+  "stopping_reason": "NONCONVERGED_DISENTANGLEMENT_ACCEPTED_STATE_TB_READY",
+  "selected_attempt": "attempt1",
+  "selected_accepted_iteration": 2000,
+  "disentanglement_max_steps": 1000,
+  "localization_max_steps": 1000,
+  "solver_max_iterations": 2500,
+  "auto_restart": false,
+  "final_convergence_metric": 1.8506990617177768e-07,
+  "convergence_tolerance": 1e-10,
+  "profile": "hamiltonian_position",
+  "operator_count": 2,
+  "wannier_functions": 18,
+  "private_model_artifact_sha256": {
+    "wannier90_tb": "4f2391aa9087044176e5b99f9d0778d65b06b5136b0802364a2e0a35da16867e",
+    "packed_hdf5": "7a3f13f48475730a154b047850ff88e53f689207c17dfb1410ccb896c7a19d70",
+    "checkpoint_hdf5": "eaac9a91271837f6f0b0e4eef294691c6a5a7f009a1649230cfbdb311446e76d"
+  },
+  "path_points": 801,
+  "vasp_bands": 64,
+  "reference_table_sha256": "d3daf4767334e0121b952d3fa61e4438ac0bb49b016ab35bd983ab75ae7b8f21",
+  "common_energy_reference_ev": 5.7156290716733436,
+  "lattice_max_abs_angstrom": 0.0,
+  "fractional_kpoint_max_abs": 4.163336342344337e-17,
+  "distance_max_abs_A_inverse": 2.0052700655526223e-07,
+  "nearest_vasp_energy_set_error_ev": {
+    "near_fermi": {
+      "tb_value_count": 2461,
+      "mean_abs_ev": 0.005381921707438502,
+      "rms_ev": 0.009810677502733256,
+      "max_abs_ev": 0.05504105172651119
+    },
+    "display": {
+      "tb_value_count": 9615,
+      "mean_abs_ev": 0.012507372073927719,
+      "rms_ev": 0.01936195874409263,
+      "max_abs_ev": 0.09266551400800971
+    }
+  },
+  "plot_input_sha256": [
+    {
+      "role": "band_table",
+      "file": "Fe_vasp_aligned_path_absolute.dat",
+      "sha256": "f4581c3526cdffbba502ed89e6751f79652f4c4052a3fc3887855a99c8c9cae3"
+    },
+    {
+      "role": "band_path",
+      "file": "Fe_visualization_path.json",
+      "sha256": "35072c7c072a5277ef7a9eb8e0b3837c5db65d67c2940dc4652e24840ae63f95"
+    },
+    {
+      "role": "band_table",
+      "file": "Fe_new_tb_path_absolute.dat",
+      "sha256": "a5e69ab16d952f278a581caf1320410ad056ad1a21e97a7b8afe4f6b887bcdb3"
+    },
+    {
+      "role": "band_path",
+      "file": "Fe_visualization_path.json",
+      "sha256": "35072c7c072a5277ef7a9eb8e0b3837c5db65d67c2940dc4652e24840ae63f95"
+    },
+    {
+      "role": "visualization_config",
+      "file": "band_plot.json",
+      "sha256": "7647f2a8054f8b7356b12cc2e587c19288c911a1b413ea83362789edcb4859ee"
+    }
+  ],
+  "qualification": "DIAGNOSTIC_ONLY",
+  "physics_status": "HOLD",
+  "production_eligible": false,
+  "comparison_scope": "energy-set display only; no wavefunction matching or material pass",
+  "published_files": [
+    {
+      "path": "Fe_new_tb_path_absolute.dat",
+      "bytes": 320388,
+      "sha256": "a5e69ab16d952f278a581caf1320410ad056ad1a21e97a7b8afe4f6b887bcdb3"
+    },
+    {
+      "path": "Fe_new_tb_vs_vasp.png",
+      "bytes": 962784,
+      "sha256": "2e8d817b0b8948a1b4984f1afcefc856b1bab9247a338341fd16f25825c5d64b"
+    }
+  ]
+}
