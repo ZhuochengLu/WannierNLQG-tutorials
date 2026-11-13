@@ -1,0 +1,188 @@
+{
+  "band_gap_ev": 0.4,
+  "cases": {
+    "optical_negative": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "932bd2829618801dd55b1655ac268e248082c66b8c7f9b987049efef3f1b6c03",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 6.477242155524924e-05,
+      "hall_max_fraction": 6.688652275811392e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": -0.2,
+      "mesh": 401,
+      "metadata_sha256": "f7a0b7a1e128b81c676324b1a0d08985fd4ec3a6f4b54abb1501d5e191fff08b",
+      "xx_complex_max_fraction": 0.0001239921678519694
+    },
+    "optical_positive": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "932bd2829618801dd55b1655ac268e248082c66b8c7f9b987049efef3f1b6c03",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 6.477242155524924e-05,
+      "hall_max_fraction": 6.688652275811392e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": 0.2,
+      "mesh": 401,
+      "metadata_sha256": "d95da517bf92508314c2f7e48439f405cda4475541f3e9c51b57687aa75c11f6",
+      "xx_complex_max_fraction": 0.0001239921678519694
+    },
+    "optical_positive_g001": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "cd95d28e4eb0bb3075dd1802e1d22e429b7937effafc894f26675062b4c72451",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.01,
+      "hall_max_absolute_e2_over_h": 4.5972158896468696e-05,
+      "hall_max_fraction": 4.097639930473473e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.3429701232630367e-13,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "33f0124a908d5fe4d41e94f6e1ba55e3d9ce962d11b1d39e8b37de15cce24f6f",
+      "xx_complex_max_fraction": 7.558141694311628e-05
+    },
+    "optical_positive_k025": {
+      "cutoff_A_inverse": 0.25,
+      "derivatives_sha256": "b23e3c622e9ac74935fa2e520cd7911a875d32c846164e09de5002b8cf080878",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.0007307699046811068,
+      "hall_max_fraction": 0.0008554581572212091,
+      "independent_coarse_fine_abs": 3.119657942272768e-16,
+      "independent_error_estimate_abs": 4.369720602949379e-12,
+      "mass_ev": 0.2,
+      "mesh": 101,
+      "metadata_sha256": "907bfcd4a3d212ecca7331f0b1400cf57eb2c0db5639621d7597c156ef9370c7",
+      "xx_complex_max_fraction": 0.00154259511845703
+    },
+    "optical_positive_k050": {
+      "cutoff_A_inverse": 0.5,
+      "derivatives_sha256": "8eaea08ed7c721bb0021de0c2729d519d1651c9c6768374bb369464574799b49",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.0003190319450484311,
+      "hall_max_fraction": 0.00034331135087285427,
+      "independent_coarse_fine_abs": 1.6199010924212651e-16,
+      "independent_error_estimate_abs": 1.100268891645088e-11,
+      "mass_ev": 0.2,
+      "mesh": 201,
+      "metadata_sha256": "2f0c917f4d27456c6d1e80594b3663e120bb462ca729e9769ca0e20f8c63306b",
+      "xx_complex_max_fraction": 0.00110181488696144
+    },
+    "optical_positive_k200": {
+      "cutoff_A_inverse": 2,
+      "derivatives_sha256": "15aafe22c31bc9b0294c97a23111064db5521f82269c3e58a1dc24c9d5c24dcd",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 6.520644876461619e-05,
+      "hall_max_fraction": 6.598252838994876e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.2727575623473146e-13,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "eecc3e2e7f6d30839015580c5009c31d05291e1ec8296bd43bf865010830dfa1",
+      "xx_complex_max_fraction": 0.00012377730050440792
+    },
+    "optical_positive_n201": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "ac38777608d528620ac67da2f75f6d57e1ae26024c2acc9fb9f4a43a4e58583b",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.003774052861668255,
+      "hall_max_fraction": 0.0038972338313301978,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": 0.2,
+      "mesh": 201,
+      "metadata_sha256": "ed1262c22435c2805fbfe0fa7e9f6eb2bed4e4672618e35621d6270e2c38f6e7",
+      "xx_complex_max_fraction": 0.005994375537171671
+    },
+    "optical_positive_n801": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "cd95d28e4eb0bb3075dd1802e1d22e429b7937effafc894f26675062b4c72451",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 1.0449053053772162e-07,
+      "hall_max_fraction": 1.0790098750372126e-07,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "0192b0a2811b46fc3c39e896255a2c8491b022d27813f8e5427313f8d51e3b36",
+      "xx_complex_max_fraction": 5.049117437347816e-07
+    }
+  },
+  "conductance_quantum_S": 3.8740458649318244e-05,
+  "curve_sha256": {
+    "reference_hall_optical_matched.tsv": "5d065a085097b435e7c2a78958363ae88fa76900693596bcd05c3db25b3f115c",
+    "reference_hall_positive_k004.tsv": "05f4b8a71e2587e0329f843ae0835506f0f7e6b66023a8fa048d6fd986397856",
+    "reference_hall_positive_k016.tsv": "850c478959345c2bc9a0e496d0fbbd8dbabf932a217374024953762bbf170dbb",
+    "reference_hall_positive_k064.tsv": "ae36b8bec340b9238e47156e75be0874fb140b3c78e4fd8dee9f78eb2511b374",
+    "reference_optical_negative.tsv": "dc8522a68ff5757ee4fdbf41a1ba4454a7eb3ef6c061779a88777abf6ff64bbd",
+    "reference_optical_positive.tsv": "75ac8b529dc295fcdd680e18b0f667b09d8b3904a1e182cf5474b88892211e16",
+    "reference_optical_positive_g001.tsv": "bbb373fe5377639fe233cfe4bd97742f9dfd8eb1cb14b4bf328ef86eeedae51d",
+    "reference_optical_positive_k025.tsv": "68f10025307eca2522862e4b6d34aa4f07201063c3affd3c86b942703f114483",
+    "reference_optical_positive_k050.tsv": "8ec4ab8fa55a054a66fc55bfdaf2f9a10b5ca0181bc990dd4d5b5379b9318c15",
+    "reference_optical_positive_k200.tsv": "60479ebe605f219724d734d9a884d8464c5fd77cca8adc01cb58d0d50b26a6e5",
+    "reference_optical_positive_n201.tsv": "e050e33cfb4b7265de70c077c5e7acffc09e9e571d9830c7813fd09caf78df9f",
+    "reference_optical_positive_n801.tsv": "ef55bf6cbbea484199a6b31ebae109b9763fdf27c083cc33a16b1875df58d083"
+  },
+  "dc_model_source_sha256": "f8dad0deb7f375d85b67247c135c54ebe78a10fc9e9cb0a9be76a6cf47cc8549",
+  "different_parameter_zero_frequency_comparison": "NOT_APPLICABLE",
+  "failures": [],
+  "literature_test_energies_ev": [
+    0.2,
+    0.3,
+    0.6,
+    1.0,
+    2.0
+  ],
+  "mesh_checks": {
+    "optical_hall_401_801_fraction": 6.68306423658524e-05,
+    "optical_xx_401_801_fraction": 0.00012391106574658904
+  },
+  "model_source_sha256": "1031b384ecbd0d4e8a795fd1590271dc8878ddd0cfabcf1ff498ff87c2af3987",
+  "polar_closed_form_absolute": 1.0547118733938987e-14,
+  "profile": "reference",
+  "same_parameter_zero_frequency": {
+    "cutoff_A_inverse": 1.0,
+    "dc_case": "hall_optical_matched",
+    "gamma_ev": 0.02,
+    "maximum_absolute_e2_over_h": 1.1102230246251565e-16,
+    "mesh": 401,
+    "optical_case": "optical_positive",
+    "status": "PASS"
+  },
+  "scope_failures": {
+    "complex_optical_spectrum": [],
+    "dc_full_axis_benchmark": [],
+    "dc_full_axis_mesh": [],
+    "dc_in_gap_platform": [],
+    "same_parameter_zero_frequency": []
+  },
+  "single_cone_literature_clean_limit_absolute": 2.1965296019350216e-07,
+  "status": "PASS",
+  "symmetry_absolute_e2_over_h": {
+    "optical_hall_odd": 0.0,
+    "optical_xx_even": 0.0
+  },
+  "tolerances": {
+    "closed_form": 0.005,
+    "finite_region": 0.01,
+    "half_integer_distance": 0.003,
+    "mesh": 0.005,
+    "reference_self": 0.001,
+    "symmetry_absolute_e2_over_h": 1e-08
+  },
+  "validation_scope": "optical",
+  "validator_source_sha256": "68a902fe6e3974116a7538ffbe50dcb86f8c84dc32c95f3e4bb538c664666e09",
+  "verified_scopes": {
+    "complex_optical_spectrum": "PASS",
+    "dc_full_axis_benchmark": "NOT_RUN",
+    "dc_full_axis_mesh": "NOT_RUN",
+    "dc_in_gap_platform": "NOT_RUN",
+    "same_parameter_zero_frequency": "PASS"
+  }
+}

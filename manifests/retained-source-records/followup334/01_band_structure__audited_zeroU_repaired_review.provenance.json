@@ -1,0 +1,40 @@
+{
+  "original_figure_id": "audited_zeroU_repaired_review",
+  "current_verified_public_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "actual_current_case_executions": {
+    "band_structure": {
+      "execution_id": "WN-Tutorial-provenance326",
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "software_version": "1.2.0",
+      "input_sha256": "5429021186d635bf014db3e8dd0badf485d543e878a1fd1c8ecc5dbf104c1919",
+      "actual_return_code": 0,
+      "complete_recorded_identities_released": 6,
+      "material_or_convergence_qualified": false,
+      "result_data_sha256": {
+        "examples/01_band_structure/data/current725/band_structure/model_bands.dat": "209430f81dc5054f32ed9d61050e1b659b8a61f91c8fa5486aeef24e8e0d9e16"
+      }
+    }
+  },
+  "bounded_Hall_reuse_without_new_spectrum": {},
+  "current_display_input_sha256": {
+    "examples/01_band_structure/data/dft_common_path_absolute-46dfe144.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+    "examples/01_band_structure/data/current_common_path_absolute725.dat": "8597fed64c924f22423dd5c9f1ed06d6f0e066cad2a6321775a73c6d17634dad"
+  },
+  "retained_source_record": {
+    "original_figure_id": "audited_zeroU_repaired_review",
+    "original_data_sha256": {
+      "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/dft_common_path_absolute.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+      "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/old_common_path_absolute.dat": "4b11d31bdf0e86492dc741e96780564fba110cdcbddeaa0a91da7a2277d56fa3",
+      "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/repaired_common_path_absolute.dat": "d495d67da2b5f866e8f9750d3db940b4c4156e51e06a58a74f79d69a3646611a"
+    },
+    "response_recomputed": false,
+    "original_input_sha256": {},
+    "scientific_identity": {
+      "new_default_result": false
+    },
+    "historical_control_not_correctness_oracle": true
+  },
+  "unchanged_independent_reference_and_supplementary_data_retain_original_source": true,
+  "old_source_record_not_relabelled_as_current_execution": true,
+  "material_or_convergence_qualified": false
+}

@@ -1,0 +1,28 @@
+# ISOLATED MIGRATION DRAFT: not source-bound or runtime-validated; not installed.
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+identity = "jerk/analytic"
+source = "julia"
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [129, 1, 1]
+kind = "bz_mesh"
+spatial_dimension = 3
+
+[ response.tasks ]
+
+[ response.tasks.jerk_analytic ]
+fermi_energy_ev = 0.0
+kind = "jerk_current"
+photon_energies_ev = [1.7, 2.0, 2.35, 2.75, 3.0]
+projection = "ordered"
+temperature_k = 0.0
+
+[ response.tasks.jerk_analytic.observable ]
+components = [[1, 1, 1, 1]]
+kind = "tensor_components"

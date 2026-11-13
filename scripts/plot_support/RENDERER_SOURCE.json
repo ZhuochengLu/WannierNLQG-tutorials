@@ -1,0 +1,6 @@
+{
+  "source": "Installed nlqg-plot-style/scripts/nlqg_figure.py",
+  "sha256": "60a2bb81911385a0bbc95f42edb1f5797e8316b760242d93d2788422b4a12608",
+  "vendored_bytes_identical": true,
+  "scope": "Frozen plotting implementation; no formula/model changes or publication qualification."
+}

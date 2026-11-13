@@ -1,27 +1,38 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_quantum_hermitian_connection_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_quantum_hermitian_connection_conventional/GeS_qhck_r_conv.dat",
-      "title": "Quantum Hermitian Connection",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_quantum_hermitian_connection_conventional",
+    "stem": "kslice_quantum_hermitian_connection_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.8
+    ],
+    "kind": "map",
+    "data": "../data/operators_qhck_r_conv-e4ab63fd.dat",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "aspect": "equal",
+    "xlabel": "$u$ (fractional)",
+    "ylabel": "$v$ (fractional)",
+    "title": "GeS QHC: conventional",
+    "colorbar_label": "$\\mathrm{Re}\\,\\mathcal C^{yyy}$ ($\\mathrm{\\AA}^{3}$)",
+    "color": {
+      "kind": "diverging",
+      "cmap": "RdBu_r",
+      "limit": 56.986450574243925
+    }
   }
 }

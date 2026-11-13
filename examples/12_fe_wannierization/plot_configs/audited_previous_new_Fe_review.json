@@ -1,0 +1,89 @@
+{
+  "output": {
+    "stem": "audited_previous_new_Fe_review",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "comparison": {
+    "purpose": "diagnostic",
+    "title": "Fe electronic bands",
+    "energy_reference": {
+      "value_ev": 5.7156290716733436,
+      "label": "same declared energy reference, no fitted offset"
+    },
+    "degeneracy_tolerance_ev": 0.01,
+    "reference": {
+      "id": "dft",
+      "label": "DFT SOC (energy-set pool)",
+      "data": "../data/dft_absolute-59c64881.dat",
+      "x_column": 0,
+      "energy_columns": {
+        "start": 1,
+        "stop": 65
+      },
+      "fitted_band_indices": {
+        "start": 0,
+        "stop": 64
+      },
+      "display_band_indices": "all"
+    },
+    "models": [
+      {
+        "id": "new_tb",
+        "label": "Wannier TB",
+        "data": "../data/new_tb_absolute-6ada0279.dat",
+        "x_column": 0,
+        "energy_columns": {
+          "start": 1,
+          "stop": 19
+        },
+        "usable_for_bands": false,
+        "qualification_label": "Band accuracy not established",
+        "matching": {
+          "mode": "automatic"
+        }
+      }
+    ],
+    "metric_windows": [
+      {
+        "id": "near_fermi",
+        "label": "within 1 eV of common reference",
+        "min_ev": -1,
+        "max_ev": 1
+      },
+      {
+        "id": "display",
+        "label": "display window",
+        "min_ev": -8,
+        "max_ev": 8
+      }
+    ],
+    "error_window_id": "near_fermi",
+    "xticks": [
+      0.0,
+      2.212348996468799,
+      5.530872491171999,
+      7.446822924150982,
+      9.011189901905253
+    ],
+    "xticklabels": [
+      "\\textGamma",
+      "\\textnormal{H}",
+      "\\textnormal{P}",
+      "\\textnormal{N}",
+      "\\textGamma"
+    ],
+    "ylim": [
+      -8,
+      8
+    ],
+    "figsize_bands": [
+      7.8,
+      5.4
+    ],
+    "show_qualification_annotations": false
+  }
+}

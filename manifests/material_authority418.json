@@ -1,0 +1,64 @@
+{
+  "schema": "tutorial-material-authority-confirmation/1",
+  "status": "USER_CONFIRMED_SELF_GENERATED_AND_AUTHORIZED_TO_AUTHORIZE_PUBLIC_DISTRIBUTION",
+  "confirmation_actor": "user",
+  "scope": "Exactly the final GeS and Fe material numerical datasets in the two named archives; not third-party literature digitizations",
+  "archives": [
+    {
+      "name": "tutorial-data-1.2.0-GeS-model3.tar.gz",
+      "bytes": 156565555,
+      "sha256": "6b34ed999eeb8042facae7bef4a57d00af76c1c7bebc9aa8d26d3eac010ea3d3"
+    },
+    {
+      "name": "tutorial-data-1.2.0-Fe-model3.tar.gz",
+      "bytes": 194885981,
+      "sha256": "e0a1ff9af845e50f682c8de9c9ccd2e034505ea262d421b6ac2fd12cfd9ef43b"
+    }
+  ],
+  "files": [
+    {
+      "logical_path": "Materials/GeS/model_tb.dat",
+      "bytes": 94298181,
+      "sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2"
+    },
+    {
+      "logical_path": "Materials/GeS/operators.h5",
+      "bytes": 4024659779,
+      "sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661"
+    },
+    {
+      "logical_path": "Materials/Fe/model_tb.dat",
+      "bytes": 71573382,
+      "sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149"
+    },
+    {
+      "logical_path": "Materials/Fe/operators.h5",
+      "bytes": 3005495097,
+      "sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51"
+    }
+  ],
+  "source_and_transform_chain": "Retained in material_consistency.json and model_format_copy302.json; this confirmation does not relabel format conversion/packing as a new ab-initio calculation",
+  "data_license": "CC-BY-4.0",
+  "final_attribution_wording": "Zhuocheng Lu",
+  "existing_code_license": "GPL-2.0-only unchanged, not selected as the data license",
+  "third_party_paper_curve": "Excluded from material CC BY4.0; user-approved retained digitized approximation with citation, no publisher permission claim",
+  "public_upload": false,
+  "confirmed_original_archives418": [
+    {
+      "name": "tutorial-data-1.2.0-GeS-model3.tar.gz",
+      "sha256": "e24d5bfdf268ca2b52d658c77fcc3b455d106320158d20029ea4391aff575ed7"
+    },
+    {
+      "name": "tutorial-data-1.2.0-Fe-model3.tar.gz",
+      "sha256": "bfa34be13273005a90f50faccca2dbe5858c04b8644ca63d55bfe9540deb5287"
+    }
+  ],
+  "data_citation": "DATA_CITATION.cff",
+  "license_scope": "Four selected original material files and project-created dataset notices only",
+  "license_decision420": {
+    "license": "CC-BY-4.0",
+    "data_author": "Zhuocheng Lu",
+    "publication_execution_approved": false,
+    "scientific_payload_changed": false
+  }
+}

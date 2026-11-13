@@ -1,0 +1,38 @@
+# Editable tutorial input. Numerical values retained; new-default migration is a separate step.
+[ model ]
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 2
+vector_1 = [1.0, 0.0, 0.0]
+vector_2 = [0.0, 1.0, 0.0]
+
+[ response.tasks ]
+
+[ response.tasks.kslice_shift_spin_current_conventional ]
+fermi_energy_ev = -2.5
+kind = "shift_spin_current"
+photon_energies_ev = [3.0]
+temperature_k = 0.0
+
+[ response.tasks.kslice_shift_spin_current_conventional.numerics ]
+denominator_regularization = 0.001
+broadening = 0.06
+
+[ response.tasks.kslice_shift_spin_current_conventional.observable ]
+component = [2, 2, 2, 2]
+conduction = [21, 22]
+kind = "transition"
+valence = [19, 20]

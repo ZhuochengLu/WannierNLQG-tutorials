@@ -1,27 +1,39 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_shift_vector_wilson_loop/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_shift_vector_wilson_loop/GeS_svk_r_wilson.dat",
-      "title": "Shift Vector Wilson Loop",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_shift_vector_wilson_loop",
+    "stem": "kslice_shift_vector_wilson_loop",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.8
+    ],
+    "kind": "map",
+    "data": "../data/operators_svk_r_wilson-886a8472.dat",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "aspect": "equal",
+    "xlabel": "$u$ (fractional)",
+    "ylabel": "$v$ (fractional)",
+    "title": "GeS shift vector: wilson loop",
+    "colorbar_label": "$\\mathrm{Re}\\,R^{y;y}$ ($\\mathrm{\\AA}$)",
+    "color": {
+      "kind": "signed_log",
+      "cmap": "RdBu_r",
+      "limit": 1321.4251731831278,
+      "linthresh": 1.0
+    }
   }
 }

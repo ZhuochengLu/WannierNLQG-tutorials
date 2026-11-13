@@ -1,0 +1,209 @@
+# Source-bound replay input; supplied data retain their recorded calculation identities.
+# Six folded valley regions; chapter-specific public TaskConfig driver, not the single-task CLI.
+[reproduction]
+# Exact source for a new run/--check; supplied tables keep their separate recorded source.
+source_manifest_sha256 = "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6"
+historical_source_manifest_sha256 = "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
+model_sha256 = "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
+
+[spectrum]
+target_energies_ev = [0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.185, 0.19, 0.195, 0.2, 0.21, 0.22, 0.225, 0.2275, 0.23, 0.2325, 0.2333333333333333, 0.235, 0.2375, 0.24, 0.2425, 0.245, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3, 0.31, 0.32, 0.33, 0.335, 0.34, 0.345, 0.35, 0.355, 0.36, 0.365, 0.37, 0.38, 0.39, 0.4, 0.42, 0.45, 0.5, 0.55, 0.6, 0.62, 0.64, 0.66, 0.67, 0.68, 0.685, 0.69, 0.695, 0.7, 0.705, 0.71, 0.715, 0.72, 0.725, 0.73, 0.735, 0.74, 0.76, 0.78, 0.8, 0.85, 0.9, 0.95, 1.0, 1.02, 1.0331337560200193]
+# The3local vector batches preserve their original27frequency shapes;15nontarget frequencies are omitted only at final collection.
+
+[physics]
+temperature_k = 10.0
+fermi_energy_ev = 0.35
+components = [[2, 2, 2, 2]]
+model_spin_copies = 1
+display_spin_factor = 2
+extra_valley_factor = 1
+
+[numerics]
+prescription = "distribution_broadening"
+broadening_type = "Lorentzian"
+broadening = 0.03
+low_frequency_broadening = 0.01
+intermediate_regularization = 0.001
+eta_correction = false
+occupation_derivative_mode = "fermi_dirac"
+
+[integration]
+kind = "h_adaptive_cubature"
+rtol = 1e-06
+atol = 0.0
+initial_divisions = 16
+normalization = "original_bz_weight_no_window_area_rescaling"
+outside_windows = "omitted"
+parallelism = "one_rank_per_chapter_wrapper; backend_rule_node_MPI_is_separate_from_this_wrapper"
+per_original_valley_per_vector_max_evaluations = 1920000
+
+[[regions]]
+id = "K1-main"
+lower = [-1.27732349593959, 0.7449261284459123]
+upper = [-0.12154899729306001, 2.204926128445912]
+max_evaluations = 1519922
+original_bz_fraction = 0.22392098820403517
+
+[[regions]]
+id = "K1-folded-right-bottom"
+lower = [0.97309799458612, 0]
+upper = [1.27732349593959, 0.73]
+max_evaluations = 200039
+original_bz_fraction = 0.029470487097488264
+
+[[regions]]
+id = "K1-folded-right-top"
+lower = [0.97309799458612, 2.2198522568918246]
+upper = [1.27732349593959, 2.9498522568918246]
+max_evaluations = 200039
+original_bz_fraction = 0.029470487097488264
+
+[[regions]]
+id = "K2-main"
+lower = [0.12154899729306001, 0.7449261284459123]
+upper = [1.27732349593959, 2.204926128445912]
+max_evaluations = 1519922
+original_bz_fraction = 0.22392098820403517
+
+[[regions]]
+id = "K2-folded-left-bottom"
+lower = [-1.27732349593959, 0]
+upper = [-0.97309799458612, 0.73]
+max_evaluations = 200039
+original_bz_fraction = 0.029470487097488264
+
+[[regions]]
+id = "K2-folded-left-top"
+lower = [-1.27732349593959, 2.2198522568918246]
+upper = [-0.97309799458612, 2.9498522568918246]
+max_evaluations = 200039
+original_bz_fraction = 0.029470487097488264
+
+[[batches]]
+id = "band-06-base_new30"
+energies_ev = [0.02]
+
+[[batches]]
+id = "band-07-base_new30"
+energies_ev = [0.04, 0.05]
+
+[[batches]]
+id = "band-08-base_new30"
+energies_ev = [0.06, 0.07, 0.08]
+
+[[batches]]
+id = "band-09-base_new30"
+energies_ev = [0.09, 0.1, 0.11]
+
+[[batches]]
+id = "band-10-base_new30"
+energies_ev = [0.12, 0.13, 0.14]
+
+[[batches]]
+id = "band-11-base_new30"
+energies_ev = [0.15, 0.16, 0.17]
+
+[[batches]]
+id = "band-12-base_new30"
+energies_ev = [0.185, 0.195]
+
+[[batches]]
+id = "band-15-base_new30"
+energies_ev = [0.25]
+
+[[batches]]
+id = "band-16-base_new30"
+energies_ev = [0.26, 0.27, 0.28]
+
+[[batches]]
+id = "band-17-base_new30"
+energies_ev = [0.29, 0.3, 0.31]
+
+[[batches]]
+id = "band-18-base_new30"
+energies_ev = [0.32, 0.33, 0.335]
+
+[[batches]]
+id = "band-19-base_new30"
+energies_ev = [0.34, 0.36, 0.365]
+
+[[batches]]
+id = "band-20-base_new30"
+energies_ev = [0.37, 0.38, 0.39]
+
+[[batches]]
+id = "band-21-base_new30"
+energies_ev = [0.4, 0.42, 0.45]
+
+[[batches]]
+id = "band-22-base_new30"
+energies_ev = [0.5, 0.55]
+
+[[batches]]
+id = "band-23-base_new30"
+energies_ev = [0.6, 0.62, 0.64]
+
+[[batches]]
+id = "band-24-base_new30"
+energies_ev = [0.66, 0.67, 0.68]
+
+[[batches]]
+id = "band-25-base_new30"
+energies_ev = [0.685, 0.695, 0.705]
+
+[[batches]]
+id = "band-26-base_new30"
+energies_ev = [0.715, 0.72, 0.725]
+
+[[batches]]
+id = "band-27-base_new30"
+energies_ev = [0.73, 0.735, 0.74]
+
+[[batches]]
+id = "band-28-base_new30"
+energies_ev = [0.76, 0.78, 0.8]
+
+[[batches]]
+id = "band-29-base_new30"
+energies_ev = [0.85, 0.9]
+
+[[batches]]
+id = "band-30-base_new30"
+energies_ev = [0.95]
+
+[[batches]]
+id = "band-31-base_new30"
+energies_ev = [1.02, 1.0331337560200193]
+
+[[batches]]
+id = "low_drude-base_new30"
+energies_ev = [0.03]
+
+[[batches]]
+id = "one_photon-base_new30"
+energies_ev = [0.69, 0.7, 0.71]
+
+[[batches]]
+id = "turnover-base_new30"
+energies_ev = [0.18, 0.19, 0.2]
+
+[[batches]]
+id = "two_photon-base_new30"
+energies_ev = [0.345, 0.35, 0.355]
+
+[[batches]]
+id = "upper_optical-base_new30"
+energies_ev = [1.0]
+
+[[batches]]
+id = "r030_G2_left"
+energies_ev = [0.21, 0.2125, 0.215, 0.2175, 0.22, 0.2225, 0.22375, 0.225, 0.226]
+
+[[batches]]
+id = "r030_G2_center"
+energies_ev = [0.227, 0.2275, 0.228, 0.229, 0.23, 0.231, 0.232, 0.2325, 0.233, 0.2333333333333333, 0.234, 0.235]
+
+[[batches]]
+id = "r030_G2_right"
+energies_ev = [0.236, 0.2375, 0.23875, 0.24, 0.2425, 0.245]
+

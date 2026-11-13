@@ -1,27 +1,38 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_triple_phase_product_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_triple_phase_product_conventional/GeS_tppk_r_conv.dat",
-      "title": "Triple Phase Product",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_triple_phase_product_conventional",
+    "stem": "kslice_triple_phase_product_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "map",
+    "data": "../data/model_tppk_r_conv-49e4b121.dat",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5,
+      0.5,
+      -0.5,
+      0.5
+    ],
+    "aspect": "equal",
+    "xlabel": "$u$ along $\\bm{v}_1$",
+    "ylabel": "$v$ along $\\bm{v}_2$",
+    "title": "Triple Phase Product",
+    "colorbar_label": "native output units",
+    "color": {
+      "kind": "diverging",
+      "cmap": "RdBu_r",
+      "limit": 0.817286069747175
+    }
   }
 }

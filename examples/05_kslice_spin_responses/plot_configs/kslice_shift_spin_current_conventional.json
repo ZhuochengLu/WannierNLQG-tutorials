@@ -1,27 +1,62 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_shift_spin_current_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_shift_spin_current_conventional/GeS_ssck_r_conv.dat",
-      "title": "Shift Spin Current",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_shift_spin_current_conventional",
+    "stem": "kslice_shift_spin_current_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "kind": "map",
+    "data": "../data/ssc_yyyy_display-58cef9b255.dat",
+    "title": "GeS shift spin response: real yyyy",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "xlabel": "$u$ (fractional)",
+    "ylabel": "$v$ (fractional)",
+    "xticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "yticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "xticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "yticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "color": {
+      "kind": "diverging",
+      "limit": 0.8582630910394575,
+      "cmap": "RdBu_r"
+    },
+    "colorbar_label": "Re yyyy ($10^{9}$ native units)",
+    "figsize": [
+      6.0,
+      4.8
+    ],
+    "aspect": "equal"
   }
 }

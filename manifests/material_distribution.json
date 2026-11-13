@@ -1,0 +1,104 @@
+{
+  "schema": "tutorial-material-distribution/1",
+  "version": "1.2.0",
+  "asset_set_id": "tutorial-unified-GeS-Fe-20261109",
+  "publication_status": "VERSIONED_RELEASE_URLS",
+  "data_license_status": "CC-BY-4.0_USER_APPROVED",
+  "license": "CC-BY-4.0",
+  "creator": "Zhuocheng Lu",
+  "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+  "license_scope": "Four scientific files and project-created dataset notices; code/other results and third-party literature references excluded",
+  "archive_format": "deterministic ustar+gzip level6 mtime0",
+  "archives": [
+    {
+      "name": "tutorial-data-1.2.0-GeS-model3.tar.gz",
+      "bytes": 156565555,
+      "sha256": "6b34ed999eeb8042facae7bef4a57d00af76c1c7bebc9aa8d26d3eac010ea3d3",
+      "files": [
+        {
+          "logical_path": "Materials/GeS/model_tb.dat",
+          "bytes": 94298181,
+          "sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+          "role": "scientific_payload"
+        },
+        {
+          "logical_path": "Materials/GeS/operators.h5",
+          "bytes": 4024659779,
+          "sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "role": "scientific_payload"
+        },
+        {
+          "logical_path": "Materials/GeS/LICENSE_DATA.md",
+          "bytes": 1326,
+          "sha256": "65c63d55d30295b53168e75f8a6a04584ca0241a7c754c236e6e2fd8c951ced1",
+          "role": "license_notice"
+        },
+        {
+          "logical_path": "Materials/GeS/DATA_CITATION.cff",
+          "bytes": 658,
+          "sha256": "8a609a4afa073d8a1bcd11ad65b8b755f8cc0804458cbd95535d8c290da2663b",
+          "role": "dataset_citation"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "creator": "Zhuocheng Lu",
+      "parts": [
+        {
+          "name": "tutorial-data-1.2.0-GeS-model3.tar.gz",
+          "bytes": 156565555,
+          "sha256": "6b34ed999eeb8042facae7bef4a57d00af76c1c7bebc9aa8d26d3eac010ea3d3",
+          "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/download/v1.2.0/tutorial-data-1.2.0-GeS-model3.tar.gz"
+        }
+      ]
+    },
+    {
+      "name": "tutorial-data-1.2.0-Fe-model3.tar.gz",
+      "bytes": 194885981,
+      "sha256": "e0a1ff9af845e50f682c8de9c9ccd2e034505ea262d421b6ac2fd12cfd9ef43b",
+      "files": [
+        {
+          "logical_path": "Materials/Fe/model_tb.dat",
+          "bytes": 71573382,
+          "sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+          "role": "scientific_payload"
+        },
+        {
+          "logical_path": "Materials/Fe/operators.h5",
+          "bytes": 3005495097,
+          "sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+          "role": "scientific_payload"
+        },
+        {
+          "logical_path": "Materials/Fe/LICENSE_DATA.md",
+          "bytes": 1324,
+          "sha256": "3e130601bc5a464475dda6c88c22478ff164f41ac4ea6bc55de9dda762fab23a",
+          "role": "license_notice"
+        },
+        {
+          "logical_path": "Materials/Fe/DATA_CITATION.cff",
+          "bytes": 657,
+          "sha256": "03fef5564b001e0059de8eb5a70be3627bdc412b5361fb5428fcc995bc0250fe",
+          "role": "dataset_citation"
+        }
+      ],
+      "license": "CC-BY-4.0",
+      "creator": "Zhuocheng Lu",
+      "parts": [
+        {
+          "name": "tutorial-data-1.2.0-Fe-model3.tar.gz",
+          "bytes": 194885981,
+          "sha256": "e0a1ff9af845e50f682c8de9c9ccd2e034505ea262d421b6ac2fd12cfd9ef43b",
+          "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/download/v1.2.0/tutorial-data-1.2.0-Fe-model3.tar.gz"
+        }
+      ]
+    }
+  ],
+  "unique_raw_files": 4,
+  "raw_bytes": 7196026439,
+  "notice_files": 4,
+  "total_installed_files": 8,
+  "material_authority_confirmation": "manifests/material_authority418.json",
+  "licensing_manifest": "manifests/material_licensing420.json",
+  "dataset_citation": "DATA_CITATION.cff",
+  "user_generated_and_redistribution_authority_confirmed": true
+}

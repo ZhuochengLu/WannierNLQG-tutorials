@@ -1,0 +1,587 @@
+{
+  "schema": "tutorial-pre-github-candidate/1",
+  "version": "1.2.0",
+  "status": "LOCAL_TUTORIAL_REPLAY_BINDING_COMPLETE_AWAITING_EXPLICIT_GITHUB_CONFIRMATION",
+  "tutorial_git_baseline": "96d2690ecd1de196cc2c4c4b33d65b98df28b1de",
+  "baseline_is_release_commit": false,
+  "software_validation": "software_validation.json",
+  "material_licensing": "material_licensing420.json",
+  "data_distribution": "material_distribution.json",
+  "dataset_license": "CC-BY-4.0",
+  "dataset_author": "Zhuocheng Lu",
+  "code_license": "GPL-2.0-only",
+  "paper_reference_in_material_license": false,
+  "changed_files_excluding_this_record": [
+    {
+      "path": "CHECKS.md",
+      "bytes": 4975,
+      "sha256": "c938cfd99f6250b9567cdd97e5ed990787e056e7c287f31669713e9fb8a38abf"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 385,
+      "sha256": "6b6c1d5f591988313f194280ec42ab65055ebaf6a32d690a4a404353abad69e2"
+    },
+    {
+      "path": "DATA_CITATION.cff",
+      "bytes": 676,
+      "sha256": "cae0f364353806fe280373b01adc3bef876238c4a8e2efdf6b79b33d3779ed7c"
+    },
+    {
+      "path": "DATA_PROVENANCE.md",
+      "bytes": 4412,
+      "sha256": "4f19895f4f08121d390b6faddceaea9e7f76d85b9675c3b860b40b171dd0594a"
+    },
+    {
+      "path": "LICENSE_DATA.md",
+      "bytes": 2993,
+      "sha256": "70991c4c57683971a36872997ed489c14e96a70e4f3aa8090f7081b68c5e9408"
+    },
+    {
+      "path": "Materials/ASSETS.md",
+      "bytes": 4083,
+      "sha256": "618e38930693189203c973bcca6ee62a22e6c74ec8e3d4db9cd663aaeffd7df1"
+    },
+    {
+      "path": "Materials/Fe/DATA_CITATION.cff",
+      "bytes": 657,
+      "sha256": "03fef5564b001e0059de8eb5a70be3627bdc412b5361fb5428fcc995bc0250fe"
+    },
+    {
+      "path": "Materials/Fe/LICENSE_DATA.md",
+      "bytes": 1324,
+      "sha256": "3e130601bc5a464475dda6c88c22478ff164f41ac4ea6bc55de9dda762fab23a"
+    },
+    {
+      "path": "Materials/GeS/DATA_CITATION.cff",
+      "bytes": 658,
+      "sha256": "8a609a4afa073d8a1bcd11ad65b8b755f8cc0804458cbd95535d8c290da2663b"
+    },
+    {
+      "path": "Materials/GeS/LICENSE_DATA.md",
+      "bytes": 1326,
+      "sha256": "65c63d55d30295b53168e75f8a6a04584ca0241a7c754c236e6e2fd8c951ced1"
+    },
+    {
+      "path": "Materials/README.md",
+      "bytes": 3946,
+      "sha256": "f0289eb1d6664e3521e931d726bb9809dc6d0b689657bd2dd75f418a2a7be038"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6075,
+      "sha256": "9bce1593c287fd8d48a1964ddcd0a5afefe0d8a63ce0200380a197c0768ec64c"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 3089,
+      "sha256": "539b2743e8ece7d9d7f25bae64f163108cfe087fdca6f7119fa90f9d4f4458d6"
+    },
+    {
+      "path": "RELEASE_REVIEW.md",
+      "bytes": 5811,
+      "sha256": "3f780a0f2fd44693eda7f8191f78a005f3a401bcb8c1fcb50a94391e4a61e6b2"
+    },
+    {
+      "path": "THIRD_PARTY_REFERENCES.md",
+      "bytes": 2241,
+      "sha256": "bb05d7593c12f8d6bb754b2fe4a4a9bbe7dbf0e3abe636fd00ade33294c16325"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/README.md",
+      "bytes": 12601,
+      "sha256": "e56fcc21d6ca3e01bd268796c58119f81b0786512c0ae10adb6a18474533df5c"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.pdf",
+      "bytes": 400809,
+      "sha256": "7eb96561310278da513251055671a71a2417378198db9970f35290329254db36"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.png",
+      "bytes": 169271,
+      "sha256": "f32d62d11a84fa762f9e5cbd9562abfd988fb7c003b3ddc77d7ed367223125a6"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json",
+      "bytes": 1092,
+      "sha256": "b3719f6d1e27fd85526e4ff8602536bb9fff79d3b2b14dbf8ea70be7b6114394"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/README.md",
+      "bytes": 16127,
+      "sha256": "73571cfbb670932c055671528cae29dbb47e1767235e501928fd3c4a182dce45"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.pdf",
+      "bytes": 407101,
+      "sha256": "23aa60f145f1064c7d3b6ead60703a918dce23d1f793b5e5732a7361f0146a6e"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.png",
+      "bytes": 176377,
+      "sha256": "bbc43c94df29d95dbf5232a3e8de077b10f1509c27c5412c9429ee12645ecda8"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.pdf",
+      "bytes": 400617,
+      "sha256": "d626b3143a3f7c20e1dcab9b3556b1ff3484b96ed36d1087719881ea95a3ced2"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.png",
+      "bytes": 178290,
+      "sha256": "7f0f0451efab67d74010de6dca914490a076b236bff31272e28bb359d3e8dd4b"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json",
+      "bytes": 1086,
+      "sha256": "e5e77509dd336a610293a2931488226456c8a05185274e613495a4faab5040cc"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_current_conventional.json",
+      "bytes": 1077,
+      "sha256": "fae85e11a588ab8c1ef591e7462e11676afe16320c411943380ac98b1456ce0d"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/README.md",
+      "bytes": 7437,
+      "sha256": "af5fb906a9de289642045b1e03ae3193113c3622d906e5bf9574dafd901ac189"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/README.md",
+      "bytes": 8390,
+      "sha256": "f7aca73dbe875e0d7397d7b886e3cb084f42fe87d08935cde94b6671ef26d64f"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/README.md",
+      "bytes": 9072,
+      "sha256": "8a21635a263ba1c14a5b51c90b3cb7662f8d2d78002ea9f3dbb754437525b2a2"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/README.md",
+      "bytes": 19712,
+      "sha256": "628ab442a67b49b79ef62bab9ddffd50c238008facd9075951e149a6b1ec8181"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/collect_valleys.py",
+      "bytes": 6046,
+      "sha256": "3bdc386071c77392bf3b0287ec6d175fb6235ab5870539141514d5bdf520687e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/REUSE_NOTICE.md",
+      "bytes": 2198,
+      "sha256": "d6c3c37f01c067283d5af32fe1ac69218cd696db0d61ba1cdb13e2cbbaa7ad4d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/conversion_provenance.json",
+      "bytes": 4989,
+      "sha256": "9660a4b9e4282ab3b50e0b0b53540f17f289c0500dbf653462ec22711b8741d7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/summary.json",
+      "bytes": 9252,
+      "sha256": "96ef0a4af38c7efc2088ef4591937bab6054753d2fa196e5f374f29dc2124c28"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/thg_regrouped_chi_yyyy_volume_derived.dat",
+      "bytes": 17775,
+      "sha256": "5dcbc627234358fcf07aaf72072cbd407fc5c2c14928765cc8d0671b751128c7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/thg_regrouped_sigma_yyyy_volume_derived.dat",
+      "bytes": 17590,
+      "sha256": "68ad910b09c2e8c5d5e207e0c55b68f293353f37e7759e49418d7f5b3d311e4c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/thg_unregrouped_chi_yyyy_volume_derived.dat",
+      "bytes": 21349,
+      "sha256": "3f22d473da61ae259b84dda09408fd543209a8039c37e888765467332a478342"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/thg_unregrouped_sigma_yyyy_volume_derived.dat",
+      "bytes": 21288,
+      "sha256": "d7c5c55ce20841bf3d303f179b38a875aeac6db23ddc33dfced4e70202349cde"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/wn30_regrouped_two_spin_volume_derived.dat",
+      "bytes": 9134,
+      "sha256": "7274afbf5721237b4b503dcaa06b62222a2b9f41c9e69707d682ee30219e81c7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_volume_migration425/wn30_unregrouped_two_spin_volume_derived.dat",
+      "bytes": 9134,
+      "sha256": "3a146304b4125c3b2324b499dcde8772a009f937ebea8d787aafd811acb43e65"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_complex.pdf",
+      "bytes": 407162,
+      "sha256": "1b8e47c38565832bdde6b59d0ce9025041ccfe7502aeb3d9fda1dec9bccbaa9d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_complex.png",
+      "bytes": 437460,
+      "sha256": "6b703ab9d13dd448bdb46d7426dcf02eb0dc7635a15917b96f6738bd017b2c25"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_magnitude.pdf",
+      "bytes": 441147,
+      "sha256": "42955db1b4abb6b9daffede7a27da85489a92c0b6df5fa302ade758904f727cb"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_magnitude.png",
+      "bytes": 647846,
+      "sha256": "9d411c5faab08aa4f0594a9d33e0b4659db495e4673a483c113017c570f22286"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/inputs/T10.toml",
+      "bytes": 1710,
+      "sha256": "f0c47fc17bc02df6d4877152c3272ffee9659d023f53d3740e5958ee8aed783f"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/inputs/T300.toml",
+      "bytes": 1711,
+      "sha256": "6d80aa543e8669dd4dee70b3cfdc3c3cafd88cdd3aea29499eaa5da6af3dbe94"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/plot_configs/thg_valley_30meV.json",
+      "bytes": 873,
+      "sha256": "4c9c783a3f49ba41398c970d178899e252f89637887c0a6f5a12791cf630443a"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/plot_valleys.py",
+      "bytes": 6616,
+      "sha256": "9a0ab5aee93c2d4898929267aab227699306469546a9e90e39da7ce39db3c507"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/prepare_paper_curve.py",
+      "bytes": 1119,
+      "sha256": "e07788fbab00d5e61a0836446fbee3625b6273b9a9d25edc7d49453b403af3a5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/reproduce.json",
+      "bytes": 75339,
+      "sha256": "1ef29369337642adedd3abfde942bf0adf77c5a7f3c7ce2ff582892845fe73b0"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/run_valleys.jl",
+      "bytes": 5780,
+      "sha256": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/valley_display_data.py",
+      "bytes": 1999,
+      "sha256": "5a24fd4bb0afd29d0919a1f3a83b7b6ea2ac0647d698c3aaa5da7753ce4fe13a"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+      "bytes": 5536,
+      "sha256": "cbbd67e66b446d5d1828097fbd60f2909bb695303dcc40a51242d0876565f4a5"
+    },
+    {
+      "path": "examples/17_jerk_current/README.md",
+      "bytes": 12260,
+      "sha256": "86ef4eb6cdea9114fed927003c1b3c42d80badff8c621fd2c664d7017e4304c9"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_dense_current.pdf",
+      "bytes": 363449,
+      "sha256": "94cda4f3d4984f6784155ef8221449cd9d93db90f7fe88b3a22574e5091e8e53"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_dense_current.png",
+      "bytes": 407748,
+      "sha256": "f16a74e6c555c3dd925cc6d0f684c0bdc7d15d578b165ad5c98c7a3ae0f15527"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/ges_mesh200_sheet.toml",
+      "bytes": 933,
+      "sha256": "6f72c48ca36c78282ca721ceeba579cbb23a1fbf2d7641b2632062602b3bd762"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/ges_mesh300_sheet.toml",
+      "bytes": 933,
+      "sha256": "5f927f679f7582530d2c631d0fb391528b45ed434db3c097533688a39c85b5a5"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/ges_pilot_bulk.toml",
+      "bytes": 730,
+      "sha256": "4907669a391c2cd47e92acc125c34decd197cdfed08981c35db872799dfe5735"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/ges_pilot_sheet.toml",
+      "bytes": 732,
+      "sha256": "bbad4c8afd50ac4744ed8f8aa5be05fe14a4279c4f2a26e48504ebcd31df3427"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/ges_spectrum_sheet.toml",
+      "bytes": 2071,
+      "sha256": "13ed5e73314901599cae42b5cb37c0082a756047c5959504e521770e7d8bf2ff"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/two_band_analytic.toml",
+      "bytes": 660,
+      "sha256": "3024c68e5501ac0b4ac5881d126b2d54bdffec042bc48a709fa04640830a2a1c"
+    },
+    {
+      "path": "examples/17_jerk_current/inputs/two_band_tb.toml",
+      "bytes": 642,
+      "sha256": "cbe85eef477f7d11b691ae174c541f6f8e0a2e1b4f5ddf97c542d85f82c33fb9"
+    },
+    {
+      "path": "examples/17_jerk_current/plot_configs/ges_dense_current370.json",
+      "bytes": 1865,
+      "sha256": "a2753e6babc16e205440f7ad39ff4c6e57223d29de7f534ca76c266aabc1ad49"
+    },
+    {
+      "path": "examples/17_jerk_current/reproduce.json",
+      "bytes": 55468,
+      "sha256": "322d1e90fe84f314775e34d1974bc7dd8e2e56d2ed5646337f14d36cd991d6a5"
+    },
+    {
+      "path": "manifests/data_rights_review414.json",
+      "bytes": 9023,
+      "sha256": "06071ce4d6844253e5539304f17b0a17a6c8ed37c2628103ea1422f5406dacfe"
+    },
+    {
+      "path": "manifests/figure_inventory.json",
+      "bytes": 33614,
+      "sha256": "3e11e762440dac2a093b8d8dc4f4e82f94c2b5d5d400fe073921bb4050409235"
+    },
+    {
+      "path": "manifests/material_asset_set.json",
+      "bytes": 3432,
+      "sha256": "dd6b014e3c0d7597e81f1da44bbf38f496e4264dc4ad686d64269c2b44e88994"
+    },
+    {
+      "path": "manifests/material_authority418.json",
+      "bytes": 2617,
+      "sha256": "86d04297e7bf7b62bb8c24d890754dfd962d1e96f152463aefa08230ad030853"
+    },
+    {
+      "path": "manifests/material_distribution.json",
+      "bytes": 4023,
+      "sha256": "8b293314846362e7d029ae885f43528c3df017408fb1ea09584d950438552ecd"
+    },
+    {
+      "path": "manifests/material_distribution.sha256",
+      "bytes": 93,
+      "sha256": "db812d2a506967ec5717337b0e4cecb80213cbec80c3267b93d016af9e56ca1c"
+    },
+    {
+      "path": "manifests/material_licensing420.json",
+      "bytes": 5667,
+      "sha256": "6b874519e5dd90f948bac5ebcaf3a6e1939bba76dc4261e758fa89ba97410758"
+    },
+    {
+      "path": "manifests/material_requirements.json",
+      "bytes": 31138,
+      "sha256": "399c0a1958194cf7b7976a45473cc588db850d0e849bf4a6fa112fcb4ed4338a"
+    },
+    {
+      "path": "manifests/release_review416.json",
+      "bytes": 10440,
+      "sha256": "10cbd5c9cab0cd26d967166231b00a80f5c706e6a1be5858b11270a7b735920f"
+    },
+    {
+      "path": "manifests/software_name_clarity_20261112.json",
+      "bytes": 3948,
+      "sha256": "3b8fcc286e1454c355cf71137a71cb26e677203746e13fdeda71cdcf803eb191"
+    },
+    {
+      "path": "manifests/third_order_periodic_migration426.json",
+      "bytes": 828,
+      "sha256": "5b02f792d26a2311c4d3b77d2dfe23e864f7a2cb3ca1b919219ad84ce07811e3"
+    },
+    {
+      "path": "manifests/tutorial_map_labels_20261112.json",
+      "bytes": 3685,
+      "sha256": "bf8aa13d6f7e446907cc70c28ac4fa1b622f7de53ab9f374ba1b83c6befd078a"
+    },
+    {
+      "path": "releases/ges-vasp-soc-spin-v1.body-update.json",
+      "bytes": 1819,
+      "sha256": "3ad39f6bb9831201af569c867cef2ef2bea5db0302b40842d08177a4c41481d0"
+    },
+    {
+      "path": "releases/ges-vasp-soc-spin-v1.md",
+      "bytes": 1771,
+      "sha256": "33eff42d353ed6b1425837531cfbf86cb41b01f75c9cef93eedfd107c46683a9"
+    },
+    {
+      "path": "releases/v1.1.0.body-update.json",
+      "bytes": 4005,
+      "sha256": "c2ce321f4aae0a95c128bc84b859c00f2b38a90d3e200d92789fc8e5fe9cf526"
+    },
+    {
+      "path": "releases/v1.1.0.md",
+      "bytes": 3944,
+      "sha256": "b95a000aa2e6bd9e278d186a9a31d09ed8bdd4a9afe65cbc7c48aa14e065ea79"
+    },
+    {
+      "path": "test/fixtures/inputs/16_monolayer_graphene_thg/T10.toml",
+      "bytes": 1001,
+      "sha256": "110113288bdafe3fb6414310394634d44f0455dc5d1b8e8e503fb74d9ab40210"
+    },
+    {
+      "path": "test/fixtures/inputs/16_monolayer_graphene_thg/T300.toml",
+      "bytes": 1002,
+      "sha256": "c26e8571e6ef993e8ac803c31842e8e4bcd77d4f71e533f03db59db2b17fd111"
+    },
+    {
+      "path": "test/fixtures/inputs/17_jerk_current/ges_pilot_bulk.toml",
+      "bytes": 723,
+      "sha256": "132233653bd6b25a4f8144a1ecbe2f0bf66d31454d56f18f58534b2160aa8f36"
+    },
+    {
+      "path": "test/fixtures/inputs/17_jerk_current/ges_pilot_sheet.toml",
+      "bytes": 725,
+      "sha256": "7fbb91631e515a9873078e95eaecc76ad9c94f4cf8c056e5013da86e9b0e9ba0"
+    },
+    {
+      "path": "test/fixtures/inputs/17_jerk_current/two_band_analytic.toml",
+      "bytes": 659,
+      "sha256": "85b951e776cfa92f49966aa6da3d3eec5619d73e9ca76c1e3c4b39ca7fcff2d2"
+    },
+    {
+      "path": "test/fixtures/inputs/17_jerk_current/two_band_tb.toml",
+      "bytes": 641,
+      "sha256": "279519c17fde74ba3f1c02554654d6479441285c2bb2434464c9d3b0f62c8eb2"
+    }
+  ],
+  "new_scientific_calculations": 0,
+  "existing_checks_reused": true,
+  "chapter_edits": "Two current replay pins updated after the accepted workload-only source change. Original 41-file migration, 434 binding, 435 prose, historical source roles, tables and plots retain their separate evidence.",
+  "jerk_xxxx_convergence_release_gate": false,
+  "WN_source_changed": false,
+  "GitHub_actions_performed": [],
+  "remaining_steps": [
+    "Explicit user confirmation before any GitHub mutation",
+    "Use code-owner final release readiness/source identity evidence; tutorial binding436 is engineering only",
+    "After separately authorized publication: real new-asset public download and applicable remote CI checks"
+  ],
+  "publication_date": null,
+  "dataset_DOI": null,
+  "WN_CFF_coordination": "Requested review from existing WN owner; no source-repository metadata edited by Tutorials owner",
+  "inventory_scope": "Changed-file identities above exclude this record to avoid self-hashing; full prospective payload and baseline diff retained in private preparation evidence, not a claimed Git commit",
+  "scientific_payload_changed": false,
+  "figures_changed_for_display_only": false,
+  "current_reconciliation": {
+    "id": "current-replay-precompile-pin436",
+    "previous_candidate_manifest_sha256": "f5c81c4eece40ec2edd477bcaeccb38d5c758c278803cfb5899c2b3f3f6300b4",
+    "scope": "Two current replay fields/files updated after workload-only software promotion; no physical control, data, figure or release prose changed.",
+    "previous_current_replay_source_manifest_sha256": "7188eb76e7201179a4447bd4a2224734d4d82c64b4f2bb5dc65e58fd6d236a2f",
+    "current_replay_source_manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+    "recorded_calculation_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "normalization_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+    "source_change_scope": "Only src/FirstUse/RepresentativeStaticHallAndMultipoleWorkloads.jl according to code-owner frozen bridge; kernels/Runtime/API/deps/tests unchanged.",
+    "source_bridge_record_sha256": "eae146752b0ed59938cb64cbf628d7863f7a6c3175906fa033625f28b4aac582",
+    "finalpath49_closed_record_sha256": "08cc12a6f52543853606145a3ea1a81aefac00063793b3f3f98b8f649ba70a94",
+    "finalpath49_qualification_record_sha256": "c702877063934c3fd1d2cf6fbe0f49c1394be47fe754db2319182461cf665b79",
+    "current_binding436_status": "DEVELOPMENT_PASS_NOT_SCIENTIFIC",
+    "prior_434_435_receipts_and_725_09_sources_relabelled": false,
+    "new_response_integrations": 0,
+    "new_plots": 0,
+    "new_Full": 0,
+    "GitHub_actions": [],
+    "current_binding436": {
+      "actual_root_exit": 0,
+      "qualification": "DEVELOPMENT_PASS",
+      "scientific_status": "NOT_SCIENTIFIC",
+      "typed_checks": 16,
+      "all_typed_checks_pass": true,
+      "configs": 6,
+      "loader_cases": 5,
+      "target_points": 84,
+      "declared_points": 99,
+      "response_integrations": 0,
+      "strict_original_complete_identity_count": 5,
+      "strict_released": true,
+      "kernel_containment": "UNKNOWN",
+      "clean_loader_fixture_is_new_response": false,
+      "qualification_and_strict_record_sha256": "fad8c1bba07df5e9c65d1b0ec906df6328d28f9006e1093d7ee97ff008cb5ae6",
+      "exact_input_postread_sha256": "d3f811a14fb9bbcce06f38d94f11bbc4bb001e56581239a7b48ca344ba6f30c0"
+    }
+  },
+  "reconciliation_history": [
+    {
+      "id": "name-clarity-20261112-reconciliation421",
+      "source_record": "software_name_clarity_20261112.json",
+      "source_record_sha256": "3b8fcc286e1454c355cf71137a71cb26e677203746e13fdeda71cdcf803eb191",
+      "previous_candidate_manifest_sha256": "29c3f77be4c86d233ca4500f68574ff6b7a4fe3b500a10625eec1454ca6669f2",
+      "original_release420_evidence_preserved": true,
+      "changed_display_and_text_files": 10,
+      "updated_existing_figure_inventory": true,
+      "unchanged_bound_plot_inputs": 6,
+      "existing_render_validation": "PNG and independent Poppler PDF previews visually inspected; no clipping or overlap; signs and exponent glyphs visible; style environment and glyph checks passed",
+      "renderer_not_rerun": true,
+      "new_integrals": 0,
+      "GitHub_actions": []
+    },
+    {
+      "id": "tutorial-map-labels-20261112-reconciliation422",
+      "source_record": "tutorial_map_labels_20261112.json",
+      "source_record_sha256": "bf8aa13d6f7e446907cc70c28ac4fa1b622f7de53ab9f374ba1b83c6befd078a",
+      "previous_candidate_manifest_sha256": "a8af84ade9fac2beeaa274f51406fd4a2a1c4791dadfdd0b11d26b83cdf7a7da",
+      "original_release420_and421_evidence_preserved": true,
+      "map_config_and_image_changes": 9,
+      "README_changes": 5,
+      "updated_existing_figure_inventory": true,
+      "unchanged_bound_map_data": 3,
+      "renderer_unchanged": true,
+      "chapter09_unchanged": true,
+      "existing_render_validation": "All three PNGs and independent Poppler PDF previews visually inspected; signed colorbar ticks, axis labels and layout verified; check-env, check-glyphs and inspect passed.",
+      "renderer_not_rerun": true,
+      "new_integrals": 0,
+      "GitHub_actions": []
+    },
+    {
+      "id": "approved-readme-release-docs435",
+      "previous_candidate_manifest_sha256": "6a355b7a7ebe712dd15028ca3fe8c57f10d73000c744c0e1ae356975bd2ef2ae",
+      "approved_document_artifacts_sha256": {
+        "Tutorials-README-repository-ready.md": "9bce1593c287fd8d48a1964ddcd0a5afefe0d8a63ce0200380a197c0768ec64c",
+        "Tutorials-v1.2-approved-displayed.md": "2a214c51839976ef92cf01013310ea049f5c16fae0efe81f8c46e01804c642a6",
+        "Tutorials-v1.1-approved-displayed.md": "757668311846aeff79f6994c0d77cd1f1326f5b0a276372bb74492bf4b96e182",
+        "GeS-data-approved-displayed.md": "04d5f8ac2da1ffe802ecbb832015d0907720fafb0de483bb1ad5ed0984c7bfb9"
+      },
+      "scope": "Approved root README and concise release prose; historical published bodies prepared locally, not remotely edited. Manifest refresh also accounts for the already-installed 41-file third-order delta; none of its payload is edited here.",
+      "newly_edited_document_and_request_files": 6,
+      "figure_inventory_rows_refreshed": 6,
+      "installed_delta_files": 41,
+      "installed_delta_sha256": "b41a84431feaef657265b34fe3384bb43ea6890bd6bd78e9fef771ac0fccfe8b",
+      "installed_delta_install_record_sha256": "7efd10324c3aa25f50ab104ab398a8d048c9b06236774ba5bc50bf9f685482f3",
+      "current_replay_source_manifest_sha256": "7188eb76e7201179a4447bd4a2224734d4d82c64b4f2bb5dc65e58fd6d236a2f",
+      "recorded_calculation_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "normalization_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+      "existing_final_binding434": {
+        "actual_root_exit": 0,
+        "qualification": "DEVELOPMENT_PASS",
+        "science": "NOT_SCIENTIFIC",
+        "configs": 6,
+        "loader_cases": 5,
+        "complete_recorded_identities_strict_GONE": 5,
+        "clean_loader_fixture_is_new_response": false,
+        "delivery_record_sha256": "f70d75e50c29a5d34b53e6efe3623337f528a22c17402c5bf02dde9b223238f0"
+      },
+      "historical_provenance_detail_sha256": {
+        "releases/v1.1.0.md": "e7814060c45810187966d69bbc0ba916fd745f229f79c18a6e4118bc1a92e2bc",
+        "releases/ges-vasp-soc-spin-v1.md": "30a5fa57e969e9404ae636e42fc5062d9dd798273d7e5e40c71f1d784ce625ea"
+      },
+      "original_420_421_422_430_434_evidence_preserved": true,
+      "new_response_integrations": 0,
+      "new_plots": 0,
+      "new_Full": 0,
+      "software_source_or_41_payload_written": false,
+      "GitHub_actions": [],
+      "software_qualification_scope": "7188 current replay binding434 is engineering only. WN owner reports latest 63x2 ordinary cold gate FAIL (AHCK3 >0.5s), strictly closed. No software/performance PASS or source promotion is granted by this documentation reconciliation."
+    }
+  ],
+  "publication_metadata51": {
+    "scope": "Authorized publication-time versioned acquisition URLs and preparation-status prose only; no scientific data/configuration/code changes",
+    "target_repository": "ZhuochengLu/WannierNLQG-tutorials",
+    "target_tag": "v1.2.0",
+    "actual_remote_publication_record": "Recorded separately by release owner after success; this metadata does not claim a completed upload",
+    "parent_consuming_manifest_sha256": "8a5f4f8099c687674451d328cba570e742006ac601146fe7b18cb7e60c61bf07",
+    "current_replay_source_manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+    "scientific_receipts_relabelled": false
+  }
+}

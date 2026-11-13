@@ -1,0 +1,116 @@
+{
+  "schema": "tutorial-provenance-recovered/1",
+  "adopted_public_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "recovered_reference_cases": 12,
+  "new_integrals": 0,
+  "WN_source_modified": false,
+  "Fe_eight_linear_cases": {
+    "execution_id": "Fe-tutorial-linear-20261106-002",
+    "source_inventory_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+    "source_manifest_sha256": "c87e1e9e896f449e58a0e049d05c31510eb516a6fbab205bb4cdbd7eb34c7cad",
+    "seal_reconstruction_record_sha256": "a4c2b04d26e7e7a9944515332b32daa21d5caacb04eb77cfea4bfab4015dce0f",
+    "original_producer_inventory_sha256": "c8f1aae5b96c0008853e00cd233624ddcc3dcc27d15197cbb8f63413c6f62297",
+    "actual_old_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+    "current_eight_input_task_and_sampling_values_checked": true,
+    "production_source_matches_original_inventory": true,
+    "full2050_payload_byteidentity_not_claimed": "2048 retained files match; the two listed tests subsequently changed. Neither is a production numerical consumer.",
+    "test_only_drifts": [
+      "test/NativeFullOperatorPosthocTests.jl:content",
+      "test/completed_operator_dispatch_unit.jl:content"
+    ],
+    "selected_response_leaf_files": [
+      {
+        "file": "src/Responses/LinearTransport/LinearTransport.jl",
+        "old_sha256": "97540abd5571c35fc21075ae0549e1dc13d34cae72571439c37c0118afaf4dd8",
+        "current_sha256": "97540abd5571c35fc21075ae0549e1dc13d34cae72571439c37c0118afaf4dd8",
+        "byte_exact": true
+      },
+      {
+        "file": "src/Responses/LinearTransport/LinearTransportKernels.jl",
+        "old_sha256": "589435e124675530e92c6a301df2e2cc750c83bafe7e0c0cb1a3571654e4d651",
+        "current_sha256": "589435e124675530e92c6a301df2e2cc750c83bafe7e0c0cb1a3571654e4d651",
+        "byte_exact": true
+      },
+      {
+        "file": "src/Responses/LinearOpticalResponse/LinearOpticalResponse.jl",
+        "old_sha256": "396a17ea3fe6d0272d8a8681c105892d7e931b159e27ae0dd4d4056924b0b517",
+        "current_sha256": "396a17ea3fe6d0272d8a8681c105892d7e931b159e27ae0dd4d4056924b0b517",
+        "byte_exact": true
+      },
+      {
+        "file": "src/Responses/LinearOpticalResponse/LinearOpticalResponseKernels.jl",
+        "old_sha256": "bf9056b81545e032e12c2073a7829d4684cd60cd2b985693b307d9d7416b5ec5",
+        "current_sha256": "bf9056b81545e032e12c2073a7829d4684cd60cd2b985693b307d9d7416b5ec5",
+        "byte_exact": true
+      }
+    ],
+    "selected_call_path_review": [
+      "Original linear optical/transport responses are orthogonal H/r, positive eta=.001, Conventional or Projector, 40^3 and the same T/mu/energy axes.",
+      "Kernel formulas are byte-identical. Spectral geometry changes outside these paths are OM eta handling/comments and the new nonorthogonal delegate; the Fe orthogonal branch is unchanged.",
+      "Matrix planning adds optional metric/other-response capabilities not selected by these inputs. The positive-eta position branch is unchanged; new zero-eta branches do not apply to these eight cases.",
+      "Spin/OAM/third-order derivative changes do not enter the selected linear matrices. The current native Fe band run326 independently matches the stored H interpolation spectrum byte-for-byte.",
+      "Unified material audit233 checks all consumed H/r arrays, translations, order, weights and lattice; format-copy302 changes no numerical arrays. Missing inventory labels were a provenance-discovery gap, not evidence of wrong prior integrals."
+    ],
+    "material_TB_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+    "full_operator_file_consumed_by_eight_original_tasks": false,
+    "current_responses_recomputed": false
+  },
+  "Fe_three_maps": {
+    "berry_sos_occupied_xy_and_berry_tb_occupied_xy": "Actual selected f278/default186 computations located; input binds accepted Fe H/r or its full operator bundle. Current Conventional QG selected leaf closure315 is unchanged; unrelated retired Geometric-Loop QHC is not selected.",
+    "berry_transport_equivalent_xy": {
+      "execution_id": "Fe-tutorial-berry-h5-20261106-001",
+      "input_sha256": "d65e45f206cf1290bf5df81690e527b3164dd4e23df49acadaacc36ad36d69f7",
+      "actual_task_kind": "linear_transport KSlice, not quantum_geometry",
+      "material_TB_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149"
+    },
+    "sampling_and_actual_selected_data_hashes_checked": true,
+    "new_responses_recomputed": false
+  },
+  "GeS_selected_injection_map": {
+    "execution_id": "GeS-charge-selected-current065",
+    "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+    "source_archive_sha256": "2a9f96fabd184a3f4329dedf6356a8574ff01ceb45b7b75780bb849a0da493df",
+    "archive_verified_payload_files": 2054,
+    "source_payload_mismatches": 0,
+    "actual_input_sha256": "b3b6a680d9ae11908ff48dfa0fba5b6914f7be10e643f69d1f763978fa86edc5",
+    "method": "Conventional",
+    "tensor": "yyy",
+    "mesh": [
+      200,
+      200
+    ],
+    "energy_ev": 3.0,
+    "temperature_k": 0.0,
+    "fermi_energy_ev": -2.5,
+    "selected_endpoints": "valence19:20,conduction21:22; complete intermediate space; actual fixed-selector source",
+    "spectral_width_ev": 0.06,
+    "position_eta_ev": 0.001,
+    "raw_to_display": {
+      "raw_sha256": "df5977ff88eee4a53e14b61a037375f8d88b91e5e44cdcc1983d4ed9f67e7d40",
+      "display_sha256": "1dcb04d33d11bd5abc8e1c9dcb8ee0c3b930e70dd72dabbe4fb78fd362da978f",
+      "raw_shape": [
+        200,
+        200
+      ],
+      "display_shape": [
+        200,
+        200
+      ],
+      "fixed_scale": 1e-06,
+      "max_abs_difference": 8.881784197001252e-16
+    },
+    "source_review": "Injection response leaves are byte-identical. KSlice driver edits concern other QG/metric options and zero-eta validation; selected positive-eta injection and endpoint logic are unchanged.",
+    "material_review": "Unified GeS H/r arrays and indexed real-space frame are bitwise equivalent to the accepted selected parent used by this computation (actual audit233).",
+    "actual_old_exit": 0,
+    "new_response_recomputed": false
+  },
+  "private_evidence_hashes": {
+    "audit316/FE_INVENTORY_PAYLOAD316.json": "de98f547750562d6795853c74b60ced10abd1e1a64172c195589097fdca48a8e",
+    "audit316/FE_SELECTED_SOURCE_COMPARISON316.json": "86da47a0a7f51207d9aac6989bd1e3b47aee3538f8b5b90608ee6b32df61bc23",
+    "audit316/FE_RUN_HISTORY316.json": "265f4fbbe43fe50408a1a7b81f936da67a15616088a23a64840bebfa204682c1",
+    "audit316/FE_SELECTED_INPUT_BINDING316.json": "624545d1e01248d8688ef2562cf9d23d03b869113a3063e8982293bab0a6e54f",
+    "audit316/IC_SELECTED_DISPLAY_TRANSFORM316.json": "e6b460dec003380cda6aa1d18a764c0860f6387ac90d3687daa21e4974dd4198",
+    "audit316/SELECTED014_SOURCE_AUDIT316.json": "4d0b68779323641d0faf81404d9b4e73754871c1d3e608f208646df2807e4580"
+  },
+  "qualification_boundary": "Evidence supports reuse of the existing selected tutorial results. It does not promote a model/material, imply every source file is identical, or turn a source review into a new current end-to-end execution."
+}

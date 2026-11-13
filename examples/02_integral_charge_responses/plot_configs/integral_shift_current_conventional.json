@@ -1,29 +1,34 @@
 {
-  "mode": "single",
-  "input": "../results/reference/integral_shift_current_conventional/GeS_sc_conv.dat",
-  "label": "integral_shift_current_conventional",
-  "components": "yyy",
-  "part": "real",
-  "unit": "native output units",
-  "x_window": [
-    0.0,
-    4.0
-  ],
-  "panel_size_inches": [
-    4.8,
-    3.4
-  ],
-  "curves": {
-    "integral_shift_current_conventional": {
-      "marker": "",
-      "linewidth": 1.6
-    }
-  },
   "output": {
-    "stem": "../figures/integral_shift_current_conventional",
+    "stem": "integral_shift_current_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "line",
+    "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "ylabel": "$\\mathrm{Re}\\,\\sigma^{yyy}$ (native output units)",
+    "xlim": [
+      0.0,
+      4.0
+    ],
+    "legend": false,
+    "series": [
+      {
+        "data": "../data/operators_sc_conv-c07167e1.dat",
+        "x_column": 1,
+        "y_column": 16,
+        "color": "#104E8B",
+        "linewidth": 1.6
+      }
+    ],
+    "title": "GeS shift current: conventional"
   }
 }

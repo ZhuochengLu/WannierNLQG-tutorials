@@ -1,27 +1,62 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_injection_current_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_injection_current_conventional/GeS_ick_r_conv.dat",
-      "title": "Injection Current",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_injection_current_conventional",
+    "stem": "kslice_injection_current_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "kind": "map",
+    "data": "../data/kslice_injection_current_conventional_new_display-1dcb04d3.dat",
+    "title": "GeS injection current",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "xlabel": "$u$ (fractional)",
+    "ylabel": "$v$ (fractional)",
+    "xticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "yticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "xticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "yticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "color": {
+      "kind": "diverging",
+      "limit": 5.917393450612061,
+      "cmap": "RdBu_r"
+    },
+    "colorbar_label": "Re yyy ($10^{6}$ native units)",
+    "figsize": [
+      6.0,
+      4.8
+    ],
+    "aspect": "equal"
   }
 }

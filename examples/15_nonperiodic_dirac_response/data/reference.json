@@ -1,0 +1,943 @@
+{
+  "band_gap_ev": 0.4,
+  "cases": {
+    "hall_negative": {
+      "clean_box_target_e2_over_h": 0.4985932614800255,
+      "closed_form_fraction": 8.356078167343638e-06,
+      "cutoff_A_inverse": 32,
+      "derivatives_sha256": "cd9f84e64d99ec3b638f80bc6d9cac589977af3970fc40419626ce331076b975",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.002,
+      "half_integer_distance_fraction": 0.0028218096084823285,
+      "hall_max_absolute_e2_over_h": 0.003273715466777516,
+      "hall_max_fraction": 0.006547430933555032,
+      "hall_mu0_e2_over_h": 0.49858909519575884,
+      "in_gap_max_fraction_of_half": 6.39611586090847e-10,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.5722609624817325e-13,
+      "mass_ev": -0.2,
+      "mesh": 6401,
+      "metadata_sha256": "0d8df587ee761ba7100e3a0d18ca730b9a78a544ea754dd7ab38f1621a5c05c3",
+      "xx_complex_max_fraction": null,
+      "current725_validation": {
+        "full_axis_original_tolerance_fraction": 0.006550956219492199,
+        "in_gap_fraction_of_half": 4.165941020040087e-06,
+        "full_axis_original_test": "PASS",
+        "in_gap_original_test": "PASS",
+        "mechanism_sum_absolute": 3.453405236471599e-10,
+        "independent_reference_values_recomputed": false
+      },
+      "current_execution": {
+        "execution_id": "WN-Tutorial-provenance327",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "input_sha256": "2495cc43c035923e96c46953095467af96c52b5fb38bbb73eec59fa03a29b8a7",
+        "normal_case_function_completed": true,
+        "native_writer_completed_before_next_case": true,
+        "parent_actual_exit": -15,
+        "parent_failure_not_upgraded": true,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_drude.dat": "a9e53689bdd60829cf01a929c2957bce8819a952a20471a4963174c41e1b4790",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_quantum_metric.dat": "edf5d4d3dc88d0b023bf0502d412e6eaa30a3121487c4fa56d5e199c3ad36df1",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_berry_curvature.dat": "b18e0ff49a2c8ef116410a2ff60ba5d5010258f6af7b5b9b97ab37871a95a572",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_total.dat": "958fa72601ecf5cc4943dd952534526962c3ecc18fb748f988d9e5337edff65b"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_hall_negative.tsv",
+        "display_sha256": "b5470e41ee590df394973a1536b72e654d81e4df27b7dcff0c56e15d8645afa5",
+        "display_transform": "Native / e^2h; Hall=(xy-yx)/2; unchanged independent reference columns5:9."
+      }
+    },
+    "hall_optical_matched": {
+      "clean_box_target_e2_over_h": -0.455170549114479,
+      "closed_form_fraction": 0.0009131076594541903,
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "932bd2829618801dd55b1655ac268e248082c66b8c7f9b987049efef3f1b6c03",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.0012868509504637138,
+      "hall_max_fraction": 0.0025737019009274276,
+      "hall_mu0_e2_over_h": -0.4547549293997246,
+      "in_gap_max_fraction_of_half": 2.2889719342167325e-07,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 1.2259120619713519e-13,
+      "mass_ev": 0.2,
+      "mesh": 401,
+      "metadata_sha256": "9a0d9cefddc0c30c179db02497427a1ed089b7be992d1dd71e06bdde538d5335",
+      "xx_complex_max_fraction": null
+    },
+    "hall_positive": {
+      "clean_box_target_e2_over_h": -0.4985932614800255,
+      "closed_form_fraction": 8.356078167343638e-06,
+      "cutoff_A_inverse": 32,
+      "derivatives_sha256": "cd9f84e64d99ec3b638f80bc6d9cac589977af3970fc40419626ce331076b975",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.002,
+      "half_integer_distance_fraction": 0.0028218096084823285,
+      "hall_max_absolute_e2_over_h": 0.003273715466777516,
+      "hall_max_fraction": 0.006547430933555032,
+      "hall_mu0_e2_over_h": -0.49858909519575884,
+      "in_gap_max_fraction_of_half": 6.39611586090847e-10,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.5722609624817325e-13,
+      "mass_ev": 0.2,
+      "mesh": 6401,
+      "metadata_sha256": "ca42305492d8a89e6c87963aa2e87de0a3a06b99587295a46921a91e69838557",
+      "xx_complex_max_fraction": null,
+      "current725_validation": {
+        "full_axis_original_tolerance_fraction": 0.006550956219492199,
+        "in_gap_fraction_of_half": 4.165941020040087e-06,
+        "full_axis_original_test": "PASS",
+        "in_gap_original_test": "PASS",
+        "mechanism_sum_absolute": 3.453405236471599e-10,
+        "independent_reference_values_recomputed": false
+      },
+      "current_execution": {
+        "execution_id": "WN-Tutorial-provenance327",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "input_sha256": "00e7546286cfee30994a812a24397f0d41c36cc63b118649ab64b9f2a3c0bc6e",
+        "normal_case_function_completed": true,
+        "native_writer_completed_before_next_case": true,
+        "parent_actual_exit": -15,
+        "parent_failure_not_upgraded": true,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_drude.dat": "70120a92a21ae638b716848ea7bb1ee0306da5e7adf480944e263e1fcf0078da",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_quantum_metric.dat": "8b4ef2e0cb65b5fd37ad11693032835e80f84a8d700120a33b698394c1d9f7d4",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_berry_curvature.dat": "9b19a9d619fa3f00811e0fe5ecc14493aa6d9778db96603935d9545c5eadfa2a",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_total.dat": "a6325a1ab83bb8d5ee745bfd34a721bcc1f5297a65badcf8e5bfba2fc27fb6be"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive.tsv",
+        "display_sha256": "ae6010a9aa4a096069ee543ca15efe33af2992fb47442fc143ab615e2e370a3f",
+        "display_transform": "Native / e^2h; Hall=(xy-yx)/2; unchanged independent reference columns5:9."
+      }
+    },
+    "hall_positive_g0001": {
+      "clean_box_target_e2_over_h": -0.4985932614800255,
+      "closed_form_fraction": 2.088561976498724e-06,
+      "cutoff_A_inverse": 32,
+      "derivatives_sha256": "cd9f84e64d99ec3b638f80bc6d9cac589977af3970fc40419626ce331076b975",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.001,
+      "hall_max_absolute_e2_over_h": 3.198090681499121e-10,
+      "hall_max_fraction": 6.396181362998242e-10,
+      "hall_mu0_e2_over_h": -0.4985922201370978,
+      "in_gap_max_fraction_of_half": 6.396181362998242e-10,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 1.5981127234712594e-13,
+      "mass_ev": 0.2,
+      "mesh": 6401,
+      "metadata_sha256": "3f1c345efc0b8cec10d00c36a26704f7b3d0ecca46b9f183f625db15a3d1f2cf",
+      "xx_complex_max_fraction": null,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 4.165987895099477e-06,
+        "longitudinal_fraction": null,
+        "mechanism_sum_absolute": 8.826273045769994e-15,
+        "isotropy_absolute": 9.75781955236954e-18,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "3d32d2826f4107222d01c2219f0eaaaf07769fc14d33eebb6a58576ef142e309",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_drude.dat": "f0a6e8c7e0e8640418344b87a34fa019978b46eaceef761a69f15f90576e4cea",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_quantum_metric.dat": "8f4686fa92b349801913c64fffdf4a3f4d6bca2d4fdd9c9bdc4d56758f8499e4",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_berry_curvature.dat": "2f8738dab73d52b674d43fb097afeb88a35c305bbf28b02674cf23f7a5c9709a",
+          "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_total.dat": "37276584a9b8d047442c3394cc00700b0ec3f33eceae7577734752ece72859c7"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_g0001.tsv",
+        "display_sha256": "f7d3dd1e51d01ee5523529ec46fed9606c5f405146cd39bf0973e06e2d446165",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "hall_positive_k004": {
+      "clean_box_target_e2_over_h": -0.4887489755843083,
+      "closed_form_fraction": 7.716333419571592e-06,
+      "cutoff_A_inverse": 4,
+      "derivatives_sha256": "68d0c7c2f92aad38dcbc0d7aed75aa6dfb450425431cb39c99c57331374003f1",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.002,
+      "hall_max_absolute_e2_over_h": 3.952053076461405e-07,
+      "hall_max_fraction": 7.90410615292281e-07,
+      "hall_mu0_e2_over_h": -0.4887452042342542,
+      "in_gap_max_fraction_of_half": 7.90410615292281e-07,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.636665482095175e-14,
+      "mass_ev": 0.2,
+      "mesh": 201,
+      "metadata_sha256": "5cb6f6dbfd286c97ce22694d234e0bbcdadb7482836f23b6f3744e684efba00d",
+      "xx_complex_max_fraction": null
+    },
+    "hall_positive_k016": {
+      "clean_box_target_e2_over_h": -0.49718655730331124,
+      "closed_form_fraction": 7.780845937604432e-06,
+      "cutoff_A_inverse": 16,
+      "derivatives_sha256": "1a2a9ab99e8a50c0d96a0232abd93657e397a30347d00eac8f203a094ab663dd",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.002,
+      "hall_max_absolute_e2_over_h": 2.980713999511942e-07,
+      "hall_max_fraction": 5.961427999023884e-07,
+      "hall_mu0_e2_over_h": -0.4971826887713066,
+      "in_gap_max_fraction_of_half": 5.961427999023884e-07,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 7.848043383370365e-14,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "d1efe798010f81def24b609dfa39b57e12fec376d2b824880bf10c1a03a27b90",
+      "xx_complex_max_fraction": null
+    },
+    "hall_positive_k064": {
+      "clean_box_target_e2_over_h": -0.4992966285935083,
+      "closed_form_fraction": 7.74276555426632e-06,
+      "cutoff_A_inverse": 64,
+      "derivatives_sha256": "4d02154f678702cc86dd7e853cc0c715fcb9105e3634a9b56525e1c0067a46ad",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.002,
+      "hall_max_absolute_e2_over_h": 3.0066741857348605e-07,
+      "hall_max_fraction": 6.013348371469721e-07,
+      "hall_mu0_e2_over_h": -0.4992927626567711,
+      "in_gap_max_fraction_of_half": 6.013348371469721e-07,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 1.41742682874387e-13,
+      "mass_ev": 0.2,
+      "mesh": 3201,
+      "metadata_sha256": "590a9ac98daa59252ce9847f458074605ac0c13db74ab10eac1b9dcfdf538c22",
+      "xx_complex_max_fraction": null
+    },
+    "hall_positive_n9601": {
+      "clean_box_target_e2_over_h": -0.4985932614800255,
+      "closed_form_fraction": 8.356094077415326e-06,
+      "cutoff_A_inverse": 32,
+      "derivatives_sha256": "be10a35d2788a07f20b3b92b3a32af1a4d6527c7e701b341d560f3dd57a5c46e",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.002,
+      "hall_max_absolute_e2_over_h": 0.0016538675428701133,
+      "hall_max_fraction": 0.0033077350857402266,
+      "hall_mu0_e2_over_h": -0.4985890951878262,
+      "in_gap_max_fraction_of_half": 6.237462770287573e-10,
+      "in_gap_status": "PASS",
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.5722609624817325e-13,
+      "mass_ev": 0.2,
+      "mesh": 9601,
+      "metadata_sha256": "0f596b0c5ca41f61a949f56edfcc754d6a11c4b57e91ff2bc8a38b81f1573a70",
+      "xx_complex_max_fraction": null,
+      "current_model_specific_reuse335": {
+        "classification": "REUSABLE_WITH_MODEL_SPECIFIC_HALL_BOUND",
+        "historical_source_manifest_sha256": "d0a7513b0dc36f600e7c1e7ac04fd57f1054ace9ca9408af24956ffefb42e825",
+        "current_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "relative_bound": "0.000012499882813476554870662688791754841783549782120553579716",
+        "scope": "Antisymmetric Hall columns3/4 only; longitudinal columns retain original provenance and are not newly certified by this bound.",
+        "new_full_axis_execution": false,
+        "data_not_rescaled": true,
+        "evidence": "manifests/retained-source-records/followup334/dense_hall_bound331.json"
+      }
+    },
+    "optical_negative": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "932bd2829618801dd55b1655ac268e248082c66b8c7f9b987049efef3f1b6c03",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 6.477242155524924e-05,
+      "hall_max_fraction": 6.688652275811392e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": -0.2,
+      "mesh": 401,
+      "metadata_sha256": "f7a0b7a1e128b81c676324b1a0d08985fd4ec3a6f4b54abb1501d5e191fff08b",
+      "xx_complex_max_fraction": 0.0001239921678519694,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 6.760428931193519e-05,
+        "longitudinal_fraction": 0.00012553057707191852,
+        "mechanism_sum_absolute": 2.6646798154688044e-15,
+        "isotropy_absolute": 2.7162202471373016e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "f1b8dc12b5fcf82cfb5926b1ca0d9e4a440f3c16f30fdbb4ccfe51edacbd0ca2",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_drude.dat": "f81aaf4837f33d40149b90ca94a337a34a19fbe93d3967d69271893d29e80a34",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_quantum_metric.dat": "51b5b7dbadee90e7493e789f1d2f1147002d4d7735766d84ce824408c0fd9629",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_berry_curvature.dat": "c65345cf9ef9a6c79c0cf1db696c9b92ee558fc61770722ceb9cb1df3be36345",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_total.dat": "a79b77527f5b178fa2b505410b3de25033732ff018fd720982437aac69ae9b26"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_negative.tsv",
+        "display_sha256": "d91c0f72de0dd5db8cd7178b8bd13f3c26ef801315f35d865c3b6f2759a04b29",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "932bd2829618801dd55b1655ac268e248082c66b8c7f9b987049efef3f1b6c03",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 6.477242155524924e-05,
+      "hall_max_fraction": 6.688652275811392e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": 0.2,
+      "mesh": 401,
+      "metadata_sha256": "d95da517bf92508314c2f7e48439f405cda4475541f3e9c51b57687aa75c11f6",
+      "xx_complex_max_fraction": 0.0001239921678519694,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 6.760428931193519e-05,
+        "longitudinal_fraction": 0.00012553057707191852,
+        "mechanism_sum_absolute": 2.6646798154688044e-15,
+        "isotropy_absolute": 2.7162202471373016e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "6113f362fbc22b079759748d3b7b77e2784b858c3ec196b1f60e191891cfd926",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_drude.dat": "f81aaf4837f33d40149b90ca94a337a34a19fbe93d3967d69271893d29e80a34",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_quantum_metric.dat": "51b5b7dbadee90e7493e789f1d2f1147002d4d7735766d84ce824408c0fd9629",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_berry_curvature.dat": "dba6351df937a80de8e6065f69508edf154c27f361a6d3fa0dd5ff706f765b8a",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_total.dat": "acb8f06967ef6a5aacc574b4cf53c8512a79f47d0f7b3239872774c967059948"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive.tsv",
+        "display_sha256": "dc1cd8d62d016fc4c7fd25737b3e9ae9aa8e9f6605e3ae396aec165277ae302e",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive_g001": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "cd95d28e4eb0bb3075dd1802e1d22e429b7937effafc894f26675062b4c72451",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.01,
+      "hall_max_absolute_e2_over_h": 4.5972158896468696e-05,
+      "hall_max_fraction": 4.097639930473473e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.3429701232630367e-13,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "33f0124a908d5fe4d41e94f6e1ba55e3d9ce962d11b1d39e8b37de15cce24f6f",
+      "xx_complex_max_fraction": 7.558141694311628e-05,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 4.1863747797719217e-05,
+        "longitudinal_fraction": 7.666072204269431e-05,
+        "mechanism_sum_absolute": 5.7614050176587034e-15,
+        "isotropy_absolute": 5.909265691071425e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "8aa34c7d94a7cd6ef6daae4486fdc1668d891816494a5bb600e043b81ba7a6a5",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_drude.dat": "09a389d6c0cfcb3fc0339dd4751d9029e4f8a4d3ed6826f5dbeb512fe7a1a175",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_quantum_metric.dat": "493b1739d8aac3d55ce8443e02aff0c886e40b5a9cd942e450174d1cd3f160fe",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_berry_curvature.dat": "8377231ce3e51dd17c4bcb6b2ff0193570aeb2aac6d31db591f38e4c0a27d52e",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_total.dat": "d85a47c957fedee58dc1555e94cd50d829eeddead36b3bdad917867cefb78e39"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_g001.tsv",
+        "display_sha256": "791f33fff256abc7e671461232f08455665ac208dab1a4f8542c04711dd71c79",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive_k025": {
+      "cutoff_A_inverse": 0.25,
+      "derivatives_sha256": "b23e3c622e9ac74935fa2e520cd7911a875d32c846164e09de5002b8cf080878",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.0007307699046811068,
+      "hall_max_fraction": 0.0008554581572212091,
+      "independent_coarse_fine_abs": 3.119657942272768e-16,
+      "independent_error_estimate_abs": 4.369720602949379e-12,
+      "mass_ev": 0.2,
+      "mesh": 101,
+      "metadata_sha256": "907bfcd4a3d212ecca7331f0b1400cf57eb2c0db5639621d7597c156ef9370c7",
+      "xx_complex_max_fraction": 0.00154259511845703,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 0.000854217250191053,
+        "longitudinal_fraction": 0.0015399112002235256,
+        "mechanism_sum_absolute": 2.6096145852123962e-15,
+        "isotropy_absolute": 2.609024107869118e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance319",
+        "input_sha256": "1399436bacc87ce34a0cc1a36e9cb4befe4b9cbde5790266cafeef5b53d10878",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_drude.dat": "46bdc337629e313d86622f0d4a0d3bdc0ff08f3e01f07ef1d1f2eda7c29892de",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_quantum_metric.dat": "b9154e41c1731ba942c9a06618a1341002224474a89e61306e558815adb0b92d",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_berry_curvature.dat": "279c534983e6af2cc82b29a7ac1a42f08ffdc4cc9d1bde42a8cc58f7fdf60778",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_total.dat": "2aeff40c74912a947b88c84f4a484533cab82b97519d521a1f85a15d822e9c42"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k025.tsv",
+        "display_sha256": "fc6474628376a967450967e5adf9e5bb293f1d082613a790e52d31d2d8e2d5d2",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive_k050": {
+      "cutoff_A_inverse": 0.5,
+      "derivatives_sha256": "8eaea08ed7c721bb0021de0c2729d519d1651c9c6768374bb369464574799b49",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.0003190319450484311,
+      "hall_max_fraction": 0.00034331135087285427,
+      "independent_coarse_fine_abs": 1.6199010924212651e-16,
+      "independent_error_estimate_abs": 1.100268891645088e-11,
+      "mass_ev": 0.2,
+      "mesh": 201,
+      "metadata_sha256": "2f0c917f4d27456c6d1e80594b3663e120bb462ca729e9769ca0e20f8c63306b",
+      "xx_complex_max_fraction": 0.00110181488696144,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 0.0003430440522276877,
+        "longitudinal_fraction": 0.001100755044576816,
+        "mechanism_sum_absolute": 2.6789522848988178e-15,
+        "isotropy_absolute": 2.6645352591003757e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "8a9fc8a115750b3837b476a064a2798ce6c15a41285fbe9fbf3564fdf4ce6ddd",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_drude.dat": "dba477a787d8dc0c2e581ff03c8b9f01f8948e85f268aa24ae227f4f78b4921d",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_quantum_metric.dat": "2502005e9e2c5575ace8cfcadecf4073c85c7fbe96d888796bdbefb79d817ce7",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_berry_curvature.dat": "31f215043f4bf6fdcd094b4dd1beae688f2603220517869969e476ba862a21a8",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_total.dat": "4e573d8aa02c8c56c6533fc2d340595ca8a9f4e4830fefcfd9cb7602602a9a0d"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k050.tsv",
+        "display_sha256": "5983e37bf03f9ad83c5e60644320568273b9a76dc34f9d4108012d8f605b156a",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive_k200": {
+      "cutoff_A_inverse": 2,
+      "derivatives_sha256": "15aafe22c31bc9b0294c97a23111064db5521f82269c3e58a1dc24c9d5c24dcd",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 6.520644876461619e-05,
+      "hall_max_fraction": 6.598252838994876e-05,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.2727575623473146e-13,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "eecc3e2e7f6d30839015580c5009c31d05291e1ec8296bd43bf865010830dfa1",
+      "xx_complex_max_fraction": 0.00012377730050440792,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 6.673643285491545e-05,
+        "longitudinal_fraction": 0.00012411053859547578,
+        "mechanism_sum_absolute": 5.218048215738236e-15,
+        "isotropy_absolute": 5.734868827995279e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "aa325bcd11a42388d4e058e9de50b583a86169562a7cc780d1cc5cdac123381b",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_drude.dat": "960579e7d33df75e14162b6c16376d08566318873b7ea9384512b32a5cc532a7",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_quantum_metric.dat": "564085670f89432e94cf1c8235fe807a6b354f0481da1b6d3bc4a81cf3387d83",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_berry_curvature.dat": "589d46d94bbeeb6c89d6de1f3757e0243794bea2e2141b8d847b435eea3cd7b2",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_total.dat": "8cbf76fb155995d9ceb6f7874ee2f02220eccdd7da62d3fb0a75cc57bedf8e12"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k200.tsv",
+        "display_sha256": "c276b5368ed16b94db0edef67de46f9188271b150a014661cb40c6c30025fb12",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive_n201": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "ac38777608d528620ac67da2f75f6d57e1ae26024c2acc9fb9f4a43a4e58583b",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 0.003774052861668255,
+      "hall_max_fraction": 0.0038972338313301978,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": 0.2,
+      "mesh": 201,
+      "metadata_sha256": "ed1262c22435c2805fbfe0fa7e9f6eb2bed4e4672618e35621d6270e2c38f6e7",
+      "xx_complex_max_fraction": 0.005994375537171671,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 0.0038987783679407845,
+        "longitudinal_fraction": 0.005995777033012707,
+        "mechanism_sum_absolute": 3.729176174764522e-15,
+        "isotropy_absolute": 2.7162202471373016e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance319",
+        "input_sha256": "9ecd7e942606f46542d918ee622fdc138b1b73d958d801cb8985a3542e00d9e4",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_drude.dat": "413a970a66993d1826c583410952b129c3222700d59c8ae7b628f95f508627e5",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_quantum_metric.dat": "e9aed5b9fd37e77d69fac03d1cb65d5b22f83236b55072826e1983452c4dd649",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_berry_curvature.dat": "51a2016b0867e6f4503085b5fa2ec927e27e4d9f5addfe5e102d83c5d6be92ea",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_total.dat": "168c0d37ed75fd6e95c611a47882199e038353ef0bfeed3abaa1c665b6d4da5d"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_n201.tsv",
+        "display_sha256": "17313029a9e107e044f1951eef0e1b5fd845dc1b1fc839d8c21432a7a4ab0bc5",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    },
+    "optical_positive_n801": {
+      "cutoff_A_inverse": 1,
+      "derivatives_sha256": "cd95d28e4eb0bb3075dd1802e1d22e429b7937effafc894f26675062b4c72451",
+      "full_axis_status": "PASS",
+      "gamma_ev": 0.02,
+      "hall_max_absolute_e2_over_h": 1.0449053053772162e-07,
+      "hall_max_fraction": 1.0790098750372126e-07,
+      "independent_coarse_fine_abs": 0.0,
+      "independent_error_estimate_abs": 3.282628342184479e-13,
+      "mass_ev": 0.2,
+      "mesh": 801,
+      "metadata_sha256": "0192b0a2811b46fc3c39e896255a2c8491b022d27813f8e5427313f8d51e3b36",
+      "xx_complex_max_fraction": 5.049117437347816e-07,
+      "current725_validation": {
+        "status": "PASS",
+        "hall_fraction": 7.417240600027576e-06,
+        "longitudinal_fraction": 8.304714280993875e-06,
+        "mechanism_sum_absolute": 3.6905523389740094e-15,
+        "isotropy_absolute": 5.218048215738236e-15,
+        "out_of_plane_absolute": 0.0,
+        "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+      },
+      "current_execution": {
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "execution_id": "WN-Tutorial-provenance320",
+        "input_sha256": "6b62ab264510b515dbeae238ed5971256a3a4399a829d6a43a501641b33c4d5f",
+        "actual_exit": 0,
+        "complete_recorded_identities_released": 6,
+        "native_data_sha256": {
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_drude.dat": "0d32ab2d945b68200b7f0769707df012b7951f273ffa795170bd5b1f150b49de",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_quantum_metric.dat": "c187edaaaa270f3e7cdbbb26d3ec676c393c4fc1c1191f0da8dc54a37749c778",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_berry_curvature.dat": "3bd3a0d2ac1ada62120ac7901d3612c0a87cde341df73881e972067ec3c8a0d7",
+          "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_total.dat": "f56592cf18c3ba19754f158f5302c9825e257f3edcf4b142235d22f100cb25d6"
+        },
+        "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_n801.tsv",
+        "display_sha256": "400c576201376bc739e29ca5bdb839828c25bab24da6cc10e0de6f2ef148a92e",
+        "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+      }
+    }
+  },
+  "conductance_quantum_S": 3.8740458649318244e-05,
+  "curve_sha256": {
+    "reference_hall_negative.tsv": "b5470e41ee590df394973a1536b72e654d81e4df27b7dcff0c56e15d8645afa5",
+    "reference_hall_optical_matched.tsv": "5d065a085097b435e7c2a78958363ae88fa76900693596bcd05c3db25b3f115c",
+    "reference_hall_positive.tsv": "ae6010a9aa4a096069ee543ca15efe33af2992fb47442fc143ab615e2e370a3f",
+    "reference_hall_positive_g0001.tsv": "f7d3dd1e51d01ee5523529ec46fed9606c5f405146cd39bf0973e06e2d446165",
+    "reference_hall_positive_k004.tsv": "05f4b8a71e2587e0329f843ae0835506f0f7e6b66023a8fa048d6fd986397856",
+    "reference_hall_positive_k016.tsv": "850c478959345c2bc9a0e496d0fbbd8dbabf932a217374024953762bbf170dbb",
+    "reference_hall_positive_k064.tsv": "ae36b8bec340b9238e47156e75be0874fb140b3c78e4fd8dee9f78eb2511b374",
+    "reference_hall_positive_n9601.tsv": "cb5b94251d00697a82e5a7fe72bf7d5c434ede98d1b5893012f6235b5b653738",
+    "reference_optical_negative.tsv": "d91c0f72de0dd5db8cd7178b8bd13f3c26ef801315f35d865c3b6f2759a04b29",
+    "reference_optical_positive.tsv": "dc1cd8d62d016fc4c7fd25737b3e9ae9aa8e9f6605e3ae396aec165277ae302e",
+    "reference_optical_positive_g001.tsv": "791f33fff256abc7e671461232f08455665ac208dab1a4f8542c04711dd71c79",
+    "reference_optical_positive_k025.tsv": "fc6474628376a967450967e5adf9e5bb293f1d082613a790e52d31d2d8e2d5d2",
+    "reference_optical_positive_k050.tsv": "5983e37bf03f9ad83c5e60644320568273b9a76dc34f9d4108012d8f605b156a",
+    "reference_optical_positive_k200.tsv": "c276b5368ed16b94db0edef67de46f9188271b150a014661cb40c6c30025fb12",
+    "reference_optical_positive_n201.tsv": "17313029a9e107e044f1951eef0e1b5fd845dc1b1fc839d8c21432a7a4ab0bc5",
+    "reference_optical_positive_n801.tsv": "400c576201376bc739e29ca5bdb839828c25bab24da6cc10e0de6f2ef148a92e"
+  },
+  "dc_model_source_sha256": "f8dad0deb7f375d85b67247c135c54ebe78a10fc9e9cb0a9be76a6cf47cc8549",
+  "different_parameter_zero_frequency_comparison": "NOT_APPLICABLE",
+  "failures": [
+    "DC_FULL_AXIS_MESH: 0.008651657502083632"
+  ],
+  "literature_test_energies_ev": [
+    0.2,
+    0.3,
+    0.6,
+    1.0,
+    2.0
+  ],
+  "mesh_checks": {
+    "dc_full_axis_6401_9601_fraction": 0.008651657502083632,
+    "dc_full_axis_status": "FAIL",
+    "dc_plateau_6401_9601_fraction": 1.5865309066498412e-11,
+    "dc_scan_scope": "full chemical-potential axis; fixed K=32 and gamma=0.002",
+    "optical_hall_401_801_fraction": 6.68306423658524e-05,
+    "optical_xx_401_801_fraction": 0.00012391106574658904
+  },
+  "model_source_sha256": "1031b384ecbd0d4e8a795fd1590271dc8878ddd0cfabcf1ff498ff87c2af3987",
+  "polar_closed_form_absolute": 1.0547118733938987e-14,
+  "profile": "reference",
+  "same_parameter_zero_frequency": {
+    "cutoff_A_inverse": 1.0,
+    "dc_case": "hall_optical_matched",
+    "gamma_ev": 0.02,
+    "maximum_absolute_e2_over_h": 1.1102230246251565e-16,
+    "mesh": 401,
+    "optical_case": "optical_positive",
+    "status": "PASS"
+  },
+  "scope_failures": {
+    "complex_optical_spectrum": [],
+    "dc_full_axis_benchmark": [],
+    "dc_full_axis_mesh": [
+      "6401_vs_9601"
+    ],
+    "dc_in_gap_platform": [],
+    "same_parameter_zero_frequency": []
+  },
+  "single_cone_literature_clean_limit_absolute": 2.1965296019350216e-07,
+  "status": "FAIL",
+  "symmetry_absolute_e2_over_h": {
+    "hall_hall_odd": 0.0,
+    "hall_xx_even": 5.684341886080801e-13,
+    "optical_hall_odd": 0.0,
+    "optical_xx_even": 0.0
+  },
+  "tolerances": {
+    "closed_form": 0.005,
+    "finite_region": 0.01,
+    "half_integer_distance": 0.003,
+    "mesh": 0.005,
+    "reference_self": 0.001,
+    "symmetry_absolute_e2_over_h": 1e-08
+  },
+  "validation_scope": "all",
+  "validator_source_sha256": "68a902fe6e3974116a7538ffbe50dcb86f8c84dc32c95f3e4bb538c664666e09",
+  "verified_scopes": {
+    "complex_optical_spectrum": "PASS",
+    "dc_full_axis_benchmark": "PASS",
+    "dc_full_axis_mesh": "FAIL",
+    "dc_in_gap_platform": "PASS",
+    "same_parameter_zero_frequency": "PASS"
+  },
+  "current725_executions": {
+    "optical_positive_k025": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance319",
+      "input_sha256": "1399436bacc87ce34a0cc1a36e9cb4befe4b9cbde5790266cafeef5b53d10878",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_drude.dat": "46bdc337629e313d86622f0d4a0d3bdc0ff08f3e01f07ef1d1f2eda7c29892de",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_quantum_metric.dat": "b9154e41c1731ba942c9a06618a1341002224474a89e61306e558815adb0b92d",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_berry_curvature.dat": "279c534983e6af2cc82b29a7ac1a42f08ffdc4cc9d1bde42a8cc58f7fdf60778",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_total.dat": "2aeff40c74912a947b88c84f4a484533cab82b97519d521a1f85a15d822e9c42"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k025.tsv",
+      "display_sha256": "fc6474628376a967450967e5adf9e5bb293f1d082613a790e52d31d2d8e2d5d2",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_positive_n201": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance319",
+      "input_sha256": "9ecd7e942606f46542d918ee622fdc138b1b73d958d801cb8985a3542e00d9e4",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_drude.dat": "413a970a66993d1826c583410952b129c3222700d59c8ae7b628f95f508627e5",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_quantum_metric.dat": "e9aed5b9fd37e77d69fac03d1cb65d5b22f83236b55072826e1983452c4dd649",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_berry_curvature.dat": "51a2016b0867e6f4503085b5fa2ec927e27e4d9f5addfe5e102d83c5d6be92ea",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_total.dat": "168c0d37ed75fd6e95c611a47882199e038353ef0bfeed3abaa1c665b6d4da5d"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_n201.tsv",
+      "display_sha256": "17313029a9e107e044f1951eef0e1b5fd845dc1b1fc839d8c21432a7a4ab0bc5",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_negative": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "f1b8dc12b5fcf82cfb5926b1ca0d9e4a440f3c16f30fdbb4ccfe51edacbd0ca2",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_drude.dat": "f81aaf4837f33d40149b90ca94a337a34a19fbe93d3967d69271893d29e80a34",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_quantum_metric.dat": "51b5b7dbadee90e7493e789f1d2f1147002d4d7735766d84ce824408c0fd9629",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_berry_curvature.dat": "c65345cf9ef9a6c79c0cf1db696c9b92ee558fc61770722ceb9cb1df3be36345",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_total.dat": "a79b77527f5b178fa2b505410b3de25033732ff018fd720982437aac69ae9b26"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_negative.tsv",
+      "display_sha256": "d91c0f72de0dd5db8cd7178b8bd13f3c26ef801315f35d865c3b6f2759a04b29",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_positive": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "6113f362fbc22b079759748d3b7b77e2784b858c3ec196b1f60e191891cfd926",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_drude.dat": "f81aaf4837f33d40149b90ca94a337a34a19fbe93d3967d69271893d29e80a34",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_quantum_metric.dat": "51b5b7dbadee90e7493e789f1d2f1147002d4d7735766d84ce824408c0fd9629",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_berry_curvature.dat": "dba6351df937a80de8e6065f69508edf154c27f361a6d3fa0dd5ff706f765b8a",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_total.dat": "acb8f06967ef6a5aacc574b4cf53c8512a79f47d0f7b3239872774c967059948"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive.tsv",
+      "display_sha256": "dc1cd8d62d016fc4c7fd25737b3e9ae9aa8e9f6605e3ae396aec165277ae302e",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_positive_g001": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "8aa34c7d94a7cd6ef6daae4486fdc1668d891816494a5bb600e043b81ba7a6a5",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_drude.dat": "09a389d6c0cfcb3fc0339dd4751d9029e4f8a4d3ed6826f5dbeb512fe7a1a175",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_quantum_metric.dat": "493b1739d8aac3d55ce8443e02aff0c886e40b5a9cd942e450174d1cd3f160fe",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_berry_curvature.dat": "8377231ce3e51dd17c4bcb6b2ff0193570aeb2aac6d31db591f38e4c0a27d52e",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_total.dat": "d85a47c957fedee58dc1555e94cd50d829eeddead36b3bdad917867cefb78e39"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_g001.tsv",
+      "display_sha256": "791f33fff256abc7e671461232f08455665ac208dab1a4f8542c04711dd71c79",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_positive_k050": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "8a9fc8a115750b3837b476a064a2798ce6c15a41285fbe9fbf3564fdf4ce6ddd",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_drude.dat": "dba477a787d8dc0c2e581ff03c8b9f01f8948e85f268aa24ae227f4f78b4921d",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_quantum_metric.dat": "2502005e9e2c5575ace8cfcadecf4073c85c7fbe96d888796bdbefb79d817ce7",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_berry_curvature.dat": "31f215043f4bf6fdcd094b4dd1beae688f2603220517869969e476ba862a21a8",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_total.dat": "4e573d8aa02c8c56c6533fc2d340595ca8a9f4e4830fefcfd9cb7602602a9a0d"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k050.tsv",
+      "display_sha256": "5983e37bf03f9ad83c5e60644320568273b9a76dc34f9d4108012d8f605b156a",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_positive_k200": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "aa325bcd11a42388d4e058e9de50b583a86169562a7cc780d1cc5cdac123381b",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_drude.dat": "960579e7d33df75e14162b6c16376d08566318873b7ea9384512b32a5cc532a7",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_quantum_metric.dat": "564085670f89432e94cf1c8235fe807a6b354f0481da1b6d3bc4a81cf3387d83",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_berry_curvature.dat": "589d46d94bbeeb6c89d6de1f3757e0243794bea2e2141b8d847b435eea3cd7b2",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_total.dat": "8cbf76fb155995d9ceb6f7874ee2f02220eccdd7da62d3fb0a75cc57bedf8e12"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k200.tsv",
+      "display_sha256": "c276b5368ed16b94db0edef67de46f9188271b150a014661cb40c6c30025fb12",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "optical_positive_n801": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "6b62ab264510b515dbeae238ed5971256a3a4399a829d6a43a501641b33c4d5f",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_drude.dat": "0d32ab2d945b68200b7f0769707df012b7951f273ffa795170bd5b1f150b49de",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_quantum_metric.dat": "c187edaaaa270f3e7cdbbb26d3ec676c393c4fc1c1191f0da8dc54a37749c778",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_berry_curvature.dat": "3bd3a0d2ac1ada62120ac7901d3612c0a87cde341df73881e972067ec3c8a0d7",
+        "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_total.dat": "f56592cf18c3ba19754f158f5302c9825e257f3edcf4b142235d22f100cb25d6"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_n801.tsv",
+      "display_sha256": "400c576201376bc739e29ca5bdb839828c25bab24da6cc10e0de6f2ef148a92e",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "hall_positive_g0001": {
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "execution_id": "WN-Tutorial-provenance320",
+      "input_sha256": "3d32d2826f4107222d01c2219f0eaaaf07769fc14d33eebb6a58576ef142e309",
+      "actual_exit": 0,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_drude.dat": "f0a6e8c7e0e8640418344b87a34fa019978b46eaceef761a69f15f90576e4cea",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_quantum_metric.dat": "8f4686fa92b349801913c64fffdf4a3f4d6bca2d4fdd9c9bdc4d56758f8499e4",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_berry_curvature.dat": "2f8738dab73d52b674d43fb097afeb88a35c305bbf28b02674cf23f7a5c9709a",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_total.dat": "37276584a9b8d047442c3394cc00700b0ec3f33eceae7577734752ece72859c7"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_g0001.tsv",
+      "display_sha256": "f7d3dd1e51d01ee5523529ec46fed9606c5f405146cd39bf0973e06e2d446165",
+      "display_transform": "Native tensor / (e^2/h); Hall=(xy-yx)/2; no fit, extra degeneracy, interpolation or inferred convergence."
+    },
+    "hall_negative": {
+      "execution_id": "WN-Tutorial-provenance327",
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "input_sha256": "2495cc43c035923e96c46953095467af96c52b5fb38bbb73eec59fa03a29b8a7",
+      "normal_case_function_completed": true,
+      "native_writer_completed_before_next_case": true,
+      "parent_actual_exit": -15,
+      "parent_failure_not_upgraded": true,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_drude.dat": "a9e53689bdd60829cf01a929c2957bce8819a952a20471a4963174c41e1b4790",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_quantum_metric.dat": "edf5d4d3dc88d0b023bf0502d412e6eaa30a3121487c4fa56d5e199c3ad36df1",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_berry_curvature.dat": "b18e0ff49a2c8ef116410a2ff60ba5d5010258f6af7b5b9b97ab37871a95a572",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_total.dat": "958fa72601ecf5cc4943dd952534526962c3ecc18fb748f988d9e5337edff65b"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_hall_negative.tsv",
+      "display_sha256": "b5470e41ee590df394973a1536b72e654d81e4df27b7dcff0c56e15d8645afa5",
+      "display_transform": "Native / e^2h; Hall=(xy-yx)/2; unchanged independent reference columns5:9."
+    },
+    "hall_positive": {
+      "execution_id": "WN-Tutorial-provenance327",
+      "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "input_sha256": "00e7546286cfee30994a812a24397f0d41c36cc63b118649ab64b9f2a3c0bc6e",
+      "normal_case_function_completed": true,
+      "native_writer_completed_before_next_case": true,
+      "parent_actual_exit": -15,
+      "parent_failure_not_upgraded": true,
+      "complete_recorded_identities_released": 6,
+      "native_data_sha256": {
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_drude.dat": "70120a92a21ae638b716848ea7bb1ee0306da5e7adf480944e263e1fcf0078da",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_quantum_metric.dat": "8b4ef2e0cb65b5fd37ad11693032835e80f84a8d700120a33b698394c1d9f7d4",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_berry_curvature.dat": "9b19a9d619fa3f00811e0fe5ecc14493aa6d9778db96603935d9545c5eadfa2a",
+        "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_total.dat": "a6325a1ab83bb8d5ee745bfd34a721bcc1f5297a65badcf8e5bfba2fc27fb6be"
+      },
+      "display_table": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive.tsv",
+      "display_sha256": "ae6010a9aa4a096069ee543ca15efe33af2992fb47442fc143ab615e2e370a3f",
+      "display_transform": "Native / e^2h; Hall=(xy-yx)/2; unchanged independent reference columns5:9."
+    }
+  },
+  "current725_checks": {
+    "optical_positive_k025": {
+      "status": "PASS",
+      "hall_fraction": 0.000854217250191053,
+      "longitudinal_fraction": 0.0015399112002235256,
+      "mechanism_sum_absolute": 2.6096145852123962e-15,
+      "isotropy_absolute": 2.609024107869118e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_positive_n201": {
+      "status": "PASS",
+      "hall_fraction": 0.0038987783679407845,
+      "longitudinal_fraction": 0.005995777033012707,
+      "mechanism_sum_absolute": 3.729176174764522e-15,
+      "isotropy_absolute": 2.7162202471373016e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_negative": {
+      "status": "PASS",
+      "hall_fraction": 6.760428931193519e-05,
+      "longitudinal_fraction": 0.00012553057707191852,
+      "mechanism_sum_absolute": 2.6646798154688044e-15,
+      "isotropy_absolute": 2.7162202471373016e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_positive": {
+      "status": "PASS",
+      "hall_fraction": 6.760428931193519e-05,
+      "longitudinal_fraction": 0.00012553057707191852,
+      "mechanism_sum_absolute": 2.6646798154688044e-15,
+      "isotropy_absolute": 2.7162202471373016e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_positive_g001": {
+      "status": "PASS",
+      "hall_fraction": 4.1863747797719217e-05,
+      "longitudinal_fraction": 7.666072204269431e-05,
+      "mechanism_sum_absolute": 5.7614050176587034e-15,
+      "isotropy_absolute": 5.909265691071425e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_positive_k050": {
+      "status": "PASS",
+      "hall_fraction": 0.0003430440522276877,
+      "longitudinal_fraction": 0.001100755044576816,
+      "mechanism_sum_absolute": 2.6789522848988178e-15,
+      "isotropy_absolute": 2.6645352591003757e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_positive_k200": {
+      "status": "PASS",
+      "hall_fraction": 6.673643285491545e-05,
+      "longitudinal_fraction": 0.00012411053859547578,
+      "mechanism_sum_absolute": 5.218048215738236e-15,
+      "isotropy_absolute": 5.734868827995279e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "optical_positive_n801": {
+      "status": "PASS",
+      "hall_fraction": 7.417240600027576e-06,
+      "longitudinal_fraction": 8.304714280993875e-06,
+      "mechanism_sum_absolute": 3.6905523389740094e-15,
+      "isotropy_absolute": 5.218048215738236e-15,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    },
+    "hall_positive_g0001": {
+      "status": "PASS",
+      "hall_fraction": 4.165987895099477e-06,
+      "longitudinal_fraction": null,
+      "mechanism_sum_absolute": 8.826273045769994e-15,
+      "isotropy_absolute": 9.75781955236954e-18,
+      "out_of_plane_absolute": 0.0,
+      "independent_polar_reference": "Existing checked values retained unchanged; no new quadrature or fitted correction."
+    }
+  },
+  "current725_optical_mass_reversal": {
+    "hall_odd_absolute": 0.0,
+    "longitudinal_even_absolute": 0.0
+  },
+  "historical_verified_scopes": {
+    "complex_optical_spectrum": "PASS",
+    "dc_full_axis_benchmark": "PASS",
+    "dc_full_axis_mesh": "FAIL",
+    "dc_in_gap_platform": "PASS",
+    "same_parameter_zero_frequency": "PASS"
+  },
+  "current_scope_note": "11 active reference cases actually completed. Bounded reuse, no new full-axis execution: hall_positive_n9601. Supplementary controls retain original source. The prior failed full-axis mesh accuracy test remains failed.",
+  "current725_hall_mass_reversal_absolute": 0.0,
+  "current725_hall_checks": {
+    "hall_negative": {
+      "full_axis_original_tolerance_fraction": 0.006550956219492199,
+      "in_gap_fraction_of_half": 4.165941020040087e-06,
+      "full_axis_original_test": "PASS",
+      "in_gap_original_test": "PASS",
+      "mechanism_sum_absolute": 3.453405236471599e-10,
+      "independent_reference_values_recomputed": false
+    },
+    "hall_positive": {
+      "full_axis_original_tolerance_fraction": 0.006550956219492199,
+      "in_gap_fraction_of_half": 4.165941020040087e-06,
+      "full_axis_original_test": "PASS",
+      "in_gap_original_test": "PASS",
+      "mechanism_sum_absolute": 3.453405236471599e-10,
+      "independent_reference_values_recomputed": false
+    }
+  }
+}

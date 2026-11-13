@@ -1,0 +1,24 @@
+{
+  "schema": "tutorial-periodic-third-order-migration/1",
+  "status": "ISOLATED_PERIODIC_CHECKPOINT_VALIDATED_NOT_FORMALLY_INSTALLED",
+  "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+  "source_role": "CHECKPOINT09_NOT_FINAL_NOT_PROMOTED",
+  "historical_results_preserved": true,
+  "new_material_integrations": 0,
+  "parsed_ordinary_inputs": 15,
+  "standalone_file_effective_readbacks": 7,
+  "Julia_model_entry_inputs": 8,
+  "valley_configurations": 192,
+  "removed_kernel_fields": [
+    "response_measure",
+    "sheet_axes",
+    "effective_thickness_angstrom"
+  ],
+  "Graphene_height_m": 1e-09,
+  "GeS_height_m": 2.53960572e-09,
+  "relative_mesh_tests_unchanged": true,
+  "true_nonperiodic_completion_implemented": false,
+  "Full": false,
+  "promotion": false,
+  "GitHub_actions": []
+}

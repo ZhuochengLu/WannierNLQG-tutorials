@@ -1,0 +1,64 @@
+# Current-version Fe native case. Supply same-calculation VASP files under inputs/.
+# This is not a reproduction of a previous global stopping contract.
+workflow = "wannierization"
+mode = "ordinary"
+
+[source]
+kind = "vasp"
+poscar_file = "inputs/POSCAR"
+wavecar_file = "inputs/WAVECAR"
+potcar_file = "inputs/POTCAR"
+incar_file = "inputs/INCAR"
+outcar_file = "inputs/OUTCAR"
+band_range = [1, 64]
+spin_channel = 1
+spinor = true
+spin_basis_saxis = [0.0, 0.0, 1.0]
+include_time_reversal = false
+
+[kmesh]
+dimensions = [10, 10, 10]
+
+[basis]
+projections = ["Fe:s", "Fe:p", "Fe:d"]
+spinor = true
+num_wannier = 18
+
+[windows]
+outer_min_ev = -8.0
+outer_max_ev = 50.0
+frozen_min_ev = -8.0
+frozen_max_ev = 20.0
+
+[input]
+degeneracy_tolerance_ev = 0.01
+representation_tolerance = 1.0e-10
+target_center_matching_tolerance = 1.0e-7
+compatibility_policy = "strict"
+
+[input.preparation_execution]
+mode = "streaming_serial"
+max_workers = 1
+memory_budget_bytes = 25769803776
+resume = true
+
+[solver]
+initialization = "amn"
+z_mix_ratio = 0.1
+u_mix_ratio = 1.0
+symmetrize_z = false
+# Current stage semantics: relative accepted Z change, absolute U spread change.
+# This does not reproduce the removed 1.1 global stopping contract.
+dis_num_iter = 1000
+dis_conv_tol = 1.0e-10
+dis_conv_window = 3
+num_iter = 1000
+conv_tol = 1.0e-10
+conv_window = 3
+
+[output]
+profile = "hamiltonian_position"
+model_file = "results/fe-ordinary.h5"
+checkpoint_hdf5 = "results/fe-ordinary.wannierization.h5"
+num_print_cycles = 50
+num_dump_cycles = 50

@@ -1,0 +1,81 @@
+{
+  "output": {
+    "stem": "ges_mesh_current",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "grid",
+    "rows": 1,
+    "cols": 2,
+    "figsize": [
+      11.8,
+      4.6
+    ],
+    "panels": [
+      {
+        "kind": "line",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "legend": true,
+        "legend_frame": true,
+        "label": "(a)",
+        "title": "$G^{xxxx}$ mesh check",
+        "ylabel": "Global-scale complex difference (percent)",
+        "guide_y": [
+          1.0
+        ],
+        "series": [
+          {
+            "data": "../data/ges_current370/mesh_comparison_percent.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "label": "$200^2\\rightarrow300^2$",
+            "marker": "o",
+            "color": "#104E8B"
+          },
+          {
+            "data": "../data/ges_current370/mesh_comparison_percent.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "label": "$300^2\\rightarrow400^2$",
+            "marker": "s",
+            "color": "#FF7F24"
+          }
+        ]
+      },
+      {
+        "kind": "line",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "legend": true,
+        "legend_frame": true,
+        "label": "(b)",
+        "title": "$G^{yyyy}$ mesh check",
+        "ylabel": "Global-scale complex difference (percent)",
+        "guide_y": [
+          1.0
+        ],
+        "series": [
+          {
+            "data": "../data/ges_current370/mesh_comparison_percent.dat",
+            "x_column": 0,
+            "y_column": 3,
+            "label": "$200^2\\rightarrow300^2$",
+            "marker": "o",
+            "color": "#104E8B"
+          },
+          {
+            "data": "../data/ges_current370/mesh_comparison_percent.dat",
+            "x_column": 0,
+            "y_column": 4,
+            "label": "$300^2\\rightarrow400^2$",
+            "marker": "s",
+            "color": "#FF7F24"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+model_file = "../../../../Materials/Fe/model_tb.dat"
+source = "wannier"
+
+real_space_replica_policy = "auto"
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [2, 2, 2]
+kind = "bz_mesh"
+spatial_dimension = 3
+
+[ response.tasks ]
+
+[ response.tasks.linear_optical_conventional_T000 ]
+fermi_energy_ev = 5.7156290716733436
+kind = "linear_optical_response"
+photon_energy_max_ev = 8.0
+photon_energy_min_ev = 0.0
+photon_energy_num_points = 401
+temperature_k = 0.0
+
+[ response.tasks.linear_optical_conventional_T000.numerics ]
+eta_fs_ev = 0.05
+fs_kind = "gaussian"
+
+[ response.tasks.linear_optical_conventional_T000.relaxation ]
+gamma_inter_ev = 0.05
+gamma_intra_ev = 0.05

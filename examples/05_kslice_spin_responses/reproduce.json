@@ -1,0 +1,598 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "injection_spin_current_conventional",
+      "input": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "task_ids": [
+        "kslice_injection_spin_current_conventional"
+      ],
+      "input_sha256": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c",
+      "calculation_record": "Original teaching mesh and parameters, explicit smooth geometric width0.001eV, run303.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+      "preceding_result_evidence": {
+        "execution_id": "GeS-selected-new-kslice058",
+        "actual_input_sha256": "a08b3238959a87cb41598a14e61f7f628f54a5f3cda1fb319167c799e71b3c4b",
+        "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "task_and_sampling_equal": true,
+        "new_computation": false,
+        "scope": "Selected current panel; old/delta panels remain explicit historical comparisons."
+      },
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_yyyy_imag-0e8d3bdef6.dat": "0e8d3bdef6edb0e31d294314ac61bb056169db0cdff809b5c459e5584d1f8e85",
+          "examples/05_kslice_spin_responses/data/isc_yyyy_real-e7b5e8881a.dat": "e7b5e8881a0a7d0ccb5fa5d140f1e770b3e91df03edc8ef44de5dbc2550a3943"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "active_case_input_sha256": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+    },
+    {
+      "case": "shift_spin_current_conventional",
+      "input": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
+      "task_ids": [
+        "kslice_shift_spin_current_conventional"
+      ],
+      "input_sha256": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc",
+      "calculation_record": "Original teaching mesh and parameters, explicit smooth geometric width0.001eV, run303.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+      "preceding_result_evidence": {
+        "execution_id": "GeS-selected-new-kslice058",
+        "actual_input_sha256": "a08b3238959a87cb41598a14e61f7f628f54a5f3cda1fb319167c799e71b3c4b",
+        "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "task_and_sampling_equal": true,
+        "new_computation": false,
+        "scope": "Selected current panel; old/delta panels remain explicit historical comparisons."
+      },
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_yyyy_real-707f32136c.dat": "707f32136c9981361b116e121e322902dc9de387de4bad4bbca18838bcbe7e32",
+          "examples/05_kslice_spin_responses/data/ssc_yyyy_imag-daad68ca75.dat": "daad68ca756059ef0f6f409c4434e440169a05d4c024086216cf380943cfccd7"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "active_case_input_sha256": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+    },
+    {
+      "case": "shift_yzxy_kslice",
+      "input": "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml",
+      "task_ids": [
+        "kslice_shift_spin_yzxy_fullbands"
+      ],
+      "input_sha256": "047660cf7a88b13600defce2d76414a9593921bca301b6befd6e4e494e209a58",
+      "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "request_sha256": "342a9bc6e36afa7b3bc7ef47b57c7a6fe8569582ae5da34fda4f9c485271a65d",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "executed_input_sha256": "f5e8581d9f07b01af5703cd65d939f345f6e76c642849a3b879c23ea8b18cb0e",
+        "actual_input_difference": "Material and output paths only; remaining parsed input identical.",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "return_code": 0,
+        "mesh_convergence_established": false,
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_yzxy_r_fullbands.dat": "2bbf2a8ba468205a5ff97ad35a516f9cb6a0812016443f1fc438e4867855dc33",
+          "examples/05_kslice_spin_responses/data/ssc_yzxy_i_fullbands.dat": "94b79e79c1f1096f7cf2ce7a9e900bf729dec8f8884178cdbba80f8a7ed65197"
+        }
+      }
+    },
+    {
+      "case": "shift_yzyx_kslice",
+      "input": "examples/05_kslice_spin_responses/inputs/shift_yzyx_kslice.toml",
+      "task_ids": [
+        "kslice_shift_spin_yzyx_fullbands"
+      ],
+      "input_sha256": "746d11d27b7c56543289b2c1f45306bccc0c7b828c5b0b050f6eed651331b3ab",
+      "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "request_sha256": "342a9bc6e36afa7b3bc7ef47b57c7a6fe8569582ae5da34fda4f9c485271a65d",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "executed_input_sha256": "8ed5256656f3f143014207df91807d4736d78bff6ec036405e0fc3693581f463",
+        "actual_input_difference": "Material and output paths only; remaining parsed input identical.",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "return_code": 0,
+        "mesh_convergence_established": false,
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_yzyx_r_fullbands.dat": "ae39eda9779d0c500c874561d869b355948ea38fe7d15554620c4be092564235",
+          "examples/05_kslice_spin_responses/data/ssc_yzyx_i_fullbands.dat": "a1a15d04bd9d2bf207fc15cf82bc1a3a8f44a3f7a063d77a859ed94da86a42e1"
+        }
+      }
+    },
+    {
+      "case": "injection_yzxy_kslice",
+      "input": "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml",
+      "task_ids": [
+        "kslice_injection_spin_yzxy_fullbands"
+      ],
+      "input_sha256": "43be4b4eb5b540d948515b715ea37360430ad27f9e18704862c1edbb147a80a4",
+      "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "request_sha256": "342a9bc6e36afa7b3bc7ef47b57c7a6fe8569582ae5da34fda4f9c485271a65d",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "executed_input_sha256": "546fef16939e0799234d522f6e8202bd7115bd99e96a8ea9f4528aae14600dca",
+        "actual_input_difference": "Material and output paths only; remaining parsed input identical.",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "return_code": 0,
+        "mesh_convergence_established": false,
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_yzxy_r_fullbands.dat": "060dd52b51764b1882a0db650e05757a7200e93987fee7d12f06a9657e232025",
+          "examples/05_kslice_spin_responses/data/isc_yzxy_i_fullbands.dat": "c293eaa90f1d4495c09b6fa9d3f5b7ec664d86e9cee96c810b527703450b155d"
+        }
+      }
+    },
+    {
+      "case": "injection_yzyx_kslice",
+      "input": "examples/05_kslice_spin_responses/inputs/injection_yzyx_kslice.toml",
+      "task_ids": [
+        "kslice_injection_spin_yzyx_fullbands"
+      ],
+      "input_sha256": "ef2087b325ffe9fd00ac8ac2c538baac2748bf02cb6b00f1a696f02854ad6442",
+      "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "request_sha256": "342a9bc6e36afa7b3bc7ef47b57c7a6fe8569582ae5da34fda4f9c485271a65d",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "executed_input_sha256": "accae671f795adc1d420b3aa693ece470b4abd0c29800a8f0800dd928214b1c0",
+        "actual_input_difference": "Material and output paths only; remaining parsed input identical.",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "return_code": 0,
+        "mesh_convergence_established": false,
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_yzyx_r_fullbands.dat": "0dfadef071ab1e24e9f7bc7b9b2617c0fb121029471c565901c5c9dfab39ac96",
+          "examples/05_kslice_spin_responses/data/isc_yzyx_i_fullbands.dat": "f90b255efe0980598659a9c8b219ea976cdb898a7c61e1ace64cba5c19fe5b51"
+        }
+      }
+    },
+    {
+      "case": "shift_integral",
+      "input": "examples/05_kslice_spin_responses/inputs/shift_integral.toml",
+      "task_ids": [
+        "integral_shift_spin_fullbands_check"
+      ],
+      "input_sha256": "42e88bf686353c987e9da81173d7e07af6d84bb62e6c8f9246648f420a683053",
+      "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "request_sha256": "342a9bc6e36afa7b3bc7ef47b57c7a6fe8569582ae5da34fda4f9c485271a65d",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "executed_input_sha256": "e129e889d0ddf3ef977632b5aaad34dcff67a46a6a5a93311e247a8e160ba0ea",
+        "actual_input_difference": "Material and output paths only; remaining parsed input identical.",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "return_code": 0,
+        "mesh_convergence_established": false,
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_fullbands_integral.dat": "6daf3356fe835d2b349cdf8076cfed1cd8b4ce20949e9f1112ad39f9f84dd9ba"
+        }
+      }
+    },
+    {
+      "case": "injection_integral",
+      "input": "examples/05_kslice_spin_responses/inputs/injection_integral.toml",
+      "task_ids": [
+        "integral_injection_spin_fullbands_check"
+      ],
+      "input_sha256": "22528b8bb7a15ee4f0855ded6895a5b512bcc09ce390729ca7aa4f537e6bf4cc",
+      "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "request_sha256": "342a9bc6e36afa7b3bc7ef47b57c7a6fe8569582ae5da34fda4f9c485271a65d",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "executed_input_sha256": "cf17051fcdbf8cab1414e3b3cb8421bb7161b17761d576a9b3e0ab58c6c59ceb",
+        "actual_input_difference": "Material and output paths only; remaining parsed input identical.",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "return_code": 0,
+        "mesh_convergence_established": false,
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_fullbands_integral.dat": "5e7cd3da82ccf217d882750d44294780385ea7da2fb8040450d04eaa17a5e003"
+        }
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "kslice_injection_spin_current_conventional",
+      "chapter": "05_kslice_spin_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/05_kslice_spin_responses/data/isc_yyyy_display-b91ce61a5d.dat"
+      ],
+      "figures": [
+        "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.png",
+        "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "data_formats": {},
+      "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json",
+      "selected_band_consumer_fix_preserved": true,
+      "provenance": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_yyyy_imag-0e8d3bdef6.dat": "0e8d3bdef6edb0e31d294314ac61bb056169db0cdff809b5c459e5584d1f8e85",
+          "examples/05_kslice_spin_responses/data/isc_yyyy_real-e7b5e8881a.dat": "e7b5e8881a0a7d0ccb5fa5d140f1e770b3e91df03edc8ef44de5dbc2550a3943"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "original_figure_id": "kslice_injection_spin_current_conventional",
+        "display_transform_records": [
+          {
+            "raw_real": "examples/05_kslice_spin_responses/data/isc_yyyy_real-e7b5e8881a.dat",
+            "raw_imag": "examples/05_kslice_spin_responses/data/isc_yyyy_imag-0e8d3bdef6.dat",
+            "native_to_display_scale": 1e-22,
+            "coordinate_basis": "fractional reciprocal; original plane vectors",
+            "mesh": [
+              200,
+              200
+            ],
+            "array_axes": "first index=k1,second=k2",
+            "display_transform": [
+              "fftshift",
+              "transpose"
+            ],
+            "cell_edge_extent": [
+              -0.5025,
+              0.4975,
+              -0.5025,
+              0.4975
+            ],
+            "numerical_mask": null,
+            "color_clipped_values": 0
+          }
+        ]
+      },
+      "provenance_source": {
+        "merged_from": "retained-source-records/kslice_injection_spin_current_conventional.provenance.json",
+        "source_file_sha256": "3cf08d893f101207b5af2469c2aa21340d832f2247aee1a1e082fde1e1453a14",
+        "payload_sha256": "fe6697e7c1365fcca92e0e4a00b94b93ce36d38d5ec4a8babb2058bff11d7cf2",
+        "encoding": "json-sort-keys-utf8-compact",
+        "retention": "Full source record retained outside the active tutorial tree; current data are identified by the inline raw hashes."
+      },
+      "display_selection": {
+        "notes": [
+          "Display the existing selected-current panel only; data, transforms, units and color limit unchanged."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "selection": "Current selected-pair panel only"
+      }
+    },
+    {
+      "id": "kslice_shift_spin_current_conventional",
+      "chapter": "05_kslice_spin_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/05_kslice_spin_responses/data/ssc_yyyy_display-58cef9b255.dat"
+      ],
+      "figures": [
+        "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.png",
+        "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "data_formats": {},
+      "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_current_conventional.json",
+      "selected_band_consumer_fix_preserved": true,
+      "provenance": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_yyyy_real-707f32136c.dat": "707f32136c9981361b116e121e322902dc9de387de4bad4bbca18838bcbe7e32",
+          "examples/05_kslice_spin_responses/data/ssc_yyyy_imag-daad68ca75.dat": "daad68ca756059ef0f6f409c4434e440169a05d4c024086216cf380943cfccd7"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "original_figure_id": "kslice_shift_spin_current_conventional",
+        "display_transform_records": [
+          {
+            "raw_real": "examples/05_kslice_spin_responses/data/ssc_yyyy_real-707f32136c.dat",
+            "raw_imag": "examples/05_kslice_spin_responses/data/ssc_yyyy_imag-daad68ca75.dat",
+            "native_to_display_scale": 1e-09,
+            "coordinate_basis": "fractional reciprocal; original plane vectors",
+            "mesh": [
+              200,
+              200
+            ],
+            "array_axes": "first index=k1,second=k2",
+            "display_transform": [
+              "fftshift",
+              "transpose"
+            ],
+            "cell_edge_extent": [
+              -0.5025,
+              0.4975,
+              -0.5025,
+              0.4975
+            ],
+            "numerical_mask": null,
+            "color_clipped_values": 0
+          }
+        ]
+      },
+      "provenance_source": {
+        "merged_from": "retained-source-records/kslice_shift_spin_current_conventional.provenance.json",
+        "source_file_sha256": "4dff850dc112f832db2e61ebd6786be7c38c18699d4609a5d7c8a9a92691ecea",
+        "payload_sha256": "2f82e2dc3a9f09e43abe9f6423e4be9884993711b2fe400e7fb95033a49dca12",
+        "encoding": "json-sort-keys-utf8-compact",
+        "retention": "Full source record retained outside the active tutorial tree; current data are identified by the inline raw hashes."
+      },
+      "display_selection": {
+        "notes": [
+          "Display the existing selected-current panel only; data, transforms, units and color limit unchanged."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "selection": "Current selected-pair panel only"
+      }
+    },
+    {
+      "id": "kslice_shift_spin_yzxy_fullbands",
+      "chapter": "05_kslice_spin_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/05_kslice_spin_responses/data/shift_yzxy_log_display.dat"
+      ],
+      "figures": [
+        "examples/05_kslice_spin_responses/figures/kslice_shift_spin_yzxy_fullbands.png",
+        "examples/05_kslice_spin_responses/figures/kslice_shift_spin_yzxy_fullbands.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "NEW_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Computed with independently verified same-grid integral; not mesh-convergence qualified.",
+      "data_formats": {},
+      "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_yzxy_fullbands.json",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_yzxy_r_fullbands.dat": "2bbf2a8ba468205a5ff97ad35a516f9cb6a0812016443f1fc438e4867855dc33",
+          "examples/05_kslice_spin_responses/data/ssc_yzxy_i_fullbands.dat": "94b79e79c1f1096f7cf2ce7a9e900bf729dec8f8884178cdbba80f8a7ed65197"
+        },
+        "display_transform": "raw imaginary / 1e12, fftshift then transpose; signed logarithmic color; mesh weight already included",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
+      }
+    },
+    {
+      "id": "kslice_injection_spin_yzxy_fullbands",
+      "chapter": "05_kslice_spin_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/05_kslice_spin_responses/data/injection_yzxy_log_display.dat"
+      ],
+      "figures": [
+        "examples/05_kslice_spin_responses/figures/kslice_injection_spin_yzxy_fullbands.png",
+        "examples/05_kslice_spin_responses/figures/kslice_injection_spin_yzxy_fullbands.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "NEW_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Computed with independently verified same-grid integral; not mesh-convergence qualified.",
+      "data_formats": {},
+      "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_yzxy_fullbands.json",
+      "execution_evidence": {
+        "run_id": "tutorial-spin-full-20261111-001",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_yzxy_r_fullbands.dat": "060dd52b51764b1882a0db650e05757a7200e93987fee7d12f06a9657e232025",
+          "examples/05_kslice_spin_responses/data/isc_yzxy_i_fullbands.dat": "c293eaa90f1d4495c09b6fa9d3f5b7ec664d86e9cee96c810b527703450b155d"
+        },
+        "display_transform": "raw real / 1e25, fftshift then transpose; signed logarithmic color; mesh weight already included",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 2,
+  "group_entry_check": {
+    "run_id": "tutorial-spin-entry-check-20261111-002",
+    "request_sha256": "d8283e9766f2cae842f2aa5d564ccaf7ea7977ef99af8c983c0c90f2af6be0ed",
+    "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "julia_version": "1.13.0",
+    "action": "normal chapter 05 reference-profile group check using explicit GeS material bindings",
+    "return_code": 0,
+    "completed_inputs": 8,
+    "unavailable_inputs": 0,
+    "stdout_sha256": "c7348a6827f67db93f742d9fa05873e34e16e815092a213aec57c9d5e8ea72fa",
+    "material_binding": {
+      "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "operator_bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661"
+    },
+    "execution_scope": "Input resolution only; no response recalculation. This check does not change the source identity of any saved result.",
+    "resource_guard": {
+      "cpu_budget": 2,
+      "rss_limit_gib": 24,
+      "timeout_seconds": 600,
+      "sampled_peak_tree_rss_kib": 10244352
+    },
+    "previous_attempt": {
+      "run_id": "tutorial-spin-entry-check-20261111-001",
+      "request_sha256": "0dc7dbf3e074ce78c486351e56f44d82d6ab46b84781978ccdf143394b0d3456",
+      "return_code": -15,
+      "stop_reason": "rss",
+      "rss_limit_gib": 8,
+      "sampled_peak_tree_rss_kib": 9993248
+    },
+    "release": "Recorded task and waiter processes and owned process groups observed absent; kernel containment remains unknown."
+  }
+}

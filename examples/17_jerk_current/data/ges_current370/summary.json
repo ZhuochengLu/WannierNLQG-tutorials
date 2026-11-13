@@ -1,0 +1,145 @@
+{
+  "schema": "tutorial-current-unified-ges-jerk/1",
+  "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+  "current_model_R_count": 465,
+  "old165R_data_used": false,
+  "model_operator_contract": "Current accepted unified TB contains matching H/r; Jerk consumes their Fourier derivatives. It does not require the unrelated spin/advanced orbital operator classes.",
+  "temperature_K": 0,
+  "mu_eV": -2.5,
+  "photon_frequencies": 200,
+  "energy_range_eV": [
+    0.02,
+    4.0
+  ],
+  "dense_mesh": [
+    400,
+    400,
+    1
+  ],
+  "five_frequency_meshes": [
+    200,
+    300,
+    400
+  ],
+  "five_frequencies_eV": [
+    1.6,
+    2.0,
+    2.5,
+    3.0,
+    3.5
+  ],
+  "broadening_type": "Gaussian",
+  "width_eV": 0.04,
+  "gaussian_standard_deviation_eV": 0.028284271247461898,
+  "transition_window_factor": 5,
+  "denominator_regularization_eV": 0.001,
+  "band_selection": "all32 model bands",
+  "projection": "ordered",
+  "sheet_axes": [
+    1,
+    2
+  ],
+  "wannier_center_convention": "Convention_II",
+  "real_space_replica_policy": "auto",
+  "fourier_backend": "mixed",
+  "fourier_NKFFT": [
+    5,
+    5,
+    1
+  ],
+  "native_extra_spin_factor": 1,
+  "sheet_height_angstrom": 25.3960572,
+  "bulk_derived_not_independent": true,
+  "mesh_checks": {
+    "mesh200tomesh300": {
+      "xxxx": {
+        "global_scale_sheet_SI": 52207622.305453725,
+        "maximum_absolute_complex_difference_sheet_SI": 4471137.923743613,
+        "maximum_normalized_complex_difference": 0.08564147774407546,
+        "per_energy_normalized_complex_difference": [
+          0.0,
+          2.4919164441309602e-14,
+          8.266395326328355e-05,
+          0.010993081023406114,
+          0.08564147774407546
+        ],
+        "target": 0.01,
+        "passed": false
+      },
+      "yyyy": {
+        "global_scale_sheet_SI": 98129072.32182841,
+        "maximum_absolute_complex_difference_sheet_SI": 972501.6458383352,
+        "maximum_normalized_complex_difference": 0.009910433501795228,
+        "per_energy_normalized_complex_difference": [
+          0.0,
+          2.0659555139894082e-13,
+          0.00018557156424459648,
+          0.009910433501795228,
+          0.002272434795784205
+        ],
+        "target": 0.01,
+        "passed": true
+      }
+    },
+    "mesh300tomesh400": {
+      "xxxx": {
+        "global_scale_sheet_SI": 51633699.68341049,
+        "maximum_absolute_complex_difference_sheet_SI": 1172749.498750858,
+        "maximum_normalized_complex_difference": 0.022712869810637516,
+        "per_energy_normalized_complex_difference": [
+          0.0,
+          1.3180052402838798e-14,
+          2.0587442506730757e-08,
+          0.006155781449259251,
+          0.022712869810637516
+        ],
+        "target": 0.01,
+        "passed": false
+      },
+      "yyyy": {
+        "global_scale_sheet_SI": 97405427.57728916,
+        "maximum_absolute_complex_difference_sheet_SI": 248856.9012990892,
+        "maximum_normalized_complex_difference": 0.0025548566182477506,
+        "per_energy_normalized_complex_difference": [
+          0.0,
+          1.30339649986347e-13,
+          1.6816167693046285e-09,
+          0.0025548566182477506,
+          0.0002812916512818542
+        ],
+        "target": 0.01,
+        "passed": true
+      }
+    }
+  },
+  "mesh_status": "NOT_CONVERGED_UNDER_STATED_ONE_PERCENT_CRITERION",
+  "imaginary_global_fraction": {
+    "xxxx": 9.62050413271793e-16,
+    "yyyy": 1.074372404160556e-15
+  },
+  "all200_frequency_mesh_convergence_claimed": false,
+  "continuous_BZ_gap_proof": false,
+  "occupancy_scope": "Chemical potential and full-band response retained. Previous current-model200square band-boundary check established20occupied states there; no new analytic continuous-BZ proof is asserted.",
+  "batch_wall_seconds": 178.45587737485766,
+  "sampled_peak_rss_kib": 87166608,
+  "swapouts": [
+    88
+  ],
+  "execution": "three concurrent8MPI applications; total30CPU112GiB1800s hard limits",
+  "strict_released_identities": 33,
+  "kernel_containment": "UNKNOWN",
+  "MPI_small_check": "Current16square/twofrequency serial vs8MPI actual364 numerical max_abs0;15identities strict",
+  "WN_source_changes": false,
+  "source_data_sha256": {
+    "mesh_comparison_percent.dat": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c",
+    "sheet_spectrum.dat": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d",
+    "bulk_derived_spectrum.dat": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+    "mesh300/jc_G_ordered_yyyy.dat": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+    "mesh300/jc_G_ordered_xxxx.dat": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+    "dense400/jc_G_ordered_yyyy.dat": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+    "dense400/jc_G_ordered_xxxx.dat": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+    "mesh200/jc_G_ordered_yyyy.dat": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+    "mesh200/jc_G_ordered_xxxx.dat": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+  }
+}

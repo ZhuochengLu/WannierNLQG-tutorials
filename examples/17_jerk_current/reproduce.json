@@ -1,0 +1,1264 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "two_band_tb",
+      "input": "examples/17_jerk_current/inputs/two_band_tb.toml",
+      "task_ids": [
+        "jerk_tb"
+      ],
+      "input_sha256": "cbe85eef477f7d11b691ae174c541f6f8e0a2e1b4f5ddf97c542d85f82c33fb9",
+      "calculation_record": "Recorded values retained; no new material run for directory cleanup.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "jerk/tb",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            129,
+            1,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "historical_execution_input_sha256": "67545f354e003fbddbab655bba569b7ec93af46c19340855a54c7361bf05f1c5",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    },
+    {
+      "case": "two_band_analytic",
+      "input": "examples/17_jerk_current/inputs/two_band_analytic.toml",
+      "task_ids": [
+        "jerk_analytic"
+      ],
+      "input_sha256": "3024c68e5501ac0b4ac5881d126b2d54bdffec042bc48a709fa04640830a2a1c",
+      "calculation_record": "Recorded values retained; no new material run for directory cleanup.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "jerk/analytic",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            129,
+            1,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "historical_execution_input_sha256": "4cdcf9c298e8fa354bf1dcee587c2735ca4eb24bbd2546e00b1dcee2af8677d4",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    },
+    {
+      "case": "ges_pilot_sheet",
+      "input": "examples/17_jerk_current/inputs/ges_pilot_sheet.toml",
+      "task_ids": [
+        "ges_pilot_sheet"
+      ],
+      "input_sha256": "bbad4c8afd50ac4744ed8f8aa5be05fe14a4279c4f2a26e48504ebcd31df3427",
+      "calculation_record": "Actual original35-point/two-energy public1.2.0 run237 on unified GeS TB; convergence not established.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            7,
+            5,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-unified-validation237",
+        "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "actual_input_sha256": "2606e45d0f35d2deb61312d9456a34353cea87c616b4f82d617fdb82ba497ca7",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/17_jerk_current/data/jc_G_ordered_xxxx-5a697a2e.dat",
+          "examples/17_jerk_current/data/jc_G_ordered_yyyy-940abdfe.dat"
+        ],
+        "new_computation": true,
+        "mesh": [
+          7,
+          5,
+          1
+        ],
+        "energies_ev": [
+          2.0,
+          2.5
+        ],
+        "physics_qualification": false
+      },
+      "historical_execution_input_sha256": "2606e45d0f35d2deb61312d9456a34353cea87c616b4f82d617fdb82ba497ca7",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    },
+    {
+      "case": "ges_pilot_bulk",
+      "input": "examples/17_jerk_current/inputs/ges_pilot_bulk.toml",
+      "task_ids": [
+        "ges_pilot_bulk"
+      ],
+      "input_sha256": "4907669a391c2cd47e92acc125c34decd197cdfed08981c35db872799dfe5735",
+      "calculation_record": "Actual original35-point/two-energy public1.2.0 run237 on unified GeS TB; convergence not established.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            7,
+            5,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-unified-validation237",
+        "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "actual_input_sha256": "36c44f4e50ff30cbb2a653657d7fb9f549bfa25a0b57e8182966a2b00433a7da",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/17_jerk_current/data/jc_G_ordered_xxxx-18974147.dat",
+          "examples/17_jerk_current/data/jc_G_ordered_yyyy-1ded8bcd.dat"
+        ],
+        "new_computation": true,
+        "mesh": [
+          7,
+          5,
+          1
+        ],
+        "energies_ev": [
+          2.0,
+          2.5
+        ],
+        "physics_qualification": false
+      },
+      "historical_execution_input_sha256": "36c44f4e50ff30cbb2a653657d7fb9f549bfa25a0b57e8182966a2b00433a7da",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    },
+    {
+      "case": "ges_spectrum_sheet",
+      "input": "examples/17_jerk_current/inputs/ges_spectrum_sheet.toml",
+      "task_ids": [
+        "ges_spectrum_sheet"
+      ],
+      "input_sha256": "13ed5e73314901599cae42b5cb37c0082a756047c5959504e521770e7d8bf2ff",
+      "calculation_record": "Actual current-source370 API-equivalent run on unified465R TB; source and all numerical settings fixed. Current native input check records exact parser equivalence separately.",
+      "current_execution370": {
+        "schema": "tutorial-current-unified-ges-jerk/1",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "current_model_R_count": 465,
+        "old165R_data_used": false,
+        "model_operator_contract": "Current accepted unified TB contains matching H/r; Jerk consumes their Fourier derivatives. It does not require the unrelated spin/advanced orbital operator classes.",
+        "temperature_K": 0,
+        "mu_eV": -2.5,
+        "photon_frequencies": 200,
+        "energy_range_eV": [
+          0.02,
+          4.0
+        ],
+        "dense_mesh": [
+          400,
+          400,
+          1
+        ],
+        "five_frequency_meshes": [
+          200,
+          300,
+          400
+        ],
+        "five_frequencies_eV": [
+          1.6,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "broadening_type": "Gaussian",
+        "width_eV": 0.04,
+        "gaussian_standard_deviation_eV": 0.028284271247461898,
+        "transition_window_factor": 5,
+        "denominator_regularization_eV": 0.001,
+        "band_selection": "all32 model bands",
+        "projection": "ordered",
+        "sheet_axes": [
+          1,
+          2
+        ],
+        "wannier_center_convention": "Convention_II",
+        "real_space_replica_policy": "auto",
+        "fourier_backend": "mixed",
+        "fourier_NKFFT": [
+          5,
+          5,
+          1
+        ],
+        "native_extra_spin_factor": 1,
+        "sheet_height_angstrom": 25.3960572,
+        "bulk_derived_not_independent": true,
+        "mesh_checks": {
+          "mesh200tomesh300": {
+            "xxxx": {
+              "global_scale_sheet_SI": 52207622.305453725,
+              "maximum_absolute_complex_difference_sheet_SI": 4471137.923743613,
+              "maximum_normalized_complex_difference": 0.08564147774407546,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.4919164441309602e-14,
+                8.266395326328355e-05,
+                0.010993081023406114,
+                0.08564147774407546
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 98129072.32182841,
+              "maximum_absolute_complex_difference_sheet_SI": 972501.6458383352,
+              "maximum_normalized_complex_difference": 0.009910433501795228,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.0659555139894082e-13,
+                0.00018557156424459648,
+                0.009910433501795228,
+                0.002272434795784205
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          },
+          "mesh300tomesh400": {
+            "xxxx": {
+              "global_scale_sheet_SI": 51633699.68341049,
+              "maximum_absolute_complex_difference_sheet_SI": 1172749.498750858,
+              "maximum_normalized_complex_difference": 0.022712869810637516,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.3180052402838798e-14,
+                2.0587442506730757e-08,
+                0.006155781449259251,
+                0.022712869810637516
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 97405427.57728916,
+              "maximum_absolute_complex_difference_sheet_SI": 248856.9012990892,
+              "maximum_normalized_complex_difference": 0.0025548566182477506,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.30339649986347e-13,
+                1.6816167693046285e-09,
+                0.0025548566182477506,
+                0.0002812916512818542
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          }
+        },
+        "mesh_status": "NOT_CONVERGED_UNDER_STATED_ONE_PERCENT_CRITERION",
+        "imaginary_global_fraction": {
+          "xxxx": 9.62050413271793e-16,
+          "yyyy": 1.074372404160556e-15
+        },
+        "all200_frequency_mesh_convergence_claimed": false,
+        "continuous_BZ_gap_proof": false,
+        "occupancy_scope": "Chemical potential and full-band response retained. Previous current-model200square band-boundary check established20occupied states there; no new analytic continuous-BZ proof is asserted.",
+        "batch_wall_seconds": 178.45587737485766,
+        "sampled_peak_rss_kib": 87166608,
+        "swapouts": [
+          88
+        ],
+        "execution": "three concurrent8MPI applications; total30CPU112GiB1800s hard limits",
+        "strict_released_identities": 33,
+        "kernel_containment": "UNKNOWN",
+        "MPI_small_check": "Current16square/twofrequency serial vs8MPI actual364 numerical max_abs0;15identities strict",
+        "WN_source_changes": false,
+        "source_data_sha256": {
+          "mesh_comparison_percent.dat": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c",
+          "sheet_spectrum.dat": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d",
+          "bulk_derived_spectrum.dat": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+          "mesh300/jc_G_ordered_yyyy.dat": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "mesh300/jc_G_ordered_xxxx.dat": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "dense400/jc_G_ordered_yyyy.dat": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "dense400/jc_G_ordered_xxxx.dat": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "mesh200/jc_G_ordered_yyyy.dat": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "mesh200/jc_G_ordered_xxxx.dat": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+        }
+      },
+      "producer_case": "dense400",
+      "model_provenance_files": [
+        "manifests/material_consistency.json"
+      ],
+      "historical_execution_input_sha256": "4c9062fdd37a03d73e577e7d45337ad2a42cb373a88542610ea9e81d3673f66a",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    },
+    {
+      "case": "ges_mesh200_sheet",
+      "input": "examples/17_jerk_current/inputs/ges_mesh200_sheet.toml",
+      "task_ids": [
+        "ges_mesh200_sheet"
+      ],
+      "input_sha256": "6f72c48ca36c78282ca721ceeba579cbb23a1fbf2d7641b2632062602b3bd762",
+      "calculation_record": "Actual current-source370 API-equivalent run on unified465R TB; source and all numerical settings fixed. Current native input check records exact parser equivalence separately.",
+      "current_execution370": {
+        "schema": "tutorial-current-unified-ges-jerk/1",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "current_model_R_count": 465,
+        "old165R_data_used": false,
+        "model_operator_contract": "Current accepted unified TB contains matching H/r; Jerk consumes their Fourier derivatives. It does not require the unrelated spin/advanced orbital operator classes.",
+        "temperature_K": 0,
+        "mu_eV": -2.5,
+        "photon_frequencies": 200,
+        "energy_range_eV": [
+          0.02,
+          4.0
+        ],
+        "dense_mesh": [
+          400,
+          400,
+          1
+        ],
+        "five_frequency_meshes": [
+          200,
+          300,
+          400
+        ],
+        "five_frequencies_eV": [
+          1.6,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "broadening_type": "Gaussian",
+        "width_eV": 0.04,
+        "gaussian_standard_deviation_eV": 0.028284271247461898,
+        "transition_window_factor": 5,
+        "denominator_regularization_eV": 0.001,
+        "band_selection": "all32 model bands",
+        "projection": "ordered",
+        "sheet_axes": [
+          1,
+          2
+        ],
+        "wannier_center_convention": "Convention_II",
+        "real_space_replica_policy": "auto",
+        "fourier_backend": "mixed",
+        "fourier_NKFFT": [
+          5,
+          5,
+          1
+        ],
+        "native_extra_spin_factor": 1,
+        "sheet_height_angstrom": 25.3960572,
+        "bulk_derived_not_independent": true,
+        "mesh_checks": {
+          "mesh200tomesh300": {
+            "xxxx": {
+              "global_scale_sheet_SI": 52207622.305453725,
+              "maximum_absolute_complex_difference_sheet_SI": 4471137.923743613,
+              "maximum_normalized_complex_difference": 0.08564147774407546,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.4919164441309602e-14,
+                8.266395326328355e-05,
+                0.010993081023406114,
+                0.08564147774407546
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 98129072.32182841,
+              "maximum_absolute_complex_difference_sheet_SI": 972501.6458383352,
+              "maximum_normalized_complex_difference": 0.009910433501795228,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.0659555139894082e-13,
+                0.00018557156424459648,
+                0.009910433501795228,
+                0.002272434795784205
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          },
+          "mesh300tomesh400": {
+            "xxxx": {
+              "global_scale_sheet_SI": 51633699.68341049,
+              "maximum_absolute_complex_difference_sheet_SI": 1172749.498750858,
+              "maximum_normalized_complex_difference": 0.022712869810637516,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.3180052402838798e-14,
+                2.0587442506730757e-08,
+                0.006155781449259251,
+                0.022712869810637516
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 97405427.57728916,
+              "maximum_absolute_complex_difference_sheet_SI": 248856.9012990892,
+              "maximum_normalized_complex_difference": 0.0025548566182477506,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.30339649986347e-13,
+                1.6816167693046285e-09,
+                0.0025548566182477506,
+                0.0002812916512818542
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          }
+        },
+        "mesh_status": "NOT_CONVERGED_UNDER_STATED_ONE_PERCENT_CRITERION",
+        "imaginary_global_fraction": {
+          "xxxx": 9.62050413271793e-16,
+          "yyyy": 1.074372404160556e-15
+        },
+        "all200_frequency_mesh_convergence_claimed": false,
+        "continuous_BZ_gap_proof": false,
+        "occupancy_scope": "Chemical potential and full-band response retained. Previous current-model200square band-boundary check established20occupied states there; no new analytic continuous-BZ proof is asserted.",
+        "batch_wall_seconds": 178.45587737485766,
+        "sampled_peak_rss_kib": 87166608,
+        "swapouts": [
+          88
+        ],
+        "execution": "three concurrent8MPI applications; total30CPU112GiB1800s hard limits",
+        "strict_released_identities": 33,
+        "kernel_containment": "UNKNOWN",
+        "MPI_small_check": "Current16square/twofrequency serial vs8MPI actual364 numerical max_abs0;15identities strict",
+        "WN_source_changes": false,
+        "source_data_sha256": {
+          "mesh_comparison_percent.dat": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c",
+          "sheet_spectrum.dat": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d",
+          "bulk_derived_spectrum.dat": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+          "mesh300/jc_G_ordered_yyyy.dat": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "mesh300/jc_G_ordered_xxxx.dat": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "dense400/jc_G_ordered_yyyy.dat": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "dense400/jc_G_ordered_xxxx.dat": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "mesh200/jc_G_ordered_yyyy.dat": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "mesh200/jc_G_ordered_xxxx.dat": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+        }
+      },
+      "producer_case": "mesh200",
+      "model_provenance_files": [
+        "manifests/material_consistency.json"
+      ],
+      "historical_execution_input_sha256": "b801bf81a5273d61fcffb9e98c5ed4b25024973ae67ca27b11e4462e5d44e0a5",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    },
+    {
+      "case": "ges_mesh300_sheet",
+      "input": "examples/17_jerk_current/inputs/ges_mesh300_sheet.toml",
+      "task_ids": [
+        "ges_mesh300_sheet"
+      ],
+      "input_sha256": "5f927f679f7582530d2c631d0fb391528b45ed434db3c097533688a39c85b5a5",
+      "calculation_record": "Actual current-source370 API-equivalent run on unified465R TB; source and all numerical settings fixed. Current native input check records exact parser equivalence separately.",
+      "current_execution370": {
+        "schema": "tutorial-current-unified-ges-jerk/1",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "current_model_R_count": 465,
+        "old165R_data_used": false,
+        "model_operator_contract": "Current accepted unified TB contains matching H/r; Jerk consumes their Fourier derivatives. It does not require the unrelated spin/advanced orbital operator classes.",
+        "temperature_K": 0,
+        "mu_eV": -2.5,
+        "photon_frequencies": 200,
+        "energy_range_eV": [
+          0.02,
+          4.0
+        ],
+        "dense_mesh": [
+          400,
+          400,
+          1
+        ],
+        "five_frequency_meshes": [
+          200,
+          300,
+          400
+        ],
+        "five_frequencies_eV": [
+          1.6,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "broadening_type": "Gaussian",
+        "width_eV": 0.04,
+        "gaussian_standard_deviation_eV": 0.028284271247461898,
+        "transition_window_factor": 5,
+        "denominator_regularization_eV": 0.001,
+        "band_selection": "all32 model bands",
+        "projection": "ordered",
+        "sheet_axes": [
+          1,
+          2
+        ],
+        "wannier_center_convention": "Convention_II",
+        "real_space_replica_policy": "auto",
+        "fourier_backend": "mixed",
+        "fourier_NKFFT": [
+          5,
+          5,
+          1
+        ],
+        "native_extra_spin_factor": 1,
+        "sheet_height_angstrom": 25.3960572,
+        "bulk_derived_not_independent": true,
+        "mesh_checks": {
+          "mesh200tomesh300": {
+            "xxxx": {
+              "global_scale_sheet_SI": 52207622.305453725,
+              "maximum_absolute_complex_difference_sheet_SI": 4471137.923743613,
+              "maximum_normalized_complex_difference": 0.08564147774407546,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.4919164441309602e-14,
+                8.266395326328355e-05,
+                0.010993081023406114,
+                0.08564147774407546
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 98129072.32182841,
+              "maximum_absolute_complex_difference_sheet_SI": 972501.6458383352,
+              "maximum_normalized_complex_difference": 0.009910433501795228,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.0659555139894082e-13,
+                0.00018557156424459648,
+                0.009910433501795228,
+                0.002272434795784205
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          },
+          "mesh300tomesh400": {
+            "xxxx": {
+              "global_scale_sheet_SI": 51633699.68341049,
+              "maximum_absolute_complex_difference_sheet_SI": 1172749.498750858,
+              "maximum_normalized_complex_difference": 0.022712869810637516,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.3180052402838798e-14,
+                2.0587442506730757e-08,
+                0.006155781449259251,
+                0.022712869810637516
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 97405427.57728916,
+              "maximum_absolute_complex_difference_sheet_SI": 248856.9012990892,
+              "maximum_normalized_complex_difference": 0.0025548566182477506,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.30339649986347e-13,
+                1.6816167693046285e-09,
+                0.0025548566182477506,
+                0.0002812916512818542
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          }
+        },
+        "mesh_status": "NOT_CONVERGED_UNDER_STATED_ONE_PERCENT_CRITERION",
+        "imaginary_global_fraction": {
+          "xxxx": 9.62050413271793e-16,
+          "yyyy": 1.074372404160556e-15
+        },
+        "all200_frequency_mesh_convergence_claimed": false,
+        "continuous_BZ_gap_proof": false,
+        "occupancy_scope": "Chemical potential and full-band response retained. Previous current-model200square band-boundary check established20occupied states there; no new analytic continuous-BZ proof is asserted.",
+        "batch_wall_seconds": 178.45587737485766,
+        "sampled_peak_rss_kib": 87166608,
+        "swapouts": [
+          88
+        ],
+        "execution": "three concurrent8MPI applications; total30CPU112GiB1800s hard limits",
+        "strict_released_identities": 33,
+        "kernel_containment": "UNKNOWN",
+        "MPI_small_check": "Current16square/twofrequency serial vs8MPI actual364 numerical max_abs0;15identities strict",
+        "WN_source_changes": false,
+        "source_data_sha256": {
+          "mesh_comparison_percent.dat": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c",
+          "sheet_spectrum.dat": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d",
+          "bulk_derived_spectrum.dat": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+          "mesh300/jc_G_ordered_yyyy.dat": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "mesh300/jc_G_ordered_xxxx.dat": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "dense400/jc_G_ordered_yyyy.dat": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "dense400/jc_G_ordered_xxxx.dat": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "mesh200/jc_G_ordered_yyyy.dat": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "mesh200/jc_G_ordered_xxxx.dat": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+        }
+      },
+      "producer_case": "mesh300",
+      "model_provenance_files": [
+        "manifests/material_consistency.json"
+      ],
+      "historical_execution_input_sha256": "d5d0cbc4be38bc99fa6bf4c7f47038d0de3b53f8914d73a31897a20942a7dbdd",
+      "current_input_validation": {
+        "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "periodic local checkpoint, not final source",
+        "execution": "parsed only; no new response integration",
+        "removed_fields_rejected": true
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "ges_pilot_bulk",
+      "chapter": "17_jerk_current",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/17_jerk_current/data/jc_G_ordered_xxxx-18974147.dat",
+        "examples/17_jerk_current/data/jc_G_ordered_yyyy-1ded8bcd.dat"
+      ],
+      "figures": [
+        "examples/17_jerk_current/figures/ges_pilot_bulk.png",
+        "examples/17_jerk_current/figures/ges_pilot_bulk.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/17_jerk_current/inputs/ges_pilot_bulk.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Actual original35-point/two-energy public1.2.0 run237 on unified GeS TB; convergence not established.",
+      "data_formats": {},
+      "recipe": "examples/17_jerk_current/plot_configs/ges_pilot_bulk.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "original_figure_id": "ges_pilot_bulk.skill-2",
+        "original_data_sha256": {
+          "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_bulk/jc_G_ordered_xxxx.dat": "5f15c935280563d2c563cb76253206c412e21cae355d56ed71957826100b6a28",
+          "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_bulk/jc_G_ordered_yyyy.dat": "903aac84ed415b4d3d7e8670d410673c61c13d99e8851411c7fa6dc7db0fac2b"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_bulk/executed-group-input.toml": "caf709769cdaead7458f8e472b7153e8931f5afbfdf2cd674612a51f74c3f0ab"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "previous_selection": {
+          "original_figure_id": "ges_pilot_bulk.skill-2",
+          "original_data_sha256": {
+            "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_bulk/jc_G_ordered_xxxx.dat": "5f15c935280563d2c563cb76253206c412e21cae355d56ed71957826100b6a28",
+            "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_bulk/jc_G_ordered_yyyy.dat": "903aac84ed415b4d3d7e8670d410673c61c13d99e8851411c7fa6dc7db0fac2b"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {
+            "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_bulk/executed-group-input.toml": "caf709769cdaead7458f8e472b7153e8931f5afbfdf2cd674612a51f74c3f0ab"
+          },
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "selected_result_data_sha256": {
+          "examples/17_jerk_current/data/jc_G_ordered_xxxx-18974147.dat": "18974147b2d37504e8a0901d39ecc183330c3910b7007b8d9d87db97ffd97696",
+          "examples/17_jerk_current/data/jc_G_ordered_yyyy-1ded8bcd.dat": "1ded8bcd0b792fe31584b360a82776874c99a33c691959870d2cbfa6806f9aeb"
+        },
+        "response_recomputed_this_migration": true,
+        "material_set_id": "GeS-pairWS-canonical-spin034",
+        "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+        "actual_run": "WN-Tutorial-unified-validation237"
+      },
+      "provenance_source": {
+        "merged_from": "examples/17_jerk_current/data/ges_pilot_bulk.provenance.json",
+        "source_file_sha256": "c3bac8e946b4f84e7f5a304299dc8b425a3dfa2630605196723bc25cfd5c77fb",
+        "payload_sha256": "ecc36c8e6fcadce334870e2a9917e34bb286d683c70876d1fd294be61892a214",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    },
+    {
+      "id": "ges_pilot_sheet",
+      "chapter": "17_jerk_current",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/17_jerk_current/data/jc_G_ordered_xxxx-5a697a2e.dat",
+        "examples/17_jerk_current/data/jc_G_ordered_yyyy-940abdfe.dat"
+      ],
+      "figures": [
+        "examples/17_jerk_current/figures/ges_pilot_sheet.png",
+        "examples/17_jerk_current/figures/ges_pilot_sheet.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/17_jerk_current/inputs/ges_pilot_sheet.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Actual original35-point/two-energy public1.2.0 run237 on unified GeS TB; convergence not established.",
+      "data_formats": {},
+      "recipe": "examples/17_jerk_current/plot_configs/ges_pilot_sheet.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "original_figure_id": "ges_pilot_sheet.skill-3",
+        "original_data_sha256": {
+          "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_sheet/jc_G_ordered_xxxx.dat": "1d5bc69e9993d49aebfd656e80eed0532c24c129c76f67b1aca6a005443086ad",
+          "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_sheet/jc_G_ordered_yyyy.dat": "e4a257acb801d90d0e1fbc4b9bf0a4be1c6c5c2db39d499eff35821bf6ef0044"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_sheet/executed-group-input.toml": "caf709769cdaead7458f8e472b7153e8931f5afbfdf2cd674612a51f74c3f0ab"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "previous_selection": {
+          "original_figure_id": "ges_pilot_sheet.skill-3",
+          "original_data_sha256": {
+            "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_sheet/jc_G_ordered_xxxx.dat": "1d5bc69e9993d49aebfd656e80eed0532c24c129c76f67b1aca6a005443086ad",
+            "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_sheet/jc_G_ordered_yyyy.dat": "e4a257acb801d90d0e1fbc4b9bf0a4be1c6c5c2db39d499eff35821bf6ef0044"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {
+            "examples/17_jerk_current/results/reference-gaugefix-20261106/ges_pilot_sheet/executed-group-input.toml": "caf709769cdaead7458f8e472b7153e8931f5afbfdf2cd674612a51f74c3f0ab"
+          },
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "selected_result_data_sha256": {
+          "examples/17_jerk_current/data/jc_G_ordered_xxxx-5a697a2e.dat": "5a697a2ec2292bbe2e2aa0a1119e00a2afd176287e280300e0497b18471eadaa",
+          "examples/17_jerk_current/data/jc_G_ordered_yyyy-940abdfe.dat": "940abdfe52016020ea3edc71e060f0ec3869eece24c58930581e8c4114387481"
+        },
+        "response_recomputed_this_migration": true,
+        "material_set_id": "GeS-pairWS-canonical-spin034",
+        "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+        "actual_run": "WN-Tutorial-unified-validation237"
+      },
+      "provenance_source": {
+        "merged_from": "examples/17_jerk_current/data/ges_pilot_sheet.provenance.json",
+        "source_file_sha256": "99593965c0a222742326c98dd6318bcd743f677d59dd8f195ea4cc753d6970a7",
+        "payload_sha256": "76b79cb5594dac0c3c0539119dd89f58d47b6807c49c99c10c56f434669d8277",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Use a physical display title; numerical limitations remain in the tutorial."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "two_band_analytical_comparison",
+      "chapter": "17_jerk_current",
+      "engine": "retained_plot_bundle",
+      "data": [
+        "examples/17_jerk_current/data/two_band_dense200/analytical_vs_wanniernlqg.csv",
+        "examples/17_jerk_current/data/two_band_dense200/comparison.json"
+      ],
+      "figures": [
+        "examples/17_jerk_current/figures/two_band_analytical_vs_wanniernlqg.png",
+        "examples/17_jerk_current/figures/two_band_analytical_vs_wanniernlqg.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/17_jerk_current/inputs/two_band_tb.toml",
+        "examples/17_jerk_current/inputs/two_band_analytic.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "HISTORICAL_PLOT_REPLAY; NO_NEW_RESPONSE_OR_MODEL_IDENTITY_INFERRED",
+      "data_formats": {},
+      "script": "examples/17_jerk_current/plot_reference.py",
+      "script_args": [
+        "--figure",
+        "two_band_analytical_vs_wanniernlqg"
+      ],
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 213,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      }
+    },
+    {
+      "id": "ges_dense_current370",
+      "chapter": "17_jerk_current",
+      "engine": "portable_manifest",
+      "recipe": "examples/17_jerk_current/plot_configs/ges_dense_current370.json",
+      "data": [
+        "examples/17_jerk_current/data/ges_current370/bulk_derived_spectrum.dat",
+        "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_xxxx.dat",
+        "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_yyyy.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_xxxx.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_yyyy.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_xxxx.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_yyyy.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh_comparison_percent.dat",
+        "examples/17_jerk_current/data/ges_current370/bulk_derived_spectrum.dat",
+        "examples/17_jerk_current/data/ges_current370/summary.json"
+      ],
+      "figures": [
+        "examples/17_jerk_current/figures/ges_dense_current.png",
+        "examples/17_jerk_current/figures/ges_dense_current.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/17_jerk_current/inputs/ges_spectrum_sheet.toml",
+        "examples/17_jerk_current/inputs/ges_mesh200_sheet.toml",
+        "examples/17_jerk_current/inputs/ges_mesh300_sheet.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [
+        "manifests/material_consistency.json"
+      ],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "EXPLICIT_CURRENT_UNIFIED_MODEL_AND_NATIVE_MPI_EXECUTION",
+      "calculation_reproduction_status": "Actual current native370,3independent8rank applications; no oldmodel or filename substitution, no convergence qualification by root0",
+      "current_execution370": {
+        "schema": "tutorial-current-unified-ges-jerk/1",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "current_model_R_count": 465,
+        "old165R_data_used": false,
+        "model_operator_contract": "Current accepted unified TB contains matching H/r; Jerk consumes their Fourier derivatives. It does not require the unrelated spin/advanced orbital operator classes.",
+        "temperature_K": 0,
+        "mu_eV": -2.5,
+        "photon_frequencies": 200,
+        "energy_range_eV": [
+          0.02,
+          4.0
+        ],
+        "dense_mesh": [
+          400,
+          400,
+          1
+        ],
+        "five_frequency_meshes": [
+          200,
+          300,
+          400
+        ],
+        "five_frequencies_eV": [
+          1.6,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "broadening_type": "Gaussian",
+        "width_eV": 0.04,
+        "gaussian_standard_deviation_eV": 0.028284271247461898,
+        "transition_window_factor": 5,
+        "denominator_regularization_eV": 0.001,
+        "band_selection": "all32 model bands",
+        "projection": "ordered",
+        "sheet_axes": [
+          1,
+          2
+        ],
+        "wannier_center_convention": "Convention_II",
+        "real_space_replica_policy": "auto",
+        "fourier_backend": "mixed",
+        "fourier_NKFFT": [
+          5,
+          5,
+          1
+        ],
+        "native_extra_spin_factor": 1,
+        "sheet_height_angstrom": 25.3960572,
+        "bulk_derived_not_independent": true,
+        "mesh_checks": {
+          "mesh200tomesh300": {
+            "xxxx": {
+              "global_scale_sheet_SI": 52207622.305453725,
+              "maximum_absolute_complex_difference_sheet_SI": 4471137.923743613,
+              "maximum_normalized_complex_difference": 0.08564147774407546,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.4919164441309602e-14,
+                8.266395326328355e-05,
+                0.010993081023406114,
+                0.08564147774407546
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 98129072.32182841,
+              "maximum_absolute_complex_difference_sheet_SI": 972501.6458383352,
+              "maximum_normalized_complex_difference": 0.009910433501795228,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.0659555139894082e-13,
+                0.00018557156424459648,
+                0.009910433501795228,
+                0.002272434795784205
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          },
+          "mesh300tomesh400": {
+            "xxxx": {
+              "global_scale_sheet_SI": 51633699.68341049,
+              "maximum_absolute_complex_difference_sheet_SI": 1172749.498750858,
+              "maximum_normalized_complex_difference": 0.022712869810637516,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.3180052402838798e-14,
+                2.0587442506730757e-08,
+                0.006155781449259251,
+                0.022712869810637516
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 97405427.57728916,
+              "maximum_absolute_complex_difference_sheet_SI": 248856.9012990892,
+              "maximum_normalized_complex_difference": 0.0025548566182477506,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.30339649986347e-13,
+                1.6816167693046285e-09,
+                0.0025548566182477506,
+                0.0002812916512818542
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          }
+        },
+        "mesh_status": "NOT_CONVERGED_UNDER_STATED_ONE_PERCENT_CRITERION",
+        "imaginary_global_fraction": {
+          "xxxx": 9.62050413271793e-16,
+          "yyyy": 1.074372404160556e-15
+        },
+        "all200_frequency_mesh_convergence_claimed": false,
+        "continuous_BZ_gap_proof": false,
+        "occupancy_scope": "Chemical potential and full-band response retained. Previous current-model200square band-boundary check established20occupied states there; no new analytic continuous-BZ proof is asserted.",
+        "batch_wall_seconds": 178.45587737485766,
+        "sampled_peak_rss_kib": 87166608,
+        "swapouts": [
+          88
+        ],
+        "execution": "three concurrent8MPI applications; total30CPU112GiB1800s hard limits",
+        "strict_released_identities": 33,
+        "kernel_containment": "UNKNOWN",
+        "MPI_small_check": "Current16square/twofrequency serial vs8MPI actual364 numerical max_abs0;15identities strict",
+        "WN_source_changes": false,
+        "source_data_sha256": {
+          "mesh_comparison_percent.dat": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c",
+          "sheet_spectrum.dat": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d",
+          "bulk_derived_spectrum.dat": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+          "mesh300/jc_G_ordered_yyyy.dat": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "mesh300/jc_G_ordered_xxxx.dat": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "dense400/jc_G_ordered_yyyy.dat": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "dense400/jc_G_ordered_xxxx.dat": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "mesh200/jc_G_ordered_yyyy.dat": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "mesh200/jc_G_ordered_xxxx.dat": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+        }
+      },
+      "normalization_conversion": {
+        "data": "existing same-source bulk-derived companion",
+        "units": "A*m/(V^3*s^2)",
+        "height_m": 2.53960572e-09,
+        "new_integration": false
+      }
+    },
+    {
+      "id": "ges_mesh_current370",
+      "chapter": "17_jerk_current",
+      "engine": "portable_manifest",
+      "recipe": "examples/17_jerk_current/plot_configs/ges_mesh_current370.json",
+      "data": [
+        "examples/17_jerk_current/data/ges_current370/bulk_derived_spectrum.dat",
+        "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_xxxx.dat",
+        "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_yyyy.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_xxxx.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_yyyy.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_xxxx.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_yyyy.dat",
+        "examples/17_jerk_current/data/ges_current370/mesh_comparison_percent.dat",
+        "examples/17_jerk_current/data/ges_current370/sheet_spectrum.dat",
+        "examples/17_jerk_current/data/ges_current370/summary.json"
+      ],
+      "figures": [
+        "examples/17_jerk_current/figures/ges_mesh_current.png",
+        "examples/17_jerk_current/figures/ges_mesh_current.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/17_jerk_current/inputs/ges_spectrum_sheet.toml",
+        "examples/17_jerk_current/inputs/ges_mesh200_sheet.toml",
+        "examples/17_jerk_current/inputs/ges_mesh300_sheet.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [
+        "manifests/material_consistency.json"
+      ],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "EXPLICIT_CURRENT_UNIFIED_MODEL_AND_NATIVE_MPI_EXECUTION",
+      "calculation_reproduction_status": "Actual current native370,3independent8rank applications; no oldmodel or filename substitution, no convergence qualification by root0",
+      "current_execution370": {
+        "schema": "tutorial-current-unified-ges-jerk/1",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "current_model_R_count": 465,
+        "old165R_data_used": false,
+        "model_operator_contract": "Current accepted unified TB contains matching H/r; Jerk consumes their Fourier derivatives. It does not require the unrelated spin/advanced orbital operator classes.",
+        "temperature_K": 0,
+        "mu_eV": -2.5,
+        "photon_frequencies": 200,
+        "energy_range_eV": [
+          0.02,
+          4.0
+        ],
+        "dense_mesh": [
+          400,
+          400,
+          1
+        ],
+        "five_frequency_meshes": [
+          200,
+          300,
+          400
+        ],
+        "five_frequencies_eV": [
+          1.6,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        "broadening_type": "Gaussian",
+        "width_eV": 0.04,
+        "gaussian_standard_deviation_eV": 0.028284271247461898,
+        "transition_window_factor": 5,
+        "denominator_regularization_eV": 0.001,
+        "band_selection": "all32 model bands",
+        "projection": "ordered",
+        "sheet_axes": [
+          1,
+          2
+        ],
+        "wannier_center_convention": "Convention_II",
+        "real_space_replica_policy": "auto",
+        "fourier_backend": "mixed",
+        "fourier_NKFFT": [
+          5,
+          5,
+          1
+        ],
+        "native_extra_spin_factor": 1,
+        "sheet_height_angstrom": 25.3960572,
+        "bulk_derived_not_independent": true,
+        "mesh_checks": {
+          "mesh200tomesh300": {
+            "xxxx": {
+              "global_scale_sheet_SI": 52207622.305453725,
+              "maximum_absolute_complex_difference_sheet_SI": 4471137.923743613,
+              "maximum_normalized_complex_difference": 0.08564147774407546,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.4919164441309602e-14,
+                8.266395326328355e-05,
+                0.010993081023406114,
+                0.08564147774407546
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 98129072.32182841,
+              "maximum_absolute_complex_difference_sheet_SI": 972501.6458383352,
+              "maximum_normalized_complex_difference": 0.009910433501795228,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                2.0659555139894082e-13,
+                0.00018557156424459648,
+                0.009910433501795228,
+                0.002272434795784205
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          },
+          "mesh300tomesh400": {
+            "xxxx": {
+              "global_scale_sheet_SI": 51633699.68341049,
+              "maximum_absolute_complex_difference_sheet_SI": 1172749.498750858,
+              "maximum_normalized_complex_difference": 0.022712869810637516,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.3180052402838798e-14,
+                2.0587442506730757e-08,
+                0.006155781449259251,
+                0.022712869810637516
+              ],
+              "target": 0.01,
+              "passed": false
+            },
+            "yyyy": {
+              "global_scale_sheet_SI": 97405427.57728916,
+              "maximum_absolute_complex_difference_sheet_SI": 248856.9012990892,
+              "maximum_normalized_complex_difference": 0.0025548566182477506,
+              "per_energy_normalized_complex_difference": [
+                0.0,
+                1.30339649986347e-13,
+                1.6816167693046285e-09,
+                0.0025548566182477506,
+                0.0002812916512818542
+              ],
+              "target": 0.01,
+              "passed": true
+            }
+          }
+        },
+        "mesh_status": "NOT_CONVERGED_UNDER_STATED_ONE_PERCENT_CRITERION",
+        "imaginary_global_fraction": {
+          "xxxx": 9.62050413271793e-16,
+          "yyyy": 1.074372404160556e-15
+        },
+        "all200_frequency_mesh_convergence_claimed": false,
+        "continuous_BZ_gap_proof": false,
+        "occupancy_scope": "Chemical potential and full-band response retained. Previous current-model200square band-boundary check established20occupied states there; no new analytic continuous-BZ proof is asserted.",
+        "batch_wall_seconds": 178.45587737485766,
+        "sampled_peak_rss_kib": 87166608,
+        "swapouts": [
+          88
+        ],
+        "execution": "three concurrent8MPI applications; total30CPU112GiB1800s hard limits",
+        "strict_released_identities": 33,
+        "kernel_containment": "UNKNOWN",
+        "MPI_small_check": "Current16square/twofrequency serial vs8MPI actual364 numerical max_abs0;15identities strict",
+        "WN_source_changes": false,
+        "source_data_sha256": {
+          "mesh_comparison_percent.dat": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c",
+          "sheet_spectrum.dat": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d",
+          "bulk_derived_spectrum.dat": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+          "mesh300/jc_G_ordered_yyyy.dat": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "mesh300/jc_G_ordered_xxxx.dat": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "dense400/jc_G_ordered_yyyy.dat": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "dense400/jc_G_ordered_xxxx.dat": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "mesh200/jc_G_ordered_yyyy.dat": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "mesh200/jc_G_ordered_xxxx.dat": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+        }
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 2,
+  "periodic_normalization_migration": {
+    "schema": "tutorial-periodic-third-order-migration/1",
+    "status": "ISOLATED_PERIODIC_CHECKPOINT_VALIDATED_NOT_FORMALLY_INSTALLED",
+    "source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+    "source_role": "CHECKPOINT09_NOT_FINAL_NOT_PROMOTED",
+    "historical_results_preserved": true,
+    "new_material_integrations": 0,
+    "parsed_ordinary_inputs": 15,
+    "standalone_file_effective_readbacks": 7,
+    "Julia_model_entry_inputs": 8,
+    "valley_configurations": 192,
+    "removed_kernel_fields": [
+      "response_measure",
+      "sheet_axes",
+      "effective_thickness_angstrom"
+    ],
+    "Graphene_height_m": 1e-09,
+    "GeS_height_m": 2.53960572e-09,
+    "relative_mesh_tests_unchanged": true,
+    "true_nonperiodic_completion_implemented": false,
+    "Full": false,
+    "promotion": false,
+    "GitHub_actions": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+  "mu_ev": 5.7156290716733436,
+  "shape": [
+    200,
+    200,
+    18
+  ],
+  "energy": "E-minus-mu",
+  "u_fast": true,
+  "original_band_sha256": "ee2435c6e014cf5d46d2bde2425501e3bd97d6c26821b27363bbf3a9838de55d",
+  "array_sha256": "18b90d1ebdc9fe01dfc7fd4440474cf93c28dafcf0e7395b692d69503911b7fb",
+  "coordinates": "k=-.5u+.5v, .5u+.5v, .5u-.5v; u=i/200,v=j/200",
+  "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
+}

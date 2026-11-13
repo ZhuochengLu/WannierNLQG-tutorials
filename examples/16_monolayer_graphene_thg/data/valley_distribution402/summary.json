@@ -1,0 +1,120 @@
+{
+  "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "model_sha256": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e",
+  "target_points": 84,
+  "new_points": 72,
+  "reused_points": 12,
+  "global_convergence_claimed": false,
+  "spatial_independently_checked_full84_points": 12,
+  "resources": {
+    "batch_wall_seconds": 589.8455245420337,
+    "task_birth_to_wait_exit_seconds": 589.9899001003417,
+    "sampled_peak_rss_kib": 14000576,
+    "sampled_peak_rss_GiB": 13.35198974609375,
+    "Swapouts": [
+      88
+    ],
+    "samples": 582,
+    "caps": {
+      "cpu_budget": 8,
+      "rss_kib": 33554432,
+      "timeout_seconds": 3600,
+      "sample_seconds": 1,
+      "rss_over_samples": 3,
+      "host_swapouts_guard": true,
+      "disk_floor_bytes": 10737418240,
+      "reserve_bytes": 268435456
+    },
+    "recorded_identities_strict_GONE": 11,
+    "kernel_containment": "UNKNOWN",
+    "measured_CPU_seconds": false,
+    "parallelism": "six independent persistent single-thread Julia workers, rank1 each; no MPI collective; max6workers,8CPU cap"
+  },
+  "new_integration": {
+    "vector_batches": 29,
+    "region_calls": 174,
+    "requested_evaluations": 111360000,
+    "actual_evaluations": 88661120,
+    "termination_counts": {
+      "estimated_tolerance": 116,
+      "evaluation_budget": 58
+    },
+    "regions_with_step_overshoot": 58,
+    "max_step_overshoot": 14,
+    "embedded_estimates_not_strict_bounds": true
+  },
+  "paper_digitization_sha256": "372087868adc09cc3fed54a09e6ffe86845c4712ac959a86b40347cda19fcee9",
+  "paper_coverage_eV": [
+    0.07728717697620256,
+    1.0331337560200193
+  ],
+  "paper_sigma3_printed_SI": 6.28e-26,
+  "paper_field_factor": 8,
+  "WN_spin_display_factor": 2,
+  "schema": "tutorial-thg-valley-30meV/1",
+  "source_version": "1.2.0",
+  "resonance_low_intermediate_eV": [
+    0.03,
+    0.01,
+    0.001
+  ],
+  "temperature_K": 10,
+  "mu_eV": 0.35,
+  "tensor": "yyyy",
+  "response_measure": "sheet",
+  "prescription": "distribution_broadening",
+  "broadening_type": "Lorentzian",
+  "eta_correction": false,
+  "occupation_derivative_mode": "fermi_dirac",
+  "input_sha256": "53a8c7c844c61311b495b7eaa8f238ed5fc4492088fc32254dd5314835d8e92b",
+  "actual_new_vector_batches": 29,
+  "reused_vector_batches": 3,
+  "replay_vector_batches": 32,
+  "replay_computed_energies": 99,
+  "replay_target_energies": 84,
+  "extra_local_frequencies": [
+    0.2125,
+    0.215,
+    0.2175,
+    0.2225,
+    0.22375,
+    0.226,
+    0.227,
+    0.228,
+    0.229,
+    0.231,
+    0.232,
+    0.233,
+    0.234,
+    0.236,
+    0.23875
+  ],
+  "per_original_valley_per_vector_budget": 1920000,
+  "initial_divisions": 16,
+  "original_BZ_fraction": 0.5657239247980235,
+  "bitwise_clean_replay_claimed": false,
+  "source_batch_identity": "72newTHG402 +12exactreuseTHG394_r030_G2; clean replay recomputes3local vectors including15non-targetvalues before selecting84",
+  "kernel_containment": "UNKNOWN",
+  "formulation_relative_L2": 0.010642353944768392,
+  "maximum_pointwise_relative_complex_difference": {
+    "energy_eV": 1.0331337560200193,
+    "relative_complex_difference": 1.381690744382426,
+    "absolute_real_difference_two_spin": 1.7170761667580223e-24,
+    "absolute_imag_difference_two_spin": 7.466435475286072e-25,
+    "unregrouped_magnitude_two_spin": 9.176532205906127e-25,
+    "regrouped_magnitude_two_spin": 1.3551407393716016e-24
+  },
+  "source_region_termination_counts": {
+    "estimated_tolerance": 128,
+    "evaluation_budget": 64
+  },
+  "source_region_actual_evaluations": 97832960,
+  "table_sha256": {
+    "thg_regrouped_chi_yyyy.dat": "271dedf70796b57b70665b3ebe14db97ba787b05a6d761445f28e037f8ad3c26",
+    "wn30_regrouped_two_spin.dat": "2615ab7dbc803457cfafbe1bb321be137484c41cf632dac33ad714ea7208ec94",
+    "wn30_unregrouped_two_spin.dat": "131ed65e30c8fe958ef25bacde9e94b7248d09c83fd5395e9b780f833a8a480e",
+    "thg_unregrouped_sigma_yyyy.dat": "47db622f59033a8d8e0b859827923588f4837d9be57772211eefc311d8a84dc2",
+    "thg_regrouped_sigma_yyyy.dat": "49a2550b5ae152a88cc53f1e7ec1207b9aaf2adf55b32fb47f29b3c027d9ca3e",
+    "thg_unregrouped_chi_yyyy.dat": "53dc864305a3335b28aaaa35cd6c1a145b344b8981eb1c80d815e9498462adf5"
+  }
+}

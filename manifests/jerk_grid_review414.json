@@ -1,0 +1,177 @@
+{
+  "new_response_calculations": 0,
+  "results": [
+    {
+      "component": "xxxx",
+      "meshes": [
+        200,
+        300
+      ],
+      "energies_ev": [
+        1.6,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "scale": 52207622.305453725,
+      "per_frequency_change": [
+        0.0,
+        2.4919164441309605e-14,
+        8.266395326328355e-05,
+        0.010993081023406114,
+        0.08564147774407546
+      ],
+      "max_change": 0.08564147774407546,
+      "threshold": 0.01,
+      "status": "FAIL",
+      "definition": "max|a-b| / max magnitude over both five-frequency arrays",
+      "sources": {
+        "mesh200": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_xxxx.dat",
+          "sha256": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24",
+          "original_frequency_count": 5
+        },
+        "mesh300": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_xxxx.dat",
+          "sha256": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "original_frequency_count": 5
+        },
+        "dense400": {
+          "path": "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_xxxx.dat",
+          "sha256": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "original_frequency_count": 200
+        }
+      }
+    },
+    {
+      "component": "xxxx",
+      "meshes": [
+        300,
+        400
+      ],
+      "energies_ev": [
+        1.6,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "scale": 51633699.68341049,
+      "per_frequency_change": [
+        0.0,
+        1.3180052402838798e-14,
+        2.0587442506730757e-08,
+        0.006155781449259251,
+        0.022712869810637516
+      ],
+      "max_change": 0.022712869810637516,
+      "threshold": 0.01,
+      "status": "FAIL",
+      "definition": "max|a-b| / max magnitude over both five-frequency arrays",
+      "sources": {
+        "mesh200": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_xxxx.dat",
+          "sha256": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24",
+          "original_frequency_count": 5
+        },
+        "mesh300": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_xxxx.dat",
+          "sha256": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671",
+          "original_frequency_count": 5
+        },
+        "dense400": {
+          "path": "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_xxxx.dat",
+          "sha256": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7",
+          "original_frequency_count": 200
+        }
+      }
+    },
+    {
+      "component": "yyyy",
+      "meshes": [
+        200,
+        300
+      ],
+      "energies_ev": [
+        1.6,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "scale": 98129072.32182841,
+      "per_frequency_change": [
+        0.0,
+        2.0659555139894082e-13,
+        0.00018557156424459648,
+        0.009910433501795228,
+        0.002272434795784205
+      ],
+      "max_change": 0.009910433501795228,
+      "threshold": 0.01,
+      "status": "PASS",
+      "definition": "max|a-b| / max magnitude over both five-frequency arrays",
+      "sources": {
+        "mesh200": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_yyyy.dat",
+          "sha256": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "original_frequency_count": 5
+        },
+        "mesh300": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_yyyy.dat",
+          "sha256": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "original_frequency_count": 5
+        },
+        "dense400": {
+          "path": "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_yyyy.dat",
+          "sha256": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "original_frequency_count": 200
+        }
+      }
+    },
+    {
+      "component": "yyyy",
+      "meshes": [
+        300,
+        400
+      ],
+      "energies_ev": [
+        1.6,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "scale": 97405427.57728916,
+      "per_frequency_change": [
+        0.0,
+        1.3033964998634703e-13,
+        1.6816167693046285e-09,
+        0.0025548566182477506,
+        0.0002812916512818542
+      ],
+      "max_change": 0.0025548566182477506,
+      "threshold": 0.01,
+      "status": "PASS",
+      "definition": "max|a-b| / max magnitude over both five-frequency arrays",
+      "sources": {
+        "mesh200": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_yyyy.dat",
+          "sha256": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3",
+          "original_frequency_count": 5
+        },
+        "mesh300": {
+          "path": "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_yyyy.dat",
+          "sha256": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8",
+          "original_frequency_count": 5
+        },
+        "dense400": {
+          "path": "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_yyyy.dat",
+          "sha256": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d",
+          "original_frequency_count": 200
+        }
+      }
+    }
+  ]
+}

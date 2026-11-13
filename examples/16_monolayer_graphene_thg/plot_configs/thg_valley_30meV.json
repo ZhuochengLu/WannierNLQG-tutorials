@@ -1,0 +1,27 @@
+{
+  "data_folder": "../data/valley_volume_migration425",
+  "paper": "../data/paper_fig3a382/display_fourier_si.dat",
+  "widths_eV": [
+    0.03,
+    0.01,
+    0.001
+  ],
+  "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "model_sha256": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e",
+  "colors": [
+    "#104E8B",
+    "#FF7F24"
+  ],
+  "spin_display_factor": 2,
+  "paper_sigma3_printed_SI": 6.28e-26,
+  "paper_field_factor": 8,
+  "output_stems": {
+    "magnitude": "thg_valley_magnitude",
+    "complex": "thg_valley_complex"
+  },
+  "complex_symlog_linthresh_SI": 1e-22,
+  "raw_conductivity_units": "A*m/V^3",
+  "plotted_conductivity_units": "A*m^2/V^3",
+  "volume_to_surface_height_m": 1e-09,
+  "normalization_validation_source_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c"
+}

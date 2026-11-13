@@ -1,0 +1,118 @@
+{
+  "status": "SAVED_PERIODIC_SURFACE_TO_VOLUME_DERIVATIONS_NOT_NEW_RESPONSES",
+  "THG_records": [
+    {
+      "parent": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_regrouped_chi_yyyy.dat",
+      "parent_sha256": "271dedf70796b57b70665b3ebe14db97ba787b05a6d761445f28e037f8ad3c26",
+      "output": "thg_regrouped_chi_yyyy_volume_derived.dat",
+      "sha256": "5dcbc627234358fcf07aaf72072cbd407fc5c2c14928765cc8d0671b751128c7",
+      "rows": 84,
+      "height_m": 1e-09,
+      "source_units": "m^3/V^2",
+      "output_units": "m^2/V^2",
+      "energy_columns": [
+        0
+      ],
+      "spin_copies": 1,
+      "surface_reconstruction_max_relative_error": 2.0458953177281086e-16,
+      "operation": "divide response columns by h; no execution identity relabel",
+      "new_integration": false
+    },
+    {
+      "parent": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_regrouped_sigma_yyyy.dat",
+      "parent_sha256": "49a2550b5ae152a88cc53f1e7ec1207b9aaf2adf55b32fb47f29b3c027d9ca3e",
+      "output": "thg_regrouped_sigma_yyyy_volume_derived.dat",
+      "sha256": "68ad910b09c2e8c5d5e207e0c55b68f293353f37e7759e49418d7f5b3d311e4c",
+      "rows": 84,
+      "height_m": 1e-09,
+      "source_units": "A*m^2/V^3",
+      "output_units": "A*m/V^3",
+      "energy_columns": [
+        0
+      ],
+      "spin_copies": 1,
+      "surface_reconstruction_max_relative_error": 2.00963478772473e-16,
+      "operation": "divide response columns by h; no execution identity relabel",
+      "new_integration": false
+    },
+    {
+      "parent": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_unregrouped_chi_yyyy.dat",
+      "parent_sha256": "53dc864305a3335b28aaaa35cd6c1a145b344b8981eb1c80d815e9498462adf5",
+      "output": "thg_unregrouped_chi_yyyy_volume_derived.dat",
+      "sha256": "3f22d473da61ae259b84dda09408fd543209a8039c37e888765467332a478342",
+      "rows": 84,
+      "height_m": 1e-09,
+      "source_units": "m^3/V^2",
+      "output_units": "m^2/V^2",
+      "energy_columns": [
+        0
+      ],
+      "spin_copies": 1,
+      "surface_reconstruction_max_relative_error": 2.0521529210503405e-16,
+      "operation": "divide response columns by h; no execution identity relabel",
+      "new_integration": false
+    },
+    {
+      "parent": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_unregrouped_sigma_yyyy.dat",
+      "parent_sha256": "47db622f59033a8d8e0b859827923588f4837d9be57772211eefc311d8a84dc2",
+      "output": "thg_unregrouped_sigma_yyyy_volume_derived.dat",
+      "sha256": "d7c5c55ce20841bf3d303f179b38a875aeac6db23ddc33dfced4e70202349cde",
+      "rows": 84,
+      "height_m": 1e-09,
+      "source_units": "A*m^2/V^3",
+      "output_units": "A*m/V^3",
+      "energy_columns": [
+        0
+      ],
+      "spin_copies": 1,
+      "surface_reconstruction_max_relative_error": 2.009737892130126e-16,
+      "operation": "divide response columns by h; no execution identity relabel",
+      "new_integration": false
+    },
+    {
+      "parent": "examples/16_monolayer_graphene_thg/data/valley_distribution402/wn30_regrouped_two_spin.dat",
+      "parent_sha256": "2615ab7dbc803457cfafbe1bb321be137484c41cf632dac33ad714ea7208ec94",
+      "output": "wn30_regrouped_two_spin_volume_derived.dat",
+      "sha256": "7274afbf5721237b4b503dcaa06b62222a2b9f41c9e69707d682ee30219e81c7",
+      "rows": 84,
+      "height_m": 1e-09,
+      "source_units": "A*m^2/V^3",
+      "output_units": "A*m/V^3",
+      "energy_columns": [
+        0,
+        1
+      ],
+      "spin_copies": 2,
+      "surface_reconstruction_max_relative_error": 2.0008101907688496e-16,
+      "operation": "divide response columns by h; no execution identity relabel",
+      "new_integration": false
+    },
+    {
+      "parent": "examples/16_monolayer_graphene_thg/data/valley_distribution402/wn30_unregrouped_two_spin.dat",
+      "parent_sha256": "131ed65e30c8fe958ef25bacde9e94b7248d09c83fd5395e9b780f833a8a480e",
+      "output": "wn30_unregrouped_two_spin_volume_derived.dat",
+      "sha256": "3a146304b4125c3b2324b499dcde8772a009f937ebea8d787aafd811acb43e65",
+      "rows": 84,
+      "height_m": 1e-09,
+      "source_units": "A*m^2/V^3",
+      "output_units": "A*m/V^3",
+      "energy_columns": [
+        0,
+        1
+      ],
+      "spin_copies": 2,
+      "surface_reconstruction_max_relative_error": 2.0181833930023114e-16,
+      "operation": "divide response columns by h; no execution identity relabel",
+      "new_integration": false
+    }
+  ],
+  "GeS_bulk": {
+    "parent": "examples/17_jerk_current/data/ges_current370/bulk_derived_spectrum.dat",
+    "sha256": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158",
+    "height_m": 2.53960572e-09,
+    "existing_derived_data_reused": true
+  },
+  "source_validation_manifest": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+  "historical_THG_source": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "new_response_integrals": 0
+}

@@ -1,0 +1,63 @@
+{
+  "output": {
+    "stem": "kslice_shift_spin_yzxy_fullbands",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "map",
+    "data": "../data/shift_yzxy_log_display.dat",
+    "title": "GeS shift spin current: yzxy, 3.015 eV",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "xlabel": "$u$ (fractional)",
+    "ylabel": "$v$ (fractional)",
+    "xticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "yticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "xticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      "0.25"
+    ],
+    "yticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      "0.25"
+    ],
+    "color": {
+      "kind": "signed_log",
+      "limit": 0.71,
+      "linthresh": 0.001,
+      "cmap": "RdBu_r"
+    },
+    "colorbar_label": "Im yzxy ($10^{12}$ native units, mesh-weighted)",
+    "figsize": [
+      6.0,
+      4.8
+    ],
+    "aspect": "equal"
+  }
+}

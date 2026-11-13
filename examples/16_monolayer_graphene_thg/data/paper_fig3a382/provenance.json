@@ -1,0 +1,110 @@
+{
+  "schema": "tutorial-paper-vector-overlay/1",
+  "status": "DIGITIZED_LITERATURE_COMPARISON_NOT_EXACT_REPRODUCTION",
+  "citation": {
+    "authors": "F. Hipolito, A. Taghizadeh, T. G. Pedersen",
+    "journal": "Physical Review B",
+    "volume": 98,
+    "article": 205420,
+    "year": 2018,
+    "doi": "10.1103/PhysRevB.98.205420",
+    "figure": "3(a)",
+    "published_page": "205420-6",
+    "url": "https://cng.dtu.dk/-/media/centre/cng_nanostructured_graphene/research/publications/2018/42-18_pdf.pdf",
+    "pdf_sha256": "dd7fa9f0a26f7637223f75dabdb4977757ae5cd87cc3916fd138bd0f2e7ab4b8"
+  },
+  "digitization": {
+    "method": "122 vertices of the published PDF vector polyline, olive curve RGB(0.70196,0.52941,0); axes calibrated from printed ticks, affine x and log10-y; no response interpolation, smoothing or fitted amplitude",
+    "author_original_numerical_data": false,
+    "raw_file": "digitized_log10.dat",
+    "raw_sha256": "372087868adc09cc3fed54a09e6ffe86845c4712ac959a86b40347cda19fcee9",
+    "columns": [
+      "photon_energy_eV",
+      "log10(abs(paper_sigma_bar22)/paper_sigma3)"
+    ],
+    "retained_range_eV": [
+      0.07728717697620256,
+      1.0331337560200193
+    ],
+    "no_extrapolation": true,
+    "nodes": 122,
+    "calibration_x_pdf_pt_per_eV": [
+      174.04152888888885,
+      69.24682155555557
+    ],
+    "calibration_y_pdf_pt_per_decade": [
+      14.653006999999947,
+      661.4532325000004
+    ],
+    "geometry_uncertainty_energy_eV": 0.0015,
+    "geometry_uncertainty_log10_magnitude": 0.03,
+    "uncertainty_scope": "Retained conservative tick/stroke envelope, not statistical CI, quadrature error or author interpolation uncertainty",
+    "fresh_vector_reconstruction_max_abs": [
+      0.0,
+      0.0
+    ],
+    "raw_identity_freshly_verified": true
+  },
+  "normalization": {
+    "mu_eV": 0.35,
+    "sigma3_choice": "literal printed Fig3 unit; not the numerically evaluated definition",
+    "sigma3_printed_SI": 6.28e-26,
+    "sigma3_definition_SI": 6.816929757497444e-26,
+    "ratio_definition_to_printed": 1.0854983690282556,
+    "SI_units": "A*m^2/V^3 = S*m^2/V^2",
+    "constants": {
+      "elementary_charge_C": 1.602176634e-19,
+      "hbar_J_s": 1.054571817e-34,
+      "bond_m": 1.42e-10,
+      "hopping_abs_J": 4.806529901999999e-19
+    },
+    "sigma3_definition_formula": "e^4*a0^2/(8*gamma0_J^2*hbar)",
+    "display_formula": "x=energy_eV/0.35; paper_Sigma_Fourier_abs_SI=8*6.28e-26*10**digitized_log10_magnitude",
+    "field_conversion_factor": 8,
+    "field_definition": "E(t)=mathcalE exp(-i omega t)+c.c.; mathcalE=E_ph/2. j_plus(3omega)=Sigma_F mathcalE^3=sigma_paper (E_ph)^3, hence Sigma_F=8 sigma_paper. Assumes the plotted coefficient follows published Eqs2/5. This does not establish the authors actual Fig3 generator normalization.",
+    "WN_display_formula": "2*abs(native_one_spin_Sigma_Fourier_SI), already applied in display_sigma.dat; unchanged",
+    "extra_spin_factor_for_paper": 1,
+    "extra_valley_factor": 1,
+    "equal_yyyy_frequency_permutation_factor": 1,
+    "additional_factorial": 1,
+    "fitted_amplitude_factor": null,
+    "author_Fig3_generator_available": false,
+    "absolute_normalization_qualification": "UNRESOLVED: formal Eq2/5 conversion is explicit; Fig3 generator unavailable, no inferred factor-four correction"
+  },
+  "separate_formula_issue": {
+    "status": "UNRESOLVED_DISPLAYED_FORMULA_COEFFICIENT_CONFLICT",
+    "scope": "Existing independent Dirac audits: literal A4d with the stated two spins/two valleys gives a cubic coefficient four times printed Eqs10/11b/12. This is independent of the sigma3 numerical unit discrepancy; it is not proof about author code or permission to rescale curves.",
+    "factor_four_applied_to_either_curve": false
+  },
+  "compatibility": {
+    "tensor": "paper effective22=yyyy; no mixed-index multiplicity",
+    "model": "same gapless nearest-neighbor two-orbital graphene, bond1.42Angstrom/hopping-3eV; equivalent embedded Bloch Hamiltonian",
+    "temperature_K": [
+      10,
+      10
+    ],
+    "mu_eV": [
+      0.35,
+      0.35
+    ],
+    "spin": "paper states g=2; WN one-spin model displayed times2",
+    "paper_integration": "full-dispersion BZ sum; author quadrature nodes/budget not supplied",
+    "WN_integration": "six original K/Kprime folded rectangles, BZ fraction0.5657239247980235; no selected-area renormalization, no boundary correction",
+    "paper_frequency_prescription": "adiabatic omega+i eta, hbar eta=0.01eV; cumulative harmonic widths eta,2eta,3eta",
+    "WN_frequency_prescription": "distribution_broadening/Lorentzian; resonance0.01eV, low-frequency0.01eV, intermediate0.001eV; eta_correction=false; exact Fermi-Dirac derivatives",
+    "paper_orbital_gauge": "paper embedded nearest-neighbor structure factor; exact author implementation unavailable",
+    "WN_orbital_gauge": "Convention II plus explicit point-orbital positions",
+    "paper_separate_intermediate_parameter": "not supplied as the current WN independent0.001eV control",
+    "quantitative_agreement_or_convergence_claimed": false
+  },
+  "WN_result_unchanged": {
+    "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "execution": "THG356",
+    "frequencies": 84,
+    "budget_terminations": 64,
+    "global_complex_formulation_relative_L2": 0.007530943762445329,
+    "maximum_pointwise_relative_difference": 0.4528376692730415,
+    "integration_and_expression_effects_separated": false,
+    "raw_tables_modified": false
+  }
+}

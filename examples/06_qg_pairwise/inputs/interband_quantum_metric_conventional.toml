@@ -1,0 +1,35 @@
+# Explicit new-default settings; computed with frozen f278 development source.
+# Enable only after the stable-source handoff; old regularized/total input is archived.
+[ model ]
+source = "wannier"
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+real_space_replica_policy = "auto"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 2
+vector_1 = [1.0, 0.0, 0.0]
+vector_2 = [0.0, 1.0, 0.0]
+
+[ response.tasks ]
+
+[ response.tasks.kslice_interband_quantum_metric_conventional ]
+kind = "interband_quantum_metric"
+
+[ response.tasks.kslice_interband_quantum_metric_conventional.observable ]
+component = [2, 2]
+first = [21, 22]
+kind = "interband_groups"
+second = [19, 20]
+
+[ response.tasks.kslice_interband_quantum_metric_conventional.numerics ]
+denominator_regularization = 0.0

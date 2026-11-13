@@ -1,0 +1,31 @@
+# Editable tutorial input. Numerical values retained; new-default migration is a separate step.
+[ model ]
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 2
+vector_1 = [1.0, 0.0, 0.0]
+vector_2 = [0.0, 1.0, 0.0]
+
+[ response.tasks ]
+
+[ response.tasks.kslice_triple_phase_product_conventional ]
+kind = "triple_phase_product"
+
+[ response.tasks.kslice_triple_phase_product_conventional.observable ]
+component = [2, 2, 2]
+first = [21, 22]
+kind = "triple_groups"
+second = [23, 24]
+third = [19, 20]

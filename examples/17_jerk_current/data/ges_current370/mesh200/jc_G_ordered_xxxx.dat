@@ -1,0 +1,14 @@
+# JC G_ordered component=xxxx units=A*m^2/(V^3*s^2) measure=sheet
+# response integrated over the declared domain; one count per explicit model state
+# integration_bounds=nothing
+# integration_dimension=3
+# model_periodic=true
+# integration_measure=fractional full-BZ average
+# boundary_corrections=not included for finite-domain formulas derived under periodic-BZ assumptions
+# material coefficient excludes lifetimes; ordered optical slots b:+omega,c:-omega,d:0; degeneracies diagnostic
+# energy_eV total_re total_im
+1.60000000000000009e+00 0.00000000000000000e+00 0.00000000000000000e+00
+2.00000000000000000e+00 1.50182217008589825e+05 2.78670656000515682e-09
+2.50000000000000000e+00 1.41325537981329989e+07 -3.27197193538813037e-08
+3.00000000000000000e+00 5.22076223054537252e+07 -2.62340722502787591e-08
+3.50000000000000000e+00 4.22265103722093627e+07 -1.28656690435957322e-07

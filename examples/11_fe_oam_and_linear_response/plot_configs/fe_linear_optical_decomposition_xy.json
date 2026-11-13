@@ -1,0 +1,77 @@
+{
+  "output": {
+    "stem": "fe_linear_optical_decomposition_xy",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "line",
+    "figsize": [
+      6.4,
+      3.5
+    ],
+    "title": "Fe optical conductivity: Conventional, 0 K",
+    "xlabel": "Photon energy (eV)",
+    "ylabel": "$\\mathrm{Re}\\,\\sigma_{xy}$ (S/m)",
+    "xlim": [
+      0,
+      8
+    ],
+    "guide_y": [
+      0
+    ],
+    "legend": true,
+    "legend_ncol": 2,
+    "series": [
+      {
+        "data": "../data/linear_optical_response_drude-0670b356.dat",
+        "x_column": 0,
+        "y_column": 3,
+        "label": "drude",
+        "color": "#4e79a7",
+        "linestyle": "-"
+      },
+      {
+        "data": "../data/linear_optical_response_quantum_metric-53f16779.dat",
+        "x_column": 0,
+        "y_column": 3,
+        "label": "quantum metric",
+        "color": "#59a14f",
+        "linestyle": "-"
+      },
+      {
+        "data": "../data/linear_optical_response_berry_curvature-334e2753.dat",
+        "x_column": 0,
+        "y_column": 3,
+        "label": "Berry/Hall optical",
+        "color": "#b07aa1",
+        "linestyle": "-"
+      },
+      {
+        "data": "../data/linear_optical_response_total-5686cbf5.dat",
+        "x_column": 0,
+        "y_column": 3,
+        "label": "total",
+        "color": "#222222",
+        "linestyle": "-"
+      }
+    ],
+    "yticks": [
+      -60000,
+      -40000,
+      -20000,
+      0,
+      20000
+    ],
+    "yticklabels": [
+      "\\textnormal{-60000}",
+      "\\textnormal{-40000}",
+      "\\textnormal{-20000}",
+      "\\textnormal{0}",
+      "\\textnormal{20000}"
+    ]
+  }
+}

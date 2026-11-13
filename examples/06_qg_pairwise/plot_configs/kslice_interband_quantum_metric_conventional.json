@@ -1,27 +1,36 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_interband_quantum_metric_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_interband_quantum_metric_conventional/GeS_iqmk_conv.dat",
-      "title": "Interband Quantum Metric",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_interband_quantum_metric_conventional",
+    "stem": "kslice_interband_quantum_metric_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
-    ]
+      "png",
+      "pdf"
+    ],
+    "outlined_pdf": false
+  },
+  "figure": {
+    "kind": "map",
+    "figsize": [
+      6.6,
+      5.0
+    ],
+    "data": "../data/model_iqmk_conv-7153546b.dat",
+    "transform": [
+      "transpose"
+    ],
+    "color": {
+      "kind": "positive_log",
+      "cmap": "viridis"
+    },
+    "extent": [
+      -0.0025,
+      0.9975,
+      -0.0025,
+      0.9975
+    ],
+    "xlabel": "$u$",
+    "ylabel": "$v$",
+    "colorbar_label": "$g^{21,22;19,20}_{yy}\\ (\\mathrm{\\AA}^{2})$",
+    "title": "GeS, $\\eta=0$"
   }
 }

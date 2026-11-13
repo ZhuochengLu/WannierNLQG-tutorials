@@ -1,0 +1,38 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+model_file = "../../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [4, 4]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 2
+vector_1 = [1.0, 0.0, 0.0]
+vector_2 = [0.0, 1.0, 0.0]
+
+[ response.tasks ]
+
+[ response.tasks.kslice_shift_current_geometric_loop ]
+fermi_energy_ev = -2.5
+kind = "shift_current"
+method = "Geometric_Loop"
+photon_energies_ev = [3.0]
+temperature_k = 0.0
+
+[ response.tasks.kslice_shift_current_geometric_loop.numerics ]
+broadening = 0.06
+finite_difference_step = 0.0001
+
+[ response.tasks.kslice_shift_current_geometric_loop.observable ]
+component = [2, 2, 2]
+conduction = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+kind = "transition"
+valence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]

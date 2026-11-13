@@ -1,0 +1,22 @@
+{
+  "original_figure_id": "audited_previous_new_Fe_review",
+  "original_data_sha256": {
+    "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-review/dft_absolute.dat": "59c64881815866db82bb27e648761d1294783bded4bbef2e0a1ec2e0c7b8d952",
+    "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-review/new_tb_absolute.dat": "6ada0279b34dac5a0df46c92bdaaf7dcfbc0279f92dcc494bf3670a823b4d486",
+    "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-review/old_tb_absolute.dat": "ffb60753723b59f00e8c2488a139c6abf223db5ca5122b2b384fa42a05bc76bc"
+  },
+  "response_recomputed": false,
+  "original_input_sha256": {},
+  "scientific_identity": {
+    "new_default_result": false
+  },
+  "historical_control_not_correctness_oracle": true,
+  "current326_curve_validation": {
+    "native_table_byte_exact": true,
+    "native_sha256": "eb4ca8ce8e97743d65d567e3ff986407dcb90d89e8a43095febc6e7594da1dd9",
+    "absolute_curve_energy_and_coordinate_max_error": 0.0,
+    "energy_reference_ev": 5.7156290716733436,
+    "actual_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "new_render_or_material_accuracy_claimed": false
+  }
+}

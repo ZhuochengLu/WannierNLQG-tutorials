@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this material dataset when reusing it. Cite the software and relevant methods separately when they are used."
+title: "Fe model and real-space operator dataset for WannierNLQG Tutorials"
+type: dataset
+authors:
+  - family-names: Lu
+    given-names: Zhuocheng
+version: 1.2.0
+license: CC-BY-4.0
+url: "https://github.com/ZhuochengLu/WannierNLQG-tutorials"
+abstract: "Original material model/operator numerical data by Zhuocheng Lu. Mathematical model format3.0; dataset release version1.2.0. No release date or DOI is asserted. Third-party literature reference curves and tutorial code are outside this dataset license."

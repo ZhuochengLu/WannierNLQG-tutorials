@@ -1,0 +1,157 @@
+{
+  "schema": "tutorial-data-rights-review/1",
+  "status": "APPROVED_MATERIAL_CC_BY4_AND_ATTRIBUTION_APPLIED_THIRD_PARTY_REFERENCE_HANDLING_RECORDED",
+  "code_license": {
+    "spdx": "GPL-2.0-only",
+    "path": "LICENSE",
+    "license_file_sha256": "aaf135472f81c5b4a0dca9367e5bb5e9750032b5bebe5442b36e4c0a47430df3",
+    "new_license_assigned": false
+  },
+  "material_files": [
+    {
+      "logical_path": "Materials/GeS/model_tb.dat",
+      "bytes": 94298181,
+      "sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "technical_provenance": "GeS-pairWS-canonical-spin034",
+      "ownership": "user confirmed self-generation and authority to authorize public distribution",
+      "missing": [],
+      "may_prepare_locally": true,
+      "public_distribution_cleared": true,
+      "original414_ownership_observation": "not evidenced by reviewed run records",
+      "redistribution_authority_confirmed": true,
+      "remaining_reason": "No license/credit decision pending; execution of public publication remains explicitly unapproved",
+      "license": "CC-BY-4.0",
+      "creator": "Zhuocheng Lu"
+    },
+    {
+      "logical_path": "Materials/GeS/operators.h5",
+      "bytes": 4024659779,
+      "sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+      "technical_provenance": "GeS-pairWS-canonical-spin034",
+      "ownership": "user confirmed self-generation and authority to authorize public distribution",
+      "missing": [],
+      "may_prepare_locally": true,
+      "public_distribution_cleared": true,
+      "original414_ownership_observation": "not evidenced by reviewed run records",
+      "redistribution_authority_confirmed": true,
+      "remaining_reason": "No license/credit decision pending; execution of public publication remains explicitly unapproved",
+      "license": "CC-BY-4.0",
+      "creator": "Zhuocheng Lu"
+    },
+    {
+      "logical_path": "Materials/Fe/model_tb.dat",
+      "bytes": 71573382,
+      "sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "technical_provenance": "Fe-U559-orbital-frame145",
+      "ownership": "user confirmed self-generation and authority to authorize public distribution",
+      "missing": [],
+      "may_prepare_locally": true,
+      "public_distribution_cleared": true,
+      "original414_ownership_observation": "not evidenced by reviewed run records",
+      "redistribution_authority_confirmed": true,
+      "remaining_reason": "No license/credit decision pending; execution of public publication remains explicitly unapproved",
+      "license": "CC-BY-4.0",
+      "creator": "Zhuocheng Lu"
+    },
+    {
+      "logical_path": "Materials/Fe/operators.h5",
+      "bytes": 3005495097,
+      "sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+      "technical_provenance": "Fe-U559-orbital-frame145",
+      "ownership": "user confirmed self-generation and authority to authorize public distribution",
+      "missing": [],
+      "may_prepare_locally": true,
+      "public_distribution_cleared": true,
+      "original414_ownership_observation": "not evidenced by reviewed run records",
+      "redistribution_authority_confirmed": true,
+      "remaining_reason": "No license/credit decision pending; execution of public publication remains explicitly unapproved",
+      "license": "CC-BY-4.0",
+      "creator": "Zhuocheng Lu"
+    }
+  ],
+  "third_party_curve": {
+    "path": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/digitized_log10.dat",
+    "sha256": "372087868adc09cc3fed54a09e6ffe86845c4712ac959a86b40347cda19fcee9",
+    "source": "Hipolito, Taghizadeh, Pedersen, PRB98,205420(2018), Fig3(a)",
+    "doi": "10.1103/PhysRevB.98.205420",
+    "type": "122point digitization, not author raw data",
+    "redistribution_permission": "not established in reviewed records",
+    "attribution": "present in chapter16; not itself clearance",
+    "user_approved_treatment": "Retain attributed independently redrawn digitization with approximation disclosure and data-license exclusion",
+    "included_in_material_license": false,
+    "publisher_permission_claimed": false,
+    "automatic_permission_requirement_claimed": false
+  },
+  "excluded_archive_members": [
+    "VASP executables or source",
+    "POTCAR/pseudopotential databases",
+    "WAVECAR",
+    "vaspout.h5",
+    "unrelated raw solver outputs"
+  ],
+  "official_sources": [
+    "https://vasp.at/info/faq/",
+    "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
+    "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+  ],
+  "limitation": "No data license inferred from GPL code license, tool execution, file possession or previous upload; no specific license conflict established.",
+  "follow_up416": {
+    "source_known": true,
+    "authority_to_distribute": "await explicit confirmation for each GeS/Fe family; not disproved",
+    "data_license": "not selected; recommend CC BY4.0 if authorized producer credit is intended; CC0 alternative if waiver is intended and authorized",
+    "attribution": "Confirm data authors/institution and required upstream references; generated-by/run metadata is insufficient to choose names",
+    "license_options": {
+      "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",
+      "CC0-1.0": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "no_license_applied": true,
+    "paper": {
+      "chapter": "16_monolayer_graphene_thg",
+      "source": "Hipolito, Taghizadeh, Pedersen, PRB98,205420(2018), Fig3(a), mu0.35eV olive curve",
+      "files": {
+        "digitization": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/digitized_log10.dat",
+        "converted_display": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/display_fourier_si.dat",
+        "provenance": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/provenance.json"
+      },
+      "kind": "122 calibrated vertices traced from publisher PDF vector polyline; not copied raster/page, author array or independent response calculation",
+      "publisher_copyright": "2018 American Physical Society; no CC license found on inspected article/PDF",
+      "arxiv_license": "non-exclusive license to arXiv; not a CC redistribution grant to the public",
+      "author_source_archive": "328392-byte arXiv v3 source archive: one.tex,one.bbl,six figurePDFs; no numerical data arrays or response simulation code members",
+      "separate_author_data_found": false,
+      "search_limits": "Inspected APS article/PDF, cited CNG copy, arXiv abstract/license/source members and targeted title/DOI code/data search; absence is limited to these sources",
+      "legal_scope": "Facts/methods/independent computations are not automatically protected expressions. No categorical requirement for permission for every numerical value; applicability of a data-fact/exception basis to this entire traced curve is not established here. No contrary license conflict is proven.",
+      "unchanged_display": "8*6.28e-26*10**digitized_log10, no fitted amplitude; numerical facts/units preserved",
+      "options": [
+        "Keep traced curve with applicable permission/license or documented exception/factual-data basis, include source and required credit; do not relicense APS figure content as own GPL/CC data",
+        "If no suitable basis is established, user may choose paper link plus existing independent WN curves, retaining trace privately; not enacted",
+        "A separate existing independent analytic/model reference may be used only under its own accurately labeled model/prescription; not called the published curve or a new exact reproduction; no new calculation authorized by this review"
+      ],
+      "sources": [
+        "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.205420",
+        "https://cng.dtu.dk/-/media/centre/cng_nanostructured_graphene/research/publications/2018/42-18_pdf.pdf",
+        "https://arxiv.org/abs/1802.01430",
+        "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+        "https://journals.aps.org/copyrightFAQ.html",
+        "https://stm-assoc.org/what-we-do/core-services/ip-copyright/permissions/permissions-guidelines/"
+      ],
+      "actual_plot_consumers": [
+        "examples/16_monolayer_graphene_thg/plot_configs/thg_valley_30meV.json"
+      ]
+    },
+    "details": "manifests/release_review416.json"
+  },
+  "material_authority_confirmation": "manifests/material_authority418.json",
+  "follow_up418": {
+    "material_authority": "CONFIRMED_BY_USER",
+    "data_license": "NOT_SELECTED",
+    "final_attribution": "NOT_SPECIFIED",
+    "paper_curve": "not included in material confirmation"
+  },
+  "current_decision420": {
+    "material_license": "CC-BY-4.0",
+    "data_author": "Zhuocheng Lu",
+    "authority_confirmed": true,
+    "third_party_reference": "Retain122-point digitized approximation, cited and excluded from data license; no publisher permission assertion",
+    "GitHub_submission": "AWAITING_NEXT_USER_CONFIRMATION"
+  }
+}

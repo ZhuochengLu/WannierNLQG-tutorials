@@ -1,0 +1,28 @@
+# Editable tutorial input. Numerical values retained; new-default migration is a separate step.
+[ model ]
+real_space_replica_policy = "auto"
+model_file = "../../../Materials/Fe/model_tb.dat"
+real_space_operator_bundle_file = "../../../Materials/Fe/operators.h5"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [40, 40, 40]
+kind = "bz_mesh"
+spatial_dimension = 3
+
+[ response.tasks ]
+
+[ response.tasks.oam_conventional_T000 ]
+fermi_energies_ev = [5.7156290716733436]
+input_semantics = "projected_energy_overlap"
+kind = "orbital_magnetization"
+temperature_k = 0.0
+
+[response.tasks.oam_conventional_T000.numerics]
+denominator_regularization = 0.001

@@ -1,0 +1,28 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+identity = "rice_mele/analytic/polar"
+source = "julia"
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [801, 1]
+kind = "bz_mesh"
+spatial_dimension = 2
+
+[ response.tasks ]
+
+[ response.tasks.analytic_polar ]
+fermi_energy_ev = 0.0
+kind = "shift_current"
+photon_energy_max_ev = 4.0
+photon_energy_min_ev = 0.0
+photon_energy_num_points = 401
+temperature_k = 0.0
+
+[ response.tasks.analytic_polar.numerics ]
+broadening = 0.05
+denominator_regularization = 0.0001

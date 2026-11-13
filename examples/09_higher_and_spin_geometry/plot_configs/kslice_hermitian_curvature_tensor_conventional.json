@@ -1,27 +1,38 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_hermitian_curvature_tensor_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_hermitian_curvature_tensor_conventional/GeS_hctk_r_conv.dat",
-      "title": "Hermitian Curvature Tensor",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_hermitian_curvature_tensor_conventional",
+    "stem": "kslice_hermitian_curvature_tensor_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "map",
+    "data": "../data/model_hctk_r_conv-30d759e1.dat",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5,
+      0.5,
+      -0.5,
+      0.5
+    ],
+    "aspect": "equal",
+    "xlabel": "$u$ along $\\bm{v}_1$",
+    "ylabel": "$v$ along $\\bm{v}_2$",
+    "title": "Hermitian Curvature Tensor",
+    "colorbar_label": "native output units",
+    "color": {
+      "kind": "diverging",
+      "cmap": "RdBu_r",
+      "limit": 6.298695442377166e-09
+    }
   }
 }

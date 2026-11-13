@@ -1,27 +1,46 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_berry_curvature_quadrupole_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_berry_curvature_quadrupole_conventional/GeS_bcqk_subspace_19_20_conv.dat",
-      "title": "Berry Curvature Quadrupole",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_berry_curvature_quadrupole_conventional",
+    "stem": "kslice_berry_curvature_quadrupole_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
+    ],
+    "outlined_pdf": false
+  },
+  "figure": {
+    "kind": "map",
+    "figsize": [
+      6.6,
+      5.0
+    ],
+    "data": "../data/model_bcqk_subspace_19_20_conv-60cf5e46.dat",
+    "transform": [
+      "transpose"
+    ],
+    "color": {
+      "kind": "signed_log",
+      "cmap": "RdBu_r",
+      "linthresh": 1.0
+    },
+    "extent": [
+      -0.0025,
+      0.9975,
+      -0.0025,
+      0.9975
+    ],
+    "xlabel": "$u$",
+    "ylabel": "$v$",
+    "colorbar_label": "$\\partial_y^2\\Omega_{xy}\\ (\\mathrm{\\AA}^{4})$",
+    "title": "GeS, $\\eta=0$",
+    "colorbar_ticks": [
+      -1000000000000000.0,
+      -10000000000.0,
+      -100000.0,
+      0,
+      100000.0,
+      10000000000.0,
+      1000000000000000.0
     ]
   }
 }

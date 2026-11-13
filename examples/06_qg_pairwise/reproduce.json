@@ -1,0 +1,411 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "berry_curvature_conventional",
+      "input": "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml",
+      "task_ids": [
+        "kslice_berry_curvature_conventional"
+      ],
+      "input_sha256": "e96cf98236791e0d9d965ee9131bfef602f0377684381367d72bd75eb00fec92",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 185,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "interband_berry_curvature_conventional",
+      "input": "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml",
+      "task_ids": [
+        "kslice_interband_berry_curvature_conventional"
+      ],
+      "input_sha256": "716a71a6b5f8cfdbdfcb4cde3426f50bf6e6f79f2f061a5121111276f5f11032",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 185,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "interband_quantum_metric_conventional",
+      "input": "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml",
+      "task_ids": [
+        "kslice_interband_quantum_metric_conventional"
+      ],
+      "input_sha256": "fea2fd8135aec8f8f59f95c3c3dfc72c9f8a473605bda34f3e582dde114ef065",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "source": "wannier",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 184,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "quantum_metric_conventional",
+      "input": "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml",
+      "task_ids": [
+        "kslice_quantum_metric_conventional"
+      ],
+      "input_sha256": "f5c4fe93a1e4de674abfdf0e3cd825925a4d0fc4b7dd87654261e599f36b56af",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 184,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "kslice_berry_curvature_conventional",
+      "chapter": "06_qg_pairwise",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/06_qg_pairwise/data/model_bck_subspace_19_20_conv-8cc892e6.dat"
+      ],
+      "figures": [
+        "examples/06_qg_pairwise/figures/kslice_berry_curvature_conventional.png",
+        "examples/06_qg_pairwise/figures/kslice_berry_curvature_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/06_qg_pairwise/plot_configs/kslice_berry_curvature_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_berry_curvature_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_berry_curvature_conventional/model_bck_subspace_19_20_conv.dat": "8cc892e6b6fa6ad16dbabf85d0ef98840a123345945cdc51ff4e5c5965650ca1"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_berry_curvature_conventional/executed-group-input.toml": "99817af95393fc1f2ed95e942411c364981894b5aa6b83fb1d5c08277c312710"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "8cc892e6b6fa6ad16dbabf85d0ef98840a123345945cdc51ff4e5c5965650ca1",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/06_qg_pairwise/data/kslice_berry_curvature_conventional.provenance.json",
+        "source_file_sha256": "0853df876567d7eea7f653f6bd51c5ab608cecad2aa494c6b19018966765aaf0",
+        "payload_sha256": "3049dc797f2a16671cca6f6c89858d0fb630db62ff634c25aa33ed3fcbaf4274",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "kslice_interband_berry_curvature_conventional",
+      "chapter": "06_qg_pairwise",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/06_qg_pairwise/data/model_ibck_conv-16722736.dat"
+      ],
+      "figures": [
+        "examples/06_qg_pairwise/figures/kslice_interband_berry_curvature_conventional.png",
+        "examples/06_qg_pairwise/figures/kslice_interband_berry_curvature_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/06_qg_pairwise/plot_configs/kslice_interband_berry_curvature_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_interband_berry_curvature_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_interband_berry_curvature_conventional/model_ibck_conv.dat": "16722736f8ca2a3b04897d645cad5e0804e1a9e251b7abac0c686c0abf624372"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_interband_berry_curvature_conventional/executed-group-input.toml": "99817af95393fc1f2ed95e942411c364981894b5aa6b83fb1d5c08277c312710"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "16722736f8ca2a3b04897d645cad5e0804e1a9e251b7abac0c686c0abf624372",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/06_qg_pairwise/data/kslice_interband_berry_curvature_conventional.provenance.json",
+        "source_file_sha256": "2bbebb37d11f86a82f18d9a294993b27ccfcbcf3404d483d466e95d3ecd5025b",
+        "payload_sha256": "5b33d089c145ce16699ccc51d6a6dbcacaa26b00605aec7871449db6ae20c2d0",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    },
+    {
+      "id": "kslice_interband_quantum_metric_conventional",
+      "chapter": "06_qg_pairwise",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/06_qg_pairwise/data/model_iqmk_conv-7153546b.dat"
+      ],
+      "figures": [
+        "examples/06_qg_pairwise/figures/kslice_interband_quantum_metric_conventional.png",
+        "examples/06_qg_pairwise/figures/kslice_interband_quantum_metric_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/06_qg_pairwise/plot_configs/kslice_interband_quantum_metric_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_interband_quantum_metric_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_interband_quantum_metric_conventional/model_iqmk_conv.dat": "7153546b6ef45657113cf76aeb861d2beacddb7cc4d2af4e84e04f2bb8c5f1dc"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_interband_quantum_metric_conventional/executed-group-input.toml": "5d2a5569b250529d31a6cb101a34e2cf95c7c5cb00a14c259d456f6d6a93ea8f"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "7153546b6ef45657113cf76aeb861d2beacddb7cc4d2af4e84e04f2bb8c5f1dc",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/06_qg_pairwise/data/kslice_interband_quantum_metric_conventional.provenance.json",
+        "source_file_sha256": "81d9f9a7f02306c61e4ee842856a6a72e0d162795a620c2063c9736dc89a08f2",
+        "payload_sha256": "22906a5f403edde360f64b56cb042fd4fb4c7458da7abab047605fc6a4c79d46",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    },
+    {
+      "id": "kslice_quantum_metric_conventional",
+      "chapter": "06_qg_pairwise",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/06_qg_pairwise/data/model_qmk_subspace_19_20_conv-5b115175.dat"
+      ],
+      "figures": [
+        "examples/06_qg_pairwise/figures/kslice_quantum_metric_conventional.png",
+        "examples/06_qg_pairwise/figures/kslice_quantum_metric_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/06_qg_pairwise/plot_configs/kslice_quantum_metric_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_quantum_metric_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_quantum_metric_conventional/model_qmk_subspace_19_20_conv.dat": "5b115175f166a7434facbfb2056f6245254970a36faabb8b6d59dd6c09aa9094"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/06_qg_pairwise/results/new-default-development-f278-20261108/kslice_quantum_metric_conventional/executed-group-input.toml": "5d2a5569b250529d31a6cb101a34e2cf95c7c5cb00a14c259d456f6d6a93ea8f"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "5b115175f166a7434facbfb2056f6245254970a36faabb8b6d59dd6c09aa9094",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/06_qg_pairwise/data/kslice_quantum_metric_conventional.provenance.json",
+        "source_file_sha256": "78958d5519a2f4ad774abc0bc33ba83d1376d65c3329050218796eaf53dd22c5",
+        "payload_sha256": "f5eb12e8d457fb5676f46b236e53512342f9564d402dcf7747411a7faec518a8",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 4
+}

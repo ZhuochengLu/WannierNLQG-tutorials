@@ -1,11 +1,45 @@
 {
-  "input": "../results/reference/integral_second_harmonic_generation_conventional/shg_sigma_yyy.dat",
-  "output_stem": "../figures/GeS_shg_sigma_yyy",
-  "component": "yyy",
-  "quantity": "sigma",
-  "unit": "A/V^2",
-  "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
-  "ylabel": "$\\sigma^{yyy}(2\\omega;\\omega,\\omega)\\ \\mathrm{(\\mu A/V^2)}$",
-  "display_scale": 1000000.0,
-  "xlim": [0.0, 4.0]
+  "output": {
+    "stem": "shg_sigma_yyy",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "line",
+    "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "ylabel": "$\\sigma^{yyy}(2\\omega;\\omega,\\omega)\\ \\mathrm{(\\mu A/V^2)}$",
+    "xlim": [
+      0.0,
+      4.0
+    ],
+    "legend": true,
+    "legend_frame": true,
+    "legend_edgecolor": "#808080",
+    "series": [
+      {
+        "data": "../data/shg_sigma_yyy-9ca8a970.dat",
+        "x_column": 0,
+        "y_column": 1,
+        "scale": 1000000.0,
+        "label": "$\\mathrm{Re}$",
+        "color": "#104E8B"
+      },
+      {
+        "data": "../data/shg_sigma_yyy-9ca8a970.dat",
+        "x_column": 0,
+        "y_column": 2,
+        "scale": 1000000.0,
+        "label": "$\\mathrm{Im}$",
+        "color": "#FF7F24"
+      }
+    ],
+    "title": "GeS second-harmonic response"
+  }
 }

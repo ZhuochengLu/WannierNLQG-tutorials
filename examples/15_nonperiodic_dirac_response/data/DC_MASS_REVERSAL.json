@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "tolerance_absolute_e2_over_h": 1e-08,
+  "checks": {
+    "hall_hall_odd": 0.0,
+    "hall_xx_even": 5.684341886080801e-13,
+    "optical_hall_odd": 0.0,
+    "optical_xx_even": 0.0
+  },
+  "settings": {
+    "K": 32.0,
+    "mesh": 6401,
+    "gamma": 0.002
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "panels": [
+    {
+      "title": "Fe Berry curvature",
+      "xlabel": "$u$",
+      "ylabel": "$v$",
+      "colorbar": {
+        "label": "$\\widetilde\\Omega^{xy}$ ($\\mathrm{\\AA}^{2}$)"
+      },
+      "text": [
+        "$\\Gamma(000)$",
+        "$\\Gamma(101)$",
+        "$H(001)$",
+        "$H(100)$",
+        "$-10^{4}$",
+        "$-10^{2}$",
+        "$-1$",
+        "$0$",
+        "$1$",
+        "$10^{2}$",
+        "$10^{4}$"
+      ]
+    }
+  ]
+}

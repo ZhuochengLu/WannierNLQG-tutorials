@@ -1,27 +1,60 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_zeeman_interband_quantum_metric_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_zeeman_interband_quantum_metric_conventional/GeS_ziqmk_conv.dat",
-      "title": "Zeeman Interband Quantum Metric",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_zeeman_interband_quantum_metric_conventional",
+    "stem": "kslice_zeeman_interband_quantum_metric_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "kind": "map",
+    "figsize": [
+      5.7,
+      4.6
+    ],
+    "data": "../data/model_ziqmk_conv-29a1f091.dat",
+    "title": "Zeeman interband metric: signed (1,3)",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "xlabel": "$k_x$ (fractional)",
+    "ylabel": "$k_y$ (fractional)",
+    "xticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "yticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "xticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "yticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "color": {
+      "kind": "diverging",
+      "cmap": "RdBu_r"
+    },
+    "colorbar_label": "Native output units"
   }
 }

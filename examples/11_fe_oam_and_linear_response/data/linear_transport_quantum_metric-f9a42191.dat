@@ -1,0 +1,25 @@
+# schema=wanniernlqg.linear-transport-vector/6.0
+# quantity=linear_transport
+# method=projector
+# temperature_K=0.0
+# fermi_energies_count=1
+# fermi_energies_definition=wanniernlqg.fermi-energy-axis/2.0:eV:1:4016dccdde0b9d8b
+# producer_package_version=1.2.1-dev
+# model_identity=wanniernlqg.file-state/1:(path = "/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/runs/Fe-profile-cache-wide001/model_tb.dat", device = 0x0000000001000018, inode = 0x0000000000a3068d, bytes = 71573382, mtime = 1.7939077542930558e9, ctime = 1.7939077542993538e9)
+# input_identity=wanniernlqg.file-state/1:(path = "/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/runs/Fe-profile-cache-wide001/model_tb.dat", device = 0x0000000001000018, inode = 0x0000000000a3068d, bytes = 71573382, mtime = 1.7939077542930558e9, ctime = 1.7939077542993538e9)
+# gamma_intra_ev=0.05
+# gamma_inter_ev=0.05
+# fs_kind=gaussian
+# eta_fs_ev=0.05
+# mpi_size=12
+# julia_threads_per_rank=1
+# qualification_status=COMPUTATION_READY
+# input_semantics=effective_position_operator_model
+# operator_inventory=NOT_APPLICABLE_DEFINED_FINITE_MODEL
+# operator_model_schema=NOT_APPLICABLE_DEFINED_FINITE_MODEL
+# content_authentication=NOT_PERFORMED
+# task_definition=wanniernlqg.spectral-task-definition/1:("schema" => "wanniernlqg.linear-transport-vector/6.0", "quantity" => "linear_transport", "method" => "projector", "temperature_K" => "0.0", "fermi_energies_count" => "1", "fermi_energies_definition" => "wanniernlqg.fermi-energy-axis/2.0:eV:1:4016dccdde0b9d8b", "producer_package_version" => "1.2.1-dev", "model_identity" => "wanniernlqg.file-state/1:(path = \"/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/runs/Fe-profile-cache-wide001/model_tb.dat\", device = 0x0000000001000018, inode = 0x0000000000a3068d, bytes = 71573382, mtime = 1.7939077542930558e9, ctime = 1.7939077542993538e9)", "input_identity" => "wanniernlqg.file-state/1:(path = \"/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/runs/Fe-profile-cache-wide001/model_tb.dat\", device = 0x0000000001000018, inode = 0x0000000000a3068d, bytes = 71573382, mtime = 1.7939077542930558e9, ctime = 1.7939077542993538e9)", "gamma_intra_ev" => "0.05", "gamma_inter_ev" => "0.05", "fs_kind" => "gaussian", "eta_fs_ev" => "0.05", "mpi_size" => "12", "julia_threads_per_rank" => "1", "qualification_status" => "COMPUTATION_READY", "input_semantics" => "effective_position_operator_model", "operator_inventory" => "NOT_APPLICABLE_DEFINED_FINITE_MODEL", "operator_model_schema" => "NOT_APPLICABLE_DEFINED_FINITE_MODEL", "content_authentication" => "NOT_PERFORMED")
+# term=quantum_metric
+# units=S/m
+# mu_eV xx_real xx_imag xy_real xy_imag xz_real xz_imag yx_real yx_imag yy_real yy_imag yz_real yz_imag zx_real zx_imag zy_real zy_imag zz_real zz_imag
+5.7156290716733436e+00 1.5970873419731230e+05 0.0000000000000000e+00 -7.1188313712597790e+02 0.0000000000000000e+00 -9.4588111847024618e+02 0.0000000000000000e+00 -7.1188313712597994e+02 0.0000000000000000e+00 1.5891462070652979e+05 0.0000000000000000e+00 -9.8802649482782363e+02 0.0000000000000000e+00 -9.4588111847025004e+02 0.0000000000000000e+00 -9.8802649482782601e+02 0.0000000000000000e+00 1.8893279375382344e+05 0.0000000000000000e+00

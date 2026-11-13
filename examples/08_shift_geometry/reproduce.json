@@ -1,0 +1,579 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "quantum_hermitian_connection_conventional",
+      "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml",
+      "task_ids": [
+        "kslice_quantum_hermitian_connection_conventional"
+      ],
+      "input_sha256": "ce98e07c83bd781259923e12843c37e020bf5021d7f818e2031d470cc4301b1d",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          200,
+          200
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "ce98e07c83bd781259923e12843c37e020bf5021d7f818e2031d470cc4301b1d",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "quantum_hermitian_connection_wilson_loop",
+      "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml",
+      "task_ids": [
+        "kslice_quantum_hermitian_connection_wilson_loop"
+      ],
+      "input_sha256": "9a281572b3fb615777efa664d12dec46ed2165c3d6053c2892525c829db5deb2",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          200,
+          200
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "9a281572b3fb615777efa664d12dec46ed2165c3d6053c2892525c829db5deb2",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_vector_geometric_loop",
+      "input": "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml",
+      "task_ids": [
+        "kslice_shift_vector_geometric_loop"
+      ],
+      "input_sha256": "42375527540169be139adce0541c248acb2be3c52c7b661d7560dc5c058b393c",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          200,
+          200
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "42375527540169be139adce0541c248acb2be3c52c7b661d7560dc5c058b393c",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_vector_wilson_loop",
+      "input": "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml",
+      "task_ids": [
+        "kslice_shift_vector_wilson_loop"
+      ],
+      "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          200,
+          200
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+        "response_recomputed_during_check": false
+      },
+      "current_source_reuse_check": {
+        "status": "REUSED_AFTER_AFFECTED_CALL_PATH_REVIEW",
+        "actual_calculation_source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "reviewed_current_public_source_manifest_sha256": "874ebeb9456ac0a3bc6f1f15102f82744ba06655e5b0040f5a7e62c0680e0bea",
+        "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+        "new_numerical_calculation": false,
+        "basis": "Wilson shift-vector, spectrum/position/transport/grouping, sampling and output paths are unchanged; current source differences concern withdrawn Geometric-loop QHC support and its precompile registration.",
+        "raw_data_and_figure_hashes_verified": true
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "kslice_quantum_hermitian_connection_conventional",
+      "chapter": "08_shift_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/08_shift_geometry/data/operators_qhck_r_conv-e4ab63fd.dat",
+        "examples/08_shift_geometry/data/operators_qhck_i_conv-54224391.dat"
+      ],
+      "figures": [
+        "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_conventional.png",
+        "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/08_shift_geometry/plot_configs/kslice_quantum_hermitian_connection_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_quantum_hermitian_connection_conventional",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/08_shift_geometry/data/operators_qhck_r_conv-e4ab63fd.dat": "e4ab63fd26a1a33233f9ac29b547acf38985a862089f232e686b3fa5f3c48427",
+          "examples/08_shift_geometry/data/operators_qhck_i_conv-54224391.dat": "5422439132521dea31a36e6a550bc2fbfee81318028481a18b7519843ebfae82"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/08_shift_geometry/data/kslice_quantum_hermitian_connection_conventional.provenance.json",
+        "source_file_sha256": "ef0c79db353fa660eb8843f54c5d855fdd93331a9fbc8aac957d4f4289a97058",
+        "payload_sha256": "7df2af37e3d95dcf6410bdf392a4d9a4c87d5b093de79ac4a8996c241719363e",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "full_range_no_clipping": true,
+        "png_sha256": "cdea083ee65a665e295bdc82951312ec5a1364dc86b36a0663f4ac12f64dd7bc",
+        "pdf_sha256": "bd3bbd8f6e105363e3b4394669f0a4f84025cd79069a0849b0e0f7924dc9776d"
+      }
+    },
+    {
+      "id": "kslice_quantum_hermitian_connection_wilson_loop",
+      "chapter": "08_shift_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/08_shift_geometry/data/operators_qhck_r_wilson-71196fbe.dat",
+        "examples/08_shift_geometry/data/operators_qhck_i_wilson-b49f2afe.dat"
+      ],
+      "figures": [
+        "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_wilson_loop.png",
+        "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_wilson_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/08_shift_geometry/plot_configs/kslice_quantum_hermitian_connection_wilson_loop.json",
+      "provenance": {
+        "original_figure_id": "kslice_quantum_hermitian_connection_wilson_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/08_shift_geometry/data/operators_qhck_r_wilson-71196fbe.dat": "71196fbedb0366d42ed274a1dbafc7a80c371ba50c3801140f4cda244aad915c",
+          "examples/08_shift_geometry/data/operators_qhck_i_wilson-b49f2afe.dat": "b49f2afe5b1756ce12153bc61dd9b3c86ab0944455ad7f8d97010d884b8c8461"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/08_shift_geometry/data/kslice_quantum_hermitian_connection_wilson_loop.provenance.json",
+        "source_file_sha256": "9e1a37c2ce94f87ebc1002a730be375db72d9bfc1a96763d511f768817d4b3c4",
+        "payload_sha256": "b659065a1c509e9fb73031c5dc20774c709b4b0b27ff564360bb58adde8294a2",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "full_range_no_clipping": true,
+        "png_sha256": "5bbab38b7cc91c34dbba26d33e11c5695855c98c4924d1dfd3b5c35dd88ec12c",
+        "pdf_sha256": "c936ae294edcd01ea4903e2b80a21b11e55af59de3052d3a6e4ad42031baa9a3"
+      }
+    },
+    {
+      "id": "kslice_shift_vector_geometric_loop",
+      "chapter": "08_shift_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/08_shift_geometry/data/operators_svk_r_geo-b8e2dd94.dat",
+        "examples/08_shift_geometry/data/operators_svk_i_geo-1e36f8b6.dat"
+      ],
+      "figures": [
+        "examples/08_shift_geometry/figures/kslice_shift_vector_geometric_loop.png",
+        "examples/08_shift_geometry/figures/kslice_shift_vector_geometric_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/08_shift_geometry/plot_configs/kslice_shift_vector_geometric_loop.json",
+      "provenance": {
+        "original_figure_id": "kslice_shift_vector_geometric_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/08_shift_geometry/data/operators_svk_r_geo-b8e2dd94.dat": "b8e2dd94561c925f3fedf0f7f172014b7193a83a0c08fc4f434db78167da2143",
+          "examples/08_shift_geometry/data/operators_svk_i_geo-1e36f8b6.dat": "1e36f8b6122e6c3b0b42be593da8af80f601df2862739daaec58eae1f45b5cdb"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/08_shift_geometry/data/kslice_shift_vector_geometric_loop.provenance.json",
+        "source_file_sha256": "607eb1518932351bd2d428f67a262c317f70fcf741b2b62c4529878c744b9e6f",
+        "payload_sha256": "141b54e6bfb8d354153b8db917318161fbe83176a6e0954eaf420c4376162a6c",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "870e6541bb9e6679084c1e7eac824d2b1ad340cf628ef267c389d15d39491e9c",
+        "pdf_sha256": "9265fe8637a7ca8c8bbbdd32be8d5ee9fce587fbf97dd4a4609ca49d34d13109"
+      },
+      "presentation_role": "OPTIONAL_METHOD_COMPARISON"
+    },
+    {
+      "id": "kslice_shift_vector_wilson_loop",
+      "chapter": "08_shift_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/08_shift_geometry/data/operators_svk_r_wilson-886a8472.dat",
+        "examples/08_shift_geometry/data/operators_svk_i_wilson-057cd9ef.dat"
+      ],
+      "figures": [
+        "examples/08_shift_geometry/figures/kslice_shift_vector_wilson_loop.png",
+        "examples/08_shift_geometry/figures/kslice_shift_vector_wilson_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/08_shift_geometry/plot_configs/kslice_shift_vector_wilson_loop.json",
+      "provenance": {
+        "original_figure_id": "kslice_shift_vector_wilson_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/08_shift_geometry/data/operators_svk_r_wilson-886a8472.dat": "886a8472b428d5128f1e149dd83c7e5cb52388d2b93946be1be67d105657cf66",
+          "examples/08_shift_geometry/data/operators_svk_i_wilson-057cd9ef.dat": "057cd9efa623ba70788193707b876bb173bbf25ba9bb67abb9f079135b4e7a55"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/08_shift_geometry/data/kslice_shift_vector_wilson_loop.provenance.json",
+        "source_file_sha256": "4e6a73991ccbcbd5fc6b0377b9af1cc0623b742355d1b151e33ef6209e730d43",
+        "payload_sha256": "84435aaa7b37b24377d94a6616f87bcbf6e668cfbbef271c292e2ee2aa66ecfd",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "031a26006556b4f751448119a0d3e4531b24c9ebea2834852ec919ba152c2b7c",
+        "pdf_sha256": "d64bd51461c37571b49d6b58f0502a0ff46dd45d925e84af93f22dad7a217a17"
+      },
+      "presentation_role": "CHAPTER_CORE_SHIFT_VECTOR",
+      "current_source_reuse_check": {
+        "status": "REUSED_AFTER_AFFECTED_CALL_PATH_REVIEW",
+        "actual_calculation_source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "reviewed_current_public_source_manifest_sha256": "874ebeb9456ac0a3bc6f1f15102f82744ba06655e5b0040f5a7e62c0680e0bea",
+        "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+        "new_numerical_calculation": false,
+        "basis": "Wilson shift-vector, spectrum/position/transport/grouping, sampling and output paths are unchanged; current source differences concern withdrawn Geometric-loop QHC support and its precompile registration.",
+        "raw_data_and_figure_hashes_verified": true
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 4
+}

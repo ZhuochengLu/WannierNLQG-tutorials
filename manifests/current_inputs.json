@@ -1,0 +1,1105 @@
+[
+  {
+    "profile": "reference",
+    "chapter": "01_band_structure",
+    "case": "band_structure",
+    "optional_data": false,
+    "input": "examples/01_band_structure/inputs/band_structure.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "01_band_structure",
+    "case": "band_structure",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/01_band_structure/band_structure.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "02_integral_charge_responses",
+    "case": "injection_current_conventional",
+    "optional_data": false,
+    "input": "examples/02_integral_charge_responses/inputs/injection_current_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "02_integral_charge_responses",
+    "case": "injection_current_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/02_integral_charge_responses/injection_current_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_conventional",
+    "optional_data": false,
+    "input": "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/02_integral_charge_responses/shift_current_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_geometric_loop",
+    "optional_data": false,
+    "input": "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_geometric_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/02_integral_charge_responses/shift_current_geometric_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_projector",
+    "optional_data": false,
+    "input": "examples/02_integral_charge_responses/inputs/shift_current_projector.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_wilson_loop",
+    "optional_data": false,
+    "input": "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "02_integral_charge_responses",
+    "case": "shift_current_wilson_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/02_integral_charge_responses/shift_current_wilson_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "03_integral_spin_responses",
+    "case": "injection_spin_current_conventional",
+    "optional_data": true,
+    "input": "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml",
+    "sha256": "4f4e9e3a6e18bece459102cb4d8ae771eed88553c384564d06faa7979fc6693c"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "03_integral_spin_responses",
+    "case": "injection_spin_current_conventional",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/03_integral_spin_responses/injection_spin_current_conventional.toml",
+    "sha256": "40cbe818f34f54e403c06bbf4c41de07b2b6fae23a1b05d76b5cfa4003af2b53"
+  },
+  {
+    "profile": "reference",
+    "chapter": "03_integral_spin_responses",
+    "case": "shift_spin_current_conventional",
+    "optional_data": true,
+    "input": "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml",
+    "sha256": "bcbbd8c519a9ec2410457e0b46a93f9dfaac2632e90e49dd1c7748ff4c596ae0"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "03_integral_spin_responses",
+    "case": "shift_spin_current_conventional",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/03_integral_spin_responses/shift_spin_current_conventional.toml",
+    "sha256": "f5a3f7e890950d01520a9fb415e1b5852c923ceebbf6f875c2d15331819ad330"
+  },
+  {
+    "profile": "reference",
+    "chapter": "04_kslice_charge_responses",
+    "case": "injection_current_conventional",
+    "optional_data": false,
+    "input": "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "04_kslice_charge_responses",
+    "case": "injection_current_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/04_kslice_charge_responses/injection_current_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_conventional",
+    "optional_data": false,
+    "input": "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_geometric_loop",
+    "optional_data": false,
+    "input": "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_geometric_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_geometric_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_projector",
+    "optional_data": false,
+    "input": "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_wilson_loop",
+    "optional_data": false,
+    "input": "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "04_kslice_charge_responses",
+    "case": "shift_current_wilson_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_wilson_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "injection_spin_current_conventional",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+    "sha256": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "05_kslice_spin_responses",
+    "case": "injection_spin_current_conventional",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/05_kslice_spin_responses/injection_spin_current_conventional.toml",
+    "sha256": "6120a3b24eb727f94446a49aa145b410894f16e155485bb2574991bf9ea6161d"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "shift_spin_current_conventional",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
+    "sha256": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "05_kslice_spin_responses",
+    "case": "shift_spin_current_conventional",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/05_kslice_spin_responses/shift_spin_current_conventional.toml",
+    "sha256": "7a3d3ea6518c52f577af600fec39a74b514a7592658dfca6d268ef8ad7d8198f"
+  },
+  {
+    "profile": "reference",
+    "chapter": "06_qg_pairwise",
+    "case": "berry_curvature_conventional",
+    "optional_data": false,
+    "input": "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "06_qg_pairwise",
+    "case": "berry_curvature_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/06_qg_pairwise/berry_curvature_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "06_qg_pairwise",
+    "case": "interband_berry_curvature_conventional",
+    "optional_data": false,
+    "input": "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "06_qg_pairwise",
+    "case": "interband_berry_curvature_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/06_qg_pairwise/interband_berry_curvature_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "06_qg_pairwise",
+    "case": "interband_quantum_metric_conventional",
+    "optional_data": false,
+    "input": "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "06_qg_pairwise",
+    "case": "interband_quantum_metric_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/06_qg_pairwise/interband_quantum_metric_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "06_qg_pairwise",
+    "case": "quantum_metric_conventional",
+    "optional_data": false,
+    "input": "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "06_qg_pairwise",
+    "case": "quantum_metric_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/06_qg_pairwise/quantum_metric_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "07_qg_multipoles",
+    "case": "berry_curvature_dipole_conventional",
+    "optional_data": false,
+    "input": "examples/07_qg_multipoles/inputs/berry_curvature_dipole_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "07_qg_multipoles",
+    "case": "berry_curvature_dipole_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/07_qg_multipoles/berry_curvature_dipole_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "07_qg_multipoles",
+    "case": "berry_curvature_quadrupole_conventional",
+    "optional_data": false,
+    "input": "examples/07_qg_multipoles/inputs/berry_curvature_quadrupole_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "07_qg_multipoles",
+    "case": "berry_curvature_quadrupole_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/07_qg_multipoles/berry_curvature_quadrupole_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "07_qg_multipoles",
+    "case": "quantum_christoffel_symbol_conventional",
+    "optional_data": false,
+    "input": "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "07_qg_multipoles",
+    "case": "quantum_christoffel_symbol_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/07_qg_multipoles/quantum_christoffel_symbol_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "07_qg_multipoles",
+    "case": "quantum_metric_dipole_conventional",
+    "optional_data": false,
+    "input": "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "07_qg_multipoles",
+    "case": "quantum_metric_dipole_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/07_qg_multipoles/quantum_metric_dipole_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "07_qg_multipoles",
+    "case": "quantum_metric_quadrupole_conventional",
+    "optional_data": false,
+    "input": "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "07_qg_multipoles",
+    "case": "quantum_metric_quadrupole_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/07_qg_multipoles/quantum_metric_quadrupole_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "08_shift_geometry",
+    "case": "quantum_hermitian_connection_conventional",
+    "optional_data": false,
+    "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "08_shift_geometry",
+    "case": "quantum_hermitian_connection_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/08_shift_geometry/quantum_hermitian_connection_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "08_shift_geometry",
+    "case": "quantum_hermitian_connection_wilson_loop",
+    "optional_data": false,
+    "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "08_shift_geometry",
+    "case": "quantum_hermitian_connection_wilson_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/08_shift_geometry/quantum_hermitian_connection_wilson_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "08_shift_geometry",
+    "case": "shift_vector_geometric_loop",
+    "optional_data": false,
+    "input": "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "08_shift_geometry",
+    "case": "shift_vector_geometric_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/08_shift_geometry/shift_vector_geometric_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "08_shift_geometry",
+    "case": "shift_vector_wilson_loop",
+    "optional_data": false,
+    "input": "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "08_shift_geometry",
+    "case": "shift_vector_wilson_loop",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/08_shift_geometry/shift_vector_wilson_loop.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "hermitian_curvature_tensor_conventional",
+    "optional_data": false,
+    "input": "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "hermitian_curvature_tensor_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/09_higher_and_spin_geometry/hermitian_curvature_tensor_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "triple_phase_product_conventional",
+    "optional_data": false,
+    "input": "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "triple_phase_product_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/09_higher_and_spin_geometry/triple_phase_product_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "zeeman_interband_berry_curvature_conventional",
+    "optional_data": true,
+    "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "zeeman_interband_berry_curvature_conventional",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_berry_curvature_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "zeeman_interband_quantum_metric_conventional",
+    "optional_data": true,
+    "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "09_higher_and_spin_geometry",
+    "case": "zeeman_interband_quantum_metric_conventional",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_quantum_metric_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "10_second_harmonic_generation",
+    "case": "second_harmonic_generation_conventional",
+    "optional_data": false,
+    "input": "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "10_second_harmonic_generation",
+    "case": "second_harmonic_generation_conventional",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/10_second_harmonic_generation/second_harmonic_generation_conventional.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "berry_sos_occupied_xy",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
+    "sha256": "c0f93d7d2d5d3f6e214fe0ad471cda4b3d3f4eb62943e4db545321a69352d8e7"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "berry_sos_occupied_xy",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_sos_occupied_xy.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "berry_tb_occupied_xy",
+    "optional_data": false,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml",
+    "sha256": "0542fbfdc3abc6957b01994545e5deea63d998ba4880217062f648351cae307e"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "berry_tb_occupied_xy",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_tb_occupied_xy.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "berry_transport_equivalent_xy",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml",
+    "sha256": "636995333f64f17b0a013e4c6171c43e843d0ea212c93d9e9c13a2affc3ec3ba"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "berry_transport_equivalent_xy",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_transport_equivalent_xy.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_optical_conventional_T000",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml",
+    "sha256": "be68f2f9c92b04a499fed9d79d8079b5481217b2f98b269f262c4fdf982485a6"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_optical_conventional_T000",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_conventional_T000.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_optical_projector_T000",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml",
+    "sha256": "52108f4d8230c251a6b27d895937b3b64f09ce935eb6492e4be6dc7d4d3aece5"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_optical_projector_T000",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_projector_T000.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_transport_conventional_T000",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T000.toml",
+    "sha256": "68f77037a93bf154a1cfc743ffa9a7f6bfba31ebec32519306209c0c68ed06d2"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_transport_conventional_T000",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_conventional_T000.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_transport_projector_T000",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T000.toml",
+    "sha256": "8893557f86f22f1ed75f63af730775f3e3542e9eb5b60f8dadb098447049b5d9"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "linear_transport_projector_T000",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_projector_T000.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "oam_conventional_T000",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml",
+    "sha256": "88fa93e6e002d74df336c5ded8ce276982b2c624761d51c94ca32d2e513534b9"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "oam_conventional_T000",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_conventional_T000.toml",
+    "sha256": "60c286a8b8619960aa41f0fc115b5248aebfd0c761f671b2fb6beca2465583e0"
+  },
+  {
+    "profile": "reference",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "oam_projector_T000",
+    "optional_data": true,
+    "input": "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml",
+    "sha256": "1544a18fb7c6e398a27e9d41b19c7a3ed5f935359dc22a2802e0161f40864b76"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "11_fe_oam_and_linear_response",
+    "case": "oam_projector_T000",
+    "optional_data": true,
+    "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_projector_T000.toml",
+    "sha256": "c5c108c4825c9d0c42c30371e42c2dc2c584718f3ed036f4bbca9ec56902fb90"
+  },
+  {
+    "profile": "reference",
+    "chapter": "12_fe_wannierization",
+    "case": "fe_bands",
+    "optional_data": false,
+    "input": "examples/12_fe_wannierization/inputs/fe_bands.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "12_fe_wannierization",
+    "case": "fe_bands",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/12_fe_wannierization/fe_bands.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "analytic_reversed",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/analytic_reversed.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "analytic_reversed",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/13_haldane_anomalous_hall/analytic_reversed.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "analytic_topological",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/analytic_topological.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "analytic_topological",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/13_haldane_anomalous_hall/analytic_topological.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "analytic_trivial",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/analytic_trivial.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "analytic_trivial",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/13_haldane_anomalous_hall/analytic_trivial.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_reversed",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/tb_reversed.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_reversed",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/13_haldane_anomalous_hall/tb_reversed.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_topological",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_topological",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/13_haldane_anomalous_hall/tb_topological.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_topological_n121_g001",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n121_g001.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_topological_n181_g002",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n181_g002.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_topological_n61_g002",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n61_g002.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_trivial",
+    "optional_data": false,
+    "input": "examples/13_haldane_anomalous_hall/inputs/tb_trivial.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "13_haldane_anomalous_hall",
+    "case": "tb_trivial",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/13_haldane_anomalous_hall/tb_trivial.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_ionic",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/analytic_ionic.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_ionic",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/analytic_ionic.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_polar",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/analytic_polar.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_polar",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/analytic_polar.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_reversed",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/analytic_reversed.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_reversed",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/analytic_reversed.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_ssh",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/analytic_ssh.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "analytic_ssh",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/analytic_ssh.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_ionic",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/tb_ionic.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_ionic",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/tb_ionic.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_polar",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/tb_polar.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_polar",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/tb_polar.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_polar_n1601",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/tb_polar_n1601.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_polar_n401",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/tb_polar_n401.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_reversed",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/tb_reversed.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_reversed",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/tb_reversed.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_ssh",
+    "optional_data": false,
+    "input": "examples/14_rice_mele_shift_current/inputs/tb_ssh.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "14_rice_mele_shift_current",
+    "case": "tb_ssh",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/14_rice_mele_shift_current/tb_ssh.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "hall_negative",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/hall_negative.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "hall_negative",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/15_nonperiodic_dirac_response/hall_negative.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "hall_positive",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/hall_positive.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "hall_positive",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/15_nonperiodic_dirac_response/hall_positive.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "hall_positive_g0001",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/hall_positive_g0001.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "hall_positive_n9601",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/hall_positive_n9601.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_negative",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_negative.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_negative",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/15_nonperiodic_dirac_response/optical_negative.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/15_nonperiodic_dirac_response/optical_positive.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive_g001",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive_g001.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive_k025",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive_k025.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive_k050",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive_k050.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive_k200",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive_k200.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive_n201",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive_n201.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "15_nonperiodic_dirac_response",
+    "case": "optical_positive_n801",
+    "optional_data": false,
+    "input": "examples/15_nonperiodic_dirac_response/inputs/optical_positive_n801.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "16_monolayer_graphene_thg",
+    "case": "T10",
+    "optional_data": false,
+    "input": "examples/16_monolayer_graphene_thg/inputs/T10.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "16_monolayer_graphene_thg",
+    "case": "T10",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/16_monolayer_graphene_thg/T10.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "16_monolayer_graphene_thg",
+    "case": "T300",
+    "optional_data": false,
+    "input": "examples/16_monolayer_graphene_thg/inputs/T300.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "16_monolayer_graphene_thg",
+    "case": "T300",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/16_monolayer_graphene_thg/T300.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "ges_pilot_bulk",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/ges_pilot_bulk.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "17_jerk_current",
+    "case": "ges_pilot_bulk",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/17_jerk_current/ges_pilot_bulk.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "ges_pilot_sheet",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/ges_pilot_sheet.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "17_jerk_current",
+    "case": "ges_pilot_sheet",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/17_jerk_current/ges_pilot_sheet.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "two_band_analytic",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/two_band_analytic.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "17_jerk_current",
+    "case": "two_band_analytic",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/17_jerk_current/two_band_analytic.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "two_band_tb",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/two_band_tb.toml"
+  },
+  {
+    "profile": "smoke",
+    "chapter": "17_jerk_current",
+    "case": "two_band_tb",
+    "optional_data": false,
+    "input": "test/fixtures/inputs/17_jerk_current/two_band_tb.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "ges_spectrum_sheet",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/ges_spectrum_sheet.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "ges_mesh200_sheet",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/ges_mesh200_sheet.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "17_jerk_current",
+    "case": "ges_mesh300_sheet",
+    "optional_data": false,
+    "input": "examples/17_jerk_current/inputs/ges_mesh300_sheet.toml"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "shift_yzxy_kslice",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml",
+    "sha256": "047660cf7a88b13600defce2d76414a9593921bca301b6befd6e4e494e209a58"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "shift_yzyx_kslice",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/shift_yzyx_kslice.toml",
+    "sha256": "746d11d27b7c56543289b2c1f45306bccc0c7b828c5b0b050f6eed651331b3ab"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "injection_yzxy_kslice",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml",
+    "sha256": "43be4b4eb5b540d948515b715ea37360430ad27f9e18704862c1edbb147a80a4"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "injection_yzyx_kslice",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/injection_yzyx_kslice.toml",
+    "sha256": "ef2087b325ffe9fd00ac8ac2c538baac2748bf02cb6b00f1a696f02854ad6442"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "shift_integral",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/shift_integral.toml",
+    "sha256": "42e88bf686353c987e9da81173d7e07af6d84bb62e6c8f9246648f420a683053"
+  },
+  {
+    "profile": "reference",
+    "chapter": "05_kslice_spin_responses",
+    "case": "injection_integral",
+    "optional_data": true,
+    "input": "examples/05_kslice_spin_responses/inputs/injection_integral.toml",
+    "sha256": "22528b8bb7a15ee4f0855ded6895a5b512bcc09ce390729ca7aa4f537e6bf4cc"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "output": {
+    "stem": "kslice_shift_current_projector",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "map",
+    "data": "../data/display_sck_r_proj-b195e508.dat",
+    "title": "GeS shift current: projector",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5025,
+      0.4975,
+      -0.5025,
+      0.4975
+    ],
+    "xlabel": "$u$ (fractional)",
+    "ylabel": "$v$ (fractional)",
+    "xticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "yticks": [
+      -0.5,
+      -0.25,
+      0,
+      0.25
+    ],
+    "xticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "yticklabels": [
+      "\\textnormal{-0.5}",
+      "\\textnormal{-0.25}",
+      "0",
+      ".25"
+    ],
+    "color": {
+      "kind": "diverging",
+      "cmap": "RdBu_r",
+      "limit": 1.9693548898298763
+    },
+    "colorbar_label": "Re yyy ($10^{-8}$ native units)",
+    "figsize": [
+      6.0,
+      4.8
+    ],
+    "aspect": "equal"
+  }
+}

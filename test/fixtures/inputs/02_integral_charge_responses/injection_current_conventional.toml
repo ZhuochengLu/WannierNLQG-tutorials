@@ -1,0 +1,27 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+model_file = "../../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [2, 2]
+kind = "bz_mesh"
+spatial_dimension = 2
+
+[ response.tasks ]
+
+[ response.tasks.integral_injection_current_conventional ]
+fermi_energy_ev = -2.5
+kind = "injection_current"
+photon_energies_ev = [1.0, 2.0, 3.0]
+temperature_k = 0.0
+
+[ response.tasks.integral_injection_current_conventional.numerics ]
+broadening = 0.06

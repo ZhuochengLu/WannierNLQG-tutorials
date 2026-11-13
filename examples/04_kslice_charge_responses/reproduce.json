@@ -1,0 +1,1457 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "injection_current_conventional",
+      "input": "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml",
+      "task_ids": [
+        "kslice_injection_current_conventional"
+      ],
+      "input_sha256": "9eeafad919dc945ecfaebad6a0804950fb7d46f98e068f52cb294fbf5a039c5d",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "shift_current_conventional",
+      "input": "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml",
+      "task_ids": [
+        "kslice_shift_current_conventional"
+      ],
+      "input_sha256": "766449594b2c9077fc299c106c6af9483c2ee54aa2e1774de4278a1feb625019",
+      "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged.",
+        "external_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "744dabb87273ea3a1062fb226577e11d967dcd042eb9c1033f7089116a9c499d",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Actual full-band Conventional map from successful child278, with same source/model/controls",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_conv-68b1f11c.dat": "68b1f11ce167a332b810d993b22c0190cd2ee604bf4a37f6318e7592acc4238f",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_conv-3b68d2ae.dat": "3b68d2aec19f34acad7a02826a494014457efc20ef010f91c51a4df5e2582406",
+          "examples/04_kslice_charge_responses/data/display_sck_r_conv-e3c55260.dat": "e3c552606bc21ff132b194f87b4d4fd2d522d61ab6acc82bd2a8ddd7f1ac55a2"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "resolved_band_domain": {
+        "valence": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "conduction": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "766449594b2c9077fc299c106c6af9483c2ee54aa2e1774de4278a1feb625019",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_current_geometric_loop",
+      "input": "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml",
+      "task_ids": [
+        "kslice_shift_current_geometric_loop"
+      ],
+      "input_sha256": "2fc01de92dae92ef4b985e0f68f077fd33dd20400f5d3ccb2f86191396a78b0e",
+      "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged.",
+        "external_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_geo-5e757f1e.dat": "5e757f1e4775648cd3efe001c27f0fbf7a86e37bb9e12911fbdc8000f0ab49f7",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_geo-0fb24f8f.dat": "0fb24f8f5a82f50914e94e8ecd3c26618f5a20fc478784534a8fa3d5fb851869",
+          "examples/04_kslice_charge_responses/data/display_sck_r_geo-056d2957.dat": "056d29579be8d36042f07a8a9f00060c3ca2a92a659895c0fc9866e2567417bf"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "resolved_band_domain": {
+        "valence": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "conduction": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "2fc01de92dae92ef4b985e0f68f077fd33dd20400f5d3ccb2f86191396a78b0e",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_current_wilson_loop",
+      "input": "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml",
+      "task_ids": [
+        "kslice_shift_current_wilson_loop"
+      ],
+      "input_sha256": "9b908ecd4cd3d9e35ea6410f02667ece7a88c893b961be7f99f191a51b5df7e5",
+      "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged.",
+        "external_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_wilson-ca3e25c8.dat": "ca3e25c84187b486c54b98e5f0f76ae052baf919cc1190fa153fe509e571334f",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_wilson-498e7809.dat": "498e7809c2597d56418d2b5c1613e4d1b5903f827300402cfca8fa4fd171628a",
+          "examples/04_kslice_charge_responses/data/display_sck_r_wilson-c945db37.dat": "c945db374070e84e7f7828e919490d8ae3c49cc0357636ffec562a1bc2da8fa0"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "resolved_band_domain": {
+        "valence": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "conduction": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "9b908ecd4cd3d9e35ea6410f02667ece7a88c893b961be7f99f191a51b5df7e5",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_current_projector",
+      "input": "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml",
+      "task_ids": [
+        "kslice_shift_current_projector"
+      ],
+      "input_sha256": "d35fc214ae7a1902fb8c15948f5c41dd7b52463fa5f2f7b13e66f317e6af5ab9",
+      "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged.",
+        "external_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_proj-fd869724.dat": "fd869724baf5795b3a9cdaafee1fb271a7fd00c76626e5db6f44ee305d2f03c9",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_proj-9bfd6206.dat": "9bfd6206432e5c993afb4a5ce25732d3f404df938c26ca3120bdfe9a849c5f22",
+          "examples/04_kslice_charge_responses/data/display_sck_r_proj-b195e508.dat": "b195e508c7b5b7f8208a897d2977ba752d4db3c0ff6e8c0f708378a8763937ca"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "resolved_band_domain": {
+        "valence": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "conduction": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "d35fc214ae7a1902fb8c15948f5c41dd7b52463fa5f2f7b13e66f317e6af5ab9",
+        "response_recomputed_during_check": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "kslice_injection_current_conventional",
+      "chapter": "04_kslice_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/04_kslice_charge_responses/data/kslice_injection_current_conventional_new_display-1dcb04d3.dat"
+      ],
+      "figures": [
+        "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.png",
+        "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Existing band-selected corrected-consumer display; historical control retained, no response recomputed for cleanup",
+      "data_formats": {},
+      "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json",
+      "selected_band_consumer_fix_preserved": true,
+      "provenance": {
+        "original_figure_id": "kslice_injection_current_conventional.skill-5",
+        "original_data_sha256": {
+          "examples/04_kslice_charge_responses/results/retained-plot-inputs-20261108/charge-selected065/kslice_injection_current_conventional_delta_display.dat": "0a270dc52a8f9ea3c97fc918bf55cc21ecce8416ed99446215c55dd7aff827ac",
+          "examples/04_kslice_charge_responses/results/retained-plot-inputs-20261108/charge-selected065/kslice_injection_current_conventional_new_display.dat": "1dcb04d33d11bd5abc8e1c9dcb8ee0c3b930e70dd72dabbe4fb78fd362da978f",
+          "examples/04_kslice_charge_responses/results/retained-plot-inputs-20261108/charge-selected065/kslice_injection_current_conventional_old_display.dat": "46a85f18e92460396f75c99568fe3705339fee78712aefc40af6ce2fca47f921"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/04_kslice_charge_responses/results/reference-center-frame-20261106/kslice_injection_current_conventional/executed-group-input.toml": "f3dbdab9ffa4b00b1516833a859a1ff5fa810ee4eb32136c92ac531207152157"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "current_selected_source_figure": "retained_charge_selected065_injection_selected_figure",
+        "selected_band_consumer_fix_preserved": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/04_kslice_charge_responses/data/kslice_injection_current_conventional.provenance.json",
+        "source_file_sha256": "82c383d3ad9554eea07e1e53993e46e594cc74c7191059da8fa291e15c401fc8",
+        "payload_sha256": "2c39e34a56e505cfbd92985836c01cd5b4788bfed7358416ca2bb2c9e9bc1102",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Display the existing selected-current panel only; data, transforms, units and color limit unchanged."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "selection": "Current selected-pair panel only"
+      }
+    },
+    {
+      "id": "kslice_shift_current_conventional",
+      "chapter": "04_kslice_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/04_kslice_charge_responses/data/operators_sck_r_conv-68b1f11c.dat",
+        "examples/04_kslice_charge_responses/data/operators_sck_i_conv-3b68d2ae.dat",
+        "examples/04_kslice_charge_responses/data/display_sck_r_conv-e3c55260.dat"
+      ],
+      "figures": [
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_conventional.png",
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "data_formats": {},
+      "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_conventional.json",
+      "selected_band_consumer_fix_preserved": true,
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 207,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "kslice_shift_current_conventional",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "744dabb87273ea3a1062fb226577e11d967dcd042eb9c1033f7089116a9c499d",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_conv-68b1f11c.dat": "68b1f11ce167a332b810d993b22c0190cd2ee604bf4a37f6318e7592acc4238f",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_conv-3b68d2ae.dat": "3b68d2aec19f34acad7a02826a494014457efc20ef010f91c51a4df5e2582406",
+          "examples/04_kslice_charge_responses/data/display_sck_r_conv-e3c55260.dat": "e3c552606bc21ff132b194f87b4d4fd2d522d61ab6acc82bd2a8ddd7f1ac55a2"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false,
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "original_mesh_preserved": true,
+        "reuse_basis": "Actual full-band Conventional map from successful child278, with same source/model/controls",
+        "matched_same_grid_native_integral": {
+          "native_integral_Re_yyy": 8.6462584e-06,
+          "sum_40000_native_local_cells": 8.64625837982018e-06,
+          "absolute_sum_integral_difference": 2.0179819661537805e-14,
+          "relative_sum_integral_difference": 2.333936689728846e-09,
+          "pointwise_relative_L2_from_conventional": 0.0,
+          "signed_relative_integral_difference_from_conventional": 0.0,
+          "positive_difference": 0.0,
+          "negative_difference": 0.0,
+          "signed_over_L1_difference": 0,
+          "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.6044787936217e-06
+        }
+      },
+      "provenance_source": {
+        "merged_from": "examples/04_kslice_charge_responses/data/kslice_shift_current_conventional.provenance.json",
+        "source_file_sha256": "2839386003e448ef0b1d72ab6238e5ecdd00147dc402f32cbf95d5033a423f20",
+        "payload_sha256": "32091d59f8511a8eb3ff6ea4374bc9fd09c17747093e6748f7705f67c6981fab",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 100000000.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "full_range_no_clipping": true,
+        "png_sha256": "3fb742b85ad33490411653ef7c0965f0967c82e36877e95f830cde8cabc0b990",
+        "pdf_sha256": "cd9bca083540772202d4e9772c3ae9c2e49ad64162d52f913acf58e0ebe8a92a"
+      }
+    },
+    {
+      "id": "kslice_shift_current_geometric_loop",
+      "chapter": "04_kslice_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/04_kslice_charge_responses/data/operators_sck_r_geo-5e757f1e.dat",
+        "examples/04_kslice_charge_responses/data/operators_sck_i_geo-0fb24f8f.dat",
+        "examples/04_kslice_charge_responses/data/display_sck_r_geo-056d2957.dat"
+      ],
+      "figures": [
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_geometric_loop.png",
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_geometric_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "data_formats": {},
+      "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_geometric_loop.json",
+      "provenance": {
+        "original_figure_id": "kslice_shift_current_geometric_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_geo-5e757f1e.dat": "5e757f1e4775648cd3efe001c27f0fbf7a86e37bb9e12911fbdc8000f0ab49f7",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_geo-0fb24f8f.dat": "0fb24f8f5a82f50914e94e8ecd3c26618f5a20fc478784534a8fa3d5fb851869",
+          "examples/04_kslice_charge_responses/data/display_sck_r_geo-056d2957.dat": "056d29579be8d36042f07a8a9f00060c3ca2a92a659895c0fc9866e2567417bf"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false,
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "original_mesh_preserved": true,
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "matched_same_grid_native_integral": {
+          "native_integral_Re_yyy": 8.6379619e-06,
+          "sum_40000_native_local_cells": 8.637961857327543e-06,
+          "absolute_sum_integral_difference": 4.2672457703355794e-14,
+          "relative_sum_integral_difference": 4.940107216050849e-09,
+          "pointwise_relative_L2_from_conventional": 0.02407725574016335,
+          "signed_relative_integral_difference_from_conventional": -0.0009595506088505587,
+          "positive_difference": 1.2094827462383642e-07,
+          "negative_difference": -1.2924479711647213e-07,
+          "signed_over_L1_difference": 0.03316048056377514,
+          "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.59279708882055e-06
+        }
+      },
+      "provenance_source": {
+        "merged_from": "examples/04_kslice_charge_responses/data/kslice_shift_current_geometric_loop.provenance.json",
+        "source_file_sha256": "8628a140aef046ab5bd8974be7e0ebfa12b9a7f0262a3138c649bc7c9cc3833b",
+        "payload_sha256": "278f3d54a8196510f6663918466053f9ed0074b5c6bfca76485ce7b77658f256",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 100000000.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "full_range_no_clipping": true,
+        "png_sha256": "51abc0736471d42c24bf1e0a64c39176b794aa33549fa46e21d64be9009b7ef4",
+        "pdf_sha256": "c1a31996cbe96863731d02779302a04893565ab22aa07a1d90544521e2d262ce"
+      }
+    },
+    {
+      "id": "kslice_shift_current_wilson_loop",
+      "chapter": "04_kslice_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/04_kslice_charge_responses/data/operators_sck_r_wilson-ca3e25c8.dat",
+        "examples/04_kslice_charge_responses/data/operators_sck_i_wilson-498e7809.dat",
+        "examples/04_kslice_charge_responses/data/display_sck_r_wilson-c945db37.dat"
+      ],
+      "figures": [
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_wilson_loop.png",
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_wilson_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "data_formats": {},
+      "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_wilson_loop.json",
+      "provenance": {
+        "original_figure_id": "kslice_shift_current_wilson_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_wilson-ca3e25c8.dat": "ca3e25c84187b486c54b98e5f0f76ae052baf919cc1190fa153fe509e571334f",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_wilson-498e7809.dat": "498e7809c2597d56418d2b5c1613e4d1b5903f827300402cfca8fa4fd171628a",
+          "examples/04_kslice_charge_responses/data/display_sck_r_wilson-c945db37.dat": "c945db374070e84e7f7828e919490d8ae3c49cc0357636ffec562a1bc2da8fa0"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false,
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "original_mesh_preserved": true,
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "matched_same_grid_native_integral": {
+          "native_integral_Re_yyy": 8.6488873e-06,
+          "sum_40000_native_local_cells": 8.648887345631181e-06,
+          "absolute_sum_integral_difference": 4.5631181057564744e-14,
+          "relative_sum_integral_difference": 5.2759596967827835e-09,
+          "pointwise_relative_L2_from_conventional": 0.006422109721433521,
+          "signed_relative_integral_difference_from_conventional": 0.00030405820593309236,
+          "positive_difference": 6.635691933703808e-09,
+          "negative_difference": -4.006726122701718e-09,
+          "signed_over_L1_difference": 0.24702711329966515,
+          "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.602896436653783e-06
+        }
+      },
+      "provenance_source": {
+        "merged_from": "examples/04_kslice_charge_responses/data/kslice_shift_current_wilson_loop.provenance.json",
+        "source_file_sha256": "01d7b389b9530d0451f56cf51e7447ae5edaa078ffffcc764e15d513a10e200f",
+        "payload_sha256": "c193b94251981be6358478618b34d555ce474107c1f43528493a5e364d8a2073",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 100000000.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "full_range_no_clipping": true,
+        "png_sha256": "3589dcddcdd6eca67d5de37c366b0802f47fd36fed564e433eaebc4b3b5bff90",
+        "pdf_sha256": "8ef0cfcee62ae0b43504878d51d31f5b6d72de3dc7b72067b61b27cbcb92cd59"
+      }
+    },
+    {
+      "id": "kslice_shift_current_projector",
+      "chapter": "04_kslice_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/04_kslice_charge_responses/data/operators_sck_r_proj-fd869724.dat",
+        "examples/04_kslice_charge_responses/data/operators_sck_i_proj-9bfd6206.dat",
+        "examples/04_kslice_charge_responses/data/display_sck_r_proj-b195e508.dat"
+      ],
+      "figures": [
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_projector.png",
+        "examples/04_kslice_charge_responses/figures/kslice_shift_current_projector.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "data_formats": {},
+      "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_projector.json",
+      "selected_band_consumer_fix_preserved": true,
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 207,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "kslice_shift_current_projector",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "mesh": [
+          200,
+          200
+        ],
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_proj-fd869724.dat": "fd869724baf5795b3a9cdaafee1fb271a7fd00c76626e5db6f44ee305d2f03c9",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_proj-9bfd6206.dat": "9bfd6206432e5c993afb4a5ce25732d3f404df938c26ca3120bdfe9a849c5f22",
+          "examples/04_kslice_charge_responses/data/display_sck_r_proj-b195e508.dat": "b195e508c7b5b7f8208a897d2977ba752d4db3c0ff6e8c0f708378a8763937ca"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false,
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "original_mesh_preserved": true,
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "matched_same_grid_native_integral": {
+          "native_integral_Re_yyy": 8.6488699e-06,
+          "sum_40000_native_local_cells": 8.648869888385873e-06,
+          "absolute_sum_integral_difference": 1.1614127831661124e-14,
+          "relative_sum_integral_difference": 1.3428491793196177e-09,
+          "pointwise_relative_L2_from_conventional": 0.006403586567544119,
+          "signed_relative_integral_difference_from_conventional": 0.0003020391539292677,
+          "positive_difference": 6.607986184514004e-09,
+          "negative_difference": -3.9964776188192745e-09,
+          "signed_over_L1_difference": 0.2462650270798094,
+          "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.602903187500516e-06
+        }
+      },
+      "provenance_source": {
+        "merged_from": "examples/04_kslice_charge_responses/data/kslice_shift_current_projector.provenance.json",
+        "source_file_sha256": "165f0ad8410e45193c3c06d97c032e24ce164d05b1a6413c6077205df8aaac3f",
+        "payload_sha256": "b3e723bb636b1b342e93b3c77349ede1d9f4d40c67e44a2ed3c2e0294b997fb0",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": true,
+        "display_factor": 100000000.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "full_range_no_clipping": true,
+        "png_sha256": "f1f3dd3472379e9d641426c53724532abd10619c7f6542f51c8c5f0de59441a5",
+        "pdf_sha256": "6482841a8d0c8649dd808ca3bfba39d04327430b0f69256875c37ac3781cf3b4"
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 5,
+  "band_domain": {
+    "valence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "conduction": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "normalization": "Native cells already contain 1/Nk and physical prefactors; sum once"
+  },
+  "response_block_closure": {
+    "original_mesh": [
+      200,
+      200
+    ],
+    "minimum_gap_20_21_ev": 1.8782425623605536,
+    "conduction": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "checked_points": 40000,
+    "minimum_conduction_ev": -1.6047655674238184,
+    "wrong_occupation_partitions": 0,
+    "intermediate_band_window": -1,
+    "new_SCF": 0,
+    "response_threshold_ev": 0.002,
+    "response_rule": "Native adjacent-gap chaining including numerical-equality safeguard",
+    "source_or_threshold_changed": false,
+    "mu_ev": -2.5,
+    "cut_response_blocks": 0,
+    "maximum_valence_ev": -3.3439491683042264,
+    "valence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+    "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+    "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+    "scope": "Original finite32-band model and original200x200 slice only; not material or mesh-convergence qualification"
+  }
+}

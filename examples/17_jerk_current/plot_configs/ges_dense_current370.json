@@ -1,0 +1,77 @@
+{
+  "output": {
+    "stem": "ges_dense_current",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "grid",
+    "rows": 1,
+    "cols": 2,
+    "figsize": [
+      11.8,
+      4.6
+    ],
+    "panels": [
+      {
+        "kind": "line",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "legend": true,
+        "legend_frame": true,
+        "label": "(a)",
+        "title": "$G_{\\rm ordered}^{xxxx}$",
+        "ylabel": "$G$ ($10^{16}$ A m/(V$^3$ s$^2$))",
+        "series": [
+          {
+            "data": "../data/ges_current370/bulk_derived_spectrum.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "scale": 1e-16,
+            "label": "Real",
+            "color": "#104E8B"
+          },
+          {
+            "data": "../data/ges_current370/bulk_derived_spectrum.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "scale": 1e-16,
+            "label": "Imaginary",
+            "linestyle": "--",
+            "color": "#FF7F24"
+          }
+        ]
+      },
+      {
+        "kind": "line",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "legend": true,
+        "legend_frame": true,
+        "label": "(b)",
+        "title": "$G_{\\rm ordered}^{yyyy}$",
+        "ylabel": "$G$ ($10^{16}$ A m/(V$^3$ s$^2$))",
+        "series": [
+          {
+            "data": "../data/ges_current370/bulk_derived_spectrum.dat",
+            "x_column": 0,
+            "y_column": 3,
+            "scale": 1e-16,
+            "label": "Real",
+            "color": "#104E8B"
+          },
+          {
+            "data": "../data/ges_current370/bulk_derived_spectrum.dat",
+            "x_column": 0,
+            "y_column": 4,
+            "scale": 1e-16,
+            "label": "Imaginary",
+            "linestyle": "--",
+            "color": "#FF7F24"
+          }
+        ]
+      }
+    ]
+  }
+}

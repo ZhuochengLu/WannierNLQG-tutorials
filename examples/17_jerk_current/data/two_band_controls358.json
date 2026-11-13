@@ -1,0 +1,36 @@
+{
+  "scope": "Supplied independent two-band five-frequency controls, not GeS or dense200 material data; original data/source identity retained. Current129 reference replay is a separate explicit evidence record.",
+  "errors": {
+    "two_band_tb_N129_eta0.001": {
+      "physical_error_global_scale": 1.6821234319043247e-05,
+      "imaginary_global_scale": 3.348517427552907e-17
+    },
+    "two_band_tb_N129_eta0.0001": {
+      "physical_error_global_scale": 1.597469739312334e-05,
+      "imaginary_global_scale": 5.297839471854081e-17
+    },
+    "two_band_tb_N129_eta1.0e-5": {
+      "physical_error_global_scale": 1.5966232018858457e-05,
+      "imaginary_global_scale": 3.231061177669901e-17
+    },
+    "two_band_tb_N257_eta0.001": {
+      "physical_error_global_scale": 8.55109653603571e-07,
+      "imaginary_global_scale": 2.6669378116198767e-17
+    },
+    "two_band_tb_N257_eta0.0001": {
+      "physical_error_global_scale": 8.559519400404184e-09,
+      "imaginary_global_scale": 3.014857026283011e-17
+    },
+    "two_band_tb_N257_eta1.0e-5": {
+      "physical_error_global_scale": 9.401282804417492e-11,
+      "imaginary_global_scale": 2.23295565847661e-17
+    },
+    "two_band_analytic_N257_eta1.0e-5": {
+      "physical_error_global_scale": 9.401282804417492e-11,
+      "imaginary_global_scale": 2.23295565847661e-17
+    }
+  },
+  "definition": "max complex error / global eta0 analytical reference scale, matched Gaussian width; eta is a separate finite geometry denominator",
+  "raw_comparison_sha256": "1073b33adedc594ef7353b16714da0ad0e4bbd6545b81ce4697c892749402274",
+  "new_response_calculation": false
+}

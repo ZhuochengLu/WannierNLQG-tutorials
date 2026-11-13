@@ -1,11 +1,13 @@
+.runtime/
+__pycache__/
+*.pyc
 .DS_Store
-Manifest.toml.bak
-Materials/GeS/vasp_SOC/GeS.spn
-Materials/GeS/vasp_SOC/GeS.chk
-Materials/GeS/vasp_SOC/GeS.eig
-Materials/GeS/vasp_SOC/GeS.mmn
-examples/*/results/smoke/
-examples/*/results/*/metadata.txt
-examples/*/results/*/WannierNLQG.out
-examples/*/results/*/progress.jsonl
-release-assets/
+Manifest.toml
+# Full material payloads belong to versioned external release assets.
+Materials/**/*.h5
+Materials/**/*_tb.dat
+Materials/**/*.spn
+Materials/**/*.chk
+Materials/**/*.eig
+Materials/**/*.mmn
+*.tar.gz.part*

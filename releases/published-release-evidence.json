@@ -1,0 +1,42 @@
+{
+  "retrieved_on": "2026-11-09",
+  "purpose": "Exact original published bodies and hashes retained independently of reformatted prose; no remote edit performed.",
+  "releases": [
+    {
+      "tag": "v1.1.0",
+      "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/tag/v1.1.0",
+      "original_body": "# WannierNLQG tutorials v1.1.0\n\nThis release adds second-harmonic-generation examples and Fe OAM/linear-response diagnostic examples to the GeS tutorial collection. The full local smoke passed all 12 groups; result validation passed 46 reference summaries and 40 smoke summaries. Six optional GeS spin cases lack optional data and remain `SKIPPED_MISSING_OPTIONAL_DATA`.\n\n**Fe qualification:** `MAX_ITERATIONS / DIAGNOSTIC_ONLY / Physics HOLD / Production NOT_ELIGIBLE`. The 14 Fe reference responses and figures retain their recorded historical source-tree identity `0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523`; they were not recomputed under the final v1.1.0 source tree. They share Fe TB SHA-256 `5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714` and full HDF5 bundle SHA-256 `8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115`. New smoke runs used source tree `3b21d5ef5ef6885e45fa5189ce854f1c12823af373068e9179ed21508dc74a3c`; the released source tree differs only in the frozen test fixture and source manifests, with runtime source files byte-identical. The published Fe `POSCAR` removes one trailing tab without changing numerical tokens; `DATA_MANIFEST.json` records its SHA-256 `d6b050709fb21f6166c179a64f437c724446191ca4f3f9297be11ff007c9c410`, while the frozen VASP input and historical band receipt retain their original hash.\n\nThe optional `Fe_full_operators_v1.1.0_rerun.tar.gz` asset is distributed separately from Git (279,428,707 bytes; SHA-256 `d3384745c0a41ee8a9336c0ad9c8dc0ce4796a4bc6e3f35599eb1e3fe41be2b9`). It contains only `Fe_fixed_full.h5` (319,169,364 bytes; SHA-256 `8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115`). Install from the tutorial repository root with `bash scripts/install_fe_bundle.sh /path/to/Fe_full_operators_v1.1.0_rerun.tar.gz`. The installer verifies both hashes and refuses to overwrite an existing bundle. Publication does not confer Fe physical or production qualification.\n",
+      "sha256_values_in_original_body": [
+        "0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523",
+        "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+        "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115",
+        "3b21d5ef5ef6885e45fa5189ce854f1c12823af373068e9179ed21508dc74a3c",
+        "d6b050709fb21f6166c179a64f437c724446191ca4f3f9297be11ff007c9c410",
+        "d3384745c0a41ee8a9336c0ad9c8dc0ce4796a4bc6e3f35599eb1e3fe41be2b9",
+        "8afdfc64742feb920a3ebc4f49fbd571c3f91fd5a111e588db02ed9676fc0115"
+      ],
+      "assets": [
+        {
+          "name": "Fe_full_operators_v1.1.0_rerun.tar.gz",
+          "bytes": 279428707,
+          "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/download/v1.1.0/Fe_full_operators_v1.1.0_rerun.tar.gz"
+        }
+      ]
+    },
+    {
+      "tag": "ges-vasp-soc-spin-v1",
+      "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/tag/ges-vasp-soc-spin-v1",
+      "original_body": "Optional runtime inputs for the spin-current and Zeeman-geometry tutorials: GeS.spn, GeS.chk, GeS.eig, and GeS.mmn. Archive SHA-256: 6f1a93078a5210afaa02efda7b092fad235ce428e9cff94a0a35e8ef959e0c79. These are tutorial runtime assets and do not establish manuscript reproduction, Physics PASS, or Production PASS.",
+      "sha256_values_in_original_body": [
+        "6f1a93078a5210afaa02efda7b092fad235ce428e9cff94a0a35e8ef959e0c79"
+      ],
+      "assets": [
+        {
+          "name": "GeS_vasp_SOC_spin_runtime_v1.tar.gz",
+          "bytes": 304970150,
+          "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/download/ges-vasp-soc-spin-v1/GeS_vasp_SOC_spin_runtime_v1.tar.gz"
+        }
+      ]
+    }
+  ]
+}

@@ -1,102 +1,70 @@
-# WannierNLQG tutorials
+# WannierNLQG Tutorials
 
-This collection contains Fe results from WannierNLQG v1.1.0, an
-offline Fe Wannierization readback, and an explicit Fe solver-to-bands lesson;
-see [VALIDATION.md](VALIDATION.md).
-The frozen three-mechanism source, 14-case Fe rerun, and local tutorial gates
-passed as recorded there. Fe remains diagnostic and not production eligible.
+These tutorials demonstrate band structures, optical and transport responses, quantum geometry, and model and material workflows with WannierNLQG. Each chapter provides its own explanation, inputs, saved data, figures, and plotting scripts.
 
-Reproducible tutorials for real-material studies with WannierNLQG, including runnable
-workflows, reference results, visualization, and interpretation for band,
-nonlinear-response, and quantum-geometry calculations.
+## Chapters
 
-## Tutorials at a glance
+- 01 · [Band structure of GeS](examples/01_band_structure/README.md)
+- 02 · [Integral charge responses](examples/02_integral_charge_responses/README.md)
+- 03 · [Integral spin-current responses](examples/03_integral_spin_responses/README.md)
+- 04 · [Momentum-resolved charge responses](examples/04_kslice_charge_responses/README.md)
+- 05 · [Momentum-resolved spin-current responses](examples/05_kslice_spin_responses/README.md)
+- 06 · [Pairwise quantum geometry](examples/06_qg_pairwise/README.md)
+- 07 · [Momentum derivatives of quantum geometry](examples/07_qg_multipoles/README.md)
+- 08 · [Shift vectors and quantum Hermitian connections](examples/08_shift_geometry/README.md)
+- 09 · [Higher and Zeeman-weighted interband geometry](examples/09_higher_and_spin_geometry/README.md)
+- 10 · [Second-harmonic generation in GeS](examples/10_second_harmonic_generation/README.md)
+- 11 · [Orbital magnetization and linear response in Fe](examples/11_fe_oam_and_linear_response/README.md)
+- 12 · [Fe Wannierization and band assessment](examples/12_fe_wannierization/README.md)
+- 13 · [Haldane model and anomalous Hall conductance](examples/13_haldane_anomalous_hall/README.md)
+- 14 · [Rice–Mele model and shift current](examples/14_rice_mele_shift_current/README.md)
+- 15 · [Nonperiodic Dirac model and response limits](examples/15_nonperiodic_dirac_response/README.md)
+- 16 · [Third-harmonic generation in monolayer graphene](examples/16_monolayer_graphene_thg/README.md)
+- 17 · [Jerk current: model and material examples](examples/17_jerk_current/README.md)
 
-The prepared collection contains twelve chapters and 46 response/band cases.
-Chapter 12 adds an explicit licensed Fe Wannierization and diagnostic band
-comparison alongside its offline model readback; it is not another response
-reference case:
+## Environment and execution
 
-1. [Band structure](examples/01_band_structure/) — interpolate bands along a
-   high-symmetry path and compare the model bands with a first-principles reference.
-2. [Integrated charge responses](examples/02_integral_charge_responses/) — calculate
-   shift and injection currents and compare the available shift-current methods.
-3. [Integrated spin responses](examples/03_integral_spin_responses/) — calculate
-   frequency-dependent injection and shift spin currents using optional spin data.
-4. [Momentum-resolved charge responses](examples/04_kslice_charge_responses/) — map
-   charge photocurrent contributions across a two-dimensional momentum slice.
-5. [Momentum-resolved spin responses](examples/05_kslice_spin_responses/) — map spin
-   photocurrent contributions using the optional spin dataset.
-6. [Pairwise quantum geometry](examples/06_qg_pairwise/) — visualize Berry curvature,
-   quantum metric, and their interband counterparts.
-7. [Quantum-geometric multipoles](examples/07_qg_multipoles/) — explore dipoles,
-   quadrupoles, and the quantum Christoffel symbol.
-8. [Shift geometry](examples/08_shift_geometry/) — compare shift-vector and quantum
-   Hermitian-connection formulations across supported methods.
-9. [Higher-order and spin geometry](examples/09_higher_and_spin_geometry/) — examine
-   Hermitian curvature, triple phase products, and Zeeman quantum geometry.
-10. [Second-harmonic generation](examples/10_second_harmonic_generation/) — calculate
-    complex susceptibility and conductivity spectra with WannierNLQG v1.1.0.
-11. [Fe OAM and linear response](examples/11_fe_oam_and_linear_response/) — follow a VASP-to-WannierNLQG
-    input chain and compare OAM, linear responses, and two ky=0 Berry routes.
-12. [Fe Wannierization](examples/12_fe_wannierization/) — learn the solver call,
-    compute bands from a new 18-WF model, and compare them with VASP; the default
-    smoke command still verifies the supplied historical model offline.
+Julia 1.11 or later and WannierNLQG 1.2 are required. Select an existing WannierNLQG 1.2 source directory. The [software validation record](manifests/software_validation.json) identifies the sources used for the recorded tutorial calculations.
 
-For a focused first pass, follow chapters 01, 02, 04, and 06. Chapters 03 and 05,
-as well as the Zeeman cases in chapter 09, require the optional spin dataset. Each
-chapter includes its own parameter definitions, run commands, reference outputs,
-visualization settings, and interpretation notes.
-
-## Quick start
+From the tutorial repository root, prepare the environment and run the [Haldane-model example](examples/13_haldane_anomalous_hall/README.md), which does not require the external GeS or Fe material data:
 
 ```bash
-julia --project=. scripts/bootstrap.jl
-julia --project=. scripts/run_group.jl 01 --profile=smoke
-WANNIERNLQG_V110_PROJECT=/path/to/wannierNLQG-v1.1.0 julia --project=. scripts/run_group.jl 10 --profile=smoke
-# After installing the optional Fe operator bundle:
-WANNIERNLQG_V110_PROJECT=/path/to/wannierNLQG-v1.1.0 julia --project=. scripts/run_group.jl 11 --profile=smoke
-WANNIERNLQG_V110_PROJECT=/path/to/wannierNLQG-v1.1.0 julia --project=. scripts/run_group.jl 12 --profile=smoke
+julia --project=. scripts/bootstrap.jl /path/to/WannierNLQG-v1.2.0
+julia --project=.runtime/env scripts/run_group.jl 13 --check
+julia --project=.runtime/env scripts/run_group.jl 13 --case=tb_topological --output=.runtime/haldane
 ```
 
-The existing 31 GeS reference results retain their v1.0.1 source identity. Chapter 10
-uses the earlier local v1.1.0 source identified in its result summary. Chapter 11's
-Fe TB and bundle retain the earlier v1.1.0 generation source recorded in
-[`MODEL_STATUS.json`](Materials/Fe/vasp_SOC/MODEL_STATUS.json); the 14 response
-tasks record their own, later source identity in their result summaries. Their
-`DIAGNOSTIC_ONLY` qualification does not change. The tutorial
-environment remains pinned to v1.0.1 for the first nine chapters.
-`WANNIERNLQG_V110_PROJECT` must point chapters 10–12 to the v1.1.0 source
-checkout being tested. The historical Fe reference results retain their recorded
-three-mechanism source tree SHA-256
-`0c3c61a489d05decfa02544e65e7a3103aed703234ab45efda134a61e6674523`;
-new smoke results record the selected checkout's source identity. To run every
-smoke case, set that variable on
-`julia --project=. scripts/run_all.jl --profile=smoke`.
+Bootstrap creates a private environment in `.runtime/env` by default. Set `WANNIERNLQG_TUTORIAL_ENV` to choose another location; use that same location in the `--project` option of subsequent Julia commands. Choose a new output directory for a calculation.
 
-The GeS examples use the [GeS SOC model](Materials/GeS/vasp_SOC/README.md).
-Fe uses the [committed Fe SOC model](Materials/Fe/vasp_SOC/README.md) and an
-optional, hash-bound full operator bundle.
-Six GeS spin-dependent
-examples require the optional release asset described in
-`Materials/GeS/vasp_SOC/OPTIONAL_SPIN_DATA.md`.
+Material examples require explicitly supplied data; see the [material data guide](Materials/README.md). Missing data are reported as `UNAVAILABLE_INPUT`, without an automatic download or substitution of another model. Chapter 12 also requires its own VASP inputs, as described in its chapter.
 
-GeS reference settings are 100 x 100 x 1 for Brillouin-zone integrals and
-200 x 200 for k-slices. Chapter 10 uses 200 photon-energy points from 0 to
-4 eV. Chapter 11 uses 40³ Fe integrals, 200 × 200 Fe Berry slices, and 401
-optical energies from 0 to 8 eV. These are
-tutorial reference settings, not convergence claims.
+## Plotting and checks
 
-## Repository map
+Plotting requires the Python dependencies in [requirements-plot.txt](requirements-plot.txt), plus system installations of Times New Roman, TeX/newtxtext/newtxmath/bm/textgreek, and Poppler. Fonts and TeX assets are not distributed with this package; there is no silent font or Mathtext fallback.
 
-- `Materials/GeS/vasp_SOC` and `Materials/Fe/vasp_SOC`: redistributable inputs, hashes, and provenance.
-- `examples`: twelve tutorial chapters and 46 independently addressable cases,
-  plus the chapter-12 offline readback.
-- `scripts`: bootstrap, execution, visualization, and release validation.
-- `manifests`: task inventory, source identities, and result inventory.
-- `test`: static, smoke, result, and public-payload checks.
+For example, list and check the available figures in [chapter 06](examples/06_qg_pairwise/README.md), then draw one from saved data:
 
-## License
+```bash
+python examples/06_qg_pairwise/plot.py --list
+python examples/06_qg_pairwise/plot.py --check
+python examples/06_qg_pairwise/plot.py --figure=kslice_quantum_metric_conventional --output=.runtime/metric-figure
+```
 
-GPL-2.0-only. The VASP POTCAR is not distributed. Users must obtain licensed
-pseudopotential data independently.
+`--figure` reads saved data without recomputing responses. Each chapter’s `reproduce.json` maps its inputs, data, and figures. Chapters use `plot_configs/` where applicable; shared runners and plotting styles are in `scripts/`, and model code is in `models/`.
+
+To check the tutorial layout and current inputs:
+
+```bash
+python test/validate_layout.py
+julia --project=.runtime/env test/current_inputs.jl .runtime/input-check
+```
+
+The ordinary suite contains 89 reference inputs and 65 smoke-test fixtures. Of these, 97 use the unified GeS/Fe material pairs; the other 57 do not require those assets. The chapter-specific valley replay and native Wannierization workflows are separate. See [checks](CHECKS.md) and [material case provenance](manifests/material_case_results.json) for recorded validation and execution identities.
+
+## Material data and licenses
+
+Tutorial code is licensed [GPL-2.0-only](LICENSE). The separately supplied unified GeS/Fe numerical model and operator data are licensed **CC BY 4.0** by **Zhuocheng Lu**. See [LICENSE_DATA.md](LICENSE_DATA.md) for the exact four-file scope, attribution and exclusions, and [DATA_CITATION.cff](DATA_CITATION.cff) for the data citation. Use [CITATION.cff](CITATION.cff) for the software citation. Third-party literature references are excluded from the material-data license; see [third-party attribution](THIRD_PARTY_REFERENCES.md).
+
+The four scientific files total 7,196,026,439 bytes. The two prepared archives also include family-specific license and citation notices. See [asset identities and availability](Materials/ASSETS.md), the [distribution manifest](manifests/material_distribution.json), and the [material data guide](Materials/README.md) for acquisition and installation. New public asset URLs have not yet been published.
+
+Representative local GeS/Fe smoke responses and output reading and plotting have been checked with their recorded sources; these checks do not establish complete material, mesh, or full-spectrum convergence. Chapter 12’s unconverged Z, THG’s finite-domain, budget, and prescription limits, and the recorded GeS jerk grid sensitivity remain relevant. See the individual chapters, [data provenance](DATA_PROVENANCE.md), and [release review](RELEASE_REVIEW.md) for details.

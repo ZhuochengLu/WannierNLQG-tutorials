@@ -1,0 +1,51 @@
+{
+  "scope": "Three tutorial maps: fractional-plane axis names and two yyyy titles; display-only redraw",
+  "response_recomputed": false,
+  "source_renderer_sha256": "1a0ff11a9652a74eff238d308e4da4e3e9bc78da9441107f76e3f92b6ba5cb2d",
+  "matplotlib_version": "3.9.2",
+  "data_sha256": {
+    "examples/04_kslice_charge_responses/data/kslice_injection_current_conventional_new_display-1dcb04d3.dat": "1dcb04d33d11bd5abc8e1c9dcb8ee0c3b930e70dd72dabbe4fb78fd362da978f",
+    "examples/05_kslice_spin_responses/data/ssc_yyyy_display-58cef9b255.dat": "58cef9b255d0b81ff0635e12c07f7bd159037e4a5b8cce1ea1bb3f58cee6fb96",
+    "examples/05_kslice_spin_responses/data/isc_yyyy_display-b91ce61a5d.dat": "b91ce61a5d54e39431193426085df8b743e51cf76a998ff491cc650b68d2e9fd"
+  },
+  "changes": {
+    "examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json": {
+      "before_sha256": "5d28a21044a166546488b2ddf07a39d24f68023ee74ca7fda219d4cfdb79ed2b",
+      "after_sha256": "b3719f6d1e27fd85526e4ff8602536bb9fff79d3b2b14dbf8ea70be7b6114394"
+    },
+    "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.png": {
+      "before_sha256": "a288d52280240f899c42b5261aca0872c3715debe977c1cdd02bc8804e1483d8",
+      "after_sha256": "f32d62d11a84fa762f9e5cbd9562abfd988fb7c003b3ddc77d7ed367223125a6"
+    },
+    "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.pdf": {
+      "before_sha256": "4ddfc82e157eafaa28cd8e0004baf6363fb42a532777cbd04eca1ac942f93312",
+      "after_sha256": "7eb96561310278da513251055671a71a2417378198db9970f35290329254db36"
+    },
+    "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_current_conventional.json": {
+      "before_sha256": "8c17fb12cfd130852a21935fa434a0f54951359f679e389cae9174967915ca4f",
+      "after_sha256": "fae85e11a588ab8c1ef591e7462e11676afe16320c411943380ac98b1456ce0d"
+    },
+    "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.png": {
+      "before_sha256": "1c0a304b35bf1cb65f1bca51deb5ae9ca222d814e2ee117f77fb95be33740473",
+      "after_sha256": "7f0f0451efab67d74010de6dca914490a076b236bff31272e28bb359d3e8dd4b"
+    },
+    "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.pdf": {
+      "before_sha256": "71dedcaefc70c574b869675d58b3af642d236db11b4d4a215704326546c99859",
+      "after_sha256": "d626b3143a3f7c20e1dcab9b3556b1ff3484b96ed36d1087719881ea95a3ced2"
+    },
+    "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json": {
+      "before_sha256": "f58acf0f8a6529c2cc39b2ecbb64c0b7f1bd1457a5755cdf35f907b775e5334a",
+      "after_sha256": "e5e77509dd336a610293a2931488226456c8a05185274e613495a4faab5040cc"
+    },
+    "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.png": {
+      "before_sha256": "9bf5fd80547e70d033eddc5fb68b96ac69ef1a6b56833d1d51965df42b88c468",
+      "after_sha256": "bbc43c94df29d95dbf5232a3e8de077b10f1509c27c5412c9429ee12645ecda8"
+    },
+    "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.pdf": {
+      "before_sha256": "076a0a8a719179842062b31a1a885262ff1b9c2a5badaf90498cd862a81d5aa0",
+      "after_sha256": "23aa60f145f1064c7d3b6ead60703a918dce23d1f793b5e5732a7361f0146a6e"
+    }
+  },
+  "validation": "All three PNGs and independent Poppler PDF previews visually inspected; signed colorbar ticks, axis labels and layout verified; check-env, check-glyphs and inspect passed.",
+  "limitations": "Not a new physics, convergence or numerical qualification; release candidate file inventories should be reconciled by their owner."
+}

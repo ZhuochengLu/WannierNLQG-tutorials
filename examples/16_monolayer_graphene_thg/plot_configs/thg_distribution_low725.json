@@ -1,0 +1,99 @@
+{
+  "output": {
+    "stem": "thg_distribution_low",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "grid",
+    "rows": 1,
+    "cols": 2,
+    "figsize": [
+      12.6,
+      4.5
+    ],
+    "panels": [
+      {
+        "kind": "line",
+        "label": "(a)",
+        "title": "$T=10$ K",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "ylabel": "$\\delta_{UR}$",
+        "xlim": [
+          -5.0,
+          -1.0
+        ],
+        "ylim": [
+          -0.05,
+          2.05
+        ],
+        "legend": false,
+        "series": [
+          {
+            "data": "../data/distribution_broadening725/T10/low_positive.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "color": "#104E8B",
+            "linestyle": "-"
+          }
+        ],
+        "xticks": [
+          -5,
+          -4,
+          -3,
+          -2,
+          -1
+        ],
+        "xticklabels": [
+          "$10^{-5}$",
+          "$10^{-4}$",
+          "$10^{-3}$",
+          "$10^{-2}$",
+          "$10^{-1}$"
+        ]
+      },
+      {
+        "kind": "line",
+        "label": "(b)",
+        "title": "$T=300$ K",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "ylabel": "$\\delta_{UR}$",
+        "xlim": [
+          -5.0,
+          -1.0
+        ],
+        "ylim": [
+          -0.05,
+          2.05
+        ],
+        "legend": false,
+        "series": [
+          {
+            "data": "../data/distribution_broadening725/T300/low_positive.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "color": "#104E8B",
+            "linestyle": "-"
+          }
+        ],
+        "xticks": [
+          -5,
+          -4,
+          -3,
+          -2,
+          -1
+        ],
+        "xticklabels": [
+          "$10^{-5}$",
+          "$10^{-4}$",
+          "$10^{-3}$",
+          "$10^{-2}$",
+          "$10^{-1}$"
+        ]
+      }
+    ]
+  }
+}

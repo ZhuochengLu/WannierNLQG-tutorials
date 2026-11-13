@@ -1,0 +1,297 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "injection_spin_current_conventional",
+      "input": "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "task_ids": [
+        "integral_injection_spin_current_conventional"
+      ],
+      "input_sha256": "4f4e9e3a6e18bece459102cb4d8ae771eed88553c384564d06faa7979fc6693c",
+      "calculation_record": "Original teaching mesh and parameters, explicit smooth geometric width0.001eV, run303.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+      "preceding_result_evidence": {
+        "execution_id": "GeS-canonical-spin-integral035",
+        "actual_input_sha256": "3360def0b61a208881ac276078ce077c822b88c6be89187c2c51e5b38ba098c4",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/03_integral_spin_responses/data/model_isc_conv-cf49e039.dat"
+        ],
+        "new_computation": false
+      },
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/03_integral_spin_responses/data/isc_spectrum-016213a21c.dat": "016213a21c7348045d46c54a4dd3dd0d5d573e851a7f1136d112bbdca45b041d"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "725839e22d85d577bea080699d03feca67591c40561cd80a16f45e3fd1623f67",
+        "active_case_input_sha256": "4f4e9e3a6e18bece459102cb4d8ae771eed88553c384564d06faa7979fc6693c",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+    },
+    {
+      "case": "shift_spin_current_conventional",
+      "input": "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml",
+      "task_ids": [
+        "integral_shift_spin_current_conventional"
+      ],
+      "input_sha256": "bcbbd8c519a9ec2410457e0b46a93f9dfaac2632e90e49dd1c7748ff4c596ae0",
+      "calculation_record": "Original teaching mesh and parameters, explicit smooth geometric width0.001eV, run303.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+      "preceding_result_evidence": {
+        "execution_id": "GeS-canonical-spin-integral035",
+        "actual_input_sha256": "3360def0b61a208881ac276078ce077c822b88c6be89187c2c51e5b38ba098c4",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/03_integral_spin_responses/data/model_ssc_conv-d0bb4ea8.dat"
+        ],
+        "new_computation": false
+      },
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/03_integral_spin_responses/data/ssc_spectrum-bc146224e9.dat": "bc146224e9200d8d8e203684aac09f77f50436966651c384862c6135bb157352"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "725839e22d85d577bea080699d03feca67591c40561cd80a16f45e3fd1623f67",
+        "active_case_input_sha256": "bcbbd8c519a9ec2410457e0b46a93f9dfaac2632e90e49dd1c7748ff4c596ae0",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+    }
+  ],
+  "figures": [
+    {
+      "id": "integral_injection_spin_current_conventional",
+      "chapter": "03_integral_spin_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/03_integral_spin_responses/data/isc_spectrum-016213a21c.dat"
+      ],
+      "figures": [
+        "examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.png",
+        "examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "data_formats": {},
+      "recipe": "examples/03_integral_spin_responses/plot_configs/integral_injection_spin_current_conventional.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/03_integral_spin_responses/data/isc_spectrum-016213a21c.dat": "016213a21c7348045d46c54a4dd3dd0d5d573e851a7f1136d112bbdca45b041d"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "725839e22d85d577bea080699d03feca67591c40561cd80a16f45e3fd1623f67",
+        "original_figure_id": "integral_injection_spin_current_conventional"
+      },
+      "provenance_source": {
+        "merged_from": "retained-source-records/integral_injection_spin_current_conventional.provenance.json",
+        "source_file_sha256": "0292bd9f2a2cce0b585a6e84f53e677ab3284db6afe200690132d86a704fd77d",
+        "payload_sha256": "e2f742abda9976793d0326855bc073ae763c1e7411260654d4c73db72c222e06",
+        "encoding": "json-sort-keys-utf8-compact",
+        "retention": "Full source record retained outside the active tutorial tree; current data are identified by the inline raw hashes."
+      },
+      "display_selection": {
+        "components": [
+          "Re yzxy",
+          "Re yzyx"
+        ],
+        "x_column": 1,
+        "y_columns": [
+          44,
+          46
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "notes": [
+          "Native output units; no additional prefactor or relaxation time applied.",
+          "Indices are flow, axial spin, and ordered optical slots."
+        ]
+      }
+    },
+    {
+      "id": "integral_shift_spin_current_conventional",
+      "chapter": "03_integral_spin_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/03_integral_spin_responses/data/ssc_spectrum-bc146224e9.dat"
+      ],
+      "figures": [
+        "examples/03_integral_spin_responses/figures/integral_shift_spin_current_conventional.png",
+        "examples/03_integral_spin_responses/figures/integral_shift_spin_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "data_formats": {},
+      "recipe": "examples/03_integral_spin_responses/plot_configs/integral_shift_spin_current_conventional.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/03_integral_spin_responses/data/ssc_spectrum-bc146224e9.dat": "bc146224e9200d8d8e203684aac09f77f50436966651c384862c6135bb157352"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "725839e22d85d577bea080699d03feca67591c40561cd80a16f45e3fd1623f67",
+        "original_figure_id": "integral_shift_spin_current_conventional"
+      },
+      "provenance_source": {
+        "merged_from": "retained-source-records/integral_shift_spin_current_conventional.provenance.json",
+        "source_file_sha256": "f3b2af05330886ab07bb6cff3f76fea5ca34fa5f64449949dc0f73bdbfd9f8df",
+        "payload_sha256": "6cda37935d3b783477eaab3190826e8d959e800d22aa200231b8a1c23f7ffda8",
+        "encoding": "json-sort-keys-utf8-compact",
+        "retention": "Full source record retained outside the active tutorial tree; current data are identified by the inline raw hashes."
+      },
+      "display_selection": {
+        "components": [
+          "Im yzxy",
+          "Im yzyx"
+        ],
+        "x_column": 1,
+        "y_columns": [
+          45,
+          47
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "notes": [
+          "Native output units; no additional prefactor or relaxation time applied.",
+          "Indices are flow, axial spin, and ordered optical slots."
+        ]
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 2
+}

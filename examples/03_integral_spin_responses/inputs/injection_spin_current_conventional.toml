@@ -1,0 +1,31 @@
+# Editable tutorial input. Numerical values retained; new-default migration is a separate step.
+[ model ]
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [100, 100]
+kind = "bz_mesh"
+spatial_dimension = 2
+
+[ response.tasks ]
+
+[ response.tasks.integral_injection_spin_current_conventional ]
+fermi_energy_ev = -2.5
+kind = "injection_spin_current"
+photon_energy_max_ev = 4.0
+photon_energy_min_ev = 0.0
+photon_energy_num_points = 200
+temperature_k = 0.0
+
+[ response.tasks.integral_injection_spin_current_conventional.numerics ]
+denominator_regularization = 0.001
+broadening = 0.06

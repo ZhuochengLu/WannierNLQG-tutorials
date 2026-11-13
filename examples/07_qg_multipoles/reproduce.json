@@ -1,0 +1,520 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "berry_curvature_dipole_conventional",
+      "input": "examples/07_qg_multipoles/inputs/berry_curvature_dipole_conventional.toml",
+      "task_ids": [
+        "kslice_berry_curvature_dipole_conventional"
+      ],
+      "input_sha256": "54801542e0920e0bac2fbcbbf7be97d3c5fa82f200fb1de7a0f4e3d1ea02d31d",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 185,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "berry_curvature_quadrupole_conventional",
+      "input": "examples/07_qg_multipoles/inputs/berry_curvature_quadrupole_conventional.toml",
+      "task_ids": [
+        "kslice_berry_curvature_quadrupole_conventional"
+      ],
+      "input_sha256": "dc895c790195178529ab174d4966ee9559f1f8cfb1037e58ae5524c3e1e93f59",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 185,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "quantum_christoffel_symbol_conventional",
+      "input": "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml",
+      "task_ids": [
+        "kslice_quantum_christoffel_symbol_conventional"
+      ],
+      "input_sha256": "2e72814e78004a6e0f24cb236b361a00b25c27a752b7aca96ecf786e148547e5",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "source": "wannier",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 184,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "quantum_metric_dipole_conventional",
+      "input": "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml",
+      "task_ids": [
+        "kslice_quantum_metric_dipole_conventional"
+      ],
+      "input_sha256": "f4f5569e11f3a5723632b9772b85cb7da7e2375dfc8089b52a66e97f5a393fab",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "source": "wannier",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 184,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "quantum_metric_quadrupole_conventional",
+      "input": "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml",
+      "task_ids": [
+        "kslice_quantum_metric_quadrupole_conventional"
+      ],
+      "input_sha256": "651e6f83a56abee4467f77d1ccedc3de95003fb3df5a18bcb83d15f444e61332",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "source": "wannier",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 184,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "kslice_berry_curvature_dipole_conventional",
+      "chapter": "07_qg_multipoles",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/07_qg_multipoles/data/model_bcdk_subspace_19_20_conv-1cba4208.dat"
+      ],
+      "figures": [
+        "examples/07_qg_multipoles/figures/kslice_berry_curvature_dipole_conventional.png",
+        "examples/07_qg_multipoles/figures/kslice_berry_curvature_dipole_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/07_qg_multipoles/inputs/berry_curvature_dipole_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/07_qg_multipoles/plot_configs/kslice_berry_curvature_dipole_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_berry_curvature_dipole_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_berry_curvature_dipole_conventional/model_bcdk_subspace_19_20_conv.dat": "1cba4208739e96a3201e4505dab25536fa83bad4a5e25e408c759d4221fc1a34"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_berry_curvature_dipole_conventional/executed-group-input.toml": "99817af95393fc1f2ed95e942411c364981894b5aa6b83fb1d5c08277c312710"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "1cba4208739e96a3201e4505dab25536fa83bad4a5e25e408c759d4221fc1a34",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/07_qg_multipoles/data/kslice_berry_curvature_dipole_conventional.provenance.json",
+        "source_file_sha256": "b2d2ee62cbf36be7ded5265a394e063dc432313c17a9e1dc5364f1ea0b0e70b9",
+        "payload_sha256": "b85c7c3d7cadd7e282f859d9dcffb89c8f0aee171b9b79afe27981be6ba266e6",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "kslice_berry_curvature_quadrupole_conventional",
+      "chapter": "07_qg_multipoles",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/07_qg_multipoles/data/model_bcqk_subspace_19_20_conv-60cf5e46.dat"
+      ],
+      "figures": [
+        "examples/07_qg_multipoles/figures/kslice_berry_curvature_quadrupole_conventional.png",
+        "examples/07_qg_multipoles/figures/kslice_berry_curvature_quadrupole_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/07_qg_multipoles/inputs/berry_curvature_quadrupole_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/07_qg_multipoles/plot_configs/kslice_berry_curvature_quadrupole_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_berry_curvature_quadrupole_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_berry_curvature_quadrupole_conventional/model_bcqk_subspace_19_20_conv.dat": "60cf5e46079b8869abf1ce007f8b7cb27b639e12bec8efc77da5892afb577dc5"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_berry_curvature_quadrupole_conventional/executed-group-input.toml": "99817af95393fc1f2ed95e942411c364981894b5aa6b83fb1d5c08277c312710"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "60cf5e46079b8869abf1ce007f8b7cb27b639e12bec8efc77da5892afb577dc5",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/07_qg_multipoles/data/kslice_berry_curvature_quadrupole_conventional.provenance.json",
+        "source_file_sha256": "b32411df3f8693834190a65b57d87f0ef97b6e94b71c03843bcddf9edb681e5c",
+        "payload_sha256": "0b1873615ad7b480ea2d3c779a54b765ab53e5791393e762a8762cb449d0077e",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    },
+    {
+      "id": "kslice_quantum_christoffel_symbol_conventional",
+      "chapter": "07_qg_multipoles",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/07_qg_multipoles/data/model_qcsk_subspace_19_20_conv-d9106650.dat"
+      ],
+      "figures": [
+        "examples/07_qg_multipoles/figures/kslice_quantum_christoffel_symbol_conventional.png",
+        "examples/07_qg_multipoles/figures/kslice_quantum_christoffel_symbol_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/07_qg_multipoles/plot_configs/kslice_quantum_christoffel_symbol_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_quantum_christoffel_symbol_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_quantum_christoffel_symbol_conventional/model_qcsk_subspace_19_20_conv.dat": "d91066502b1e1f528154884001abab7b49e80c81c3d2c376a59bf7e7939427e0"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_quantum_christoffel_symbol_conventional/executed-group-input.toml": "5d2a5569b250529d31a6cb101a34e2cf95c7c5cb00a14c259d456f6d6a93ea8f"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "d91066502b1e1f528154884001abab7b49e80c81c3d2c376a59bf7e7939427e0",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/07_qg_multipoles/data/kslice_quantum_christoffel_symbol_conventional.provenance.json",
+        "source_file_sha256": "4d9655e9ef480075241cf473c955fd94916264d8b99ee08dbc000c5bcbde4828",
+        "payload_sha256": "94b7e85bcb5bd7925623b553cfe64f9a1fba3c8142a512066600dd6c42a6e87f",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    },
+    {
+      "id": "kslice_quantum_metric_dipole_conventional",
+      "chapter": "07_qg_multipoles",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/07_qg_multipoles/data/model_qmdk_subspace_19_20_conv-f54b97bd.dat"
+      ],
+      "figures": [
+        "examples/07_qg_multipoles/figures/kslice_quantum_metric_dipole_conventional.png",
+        "examples/07_qg_multipoles/figures/kslice_quantum_metric_dipole_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/07_qg_multipoles/plot_configs/kslice_quantum_metric_dipole_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_quantum_metric_dipole_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_quantum_metric_dipole_conventional/model_qmdk_subspace_19_20_conv.dat": "f54b97bd1a5163932a07df6af5470baea210b4bc702e53f689c6533e5328a83a"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_quantum_metric_dipole_conventional/executed-group-input.toml": "5d2a5569b250529d31a6cb101a34e2cf95c7c5cb00a14c259d456f6d6a93ea8f"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "f54b97bd1a5163932a07df6af5470baea210b4bc702e53f689c6533e5328a83a",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/07_qg_multipoles/data/kslice_quantum_metric_dipole_conventional.provenance.json",
+        "source_file_sha256": "c9ed1f25e2b3ce05c3409016aa44cf7c6a6cf0a01b71e2c38ab16fb020e5a1d1",
+        "payload_sha256": "3f98851da7f3f05d616c5fafc65b08b46f0a519d58869683a2a6b0f71ff0b4ad",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "kslice_quantum_metric_quadrupole_conventional",
+      "chapter": "07_qg_multipoles",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/07_qg_multipoles/data/model_qmqk_subspace_19_20_conv-a0860314.dat"
+      ],
+      "figures": [
+        "examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.png",
+        "examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "recipe": "examples/07_qg_multipoles/plot_configs/kslice_quantum_metric_quadrupole_conventional.json",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 207,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "kslice_quantum_metric_quadrupole_conventional.new-default-f278",
+        "original_data_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_quantum_metric_quadrupole_conventional/model_qmqk_subspace_19_20_conv.dat": "a0860314bc48a54beeddc207fd90ce211ce0fad15a64121683176fbbe8187ce7"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/07_qg_multipoles/results/new-default-development-f278-20261108/kslice_quantum_metric_quadrupole_conventional/executed-group-input.toml": "5d2a5569b250529d31a6cb101a34e2cf95c7c5cb00a14c259d456f6d6a93ea8f"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "a0860314bc48a54beeddc207fd90ce211ce0fad15a64121683176fbbe8187ce7",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/07_qg_multipoles/data/kslice_quantum_metric_quadrupole_conventional.provenance.json",
+        "source_file_sha256": "d75913b15b98995dcddeba145eb3591f03ae0c14780cc41b7b6f9f1115ad7921",
+        "payload_sha256": "5713c65f94714273a9528af4d6ec9404d4e5aaa8576a2908b6bca701b06a15eb",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 5
+}

@@ -1,10 +1,45 @@
 {
-  "input": "../results/reference/integral_second_harmonic_generation_conventional/shg_chi_yyy.dat",
-  "output_stem": "../figures/GeS_shg_chi_yyy",
-  "component": "yyy",
-  "quantity": "chi",
-  "unit": "pm/V",
-  "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
-  "ylabel": "$\\chi^{yyy}(2\\omega;\\omega,\\omega)\\ \\mathrm{(pm/V)}$",
-  "xlim": [0.0, 4.0]
+  "output": {
+    "stem": "shg_chi_yyy",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "line",
+    "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "ylabel": "$\\chi^{yyy}(2\\omega;\\omega,\\omega)\\ \\mathrm{(pm/V)}$",
+    "xlim": [
+      0.0,
+      4.0
+    ],
+    "legend": true,
+    "legend_frame": true,
+    "legend_edgecolor": "#808080",
+    "series": [
+      {
+        "data": "../data/shg_chi_yyy-c90aa18f.dat",
+        "x_column": 0,
+        "y_column": 1,
+        "scale": 1,
+        "label": "$\\mathrm{Re}$",
+        "color": "#104E8B"
+      },
+      {
+        "data": "../data/shg_chi_yyy-c90aa18f.dat",
+        "x_column": 0,
+        "y_column": 2,
+        "scale": 1,
+        "label": "$\\mathrm{Im}$",
+        "color": "#FF7F24"
+      }
+    ],
+    "title": "GeS second-harmonic response"
+  }
 }

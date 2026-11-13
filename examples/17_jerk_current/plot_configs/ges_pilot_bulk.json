@@ -1,0 +1,84 @@
+{
+  "output": {
+    "stem": "ges_pilot_bulk",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "grid",
+    "rows": 1,
+    "cols": 2,
+    "figsize": [
+      10,
+      4.5
+    ],
+    "panels": [
+      {
+        "kind": "line",
+        "title": "xxxx",
+        "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+        "ylabel": "$\\mathrm{A\\,m/(V^3\\,s^2)}$",
+        "xlim": [
+          1.95,
+          2.55
+        ],
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/jc_G_ordered_xxxx-18974147.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "label": "$\\mathrm{Re}$",
+            "color": "#104E8B",
+            "linestyle": "None",
+            "marker": "o"
+          },
+          {
+            "data": "../data/jc_G_ordered_xxxx-18974147.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "label": "$\\mathrm{Im}$",
+            "color": "#FF7F24",
+            "linestyle": "None",
+            "marker": "o"
+          }
+        ]
+      },
+      {
+        "kind": "line",
+        "title": "yyyy",
+        "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+        "ylabel": "$\\mathrm{A\\,m/(V^3\\,s^2)}$",
+        "xlim": [
+          1.95,
+          2.55
+        ],
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/jc_G_ordered_yyyy-1ded8bcd.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "label": "$\\mathrm{Re}$",
+            "color": "#104E8B",
+            "linestyle": "None",
+            "marker": "o"
+          },
+          {
+            "data": "../data/jc_G_ordered_yyyy-1ded8bcd.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "label": "$\\mathrm{Im}$",
+            "color": "#FF7F24",
+            "linestyle": "None",
+            "marker": "o"
+          }
+        ]
+      }
+    ],
+    "suptitle": "GeS bulk-normalized jerk response: two sampled frequencies"
+  }
+}

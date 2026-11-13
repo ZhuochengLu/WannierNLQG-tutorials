@@ -1,0 +1,39 @@
+# ISOLATED MIGRATION DRAFT: not source-bound or runtime-validated; not installed.
+# Explicit unified-GeS jerk spectrum and mesh control.
+[ model ]
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "mixed"
+nkdiv = [40, 40, 1]
+nkfft = [5, 5, 1]
+
+[ response.sampling ]
+k_mesh = [200, 200, 1]
+kind = "bz_mesh"
+spatial_dimension = 3
+
+[ response.tasks ]
+
+[ response.tasks.ges_mesh200_sheet ]
+fermi_energy_ev = -2.5
+kind = "jerk_current"
+photon_energies_ev = [1.6, 2.0, 2.5, 3.0, 3.5]
+projection = "ordered"
+temperature_k = 0.0
+
+[ response.tasks.ges_mesh200_sheet.observable ]
+components = [[1, 1, 1, 1], [2, 2, 2, 2]]
+kind = "tensor_components"
+
+[ response.tasks.ges_mesh200_sheet.numerics ]
+broadening = 0.04
+broadening_type = "Gaussian"
+denominator_regularization = 0.001
+transition_window_factor = 5.0
+band_window_size = -1

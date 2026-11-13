@@ -1,0 +1,85 @@
+{
+  "schema": "tutorial-material-asset-candidate/1",
+  "id": "tutorial-unified-GeS-Fe-20261109",
+  "status": "LICENSED_LOCAL_CANDIDATE_FORMAT3_PAYLOAD_UNCHANGED_NOT_UPLOADED",
+  "files": [
+    {
+      "logical_path": "Materials/GeS/model_tb.dat",
+      "bytes": 94298181,
+      "sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "same_bytes_no_matrix_transformation": true,
+      "public_upload": false
+    },
+    {
+      "logical_path": "Materials/GeS/operators.h5",
+      "bytes": 4024659779,
+      "sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "same_bytes_no_matrix_transformation": false,
+      "public_upload": false,
+      "previous_format_identity": {
+        "schema": "2.0",
+        "bytes": 4024655536,
+        "sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e"
+      },
+      "numerical_payload_bits_preserved": true,
+      "model_schema": "3.0"
+    },
+    {
+      "logical_path": "Materials/Fe/model_tb.dat",
+      "bytes": 71573382,
+      "sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "same_bytes_no_matrix_transformation": true,
+      "public_upload": false
+    },
+    {
+      "logical_path": "Materials/Fe/operators.h5",
+      "bytes": 3005495097,
+      "sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "same_bytes_no_matrix_transformation": false,
+      "public_upload": false,
+      "previous_format_identity": {
+        "schema": "2.0",
+        "bytes": 3005490874,
+        "sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df"
+      },
+      "numerical_payload_bits_preserved": true,
+      "model_schema": "3.0"
+    }
+  ],
+  "logical_file_count": 4,
+  "unique_blobs": 4,
+  "unique_bytes": 7196026439,
+  "logical_bytes": 7196026439,
+  "material_calculations": 0,
+  "source_byte_checksums_verified": true,
+  "data_license_status": "CC-BY-4.0_USER_APPROVED",
+  "publication_instruction": "No GitHub upload or push performed.",
+  "format_copy_evidence": "manifests/model_format_copy302.json",
+  "current_format_local_verification": {
+    "files": 4,
+    "full_size_sha256_check": "PASS",
+    "ordinary_installer": "PASS",
+    "source_identity_unchanged": true,
+    "normal_spin_input_checks": 8,
+    "other100_material_inputs_not_rerun": true,
+    "scope": "Original numerical/model-reader evidence retained; licensed package increment verifies raw hashes plus notices without another model read."
+  },
+  "local_release_preparation": "manifests/release_preparation414.json",
+  "distribution_manifest": "manifests/material_distribution.json",
+  "data_rights_review": "manifests/data_rights_review414.json",
+  "current_input_count": 154,
+  "current_material_input_count": 97,
+  "current_material_reference_count": 54,
+  "current_material_smoke_count": 43,
+  "material_authority_confirmation": "manifests/material_authority418.json",
+  "user_generated_and_redistribution_authority_confirmed": true,
+  "data_license": "CC-BY-4.0",
+  "data_author": "Zhuocheng Lu",
+  "data_citation": "DATA_CITATION.cff",
+  "license_notice": "LICENSE_DATA.md",
+  "licensing_manifest": "manifests/material_licensing420.json"
+}

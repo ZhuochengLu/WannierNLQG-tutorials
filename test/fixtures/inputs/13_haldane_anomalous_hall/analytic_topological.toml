@@ -1,0 +1,29 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+identity = "haldane/analytic/topological"
+source = "julia"
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [9, 9, 1]
+kind = "bz_mesh"
+spatial_dimension = 3
+
+[ response.tasks ]
+
+[ response.tasks.analytic_topological ]
+fermi_energies_ev = [0.0]
+kind = "linear_transport"
+temperature_k = 0.0
+
+[ response.tasks.analytic_topological.numerics ]
+eta_fs_ev = 0.01
+fs_kind = "gaussian"
+
+[ response.tasks.analytic_topological.relaxation ]
+gamma_inter_ev = 0.02
+gamma_intra_ev = 0.02

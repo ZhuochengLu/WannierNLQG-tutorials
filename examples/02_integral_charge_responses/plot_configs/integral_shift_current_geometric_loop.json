@@ -1,29 +1,34 @@
 {
-  "mode": "single",
-  "input": "../results/reference/integral_shift_current_geometric_loop/GeS_sc_geo.dat",
-  "label": "integral_shift_current_geometric_loop",
-  "components": "yyy",
-  "part": "real",
-  "unit": "native output units",
-  "x_window": [
-    0.0,
-    4.0
-  ],
-  "panel_size_inches": [
-    4.8,
-    3.4
-  ],
-  "curves": {
-    "integral_shift_current_geometric_loop": {
-      "marker": "",
-      "linewidth": 1.6
-    }
-  },
   "output": {
-    "stem": "../figures/integral_shift_current_geometric_loop",
+    "stem": "integral_shift_current_geometric_loop",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "line",
+    "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "ylabel": "$\\mathrm{Re}\\,\\sigma^{yyy}$ (native output units)",
+    "xlim": [
+      0.0,
+      4.0
+    ],
+    "legend": false,
+    "series": [
+      {
+        "data": "../data/operators_sc_geo-95b15239.dat",
+        "x_column": 1,
+        "y_column": 16,
+        "color": "#104E8B",
+        "linewidth": 1.6
+      }
+    ],
+    "title": "GeS shift current: geometric loop"
   }
 }

@@ -1,0 +1,441 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "fe_bands",
+      "input": "examples/12_fe_wannierization/inputs/fe_bands.toml",
+      "task_ids": [
+        "fe_bands"
+      ],
+      "input_sha256": "99c555f43a8bcb17a1e9ac269b776bc192eaf636d971cc3d832210606e3a5e17",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "kind": "k_path",
+          "kpoints_per_segment": [
+            201,
+            201,
+            201,
+            201
+          ],
+          "spatial_dimension": 3,
+          "nodes": {
+            "fractional_coordinates": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.5,
+                -0.5,
+                -0.5
+              ],
+              [
+                0.75,
+                0.25,
+                -0.25
+              ],
+              [
+                0.5,
+                0.0,
+                -0.5
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "label": [
+              "Γ",
+              "H",
+              "P",
+              "N",
+              "Γ"
+            ]
+          }
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "Fe-tutorial-bands-20261106-001",
+        "actual_input_sha256": "25e399214d6b5998db7ba5b0a6afdbc8edb2c9becb32eb6936a27b35a9c8788e",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/12_fe_wannierization/data/model_bands-eb4ca8ce.dat"
+        ],
+        "new_computation": false
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance326",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "99c555f43a8bcb17a1e9ac269b776bc192eaf636d971cc3d832210606e3a5e17",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/12_fe_wannierization/data/current725/fe_bands/model_bands.dat": "eb4ca8ce8e97743d65d567e3ff986407dcb90d89e8a43095febc6e7594da1dd9"
+        }
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "audited_previous_new_Fe_full",
+      "chapter": "12_fe_wannierization",
+      "engine": "audited_band_manifest",
+      "data": [
+        "examples/12_fe_wannierization/data/dft_absolute-59c64881.dat",
+        "examples/12_fe_wannierization/data/new_tb_absolute-6ada0279.dat"
+      ],
+      "figures": [
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.png",
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.png",
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.pdf",
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/12_fe_wannierization/inputs/fe_bands.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RETAINED_DIAGNOSTIC_BAND_DATA_AND_EXACT_VIEW; NO_NEW_WANNIER_OR_DFT_EXECUTION",
+      "data_formats": {},
+      "recipe": "examples/12_fe_wannierization/plot_configs/audited_previous_new_Fe_full.json",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 214,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "audited_previous_new_Fe_full",
+        "original_data_sha256": {
+          "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-full/dft_absolute.dat": "59c64881815866db82bb27e648761d1294783bded4bbef2e0a1ec2e0c7b8d952",
+          "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-full/new_tb_absolute.dat": "6ada0279b34dac5a0df46c92bdaaf7dcfbc0279f92dcc494bf3670a823b4d486",
+          "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-full/old_tb_absolute.dat": "ffb60753723b59f00e8c2488a139c6abf223db5ca5122b2b384fa42a05bc76bc"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "current326_curve_validation": {
+          "native_table_byte_exact": true,
+          "native_sha256": "eb4ca8ce8e97743d65d567e3ff986407dcb90d89e8a43095febc6e7594da1dd9",
+          "absolute_curve_energy_and_coordinate_max_error": 0.0,
+          "energy_reference_ev": 5.7156290716733436,
+          "actual_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "new_render_or_material_accuracy_claimed": false
+        }
+      },
+      "provenance_source": {
+        "merged_from": "manifests/retained-source-records/followup334/12_fe_wannierization__audited_previous_new_Fe_full.provenance.json",
+        "source_file_sha256": "68754bcf07b5f1e3410a065a60834a1d6eccfe22e324a80f9f5236cd0dbe32bf",
+        "payload_sha256": "4b7c7fedc0f42d02684b64cb8a1b806d545d7b620937160f0e26a72bbbb9426d",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      },
+      "display_redraw_20261111": {
+        "scope": "chapter 12 presentation only; existing data and qualification status retained",
+        "qualification_annotations_visible": false,
+        "renderer_sha256": "97117d225b510ce709a5a06c6b554927c35d361d04f69b3bb04fc9d341a1c161",
+        "recipe_sha256": "b5ea7066a8745f0a5f01fa46a84481f53df908d0c98376b6475780c9538fc094",
+        "figure_sha256": {
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.png": "03a7358a13bf852dcd8d96405c0a451ee32b4788a8e2e53c0ef28a083c7157e6",
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.png": "ce844fa66802803561f28bdfcc4718b50150397b36affd39c6d1b1c7848cc16c",
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.pdf": "46845b94ebecccf9ddad1aeb27a61cdcffbdd9cc47f02d78a774f41fd3525b69",
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.pdf": "7e53e3541b69b87abf8170d4eddfa9be2771ad3a009b359ed07563a5c0f90145"
+        },
+        "png_and_pdf_inspected": true,
+        "wannierization_recomputed": false
+      }
+    },
+    {
+      "id": "audited_previous_new_Fe_review",
+      "chapter": "12_fe_wannierization",
+      "engine": "audited_band_manifest",
+      "data": [
+        "examples/12_fe_wannierization/data/dft_absolute-59c64881.dat",
+        "examples/12_fe_wannierization/data/new_tb_absolute-6ada0279.dat"
+      ],
+      "figures": [
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.png",
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.png",
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.pdf",
+        "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/12_fe_wannierization/inputs/fe_bands.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RETAINED_DIAGNOSTIC_BAND_DATA_AND_EXACT_VIEW; NO_NEW_WANNIER_OR_DFT_EXECUTION",
+      "data_formats": {},
+      "recipe": "examples/12_fe_wannierization/plot_configs/audited_previous_new_Fe_review.json",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 214,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "audited_previous_new_Fe_review",
+        "original_data_sha256": {
+          "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-review/dft_absolute.dat": "59c64881815866db82bb27e648761d1294783bded4bbef2e0a1ec2e0c7b8d952",
+          "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-review/new_tb_absolute.dat": "6ada0279b34dac5a0df46c92bdaaf7dcfbc0279f92dcc494bf3670a823b4d486",
+          "examples/12_fe_wannierization/results/retained-band-inputs-20261108/previous-new-Fe-review/old_tb_absolute.dat": "ffb60753723b59f00e8c2488a139c6abf223db5ca5122b2b384fa42a05bc76bc"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "current326_curve_validation": {
+          "native_table_byte_exact": true,
+          "native_sha256": "eb4ca8ce8e97743d65d567e3ff986407dcb90d89e8a43095febc6e7594da1dd9",
+          "absolute_curve_energy_and_coordinate_max_error": 0.0,
+          "energy_reference_ev": 5.7156290716733436,
+          "actual_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "new_render_or_material_accuracy_claimed": false
+        }
+      },
+      "provenance_source": {
+        "merged_from": "manifests/retained-source-records/followup334/12_fe_wannierization__audited_previous_new_Fe_review.provenance.json",
+        "source_file_sha256": "23e5822a810a6e1966cbadecf711c43b6a708c63850e024d05e01972bf37529f",
+        "payload_sha256": "036faaaf53dccd861643bd6106e56f4c71e27594812d7aefdad71274137e6550",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Display only the selected TB and DFT; exclude the other TB control."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "selection": "DFT reference and current Wannier TB only; original band-accuracy qualification retained"
+      },
+      "display_redraw_20261111": {
+        "scope": "chapter 12 presentation only; existing data and qualification status retained",
+        "qualification_annotations_visible": false,
+        "renderer_sha256": "97117d225b510ce709a5a06c6b554927c35d361d04f69b3bb04fc9d341a1c161",
+        "recipe_sha256": "73abbfa63c2a7523560c13410e3a1b860070be64d20af56b2ea8e53e907e472b",
+        "figure_sha256": {
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.png": "eec7d1077da878d36fc0efe4422fb23e0caa1d2736fba2c87521d79b89b70ed1",
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.png": "ce844fa66802803561f28bdfcc4718b50150397b36affd39c6d1b1c7848cc16c",
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.pdf": "8dfe97e4b10a6ecaecd9f769ee5d71e9e5a5b35b1ef5aa135cb677136a1e52f6",
+          "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.pdf": "7e53e3541b69b87abf8170d4eddfa9be2771ad3a009b359ed07563a5c0f90145"
+        },
+        "png_and_pdf_inspected": true,
+        "wannierization_recomputed": false
+      }
+    },
+    {
+      "id": "native_fe_diagnostic_review",
+      "chapter": "12_fe_wannierization",
+      "engine": "audited_band_manifest",
+      "data": [
+        "examples/12_fe_wannierization/data/dft_absolute-59c64881.dat",
+        "examples/12_fe_wannierization/data/native_fe_bands_absolute_aligned.dat"
+      ],
+      "figures": [
+        "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_bands.png",
+        "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_errors.png",
+        "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_bands.pdf",
+        "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_errors.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/12_fe_wannierization/wannierization/fe_native_ordinary.toml",
+        "examples/12_fe_wannierization/inputs/fe_bands.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "EXPLICIT_NATIVE_AND_BAND_INPUT",
+      "calculation_reproduction_status": "Recorded native execution and 801-point band readback; Z did not converge and the model remains unqualified.",
+      "data_formats": {},
+      "recipe": "examples/12_fe_wannierization/plot_configs/native_fe_diagnostic_review.json",
+      "execution_evidence": {
+        "recorded_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "evidence": "examples/12_fe_wannierization/data/native_fe_diagnostic_evidence.json",
+        "evidence_sha256": "6771e53d8dbde507fdd45369fdcbd1b6909494332d691bf519459d741951729d",
+        "reused_result": true,
+        "new_integral_or_wannier_calculation": false,
+        "qualification_status": "TB_GATE_FAILED",
+        "png_redraw_identity": "Figures redrawn from retained data; PNG and PDF inspected independently; Z nonconvergence is stated in the tutorial text."
+      },
+      "display_redraw_20261111": {
+        "scope": "chapter 12 presentation only; existing data and qualification status retained",
+        "qualification_annotations_visible": false,
+        "renderer_sha256": "97117d225b510ce709a5a06c6b554927c35d361d04f69b3bb04fc9d341a1c161",
+        "recipe_sha256": "7300c034f27b16f2a9efc70bc751e1015ff423cdec0abf588c24cda22191229e",
+        "figure_sha256": {
+          "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_bands.png": "c80202f3fd061e13353cc272934b55756293682982414f885707b7542a3b579f",
+          "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_errors.png": "928f73cc21c18728c9f368e928d363682d165cd717920d6b5d3871ab488dea28",
+          "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_bands.pdf": "973fbbd45758719f6f6e6f6546f1ec33b79251693ad435a3a1c2fe6a20fdf7af",
+          "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_errors.pdf": "01a6fd48c607916b1ca47b5d4bbc979021d7735b092855fc03361b5060c9d525"
+        },
+        "png_and_pdf_inspected": true,
+        "wannierization_recomputed": false
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 2,
+  "native_wannierization": {
+    "template": "examples/12_fe_wannierization/wannierization/fe_native_ordinary.toml",
+    "template_sha256": "2aa14dd35698dd20e923f6c4c4809947ff3d89ebee8afc8c8f68eb55e958ef29",
+    "entry": "Current-source scripts/wanniernlqg.jl check and run; requires user-supplied same-calculation VASP source.",
+    "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "actual_source_bundle_identity": {
+      "POSCAR": "0706c1b1c7630dc2f92e886e49ef07c124c00748051f17e85de513e30d286071",
+      "INCAR": "a9580130eb190236880990d06a273ad9d702e92b6615b907908fd68512dde84f",
+      "POTCAR": "cd5a22d9368cc8b5cc476bea79732366149640da08ac9009b0e1b7fc627eea28",
+      "OUTCAR": "97c98306cd64ea2df0d333772dd537162a7c830e1e95f1430e2afc1374646cb9",
+      "WAVECAR": "44af2ecd04b1389b3de07286ce037bfef4c3efc7e4c0db9b08a6b4ddc48278a0"
+    },
+    "zero_step_pilot": {
+      "run_id": "tutorial-fe-pilot-20261111-001",
+      "return_code": 0,
+      "workflow_status": "COMPLETED_WITH_WARNINGS",
+      "scientific_qualification": "NOT_ESTABLISHED",
+      "convergence_claim": false
+    },
+    "source_comparison": {
+      "neighbor_sets": "All 1000 unordered sets match; ordering differs.",
+      "projection_label_mismatches": 0,
+      "projection_complex_relative_l2": 1.4607438566855257e-06,
+      "projection_complex_max_abs": 2.2234427657894705e-06
+    },
+    "current_full_run": {
+      "run_id": "tutorial-fe-full-20261111-001",
+      "request_sha256": "3a428edc84c9377c1acd1e401f5b0e8a73e292f2a7ece0facdd681967c13dcc7",
+      "executed_input_sha256": "25eb097ed1903d924646b18224c9c192779c515dbb1752b6baf630b3e6fdf33d",
+      "template_equivalence": "Parsed settings match the executed input after substituting only source and output paths.",
+      "status": "MAX_ITERATIONS",
+      "z_last_relative_change": -8.129927e-09,
+      "z_last_omega_i_angstrom2": 13.018013172,
+      "qualification": "Z nonconvergence prevents a qualified full run; U and export do not upgrade it.",
+      "process_exit_code": 0,
+      "z_termination": "1000 accepted Z steps; not converged",
+      "u_termination": "localization converged from an unqualified Z projector; 561 accepted U steps",
+      "accepted_iterations": 1561,
+      "omega_i_angstrom2": 13.018013172312802,
+      "omega_total_angstrom2": 16.59157580332241,
+      "structural_checks": "Accepted-frame isometry, frozen embedding, fixed-projector drift, H/r Hermiticity and Fourier round trips, and center consistency passed.",
+      "native_paw_quality": "Two reported measurements passed; eight were not available, with quality-review warnings.",
+      "exported_hr_bundle_sha256": "94cc1e1bdfce800b3b02b7810eecb10c53ceff83c189c239a8dfedd611d00a32",
+      "scientific_qualification": "NOT_ESTABLISHED",
+      "band_diagnostic": {
+        "run_id": "tutorial-fe-band-full-20261111-001",
+        "request_sha256": "f7429777fd1a878dd6221b2e02a9cb79caea4a8259c2f3a3b61dbf8a163f6376",
+        "process_exit_code": 0,
+        "source_model_sha256": "94cc1e1bdfce800b3b02b7810eecb10c53ceff83c189c239a8dfedd611d00a32",
+        "bands_table_sha256": "720c1f651b078c316a173b0a7ff7d985c4f48ea802bfc28cce25b34168fe9f6e",
+        "dft_reference_sha256": "59c64881815866db82bb27e648761d1294783bded4bbef2e0a1ec2e0c7b8d952",
+        "matched_reference": "64-band energy pool, one-to-one per k, no fitted energy shift",
+        "near_fermi_window_ev": [
+          -1,
+          1
+        ],
+        "near_fermi_count": 2462,
+        "near_fermi_rms_ev": 0.009908358267998112,
+        "near_fermi_max_abs_ev": 0.055040801201575285,
+        "degeneracy_cluster_conflict_kpoints": 205,
+        "qualification_status": "TB_GATE_FAILED",
+        "scientific_scope": "Diagnostic only: model Z is nonconverged and automatic matching reports degeneracy-cluster conflicts; energy data and plots are retained in this chapter.",
+        "comparison_degeneracy_tolerance_ev": 0.01,
+        "path_point_count": 801,
+        "data_sha256": {
+          "examples/12_fe_wannierization/data/native_fe_band_path_raw.dat": "720c1f651b078c316a173b0a7ff7d985c4f48ea802bfc28cce25b34168fe9f6e",
+          "examples/12_fe_wannierization/data/native_fe_bands_absolute_aligned.dat": "c071013e4e01c0ed7a93d607d59cdb63c75a43aea35f744c53e0f19dd80ef02d",
+          "examples/12_fe_wannierization/data/native_fe_diagnostic_matches.npz": "eefc6269fb61c09c5c66d4541694f5152288a2148173c071b74113ba7b71b792",
+          "examples/12_fe_wannierization/data/dft_absolute-59c64881.dat": "59c64881815866db82bb27e648761d1294783bded4bbef2e0a1ec2e0c7b8d952",
+          "examples/12_fe_wannierization/data/native_fe_diagnostic_evidence.json": "6771e53d8dbde507fdd45369fdcbd1b6909494332d691bf519459d741951729d"
+        },
+        "full_band_conflict_count": 205,
+        "window_conflict_count": 9,
+        "window_conflicts_zero_based": [
+          12,
+          70,
+          73,
+          86,
+          87,
+          103,
+          104,
+          648,
+          649
+        ],
+        "window_rms_uses_all_2462_pairs": true,
+        "window_diagnostic_replaces_full_gate": false,
+        "comparison_evidence": "examples/12_fe_wannierization/data/native_fe_diagnostic_evidence.json"
+      }
+    },
+    "band_input_helper": "examples/12_fe_wannierization/wannierization/prepare_fe_bands.py",
+    "qualification": "Separate Z, U, structural and exported-model checks are required.",
+    "band_readback_pilot": {
+      "run_id": "tutorial-fe-band-pilot-20261111-001",
+      "request_sha256": "c87f06e3495ef44fcafd587849c82cc57f08ed70fc8a9f647cc21e7fb4c1c52f",
+      "source_zero_step_model_sha256": "7d588dc45fe543669b490a28c1b60805a4e73ab59217e6c04f5fbbb430cbc988",
+      "return_code": 0,
+      "path_points": 801,
+      "orbitals": 18,
+      "operator_inventory": [
+        "REAL_SPACE_HAMILTONIAN",
+        "REAL_SPACE_POSITION"
+      ],
+      "scientific_qualification": "NOT_ESTABLISHED",
+      "scope": "Zero-step model readback only; not a converged-material band comparison.",
+      "comparison_pipeline": {
+        "status": "DIAGNOSTIC_TB_GATE_FAILED",
+        "fractional_path_max_abs_difference": 1.1102230246251565e-16,
+        "max_display_distance_difference_inverse_angstrom": 2.005269958971212e-07,
+        "display_distance_treatment": "After confirming the declared fractional path, the reference distances were used only for diagnostic plotting; no energy fit or offset.",
+        "degeneracy_cluster_conflict_kpoints": 231,
+        "qualification": "Zero-step pilot only; not evidence of model accuracy."
+      }
+    },
+    "band_comparison_helper": "examples/12_fe_wannierization/wannierization/prepare_fe_comparison.py",
+    "helpers_sha256": {
+      "examples/12_fe_wannierization/wannierization/prepare_fe_bands.py": "736e769fdbb5fe78ece2e0f34f5cd904cc5778867d185ada150c193ddb6d20b5",
+      "examples/12_fe_wannierization/wannierization/prepare_fe_comparison.py": "f76ea341b5cf7d67dc18d605a2972fee5dba77fd9e67e40f7e8293591d7bc767",
+      "examples/12_fe_wannierization/wannierization/audit_fe_matching.py": "a296c6af39baa89fe7d7f8c933eba8481daabfa8946f485920837b9ffe807c90"
+    },
+    "band_matching_audit_helper": "examples/12_fe_wannierization/wannierization/audit_fe_matching.py",
+    "current_source_applicability": {
+      "recorded_run_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "later_local_source_manifest_sha256": "63d9520199dc47579fcbbd2d677e2081d3f42d9a6ef989e4e4fa1fb426fd0305",
+      "manifest_difference": "12 documentation or theory entries; no src, scripts, Project.toml or Manifest.toml changes.",
+      "source_and_script_files_checked": 335,
+      "current_files_match_later_manifest": true,
+      "new_computation": false
+    }
+  }
+}

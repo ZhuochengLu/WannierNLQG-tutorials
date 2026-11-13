@@ -1,0 +1,2322 @@
+{
+  "schema": "tutorial-unified-material-pairs/1",
+  "materials": {
+    "GeS": {
+      "id": "GeS-pairWS-canonical-spin034",
+      "tb": "Materials/GeS/model_tb.dat",
+      "bundle": "Materials/GeS/operators.h5",
+      "tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "tb_bytes": 94298181,
+      "bundle_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+      "bundle_bytes": 4024659779,
+      "orbitals": 32,
+      "R_count": 465,
+      "components": 55,
+      "operator_classes": 11,
+      "mp_grid": [
+        14,
+        10,
+        1
+      ],
+      "provenance": "Accepted GeS full010 pair-WS H/r and orbital operators; canonical periodic-link SR/SHR replacements034. Other nine classes exact to010.",
+      "historical_format2_identity": {
+        "bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "bundle_bytes": 4024655536
+      },
+      "bundle_schema": "3.0",
+      "numerical_arrays_and_operator_order_unchanged": true
+    },
+    "Fe": {
+      "id": "Fe-U559-orbital-frame145",
+      "tb": "Materials/Fe/model_tb.dat",
+      "bundle": "Materials/Fe/operators.h5",
+      "tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "tb_bytes": 71573382,
+      "bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+      "bundle_bytes": 3005495097,
+      "orbitals": 18,
+      "R_count": 1115,
+      "components": 31,
+      "operator_classes": 7,
+      "mp_grid": [
+        10,
+        10,
+        10
+      ],
+      "provenance": "Accepted profile-wide001 H/r with once-only centered-to-uncentered orbital transformation145; seven classes cover all16 current Fe cases. No spin-operator coverage claimed.",
+      "historical_format2_identity": {
+        "bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "bundle_bytes": 3005490874
+      },
+      "bundle_schema": "3.0",
+      "numerical_arrays_and_operator_order_unchanged": true
+    }
+  },
+  "complete_array_comparison": {
+    "Fe_selected_TB_vs_orbital145": {
+      "same_orbital_R_order_weights": true,
+      "components": [
+        {
+          "operator_component": [
+            0,
+            0,
+            0
+          ],
+          "max_abs": 4.796163466380676e-14
+        },
+        {
+          "operator_component": [
+            1,
+            1,
+            0
+          ],
+          "max_abs": 5.551115123125783e-16
+        },
+        {
+          "operator_component": [
+            1,
+            2,
+            0
+          ],
+          "max_abs": 4.996003610813204e-16
+        },
+        {
+          "operator_component": [
+            1,
+            3,
+            0
+          ],
+          "max_abs": 4.996003618165921e-16
+        }
+      ],
+      "all_H_r_elements_pass": true,
+      "max_lattice_abs": 0
+    },
+    "selected_pairs_consistent": true,
+    "GeS_current_vs_legacy_TB": {
+      "a_orbitals": 32,
+      "a_R_count": 465,
+      "lattice_max_abs": 0,
+      "b_R_count": 165,
+      "b_orbitals": 32,
+      "same_orbital_R_order_weights": false
+    },
+    "utc": "2026-11-09T09:39:33.676",
+    "GeS034_vs_parent010": {
+      "geometry_comparison": {
+        "mp_grid_equal": true,
+        "lattice_max_abs": 0,
+        "centers_max_abs": 0
+      },
+      "components": [
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian",
+          "max_abs": 0,
+          "component": [
+            0,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 0.012645753590565514,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 0.01265465202813202,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 0.012651068768535374,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 0.04701783657992686,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 0.0470520041032291,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 0.046970478232337146,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 9.320252003096414,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 9.315008693558754,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 9.325322699296674,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 0.04494142429542717,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 0.04494863042773836,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 0.044947821933409,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 0.4898999622096222,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 0.48990053184139165,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 0.4899018025157312,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 133.41612282729378,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 133.41292970318716,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 133.41949027957506,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        }
+      ],
+      "same_R_order_weights": true
+    },
+    "tolerance": 2e-12,
+    "package_version": "1.2.0",
+    "new_Wannier_iterations": 0,
+    "Fe145_vs_legacy_fixed": {
+      "geometry_comparison": {
+        "mp_grid_equal": true,
+        "lattice_max_abs": 0,
+        "centers_max_abs": 0.0002555397736494578
+      },
+      "components": [
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian",
+          "max_abs": 0.0028827366371294853,
+          "component": [
+            0,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "position",
+          "max_abs": 0.000283987455287884,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "position",
+          "max_abs": 0.00028511518156760346,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "position",
+          "max_abs": 0.00019296067191420466,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 9.138351550225636,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 9.189416032555751,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 9.152947663983012,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 2.6747179428674475,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 2.6675605769202804,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 2.6689262754706733,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.41443353228957747,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18613780557478385,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.1863120983180281,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18613780557478385,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.4172409688220644,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18669292157513415,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.1863120983180281,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18669292157513415,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.4159613272334993,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.1870502227318022,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.18656918689669816,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.18653521825130492,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.41443353228957747,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09288698008566397,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09318431992174656,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09288698008566397,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.4172409688220644,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09316781020923928,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09318431992174656,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09316781020923928,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.4159613272334993,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        }
+      ],
+      "same_R_order_weights": true
+    },
+    "Fe145_vs_original_full": {
+      "geometry_comparison": {
+        "mp_grid_equal": true,
+        "lattice_max_abs": 0,
+        "centers_max_abs": 0
+      },
+      "components": [
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian",
+          "max_abs": 0,
+          "component": [
+            0,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 361260,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 361260,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 361260,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 9.138355771748616,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 9.189412787206502,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 9.152952182358534,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 2.6747281986407216,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 2.667575589186824,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 2.668917539469972,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.41443376467495496,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18613760723620187,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18631257766356255,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18613760723620187,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.4172407627465421,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18669291225776438,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18631257766356255,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.18669291225776438,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 0.41596167732807043,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.18705051390056565,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.186569934954546,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.1865347720012155,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.41443376467495496,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09288669945198025,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09318430342219287,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09288669945198025,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.4172407627465421,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09316765530748154,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09318430342219287,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.09316765530748154,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 361260,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 0.41596167732807043,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        }
+      ],
+      "same_R_order_weights": true
+    },
+    "Fe_current_vs_legacy_TB": {
+      "a_orbitals": 18,
+      "r_max_abs": 0.00028511518156760346,
+      "a_R_count": 1115,
+      "lattice_max_abs": 0,
+      "b_R_count": 1115,
+      "H_max_abs": 0.0028827366371294884,
+      "b_orbitals": 18,
+      "same_orbital_R_order_weights": true
+    },
+    "GeS034_vs_old_center": {
+      "geometry_comparison": {
+        "mp_grid_equal": true,
+        "lattice_max_abs": 0,
+        "centers_max_abs": 0
+      },
+      "components": [
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian",
+          "max_abs": 0,
+          "component": [
+            0,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "position",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 13.19890553250347,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 32.35346787114709,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_connection",
+          "max_abs": 173.75842724827984,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 67.57519983771431,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 69.18204106219676,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "hamiltonian_weighted_axial_derivative_overlap",
+          "max_abs": 12.783330740014186,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 1.145333825659739,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 2.0838475724203764,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 10.970635491678014,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 2.0838475724203764,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 5.240724654029069,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 27.590348020648914,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 10.970635491678014,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 27.590348020648914,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "derivative_overlap_tensor",
+          "max_abs": 145.25229908086877,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 1.6429626942582838,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 1.9179170384504942,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "axial_derivative_overlap",
+          "max_abs": 0.3287528207600729,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 1.145333825659739,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 2.0838475724203764,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 10.970635491678014,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 2.0838475724203764,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 5.240724654029069,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 27.590348020648914,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 10.970635491678014,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 27.590348020648914,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "symmetric_derivative_overlap",
+          "max_abs": 145.25229908086877,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian",
+          "max_abs": 0,
+          "component": [
+            1,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian",
+          "max_abs": 0,
+          "component": [
+            2,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian",
+          "max_abs": 0,
+          "component": [
+            3,
+            0
+          ],
+          "byte_value_exact": true
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 4.439256754252949e-12,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 4.4381736573454934e-12,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 4.438227568841835e-12,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 7.108895957933346e-16,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 6.280369834735101e-16,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 4.440896011580188e-16,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 6.753223014464259e-16,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 4.965068306494546e-16,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_position",
+          "max_abs": 6.676124615913802e-16,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 6.439139978008712e-11,
+          "component": [
+            1,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 6.439953589110751e-11,
+          "component": [
+            1,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 6.439648820875498e-11,
+          "component": [
+            1,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 3.552721901379865e-15,
+          "component": [
+            2,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 3.972054645195637e-15,
+          "component": [
+            2,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 7.105463836172376e-15,
+          "component": [
+            2,
+            3
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 3.972054645195637e-15,
+          "component": [
+            3,
+            1
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 5.617333549722722e-15,
+          "component": [
+            3,
+            2
+          ],
+          "byte_value_exact": false
+        },
+        {
+          "complex_values": 476160,
+          "kind": "spin_times_hamiltonian_position",
+          "max_abs": 7.120083722805792e-15,
+          "component": [
+            3,
+            3
+          ],
+          "byte_value_exact": false
+        }
+      ],
+      "same_R_order_weights": true
+    },
+    "new_SCF": 0,
+    "runtime": "WannierNLQG-v1.2.0 (manifest ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92)",
+    "physics_qualification": false,
+    "no_large_definition_attributes_read": true,
+    "bundle_metadata": {
+      "ges034": {
+        "inventory": [
+          "axial_derivative_overlap",
+          "derivative_overlap_tensor",
+          "hamiltonian",
+          "hamiltonian_weighted_axial_derivative_overlap",
+          "hamiltonian_weighted_connection",
+          "position",
+          "spin",
+          "spin_times_hamiltonian",
+          "spin_times_hamiltonian_position",
+          "spin_times_position",
+          "symmetric_derivative_overlap"
+        ],
+        "components": 55,
+        "n": 32,
+        "R_count": 465,
+        "geometry": {
+          "minimum_distance_materialized": true,
+          "real_space_replica_policy": "minimum_distance",
+          "wannier_center_policy": "validate",
+          "replica_mapping_reference": "embedded-materialized-r-vectors/no-content-authentication",
+          "wigner_seitz_search_size": 3,
+          "wigner_seitz_tolerance": 1e-05
+        },
+        "attributes": {
+          "length_unit": "Angstrom",
+          "schema_version": "2.0",
+          "wannier_center_convention": "Convention_II",
+          "fourier_convention": "X(k)=sum_R exp(i*2*pi*k.R)*X_stored(R)/degeneracy(R)",
+          "logical_convention": "R-last",
+          "bloch_phase_convention": "R_only",
+          "basis_metric": "orthonormal",
+          "energy_unit": "eV",
+          "schema": "wanniernlqg.real-space-operators"
+        },
+        "mp_grid": [
+          14,
+          10,
+          1
+        ]
+      },
+      "ges_center": {
+        "inventory": [
+          "axial_derivative_overlap",
+          "derivative_overlap_tensor",
+          "hamiltonian",
+          "hamiltonian_weighted_axial_derivative_overlap",
+          "hamiltonian_weighted_connection",
+          "position",
+          "spin",
+          "spin_times_hamiltonian",
+          "spin_times_hamiltonian_position",
+          "spin_times_position",
+          "symmetric_derivative_overlap"
+        ],
+        "components": 55,
+        "n": 32,
+        "R_count": 465,
+        "geometry": {
+          "minimum_distance_materialized": true,
+          "real_space_replica_policy": "minimum_distance",
+          "wannier_center_policy": "validate",
+          "replica_mapping_reference": "embedded-materialized-r-vectors/no-content-authentication",
+          "wigner_seitz_search_size": 3,
+          "wigner_seitz_tolerance": 1e-05
+        },
+        "attributes": {
+          "length_unit": "Angstrom",
+          "schema_version": "2.0",
+          "wannier_center_convention": "Convention_II",
+          "fourier_convention": "X(k)=sum_R exp(i*2*pi*k.R)*X_stored(R)/degeneracy(R)",
+          "logical_convention": "R-last",
+          "bloch_phase_convention": "R_only",
+          "basis_metric": "orthonormal",
+          "energy_unit": "eV",
+          "schema": "wanniernlqg.real-space-operators"
+        },
+        "mp_grid": [
+          14,
+          10,
+          1
+        ]
+      },
+      "ges010": {
+        "inventory": [
+          "axial_derivative_overlap",
+          "derivative_overlap_tensor",
+          "hamiltonian",
+          "hamiltonian_weighted_axial_derivative_overlap",
+          "hamiltonian_weighted_connection",
+          "position",
+          "spin",
+          "spin_times_hamiltonian",
+          "spin_times_hamiltonian_position",
+          "spin_times_position",
+          "symmetric_derivative_overlap"
+        ],
+        "components": 55,
+        "n": 32,
+        "R_count": 465,
+        "geometry": {
+          "minimum_distance_materialized": true,
+          "real_space_replica_policy": "minimum_distance",
+          "wannier_center_policy": "validate",
+          "replica_mapping_reference": "embedded-materialized-r-vectors/no-content-authentication",
+          "wigner_seitz_search_size": 3,
+          "wigner_seitz_tolerance": 1e-05
+        },
+        "attributes": {
+          "length_unit": "Angstrom",
+          "schema_version": "2.0",
+          "wannier_center_convention": "Convention_II",
+          "fourier_convention": "X(k)=sum_R exp(i*2*pi*k.R)*X_stored(R)/degeneracy(R)",
+          "logical_convention": "R-last",
+          "bloch_phase_convention": "R_only",
+          "basis_metric": "orthonormal",
+          "energy_unit": "eV",
+          "schema": "wanniernlqg.real-space-operators"
+        },
+        "mp_grid": [
+          14,
+          10,
+          1
+        ]
+      },
+      "fe145": {
+        "inventory": [
+          "axial_derivative_overlap",
+          "derivative_overlap_tensor",
+          "hamiltonian",
+          "hamiltonian_weighted_axial_derivative_overlap",
+          "hamiltonian_weighted_connection",
+          "position",
+          "symmetric_derivative_overlap"
+        ],
+        "components": 31,
+        "n": 18,
+        "R_count": 1115,
+        "geometry": {
+          "minimum_distance_materialized": true,
+          "real_space_replica_policy": "minimum_distance",
+          "wannier_center_policy": "validate",
+          "replica_mapping_reference": "embedded-materialized-r-vectors/no-content-authentication",
+          "wigner_seitz_search_size": 3,
+          "wigner_seitz_tolerance": 1e-05
+        },
+        "attributes": {
+          "length_unit": "Angstrom",
+          "schema_version": "2.0",
+          "wannier_center_convention": "Convention_II",
+          "fourier_convention": "X(k)=sum_R exp(i*2*pi*k.R)*X_stored(R)/degeneracy(R)",
+          "logical_convention": "R-last",
+          "bloch_phase_convention": "R_only",
+          "basis_metric": "orthonormal",
+          "energy_unit": "eV",
+          "schema": "wanniernlqg.real-space-operators"
+        },
+        "mp_grid": [
+          10,
+          10,
+          10
+        ]
+      },
+      "fe_full": {
+        "inventory": [
+          "axial_derivative_overlap",
+          "derivative_overlap_tensor",
+          "hamiltonian",
+          "hamiltonian_weighted_axial_derivative_overlap",
+          "hamiltonian_weighted_connection",
+          "position",
+          "spin",
+          "spin_times_hamiltonian",
+          "spin_times_hamiltonian_position",
+          "spin_times_position",
+          "symmetric_derivative_overlap"
+        ],
+        "components": 55,
+        "n": 18,
+        "R_count": 1115,
+        "geometry": {
+          "minimum_distance_materialized": true,
+          "real_space_replica_policy": "minimum_distance",
+          "wannier_center_policy": "validate",
+          "replica_mapping_reference": "embedded-materialized-r-vectors/no-content-authentication",
+          "wigner_seitz_search_size": 3,
+          "wigner_seitz_tolerance": 1e-05
+        },
+        "attributes": {
+          "length_unit": "Angstrom",
+          "schema_version": "2.0",
+          "wannier_center_convention": "Convention_II",
+          "fourier_convention": "X(k)=sum_R exp(i*2*pi*k.R)*X_stored(R)/degeneracy(R)",
+          "logical_convention": "R-last",
+          "bloch_phase_convention": "R_only",
+          "basis_metric": "orthonormal",
+          "energy_unit": "eV",
+          "schema": "wanniernlqg.real-space-operators"
+        },
+        "mp_grid": [
+          10,
+          10,
+          10
+        ]
+      },
+      "fe_fixed": {
+        "inventory": [
+          "axial_derivative_overlap",
+          "derivative_overlap_tensor",
+          "hamiltonian",
+          "hamiltonian_weighted_axial_derivative_overlap",
+          "hamiltonian_weighted_connection",
+          "position",
+          "spin",
+          "spin_times_hamiltonian",
+          "spin_times_hamiltonian_position",
+          "spin_times_position",
+          "symmetric_derivative_overlap"
+        ],
+        "components": 55,
+        "n": 18,
+        "R_count": 1115,
+        "geometry": {
+          "minimum_distance_materialized": true,
+          "real_space_replica_policy": "minimum_distance",
+          "wannier_center_policy": "validate",
+          "wannier_center_tolerance": 1e-08,
+          "production_eligible": false,
+          "global_production_eligible": false,
+          "replica_mapping_sha256": "eddc26cbf9da2351aba5b7cd8191ca399ab581638fe77cf8a7c601bec6251f76",
+          "wigner_seitz_search_size": 3,
+          "scoped_production_eligible": false,
+          "authoritative_hamiltonian": "native_dft",
+          "authoritative_hamiltonian_sha256": "LEGACY_NATIVE_DFT",
+          "wigner_seitz_tolerance": 1e-05
+        },
+        "attributes": {
+          "minimum_distance_materialized": true,
+          "wannier_center_policy": "validate",
+          "paired_tb_sha256": "5e19a8258741f4c4555bb47d2dedc597673972f4f1faf683c44c1ce034949714",
+          "projector_residual": 1.506001284355927e-14,
+          "raw_preflight_diagnostic_status": "NOT_APPLICABLE",
+          "band_frame_physical_isometry_tolerance": 0,
+          "logical_convention": "R-last",
+          "solver_validation_ready": true,
+          "finite_band_galerkin_qualification": "RISK_RECORDED_NOT_CONVERGED",
+          "tb_export_status": "EXPORTED_WITH_WARNING",
+          "band_frame_metric_kind": "not_applicable_native_identity",
+          "maximum_energy_shift_audit_reference_ev": "NOT_APPLICABLE",
+          "global_production_eligible": false,
+          "construction_policy": "standard",
+          "polar_repaired_for_export": false,
+          "operator_qualification_sha256": "cc3dbccf4be5ed81898e82aca9d96a185fa37e657e1d866adb65c55c8c26b59e",
+          "band_frame_minimum_singular_value": 1,
+          "wannier_center_source": "position_R0_diagonal",
+          "target_complement_max_element_ev": "NOT_APPLICABLE",
+          "residual_gate_phase": "legacy_pre_symmetrization",
+          "stopping_reason": "NONCONVERGED_DISENTANGLEMENT_ACCEPTED_STATE_TB_READY",
+          "normalization_convention": "serialized values; divide by degeneracy once",
+          "band_frame_contract_sha256": "7e615b7f5bb19397766f1b118ebc6735e22b546bb7c75f8e9eb41471b400a12e",
+          "target_energy_shift_audit_status": "NOT_APPLICABLE",
+          "isometry_before_export": 1.7474910407599964e-13,
+          "target_leakage_semantics": "LEGACY_AMPLITUDE_LEAKAGE_CONTRACT",
+          "derivative_overlap_source_sha256": "467645dbf708983e6f32cc3fc48a59221c213cc31223410c3c37c0f27d3d5bb4",
+          "band_frame_physical_isometry_maximum": 0,
+          "derivative_overlap_algorithm_version": "wannier90-get_FF_R-v1",
+          "outer_mask_sha256": "562b6ceac5a96c1f6e3898814bef81f6b719fa8988b4e892d3820d571beab935",
+          "z_residual": 0,
+          "authoritative_hamiltonian_sha256": "c61d404bd60a5145770770bcb094cd7c3bc3c3e69868fbd64d4096a5bcaa3a25",
+          "convergence_tolerance": 1e-10,
+          "symmetrized_target_subspace_status": "NOT_APPLICABLE",
+          "target_complement_completion": "NOT_APPLICABLE",
+          "spin_family_qualification_reason": "ALL_REQUIRED_OPERATORS_QUALIFIED",
+          "band_frame_euclidean_nonunitarity_maximum": 0,
+          "wannier_center_cartesian_sha256": "103a26a5ea03e24e62bf46a2b86aaccefd8da137afbeb25d524fb7632c0db16d",
+          "roundtrip_tolerance": 1e-12,
+          "geometry_content_sha256": "acb5b1f4957b559cd4be6da2ca9c353851f779c0231c83aed5ac07a1c2bf1363",
+          "solver_status": "MAX_ITERATIONS",
+          "generated_at_utc": "2026-09-23T07:57:37.927Z",
+          "target_leakage_threshold": "NaN",
+          "wannierization_status": "MAX_ITERATIONS",
+          "target_scope_production_eligible": false,
+          "construction_evidence_sha256": "b0351418cf7fee6b8e750700b6fb25d69755835459f3936beef05af5f8865c5a",
+          "wannier_gauge": "input Wannier gauge",
+          "band_frame_replay_maximum": 0,
+          "initialization_status": "COMPLETED",
+          "model_availability": "AVAILABLE_WITH_QUALITY_WARNINGS",
+          "payload_element_format": "compound(r::IEEE_F64LE,i::IEEE_F64LE)",
+          "auxiliary_parent_qualification": "legacy_hard_gate",
+          "derivative_overlap_completeness": "full_hilbert_space",
+          "iterations_completed": 2001,
+          "finite_band_galerkin_qualification_reason": "NBANDS_CONVERGENCE_NOT_ESTABLISHED",
+          "quality_review_recommended": true,
+          "schema": "wanniernlqg.real-space-operators",
+          "symmetrization_status": "not_provided",
+          "last_accepted_iteration": 2001,
+          "scientific_content_sha256": "e6696c827972b1562483b51329d1f9a4f8e79e4424188dc8cf977f8ff2a0cc94",
+          "optimizer_strategy": "fixed",
+          "operator_inventory": "hamiltonian,position,hamiltonian_weighted_connection,hamiltonian_weighted_axial_derivative_overlap,derivative_overlap_tensor,axial_derivative_overlap,symmetric_derivative_overlap,spin,spin_times_hamiltonian,spin_times_position,spin_times_hamiltonian_position",
+          "spread_metric": "full_3d",
+          "bloch_phase_convention": "R_only",
+          "operator_profile": "full",
+          "qualification_scope": "full_parent",
+          "production_eligible": false,
+          "numerical_quality": "NUMERICAL_WARNING",
+          "position_hermiticity_residual": 0,
+          "solver_convergence": "MAX_ITERATIONS",
+          "native_difference_audit_status": "NOT_APPLICABLE",
+          "wanniernlqg_version": "1.1.0",
+          "symmetrized_parent_energy_shift_audit_status": "NOT_APPLICABLE",
+          "finite_band_galerkin_production_eligible": false,
+          "amn_sha256": "6b71f8e64dc98a0af24c41a3ff86b0d29529783dd5940d1ef8355bd2e8e69056",
+          "convergence_metric": 1.1861739172193223e-07,
+          "energy_shift_qualification": "legacy_energy_shift_hard_gate",
+          "target_anchor": "NOT_APPLICABLE",
+          "target_leakage_threshold_present": false,
+          "band_frame_replay_tolerance": 0,
+          "schema_version": "1.1",
+          "derivative_overlap_source": "wannier90_uIu",
+          "band_frame_maximum_condition_number": 1,
+          "checkpoint_sha256": "19a503ac4807f16a231467c793900244dc286582bdbaeac91f659334d086109d",
+          "target_authority": "NOT_APPLICABLE",
+          "physics_qualification": "PHYSICS_HOLD",
+          "storage_wannier_center_convention": "Convention_II",
+          "spin_family_qualification": "PASS",
+          "target_subspace_contract_sha256": "NOT_RECORDED",
+          "real_space_replica_policy": "minimum_distance",
+          "isometry_after_export": 1.7474910407599964e-13,
+          "last_persisted_iteration": 2001,
+          "operator_count": 11,
+          "band_frame_transform_sha256": "6accbf4dab5a3bc62dfb63e34f53e4b963dc656185d88503aad8d132a07293d7",
+          "target_leakage_formula_sha256": "NOT_RECORDED",
+          "construction_quality_failed": true,
+          "spin_family_production_eligible": true,
+          "projection_basis_sha256": "0b8aa2ca88d9826be8695d18df9c4330bf70623d91f967bb7953fd10eb079a9f",
+          "frozen_mask_sha256": "5812b9bdb870b59fccfcbc4627dbb51927fa74bfe1b3101ff91870dda23b7b26",
+          "payload_byte_order": "little-endian",
+          "native_difference_qualification": "legacy_hard_gate",
+          "hamiltonian_hermiticity_residual": 1.0053110341545628e-14,
+          "available_matrix_capabilities": "hamiltonian,position,spin,derivative,spin_velocity",
+          "finite_difference_stencil_sha256": "5fbdc964a44304f318ac0bf472e71307328f06bbd99a3626439520eb939b0bf9",
+          "initializer_algorithm_version": "NOT_RECORDED",
+          "input_sha256": "3ad7b67b5c2c63fc64d0158b08259aba53296f8f7833005bb49a5cd24a22e21f",
+          "rms_energy_shift_audit_reference_ev": "NOT_APPLICABLE",
+          "scoped_production_eligible": false,
+          "auxiliary_parent_audit_status": "NOT_APPLICABLE",
+          "authoritative_hamiltonian": "native_dft",
+          "fourier_convention": "X(k)=sum_R exp(i*2*pi*k.R)*X_stored(R)/degeneracy(R)",
+          "parent_audit_policy": "legacy_hard_gate",
+          "converged": false,
+          "band_frame_contract_status": "PASS",
+          "frozen_residual": 1.6735906562590152e-13,
+          "last_attempted_iteration": 2001,
+          "tb_usability": "MODEL_AVAILABLE_WITH_QUALITY_WARNINGS",
+          "u_residual": 9.454628122159942e-09
+        },
+        "mp_grid": [
+          10,
+          10,
+          10
+        ]
+      }
+    },
+    "GeS_selected_TB_vs_full034": {
+      "same_orbital_R_order_weights": true,
+      "components": [
+        {
+          "operator_component": [
+            0,
+            0,
+            0
+          ],
+          "max_abs": 4.796163466380676e-14
+        },
+        {
+          "operator_component": [
+            1,
+            1,
+            0
+          ],
+          "max_abs": 4.440893719774331e-16
+        },
+        {
+          "operator_component": [
+            1,
+            2,
+            0
+          ],
+          "max_abs": 4.884981308350689e-15
+        },
+        {
+          "operator_component": [
+            1,
+            3,
+            0
+          ],
+          "max_abs": 4.973799150320701e-14
+        }
+      ],
+      "all_H_r_elements_pass": true,
+      "max_lattice_abs": 0
+    },
+    "schema": "tutorial-material-consistency/1"
+  },
+  "physics_qualification": false,
+  "warnings": "Existing PAW, convergence and finite-band completeness boundaries retained; no fit to historical spectra.",
+  "legacy_files_not_active": "Old material paths/inputs/results preserved outside the selected four-file asset set.",
+  "current_format_copy": {
+    "schema": "tutorial-model-format-copy/1",
+    "current_model_format": "3.0",
+    "original_model_format": "2.0",
+    "current_reader_source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+    "source_status": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+    "public_compatibility_api_added": false,
+    "new_material_calculation": false,
+    "materials": {
+      "GeS": {
+        "logical_path": "Materials/GeS/operators.h5",
+        "source_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "target_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+        "datasets": 13,
+        "numeric_bytes_compared": 419038972,
+        "all_numeric_data_and_attributes_bitexact": true,
+        "index_operator_geometry_preserved": true,
+        "current_reader_passed": true
+      },
+      "Fe": {
+        "logical_path": "Materials/Fe/operators.h5",
+        "source_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "target_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "datasets": 13,
+        "numeric_bytes_compared": 179222540,
+        "all_numeric_data_and_attributes_bitexact": true,
+        "index_operator_geometry_preserved": true,
+        "current_reader_passed": true
+      }
+    }
+  }
+}

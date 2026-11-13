@@ -1,0 +1,91 @@
+{
+  "output": {
+    "stem": "thg_distribution_spectra",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "grid",
+    "rows": 1,
+    "cols": 2,
+    "figsize": [
+      12.6,
+      4.5
+    ],
+    "panels": [
+      {
+        "kind": "line",
+        "label": "(a)",
+        "title": "$T=10$ K",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "ylabel": "$|\\Sigma^{(3)}_{yyyy}|$ (A m$^2$/V$^3$)",
+        "xlim": [
+          0.02,
+          1.2
+        ],
+        "ylim": [
+          1e-22,
+          1e-18
+        ],
+        "legend": true,
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/distribution_broadening725/T10/display_yyyy.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "label": "Unregrouped",
+            "color": "#104E8B",
+            "linestyle": "-"
+          },
+          {
+            "data": "../data/distribution_broadening725/T10/display_yyyy.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "label": "Regrouped",
+            "color": "#FF7F24",
+            "linestyle": "--"
+          }
+        ]
+      },
+      {
+        "kind": "line",
+        "label": "(b)",
+        "title": "$T=300$ K",
+        "xlabel": "$\\hbar\\omega$ (eV)",
+        "ylabel": "$|\\Sigma^{(3)}_{yyyy}|$ (A m$^2$/V$^3$)",
+        "xlim": [
+          0.02,
+          1.2
+        ],
+        "ylim": [
+          1e-22,
+          1e-18
+        ],
+        "legend": true,
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/distribution_broadening725/T300/display_yyyy.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "label": "Unregrouped",
+            "color": "#104E8B",
+            "linestyle": "-"
+          },
+          {
+            "data": "../data/distribution_broadening725/T300/display_yyyy.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "label": "Regrouped",
+            "color": "#FF7F24",
+            "linestyle": "--"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "schema": "tutorial-installed-material-smoke/1",
+  "status": "REPRESENTATIVE_LOCAL_EXECUTION_READ_AND_PLOT_CHAIN_COMPLETED_WITH_PRESERVED_PARENT_WRAPPER_FAILURE",
+  "source_manifest": "8311ffc1ceda424088a959bfe374ad1a855aa9c5ccc9786422582f4ab212efd0",
+  "Julia": "1.13.0",
+  "runtime_copy": "Exact frozen public snapshot used by415; actual load asserted before each numerical child",
+  "asset_chain": "415 new local archives -> absent install root -> exact four-file input pins417 -> existing ordinary tutorial entries -> native output -> readback418/figures",
+  "original415_distribution_manifest_sha256": "d041ac12d1b079775def17125cd64f5daee60ae60c2aa5f68a35cc8c94d31ce7",
+  "current_metadata_only_distribution_manifest_sha256": "73d50dceb25ccc6b391a055ff755fc4c22c48cff33f6620bb4ee1895757c4289",
+  "asset_identities_unchanged": true,
+  "cases": [
+    {
+      "id": "ges",
+      "original_input": "test/fixtures/inputs/03_integral_spin_responses/injection_spin_current_conventional.toml",
+      "input_sha256": "40cbe818f34f54e403c06bbf4c41de07b2b6fae23a1b05d76b5cfa4003af2b53",
+      "scientific_values_unchanged": true
+    },
+    {
+      "id": "fe",
+      "original_input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_conventional_T000.toml",
+      "input_sha256": "60c286a8b8619960aa41f0fc115b5248aebfd0c761f671b2fb6beca2465583e0",
+      "scientific_values_unchanged": true
+    }
+  ],
+  "inputs_unmodified": true,
+  "GeS": {
+    "quantity": "injection_spin_current",
+    "mesh": [
+      2,
+      2
+    ],
+    "photon_energies_eV": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "fermi_eV": -2.5,
+    "T_K": 0.0,
+    "numerics": {
+      "denominator_regularization": 0.001,
+      "broadening": 0.06,
+      "broadening_type": "Gaussian",
+      "transition_window_factor": 5.0
+    },
+    "complex_tensor_components": 24,
+    "finite": true,
+    "emitted_units": "native output units; legacy tensor header does not label SI units",
+    "displayed_component": "xxxx; native Re/Im with no rescaling",
+    "all_component_max_abs_native": 5.3059266e+28
+  },
+  "Fe": {
+    "quantity": "orbital_magnetization",
+    "mesh": [
+      2,
+      2,
+      2
+    ],
+    "fermi_eV": 5.7156290716733436,
+    "T_K": 0.0,
+    "denominator_regularization": 0.001,
+    "input_semantics": "projected_energy_overlap",
+    "operator_classes": 7,
+    "model_schema": "3.0",
+    "reader": "public read_orbital_magnetization_result PASS; full schema/inventory/axis/decomposition checked",
+    "vectors": {
+      "srocc": {
+        "real": [
+          0.00034993971426791165,
+          -0.0005525779468074432,
+          -0.08473446452423788
+        ],
+        "imag": [
+          0,
+          0,
+          0
+        ]
+      },
+      "cmocc": {
+        "real": [
+          -0.0005599360916326722,
+          0.0008413688518595273,
+          0.09064772857703925
+        ],
+        "imag": [
+          0,
+          0,
+          0
+        ]
+      },
+      "total": {
+        "real": [
+          -0.00020999637736476202,
+          0.0002887909050520845,
+          0.005913264052801362
+        ],
+        "imag": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "units": "muB/cell"
+  },
+  "response_topology": "Sequential two Julia processes, each1thread/BLAS1, no MPI launch; no parameter/range/physical-contract change",
+  "actual_response_children": [
+    {
+      "case": "ges",
+      "return_code": 0,
+      "wall_seconds": 53.58640216616914
+    },
+    {
+      "case": "fe",
+      "return_code": 0,
+      "wall_seconds": 83.5150353340432
+    }
+  ],
+  "stage417": {
+    "actual_root": 1,
+    "execution_status": "INFRASTRUCTURE_FAILED",
+    "resource_status": "INFRASTRUCTURE_FAILED",
+    "wrapper_failure": "incorrect postreader assumed photon energy in column0; actual table Efermi0/Omega1",
+    "failure_preserved": true,
+    "missing_output": "tables417.json",
+    "strict_identity_count": 7,
+    "strictly_released": true,
+    "last_sample_seconds": 148.01463941624388,
+    "peak_rss_kib": 26755856,
+    "swapouts": [
+      88
+    ],
+    "canonical_closed_revision": 602
+  },
+  "stage418": {
+    "actual_root": 0,
+    "scope": "Existing output postread/plot only; zero new responses",
+    "strict_identity_count": 22,
+    "strictly_released": true,
+    "last_sample_seconds": 12.100163208320737,
+    "peak_rss_kib": 255088,
+    "swapouts": [
+      118952
+    ]
+  },
+  "table_output_sha256": [
+    {
+      "path": "fe/outputs/oam_conventional_T000/orbital_magnetization_cmocc.dat",
+      "bytes": 3310,
+      "sha256": "333b93a145404c4cc0184cddd735430bfd294299c92e18ab6a4e770afe7dccff"
+    },
+    {
+      "path": "fe/outputs/oam_conventional_T000/orbital_magnetization_srocc.dat",
+      "bytes": 3311,
+      "sha256": "5b85eb1e34187ebf20291dd7f48ef86928ca224129cc6f84d6f1af9d0a1e7b04"
+    },
+    {
+      "path": "fe/outputs/oam_conventional_T000/orbital_magnetization_total.dat",
+      "bytes": 3310,
+      "sha256": "f6e797fb7ed34d82a317b1d533c7e1f5ba1b839065f1672faf8a740c0b2c4e77"
+    },
+    {
+      "path": "ges/outputs/integral_injection_spin_current_conventional/operators_isc_conv.dat",
+      "bytes": 3158,
+      "sha256": "a2a4f73ce3337999b5a1b90d5fc77b9cc1cde485d8a0a598dcfb86396bc87c3f"
+    }
+  ],
+  "figure_sha256": [
+    {
+      "file": "ges_smoke.png",
+      "bytes": 187671,
+      "sha256": "761cd8cf89588b936ff659073987253541336b97b0f8325c6e13b8906f1b74b6",
+      "formal_chapter_install": false
+    },
+    {
+      "file": "ges_smoke.pdf",
+      "bytes": 399258,
+      "sha256": "ff3d731c85f52f8df52f77bc6d62a5413b0172a7023ac6a9b1d2ba646a1366fb",
+      "formal_chapter_install": false
+    },
+    {
+      "file": "fe_smoke.png",
+      "bytes": 148125,
+      "sha256": "88c4359a653d4a3a6b43fc804b2ea63f705f702b423f1313d25b3e797705dd0b",
+      "formal_chapter_install": false
+    },
+    {
+      "file": "fe_smoke.pdf",
+      "bytes": 344722,
+      "sha256": "1355715741aa1c1cd1037725ed6c0b0a7a0a9ca25a0b7fd44f5c1b891526c499",
+      "formal_chapter_install": false
+    }
+  ],
+  "visual_review": {
+    "PNG": true,
+    "independent_PDF_preview": true,
+    "labels_units_legend_crop": "checked; no overlap or clipping",
+    "internal_review_badges_added": false
+  },
+  "physical_qualification": "NOT_EVALUATED; tiny mesh completion does not establish material/convergence/independent-oracle accuracy",
+  "public_download": "NOT_RUN_UNPUBLISHED",
+  "fresh_machine_install": "NOT_RUN_existing_trusted_environment",
+  "new_scientific_integrals": 2,
+  "repeat_of_scientific_integrals": 0,
+  "jerk_runs": 0,
+  "formal_chapter_files_modified": 0,
+  "WN_sources_modified": false,
+  "Git_mutations": false,
+  "new_public_upload": false
+}

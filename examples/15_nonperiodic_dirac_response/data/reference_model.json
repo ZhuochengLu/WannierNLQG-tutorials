@@ -1,0 +1,8 @@
+{
+    "periodic": false,
+    "profile": "reference",
+    "band_max_error_ev": 1.4210854715202004e-14,
+    "gap_ev": 0.4,
+    "dc_model_source_sha256": "f8dad0deb7f375d85b67247c135c54ebe78a10fc9e9cb0a9be76a6cf47cc8549",
+    "model_source_sha256": "1031b384ecbd0d4e8a795fd1590271dc8878ddd0cfabcf1ff498ff87c2af3987"
+}

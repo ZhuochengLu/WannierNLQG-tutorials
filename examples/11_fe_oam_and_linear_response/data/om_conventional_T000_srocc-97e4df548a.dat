@@ -1,0 +1,28 @@
+# schema=wanniernlqg.orbital-magnetization-vector/5.0
+# quantity=orbital_magnetization
+# method=conventional
+# temperature_K=0.0
+# fermi_energies_count=1
+# fermi_energies_definition=wanniernlqg.fermi-energy-axis/2.0:eV:1:4016dccdde0b9d8b
+# producer_package_version=1.2.0
+# model_identity=wanniernlqg.file-state/1:(path = "/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/tutorial-affected301/stage302/converted/Fe.model-3.h5", device = 0x0000000001000018, inode = 0x0000000000ac520f, bytes = 3005495097, mtime = 1.794358096873344e9, ctime = 1.794358096873344e9)
+# input_identity=/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/tutorial-affected301/stage302/converted/Fe.model-3.h5
+# gamma_intra_ev=NOT_APPLICABLE
+# gamma_inter_ev=NOT_APPLICABLE
+# fs_kind=NOT_APPLICABLE
+# eta_fs_ev=NOT_APPLICABLE
+# mpi_size=1
+# julia_threads_per_rank=4
+# qualification_status=COMPUTATION_READY
+# input_semantics=projected_energy_overlap
+# operator_inventory=hamiltonian,position,hamiltonian_weighted_connection,hamiltonian_weighted_axial_derivative_overlap,derivative_overlap_tensor,axial_derivative_overlap,symmetric_derivative_overlap
+# operator_model_schema=3.0
+# content_authentication=NOT_PERFORMED
+# orbital_geometry_prescription=complete-V-regularized-Sylvester/1
+# denominator_regularization_ev=0.001
+# zero_temperature_boundary=symmetric-complete-subspace-response-average
+# task_definition=wanniernlqg.spectral-task-definition/1:("schema" => "wanniernlqg.orbital-magnetization-vector/5.0", "quantity" => "orbital_magnetization", "method" => "conventional", "temperature_K" => "0.0", "fermi_energies_count" => "1", "fermi_energies_definition" => "wanniernlqg.fermi-energy-axis/2.0:eV:1:4016dccdde0b9d8b", "producer_package_version" => "1.2.0", "model_identity" => "wanniernlqg.file-state/1:(path = \"/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/tutorial-affected301/stage302/converted/Fe.model-3.h5\", device = 0x0000000001000018, inode = 0x0000000000ac520f, bytes = 3005495097, mtime = 1.794358096873344e9, ctime = 1.794358096873344e9)", "input_identity" => "/Volumes/ComputeData/WannierNLQG/tutorials-fe-ges-20261104-001/work/tutorial-affected301/stage302/converted/Fe.model-3.h5", "gamma_intra_ev" => "NOT_APPLICABLE", "gamma_inter_ev" => "NOT_APPLICABLE", "fs_kind" => "NOT_APPLICABLE", "eta_fs_ev" => "NOT_APPLICABLE", "mpi_size" => "1", "julia_threads_per_rank" => "4", "qualification_status" => "COMPUTATION_READY", "input_semantics" => "projected_energy_overlap", "operator_inventory" => "hamiltonian,position,hamiltonian_weighted_connection,hamiltonian_weighted_axial_derivative_overlap,derivative_overlap_tensor,axial_derivative_overlap,symmetric_derivative_overlap", "operator_model_schema" => "3.0", "content_authentication" => "NOT_PERFORMED", "orbital_geometry_prescription" => "complete-V-regularized-Sylvester/1", "denominator_regularization_ev" => "0.001", "zero_temperature_boundary" => "symmetric-complete-subspace-response-average")
+# term=srocc
+# units=muB/cell
+# mu_eV x_real x_imag y_real y_imag z_real z_imag
+5.7156290716733436e+00 -3.3674140938083351e-05 0.0000000000000000e+00 -4.1127029735948392e-06 0.0000000000000000e+00 -5.9219639435694665e-02 0.0000000000000000e+00

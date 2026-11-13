@@ -1,0 +1,367 @@
+{
+  "qualification": "DIAGNOSTIC_ONLY_UNTIL_MATERIAL_CONVERGENCE",
+  "algebra_diagnostic": "PASS",
+  "source_summary_sha256": "c98659841ae0ee27604fc306bdbe2c136e649b678d28e395d5062e1205ff9799",
+  "native_input_sha256": {
+    "thg_unregrouped_sigma_yyyy.dat": "8fb324342edfa3abcc7ba942a0f0bda9cd0e9c9c975d1f183fb3794717d88f60",
+    "thg_regrouped_sigma_yyyy.dat": "f33aa199f89a006a6b58eb612215f3f4ae154ee1bdcb6f01e0dede6f24180ba4",
+    "thg_unregrouped_sigma_xxxx.dat": "a267b08c2dfdfa02b5f51eea8dc0dbc30861f93f2110d9df7d972bbfa28c859c",
+    "thg_regrouped_sigma_xxxx.dat": "bd1ff2fc7b6598eb73a9421cb90bdf77cb17514798b9d1f1731219f8139439aa",
+    "thg_unregrouped_sigma_xxyy.dat": "b8f8f0f6350d74760cbfb8932bbbff393c3d963be288bf21504a06f147b9fc45",
+    "thg_regrouped_sigma_xxyy.dat": "bf4f0cadbdd718fd2ca34c09967fb48e159300c285bb923fecb692f8cfbb5ca4",
+    "thg_unregrouped_chi_yyyy.dat": "1cfb5ff1e887e35febde054a3994f4f99c48f547eb157f1c691d51419197d247",
+    "thg_regrouped_chi_yyyy.dat": "13aaa48589877150e84760b3bfe1957ae4564a052476cf59ebc17938f6787081",
+    "thg_unregrouped_chi_xxxx.dat": "f7161da424a623de969922453ed040379de503f8e762fc36bce71f327caed12d",
+    "thg_regrouped_chi_xxxx.dat": "d75a706df34f0d8e9c41932aa61e3ed614ee6adac8e7eba1487801974b2e47df",
+    "thg_unregrouped_chi_xxyy.dat": "b22bf326ca31379361faefc8a0819629708aa2c9d3daf76c8a26c50a50fa7856",
+    "thg_regrouped_chi_xxyy.dat": "47275c7ddbd9bde97e5763504d32109529baa60dbd640e3c7a678f6cd6cc8b2c"
+  },
+  "run_contract": {
+    "source_manifest_sha256": "d0a7513b0dc36f600e7c1e7ac04fd57f1054ace9ca9408af24956ffefb42e825",
+    "measure": "sheet",
+    "spin_copies_in_model": 1,
+    "julia_version": "1.11.2",
+    "source_sha256sums_sha256": "f77e56f31af0b781c2c97f30ce5351e135acb361e335cbf84356f3b264d8e6bf",
+    "qualification": "DIAGNOSTIC_ONLY_UNTIL_MATERIAL_CONVERGENCE",
+    "prescription": "causal",
+    "chemical_potential_eV": 0.35,
+    "valley_factor": 1,
+    "elapsed_seconds": 20.992849917,
+    "formulation": "both",
+    "blas_threads": 1,
+    "mesh": [
+      61,
+      61
+    ],
+    "photon_energies_eV": [
+      0,
+      1e-05,
+      0.0001,
+      0.001,
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12,
+      0.13,
+      0.14,
+      0.15,
+      0.16,
+      0.17,
+      0.18,
+      0.19,
+      0.2,
+      0.21,
+      0.22,
+      0.23,
+      0.2333333333333333,
+      0.24,
+      0.25,
+      0.26,
+      0.27,
+      0.28,
+      0.29,
+      0.3,
+      0.31,
+      0.32,
+      0.33,
+      0.34,
+      0.35,
+      0.36,
+      0.37,
+      0.38,
+      0.39,
+      0.4,
+      0.41,
+      0.42,
+      0.43,
+      0.44,
+      0.45,
+      0.46,
+      0.47,
+      0.48,
+      0.49,
+      0.5,
+      0.51,
+      0.52,
+      0.53,
+      0.54,
+      0.55,
+      0.56,
+      0.57,
+      0.58,
+      0.59,
+      0.6,
+      0.61,
+      0.62,
+      0.63,
+      0.64,
+      0.65,
+      0.66,
+      0.67,
+      0.68,
+      0.69,
+      0.7,
+      0.71,
+      0.72,
+      0.73,
+      0.74,
+      0.75,
+      0.76,
+      0.77,
+      0.78,
+      0.79,
+      0.8,
+      0.81,
+      0.82,
+      0.83,
+      0.84,
+      0.85,
+      0.86,
+      0.87,
+      0.88,
+      0.89,
+      0.9,
+      0.91,
+      0.92,
+      0.93,
+      0.94,
+      0.95,
+      0.96,
+      0.97,
+      0.98,
+      0.99,
+      1,
+      1.01,
+      1.02,
+      1.03,
+      1.04,
+      1.05,
+      1.06,
+      1.07,
+      1.08,
+      1.09,
+      1.1,
+      1.11,
+      1.12,
+      1.13,
+      1.14,
+      1.15,
+      1.16,
+      1.17,
+      1.18,
+      1.19,
+      1.2
+    ],
+    "input_sha256": {
+      "GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e",
+      "run.jl": "102f4382ed757ece39d7dfbdb44b21171af08e578c2f7dc16f878037336c34d5"
+    },
+    "components": [
+      "yyyy",
+      "xxxx",
+      "xxyy"
+    ],
+    "eta_eV": 0.01,
+    "paper_spin_factor_in_analysis": 2,
+    "profile": "reference",
+    "julia_threads": 1,
+    "temperature_K": 300,
+    "package_version": "1.2.0",
+    "output_sha256": {
+      "thg_unregrouped_chi_xxxx.dat": "f7161da424a623de969922453ed040379de503f8e762fc36bce71f327caed12d",
+      "thg_unregrouped_chi_xxyy.dat": "b22bf326ca31379361faefc8a0819629708aa2c9d3daf76c8a26c50a50fa7856",
+      "thg_regrouped_sigma_xxxx.dat": "bd1ff2fc7b6598eb73a9421cb90bdf77cb17514798b9d1f1731219f8139439aa",
+      "thg_numerical_diagnostics.txt": "4b2e11425d7d54f7c655759a6ae986bab88f9a1f3bfbf7c83df08805996d98a6",
+      "thg_unregrouped_chi_yyyy.dat": "1cfb5ff1e887e35febde054a3994f4f99c48f547eb157f1c691d51419197d247",
+      "thg_regrouped_chi_xxxx.dat": "d75a706df34f0d8e9c41932aa61e3ed614ee6adac8e7eba1487801974b2e47df",
+      "thg_regrouped_chi_xxyy.dat": "47275c7ddbd9bde97e5763504d32109529baa60dbd640e3c7a678f6cd6cc8b2c",
+      "thg_formulation_residual.dat": "39ef9c34083d4b4f15db76836cc2d2285f81da1d79d697e856c6416b8976161f",
+      "thg_unregrouped_sigma_yyyy.dat": "8fb324342edfa3abcc7ba942a0f0bda9cd0e9c9c975d1f183fb3794717d88f60",
+      "thg_regrouped_chi_yyyy.dat": "13aaa48589877150e84760b3bfe1957ae4564a052476cf59ebc17938f6787081",
+      "thg_unregrouped_sigma_xxyy.dat": "b8f8f0f6350d74760cbfb8932bbbff393c3d963be288bf21504a06f147b9fc45",
+      "thg_regrouped_sigma_yyyy.dat": "f33aa199f89a006a6b58eb612215f3f4ae154ee1bdcb6f01e0dede6f24180ba4",
+      "thg_unregrouped_sigma_xxxx.dat": "a267b08c2dfdfa02b5f51eea8dc0dbc30861f93f2110d9df7d972bbfa28c859c",
+      "thg_regrouped_sigma_xxyy.dat": "bf4f0cadbdd718fd2ca34c09967fb48e159300c285bb923fecb692f8cfbb5ca4"
+    }
+  },
+  "paper_sigma3_S_m2_per_V2": 6.816929757497444e-26,
+  "paper_sigma3_definition_scope": "formula evaluated with a0=1.42 Angstrom and |gamma0|=3 eV; differs from printed 6.28e-26",
+  "paper_field_conversion": "g2_native_Fourier/8; explicit A4 convention only",
+  "paper_quantitative_comparison": "HOLD_UNRESOLVED_PAPER_NORMALIZATION",
+  "paper_normalization_audit": "CONVENTION_AUDIT.md; A4d spin2/valley2 Dirac coefficient is four times printed Eq10/11b/12",
+  "zero_T_Dirac_scope": "printed formula retained unchanged for audit; not overlaid as a calibrated native reference",
+  "measurements": {
+    "sigma_yyyy": {
+      "parity": {
+        "max_abs": 4.0373533833302336e-35,
+        "max_normalized": 2.717435853389252e-15
+      },
+      "low_energy_parity": {
+        "max_abs": 2.7083389842945504e-35,
+        "max_normalized": 3.771102946185919e-18
+      },
+      "term_closure": [
+        {
+          "max_abs": 7.703719777548943e-34,
+          "max_normalized": 3.9655165694199756e-16
+        },
+        {
+          "max_abs": 0.0,
+          "max_normalized": 0.0
+        }
+      ],
+      "max_A4_cancellation_ratio": 12.498195073565283,
+      "finite_values": true,
+      "rows": 126
+    },
+    "sigma_xxxx": {
+      "parity": {
+        "max_abs": 2.4815039338276626e-35,
+        "max_normalized": 5.5783184305863e-15
+      },
+      "low_energy_parity": {
+        "max_abs": 2.407412430484045e-35,
+        "max_normalized": 3.7282634166374954e-17
+      },
+      "term_closure": [
+        {
+          "max_abs": 1.5407439555097887e-33,
+          "max_normalized": 4.108721858922684e-16
+        },
+        {
+          "max_abs": 0.0,
+          "max_normalized": 0.0
+        }
+      ],
+      "max_A4_cancellation_ratio": 12.49819507356552,
+      "finite_values": true,
+      "rows": 126
+    },
+    "sigma_xxyy": {
+      "parity": {
+        "max_abs": 1.506512385986569e-35,
+        "max_normalized": 5.92783793118325e-15
+      },
+      "low_energy_parity": {
+        "max_abs": 1.0532429383367696e-35,
+        "max_normalized": 4.3996201038835414e-18
+      },
+      "term_closure": [
+        {
+          "max_abs": 3.851859888774472e-34,
+          "max_normalized": 2.8853371192640346e-16
+        },
+        {
+          "max_abs": 0.0,
+          "max_normalized": 0.0
+        }
+      ],
+      "max_A4_cancellation_ratio": 12.498195073539947,
+      "finite_values": true,
+      "rows": 126
+    },
+    "chi_yyyy": {
+      "parity": {
+        "max_abs": 7.052966104933725e-38,
+        "max_normalized": 3.0034849714365653e-15
+      },
+      "low_energy_parity": {
+        "max_abs": 7.052966104933725e-38,
+        "max_normalized": 3.963159932493807e-18
+      },
+      "term_closure": [
+        {
+          "max_abs": 3.009265538105056e-36,
+          "max_normalized": 4.838375309923696e-16
+        },
+        {
+          "max_abs": 0.0,
+          "max_normalized": 0.0
+        }
+      ],
+      "max_A4_cancellation_ratio": 12.49819507356529,
+      "finite_values": true,
+      "rows": 126
+    },
+    "chi_xxxx": {
+      "parity": {
+        "max_abs": 1.504632769052528e-36,
+        "max_normalized": 4.587420605504905e-15
+      },
+      "low_energy_parity": {
+        "max_abs": 1.504632769052528e-36,
+        "max_normalized": 8.624551905050647e-17
+      },
+      "term_closure": [
+        {
+          "max_abs": 3.0107345474862324e-36,
+          "max_normalized": 3.5532383978803014e-16
+        },
+        {
+          "max_abs": 0.0,
+          "max_normalized": 0.0
+        }
+      ],
+      "max_A4_cancellation_ratio": 12.498195073565642,
+      "finite_values": true,
+      "rows": 126
+    },
+    "chi_xxyy": {
+      "parity": {
+        "max_abs": 2.644862289350147e-38,
+        "max_normalized": 7.304135608044776e-15
+      },
+      "low_energy_parity": {
+        "max_abs": 2.644862289350147e-38,
+        "max_normalized": 4.458554924055502e-18
+      },
+      "term_closure": [
+        {
+          "max_abs": 7.52316384526264e-37,
+          "max_normalized": 3.4425643846667533e-16
+        },
+        {
+          "max_abs": 0.0,
+          "max_normalized": 0.0
+        }
+      ],
+      "max_A4_cancellation_ratio": 12.49819507354003,
+      "finite_values": true,
+      "rows": 126
+    }
+  },
+  "symmetry_diagnostics": {
+    "sigma": {
+      "xxxx_vs_yyyy": {
+        "max_abs": 5.456660961605395e-31,
+        "max_normalized": 2.4477719972352517e-13
+      },
+      "3xxyy_vs_xxxx": {
+        "max_abs": 4.500906212022435e-31,
+        "max_normalized": 2.9087384789675535e-12
+      }
+    },
+    "chi": {
+      "xxxx_vs_yyyy": {
+        "max_abs": 1.360198677927892e-33,
+        "max_normalized": 2.447914435339549e-13
+      },
+      "3xxyy_vs_xxxx": {
+        "max_abs": 1.1134368359328545e-33,
+        "max_normalized": 2.9088090889089974e-12
+      }
+    }
+  },
+  "numerical_convergence": "NOT_ESTABLISHED",
+  "physics": "NOT_QUALIFIED",
+  "production": "NOT_ELIGIBLE"
+}

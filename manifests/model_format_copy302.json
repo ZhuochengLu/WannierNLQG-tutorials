@@ -1,0 +1,31 @@
+{
+  "schema": "tutorial-model-format-copy/1",
+  "current_model_format": "3.0",
+  "original_model_format": "2.0",
+  "current_reader_source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+  "source_status": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+  "public_compatibility_api_added": false,
+  "new_material_calculation": false,
+  "materials": {
+    "GeS": {
+      "logical_path": "Materials/GeS/operators.h5",
+      "source_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+      "target_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+      "datasets": 13,
+      "numeric_bytes_compared": 419038972,
+      "all_numeric_data_and_attributes_bitexact": true,
+      "index_operator_geometry_preserved": true,
+      "current_reader_passed": true
+    },
+    "Fe": {
+      "logical_path": "Materials/Fe/operators.h5",
+      "source_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+      "target_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+      "datasets": 13,
+      "numeric_bytes_compared": 179222540,
+      "all_numeric_data_and_attributes_bitexact": true,
+      "index_operator_geometry_preserved": true,
+      "current_reader_passed": true
+    }
+  }
+}

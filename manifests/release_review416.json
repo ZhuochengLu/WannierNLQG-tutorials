@@ -1,0 +1,234 @@
+{
+  "schema": "tutorial-release-review/1",
+  "version": "1.2.0",
+  "status": "CURRENT_LOCAL_CANDIDATE_PENDING_GITHUB_APPROVAL_SEE_RELEASE_CANDIDATE420",
+  "source_scope": {
+    "current_public": "8311ffc1ceda424088a959bfe374ad1a855aa9c5ccc9786422582f4ab212efd0",
+    "preceding_docs": "63d9520199dc47579fcbbd2d677e2081d3f42d9a6ef989e4e4fa1fb426fd0305",
+    "actual_case_source": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "comparison": {
+      "725_to_63d": {
+        "changed": [
+          "README.md",
+          "USER_GUIDE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/NATIVE_MODELS.md",
+          "docs/RELEASE_NOTES.md",
+          "docs/TEXT_INPUT.md",
+          "theory/QuantumGeometry/QuantumChristoffelSymbol.md",
+          "theory/QuantumGeometry/QuantumHermitianConnection.md",
+          "theory/QuantumGeometry/QuantumMetric.md",
+          "theory/QuantumGeometry/QuantumMetricDipole.md",
+          "theory/QuantumGeometry/QuantumMetricQuadrupole.md",
+          "theory/README.md"
+        ],
+        "added": [],
+        "removed": [],
+        "manifest_pin_is_not_payload_file": true
+      },
+      "63d_to_8311": {
+        "changed": [
+          "docs/TEXT_INPUT.md",
+          "docs/THIRD_ORDER_RESPONSES.md",
+          "src/Runtime/TaskInput.jl",
+          "src/Runtime/TaskInputParameters.jl",
+          "test/task_input_overrides_unit.jl"
+        ],
+        "added": [],
+        "removed": []
+      }
+    },
+    "evidence_725": "Original402 frozen source input pins; not re-executed",
+    "evidence_63d": "Archived source manifest plus changed-file bytes; Chapter12 prior335source/script check",
+    "evidence_8311": "415 full snapshot/reader/all154 input check; no new response",
+    "WN_source_changed": false
+  },
+  "git": {
+    "root_is_tutorial_repository": true,
+    "head": "96d2690ecd1de196cc2c4c4b33d65b98df28b1de",
+    "HEAD_is_release_candidate": false,
+    "uncommitted_status_records": 684,
+    "status_codes": {
+      " M": 117,
+      " D": 415,
+      "??": 152
+    },
+    "observed_worktree_files": 906,
+    "observed_worktree_bytes": 160349820,
+    "worktree_restricted_names": 0,
+    "worktree_over100MiB": 0,
+    "worktree_private_pattern_hits": 0,
+    "history_reachable_blobs": 681,
+    "history_text_blobs_scanned": 376,
+    "history_private_pattern_hits": 0,
+    "history_named_POTCAR_files": [
+      {
+        "oid": "fcb57d9425e2cf371cd0e3a4275ba93263eed16c",
+        "path": "Materials/Fe/vasp_SOC/POTCAR.txt",
+        "bytes": 423,
+        "line_count": 9,
+        "numeric_token_count": 13,
+        "classification": "SHORT_TEXT_NOTE; no potential dataset blocks"
+      },
+      {
+        "oid": "0a8ba4eb8239818fd9188b0276c3a41690ff3c85",
+        "path": "Materials/GeS/vasp_SOC/POTCAR.txt",
+        "bytes": 381,
+        "line_count": 9,
+        "numeric_token_count": 9,
+        "classification": "SHORT_TEXT_NOTE; no potential dataset blocks"
+      }
+    ],
+    "historical_models": "Old Materials/.../vasp_SOC paths persist in readable history and current HEAD; current154 input inventory uses the four selected logical files. History is not a runnable current-model manifest.",
+    "limits": "Only locally reachable refs; no orphan/unfetched remote history, no exhaustive secret detector or binary embedding scan. Named restricted files not read; content classification remains unknown.",
+    "mutations": false,
+    "all_reachable_blob_pattern_scan": {
+      "status": "BOUNDED_ALL_REACHABLE_BLOB_PATTERN_SCAN_COMPLETE",
+      "blobs": 681,
+      "bytes": 169632215,
+      "seconds": 6.572342041879892,
+      "patterns": [
+        "user_home",
+        "volume",
+        "unix_home",
+        "link_local",
+        "private_key"
+      ],
+      "hits": [],
+      "not_a_complete_secret_or_rights_audit": true,
+      "limits": "Locally reachable objects only; fixed plaintext byte patterns including binary objects, not semantic pseudopotential/source verification or orphan/remote-only objects",
+      "Git_mutations": false
+    }
+  },
+  "remote": {
+    "observed_utc": "2026-11-11T16:49:07.803788+00:00",
+    "tags": [
+      "v1.1.0",
+      "ges-vasp-soc-spin-v1"
+    ],
+    "releases": [
+      {
+        "tag": "v1.1.0",
+        "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/tag/v1.1.0",
+        "assets": [
+          {
+            "name": "Fe_full_operators_v1.1.0_rerun.tar.gz",
+            "bytes": 279428707
+          }
+        ]
+      },
+      {
+        "tag": "ges-vasp-soc-spin-v1",
+        "url": "https://github.com/ZhuochengLu/WannierNLQG-tutorials/releases/tag/ges-vasp-soc-spin-v1",
+        "assets": [
+          {
+            "name": "GeS_vasp_SOC_spin_runtime_v1.tar.gz",
+            "bytes": 304970150
+          }
+        ]
+      }
+    ],
+    "new_1_2_0_published": false
+  },
+  "pipeline_scope": {
+    "local_acquisition": true,
+    "new_public_URL_download": false,
+    "raw_reassembly_install": true,
+    "complete_reader": true,
+    "normal_input_parser_checks": 154,
+    "representative_response_calculation": false,
+    "end_to_end_scientific_reproduction": false,
+    "old_representative_runs": "Haldane and earlier material pilots retain their own historical identities; not executed by414/415"
+  },
+  "data_rights": "Sources retained; user confirmed self-generation and public-distribution authority, then explicitly approved CC BY 4.0 and dataset attribution Zhuocheng Lu. Third-party Fig.3(a) trace is excluded and retained under the approved attribution/approximation treatment; no publisher permission is claimed.",
+  "paper_review": {
+    "chapter": "16_monolayer_graphene_thg",
+    "source": "Hipolito, Taghizadeh, Pedersen, PRB98,205420(2018), Fig3(a), mu0.35eV olive curve",
+    "files": {
+      "digitization": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/digitized_log10.dat",
+      "converted_display": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/display_fourier_si.dat",
+      "provenance": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/provenance.json"
+    },
+    "kind": "122 calibrated vertices traced from publisher PDF vector polyline; not copied raster/page, author array or independent response calculation",
+    "publisher_copyright": "2018 American Physical Society; no CC license found on inspected article/PDF",
+    "arxiv_license": "non-exclusive license to arXiv; not a CC redistribution grant to the public",
+    "author_source_archive": "328392-byte arXiv v3 source archive: one.tex,one.bbl,six figurePDFs; no numerical data arrays or response simulation code members",
+    "separate_author_data_found": false,
+    "search_limits": "Inspected APS article/PDF, cited CNG copy, arXiv abstract/license/source members and targeted title/DOI code/data search; absence is limited to these sources",
+    "legal_scope": "Facts/methods/independent computations are not automatically protected expressions. No categorical requirement for permission for every numerical value; applicability of a data-fact/exception basis to this entire traced curve is not established here. No contrary license conflict is proven.",
+    "unchanged_display": "8*6.28e-26*10**digitized_log10, no fitted amplitude; numerical facts/units preserved",
+    "options": [
+      "Keep traced curve with applicable permission/license or documented exception/factual-data basis, include source and required credit; do not relicense APS figure content as own GPL/CC data",
+      "If no suitable basis is established, user may choose paper link plus existing independent WN curves, retaining trace privately; not enacted",
+      "A separate existing independent analytic/model reference may be used only under its own accurately labeled model/prescription; not called the published curve or a new exact reproduction; no new calculation authorized by this review"
+    ],
+    "sources": [
+      "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.205420",
+      "https://cng.dtu.dk/-/media/centre/cng_nanostructured_graphene/research/publications/2018/42-18_pdf.pdf",
+      "https://arxiv.org/abs/1802.01430",
+      "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+      "https://journals.aps.org/copyrightFAQ.html",
+      "https://stm-assoc.org/what-we-do/core-services/ip-copyright/permissions/permissions-guidelines/"
+    ],
+    "actual_plot_consumers": [
+      "examples/16_monolayer_graphene_thg/plot_configs/thg_valley_30meV.json"
+    ]
+  },
+  "GeS_jerk_publication_boundary": {
+    "blocks_current_tutorial_release": false,
+    "further_convergence_runs": false,
+    "original_threshold": 0.01,
+    "comparison": "five matched photon energies; max complex difference divided by shared maximum over both five-element arrays",
+    "meshes": [
+      [
+        200,
+        200,
+        1
+      ],
+      [
+        300,
+        300,
+        1
+      ],
+      [
+        400,
+        400,
+        1
+      ]
+    ],
+    "xxxx_changes": [
+      0.08564147774407546,
+      0.022712869810637516
+    ],
+    "xxxx_science_convergence": "FAIL retained; user no longer requires convergence for publication",
+    "yyyy_changes": [
+      0.009910433501795228,
+      0.0025548566182477506
+    ],
+    "yyyy_science_convergence": "PASS at five sampled energies only",
+    "data_or_threshold_changed": false
+  },
+  "numerical_work_this_review": 0,
+  "WN_source_changes": false,
+  "chapter_changes": false,
+  "public_mutations": false,
+  "material_authority_update418": {
+    "authority_confirmed": true,
+    "license_selected": true,
+    "final_attribution_specified": true,
+    "confirmation": "manifests/material_authority418.json",
+    "third_party_curve_covered": false
+  },
+  "current_distribution_manifest_sha256": "18b0bd45c6fefcfcd6f66a17218bec28717e9748fcb6b3d63244e81ec90dd0c6",
+  "original415_distribution_manifest_sha256": "d041ac12d1b079775def17125cd64f5daee60ae60c2aa5f68a35cc8c94d31ce7",
+  "current_licensing_update420": {
+    "license": "CC-BY-4.0",
+    "data_author": "Zhuocheng Lu",
+    "data_authority_confirmed": true,
+    "third_party_curve_retained": true,
+    "third_party_curve_excluded": true,
+    "publisher_permission_claimed": false
+  },
+  "current_candidate_record": "manifests/release_candidate420.json",
+  "original_review416_scope": "The original source/Git/remote/pipeline observations below retain their original observation time and stage scope. Current license/package state is recorded in material_licensing420 and release_candidate420."
+}

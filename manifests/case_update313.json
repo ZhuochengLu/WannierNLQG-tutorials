@@ -1,0 +1,821 @@
+{
+  "schema": "tutorial-targeted-case-update/1",
+  "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "current_public_version": "1.2.0",
+  "actual_original_mesh_calculation_source_manifest": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+  "actual_Fe_readback_source_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "new_response_calculations_for_reader_or_promotion": 0,
+  "completed_new_numerical_reference_cases": 8,
+  "spin_reference_cases": 4,
+  "Fe_OM_reference_cases": 4,
+  "required_model_copy_status": "PASS; original arrays, indices and geometry exact, old files retained",
+  "no_whole_suite_recomputation_claim": true,
+  "case_decisions": [
+    {
+      "profile": "reference",
+      "chapter": "03_integral_spin_responses",
+      "case": "injection_spin_current_conventional",
+      "input": "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "reason": "Smooth finite-positive eta spin-current vertex replaces hard cutoff; original100\u00b2/200 energies; full tensor keeps symmetry-allowed yzxy/yzyx panels.",
+      "task_kinds": [
+        "injection_spin_current"
+      ],
+      "action": "RECOMPUTED_ORIGINAL_MESH_AND_ADOPTED308",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "03_integral_spin_responses",
+      "case": "injection_spin_current_conventional",
+      "input": "test/fixtures/inputs/03_integral_spin_responses/injection_spin_current_conventional.toml",
+      "reason": "Smooth finite-positive eta spin-current vertex replaces hard cutoff; original100\u00b2/200 energies; full tensor keeps symmetry-allowed yzxy/yzyx panels.",
+      "task_kinds": [
+        "injection_spin_current"
+      ],
+      "action": "INPUT_UPDATED_AND_NORMAL_CHECK307_PASS_NO_SMOKE_RESPONSE",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "03_integral_spin_responses",
+      "case": "shift_spin_current_conventional",
+      "input": "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml",
+      "reason": "Smooth finite-positive eta spin-current vertex replaces hard cutoff; original100\u00b2/200 energies; full tensor keeps symmetry-allowed yzxy/yzyx panels.",
+      "task_kinds": [
+        "shift_spin_current"
+      ],
+      "action": "RECOMPUTED_ORIGINAL_MESH_AND_ADOPTED308",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "03_integral_spin_responses",
+      "case": "shift_spin_current_conventional",
+      "input": "test/fixtures/inputs/03_integral_spin_responses/shift_spin_current_conventional.toml",
+      "reason": "Smooth finite-positive eta spin-current vertex replaces hard cutoff; original100\u00b2/200 energies; full tensor keeps symmetry-allowed yzxy/yzyx panels.",
+      "task_kinds": [
+        "shift_spin_current"
+      ],
+      "action": "INPUT_UPDATED_AND_NORMAL_CHECK307_PASS_NO_SMOKE_RESPONSE",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "05_kslice_spin_responses",
+      "case": "injection_spin_current_conventional",
+      "input": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "reason": "Same changed spin vertex; original200\u00b2 yyyy selected transitions remain explicitly symmetry-null diagnostics, not a main allowed photocurrent claim.",
+      "task_kinds": [
+        "injection_spin_current"
+      ],
+      "action": "RECOMPUTED_ORIGINAL_MESH_AND_ADOPTED308",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "05_kslice_spin_responses",
+      "case": "injection_spin_current_conventional",
+      "input": "test/fixtures/inputs/05_kslice_spin_responses/injection_spin_current_conventional.toml",
+      "reason": "Same changed spin vertex; original200\u00b2 yyyy selected transitions remain explicitly symmetry-null diagnostics, not a main allowed photocurrent claim.",
+      "task_kinds": [
+        "injection_spin_current"
+      ],
+      "action": "INPUT_UPDATED_AND_NORMAL_CHECK307_PASS_NO_SMOKE_RESPONSE",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "05_kslice_spin_responses",
+      "case": "shift_spin_current_conventional",
+      "input": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
+      "reason": "Same changed spin vertex; original200\u00b2 yyyy selected transitions remain explicitly symmetry-null diagnostics, not a main allowed photocurrent claim.",
+      "task_kinds": [
+        "shift_spin_current"
+      ],
+      "action": "RECOMPUTED_ORIGINAL_MESH_AND_ADOPTED308",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "05_kslice_spin_responses",
+      "case": "shift_spin_current_conventional",
+      "input": "test/fixtures/inputs/05_kslice_spin_responses/shift_spin_current_conventional.toml",
+      "reason": "Same changed spin vertex; original200\u00b2 yyyy selected transitions remain explicitly symmetry-null diagnostics, not a main allowed photocurrent claim.",
+      "task_kinds": [
+        "shift_spin_current"
+      ],
+      "action": "INPUT_UPDATED_AND_NORMAL_CHECK307_PASS_NO_SMOKE_RESPONSE",
+      "evidence": "case_sources_by_input in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "10_second_harmonic_generation",
+      "case": "second_harmonic_generation_conventional",
+      "input": "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml",
+      "reason": "Current fixes change optional nonorthogonal cutoff optical vertices; the selected orthogonal GeS SHG arithmetic is preserved.",
+      "task_kinds": [
+        "second_harmonic_generation"
+      ],
+      "action": "RETAIN_EXISTING_ORTHOGONAL_SHG_RESULTS",
+      "evidence": "Implementation584/609: orthogonal all7 terms byteexact; changed optical-cutoff path is nonorthogonal, not selected by these GeS inputs."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "10_second_harmonic_generation",
+      "case": "second_harmonic_generation_conventional",
+      "input": "test/fixtures/inputs/10_second_harmonic_generation/second_harmonic_generation_conventional.toml",
+      "reason": "Current fixes change optional nonorthogonal cutoff optical vertices; the selected orthogonal GeS SHG arithmetic is preserved.",
+      "task_kinds": [
+        "second_harmonic_generation"
+      ],
+      "action": "RETAIN_EXISTING_ORTHOGONAL_SHG_RESULTS",
+      "evidence": "Implementation584/609: orthogonal all7 terms byteexact; changed optical-cutoff path is nonorthogonal, not selected by these GeS inputs."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "berry_sos_occupied_xy",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "berry_curvature"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "berry_sos_occupied_xy",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_sos_occupied_xy.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "berry_curvature"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "berry_tb_occupied_xy",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "berry_curvature"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "berry_tb_occupied_xy",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_tb_occupied_xy.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "berry_curvature"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "berry_transport_equivalent_xy",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "berry_transport_equivalent_xy",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_transport_equivalent_xy.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_conventional_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_conventional_T000",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_conventional_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_conventional_T300",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_conventional_T300",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_conventional_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_projector_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_projector_T000",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_projector_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_projector_T300",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_optical_projector_T300",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_projector_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_optical_response"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_conventional_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_conventional_T000",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_conventional_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_conventional_T300",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_conventional_T300",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_conventional_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_projector_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_projector_T000",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_projector_T000.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_projector_T300",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "linear_transport_projector_T300",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_projector_T300.toml",
+      "reason": "OM correction owns its own complete-velocity buffer and traces; other charge/linear/Berry numerical paths retained. Selected physical model arrays and indices are exact-format copies, not new data. No claim that these cases were newly executed.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_EXISTING_RESULTS",
+      "evidence": "Original source_scope535/537, charge-control byteexact checks and copy302 evidence retained; actual old execution identities unchanged."
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_conventional_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXISTING303_INTEGRAL_RECOVERED310_AND_ADOPTED312",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_conventional_T000",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_conventional_T000.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXPLICIT_POSITIVE_WIDTH_INPUT_ONLY_NO_SMOKE_RESPONSE",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_conventional_T300",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T300.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXISTING303_INTEGRAL_RECOVERED310_AND_ADOPTED312",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_conventional_T300",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_conventional_T300.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXPLICIT_POSITIVE_WIDTH_INPUT_ONLY_NO_SMOKE_RESPONSE",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_projector_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXISTING303_INTEGRAL_RECOVERED310_AND_ADOPTED312",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_projector_T000",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_projector_T000.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXPLICIT_POSITIVE_WIDTH_INPUT_ONLY_NO_SMOKE_RESPONSE",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_projector_T300",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T300.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXISTING303_INTEGRAL_RECOVERED310_AND_ADOPTED312",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "smoke",
+      "chapter": "11_fe_oam_and_linear_response",
+      "case": "oam_projector_T300",
+      "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_projector_T300.toml",
+      "reason": "Positive eta complete-velocity OM prescription and Fermi-boundary averaging change4OM cases. Linear optical/transport and Berry maps require separate reachable-source review, not automatic reruns.",
+      "task_kinds": [
+        "orbital_magnetization"
+      ],
+      "action": "EXPLICIT_POSITIVE_WIDTH_INPUT_ONLY_NO_SMOKE_RESPONSE",
+      "evidence": "Fe_OM_reader_recovery310 in manifests/material_case_results.json"
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "analytic_reversed",
+      "input": "examples/13_haldane_anomalous_hall/inputs/analytic_reversed.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "analytic_reversed",
+      "input": "test/fixtures/inputs/13_haldane_anomalous_hall/analytic_reversed.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "analytic_topological",
+      "input": "examples/13_haldane_anomalous_hall/inputs/analytic_topological.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "analytic_topological",
+      "input": "test/fixtures/inputs/13_haldane_anomalous_hall/analytic_topological.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "analytic_trivial",
+      "input": "examples/13_haldane_anomalous_hall/inputs/analytic_trivial.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "analytic_trivial",
+      "input": "test/fixtures/inputs/13_haldane_anomalous_hall/analytic_trivial.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_reversed",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_reversed.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_reversed",
+      "input": "test/fixtures/inputs/13_haldane_anomalous_hall/tb_reversed.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_topological",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_topological",
+      "input": "test/fixtures/inputs/13_haldane_anomalous_hall/tb_topological.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_topological_n121_g001",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n121_g001.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_topological_n181_g002",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n181_g002.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_topological_n61_g002",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n61_g002.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_trivial",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_trivial.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "13_haldane_anomalous_hall",
+      "case": "tb_trivial",
+      "input": "test/fixtures/inputs/13_haldane_anomalous_hall/tb_trivial.toml",
+      "reason": "Existing inputs call finite-relaxation linear_transport, not the modified intrinsic Hall response. Do not substitute new AHC definition or relabel old results.",
+      "task_kinds": [
+        "linear_transport"
+      ],
+      "action": "RETAIN_FINITE_RELAXATION_TRANSPORT_RESULTS",
+      "evidence": "Actual TOML task kind is linear_transport, not changed intrinsic_hall response; finite relaxation is retained and not relabelled as a new intrinsic-Hall execution."
+    },
+    {
+      "profile": "reference",
+      "chapter": "16_monolayer_graphene_thg",
+      "case": "T10",
+      "input": "examples/16_monolayer_graphene_thg/inputs/T10.toml",
+      "reason": "Remove explicit retired no-op degeneracy_threshold; response arithmetic/occupation unchanged,247 retained ordinary tables byteexact in owner validation.",
+      "task_kinds": [
+        "third_harmonic_generation"
+      ],
+      "action": "INPUT_MIGRATED299_RESULTS_RETAINED",
+      "evidence": "Unused retired threshold removed; no numerical change, native configuration checks and original247-table checks retained."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "16_monolayer_graphene_thg",
+      "case": "T10",
+      "input": "test/fixtures/inputs/16_monolayer_graphene_thg/T10.toml",
+      "reason": "Remove explicit retired no-op degeneracy_threshold; response arithmetic/occupation unchanged,247 retained ordinary tables byteexact in owner validation.",
+      "task_kinds": [
+        "third_harmonic_generation"
+      ],
+      "action": "INPUT_MIGRATED299_RESULTS_RETAINED",
+      "evidence": "Unused retired threshold removed; no numerical change, native configuration checks and original247-table checks retained."
+    },
+    {
+      "profile": "reference",
+      "chapter": "16_monolayer_graphene_thg",
+      "case": "T300",
+      "input": "examples/16_monolayer_graphene_thg/inputs/T300.toml",
+      "reason": "Remove explicit retired no-op degeneracy_threshold; response arithmetic/occupation unchanged,247 retained ordinary tables byteexact in owner validation.",
+      "task_kinds": [
+        "third_harmonic_generation"
+      ],
+      "action": "INPUT_MIGRATED299_RESULTS_RETAINED",
+      "evidence": "Unused retired threshold removed; no numerical change, native configuration checks and original247-table checks retained."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "16_monolayer_graphene_thg",
+      "case": "T300",
+      "input": "test/fixtures/inputs/16_monolayer_graphene_thg/T300.toml",
+      "reason": "Remove explicit retired no-op degeneracy_threshold; response arithmetic/occupation unchanged,247 retained ordinary tables byteexact in owner validation.",
+      "task_kinds": [
+        "third_harmonic_generation"
+      ],
+      "action": "INPUT_MIGRATED299_RESULTS_RETAINED",
+      "evidence": "Unused retired threshold removed; no numerical change, native configuration checks and original247-table checks retained."
+    },
+    {
+      "profile": "reference",
+      "chapter": "17_jerk_current",
+      "case": "ges_pilot_bulk",
+      "input": "examples/17_jerk_current/inputs/ges_pilot_bulk.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "17_jerk_current",
+      "case": "ges_pilot_bulk",
+      "input": "test/fixtures/inputs/17_jerk_current/ges_pilot_bulk.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "reference",
+      "chapter": "17_jerk_current",
+      "case": "ges_pilot_sheet",
+      "input": "examples/17_jerk_current/inputs/ges_pilot_sheet.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "17_jerk_current",
+      "case": "ges_pilot_sheet",
+      "input": "test/fixtures/inputs/17_jerk_current/ges_pilot_sheet.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "reference",
+      "chapter": "17_jerk_current",
+      "case": "two_band_analytic",
+      "input": "examples/17_jerk_current/inputs/two_band_analytic.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "17_jerk_current",
+      "case": "two_band_analytic",
+      "input": "test/fixtures/inputs/17_jerk_current/two_band_analytic.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "reference",
+      "chapter": "17_jerk_current",
+      "case": "two_band_tb",
+      "input": "examples/17_jerk_current/inputs/two_band_tb.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    },
+    {
+      "profile": "smoke",
+      "chapter": "17_jerk_current",
+      "case": "two_band_tb",
+      "input": "test/fixtures/inputs/17_jerk_current/two_band_tb.toml",
+      "reason": "Jerk occupation fix changes finite T only; all4current cases T0. Recheck two129-point native routes; preserve valid35-point GeS outputs, no convergence scan.",
+      "task_kinds": [
+        "jerk_current"
+      ],
+      "action": "RETAIN_T0_RESULTS_AFTER_TWO_ROUTE_CONTROL",
+      "evidence": "Two129-point routes297/298 old/new outputs byteexact; occupation correction affects finite T, not the supplied T0 cases."
+    }
+  ],
+  "rule": "Recompute only when a later change reaches that case numerical behaviour; source identity, reader-only, docs and test changes do not trigger integration reruns.",
+  "limits": "Not material convergence, scientific production qualification, or an independent Wannier90 material comparison."
+}

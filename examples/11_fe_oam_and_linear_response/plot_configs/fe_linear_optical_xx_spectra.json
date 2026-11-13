@@ -1,0 +1,47 @@
+{
+  "output": {
+    "stem": "fe_linear_optical_xx_spectra",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "line",
+    "figsize": [
+      6.4,
+      3.5
+    ],
+    "title": "Fe optical conductivity",
+    "xlabel": "Photon energy (eV)",
+    "ylabel": "$\\mathrm{Re}\\,\\sigma_{xx}$ (S/m)",
+    "xlim": [
+      0,
+      8
+    ],
+    "guide_y": [
+      0
+    ],
+    "legend": true,
+    "legend_ncol": 2,
+    "series": [
+      {
+        "data": "../data/linear_optical_response_total-5686cbf5.dat",
+        "x_column": 0,
+        "y_column": 1,
+        "label": "Conventional, 0 K",
+        "color": "#104E8B",
+        "linestyle": "-"
+      },
+      {
+        "data": "../data/linear_optical_response_total-f2ef58b1.dat",
+        "x_column": 0,
+        "y_column": 1,
+        "label": "Projector, 0 K",
+        "color": "#FF7F24",
+        "linestyle": "--"
+      }
+    ]
+  }
+}

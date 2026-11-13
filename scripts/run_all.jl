@@ -1,9 +1,10 @@
 #!/usr/bin/env julia
+"""Check the current chapter inventory; numerical runs select one TOML/case explicitly."""
 const ROOT = normpath(joinpath(@__DIR__, ".."))
-groups = sort(filter(name -> occursin(r"^\d\d_", name) && isdir(joinpath(ROOT, "examples", name)), readdir(joinpath(ROOT, "examples"))))
-for group in groups
-    project = (startswith(group, "10_") || startswith(group, "11_") || startswith(group, "12_")) ?
-              get(ENV, "WANNIERNLQG_V110_PROJECT", ROOT) : ROOT
-    run(`$(Base.julia_cmd()) --project=$(project) $(joinpath(ROOT, "examples", group, "run.jl")) $(ARGS)`)
+all(arg -> startswith(arg, "--data-paths=") || startswith(arg, "--profile=") || arg == "--check", ARGS) ||
+    error("run_all.jl is an input check. Use run_group.jl GROUP --case=NAME for numerical execution.")
+for chapter in sort(filter(x -> occursin(r"^\d\d_", x), readdir(joinpath(ROOT, "examples"))))
+    command = [joinpath(ROOT, "scripts", "run_group.jl"), chapter[1:2], "--check", ARGS...]
+    run(`$(Base.julia_cmd()) --startup-file=no --compiled-modules=existing --project=$(dirname(Base.active_project())) $command`)
 end
-println("TUTORIAL_ALL_OK groups=$(length(groups))")
+println("TUTORIAL_ALL_INPUT_CHECKS_FINISHED")

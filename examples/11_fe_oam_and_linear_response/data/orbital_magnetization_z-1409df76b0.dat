@@ -1,0 +1,3 @@
+# Derived from native303 z-real components; units muB/cell. No normalization/sign change.
+# T_K C_SRocc C_CMocc C_total P_SRocc P_CMocc P_total
+0.00000000000000000e+00 -5.92196394356946654e-02 3.82766024277514175e-02 -2.09430370079432583e-02 -5.92196394356945821e-02 3.82766024277512926e-02 -2.09430370079432930e-02

@@ -1,0 +1,65 @@
+{
+  "chern": {
+    "reversed": {
+      "n101": -1.0000000000000042,
+      "n51": -1.0000000000000002
+    },
+    "topological": {
+      "n101": 1.0000000000000056,
+      "n51": 1.0000000000000009
+    },
+    "trivial": {
+      "n101": -7.12725590641288e-16,
+      "n51": -1.8613630289142228e-16
+    }
+  },
+  "hall_at_mu_zero_e2_over_h": {
+    "tb_topological": -0.9998841448176713,
+    "analytic_topological": -0.9998841448176713,
+    "tb_trivial": -0.0002685339967711348,
+    "analytic_trivial": -0.0002685339967712715,
+    "tb_reversed": 0.9998841448176713,
+    "analytic_reversed": 0.9998841448176713
+  },
+  "sheet_quantum_siemens": 3.8740458649318244e-05,
+  "model_source_sha256": "030bb7e287dfd83e25afdae5d8bdf91923b38deae065d448dc5f96c07d4ae9e1",
+  "route_hall_max_difference_e2_over_h": {
+    "topological": 3.3306690738754696e-16,
+    "trivial": 1.3877787807814457e-16,
+    "reversed": 3.3306690738754696e-16
+  },
+  "mesh_121_to_181_difference_e2_over_h": 0.0,
+  "convergence_e2_over_h": {
+    "tb_topological_n61_g002": -0.9998841448176713,
+    "tb_topological_n181_g002": -0.9998841448176713,
+    "tb_topological_n121_g001": -0.9999706010396229
+  },
+  "convergence_sha256": "3ae7700f38d7b1062265910ccc5fa8c26fb21f6b4561e0e91060349534290ad6",
+  "profile": "reference",
+  "critical_mass_ev": 0.7794228634059948,
+  "matrix_max_difference_ev": 4.440892098500626e-16,
+  "plateau_tolerance_e2_over_h": 0.02,
+  "hall_curves_sha256": "8620ce538e00e4a498c56485a83cfefa3cf585727b5e4b8a502f9d252f46da5e",
+  "package_version": "1.2.0",
+  "critical_valley_gaps_ev": [
+    6.280369834735101e-16,
+    3.117691453623978
+  ],
+  "route_hall_tolerance_e2_over_h": 1e-05,
+  "mesh_difference_tolerance_e2_over_h": 0.005,
+  "previous_numerical_record": {
+    "hall_curves_sha256": "e670187c0f0a66ae07834fa6734ed235324a885f0abb616e450ff6751bdfbd5f",
+    "convergence_sha256": "cf9e0973bf71a58fdb5ac13c66d90a8dc22dfc11c013489a3423c402925e28fe",
+    "hall_at_mu_zero_e2_over_h": {
+      "tb_reversed": 0.9998847212143374,
+      "tb_topological": -0.9998847212143374,
+      "analytic_topological": -0.9998847212143369,
+      "tb_trivial": -0.0002671980135095004,
+      "analytic_trivial": -0.0002671980135097424,
+      "analytic_reversed": 0.9998847212143374
+    }
+  },
+  "response_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "execution_id": "WN-Tutorial-provenance316",
+  "unchanged_model_checks_reused": true
+}

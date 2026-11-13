@@ -1,0 +1,34 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+identity = "dirac/0.2/0.25"
+source = "julia"
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [101, 101]
+kind = "k_region"
+lower = [-0.25, -0.25]
+spatial_dimension = 2
+upper = [0.25, 0.25]
+
+[ response.tasks ]
+
+[ response.tasks.optical_positive_k025 ]
+fermi_energy_ev = 0.0
+kind = "linear_optical_response"
+photon_energy_max_ev = 3.0
+photon_energy_min_ev = 0.0
+photon_energy_num_points = 301
+temperature_k = 0.0
+
+[ response.tasks.optical_positive_k025.numerics ]
+eta_fs_ev = 0.01
+fs_kind = "gaussian"
+
+[ response.tasks.optical_positive_k025.relaxation ]
+gamma_inter_ev = 0.02
+gamma_intra_ev = 0.02

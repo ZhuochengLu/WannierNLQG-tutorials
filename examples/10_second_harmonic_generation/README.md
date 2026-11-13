@@ -1,84 +1,105 @@
-# GeS second-harmonic generation
+# 10 · Second-harmonic generation in GeS
 
-This chapter calculates the independent-particle, electric-dipole SHG response of
-the supplied 32-orbital spinor GeS model. It uses the v1.1.0 Conventional method
-and a full Brillouin-zone integral. The calculated output frequency is (2\omega);
-the horizontal axis gives the incident photon energy \(\hbar\omega\).
+## In this tutorial
 
-## Input and numerical contract
+- Distinguish the incident photon energy from the output frequency of second-harmonic generation.
+- Read conductivity and susceptibility as different response coefficients.
+- Understand why energy broadening and low-frequency regularization are separate controls.
 
-- Runtime model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md), using all 32 model bands and
-  `Convention_II`. No additional spin factor is applied to this spinor model.
-- Reference sampling: `100 × 100 × 1`; smoke sampling: `2 × 2 × 1`. The SHG
-  `spatial_dimension` is 3 in both profiles.
-- Incident photon energies: 200 equally spaced values from 0 to 4 eV.
-  `E_F = -2.5 eV`, `T = 0 K`.
-- `SHGNumerics`: Gaussian resonance `broadening = 0.04 eV`,
-  `low_frequency_broadening = 0.001 eV`,
-  `intermediate_regularization = 0.001 eV`,
-  `eta_correction = true`, `degeneracy_threshold = 1e-4 eV`.
-- Direct Fourier interpolation, input real-space replicas, full Cartesian tensor,
-  susceptibility and conductivity totals, 17-digit result formatting.
+## Physics and model
 
-The 40 meV `broadening` sets the width of the \(\omega\) and \(2\omega\)
-transition resonances. The 1 meV low-frequency width regularizes factors with
-small incident photon energy. The separate 1 meV intermediate-state parameter
-regularizes nearly degenerate energy denominators in the matrix elements and
-three-band sum. These controls are physically distinct and cannot be replaced
-by one complex photon energy. The finite-eta correction is enabled together
-with the intermediate-state regularization.
+In second-harmonic generation (SHG), two incident fields at frequency $\omega$ generate a response at $2\omega$. With time dependence $e^{-i\omega t}$, define the polarization response by
 
-## Run and visualize
+$$
+P^a(2\omega)
+=\epsilon_0\sum_{bc}\chi^{abc}(-2\omega;\omega,\omega)
+E^b(\omega)E^c(\omega).
+$$
 
-Before the public v1.1.0 tag is available, use the local formal v1.1.0 source:
+Here $a$ is the output direction, $b,c$ are the incident-field directions, and $\epsilon_0$ is the vacuum permittivity. The corresponding current coefficient is defined by
+
+$$
+J^a(2\omega)
+=\sum_{bc}\sigma^{abc}(-2\omega;\omega,\omega)
+E^b(\omega)E^c(\omega).
+$$
+
+These definitions follow the v1.2.0 SHG theory and implementation, without an additional factorial. They specify the convention for this lesson; the manuscript does not supply a corresponding SHG derivation. The yyy component places all three directions along y. In the clean analytic theory, current is the time derivative of polarization. The finite-width implementation nevertheless evaluates conductivity and susceptibility with separate kernels: do not generate one numerical output by multiplying or dividing the other by a complex frequency.
+
+The Gaussian energy-selection kernel uses
+
+$$
+g_\gamma(x)=\frac{\exp[-(x/\gamma)^2]}{\sqrt{\pi}\gamma},
+\qquad x,\gamma\ \text{in eV}.
+$$
+
+Thus $\gamma$ is the width parameter, not the Gaussian standard deviation. The response contains both one- and two-photon resonant structures. Low-frequency factors have a separate regularization and are not replaced by this Gaussian.
+
+## Parameters
+
+Use [second_harmonic_generation_conventional.toml](inputs/second_harmonic_generation_conventional.toml) with the GeS material installed through the [material setup guide](../../Materials/README.md).
+
+| Parameter | Value | Meaning |
+| --- | --- | --- |
+| Model | Materials/GeS/model_tb.dat | GeS Wannier Hamiltonian |
+| k mesh | [100, 100] | Brillouin-zone sampling in the input |
+| spatial_dimension | 3 | Cartesian response dimension |
+| Incident photon energy $\hbar\omega$ | 0–4 eV, 200 points | The plotted frequency axis |
+| Chemical potential | −2.5 eV | Occupation reference |
+| Temperature | 0 K | Electronic occupations |
+| broadening | 0.04 eV | Gaussian resonance width; omitted broadening_type defaults to Gaussian |
+| low_frequency_broadening | 0.001 eV | Separate low-frequency control |
+| response / output | both / total | Conductivity and susceptibility totals |
+| Fourier / replica policy | direct / auto | Interpolation and representation handling |
+
+Parameters absent from the input retain the selected software version's defaults; they should not be inferred from the plotted linewidth alone.
+
+## Run
+
+From the repository root:
 
 ```bash
-julia --project=/path/to/wannierNLQG-v1.1.0 \
-  examples/10_second_harmonic_generation/run.jl --profile=smoke
-julia --project=/path/to/wannierNLQG-v1.1.0 \
-  examples/10_second_harmonic_generation/run.jl --profile=reference
-python3 scripts/plot_shg_spectrum.py \
-  examples/10_second_harmonic_generation/plot_configs/shg_chi_yyy.json
-python3 scripts/plot_shg_spectrum.py \
-  examples/10_second_harmonic_generation/plot_configs/shg_sigma_yyy.json
+julia --project=.runtime/env scripts/run_group.jl 10 --check
+julia --project=.runtime/env scripts/run_group.jl 10 --case=second_harmonic_generation_conventional --output=.runtime/second_harmonic_generation_conventional
 ```
 
-The calculation requires Julia and WannierNLQG v1.1.0. Plotting requires NumPy,
-Matplotlib, Times New Roman, and a LaTeX installation with `newtxtext`,
-`newtxmath`, `bm`, and `textgreek`. A case refuses to overwrite an existing result
-directory.
+Use a fresh output directory for each calculation. The check command verifies configuration and dependencies, not numerical convergence. For a sampling study, change the mesh in a copy of the input while keeping the physical model and broadening fixed.
 
-## Results and interpretation
+## Read the figures
 
-Each profile writes 18 `shg_chi_abc.dat` and 18 `shg_sigma_abc.dat` files. The
-incident-field indices are symmetric and ordered `xx, yy, zz, yz, xz, xy` for
-each output direction `x, y, z`. Every file contains `energy_eV total_re total_im`.
-Susceptibility has units `pm/V`; conductivity has units `A/V^2`. The two
-finite-broadening responses are evaluated separately, so the numerical files
-must not be converted into one another by multiplying by a complex frequency.
-The `yyy` real and imaginary curves are the display examples; the conductivity
-plot is scaled by `10^6` and labeled in `μA/V²`, while its native table remains
-in `A/V²`. All 18 components
-of each response remain in the reference result directory.
+The supplied spectra illustrate the output convention. Redrawing them does not execute the calculation input.
 
-![GeS SHG susceptibility yyy spectrum](figures/GeS_shg_chi_yyy.png)
+### 1. SHG conductivity
 
-![GeS SHG conductivity yyy spectrum](figures/GeS_shg_sigma_yyy.png)
+<a href="figures/shg_sigma_yyy.png"><img src="figures/shg_sigma_yyy.png" alt="Real and imaginary parts of GeS yyy SHG conductivity" width="680"></a>
 
-The plotted `yyy` response is tied to the stated spinor GeS model and to the
-3D normalization of its supercell, including the vacuum direction. It is not
-an intrinsic sheet susceptibility. At exactly zero temperature, the package
-omits the distributional one-band Fermi-surface contribution; this tutorial
-does not qualify a zero-temperature metal.
+Read the real and imaginary parts separately. The horizontal axis is the incident energy $\hbar\omega$, although the output is at $2\omega$. The plot converts A/V² to μA/V² with a factor $10^6$; it does not fit the amplitude.
 
-`summary.json` records input/output SHA-256, exact parameters, runtime version,
-thread count and source-manifest identity. The images are presentation artifacts;
-their `.plot.json` sidecars bind each plot to its input table.
+[Original PNG](figures/shg_sigma_yyy.png) · [PDF](figures/shg_sigma_yyy.pdf)
 
-## Qualification
+### 2. SHG susceptibility
 
-The numerical files are `TUTORIAL_NUMERICAL_EVIDENCE`. The figures are
-`PRESENTATION_ONLY`. The fixed `100 × 100 × 1` mesh and chosen widths have not
-been shown converged against k sampling, broadening, intermediate regularization,
-Wannier windows or near degeneracies. Package engineering tests and finite
-GeS spectra do not establish material Physics or Production qualification.
+<a href="figures/shg_chi_yyy.png"><img src="figures/shg_chi_yyy.png" alt="Real and imaginary parts of GeS yyy SHG susceptibility" width="680"></a>
+
+The susceptibility is displayed in pm/V. Its amplitude and frequency dependence cannot be compared directly with conductivity values in μA/V². Retain the specified response and normalization conventions when comparing another code or an experiment.
+
+[Original PNG](figures/shg_chi_yyy.png) · [PDF](figures/shg_chi_yyy.pdf)
+
+## Redraw and check
+
+```bash
+python examples/10_second_harmonic_generation/plot.py --figure=shg_sigma_yyy --output=.runtime/plot-shg_sigma_yyy
+python examples/10_second_harmonic_generation/plot.py --figure=shg_chi_yyy --output=.runtime/plot-shg_chi_yyy
+```
+
+These examples are not a converged material prediction. Test momentum sampling and each numerical width separately. A yyy result does not validate every tensor component, and an effective sheet normalization must not be introduced merely by changing an axis label.
+
+[Reproducibility](reproduce.json)
+
+## Resolution and width
+
+The supplied spectrum uses the stated 100 × 100 grid, Gaussian optical width and separate low-frequency control. It is a fixed numerical example, rather than a joint mesh-and-linewidth convergence study. Narrowing the optical peak without refining the momentum grid can produce sampling structure. Compare real and imaginary components at fixed units, measure and tensor convention. An equal-rate Lorentzian calculation or an alternative cell-image prescription would be a different input problem, not another label for these Gaussian curves.
+
+## References
+
+- C. Aversa and J. E. Sipe, “Nonlinear optical susceptibilities of semiconductors: Results with a length-gauge analysis,” *Physical Review B* **52**, 14636–14645 (1995). [DOI](https://doi.org/10.1103/PhysRevB.52.14636). Background for independent-particle length-gauge nonlinear response.

@@ -1,0 +1,362 @@
+{
+  "adopted_version": "1.2.0",
+  "adopted_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "adopted_source_role": "RECORDED_PUBLIC_DELIVERY909_AND_CURRENT_MATERIAL_EXECUTION_SOURCE; not the later adjacent cold-validation925 snapshot",
+  "adopted_source_actual_checks": "Package-owner final Full904 seven groups/MPI, ordinary first-use905 and formal install/API/CLI908 passed. Tutorial owner independently verified all1526 public payloads and68 retained evidence file hashes; these package-owner jobs were not rerun here.",
+  "new_default_material_calculation_source": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+  "tutorial_specific_public_path_execution": "NOT_RUN_DURING_THIS_HANDOFF",
+  "tutorial_results_recomputed": false,
+  "historical_tutorial_validation": {
+    "adopted_version": "1.2.0",
+    "adopted_source_manifest_sha256": "9850cb8af453b0962e85fc55e380c3f5596bf1f8ec8f6585136621a2aefd1432",
+    "earlier_full_seven_groups_source_manifest_sha256": "e09da395f0a0784e53eed4544dd11b5356a7aa016f5d05b449f0a87f655848ee",
+    "adopted_source_actual_checks": "metadata/static checks and formal-path native loading; not a new seven-group Full run",
+    "new_default_material_calculation_source": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+    "response_consumers_unchanged_across_these_identities": true,
+    "public_package_installation_or_release_claim": false
+  },
+  "public_delivery": {
+    "status": "DELIVERED_LOCAL_PUBLIC_1.2.0",
+    "source_directory_name": "WannierNLQG-v1.2.0",
+    "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "payload_files_verified": 1526,
+    "delivery_receipt_name": "LOCAL_DELIVERY909.json",
+    "delivery_receipt_sha256": "8eee43f4dfdb188f485c8226bb66dc770870216dc78b6f540620c2fdec41dae4",
+    "original_evidence_files_sha256_verified": 68,
+    "original_release_gates": {
+      "engineering_matrix": "PASS",
+      "independent_science": "PASS",
+      "cold_performance": "PASS",
+      "complete_source_audit": "PASS",
+      "final_path": "PASS"
+    },
+    "github_pushed": false,
+    "github_release_created": false,
+    "science_scope": "Finite synthetic independent high-precision/geometry/projector/finite-difference oracles, normal-entry and thread/rank regressions. No material convergence or new material production qualification.",
+    "kernel_containment": "UNKNOWN; original recorded identities separately strictly released",
+    "tutorial_owner_scope": "Source/evidence hashes independently verified; package-owner Full/first-use/formal-path jobs not rerun by tutorial owner."
+  },
+  "tutorial_entry_review": {
+    "explicit_source_bootstrap": true,
+    "hardcoded_internal_source": false,
+    "project_compatibility": "WannierNLQG1.2",
+    "input_or_response_settings_changed": false,
+    "material_data_or_saved_figure_changed": false,
+    "limitation": "Entry dependency and path review is static. Historical tutorial checks and material results retain their original source identities; no complete public-source material rerun is claimed."
+  },
+  "preceding_public_delivery": {
+    "status": "DELIVERED_LOCAL_PUBLIC_1.2.0",
+    "source_directory_name": "WannierNLQG-v1.2.0",
+    "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+    "payload_files_verified": 1700,
+    "delivery_receipt_name": "LOCAL_PUBLIC394_DELIVERY.json",
+    "delivery_receipt_sha256": "9f322b1bd931760f26246451b0606ab25c1eb02cb6cec53e082f1be6b284eb0f",
+    "original_evidence_files_sha256_verified": 28,
+    "original_release_gates": {
+      "engineering_matrix": "PASS",
+      "independent_science": "PASS",
+      "cold_performance": "PASS",
+      "complete_source_audit": "PASS",
+      "final_path": "PASS"
+    },
+    "github_pushed": false,
+    "github_release_created": false,
+    "science_scope": "Independent synthetic geometry/projector/derivative oracles plus exact baseline/thread/MPI comparisons; no new material or convergence qualification",
+    "kernel_containment": "UNKNOWN; recorded process identities separately strictly released"
+  },
+  "current_shift_and_transition_geometry": {
+    "source_manifest_sha256_of_actual_calculations": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+    "active_reference_cases": 12,
+    "active_native_tables": 20,
+    "active_figures": 13,
+    "figures_redrawn_this_update": 6,
+    "remaining_figures_retained_with_original_provenance": 7,
+    "original_teaching_meshes_preserved": true,
+    "new_SCF": 0,
+    "new_Wannierization": 0,
+    "Geometric_Loop_QHC": "NO_ACTIVE_ENTRY",
+    "full_band_shift_current_domain": "occupied1:20 to empty21:32; complete intermediate states",
+    "normal_entry_and_block_closure_check": "PASS",
+    "material_or_convergence_qualified": false
+  },
+  "tutorial_band_domain_refresh": {
+    "source_manifest_sha256_of_actual_calculations": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+    "shift_current_slice_domain": {
+      "valence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "conduction": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "original_grids_preserved": true,
+    "full_Conventional_map_reused_from_completed_same_source_calculation": true,
+    "Projector_Wilson_Geometric_shift_current_raw_maps_unchanged": true,
+    "Geometric_Loop_QHC_active_tutorial_entries": 0,
+    "WN_source_modified_by_tutorial_owner": false,
+    "new_SCF": 0,
+    "new_Wannierization": 0,
+    "source_package_QHC_withdrawal": "SEPARATE_WN_OWNER_RESPONSIBILITY",
+    "block_closure_and_normal_entry_check": "PASS:11 normal entries;40000 original points;0 split response blocks",
+    "new_plot_validation": "PASS:six PNG/PDF pairs rendered and visually reviewed"
+  },
+  "preceding_shift_and_transition_geometry": {
+    "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+    "complete_reference_cases": 13,
+    "native_output_files": 22,
+    "ordinary_entry_checks": 13,
+    "rendered_figures": 14,
+    "formats": [
+      "png",
+      "pdf"
+    ],
+    "original_teaching_meshes_preserved": true,
+    "new_SCF": 0,
+    "new_Wannierization": 0,
+    "material_or_convergence_qualification": false,
+    "local_method_equivalence": "NOT_ESTABLISHED"
+  },
+  "targeted_spin_case_update303": {
+    "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+    "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+    "calculation_cases": [
+      "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml",
+      "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml"
+    ],
+    "normal_model3_reader_checks": true,
+    "spin_group_actual_exit": [
+      0,
+      0
+    ],
+    "shared_parent_actual_exit": 1,
+    "shared_parent_failure": "Independent Fe result-reader postcheck; Fe results not adopted by this update",
+    "plot304_actual_exit": 0,
+    "plot304_complete_recorded_identities_GONE": 45,
+    "visual_checks": "All four PNGs and all four independent PDF previews inspected",
+    "public_software_promotion_claim": false,
+    "new_SCF": 0,
+    "new_Wannierization": 0,
+    "portable_assets307": {
+      "actual_exit": 0,
+      "ordinary_input_checks": 8,
+      "new_responses": 0,
+      "installer": "ASSET_INTEGRITY_ONLY",
+      "complete_recorded_identities_GONE": 8,
+      "all_sources_unchanged": true
+    }
+  },
+  "targeted_Fe_readback310": {
+    "calculation_source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+    "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+    "normal_result_reader_actual_exit": 0,
+    "normal_result_reader_cases": 4,
+    "normal_result_reader_strict_GONE": 6,
+    "original_outputs_unchanged": true,
+    "new_integrals_for_reader_fix": 0,
+    "original_parent303_actual_exit": 1,
+    "original_parent_failure_unchanged": true,
+    "new_figure": "fe_orbital_magnetization_z",
+    "material_or_convergence_qualified": false,
+    "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+    "actual_reader_role": "Prepromotion frozen copy with exact same manifest as current public; not a repeated formal-path material readback",
+    "plot311_actual_exit": 0,
+    "plot311_complete_recorded_identities_GONE": 22,
+    "plot311_PNG_and_independent_PDF_preview_visual_review": "PASS"
+  },
+  "targeted_material_updates_current_status": "Four spin cases delivered308; four already-computed Fe OM cases recovered by ordinary reader310. Numerical kernels were not rerun for reader changes.",
+  "public_delivery_history": [
+    {
+      "status": "DELIVERED_LOCAL_PUBLIC_1.2.0",
+      "source_directory_name": "WannierNLQG-v1.2.0",
+      "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+      "payload_files_verified": 1701,
+      "delivery_receipt_name": "LOCAL_DELIVERY487.json",
+      "delivery_receipt_sha256": "af1d50234f4450b22ae004c0fee098b485897e27ef5b86c302e65204b7982172",
+      "original_evidence_files_sha256_verified": 34,
+      "original_release_gates": {
+        "engineering_matrix": "PASS",
+        "independent_science": "PASS",
+        "cold_performance": "PASS",
+        "complete_source_audit": "PASS",
+        "final_path": "PASS"
+      },
+      "github_pushed": false,
+      "github_release_created": false,
+      "science_scope": "Synthetic finite-model independent geometry/projector/response oracles and exact thread/rank regressions. No new material convergence or material production qualification.",
+      "kernel_containment": "UNKNOWN; recorded identities separately strictly released"
+    }
+  ],
+  "current_case_update_manifest": "manifests/case_update313.json",
+  "all_case_provenance_audit": {
+    "manifest": "manifests/case_provenance375.json",
+    "base_audit": "manifests/all_case_provenance334.json",
+    "reference_cases": 89,
+    "smoke_inputs": 71,
+    "reference_status_counts": {
+      "targeted_recomputation_completed": 59,
+      "reuse_supported_by_evidence": 30,
+      "specific_provenance_or_applicability_gap": 0
+    },
+    "standalone_THG_TOML": "examples/16_monolayer_graphene_thg/valley_input.toml",
+    "smoke_numerical_reexecution_claimed": false
+  },
+  "current_graphene_THG317": {
+    "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "actual_original121_grid_reference_runs": 2,
+    "actual_exit": 0,
+    "strict_recorded_identities_released": 6,
+    "prescription": "distribution_broadening",
+    "legacy_causal_source_manifest": "d0a7513b0dc36f600e7c1e7ac04fd57f1054ace9ca9408af24956ffefb42e825",
+    "old_causal_results_relabelled_as_current": false,
+    "current_inputs_make_actual317_defaults_explicit_only": true,
+    "WN_source_changes": false
+  },
+  "all_case_provenance_followup334": {
+    "inventory": "manifests/all_case_provenance334.json",
+    "flat_list": "manifests/all_case_provenance334.csv",
+    "report": "manifests/CASE_PROVENANCE334.md",
+    "counts": {
+      "reference": {
+        "RECOMPUTED": 56,
+        "REUSABLE_WITH_EVIDENCE": 30
+      },
+      "smoke": {
+        "EVIDENCE_INCOMPLETE": 71
+      }
+    },
+    "actual_reference_executions_this_phase": 34,
+    "reused_cases_recovered": 12,
+    "current_smoke_execution_not_claimed": 71,
+    "WN_source_changes": false
+  },
+  "previous_all_case_provenance_audit315": {
+    "manifest": "manifests/all_case_provenance315.json",
+    "human_readable": "manifests/CASE_PROVENANCE315.md",
+    "flat_list": "manifests/all_case_provenance315.csv",
+    "reference_cases": 86,
+    "smoke_inputs": 71,
+    "reference_status_counts": {
+      "targeted_recomputation_completed": 22,
+      "reuse_supported_by_evidence": 17,
+      "specific_provenance_or_applicability_gap": 47
+    },
+    "historical_smoke_numerical_summaries_located": 63,
+    "current_smoke_numerical_execution_not_claimed": 71,
+    "new_numerical_jobs_during_audit": 0,
+    "earlier_case_update313_scope": "35 reference cases and32 smoke inputs; retained as a family-scoped history",
+    "incomplete_evidence_is_not_a_rerun_request": true
+  },
+  "current_presentation_and_targeted_calculations375": {
+    "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "original_case_audit_preserved": "manifests/all_case_provenance334.json",
+    "followup": "manifests/case_provenance375.json",
+    "standard_input_count": 160,
+    "original_input_count_preserved": 157,
+    "reference_inputs": 89,
+    "smoke_inputs": 71,
+    "chapter_specific_THG_input_count": 1,
+    "source_changes": "Tutorials plotting/entry adapters only; no WN code changed",
+    "THG": "Actual84frequency/32base/sixvalley current-supported calculation356,11identities strict;64budget terminations, not convergence qualified",
+    "GeS_Jerk": "Actual200frequencies400square plus200/300squarefivepoint controls370,33identities strict; overall1percentNOT_CONVERGED",
+    "Fe_AHE": "Existing numerical results restyled;40k18band same-model contour sampling343 and actual render355",
+    "configuration_validation": "Actual362 public chapter THG driver:192TaskConfig constructors/model/source checks, no integration; Actual374 three GeS TOMLs parsed and exact producer configuration matched. Both original6identity cohorts strict."
+  },
+  "preceding_all_case_provenance_audit334": {
+    "manifest": "manifests/all_case_provenance334.json",
+    "human_readable": "manifests/CASE_PROVENANCE334.md",
+    "flat_list": "manifests/all_case_provenance334.csv",
+    "reference_cases": 86,
+    "smoke_inputs": 71,
+    "reference_status_counts": {
+      "targeted_recomputation_completed": 56,
+      "reuse_supported_by_evidence": 30,
+      "specific_provenance_or_applicability_gap": 0
+    },
+    "historical_smoke_numerical_summaries_located": 63,
+    "current_smoke_numerical_execution_not_claimed": 71,
+    "new_numerical_jobs_during_audit": "See individual actual runs; failed RSS and timeout parents are preserved separately, not counted as complete executions.",
+    "earlier_case_update313_scope": "35 reference cases and32 smoke inputs; retained as a family-scoped history",
+    "incomplete_evidence_is_not_a_rerun_request": true,
+    "followup_actual_reference_cases_completed": 34,
+    "followup_recovered_reuse_cases": 12,
+    "model_specific_Hall_only_bounded_reuse_cases": 1
+  },
+  "current_adjacent_software": {
+    "public_source_manifest_sha256": "8311ffc1ceda424088a959bfe374ad1a855aa9c5ccc9786422582f4ab212efd0",
+    "internal_source_manifest_sha256": "0ad1521a60a78e764c59a085435449fb23d4634ac422c37f0ba8d53b5a7327e1",
+    "version": "1.2.0",
+    "owner_handoff": "HANDOFF925.md / input-validation913",
+    "owner_handoff_sha256": "450fed97ecc31aa56fabeedce0738cbe27c0b83ca4effabf9de0c48238af25b0",
+    "changes": "Two cold Runtime input source files, one test, two docs; reject explicit invalid values before override merging; legal overrides and original zero-eta/window rules preserved",
+    "unchanged": "Numerical kernels, operator implementations, public API, Project/Manifest, model format",
+    "owner_actual_checks": "924:1492 assertions, five documentation gates and formatter/AST; DEVELOPMENT_PASS/NOT_SCIENTIFIC",
+    "full_regression_mpi_performance_on925": "NOT_RUN; older909 evidence retains older725 identity",
+    "tutorial_owner_actual_check": "415: all154 ordinary inputs and complete installed GeS/Fe TB/operator reader; no responses",
+    "release_preparation": "manifests/release_preparation414.json",
+    "github_release": false,
+    "preceding_documentation_snapshot": {
+      "source_manifest": "63d9520199dc47579fcbbd2d677e2081d3f42d9a6ef989e4e4fa1fb426fd0305",
+      "actual_case_source": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "changed_from_725": [
+        "README.md",
+        "USER_GUIDE.md",
+        "docs/ARCHITECTURE.md",
+        "docs/NATIVE_MODELS.md",
+        "docs/RELEASE_NOTES.md",
+        "docs/TEXT_INPUT.md",
+        "theory/QuantumGeometry/QuantumChristoffelSymbol.md",
+        "theory/QuantumGeometry/QuantumHermitianConnection.md",
+        "theory/QuantumGeometry/QuantumMetric.md",
+        "theory/QuantumGeometry/QuantumMetricDipole.md",
+        "theory/QuantumGeometry/QuantumMetricQuadrupole.md",
+        "theory/README.md"
+      ],
+      "scope": "12 documentation/theory files only; no src/scripts/Project/Manifest change; not a new calculation"
+    },
+    "cold_input_update_from_63d": {
+      "changed": [
+        "docs/TEXT_INPUT.md",
+        "docs/THIRD_ORDER_RESPONSES.md",
+        "src/Runtime/TaskInput.jl",
+        "src/Runtime/TaskInputParameters.jl",
+        "test/task_input_overrides_unit.jl"
+      ],
+      "added": [],
+      "removed": []
+    },
+    "independent_follow_up": "manifests/release_review416.json"
+  }
+}

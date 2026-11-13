@@ -1,0 +1,817 @@
+{
+  "schema": "tutorial-external-materials/2",
+  "scope": "All current ordinary reference/test-fixture material path bindings; 154 ordinary inputs, of which 97 use the selected GeS/Fe files. Standalone THG valley replay has no external material requirement.",
+  "model_path_fields": [
+    "model_file",
+    "real_space_operator_bundle_file",
+    "seedname",
+    "spin_file",
+    "checkpoint_file",
+    "wsvec_file"
+  ],
+  "seed_required_suffixes": [
+    ".spn",
+    ".chk",
+    ".eig",
+    ".mmn"
+  ],
+  "no_material_payload_copied": true,
+  "acquisition_guide": "Materials/README.md",
+  "publication_instruction": "PREPARE_LOCALLY; DO_NOT_UPLOAD_OR_PUSH_THIS_STEP",
+  "requirements": [
+    {
+      "logical_path": "Materials/GeS/model_tb.dat",
+      "kind": "file",
+      "bindable": true,
+      "availability": "VERIFIED_EXISTING_ASSET_SELECTED_FOR_UNIFIED_SET",
+      "current_path_exists": false,
+      "required_by": [
+        {
+          "input": "examples/01_band_structure/inputs/band_structure.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/01_band_structure/band_structure.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/injection_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/02_integral_charge_responses/injection_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/02_integral_charge_responses/shift_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/02_integral_charge_responses/shift_current_geometric_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_projector.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/02_integral_charge_responses/shift_current_wilson_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/03_integral_spin_responses/injection_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/03_integral_spin_responses/shift_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/04_kslice_charge_responses/injection_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_geometric_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_wilson_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/05_kslice_spin_responses/injection_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/05_kslice_spin_responses/shift_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/06_qg_pairwise/berry_curvature_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/06_qg_pairwise/interband_berry_curvature_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/06_qg_pairwise/interband_quantum_metric_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/06_qg_pairwise/quantum_metric_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/berry_curvature_dipole_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/07_qg_multipoles/berry_curvature_dipole_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/berry_curvature_quadrupole_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/07_qg_multipoles/berry_curvature_quadrupole_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/07_qg_multipoles/quantum_christoffel_symbol_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/07_qg_multipoles/quantum_metric_dipole_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/07_qg_multipoles/quantum_metric_quadrupole_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/08_shift_geometry/quantum_hermitian_connection_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/08_shift_geometry/quantum_hermitian_connection_wilson_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/08_shift_geometry/shift_vector_geometric_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/08_shift_geometry/shift_vector_wilson_loop.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/09_higher_and_spin_geometry/hermitian_curvature_tensor_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/09_higher_and_spin_geometry/triple_phase_product_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_berry_curvature_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_quantum_metric_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/10_second_harmonic_generation/second_harmonic_generation_conventional.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/17_jerk_current/inputs/ges_pilot_bulk.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/17_jerk_current/ges_pilot_bulk.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/17_jerk_current/inputs/ges_pilot_sheet.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/17_jerk_current/ges_pilot_sheet.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/17_jerk_current/inputs/ges_spectrum_sheet.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/17_jerk_current/inputs/ges_mesh200_sheet.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/17_jerk_current/inputs/ges_mesh300_sheet.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_yzyx_kslice.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_yzyx_kslice.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_integral.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_integral.toml",
+          "profile": "reference",
+          "field": "model_file"
+        }
+      ],
+      "expected_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "expected_bytes": 94298181,
+      "hash_status": "EXACT_SOURCE_IDENTITY_AND_FULL_COMPONENT_COMPARISON233",
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "acquisition": {
+        "method": "Use this exact separately supplied unified asset set; no file-name/model substitution.",
+        "public_download": null
+      },
+      "publication_status": "PREPARED_NOT_UPLOADED",
+      "license_status": "CC BY4.0; data author Zhuocheng Lu; scope LICENSE_DATA.md"
+    },
+    {
+      "logical_path": "Materials/GeS/operators.h5",
+      "kind": "file",
+      "bindable": true,
+      "availability": "VERIFIED_EXISTING_ASSET_SELECTED_FOR_UNIFIED_SET",
+      "current_path_exists": false,
+      "required_by": [
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_projector.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/03_integral_spin_responses/injection_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/03_integral_spin_responses/shift_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/05_kslice_spin_responses/injection_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/05_kslice_spin_responses/shift_spin_current_conventional.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_berry_curvature_conventional.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_quantum_metric_conventional.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_yzyx_kslice.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_yzyx_kslice.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/shift_integral.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/05_kslice_spin_responses/inputs/injection_integral.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        }
+      ],
+      "expected_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+      "expected_bytes": 4024659779,
+      "hash_status": "KNOWN_FORMAT2_COPY_ALL_NUMERIC_BITS_AND_CURRENT_READER_VERIFIED302",
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "acquisition": {
+        "method": "Use this exact separately supplied unified asset set; no file-name/model substitution.",
+        "public_download": null
+      },
+      "publication_status": "PREPARED_NOT_UPLOADED",
+      "license_status": "CC BY4.0; data author Zhuocheng Lu; scope LICENSE_DATA.md",
+      "model_schema": "3.0"
+    },
+    {
+      "logical_path": "Materials/Fe/model_tb.dat",
+      "kind": "file",
+      "bindable": true,
+      "availability": "VERIFIED_EXISTING_ASSET_SELECTED_FOR_UNIFIED_SET",
+      "current_path_exists": false,
+      "required_by": [
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_sos_occupied_xy.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_tb_occupied_xy.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_transport_equivalent_xy.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_conventional_T000.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_optical_projector_T000.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T000.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_conventional_T000.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T000.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/linear_transport_projector_T000.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_conventional_T000.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_projector_T000.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        },
+        {
+          "input": "examples/12_fe_wannierization/inputs/fe_bands.toml",
+          "profile": "reference",
+          "field": "model_file"
+        },
+        {
+          "input": "test/fixtures/inputs/12_fe_wannierization/fe_bands.toml",
+          "profile": "smoke",
+          "field": "model_file"
+        }
+      ],
+      "expected_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "expected_bytes": 71573382,
+      "hash_status": "EXACT_SOURCE_IDENTITY_AND_FULL_COMPONENT_COMPARISON233",
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "acquisition": {
+        "method": "Use this exact separately supplied unified asset set; no file-name/model substitution.",
+        "public_download": null
+      },
+      "publication_status": "PREPARED_NOT_UPLOADED",
+      "license_status": "CC BY4.0; data author Zhuocheng Lu; scope LICENSE_DATA.md"
+    },
+    {
+      "logical_path": "Materials/Fe/operators.h5",
+      "kind": "file",
+      "bindable": true,
+      "availability": "VERIFIED_EXISTING_ASSET_SELECTED_FOR_UNIFIED_SET",
+      "current_path_exists": false,
+      "required_by": [
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_sos_occupied_xy.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_conventional_T000.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml",
+          "profile": "reference",
+          "field": "real_space_operator_bundle_file"
+        },
+        {
+          "input": "test/fixtures/inputs/11_fe_oam_and_linear_response/oam_projector_T000.toml",
+          "profile": "smoke",
+          "field": "real_space_operator_bundle_file"
+        }
+      ],
+      "expected_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+      "expected_bytes": 3005495097,
+      "hash_status": "KNOWN_FORMAT2_COPY_ALL_NUMERIC_BITS_AND_CURRENT_READER_VERIFIED302",
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "acquisition": {
+        "method": "Use this exact separately supplied unified asset set; no file-name/model substitution.",
+        "public_download": null
+      },
+      "publication_status": "PREPARED_NOT_UPLOADED",
+      "license_status": "CC BY4.0; data author Zhuocheng Lu; scope LICENSE_DATA.md",
+      "model_schema": "3.0"
+    }
+  ],
+  "binding_keys": [
+    "Materials/Fe/model_tb.dat",
+    "Materials/Fe/operators.h5",
+    "Materials/GeS/model_tb.dat",
+    "Materials/GeS/operators.h5"
+  ],
+  "counts": {
+    "active_inputs": 154,
+    "affected_inputs": 97,
+    "affected_inputs_by_profile": {
+      "reference": 54,
+      "smoke": 43
+    },
+    "bindable_paths": 4,
+    "required_files": 4,
+    "seed_prefixes": 0
+  },
+  "asset_set": {
+    "id": "tutorial-unified-GeS-Fe-20261109",
+    "status": "CURRENT_FORMAT_COPIES_PREPARED_NOT_PUBLISHED",
+    "logical_files": 4
+  },
+  "data_license": "CC-BY-4.0",
+  "data_author": "Zhuocheng Lu",
+  "data_citation": "DATA_CITATION.cff",
+  "license_scope": "Only the four selected original scientific files and project-created dataset notices; third-party references and code excluded"
+}

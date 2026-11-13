@@ -1,0 +1,14 @@
+{
+  "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "execution_id": "WN-Tutorial-provenance316",
+  "route_fraction": 0.0009999744098537783,
+  "mass_reversal_fraction": 0.0,
+  "forbidden_fraction": 9.8540460297269e-10,
+  "unchanged_independent_equation21_fraction": 0.0029745387316901964,
+  "mesh801_1601_fraction": 5.803576748002137e-90,
+  "scale_A_per_V2": 5.5138411e-05,
+  "independent_reference_recomputed": false,
+  "curve_sha256": "8435d2f54e78f49920326c1e27512b6ebcfd4b57c47ca8bf900c3abd73bf5c6a",
+  "convergence_sha256": "4b19405196e4b415bfc9118ef7e760f72b35e2c72b8db3ec48dfc1304390deee",
+  "old_reference_spectrum_retained_as_historical": true
+}

@@ -1,0 +1,32 @@
+# Editable tutorial input. Numerical values retained; new-default migration is a separate step.
+[ model ]
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [100, 100]
+kind = "bz_mesh"
+spatial_dimension = 3
+
+[ response.tasks ]
+
+[ response.tasks.integral_second_harmonic_generation_conventional ]
+fermi_energy_ev = -2.5
+kind = "second_harmonic_generation"
+output = "total"
+photon_energy_max_ev = 4.0
+photon_energy_min_ev = 0.0
+photon_energy_num_points = 200
+response = "both"
+temperature_k = 0.0
+
+[ response.tasks.integral_second_harmonic_generation_conventional.numerics ]
+broadening = 0.04
+low_frequency_broadening = 0.001

@@ -1,0 +1,392 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "hermitian_curvature_tensor_conventional",
+      "input": "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml",
+      "task_ids": [
+        "kslice_hermitian_curvature_tensor_conventional"
+      ],
+      "input_sha256": "e0da8a3f0d29c65c5f8a5289ac385a56f422bc0ef038b96241e9dc62a3baf462",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "PENDING_STABLE_SUCCESSOR"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "triple_phase_product_conventional",
+      "input": "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml",
+      "task_ids": [
+        "kslice_triple_phase_product_conventional"
+      ],
+      "input_sha256": "dacfee7c1a7b0ba5956f8b25e8959fd809a4a8a91c211199b23fba69ebb86493",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "zeeman_interband_berry_curvature_conventional",
+      "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml",
+      "task_ids": [
+        "kslice_zeeman_interband_berry_curvature_conventional"
+      ],
+      "input_sha256": "4310d6128a0dd6efc25ed1a7f41da89337bb4641e16466186912ab4144fa63d0",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "PENDING_STABLE_SUCCESSOR"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "zeeman_interband_quantum_metric_conventional",
+      "input": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml",
+      "task_ids": [
+        "kslice_zeeman_interband_quantum_metric_conventional"
+      ],
+      "input_sha256": "6f6cb9dbe7654fb57478bd9155ed9295830244965c6eacdc60f28110eb03fdad",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "source": "wannier",
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 2,
+          "vector_1": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "vector_2": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "geometry_default_migration": "PENDING_STABLE_SUCCESSOR"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "kslice_hermitian_curvature_tensor_conventional",
+      "chapter": "09_higher_and_spin_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/09_higher_and_spin_geometry/data/model_hctk_r_conv-30d759e1.dat"
+      ],
+      "figures": [
+        "examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.png",
+        "examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_hermitian_curvature_tensor_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_hermitian_curvature_tensor_conventional.skill-9",
+        "original_data_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-center-frame-20261106/kslice_hermitian_curvature_tensor_conventional/model_hctk_r_conv.dat": "30d759e1df7b182919417649819a197e5636e8dc4184ae59d382103062e8d8a8"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-center-frame-20261106/kslice_hermitian_curvature_tensor_conventional/executed-group-input.toml": "0c277a0c3d28bcffd391d6b00a7ade3558b6c0b1b57f149af9b3042b1832fc8f"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/09_higher_and_spin_geometry/data/kslice_hermitian_curvature_tensor_conventional.provenance.json",
+        "source_file_sha256": "32f9562ec33e0a07f913ebc0e9bccd30c8c379d2057d87e91bf6ff47e4aae951",
+        "payload_sha256": "2af99805c80cb1e1728b9eeed717c35efae2704d76963b82d406e64dbd8c3a20",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Use a physical display title; numerical limitations remain in the tutorial."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "kslice_triple_phase_product_conventional",
+      "chapter": "09_higher_and_spin_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/09_higher_and_spin_geometry/data/model_tppk_r_conv-49e4b121.dat"
+      ],
+      "figures": [
+        "examples/09_higher_and_spin_geometry/figures/kslice_triple_phase_product_conventional.png",
+        "examples/09_higher_and_spin_geometry/figures/kslice_triple_phase_product_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_triple_phase_product_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_triple_phase_product_conventional.skill-5",
+        "original_data_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-center-frame-20261106/kslice_triple_phase_product_conventional/model_tppk_r_conv.dat": "49e4b121652d21cfcab7e79272d9f2504f3b4012385e893aea1e32df4e7e2c7b"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-center-frame-20261106/kslice_triple_phase_product_conventional/executed-group-input.toml": "0c277a0c3d28bcffd391d6b00a7ade3558b6c0b1b57f149af9b3042b1832fc8f"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/09_higher_and_spin_geometry/data/kslice_triple_phase_product_conventional.provenance.json",
+        "source_file_sha256": "1331000f18d83905d1b54f8405bb3b9b8ae0a7426da3e0c33b96b2574e5521f0",
+        "payload_sha256": "aee19a23e299201fdd76c3f2dbe622eec7bfdc5e8938f616c4e9090add2705d7",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      }
+    },
+    {
+      "id": "kslice_zeeman_interband_berry_curvature_conventional",
+      "chapter": "09_higher_and_spin_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/09_higher_and_spin_geometry/data/model_zibck_conv-8e083ab5.dat"
+      ],
+      "figures": [
+        "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_berry_curvature_conventional.png",
+        "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_berry_curvature_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_berry_curvature_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_zeeman_interband_berry_curvature_conventional.skill-10",
+        "original_data_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-center-frame-20261106/kslice_zeeman_interband_berry_curvature_conventional/model_zibck_conv.dat": "8e083ab5ef7d1496eeef115a747f9ad96ca767fa2a99b0a6824ce989cafd630c"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-center-frame-20261106/kslice_zeeman_interband_berry_curvature_conventional/executed-group-input.toml": "c27d70b25f6bb4c76c6e50e3a53aa7b169aa71a3b7dacece065f35c84ac2e847"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/09_higher_and_spin_geometry/data/kslice_zeeman_interband_berry_curvature_conventional.provenance.json",
+        "source_file_sha256": "ee7c3e0cab55addbd70ed0fecb71f5bcb9fff8a1ffa030854beada0f44bf5092",
+        "payload_sha256": "15faf6869e9618bb5c62a5818167c2423ff435a053741e30a4caef64399c25cf",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Use a physical display title; numerical limitations remain in the tutorial."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "kslice_zeeman_interband_quantum_metric_conventional",
+      "chapter": "09_higher_and_spin_geometry",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/09_higher_and_spin_geometry/data/model_ziqmk_conv-29a1f091.dat"
+      ],
+      "figures": [
+        "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_quantum_metric_conventional.png",
+        "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_quantum_metric_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_quantum_metric_conventional.json",
+      "provenance": {
+        "original_figure_id": "kslice_zeeman_interband_quantum_metric_conventional.skill-4",
+        "original_data_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-operator-frame-20261107/kslice_zeeman_interband_quantum_metric_conventional/model_ziqmk_conv.dat": "29a1f0916c040cb2540714090bd211c966488ec06f20745e96564a1e8635c113"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/09_higher_and_spin_geometry/results/reference-operator-frame-20261107/kslice_zeeman_interband_quantum_metric_conventional/executed-group-input.toml": "74a65ed22c5a6be01c03f9b64813a23c7035640401968eaceeb52e4c50c870dd"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/09_higher_and_spin_geometry/data/kslice_zeeman_interband_quantum_metric_conventional.provenance.json",
+        "source_file_sha256": "f5dbdd8b45ed71a4957cc977e805e81db2a3fa468cfa22b2a1621c1d99bb5f97",
+        "payload_sha256": "b9c82cddcac1b95827e627b13e46ec9762131c4d450be89c0d9fd9eaa3aea2fe",
+        "encoding": "json-sort-keys-utf8-compact"
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 4
+}

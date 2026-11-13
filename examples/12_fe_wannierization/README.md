@@ -1,197 +1,178 @@
-# Fe SOC Wannierization: source to diagnostic bands
+# 12 · Fe Wannierization and band assessment
 
-This chapter runs the WannierNLQG solver on Fe wavefunctions, computes bands
-from **that run's** 18-WF TB, and compares them with published 64-band VASP
-bands. Solver convergence is not required for this diagnostic lesson. An
-accepted-state TB must actually be exported before the band steps can run.
-All results remain `DIAGNOSTIC_ONLY / Physics HOLD / Production NOT_ELIGIBLE`.
+## In this tutorial
 
-The default `run.jl --profile=smoke|reference` is still the historical
-**offline readback** used by the repository-wide smoke runner. It does not run
-VASP or Wannierization.
+- Prepare a native spinor Fe Wannierization and calculate its band path.
+- Calculate a band path from an available Wannier model.
+- Compare a finite model subspace with a larger DFT energy pool.
+- Interpret matched-band RMS and maximum errors without confusing them with solver convergence.
 
-## 1. Prepare the Fe source
+## Physics and model
 
-The **native PAW route used for the §3 result** requires `POSCAR`,
-`POTCAR`, `INCAR`, `OUTCAR`, `WAVECAR`, `wannier90.win`, `wannier90.eig`, and
-`wannier90.mmn` from one Fe SOC calculation in an external work directory.
-The raw MMN supplies neighbor topology; WAVECAR and POTCAR supply the data
-for new PAW MMN/AMN. Raw `wannier90.amn` is not used on this route. For an
-alternative that reads complete external MMN/AMN without WAVECAR, see §4.
+This lesson provides a native Wannierization input and separately evaluates an available Fe model. The band entry point does not run DFT or construct Wannier functions. The reciprocal-space Hamiltonian and its eigenvalues satisfy
 
-Stage the [redistributable inputs](../../Materials/Fe/vasp_SOC/) into a new
-directory, supply the matching licensed `POTCAR`, and follow the
-[VASP instructions](../../Materials/Fe/vasp_SOC/README.md). If you already
-have the complete matching source calculation, use it without rerunning VASP.
-Protected VASP files and Wannier intermediates are not distributed.
+$$
+H^{(\mathrm{W})}(\mathbf k)
+=\sum_{\mathbf R}\frac{H(\mathbf R)}{d_{\mathbf R}}
+e^{2\pi i\mathbf k_{\mathrm{frac}}\cdot\mathbf R},
+\qquad
+H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)=U(\mathbf k)\operatorname{diag}[\epsilon_n(\mathbf k)].
+$$
+
+The positive phase uses fractional reciprocal coordinates, integer lattice vectors and the loaded real-space degeneracy weights $d_{\mathbf R}$. The phase equals $e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. A finite Wannier subspace cannot be expected to reproduce every DFT state. The supplied comparison matches the 18-band TB spectrum to a 64-band DFT energy pool.
+
+For each matched pair, define the signed energy error
+
+$$
+\Delta \epsilon_{n\mathbf k}
+=\epsilon^{\mathrm{TB}}_{n\mathbf k}
+-\epsilon^{\mathrm{DFT}}_{\mathrm{matched},n\mathbf k}.
+$$
+
+Both datasets use the same energy reference. Matching is an energy-comparison procedure; it does not prove that wavefunctions or optical matrix elements agree. At each momentum, the selected states give
+
+$$
+\mathrm{RMS}(\mathbf k)
+=\sqrt{\frac{1}{N_{\mathbf k}}\sum_{n\in W_{\mathbf k}}(\Delta \epsilon_{n\mathbf k})^2},
+\qquad
+\mathrm{Max}(\mathbf k)
+=\max_{n\in W_{\mathbf k}}|\Delta \epsilon_{n\mathbf k}|.
+$$
+
+$W_{\mathbf k}$ selects matched DFT energies within the comparison window and $N_{\mathbf k}$ is their count. If that set is empty, no statistic is defined there. RMS summarizes typical squared error; the maximum identifies the worst matched state.
+
+## Environment and calculation routes
+
+Use Julia 1.11 or later, a WannierNLQG 1.2 source checkout, and Python 3.11 or later. The plotting and comparison tools also require the packages and system tools listed in the [repository setup](../../README.md). From the repository root, choose the source explicitly and prepare its matching environment:
 
 ```bash
-python3 examples/12_fe_wannierization/stage_rebuild.py --workdir /path/to/new-fe-workdir
-# Supply a licensed POTCAR there, then run the staged run_vasp.sh.
+export WN_SOURCE=/path/to/WannierNLQG-v1.2.0
+julia --project=. scripts/bootstrap.jl "$WN_SOURCE"
 ```
 
-The comparison uses the published [801-point VASP path table](../../Materials/Fe/vasp_SOC/bands/Fe_vasp_path_absolute.dat)
-and its [source receipt](../../Materials/Fe/vasp_SOC/bands/Fe_vasp_path_receipt.json).
-This chapter does not rerun the fixed-charge path calculation.
+The native route below builds a model from five user-supplied, same-calculation VASP files; it does not require the separate GeS/Fe asset set. The previous-model route later in this chapter instead reads an existing Fe TB file through an explicit private binding. Neither route downloads material data.
 
-## 2. Run Wannierization
+The native example was actually run with source-manifest SHA-256 `725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230`. A later local manifest `63d9520199dc47579fcbbd2d677e2081d3f42d9a6ef989e4e4fa1fb426fd0305` differs in documentation entries; its source, scripts and dependency manifest match the recorded version. This is compatibility evidence, not a new run.
 
-Use WannierNLQG 1.1.0 with a Julia version supported by its project
-(`julia = "1.10"`); this Fe run was verified with Julia 1.11.2 and four Julia
-threads. Other supported versions and thread counts are not covered by the
-published numerical receipt. The comparison also needs Python 3 with NumPy.
-Choose a `FE_OUTPUT` path that does not yet exist. From the tutorial root:
+## Route 1: construct a new Fe model
+
+The [native input](wannierization/fe_native_ordinary.toml) starts from one self-consistent, spinor bcc Fe VASP calculation with 64 bands on a 10 × 10 × 10 full mesh. It requires matching POSCAR, POTCAR, INCAR, OUTCAR and WAVECAR files from that same calculation. Supply these files yourself under `inputs/` next to a working copy of the input. The tutorial does not distribute VASP wavefunctions or potential; use them only under the terms applicable to your installation and data. Do not mix files from different calculations.
+
+The input prepares native overlap, energy and Fe s/p/d projection matrices for 18 spinor Wannier functions. The outer and frozen windows are [−8, 50] eV and [−8, 20] eV. Disentanglement selects an 18-dimensional subspace by minimizing the gauge-invariant spread $\Omega_I$; localization then varies its gauge to minimize the total spread $\Omega=\Omega_I+\widetilde\Omega$. The serial streaming preparation requests a 24 GiB internal memory budget; this is a preparation setting, not a measured peak or a universal hardware requirement.
+
+For each stage the input permits up to 1000 accepted steps, with tolerance $10^{-10}$ and a window of three changes. The Z test is the relative change between successive accepted $\Omega_I$ values; the U test is the absolute change in total spread in Å². Three qualifying changes require at least four accepted objective values; a previous zero Z objective is stable only if the current value is exactly zero. A stage reaching its iteration limit is not convergence. A normal process exit or an exported file alone also does not prove a qualified material: inspect both stage terminations, retained accepted state, warnings, structural checks and the output readback.
+
+Use the current source and its matching installed Julia environment. From the repository root, with `WN_SOURCE` set to that source directory and user-supplied files in the working input directory:
 
 ```bash
-export WANNIERNLQG_V110_PROJECT="/path/to/WannierNLQG-v1.1.0"
-export FE_WORKDIR="/path/to/fe-vasp-source"
-export FE_OUTPUT="/path/to/new-fe-output"
-export JULIA_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/wannierize_fe.jl "$FE_WORKDIR" "$FE_OUTPUT"
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/verify_fe_model.jl "$FE_WORKDIR" "$FE_OUTPUT"
+mkdir -p .runtime/fe-native/inputs .runtime/fe-native/results
+cp examples/12_fe_wannierization/wannierization/fe_native_ordinary.toml .runtime/fe-native/fe_native.toml
+# Place the five same-calculation files in .runtime/fe-native/inputs/.
+julia --project=.runtime/env "$WN_SOURCE/scripts/wanniernlqg.jl" check .runtime/fe-native/fe_native.toml
+julia --project=.runtime/env "$WN_SOURCE/scripts/wanniernlqg.jl" run .runtime/fe-native/fe_native.toml --records .runtime/fe-native-records
 ```
 
-Read the 81-line [solver script](wannierize_fe.jl) top to bottom. Its input,
-solver, checkpoint, and output configuration remain together. The
-[run-record helper](fe_run_record.jl) captures pre-solve identity; the
-independent [model verifier](verify_fe_model.jl) checks that identity, writes
-the terminal receipt, and reads back the artifacts:
+Use a fresh working and records directory. The output profile requests an H/r model and a Wannierization checkpoint. The output paths in the input are relative to its working copy; check their actual locations and qualification before reuse. The 10 × 10 × 10 native overlap topology and projection labels have been compared against the available source set; this is an input check, not proof that solver trajectories are equivalent. A zero-step trial produced an H/r bundle that the band reader accepted for the 801-point path. That trial had warnings and no established scientific qualification; it is a workflow check, not a converged model.
 
-| Setting | Value | Role |
+Once the exported H/r bundle is checked, prepare a separate band-path input without changing the path or energy reference:
+
+```bash
+python examples/12_fe_wannierization/wannierization/prepare_fe_bands.py --template examples/12_fe_wannierization/inputs/fe_bands.toml --bundle .runtime/fe-native/results/fe-ordinary.h5 --output .runtime/fe-native-band-input.toml
+julia --project=.runtime/env scripts/tutorial_input.jl check .runtime/fe-native-band-input.toml
+julia --project=.runtime/env scripts/tutorial_input.jl run .runtime/fe-native-band-input.toml .runtime/fe-native-bands
+```
+
+The band output must be compared with a same-reference DFT path. An earlier nearest-energy-set metric allowed multiple model bands to select the same DFT energy; its near-Fermi RMS of approximately 0.00981 eV is not the same statistic as the one-to-one matched-band errors below.
+
+With the plotting environment installed, prepare and validate a separate diagnostic comparison:
+
+```bash
+python examples/12_fe_wannierization/wannierization/prepare_fe_comparison.py --bands .runtime/fe-native-bands/outputs/fe_bands/Fe_bands.dat --reference examples/12_fe_wannierization/data/dft_absolute-59c64881.dat --template examples/12_fe_wannierization/plot_configs/audited_previous_new_Fe_review.json --output .runtime/fe-native-comparison
+python scripts/plot_support/nlqg_band.py validate .runtime/fe-native-comparison/comparison.json
+python scripts/plot_support/nlqg_band.py render .runtime/fe-native-comparison/comparison.json
+```
+
+The [comparison helper](wannierization/prepare_fe_comparison.py) verifies the generated band file’s 801 fractional path points and energy reference, records all input hashes, and preserves the raw band file. The DFT table does not encode fractional coordinates, so its identity as a reference for the same path must be established independently. The DFT and generated cumulative distances can differ slightly because of the lattice representation: after checking the path and a 3 × 10⁻⁷ Å⁻¹ maximum difference, it uses the DFT distances only for the shared plotting axis and records the actual difference. This does not fit or shift the energies. Its default model status remains unqualified; inspect the solver evidence and comparison window before drawing any accuracy conclusion.
+
+## Route 1: recorded result and band comparison
+
+The recorded run reached 1000 Z steps with a last relative change of $8.13\times10^{-9}$, above the $10^{-10}$ tolerance. U localization converged after 561 accepted steps from the retained structurally valid but nonconverged Z projector. The overall status is `MAX_ITERATIONS`, and scientific qualification is **not established**, despite successful H/r export. Structural checks passed; two PAW quality measurements passed, while eight were unavailable and retained quality-review warnings.
+
+The exported model was evaluated on the 801-point path. The following figures show that new model, not the separately supplied reference model. The plots compare energies only and do not establish model qualification.
+
+<a href="figures/native_fe_diagnostic_review_bands.png"><img src="figures/native_fe_diagnostic_review_bands.png" alt="Comparison of the new Fe model and DFT bands" width="880"></a>
+
+New native-model band comparison. [PDF](figures/native_fe_diagnostic_review_bands.pdf).
+
+<a href="figures/native_fe_diagnostic_review_errors.png"><img src="figures/native_fe_diagnostic_review_errors.png" alt="Matched-band RMS and maximum errors for the new Fe model" width="680"></a>
+
+Matched-band errors within ±1 eV of the common reference. [PDF](figures/native_fe_diagnostic_review_errors.pdf).
+
+At each k point, one-to-one energy matching selects 18 states from the 64-band DFT pool. Within ±1 eV of the common reference, the RMS is 9.908358 meV over all 2462 matched pairs, with maximum absolute error 55.041 meV. This energy-only comparison does not establish wavefunction equivalence or qualify the model; the Z stage did not converge.
+
+The [raw band path](data/native_fe_band_path_raw.dat) and [plot table](data/native_fe_bands_absolute_aligned.dat) retain the numerical data. Redraw the figures without rerunning Wannierization:
+
+```bash
+python examples/12_fe_wannierization/plot.py --figure=native_fe_diagnostic_review --output=.runtime/plot-native-fe-diagnostic
+```
+
+## Route 2: previous reference-model parameters
+
+Use [fe_bands.toml](inputs/fe_bands.toml) after following the [material setup guide](../../Materials/README.md).
+
+| Parameter | Value | Meaning |
 | --- | --- | --- |
-| `source` | Fe VASP `POSCAR/POTCAR/INCAR/OUTCAR/WAVECAR`, spinor bands `1:64` | Wavefunctions and native PAW matrix elements |
-| `projection_basis` | Fe s/p/d from `wannier90.win`, `num_wannier=18` | Initial 18-WF subspace |
-| `wannierization_mode` | `:ordinary` | Full-BZ Wannierization without a symmetry-reduced target |
-| `outer_min_ev/outer_max_ev` | `-8/50` | Disentanglement window in eV |
-| `frozen_min_ev/frozen_max_ev` | `-8/20` | States retained exactly in eV |
-| `solver` | AMN start, fixed two-stage, tolerance `1e-10` | Original Fe optimization settings |
-| `checkpoint` | Every 50 iterations; total ceiling 2500 | Retains the last accepted state |
-| `output.profile` | `:hamiltonian_position` | Hamiltonian and position for TB bands |
+| Model | Materials/Fe/model_tb.dat | Supplied 18-orbital Fe model |
+| Path | Γ–H–P–N–Γ | High-symmetry path |
+| Points per segment | 201 | Momentum resolution |
+| Common reference | 5.7156290716733436 eV | Energy subtracted from every dataset |
+| spatial_dimension | 3 | Cartesian dimension |
+| Fourier / replica policy | direct / auto | Interpolation and representation handling |
+| Display window | −8 to 8 eV | Energies relative to the common reference |
+| Error window | −1 to 1 eV | Selects the matched DFT states entering the statistics |
 
-The raw MMN provides topology while `NativeVASPPAWMatrices` regenerates its
-numerical overlaps and AMN. The H/r profile does not change convergence;
-full-profile SPN/uIu/uHu/sIu/sHu inputs are unnecessary here. The solver's
-`constraint_operation_scope=:full` refers to its constraint scope, not to
-the 11-operator output profile.
+The final two entries belong to the comparison, not to an independent band calculation. They do not change the underlying model or the response-calculation thresholds.
 
-The solver writes `$FE_OUTPUT/attempt1.json` with its pre-solve source/input
-hashes, Julia environment, actual terminal status, accepted iteration, and
-artifact paths. The verifier rejects changed inputs or source code, then writes
-`terminal_result.json` with artifact hashes and checks the accepted checkpoint,
-18-orbital TB, and H/r bundle. The disentanglement and localization stages each
-have a 1000-step cap, so this configuration can stop before the 2500 total-iteration
-ceiling. It does not auto-restart. `selected_model.json` appears only after
-verification; the band script requires that file. If no TB passes the
-accepted-state structural export gate, verification stops here and never
-substitutes the historical `Fe_tb.dat`.
+## Running the previous reference model
 
-## 3. Compute and compare bands
+Create a private bindings file with the exact Fe TB asset, for example `.runtime/private-fe-paths.toml`:
 
-After the new TB exists:
-
-```bash
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/fe_bands.jl "$FE_OUTPUT"
-python3 examples/12_fe_wannierization/compare_fe_bands.py "$FE_WORKDIR" "$FE_OUTPUT"
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  "$WANNIERNLQG_V110_PROJECT/scripts/plot_band_structure.jl" \
-  --config "$FE_OUTPUT/band_plot.json"
+```toml
+[paths]
+"Materials/Fe/model_tb.dat" = "/path/to/the/verified/Fe/model_tb.dat"
 ```
 
-The `Band` task calculates 801 points on Γ–H–P–N–Γ from **this run's TB**.
-The comparison checks the lattice, path coordinates and distances, both band
-tables, hashes, and common SCF Fermi reference. It applies no fitted shift.
-The overlay and `comparison_result.json` are an energy-set diagnosis. Its
-nearest-VASP-energy numbers allow many TB bands to select the same VASP band;
-they are neither wavefunction matching nor a material-fit pass. Complete run
-artifacts remain in `$FE_OUTPUT` outside the public repository; only the
-checked lightweight table, PNG, and path-free receipt are copied below.
-
-### Recorded first-run result (2026-09-25)
-
-![New Fe TB versus VASP diagnostic bands](results/native_paw_2026-09-25/Fe_new_tb_vs_vasp.png)
-
-The published [18-band table](results/native_paw_2026-09-25/Fe_new_tb_path_absolute.dat)
-and [hash receipt](results/native_paw_2026-09-25/RESULT.json) come from the
-first accepted-state export, at iteration 2000 with `MAX_ITERATIONS`. The
-requested total ceiling was 2500; the two 1000-step stage caps stopped it
-earlier. The recorded continuation to iteration 2001 was started before the
-no-restart instruction, is retained as unselected local evidence, and was not
-used for this table or plot. The near-Fermi nearest-energy-set RMS is about
-`0.00981 eV`; that many-to-one number is diagnostic only. The new large TB,
-bundle, checkpoint, and licensed VASP inputs are not published.
-
-## 4. Optional alternative solve: external MMN/AMN
-
-[wannierize_fe_with_mmn_amn.jl](wannierize_fe_with_mmn_amn.jl) shows the
-shorter ordinary-mode input route. It reads complete `wannier90.win`, `.eig`,
-`.mmn`, and `.amn` from **one** Fe SOC calculation; `WAVECAR`, `POTCAR`,
-`INCAR`, and `OUTCAR` are not read by this solver route. `POSCAR` and `OUTCAR`
-are retained alongside the matrices for source identity and the later band
-comparison. The upstream VASP calculation still needs its licensed POTCAR.
-Keep the spinor basis, 64 bands,
-18 projections, lattice, and k-mesh consistent. The package does not silently
-replace a missing VASP AMN with a pseudo-only projection.
+Then run from the repository root:
 
 ```bash
-export FE_MATRIX_DIR="/path/to/complete-fe-wannier90-files"
-export FE_MATRIX_OUTPUT="/path/to/new-external-matrix-output"
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/wannierize_fe_with_mmn_amn.jl \
-  "$FE_MATRIX_DIR" "$FE_MATRIX_OUTPUT"
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/verify_fe_model.jl \
-  "$FE_MATRIX_DIR" "$FE_MATRIX_OUTPUT"
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/fe_bands.jl "$FE_MATRIX_OUTPUT"
-python3 examples/12_fe_wannierization/compare_fe_bands.py \
-  "$FE_MATRIX_DIR" "$FE_MATRIX_OUTPUT"
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  "$WANNIERNLQG_V110_PROJECT/scripts/plot_band_structure.jl" \
-  --config "$FE_MATRIX_OUTPUT/band_plot.json"
+julia --project=.runtime/env scripts/run_group.jl 12 --check --data-paths=.runtime/private-fe-paths.toml
+julia --project=.runtime/env scripts/run_group.jl 12 --case=fe_bands --output=.runtime/fe_bands --data-paths=.runtime/private-fe-paths.toml
 ```
 
-The verifier records `matrix_source_kind=external_wannier90` and checks the
-six-file source inventory (`POSCAR`, `OUTCAR`, WIN/EIG/MMN/AMN) before selecting
-an exported TB. The comparison checks this route against the same published
-VASP path, while keeping its TB and plot separate from the native-PAW result.
-Its output is diagnostic only; no Wannier-function or band fit is qualified.
+Choose a fresh output directory for each calculation. The check command verifies inputs and dependencies without calculating bands. The single-model run does not generate the DFT reference tables.
 
-### Recorded external-matrix run (2026-09-25)
+The supplied [previous-model band figure](figures/audited_previous_new_Fe_review_bands.png) and [error figure](figures/audited_previous_new_Fe_review_errors.png) belong to this separate reference-model route. They are retained for comparison and are not the new native-model figures above.
 
-![External MMN/AMN Fe TB versus VASP diagnostic bands](results/external_w90_2026-09-25/Fe_new_tb_vs_vasp.png)
-
-The [18-band table](results/external_w90_2026-09-25/Fe_new_tb_path_absolute.dat)
-and [hash receipt](results/external_w90_2026-09-25/RESULT.json) come from the
-original VASP WIN/EIG/MMN/AMN, not the native-PAW regeneration. The solver
-ended `MAX_ITERATIONS` at accepted iteration 2000 (1000 disentanglement plus
-1000 localization), with final metric `1.85e-7` against `1e-10`. It exported
-an accepted-state 18-WF TB and H/r bundle, and both passed independent
-readback. The Γ–H–P–N–Γ path has 801 points; the reference has 64 VASP bands.
-The near-Fermi (±1 eV) nearest-energy-set RMS is `0.00981 eV`. This allows
-many-to-one energy matches and is neither a wavefunction match nor a
-production-quality assessment.
-
-The run used WannierNLQG source commit `8f5e7c8` and source-manifest SHA-256
-`5911b050475f86346f1023f8187311d78d7804d389fe047d526e8030d4921f01`.
-The source checkout's README and manifest changed during the run; verification
-and band calculation used an isolated snapshot of the recorded commit.
-Large TB, checkpoint, and original VASP matrices remain outside this repository.
-
-## 5. Historical readback and full reconstruction
-
-The quick offline check is:
+## Redraw and check
 
 ```bash
-julia --project="$WANNIERNLQG_V110_PROJECT" \
-  examples/12_fe_wannierization/run.jl --profile=smoke
+python examples/12_fe_wannierization/plot.py --figure=audited_previous_new_Fe_review --output=.runtime/plot-audited_previous_new_Fe_review
 ```
 
-It verifies the distributed [historical model status](../../Materials/Fe/vasp_SOC/MODEL_STATUS.json)
-and Fe TB/VASP tables. The historical terminal state is `MAX_ITERATIONS`;
-readability and band agreement do not imply convergence. For the complete
-11-operator reconstruction and audits, consult the
-[advanced driver](../../Materials/Fe/vasp_SOC/Fe_ordinary_full_driver.jl)
-and [material guide](../../Materials/Fe/vasp_SOC/README.md).
+This diagnostic example is not a certificate of quantitative material accuracy. Solver convergence and energy agreement do not establish the correctness of wavefunctions, position matrix elements or orbital-response operators. A high-symmetry path also leaves most of the Brillouin zone untested.
+
+[Reproducibility](reproduce.json)
+
+## Full-spectrum comparison
+
+The [full band plot](figures/audited_previous_new_Fe_full_bands.png) and [full error plot](figures/audited_previous_new_Fe_full_errors.png) retain the complete comparison in addition to the review window above. Both views use the same declared energy reference and matching rules.
+
+```bash
+python examples/12_fe_wannierization/plot.py --figure=audited_previous_new_Fe_full --output=.runtime/fe-full-bands
+```
+
+An interpolation fit compares selected bands. It does not certify a Wannierization solver's stopping condition or the completeness of derivative, spin or orbital operators required by a response calculation. Reproducing the figures uses the supplied model and audited band data; a newly constructed model needs its own solver qualification and band comparison.
+
+## References
+
+- N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, and D. Vanderbilt, “Maximally localized Wannier functions: Theory and applications,” *Reviews of Modern Physics* **84**, 1419–1475 (2012). [DOI](https://doi.org/10.1103/RevModPhys.84.1419). Background for finite Wannier subspaces and interpolation.

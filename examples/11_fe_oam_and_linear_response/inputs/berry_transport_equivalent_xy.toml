@@ -1,0 +1,38 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+model_file = "../../../Materials/Fe/model_tb.dat"
+source = "wannier"
+
+real_space_replica_policy = "auto"
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 3
+vector_1 = [-0.5, 0.5, 0.5]
+vector_2 = [0.5, 0.5, -0.5]
+
+[ response.tasks ]
+
+[ response.tasks.berry_transport_equivalent_xy ]
+fermi_energies_ev = [5.7156290716733436]
+kind = "linear_transport"
+temperature_k = 0.0
+
+[ response.tasks.berry_transport_equivalent_xy.numerics ]
+eta_fs_ev = 0.05
+fs_kind = "gaussian"
+
+[ response.tasks.berry_transport_equivalent_xy.observable ]
+component = [1, 2]
+kind = "all_bands"
+
+[ response.tasks.berry_transport_equivalent_xy.relaxation ]
+gamma_inter_ev = 0.05
+gamma_intra_ev = 0.05

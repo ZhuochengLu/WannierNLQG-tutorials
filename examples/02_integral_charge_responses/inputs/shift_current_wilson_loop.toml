@@ -1,0 +1,33 @@
+# Editable input matching the bounded 2026-11-09 current-code method comparison.
+[ model ]
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [100, 100]
+kind = "bz_mesh"
+spatial_dimension = 2
+
+[ response.tasks ]
+
+[ response.tasks.integral_shift_current_wilson_loop ]
+fermi_energy_ev = -2.5
+kind = "shift_current"
+method = "Wilson_Loop"
+photon_energy_max_ev = 4.0
+photon_energy_min_ev = 0.0
+photon_energy_num_points = 200
+temperature_k = 0.0
+
+[ response.tasks.integral_shift_current_wilson_loop.numerics ]
+degeneracy_threshold = 0.002
+broadening = 0.06
+finite_difference_step = 0.0001

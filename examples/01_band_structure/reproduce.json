@@ -1,0 +1,292 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "band_structure",
+      "input": "examples/01_band_structure/inputs/band_structure.toml",
+      "task_ids": [
+        "band_structure"
+      ],
+      "input_sha256": "5429021186d635bf014db3e8dd0badf485d543e878a1fd1c8ecc5dbf104c1919",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "kind": "k_path",
+          "kpoints_per_segment": [
+            51,
+            51,
+            51,
+            51
+          ],
+          "spatial_dimension": 2,
+          "nodes": {
+            "fractional_coordinates": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.5,
+                0.0,
+                0.0
+              ],
+              [
+                0.5,
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "label": [
+              "Γ",
+              "X",
+              "S",
+              "Y",
+              "Γ"
+            ]
+          }
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance326",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "5429021186d635bf014db3e8dd0badf485d543e878a1fd1c8ecc5dbf104c1919",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/01_band_structure/data/current725/band_structure/model_bands.dat": "209430f81dc5054f32ed9d61050e1b659b8a61f91c8fa5486aeef24e8e0d9e16"
+        }
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "audited_zeroU_repaired_full",
+      "chapter": "01_band_structure",
+      "engine": "audited_band_manifest",
+      "data": [
+        "examples/01_band_structure/data/dft_common_path_absolute-46dfe144.dat",
+        "examples/01_band_structure/data/current_common_path_absolute725.dat"
+      ],
+      "figures": [
+        "examples/01_band_structure/figures/audited_zeroU_repaired_full_bands.png",
+        "examples/01_band_structure/figures/audited_zeroU_repaired_full_errors.png",
+        "examples/01_band_structure/figures/audited_zeroU_repaired_full_bands.pdf",
+        "examples/01_band_structure/figures/audited_zeroU_repaired_full_errors.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/01_band_structure/inputs/band_structure.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Current band energies were actually recalculated at the existing 201-point path with canonical TB2808; DFT comparison is retained with original provenance. Band accuracy remains unqualified.",
+      "data_formats": {},
+      "recipe": "examples/01_band_structure/plot_configs/audited_zeroU_repaired_full.json",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 214,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "audited_zeroU_repaired_full",
+        "current_verified_public_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "actual_current_case_executions": {
+          "band_structure": {
+            "execution_id": "WN-Tutorial-provenance326",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "5429021186d635bf014db3e8dd0badf485d543e878a1fd1c8ecc5dbf104c1919",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/01_band_structure/data/current725/band_structure/model_bands.dat": "209430f81dc5054f32ed9d61050e1b659b8a61f91c8fa5486aeef24e8e0d9e16"
+            }
+          }
+        },
+        "bounded_Hall_reuse_without_new_spectrum": {},
+        "current_display_input_sha256": {
+          "examples/01_band_structure/data/dft_common_path_absolute-46dfe144.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+          "examples/01_band_structure/data/current_common_path_absolute725.dat": "8597fed64c924f22423dd5c9f1ed06d6f0e066cad2a6321775a73c6d17634dad"
+        },
+        "retained_source_record": {
+          "original_figure_id": "audited_zeroU_repaired_full",
+          "original_data_sha256": {
+            "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-full/dft_common_path_absolute.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+            "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-full/old_common_path_absolute.dat": "4b11d31bdf0e86492dc741e96780564fba110cdcbddeaa0a91da7a2277d56fa3",
+            "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-full/repaired_common_path_absolute.dat": "d495d67da2b5f866e8f9750d3db940b4c4156e51e06a58a74f79d69a3646611a"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "unchanged_independent_reference_and_supplementary_data_retain_original_source": true,
+        "old_source_record_not_relabelled_as_current_execution": true,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "manifests/retained-source-records/followup334/01_band_structure__audited_zeroU_repaired_full.provenance.json",
+        "source_file_sha256": "ef4836b7f48d30d99d6ffcbaed35a65fcc28b3d858b86ca97c9752d55fae75ed",
+        "payload_sha256": "db19c4b215ec73b81023235930ae90fb5a86b9eab67d2a6fead5b16dc3731586",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ]
+      },
+      "previous_provenance": {
+        "original_figure_id": "audited_zeroU_repaired_full",
+        "original_data_sha256": {
+          "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-full/dft_common_path_absolute.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+          "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-full/old_common_path_absolute.dat": "4b11d31bdf0e86492dc741e96780564fba110cdcbddeaa0a91da7a2277d56fa3",
+          "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-full/repaired_common_path_absolute.dat": "d495d67da2b5f866e8f9750d3db940b4c4156e51e06a58a74f79d69a3646611a"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      }
+    },
+    {
+      "id": "audited_zeroU_repaired_review",
+      "chapter": "01_band_structure",
+      "engine": "audited_band_manifest",
+      "data": [
+        "examples/01_band_structure/data/dft_common_path_absolute-46dfe144.dat",
+        "examples/01_band_structure/data/current_common_path_absolute725.dat"
+      ],
+      "figures": [
+        "examples/01_band_structure/figures/audited_zeroU_repaired_review_bands.png",
+        "examples/01_band_structure/figures/audited_zeroU_repaired_review_errors.png",
+        "examples/01_band_structure/figures/audited_zeroU_repaired_review_bands.pdf",
+        "examples/01_band_structure/figures/audited_zeroU_repaired_review_errors.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/01_band_structure/inputs/band_structure.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Current band energies were actually recalculated at the existing 201-point path with canonical TB2808; DFT comparison is retained with original provenance. Band accuracy remains unqualified.",
+      "data_formats": {},
+      "recipe": "examples/01_band_structure/plot_configs/audited_zeroU_repaired_review.json",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 207,
+        "parent_state": "EXECUTED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": false
+      },
+      "provenance": {
+        "original_figure_id": "audited_zeroU_repaired_review",
+        "current_verified_public_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "actual_current_case_executions": {
+          "band_structure": {
+            "execution_id": "WN-Tutorial-provenance326",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "5429021186d635bf014db3e8dd0badf485d543e878a1fd1c8ecc5dbf104c1919",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/01_band_structure/data/current725/band_structure/model_bands.dat": "209430f81dc5054f32ed9d61050e1b659b8a61f91c8fa5486aeef24e8e0d9e16"
+            }
+          }
+        },
+        "bounded_Hall_reuse_without_new_spectrum": {},
+        "current_display_input_sha256": {
+          "examples/01_band_structure/data/dft_common_path_absolute-46dfe144.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+          "examples/01_band_structure/data/current_common_path_absolute725.dat": "8597fed64c924f22423dd5c9f1ed06d6f0e066cad2a6321775a73c6d17634dad"
+        },
+        "retained_source_record": {
+          "original_figure_id": "audited_zeroU_repaired_review",
+          "original_data_sha256": {
+            "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/dft_common_path_absolute.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+            "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/old_common_path_absolute.dat": "4b11d31bdf0e86492dc741e96780564fba110cdcbddeaa0a91da7a2277d56fa3",
+            "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/repaired_common_path_absolute.dat": "d495d67da2b5f866e8f9750d3db940b4c4156e51e06a58a74f79d69a3646611a"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "unchanged_independent_reference_and_supplementary_data_retain_original_source": true,
+        "old_source_record_not_relabelled_as_current_execution": true,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "manifests/retained-source-records/followup334/01_band_structure__audited_zeroU_repaired_review.provenance.json",
+        "source_file_sha256": "c052f186ec75ee46d408fbe21e80883d65abdb840831eab0d7013ec179ac7fd0",
+        "payload_sha256": "32816ae7c5c4891e5763a2504a43a84646178a274242ca4fa8c826475e111cef",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Display only the selected TB and DFT; exclude the other TB control."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "selection": "DFT reference and current Wannier TB only; original band-accuracy qualification retained"
+      },
+      "previous_provenance": {
+        "original_figure_id": "audited_zeroU_repaired_review",
+        "original_data_sha256": {
+          "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/dft_common_path_absolute.dat": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81",
+          "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/old_common_path_absolute.dat": "4b11d31bdf0e86492dc741e96780564fba110cdcbddeaa0a91da7a2277d56fa3",
+          "examples/01_band_structure/results/retained-band-inputs-20261108/zeroU-repaired-review/repaired_common_path_absolute.dat": "d495d67da2b5f866e8f9750d3db940b4c4156e51e06a58a74f79d69a3646611a"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 2
+}

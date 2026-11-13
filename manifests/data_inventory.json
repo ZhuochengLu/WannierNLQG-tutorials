@@ -1,0 +1,1950 @@
+{
+  "files": [
+    {
+      "path": "examples/01_band_structure/data/current725/band_structure/model_bands.dat",
+      "bytes": 164159,
+      "sha256": "209430f81dc5054f32ed9d61050e1b659b8a61f91c8fa5486aeef24e8e0d9e16"
+    },
+    {
+      "path": "examples/01_band_structure/data/current_common_path_absolute725.dat",
+      "bytes": 164076,
+      "sha256": "8597fed64c924f22423dd5c9f1ed06d6f0e066cad2a6321775a73c6d17634dad"
+    },
+    {
+      "path": "examples/01_band_structure/data/dft_common_path_absolute-46dfe144.dat",
+      "bytes": 704318,
+      "sha256": "46dfe14431b2deb8e954fd3fe9ec68532b2606193a58db1af757ad0ac99e0c81"
+    },
+    {
+      "path": "examples/01_band_structure/data/old_common_path_absolute-4b11d31b.dat",
+      "bytes": 164031,
+      "sha256": "4b11d31bdf0e86492dc741e96780564fba110cdcbddeaa0a91da7a2277d56fa3"
+    },
+    {
+      "path": "examples/01_band_structure/data/repaired_common_path_absolute-d495d67d.dat",
+      "bytes": 164031,
+      "sha256": "d495d67da2b5f866e8f9750d3db940b4c4156e51e06a58a74f79d69a3646611a"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/data/model_ic_conv-ae64e0a2.dat",
+      "bytes": 68321,
+      "sha256": "ae64e0a2c8606608b44e1d9bc399edab3862f988ad875a5562eff2f34bcc7e01"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/data/operators_sc_conv-c07167e1.dat",
+      "bytes": 68416,
+      "sha256": "c07167e18a1e0cbe851cf5884d7d13cffcea4c633734542a0a4695c6d2c5e3e8"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/data/operators_sc_geo-95b15239.dat",
+      "bytes": 68201,
+      "sha256": "95b152391182a9f56d3faf6432e35e83d9598c6907fb7f6478a7f654f6338938"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/data/operators_sc_proj-f145af8e.dat",
+      "bytes": 68470,
+      "sha256": "f145af8e3336dd61e65540fe3df36747aa816fc7bc855daae6b39375ecfa8a63"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/data/operators_sc_wilson-8d8169f4.dat",
+      "bytes": 68451,
+      "sha256": "8d8169f47291db5897c473da6598d7bfbe9b0cd279cd88b260ed336a9fcb144c"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/data/isc_spectrum-016213a21c.dat",
+      "bytes": 192824,
+      "sha256": "016213a21c7348045d46c54a4dd3dd0d5d573e851a7f1136d112bbdca45b041d"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/data/model_isc_conv-4af4884f.dat",
+      "bytes": 192801,
+      "sha256": "4af4884fab826717fdcd8c5a8ed0baa02f731e568ff9eab209d10fccaef07b38"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/data/model_isc_conv-cf49e039.dat",
+      "bytes": 192801,
+      "sha256": "cf49e039b056eb07da4042835fc9c90239f4f68d7f9605fe6c8ddc812898adab"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/data/model_ssc_conv-c64128d6.dat",
+      "bytes": 192987,
+      "sha256": "c64128d6650569cd37ac2b3bad27e9825493847aed7505d862d9a5dbe4fd0274"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/data/model_ssc_conv-d0bb4ea8.dat",
+      "bytes": 192987,
+      "sha256": "d0bb4ea8a4c6171840053b562aadec4e0fd0f79252218062becb700a9bbefafc"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/data/ssc_spectrum-bc146224e9.dat",
+      "bytes": 192992,
+      "sha256": "bc146224e9200d8d8e203684aac09f77f50436966651c384862c6135bb157352"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/display_sck_r_conv-e3c55260.dat",
+      "bytes": 970440,
+      "sha256": "e3c552606bc21ff132b194f87b4d4fd2d522d61ab6acc82bd2a8ddd7f1ac55a2"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/display_sck_r_geo-056d2957.dat",
+      "bytes": 970550,
+      "sha256": "056d29579be8d36042f07a8a9f00060c3ca2a92a659895c0fc9866e2567417bf"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/display_sck_r_proj-b195e508.dat",
+      "bytes": 970534,
+      "sha256": "b195e508c7b5b7f8208a897d2977ba752d4db3c0ff6e8c0f708378a8763937ca"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/display_sck_r_wilson-c945db37.dat",
+      "bytes": 970534,
+      "sha256": "c945db374070e84e7f7828e919490d8ae3c49cc0357636ffec562a1bc2da8fa0"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/kslice_injection_current_conventional_new_display-1dcb04d3.dat",
+      "bytes": 1016752,
+      "sha256": "1dcb04d33d11bd5abc8e1c9dcb8ee0c3b930e70dd72dabbe4fb78fd362da978f"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_i_conv-3b68d2ae.dat",
+      "bytes": 828269,
+      "sha256": "3b68d2aec19f34acad7a02826a494014457efc20ef010f91c51a4df5e2582406"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_i_geo-0fb24f8f.dat",
+      "bytes": 160000,
+      "sha256": "0fb24f8f5a82f50914e94e8ecd3c26618f5a20fc478784534a8fa3d5fb851869"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_i_proj-9bfd6206.dat",
+      "bytes": 828357,
+      "sha256": "9bfd6206432e5c993afb4a5ce25732d3f404df938c26ca3120bdfe9a849c5f22"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_i_wilson-498e7809.dat",
+      "bytes": 828288,
+      "sha256": "498e7809c2597d56418d2b5c1613e4d1b5903f827300402cfca8fa4fd171628a"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_r_conv-68b1f11c.dat",
+      "bytes": 816793,
+      "sha256": "68b1f11ce167a332b810d993b22c0190cd2ee604bf4a37f6318e7592acc4238f"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_r_geo-5e757f1e.dat",
+      "bytes": 816637,
+      "sha256": "5e757f1e4775648cd3efe001c27f0fbf7a86e37bb9e12911fbdc8000f0ab49f7"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_r_proj-fd869724.dat",
+      "bytes": 816610,
+      "sha256": "fd869724baf5795b3a9cdaafee1fb271a7fd00c76626e5db6f44ee305d2f03c9"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/data/operators_sck_r_wilson-ca3e25c8.dat",
+      "bytes": 816600,
+      "sha256": "ca3e25c84187b486c54b98e5f0f76ae052baf919cc1190fa153fe509e571334f"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/injection_yzxy_log_display.dat",
+      "bytes": 777913,
+      "sha256": "700238472cd32df385845f8b069e3d3dcd4c325636a4ce2120861705dbe39d53"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_fullbands_integral.dat",
+      "bytes": 1235,
+      "sha256": "5e7cd3da82ccf217d882750d44294780385ea7da2fb8040450d04eaa17a5e003"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yyyy_display-b91ce61a5d.dat",
+      "bytes": 976788,
+      "sha256": "b91ce61a5d54e39431193426085df8b743e51cf76a998ff491cc650b68d2e9fd"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yyyy_imag-0e8d3bdef6.dat",
+      "bytes": 739271,
+      "sha256": "0e8d3bdef6edb0e31d294314ac61bb056169db0cdff809b5c459e5584d1f8e85"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yyyy_real-e7b5e8881a.dat",
+      "bytes": 755103,
+      "sha256": "e7b5e8881a0a7d0ccb5fa5d140f1e770b3e91df03edc8ef44de5dbc2550a3943"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yzxy_i_fullbands.dat",
+      "bytes": 793151,
+      "sha256": "c293eaa90f1d4495c09b6fa9d3f5b7ec664d86e9cee96c810b527703450b155d"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yzxy_r_fullbands.dat",
+      "bytes": 793042,
+      "sha256": "060dd52b51764b1882a0db650e05757a7200e93987fee7d12f06a9657e232025"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yzyx_i_fullbands.dat",
+      "bytes": 793263,
+      "sha256": "f90b255efe0980598659a9c8b219ea976cdb898a7c61e1ace64cba5c19fe5b51"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/isc_yzyx_r_fullbands.dat",
+      "bytes": 793090,
+      "sha256": "0dfadef071ab1e24e9f7bc7b9b2617c0fb121029471c565901c5c9dfab39ac96"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/kslice_injection_spin_current_conventional_delta_display-117d3338.dat",
+      "bytes": 1016472,
+      "sha256": "117d33382098eaf343b1c42013f8f1433c9608cd21da809cd3e05699a8dd54f3"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/kslice_injection_spin_current_conventional_new_display-c68767fb.dat",
+      "bytes": 1016787,
+      "sha256": "c68767fbaf0f6857e5dbbec65217b0ec14dfc6fb8d56a18539445cb2d2d300e3"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/kslice_injection_spin_current_conventional_old_display-efd23d81.dat",
+      "bytes": 1017092,
+      "sha256": "efd23d818ade352b56bd6158ac52da98a63b4048e34ffe658fa6ae59324c2328"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/kslice_shift_spin_current_conventional_delta_display-28a004a4.dat",
+      "bytes": 1016758,
+      "sha256": "28a004a4fa7722e636358552a2a1051393eb4bf18cf06d112fb9d7bcba2fe019"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/kslice_shift_spin_current_conventional_new_display-9bc0d020.dat",
+      "bytes": 1016341,
+      "sha256": "9bc0d020b52b230fdeafed7d6126502d9e23ab268872ff6641c544ffd9b635e9"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/kslice_shift_spin_current_conventional_old_display-939738d6.dat",
+      "bytes": 1016792,
+      "sha256": "939738d6899a1e546e8f5b47e8ef66dd873a38ccc27495cc0c0cc55c39c5fa12"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/shift_yzxy_log_display.dat",
+      "bytes": 778900,
+      "sha256": "df0021a702dc08eaacd254978b2ed015d69f540610965de31f2607a3c953418f"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_fullbands_integral.dat",
+      "bytes": 1233,
+      "sha256": "6daf3356fe835d2b349cdf8076cfed1cd8b4ce20949e9f1112ad39f9f84dd9ba"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yyyy_display-58cef9b255.dat",
+      "bytes": 976338,
+      "sha256": "58cef9b255d0b81ff0635e12c07f7bd159037e4a5b8cce1ea1bb3f58cee6fb96"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yyyy_imag-daad68ca75.dat",
+      "bytes": 773441,
+      "sha256": "daad68ca756059ef0f6f409c4434e440169a05d4c024086216cf380943cfccd7"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yyyy_real-707f32136c.dat",
+      "bytes": 732864,
+      "sha256": "707f32136c9981361b116e121e322902dc9de387de4bad4bbca18838bcbe7e32"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yzxy_i_fullbands.dat",
+      "bytes": 752485,
+      "sha256": "94b79e79c1f1096f7cf2ce7a9e900bf729dec8f8884178cdbba80f8a7ed65197"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yzxy_r_fullbands.dat",
+      "bytes": 750582,
+      "sha256": "2bbf2a8ba468205a5ff97ad35a516f9cb6a0812016443f1fc438e4867855dc33"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yzyx_i_fullbands.dat",
+      "bytes": 749995,
+      "sha256": "a1a15d04bd9d2bf207fc15cf82bc1a3a8f44a3f7a063d77a859ed94da86a42e1"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/data/ssc_yzyx_r_fullbands.dat",
+      "bytes": 750532,
+      "sha256": "ae39eda9779d0c500c874561d869b355948ea38fe7d15554620c4be092564235"
+    },
+    {
+      "path": "examples/06_qg_pairwise/data/model_bck_subspace_19_20_conv-8cc892e6.dat",
+      "bytes": 774031,
+      "sha256": "8cc892e6b6fa6ad16dbabf85d0ef98840a123345945cdc51ff4e5c5965650ca1"
+    },
+    {
+      "path": "examples/06_qg_pairwise/data/model_ibck_conv-16722736.dat",
+      "bytes": 817957,
+      "sha256": "16722736f8ca2a3b04897d645cad5e0804e1a9e251b7abac0c686c0abf624372"
+    },
+    {
+      "path": "examples/06_qg_pairwise/data/model_iqmk_conv-7153546b.dat",
+      "bytes": 786477,
+      "sha256": "7153546b6ef45657113cf76aeb861d2beacddb7cc4d2af4e84e04f2bb8c5f1dc"
+    },
+    {
+      "path": "examples/06_qg_pairwise/data/model_qmk_subspace_19_20_conv-5b115175.dat",
+      "bytes": 730836,
+      "sha256": "5b115175f166a7434facbfb2056f6245254970a36faabb8b6d59dd6c09aa9094"
+    },
+    {
+      "path": "examples/07_qg_multipoles/data/model_bcdk_subspace_19_20_conv-1cba4208.dat",
+      "bytes": 761706,
+      "sha256": "1cba4208739e96a3201e4505dab25536fa83bad4a5e25e408c759d4221fc1a34"
+    },
+    {
+      "path": "examples/07_qg_multipoles/data/model_bcqk_subspace_19_20_conv-60cf5e46.dat",
+      "bytes": 757868,
+      "sha256": "60cf5e46079b8869abf1ce007f8b7cb27b639e12bec8efc77da5892afb577dc5"
+    },
+    {
+      "path": "examples/07_qg_multipoles/data/model_qcsk_subspace_19_20_conv-d9106650.dat",
+      "bytes": 759374,
+      "sha256": "d91066502b1e1f528154884001abab7b49e80c81c3d2c376a59bf7e7939427e0"
+    },
+    {
+      "path": "examples/07_qg_multipoles/data/model_qmdk_subspace_19_20_conv-f54b97bd.dat",
+      "bytes": 758294,
+      "sha256": "f54b97bd1a5163932a07df6af5470baea210b4bc702e53f689c6533e5328a83a"
+    },
+    {
+      "path": "examples/07_qg_multipoles/data/model_qmqk_subspace_19_20_conv-a0860314.dat",
+      "bytes": 753505,
+      "sha256": "a0860314bc48a54beeddc207fd90ce211ce0fad15a64121683176fbbe8187ce7"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_qhck_i_conv-54224391.dat",
+      "bytes": 799582,
+      "sha256": "5422439132521dea31a36e6a550bc2fbfee81318028481a18b7519843ebfae82"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_qhck_i_wilson-b49f2afe.dat",
+      "bytes": 799457,
+      "sha256": "b49f2afe5b1756ce12153bc61dd9b3c86ab0944455ad7f8d97010d884b8c8461"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_qhck_r_conv-e4ab63fd.dat",
+      "bytes": 784973,
+      "sha256": "e4ab63fd26a1a33233f9ac29b547acf38985a862089f232e686b3fa5f3c48427"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_qhck_r_wilson-71196fbe.dat",
+      "bytes": 784947,
+      "sha256": "71196fbedb0366d42ed274a1dbafc7a80c371ba50c3801140f4cda244aad915c"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_svk_i_geo-1e36f8b6.dat",
+      "bytes": 760229,
+      "sha256": "1e36f8b6122e6c3b0b42be593da8af80f601df2862739daaec58eae1f45b5cdb"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_svk_i_wilson-057cd9ef.dat",
+      "bytes": 758041,
+      "sha256": "057cd9efa623ba70788193707b876bb173bbf25ba9bb67abb9f079135b4e7a55"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_svk_r_geo-b8e2dd94.dat",
+      "bytes": 763768,
+      "sha256": "b8e2dd94561c925f3fedf0f7f172014b7193a83a0c08fc4f434db78167da2143"
+    },
+    {
+      "path": "examples/08_shift_geometry/data/operators_svk_r_wilson-886a8472.dat",
+      "bytes": 763882,
+      "sha256": "886a8472b428d5128f1e149dd83c7e5cb52388d2b93946be1be67d105657cf66"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/data/model_hctk_r_conv-30d759e1.dat",
+      "bytes": 913114,
+      "sha256": "30d759e1df7b182919417649819a197e5636e8dc4184ae59d382103062e8d8a8"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/data/model_tppk_r_conv-49e4b121.dat",
+      "bytes": 855800,
+      "sha256": "49e4b121652d21cfcab7e79272d9f2504f3b4012385e893aea1e32df4e7e2c7b"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/data/model_zibck_conv-8e083ab5.dat",
+      "bytes": 882806,
+      "sha256": "8e083ab5ef7d1496eeef115a747f9ad96ca767fa2a99b0a6824ce989cafd630c"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/data/model_ziqmk_conv-29a1f091.dat",
+      "bytes": 894349,
+      "sha256": "29a1f0916c040cb2540714090bd211c966488ec06f20745e96564a1e8635c113"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/data/shg_chi_yyy-c90aa18f.dat",
+      "bytes": 11957,
+      "sha256": "c90aa18fc117c05f82991b65c516baa9d103bc8fe7c44b6862634f0a87037324"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/data/shg_sigma_yyy-9ca8a970.dat",
+      "bytes": 11930,
+      "sha256": "9ca8a970306e46eb28fe1d840d762f847208030b43d4c280f25d748a6d36d5a3"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/data/yzz_JH-97a19ac1.npy",
+      "bytes": 17728,
+      "sha256": "97a19ac12cc917f3cd0832f79162114a1e933d7d839baa28314281930ab2b272"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/data/yzz_chi-e1f264be.npy",
+      "bytes": 17728,
+      "sha256": "e1f264beadc98fb695f0c00710702f64aeea233244f6d67fc767b60aeeb6c878"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/data/zyz_JH-7d8d1480.npy",
+      "bytes": 17728,
+      "sha256": "7d8d148055e8528c8334ed7bd8a797c107839232803d6556ec1987996a086ee3"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/data/zyz_chi-1ec43359.npy",
+      "bytes": 17728,
+      "sha256": "1ec43359ffc94c092d53f58005f1b7d5d82a3e7fb5e6ff9ca6769a33fdb4bf9f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.json",
+      "bytes": 667,
+      "sha256": "0502713a961f0b534cc700fbfffa2a3e8bdbd0ad2bde0cabfc358613f303374f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.npz",
+      "bytes": 5557616,
+      "sha256": "18b90d1ebdc9fe01dfc7fd4440474cf93c28dafcf0e7395b692d69503911b7fb"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat",
+      "bytes": 163198,
+      "sha256": "334e27539176139e0e28373903630ed7206526a8de38ca2959cd75015304a29a"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-94e24be1.dat",
+      "bytes": 163306,
+      "sha256": "94e24be190c3eb8cb705916ee45bda997bcc8cc8504800d56eb3920f108e7be9"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-ee97b10b.dat",
+      "bytes": 163221,
+      "sha256": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat",
+      "bytes": 160167,
+      "sha256": "0670b356e606d9139bdc70cc2cba4bd9e01e5b954807fa99179d6bf67607093f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-4aaa60e2.dat",
+      "bytes": 161769,
+      "sha256": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-db5c7f88.dat",
+      "bytes": 160167,
+      "sha256": "db5c7f883e872875cc502d0ff72c5208b26c52f73509934b75877647fb609dab"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-3d1ed7b2.dat",
+      "bytes": 163400,
+      "sha256": "3d1ed7b24648783beb5f8fcb682e41fb895c1aa9ae758352d6d85aaa9e19441e"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat",
+      "bytes": 163400,
+      "sha256": "53f16779cdaf8246713f6f5af695c575386185ba77bafe3e03ef4853ef456efe"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-9defe0d5.dat",
+      "bytes": 163492,
+      "sha256": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-3190bb25.dat",
+      "bytes": 162546,
+      "sha256": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat",
+      "bytes": 162420,
+      "sha256": "5686cbf54559498f20c356cc1c1ee198ee4b4b4da69de89e5fb093e6dd302414"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-6fda8fb5.dat",
+      "bytes": 162712,
+      "sha256": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-e4d40af6.dat",
+      "bytes": 162712,
+      "sha256": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat",
+      "bytes": 162420,
+      "sha256": "f2ef58b1d71c9e57469656ab50de0fd0755dde98b7e659c220672cbb44c3cd85"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f9ce8c16.dat",
+      "bytes": 162546,
+      "sha256": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-16956929.dat",
+      "bytes": 3269,
+      "sha256": "16956929d4fe9fbcb1cb56a639ffdd4b7c8927a1da070c39402f91b2104abf9b"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-a5ecc9b6.dat",
+      "bytes": 3275,
+      "sha256": "a5ecc9b647e4226fdbdfc6643dfc7b081f22389d6cebe17c032921dcfe4e33d5"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-cde8701d.dat",
+      "bytes": 4273856,
+      "sha256": "cde8701d0a1d6790a49f4d897b4e308804537cd70ba72255a42bb07ebfc668c1"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-2124a589.dat",
+      "bytes": 3262,
+      "sha256": "2124a589e75b8651183cf1d5a61832e8efd485d76785aca3b8afe45825123c2f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-72c6df4d.dat",
+      "bytes": 4260047,
+      "sha256": "72c6df4da7f8a8e469cd63e9797c3ac2721244296ae56b4cf69695985e7fac9e"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-ec0fe37f.dat",
+      "bytes": 3256,
+      "sha256": "ec0fe37f73b3c18252d27a6bff74c36122bed1a31f30c5c2ec6f1f70fbe21d96"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-245c6fd2.dat",
+      "bytes": 4263934,
+      "sha256": "245c6fd27d18ff73184ce67bbfc4a8b18ee48c4e7debed364f5f10a2899e27c5"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-c5713e52.dat",
+      "bytes": 3277,
+      "sha256": "c5713e520efe240c97743fb50af7c7f3699e1d9428de7a5a7efe588afec19cd8"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-f9a42191.dat",
+      "bytes": 3271,
+      "sha256": "f9a42191aa0dab1d81af876172520e02791c6215826013dfa96160daa7d77282"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_total-a3431b2e.dat",
+      "bytes": 3263,
+      "sha256": "a3431b2e1846fbec7df9cdf7ade9131d3f5aa38f77379771c8e4c702fbb0c06e"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_total-bd567789.dat",
+      "bytes": 4272042,
+      "sha256": "bd567789d875e43adc51ca86d3faef6a551bf0cf8be55a01ecc3d49c80f1a468"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/linear_transport_total-eb9b49a2.dat",
+      "bytes": 3257,
+      "sha256": "eb9b49a2631883d348ce66d1569f4b5be7a0f3a10ab1f1106c9d33afcb12fc84"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/model_bck_sum_conv-288500c6.dat",
+      "bytes": 789580,
+      "sha256": "288500c6b147f096979cb8890659b9f201fd8178dcd6575287e09a4a51b0412b"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/model_bck_sum_conv-d511ca02.dat",
+      "bytes": 789669,
+      "sha256": "d511ca029cbcd549cf844eba95f55aa25bb5c349d5d53882c3e915b31fd501c7"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_cmocc-e61b58bda5.dat",
+      "bytes": 3249,
+      "sha256": "e61b58bda5767ca8d8329d74dad5d67a50ae68f2b200e8e71be9dc9cb9f36354"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_srocc-97e4df548a.dat",
+      "bytes": 3252,
+      "sha256": "97e4df548ac577e5aa72e463ddc59ed5b0696528e8cb8fa56832d391a04acee3"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_total-8d290e7fd8.dat",
+      "bytes": 3251,
+      "sha256": "8d290e7fd868b0d9a4145c509b5106f925ade45caee8eb5200927bfeb344a3b5"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/om_projector_T000_cmocc-d8ee3a1471.dat",
+      "bytes": 3243,
+      "sha256": "d8ee3a147103c0c4260c9819e290572a3e3db15833fd0c9d5f71564224683222"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/om_projector_T000_srocc-a9bab52493.dat",
+      "bytes": 3246,
+      "sha256": "a9bab524934e724b8f7137fc499822c1938a75260c0c0d8a42f4e2aa3b091540"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/om_projector_T000_total-47d24ce758.dat",
+      "bytes": 3245,
+      "sha256": "47d24ce7587a75d348c74688d2df377c8194c237980ebe4d6e68851482f5f0ac"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/data/orbital_magnetization_z-1409df76b0.dat",
+      "bytes": 316,
+      "sha256": "1409df76b04f2767738e1f853602ae3b51a355195f54ef7aacc48e209e0d0d8a"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/current725/fe_bands/model_bands.dat",
+      "bytes": 395823,
+      "sha256": "eb4ca8ce8e97743d65d567e3ff986407dcb90d89e8a43095febc6e7594da1dd9"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/dft_absolute-59c64881.dat",
+      "bytes": 1251213,
+      "sha256": "59c64881815866db82bb27e648761d1294783bded4bbef2e0a1ec2e0c7b8d952"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/model_bands-eb4ca8ce.dat",
+      "bytes": 395823,
+      "sha256": "eb4ca8ce8e97743d65d567e3ff986407dcb90d89e8a43095febc6e7594da1dd9"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/native_fe_band_path_raw.dat",
+      "bytes": 395823,
+      "sha256": "720c1f651b078c316a173b0a7ff7d985c4f48ea802bfc28cce25b34168fe9f6e"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/native_fe_bands_absolute_aligned.dat",
+      "bytes": 335284,
+      "sha256": "c071013e4e01c0ed7a93d607d59cdb63c75a43aea35f744c53e0f19dd80ef02d"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/native_fe_diagnostic_evidence.json",
+      "bytes": 4457,
+      "sha256": "6771e53d8dbde507fdd45369fdcbd1b6909494332d691bf519459d741951729d"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/native_fe_diagnostic_matches.npz",
+      "bytes": 709159,
+      "sha256": "eefc6269fb61c09c5c66d4541694f5152288a2148173c071b74113ba7b71b792"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/new_tb_absolute-6ada0279.dat",
+      "bytes": 365991,
+      "sha256": "6ada0279b34dac5a0df46c92bdaaf7dcfbc0279f92dcc494bf3670a823b4d486"
+    },
+    {
+      "path": "examples/12_fe_wannierization/data/old_tb_absolute-ffb60753.dat",
+      "bytes": 365991,
+      "sha256": "ffb60753723b59f00e8c2488a139c6abf223db5ca5122b2b384fa42a05bc76bc"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/bands_gamma_k_m_kprime_gamma.tsv",
+      "bytes": 55239,
+      "sha256": "6855c363b43006035bf0895110e9b725d0d09bd6ec76d9238ac586bcd8c77596"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/convergence.tsv",
+      "bytes": 333,
+      "sha256": "3ae7700f38d7b1062265910ccc5fa8c26fb21f6b4561e0e91060349534290ad6"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_berry_curvature.dat",
+      "bytes": 59099,
+      "sha256": "caf9d6eb63342192de64dba7085c2f43e1dcb320f52c13c0631c00f1e77f45fa"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_drude.dat",
+      "bytes": 59024,
+      "sha256": "cd8097664960d4c54161b4befc97abc07ca2b8541b451f93067b0cab3831cec0"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_quantum_metric.dat",
+      "bytes": 58913,
+      "sha256": "c1c09beb7981caeb1bb821e58ab6acbe2b72f981d6d5d1ed9dc0dcfcc40d00c7"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_total.dat",
+      "bytes": 59025,
+      "sha256": "13636e15451405b6515e9bddfb45d3e0c2adfbd6ea22bc71450b062945892439"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_berry_curvature.dat",
+      "bytes": 59174,
+      "sha256": "3cf10f62aedd1dea6287ce37a5f276de8aa843c761e666611c169cee5f314c07"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_drude.dat",
+      "bytes": 59058,
+      "sha256": "4e254c6fe72fede3fc53d0f931674ddaddb14b1a82565eeeaa5585dc7b93de45"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_quantum_metric.dat",
+      "bytes": 58913,
+      "sha256": "2c2c7486063eae27e6c6f5ac6f7c58813938a03b9834febcd4037bbd7e14f3a1"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_total.dat",
+      "bytes": 59025,
+      "sha256": "06f5419e1e93e32b84a1b1398a70a09814cec0e648032b643f3bd3b22d9368c1"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_berry_curvature.dat",
+      "bytes": 59196,
+      "sha256": "5b1dee11a18601626c426c080e2749a39e4aa3ec56011de3e5757f94b829f9a1"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_drude.dat",
+      "bytes": 59076,
+      "sha256": "1c56edf2b6a88c885b37e7079ecd992ff73c8567477076fd80f3b9c19228b2f9"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_quantum_metric.dat",
+      "bytes": 58913,
+      "sha256": "6eca142c5f7972613b2fc1bce25b86ea326f1896c015b53ba1976c071d32fd91"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_total.dat",
+      "bytes": 59025,
+      "sha256": "37a35244523e76fc511404c799b951674b950f8edf08dd81a335abd61f7bc027"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_berry_curvature.dat",
+      "bytes": 59077,
+      "sha256": "d0904746bb90b0530ac1cc6bd23330f467268ef06d084650d2de27e14ba5ce79"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_drude.dat",
+      "bytes": 59004,
+      "sha256": "4d3546126f86b4da8d062a5c40b78433727a639d2b418e56658ab21b03c3bce9"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_quantum_metric.dat",
+      "bytes": 58913,
+      "sha256": "a66d34c89b9d793a25ac3dfa0da601ffa29edc37865b89073d08ab06ed92d3c1"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_total.dat",
+      "bytes": 59025,
+      "sha256": "02b375e20895d4573a98acbc8448afe98be1faaefdd7407588d10d7ad390304c"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_berry_curvature.dat",
+      "bytes": 59198,
+      "sha256": "9e624c7ace8ac5af80909ea72ece78e20ad4b11e961efc74a729ee91ccf69d6e"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_drude.dat",
+      "bytes": 59048,
+      "sha256": "3c8f23b5811b934523eca7f31c93c36f81acf981d94f842323a758814326a9fe"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_quantum_metric.dat",
+      "bytes": 58913,
+      "sha256": "3b3b9478c6808fb9ff1beee9f32cef55959fc1b748b87c113204dc2f853a1310"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_total.dat",
+      "bytes": 59025,
+      "sha256": "eb5fb4577ee0b765954f2a4a38618aea345bacaeb7007ffdda6a19fc8782c45a"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_berry_curvature.dat",
+      "bytes": 2328,
+      "sha256": "edd31f53e56a8ac4f2627caff6aa6d7347788801fb754ffb44d7410a2da9c0c8"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_drude.dat",
+      "bytes": 2316,
+      "sha256": "3d1bfdf852ce0f96af2a39b2aa8767bba87ee6fb2d64efeb52f542982f0a81f3"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_quantum_metric.dat",
+      "bytes": 2325,
+      "sha256": "333ea982ab8ab6ca9d0cfd60464ac70fe536b590c996e5c6d03192edf86e128a"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_total.dat",
+      "bytes": 2317,
+      "sha256": "0b8bf0517f5ec97ea6f59c2c5c6b7eefa8d59e47152f9bdde1ecc55a3090f4f6"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_berry_curvature.dat",
+      "bytes": 2327,
+      "sha256": "6ec7f966af3a6ce5e183808a9de9fea74290dcfed5eca1602d4e4dd10b72f45f"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_drude.dat",
+      "bytes": 2316,
+      "sha256": "82f7663ccd7821d75a13ad82d9271c35e3326ea742401f8da066d8698ad6cd4d"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_quantum_metric.dat",
+      "bytes": 2325,
+      "sha256": "d79bce1ace6a059d38b5c4662c34844d8f4171a14fa4b3f63f055ddf1790b082"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_total.dat",
+      "bytes": 2317,
+      "sha256": "0a996489b69f6e1647b15443e7d924c72d7e5cc7dafc5376c3a9cd0f828677bc"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_berry_curvature.dat",
+      "bytes": 2328,
+      "sha256": "bfde648ce58272201e23524fc907009b92b6cdef8738d2dc495741bc2a8a3917"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_drude.dat",
+      "bytes": 2316,
+      "sha256": "18e75097a3cb7008337de23ad744155b4485611c20327de4a5b2390e0bf25ca9"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_quantum_metric.dat",
+      "bytes": 2325,
+      "sha256": "3fd484a339c6470c0fc34c7eac0363092f972fa7414110b7fd91616eb6ca70c4"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_total.dat",
+      "bytes": 2317,
+      "sha256": "e034a046a0546de7276d2c3caf2a79deb283b34fa1e35f0f3b648bf7e2d8101a"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_berry_curvature.dat",
+      "bytes": 59179,
+      "sha256": "564314bd6f5da301150874cff8bd886c03c92741c75277bfa6f0003634b3a527"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_drude.dat",
+      "bytes": 59030,
+      "sha256": "d44b65421474c58c50ba5afbe0433bb9d8dee8e1a5c426641b6c18342577d27d"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_quantum_metric.dat",
+      "bytes": 58913,
+      "sha256": "16005829360a6242657e9f8b9545826b80714367626cbc9e91ceb1ea1cf8a103"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_total.dat",
+      "bytes": 59025,
+      "sha256": "b4968c377af53426a3cb23f4a04b4592121438b13f12e77d19b5d1a349f6da1a"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/hall_curves.tsv",
+      "bytes": 21046,
+      "sha256": "8620ce538e00e4a498c56485a83cfefa3cf585727b5e4b8a502f9d252f46da5e"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/data/reference.json",
+      "bytes": 2446,
+      "sha256": "0f68008e82fbcbaa4edb0c2a8dbc65e335c5c0ec57c52c0b18b8a028da2dc78b"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/bands_shift_vector.tsv",
+      "bytes": 28902,
+      "sha256": "ee29d2c5d47a91a4939f9b06f35cef167fe8ddc672f8c5dfb540ab2c889e6030"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/convergence.tsv",
+      "bytes": 39056,
+      "sha256": "4b19405196e4b415bfc9118ef7e760f72b35e2c72b8db3ec48dfc1304390deee"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/analytic_ionic/ionic_sc_conv.dat",
+      "bytes": 134803,
+      "sha256": "0211ad5ce51a6c206d2ad1fe271cd6f552992d38d9c5fa09a85381ae1d0bdbe5"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/analytic_polar/polar_sc_conv.dat",
+      "bytes": 134790,
+      "sha256": "6d24827f0b91bffcc5a5b907828523623fcb56784ddcc68a2f7024fe3bdbf428"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/analytic_reversed/reversed_sc_conv.dat",
+      "bytes": 134480,
+      "sha256": "94a9ea8df639fb90270cf0792c17a94779098e7daeda3c59b2ec05e1efc98c4b"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/analytic_ssh/ssh_sc_conv.dat",
+      "bytes": 134454,
+      "sha256": "5e1f4d66ce4100e4c7d98c2f76a1d1da365c6f040f557ba6cb763a3bc9375d60"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/tb_ionic/ionic_sc_conv.dat",
+      "bytes": 134803,
+      "sha256": "2ddb2517e864baaed84847f7f72ff685b98f28c1c99ea6632136b47d9e685a1d"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/tb_polar/polar_sc_conv.dat",
+      "bytes": 134790,
+      "sha256": "a7f4dee9b8810499b9366aeb986fbb4b95427cbb4ad51cf417d528d780ac1e66"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/tb_polar_n1601/polar_sc_conv.dat",
+      "bytes": 134696,
+      "sha256": "3a22471a44a6b2fac22e2b0503cebb10c9cd602002f127cfaa266446418813b4"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/tb_polar_n401/polar_sc_conv.dat",
+      "bytes": 134709,
+      "sha256": "d24d8ecfc402a765eb0d6750477348799a0a058cec9fbb352fad34fe2c23aa60"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/tb_reversed/reversed_sc_conv.dat",
+      "bytes": 134480,
+      "sha256": "98fe908f031b41f194f9b612643068642285277bcfc742b8ad5a877ab2771649"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current725/tb_ssh/ssh_sc_conv.dat",
+      "bytes": 134454,
+      "sha256": "5e1f4d66ce4100e4c7d98c2f76a1d1da365c6f040f557ba6cb763a3bc9375d60"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/current_validation725.json",
+      "bytes": 702,
+      "sha256": "5da08859f14968975946517bef16a0adb51160fa424c834cec72a57daf67cd04"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/reference.json",
+      "bytes": 246,
+      "sha256": "cd89e5d05d1928a98fb8d4e14931d6ad4cf4ba4443fa1fea96dacb540159b012"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/reference_spectrum.json",
+      "bytes": 2370,
+      "sha256": "76cf7c53177b0e9ea8b95c4909f1fdc4416a5dac9749e2b6989f4ba89a03063b"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/data/shift_current_curves.tsv",
+      "bytes": 107798,
+      "sha256": "8435d2f54e78f49920326c1e27512b6ebcfd4b57c47ca8bf900c3abd73bf5c6a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/DC_MASS_REVERSAL.json",
+      "bytes": 281,
+      "sha256": "f8bb67f56e8469f3331af25edd9b0d7f969c6e698d0a2bde076df259c6be202a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/berry_negative.npy",
+      "bytes": 207496,
+      "sha256": "3597f63ab924975adb09e191153ea15c2f9f45da2574a96c732ea5276078baa8"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/berry_positive.npy",
+      "bytes": 207496,
+      "sha256": "c3b004a9f97ee20ec163bdff027010aa9c70c5de6098ebb652e9995e9d0b23ac"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_berry_curvature.dat",
+      "bytes": 78479,
+      "sha256": "b18e0ff49a2c8ef116410a2ff60ba5d5010258f6af7b5b9b97ab37871a95a572"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_drude.dat",
+      "bytes": 78506,
+      "sha256": "a9e53689bdd60829cf01a929c2957bce8819a952a20471a4963174c41e1b4790"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_quantum_metric.dat",
+      "bytes": 78349,
+      "sha256": "edf5d4d3dc88d0b023bf0502d412e6eaa30a3121487c4fa56d5e199c3ad36df1"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_negative/linear_transport_total.dat",
+      "bytes": 78469,
+      "sha256": "958fa72601ecf5cc4943dd952534526962c3ecc18fb748f988d9e5337edff65b"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_berry_curvature.dat",
+      "bytes": 78479,
+      "sha256": "9b19a9d619fa3f00811e0fe5ecc14493aa6d9778db96603935d9545c5eadfa2a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_drude.dat",
+      "bytes": 78506,
+      "sha256": "70120a92a21ae638b716848ea7bb1ee0306da5e7adf480944e263e1fcf0078da"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_quantum_metric.dat",
+      "bytes": 78349,
+      "sha256": "8b4ef2e0cb65b5fd37ad11693032835e80f84a8d700120a33b698394c1d9f7d4"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive/linear_transport_total.dat",
+      "bytes": 78469,
+      "sha256": "a6325a1ab83bb8d5ee745bfd34a721bcc1f5297a65badcf8e5bfba2fc27fb6be"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_berry_curvature.dat",
+      "bytes": 3816,
+      "sha256": "2f8738dab73d52b674d43fb097afeb88a35c305bbf28b02674cf23f7a5c9709a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_drude.dat",
+      "bytes": 3807,
+      "sha256": "f0a6e8c7e0e8640418344b87a34fa019978b46eaceef761a69f15f90576e4cea"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_quantum_metric.dat",
+      "bytes": 3812,
+      "sha256": "8f4686fa92b349801913c64fffdf4a3f4d6bca2d4fdd9c9bdc4d56758f8499e4"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/hall_positive_g0001/linear_transport_total.dat",
+      "bytes": 3806,
+      "sha256": "37276584a9b8d047442c3394cc00700b0ec3f33eceae7577734752ece72859c7"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "c65345cf9ef9a6c79c0cf1db696c9b92ee558fc61770722ceb9cb1df3be36345"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_drude.dat",
+      "bytes": 122677,
+      "sha256": "f81aaf4837f33d40149b90ca94a337a34a19fbe93d3967d69271893d29e80a34"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_quantum_metric.dat",
+      "bytes": 121025,
+      "sha256": "51b5b7dbadee90e7493e789f1d2f1147002d4d7735766d84ce824408c0fd9629"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_negative/linear_optical_response_total.dat",
+      "bytes": 121038,
+      "sha256": "a79b77527f5b178fa2b505410b3de25033732ff018fd720982437aac69ae9b26"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "dba6351df937a80de8e6065f69508edf154c27f361a6d3fa0dd5ff706f765b8a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_drude.dat",
+      "bytes": 122677,
+      "sha256": "f81aaf4837f33d40149b90ca94a337a34a19fbe93d3967d69271893d29e80a34"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_quantum_metric.dat",
+      "bytes": 121025,
+      "sha256": "51b5b7dbadee90e7493e789f1d2f1147002d4d7735766d84ce824408c0fd9629"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive/linear_optical_response_total.dat",
+      "bytes": 121038,
+      "sha256": "acb8f06967ef6a5aacc574b4cf53c8512a79f47d0f7b3239872774c967059948"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "8377231ce3e51dd17c4bcb6b2ff0193570aeb2aac6d31db591f38e4c0a27d52e"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_drude.dat",
+      "bytes": 123289,
+      "sha256": "09a389d6c0cfcb3fc0339dd4751d9029e4f8a4d3ed6826f5dbeb512fe7a1a175"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_quantum_metric.dat",
+      "bytes": 121051,
+      "sha256": "493b1739d8aac3d55ce8443e02aff0c886e40b5a9cd942e450174d1cd3f160fe"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_g001/linear_optical_response_total.dat",
+      "bytes": 121036,
+      "sha256": "d85a47c957fedee58dc1555e94cd50d829eeddead36b3bdad917867cefb78e39"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "279c534983e6af2cc82b29a7ac1a42f08ffdc4cc9d1bde42a8cc58f7fdf60778"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_drude.dat",
+      "bytes": 123293,
+      "sha256": "46bdc337629e313d86622f0d4a0d3bdc0ff08f3e01f07ef1d1f2eda7c29892de"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_quantum_metric.dat",
+      "bytes": 120895,
+      "sha256": "b9154e41c1731ba942c9a06618a1341002224474a89e61306e558815adb0b92d"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k025/linear_optical_response_total.dat",
+      "bytes": 120990,
+      "sha256": "2aeff40c74912a947b88c84f4a484533cab82b97519d521a1f85a15d822e9c42"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "31f215043f4bf6fdcd094b4dd1beae688f2603220517869969e476ba862a21a8"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_drude.dat",
+      "bytes": 123879,
+      "sha256": "dba477a787d8dc0c2e581ff03c8b9f01f8948e85f268aa24ae227f4f78b4921d"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_quantum_metric.dat",
+      "bytes": 121009,
+      "sha256": "2502005e9e2c5575ace8cfcadecf4073c85c7fbe96d888796bdbefb79d817ce7"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k050/linear_optical_response_total.dat",
+      "bytes": 121012,
+      "sha256": "4e573d8aa02c8c56c6533fc2d340595ca8a9f4e4830fefcfd9cb7602602a9a0d"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "589d46d94bbeeb6c89d6de1f3757e0243794bea2e2141b8d847b435eea3cd7b2"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_drude.dat",
+      "bytes": 123263,
+      "sha256": "960579e7d33df75e14162b6c16376d08566318873b7ea9384512b32a5cc532a7"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_quantum_metric.dat",
+      "bytes": 121079,
+      "sha256": "564085670f89432e94cf1c8235fe807a6b354f0481da1b6d3bc4a81cf3387d83"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_k200/linear_optical_response_total.dat",
+      "bytes": 121068,
+      "sha256": "8cbf76fb155995d9ceb6f7874ee2f02220eccdd7da62d3fb0a75cc57bedf8e12"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "51a2016b0867e6f4503085b5fa2ec927e27e4d9f5addfe5e102d83c5d6be92ea"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_drude.dat",
+      "bytes": 123245,
+      "sha256": "413a970a66993d1826c583410952b129c3222700d59c8ae7b628f95f508627e5"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_quantum_metric.dat",
+      "bytes": 121057,
+      "sha256": "e9aed5b9fd37e77d69fac03d1cb65d5b22f83236b55072826e1983452c4dd649"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n201/linear_optical_response_total.dat",
+      "bytes": 121038,
+      "sha256": "168c0d37ed75fd6e95c611a47882199e038353ef0bfeed3abaa1c665b6d4da5d"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_berry_curvature.dat",
+      "bytes": 120874,
+      "sha256": "3bd3a0d2ac1ada62120ac7901d3612c0a87cde341df73881e972067ec3c8a0d7"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_drude.dat",
+      "bytes": 123303,
+      "sha256": "0d32ab2d945b68200b7f0769707df012b7951f273ffa795170bd5b1f150b49de"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_quantum_metric.dat",
+      "bytes": 121059,
+      "sha256": "c187edaaaa270f3e7cdbbb26d3ec676c393c4fc1c1191f0da8dc54a37749c778"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/current725/optical_positive_n801/linear_optical_response_total.dat",
+      "bytes": 121038,
+      "sha256": "f56592cf18c3ba19754f158f5302c9825e257f3edcf4b142235d22f100cb25d6"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/cutoff_hall.tsv",
+      "bytes": 549,
+      "sha256": "e459b9d5d91301966b4a53ceb267486e946647381da6096d34aa9da20aec208c"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/dc_rate_deficit.tsv",
+      "bytes": 414,
+      "sha256": "b63a19841b4dddf04a3af9182cfcf627038973b43e8fb8b5a9ccf3d47b5d249a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/dc_rate_independent.tsv",
+      "bytes": 334,
+      "sha256": "5dce0a541cc958e46fbfc6fb5e55ecd9f3af927e782e2a701587f1d6eb97704c"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/dirac_bands.tsv",
+      "bytes": 28310,
+      "sha256": "0bc4f38468c3be2a6c67aaeb9a04a2d6155409cbe62d51985543510c61e0db7f"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_cutoff.tsv",
+      "bytes": 682,
+      "sha256": "aeb1aa7df836d062a4e8a3695d40a944cf3ecaa57f0a60ddb3f52af7d3e07e94"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit.json",
+      "bytes": 8044,
+      "sha256": "b809cb121cb8665ad6c7ff331af4dff708c39ec2cd0627c7712d3f98bf37cb13"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_cases.tsv",
+      "bytes": 1552,
+      "sha256": "62000f3f6edf9e82d9fc1ea76cb1c6b616c0752b995159ff352a520a0c060ba5"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_hall_negative_k128_n6401.tsv",
+      "bytes": 338,
+      "sha256": "66d7e92da615d6be37be1670f70f5421ef93bc4eb9c78a74d52d6f6694f479ae"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_hall_positive_k004.tsv",
+      "bytes": 347,
+      "sha256": "69c14d43277a587f5d2014af977636e11e15695d003891a2f240e8df27482856"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_hall_positive_k016.tsv",
+      "bytes": 347,
+      "sha256": "28f953102a143bdaf0b703db4a2a26e496d5c93d80b29d3533ee751f36bc5eed"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_hall_positive_k064.tsv",
+      "bytes": 347,
+      "sha256": "a28e5b3e3818e043460357ddb4c70485acedf480da1cfee862cf2def9fb169d8"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_hall_positive_k128_n4801.tsv",
+      "bytes": 347,
+      "sha256": "276edc31b182d69308461a8f20f85757e0abfd3335bab4fdc28fafd287a1719b"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/half_integer_limit_hall_positive_k128_n6401.tsv",
+      "bytes": 347,
+      "sha256": "de63b67af03fd5883a020113361d35332f780faae919fcfb823d2ed19b08079a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/optical_reference.json",
+      "bytes": 8256,
+      "sha256": "3901b1cd72768dd7df41cd8af89f3c4f18adcefb59d9fa98cf22c6bd71430a78"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference.json",
+      "bytes": 60140,
+      "sha256": "70c145f612e1338554f6a1d948fc97cd7e126f32ae77d31127797a7e59bf385e"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_negative.tsv",
+      "bytes": 39021,
+      "sha256": "b5470e41ee590df394973a1536b72e654d81e4df27b7dcff0c56e15d8645afa5"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_optical_matched.tsv",
+      "bytes": 37676,
+      "sha256": "5d065a085097b435e7c2a78958363ae88fa76900693596bcd05c3db25b3f115c"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive.tsv",
+      "bytes": 39314,
+      "sha256": "ae6010a9aa4a096069ee543ca15efe33af2992fb47442fc143ab615e2e370a3f"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_g0001.tsv",
+      "bytes": 873,
+      "sha256": "f7d3dd1e51d01ee5523529ec46fed9606c5f405146cd39bf0973e06e2d446165"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_k004.tsv",
+      "bytes": 837,
+      "sha256": "05f4b8a71e2587e0329f843ae0835506f0f7e6b66023a8fa048d6fd986397856"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_k016.tsv",
+      "bytes": 837,
+      "sha256": "850c478959345c2bc9a0e496d0fbbd8dbabf932a217374024953762bbf170dbb"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_k064.tsv",
+      "bytes": 837,
+      "sha256": "ae36b8bec340b9238e47156e75be0874fb140b3c78e4fd8dee9f78eb2511b374"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_hall_positive_n9601.tsv",
+      "bytes": 37704,
+      "sha256": "cb5b94251d00697a82e5a7fe72bf7d5c434ede98d1b5893012f6235b5b653738"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_model.json",
+      "bytes": 314,
+      "sha256": "bd6ceabaff348ddd2d2895df68bf9ba3468fc6a7f15149614321f64a3728ad99"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_negative.tsv",
+      "bytes": 72869,
+      "sha256": "d91c0f72de0dd5db8cd7178b8bd13f3c26ef801315f35d865c3b6f2759a04b29"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive.tsv",
+      "bytes": 73422,
+      "sha256": "dc1cd8d62d016fc4c7fd25737b3e9ae9aa8e9f6605e3ae396aec165277ae302e"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_g001.tsv",
+      "bytes": 73416,
+      "sha256": "791f33fff256abc7e671461232f08455665ac208dab1a4f8542c04711dd71c79"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k025.tsv",
+      "bytes": 73238,
+      "sha256": "fc6474628376a967450967e5adf9e5bb293f1d082613a790e52d31d2d8e2d5d2"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k050.tsv",
+      "bytes": 73314,
+      "sha256": "5983e37bf03f9ad83c5e60644320568273b9a76dc34f9d4108012d8f605b156a"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_k200.tsv",
+      "bytes": 73566,
+      "sha256": "c276b5368ed16b94db0edef67de46f9188271b150a014661cb40c6c30025fb12"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_n201.tsv",
+      "bytes": 73421,
+      "sha256": "17313029a9e107e044f1951eef0e1b5fd845dc1b1fc839d8c21432a7a4ab0bc5"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/data/reference_optical_positive_n801.tsv",
+      "bytes": 73422,
+      "sha256": "400c576201376bc739e29ca5bdb839828c25bab24da6cc10e0de6f2ef148a92e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/display_yyyy.dat",
+      "bytes": 15264,
+      "sha256": "3c1a6427476a8c10d1eaca9306f6505df5fa6b6c567d998bbbbad3dcf1e200e4"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/low_positive.dat",
+      "bytes": 6171,
+      "sha256": "01b1123ddb6fa948c5712371ff2e76db0f6ea5166605d7179b4e61d8ff49851e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_formulation_residual.dat",
+      "bytes": 38505,
+      "sha256": "53f1e237f83153b2fd9ac02a843239359a1852da471b73d87118546a1bcc0d11"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_regrouped_chi_xxxx.dat",
+      "bytes": 32705,
+      "sha256": "e547a431cb49a7f6f4462c8dcac2fe143c8324ae597542a7ae0006fb968b489d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_regrouped_chi_xxyy.dat",
+      "bytes": 32820,
+      "sha256": "53ca4000ba46d474e51d8adcf08abf053275f9977feeb99cbb1203ff50f23a1f"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_regrouped_chi_yyyy.dat",
+      "bytes": 32844,
+      "sha256": "d8dbb262b1f35a25bf936778c7f323ab556da903208e64df6a0adc1cbb6c07ec"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_regrouped_sigma_xxxx.dat",
+      "bytes": 33080,
+      "sha256": "95f237d3cbbaece41704b2543022ee5a379c8a7c5fae642a644740b765c17f68"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_regrouped_sigma_xxyy.dat",
+      "bytes": 33193,
+      "sha256": "0657f25765604bad2bedcf5d6a4d90d65c9a85a6fdd8627d0252a49e74d13407"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_regrouped_sigma_yyyy.dat",
+      "bytes": 33229,
+      "sha256": "8a6c2d329aed2e59712abfada4285558f1bc770a1c9d773c5edbc3b0a281ef9f"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_unregrouped_chi_xxxx.dat",
+      "bytes": 32903,
+      "sha256": "bc4a875c7c208f21769d1f7671a018f59f6957bacd5e9665439bf95a73e44ebf"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_unregrouped_chi_xxyy.dat",
+      "bytes": 32914,
+      "sha256": "f087676db8f7f5ec7e2c2f447d563d699af8ea8f79ab0e6a51c6d7e1c9ee33e8"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_unregrouped_chi_yyyy.dat",
+      "bytes": 32942,
+      "sha256": "9210615c49cdd3ca306c22d42c597a6e62f49c3e5eef3559f1daf4cc84f7b3e1"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_unregrouped_sigma_xxxx.dat",
+      "bytes": 33150,
+      "sha256": "97148a4adf3cc58b09ec93b295205706bca279fd7fb5a93c88d52e02a84e573c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_unregrouped_sigma_xxyy.dat",
+      "bytes": 33159,
+      "sha256": "2a9ff2541199c5d2e8d8fb79bef6901bb048557f630d0b4aadee321c1441a26f"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T10/thg_unregrouped_sigma_yyyy.dat",
+      "bytes": 33187,
+      "sha256": "f17e96e70030a6c7edaf6c1a9be16e3746e7e57797d28f9f6b05ec825e6236e0"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/display_yyyy.dat",
+      "bytes": 15264,
+      "sha256": "ae9bf387e70e84414c21b2d10de2a2bf510df91e9385c00e3a26637764a0fc5a"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/low_positive.dat",
+      "bytes": 6171,
+      "sha256": "733d5f0c57220cbeeeb814db381265bf08a7c0a76503da0d7c80fa1d554bb253"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_formulation_residual.dat",
+      "bytes": 38500,
+      "sha256": "8140da8c91ea8d91e3ec6373e5b1b868da2fde9bba1d56f1c68d4394bf433908"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_regrouped_chi_xxxx.dat",
+      "bytes": 33050,
+      "sha256": "9f25b0c36534bcb16dfa1ece84fc6544ce2fc4033136a6f41dd4880a797540f1"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_regrouped_chi_xxyy.dat",
+      "bytes": 33052,
+      "sha256": "f5152e386d849c35c6d7435279a1ca184e719a59d0b0816107b2f7db46a6e565"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_regrouped_chi_yyyy.dat",
+      "bytes": 32939,
+      "sha256": "1a5930d0c49562247a1fd3af2a207ca394f9b3647097c9fc2ec7e2ce41be061c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_regrouped_sigma_xxxx.dat",
+      "bytes": 32864,
+      "sha256": "0ab41b09c4366cf7da8a2a5105535810dfaf561bac0e9182705119179cef05ee"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_regrouped_sigma_xxyy.dat",
+      "bytes": 32872,
+      "sha256": "d61a4cf76fbb3b0ed5b453777d5a26b645398e62bb3003d5f94e14e9273b4b9a"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_regrouped_sigma_yyyy.dat",
+      "bytes": 32753,
+      "sha256": "ec51e59453f9ade2538fb15e7317ad704579734d3b29ee7398d8906a62e242da"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_unregrouped_chi_xxxx.dat",
+      "bytes": 33025,
+      "sha256": "3154464987029a8ffc962343002f00b8dffc32c6dbf02267dddb9f1da7b52373"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_unregrouped_chi_xxyy.dat",
+      "bytes": 33026,
+      "sha256": "412887a8e47ff00a3d68aadfa1d052ab2c6edfbf4dd5a65f9d41041787e54c38"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_unregrouped_chi_yyyy.dat",
+      "bytes": 33025,
+      "sha256": "2907c3a0c1f573716d3cc141f276b6490f1767cc9cfe82e0fc7a91a42816da3d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_unregrouped_sigma_xxxx.dat",
+      "bytes": 32961,
+      "sha256": "7d80928543816c5e4447e7c35ad2e75c6e89b56749ed0db145dfd26573816af3"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_unregrouped_sigma_xxyy.dat",
+      "bytes": 32962,
+      "sha256": "53fc63c219e0554d6832cd41b439c0b83dba27fd8bece9c47aa0dae10700daa6"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/distribution_broadening725/T300/thg_unregrouped_sigma_yyyy.dat",
+      "bytes": 32960,
+      "sha256": "4f06fe1fa7a889d6c9712f4327307294666f3f20fc245c2baf543fae97293541"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/digitized_log10.dat",
+      "bytes": 6145,
+      "sha256": "372087868adc09cc3fed54a09e6ffe86845c4712ac959a86b40347cda19fcee9"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/display_fourier_si.dat",
+      "bytes": 14750,
+      "sha256": "4447f5cf256dce0146451200b5e1101b0569f7bf1660eacfe6f2cb360b5b3446"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/paper_fig3a382/provenance.json",
+      "bytes": 5491,
+      "sha256": "de5ce3fc0e0d69d65d83fd693eed34e554bb82e208e0c221722bce1468e9906d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/SHA256SUMS",
+      "bytes": 812,
+      "sha256": "09bf5be191f572654c4116f47a15798bef7ebfc1741cf9a2b4bc0e5256097785"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/chi_xxxx_comparison.dat",
+      "bytes": 27597,
+      "sha256": "c0078b4462ff768af601872d90909d2da94810da4f104153f788036c8bed1fa3"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/chi_xxyy_comparison.dat",
+      "bytes": 27595,
+      "sha256": "627312a002dffa1a3cc3c984078bc41e0bd089ad6b5e6b2665c40793c5d6115e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/chi_yyyy_comparison.dat",
+      "bytes": 27595,
+      "sha256": "8affdf3a4bc21493540e82d3ed771814d5bd688513bf2d43e5a1df2741d47bf0"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/paper_units_yyyy.dat",
+      "bytes": 12268,
+      "sha256": "b3e2823cad7bc95cf8665776a11fdcd901ce8afd087937e26c71972990fa82ef"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/regrouped_sigma_yyyy_terms.dat",
+      "bytes": 15221,
+      "sha256": "9467fa7ea7d4caa83f7d065020af6952f2a3bdb277044f284dc1e8b6502eed8d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/sigma_xxxx_comparison.dat",
+      "bytes": 27625,
+      "sha256": "f080a762ddfba9821b4ee87567adeff076deacbf902f03d3958b76228c8338df"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/sigma_xxyy_comparison.dat",
+      "bytes": 27623,
+      "sha256": "5dbbd8a1ee437149354064ab23dc9e1aef54bbc3d612d5f02bc5629fa2cbf91d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/sigma_yyyy_comparison.dat",
+      "bytes": 27623,
+      "sha256": "a4bd846b2e33f4d93e3056e450ecd797af9e9c6d434064744a013eea14411fc5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n121/validation.json",
+      "bytes": 10446,
+      "sha256": "b0cc3410e49065c6114ab37c6f052f4d19a39a77a3d195b69d9a8c52707f0e0d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/SHA256SUMS",
+      "bytes": 812,
+      "sha256": "d9866dd1e3e0288998674d252143a81096f2706fed729b8def0320dd0159ac42"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/chi_xxxx_comparison.dat",
+      "bytes": 27611,
+      "sha256": "48aaaa82d4abdaae2974a6706f79a05d65de8c40eb519f9eef1e0ae04ba88e91"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/chi_xxyy_comparison.dat",
+      "bytes": 27613,
+      "sha256": "12b70ef4f4b37405293a3736926db27f430bb8288c0b0a656b70186ca9ac4f1e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/chi_yyyy_comparison.dat",
+      "bytes": 27611,
+      "sha256": "6b1783a7990ca15e37170c41fc695e3eecb7c91bf2ed16d679f81819017ab327"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/paper_units_yyyy.dat",
+      "bytes": 12268,
+      "sha256": "ba27e3226df49e60594f3f2d7fc413b4c12064d1636e5dc06fab656ff2d777e0"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/regrouped_sigma_yyyy_terms.dat",
+      "bytes": 15221,
+      "sha256": "9941255f13108076144ed6850b904323604eaf2a8a765112361d957c9c8c6712"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/sigma_xxxx_comparison.dat",
+      "bytes": 27591,
+      "sha256": "698c6eaee23b7dedb735a79856d2d3b9bbc6a74ca093a73406442bfbbc816f84"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/sigma_xxyy_comparison.dat",
+      "bytes": 27593,
+      "sha256": "244e440603a686146ba706038fd16acf5f4a135189e29549c70571e280dcf600"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/sigma_yyyy_comparison.dat",
+      "bytes": 27591,
+      "sha256": "b608e4b58b7bf6c6fcf7c615eedef876c623a4f3ad2876f0c187155cf7f2eecf"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n181/validation.json",
+      "bytes": 10443,
+      "sha256": "9b86d5f3f4a20e10a5ce428c1b8ba12b2f2e2a4e5355f45cc2d937b6cadae4d6"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/SHA256SUMS",
+      "bytes": 812,
+      "sha256": "7d9a765b49abba632537f1fe285e9902446968c3641781314c89ae965a0f4614"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/chi_xxxx_comparison.dat",
+      "bytes": 27575,
+      "sha256": "05b8f7a177d02b22e7aa0e405dd9ebc8a645e789a527a7651c167ca8759af351"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/chi_xxyy_comparison.dat",
+      "bytes": 27575,
+      "sha256": "9e3b0f23b1043820a4b487f0ffe4c105d0e0541e7f64bb8eb9701b9d4c03099d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/chi_yyyy_comparison.dat",
+      "bytes": 27575,
+      "sha256": "32ff05e09be9d942d2b39141dd4a2db94b55bdfb5792e075a4b393f8e5c2252d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/paper_units_yyyy.dat",
+      "bytes": 12268,
+      "sha256": "3c5e6cc0d1b2ee6a4ff4ceeb71280780839e92ceafd5427f490c37c06527019a"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/regrouped_sigma_yyyy_terms.dat",
+      "bytes": 15221,
+      "sha256": "302d00fa4d49ae3178e8e41d5cecede9b53e8629fdb6e40aa55d4b93e7a4979c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/sigma_xxxx_comparison.dat",
+      "bytes": 27729,
+      "sha256": "56e1a5db80a24287ef97d8e0b946134c78ad61bc969f72c6e06035b2a116e27a"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/sigma_xxyy_comparison.dat",
+      "bytes": 27729,
+      "sha256": "ae92962e8ad3d2457880e79cea2411db3406da63ce5d1a487beda2f98551cda5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/sigma_yyyy_comparison.dat",
+      "bytes": 27729,
+      "sha256": "09c9ab2c2c60d72d39ddc0f0c3218ca2f29e96055c83dbd38d1709230c583c9d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T10_n61/validation.json",
+      "bytes": 10446,
+      "sha256": "9d194518d894bcadc27fb94370568361bf6d8cdb7f79fd41746314954231f668"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/SHA256SUMS",
+      "bytes": 812,
+      "sha256": "5e9b60c2981d88c3ee6ac910dd90dfc7b047026b9767419d956f425361b66a99"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/chi_xxxx_comparison.dat",
+      "bytes": 27608,
+      "sha256": "ecb69afe03f336f650c9941cb4db03f8a4e9db541d0091c0e48b845ef22c1137"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/chi_xxyy_comparison.dat",
+      "bytes": 27608,
+      "sha256": "e375207a8bf3c9754b1c90024bffaf461290780f0b6218bfd62904ac833d5425"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/chi_yyyy_comparison.dat",
+      "bytes": 27608,
+      "sha256": "ea92b4edc1588569d735b75f34152135b1f5278f625856c032b0c0ea92e148a6"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/paper_units_yyyy.dat",
+      "bytes": 12268,
+      "sha256": "7b5931081af29fbbe17b8e59f5562ceb4ba0f24cd52b97221ca8a8b25201378b"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/regrouped_sigma_yyyy_terms.dat",
+      "bytes": 15221,
+      "sha256": "0e5a1429f3e0269ce4def179ed5fc0abb2dcc1d975a8ea8e0d744ec4e587702d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/sigma_xxxx_comparison.dat",
+      "bytes": 27588,
+      "sha256": "0be18320f563bb7b8f30f3330764e8a6cca21888467f78f85258dc360a791150"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/sigma_xxyy_comparison.dat",
+      "bytes": 27588,
+      "sha256": "b2a97fb956b8c0f8b0e421f30035abdb814f1358d19afd446982d44d71f2cdc5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/sigma_yyyy_comparison.dat",
+      "bytes": 27588,
+      "sha256": "cd150ecdd1140511e0a945bc97eceee5c2e2ccc156ccc3112d32dabde2a970fc"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n121/validation.json",
+      "bytes": 10457,
+      "sha256": "012d7eb9956ae749302d3d5462e2d01e3279a48386db926b46cdde668cdd21c7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/SHA256SUMS",
+      "bytes": 812,
+      "sha256": "6fb44319b06e3a5bc68d0a37df2727d202b3ab85fb0aae8f4e6945e024d59bdc"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/chi_xxxx_comparison.dat",
+      "bytes": 27633,
+      "sha256": "a1a3b15d9ccf30486e5a91a29d1ba979962a6f8febbe9da4f883f1b7011b485c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/chi_xxyy_comparison.dat",
+      "bytes": 27634,
+      "sha256": "5960f4b6eb96e61f879f1f9e1383531e36b9367ab35baf5e5915cf20814ef9d9"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/chi_yyyy_comparison.dat",
+      "bytes": 27634,
+      "sha256": "99d42769400fedd089b46ff3470965afa4fb6d92415fa006db1efbfde072c77b"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/paper_units_yyyy.dat",
+      "bytes": 12268,
+      "sha256": "52a01c62c47ee6e4581f81ff2bb6fadb9d8649b8d1509e673b4e911ec52e4e45"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/regrouped_sigma_yyyy_terms.dat",
+      "bytes": 15221,
+      "sha256": "09a82a1ab99bcf05162f55aa9819a02460c05c7ee879d0b9f106541a76e15b55"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/sigma_xxxx_comparison.dat",
+      "bytes": 27583,
+      "sha256": "81d0262765df6f2b00ab99cdeed04a241417c7c9dc75d64bbf873100d6978f6e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/sigma_xxyy_comparison.dat",
+      "bytes": 27584,
+      "sha256": "14813b2cf61a1a2ca407fce3e2fe281ea0b4b08758e622fbc8cd7fe073724a65"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/sigma_yyyy_comparison.dat",
+      "bytes": 27584,
+      "sha256": "70702897e2d4fc1f1b1f381c0fe4630faf3f6eb12fdf4ce3f31b9b25dd1ec41f"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n181/validation.json",
+      "bytes": 10442,
+      "sha256": "6edce80ca226aae8dc797194a7b46477fe64f0e6b61b306bf18d1a853280f6c4"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/SHA256SUMS",
+      "bytes": 812,
+      "sha256": "3ff70b4b8ae317da5f8b827d94fa999e733df024caaadd4685eea51446d8c2fb"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/chi_xxxx_comparison.dat",
+      "bytes": 27573,
+      "sha256": "7a44b6270e1efcf497853538f1102339747801f5b3099e78f5daa2bda9f8b603"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/chi_xxyy_comparison.dat",
+      "bytes": 27572,
+      "sha256": "f7ee7f806ddf1157806d89c4f32c04c03d7731e2866a424344f4478b39b59d13"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/chi_yyyy_comparison.dat",
+      "bytes": 27572,
+      "sha256": "03250fa5208f7401a398630dcb387594971382870d65d7bd6d7adbdf3a18faa9"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/paper_units_yyyy.dat",
+      "bytes": 12268,
+      "sha256": "19bbfe43dd3e79d729d6a4687113d9260821deecfd7268886470d2a504dfbf69"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/regrouped_sigma_yyyy_terms.dat",
+      "bytes": 15221,
+      "sha256": "d5ebdfaceec072c799da67ba5fe472c96a548aade113f3b3ff1b455c36807936"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/sigma_xxxx_comparison.dat",
+      "bytes": 27609,
+      "sha256": "fa843f6f75714df25eb4481577d495f2eae2b4eae9def8c1dd5efc803f6f8296"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/sigma_xxyy_comparison.dat",
+      "bytes": 27608,
+      "sha256": "5669528ffd35537f8b07ad27b2efa3603cd54e8b03a3257e36d04f5560f20ddb"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/sigma_yyyy_comparison.dat",
+      "bytes": 27608,
+      "sha256": "a8edbb5ea848d92c019f12cfbaa18917a4f6eafbc970320715420acbcf2b41c5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/reference/T300_n61/validation.json",
+      "bytes": 10451,
+      "sha256": "47fc99d1e580e791697d8991da3614c4a4499c7ad0e9f87c97944a0b2a42e01c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/formulation_differences.csv",
+      "bytes": 9885,
+      "sha256": "c2fdba54ee5b72875922d50e69e1cf64be21d3e060a8e70aad12991f88a7790d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/integration_diagnostics.json",
+      "bytes": 110963,
+      "sha256": "fdf8fbff4033fd77a54d6e173b905be3c3cbb92a43576a4577c9f75a7b673be8"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/point_origins.csv",
+      "bytes": 11177,
+      "sha256": "03a47f7288e700dca8f049eb18175dc8a7f460c82b8565abd56802b145957740"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/point_origins.json",
+      "bytes": 334183,
+      "sha256": "7511f4405c401fcc424c08dcf590a699edb13fb180f70ace53eef1744bf301e6"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/reused_points_stability.csv",
+      "bytes": 8760,
+      "sha256": "9fc2a111b198a7ea39dd046fb7cbac5c4373363f908fc39b9e4823b233e28a31"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/summary.json",
+      "bytes": 4213,
+      "sha256": "fa095d8d9b4f8c45015c64e80abc87848528dcab7255f40dc87c442ffa7e79e7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_regrouped_chi_yyyy.dat",
+      "bytes": 17750,
+      "sha256": "271dedf70796b57b70665b3ebe14db97ba787b05a6d761445f28e037f8ad3c26"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_regrouped_sigma_yyyy.dat",
+      "bytes": 17570,
+      "sha256": "49a2550b5ae152a88cc53f1e7ec1207b9aaf2adf55b32fb47f29b3c027d9ca3e"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_unregrouped_chi_yyyy.dat",
+      "bytes": 21333,
+      "sha256": "53dc864305a3335b28aaaa35cd6c1a145b344b8981eb1c80d815e9498462adf5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/thg_unregrouped_sigma_yyyy.dat",
+      "bytes": 21247,
+      "sha256": "47db622f59033a8d8e0b859827923588f4837d9be57772211eefc311d8a84dc2"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/wn30_regrouped_two_spin.dat",
+      "bytes": 8937,
+      "sha256": "2615ab7dbc803457cfafbe1bb321be137484c41cf632dac33ad714ea7208ec94"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/data/valley_distribution402/wn30_unregrouped_two_spin.dat",
+      "bytes": 8937,
+      "sha256": "131ed65e30c8fe958ef25bacde9e94b7248d09c83fd5395e9b780f833a8a480e"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/bulk_derived_spectrum.dat",
+      "bytes": 12733,
+      "sha256": "146e900ad9a3b27c82703d93723d85b45ec912f914adac808dfbf0e56d02b158"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_xxxx.dat",
+      "bytes": 14997,
+      "sha256": "8e82687ddf718b2cfb44e73631f64d1b78d17bff7229eb3893460fb28eaa11f7"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/dense400/jc_G_ordered_yyyy.dat",
+      "bytes": 14950,
+      "sha256": "765281b3a6c3a08dd6af8620c0be7c1dea3dca4e49b25be56449db65a07d012d"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_xxxx.dat",
+      "bytes": 881,
+      "sha256": "e5ccda2f93cd78ce4843a01167b020761e17bf828fdad27b9e716602af9fdc24"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/mesh200/jc_G_ordered_yyyy.dat",
+      "bytes": 879,
+      "sha256": "b6e5fa370801133bc77365ab38fa83723b805995a3c7fbde3ba7ef7293a452e3"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_xxxx.dat",
+      "bytes": 881,
+      "sha256": "c46801ca36c2e2260df351bfe98e5c39e2eb033bd018cb953ed0392bcd8b6671"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/mesh300/jc_G_ordered_yyyy.dat",
+      "bytes": 878,
+      "sha256": "ee885677c5000dc6fcc8b7b9beb666dd3c4c7def2a3bd7e9cb798f7c6e21fcf8"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/mesh_comparison_percent.dat",
+      "bytes": 555,
+      "sha256": "f4dfc1cffd989603358c080e6f5f1168a9411c972c304b55304b3fe11bd0645c"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/sheet_spectrum.dat",
+      "bytes": 13790,
+      "sha256": "45e55bd8080acc15de7bd8893311a0f89d2f94426b67be00ea484f4c01003e7d"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_current370/summary.json",
+      "bytes": 5223,
+      "sha256": "fcc1acd98b963f44faa08f6488fd1b1755fe7fcece6d8b762d1da45b31cb0cf6"
+    },
+    {
+      "path": "examples/17_jerk_current/data/ges_dense200/spectra_sheet_bulk.csv",
+      "bytes": 32020,
+      "sha256": "af96ad2aeb1b3a250644b10a53bfd9f7bb1eb26fb9dd71c18fd5e43a0d266a1d"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_xxxx-18974147.dat",
+      "bytes": 654,
+      "sha256": "18974147b2d37504e8a0901d39ecc183330c3910b7007b8d9d87db97ffd97696"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_xxxx-1d5bc69e.dat",
+      "bytes": 657,
+      "sha256": "1d5bc69e9993d49aebfd656e80eed0532c24c129c76f67b1aca6a005443086ad"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_xxxx-5a697a2e.dat",
+      "bytes": 657,
+      "sha256": "5a697a2ec2292bbe2e2aa0a1119e00a2afd176287e280300e0497b18471eadaa"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_xxxx-5f15c935.dat",
+      "bytes": 654,
+      "sha256": "5f15c935280563d2c563cb76253206c412e21cae355d56ed71957826100b6a28"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_yyyy-1ded8bcd.dat",
+      "bytes": 654,
+      "sha256": "1ded8bcd0b792fe31584b360a82776874c99a33c691959870d2cbfa6806f9aeb"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_yyyy-903aac84.dat",
+      "bytes": 654,
+      "sha256": "903aac84ed415b4d3d7e8670d410673c61c13d99e8851411c7fa6dc7db0fac2b"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_yyyy-940abdfe.dat",
+      "bytes": 657,
+      "sha256": "940abdfe52016020ea3edc71e060f0ec3869eece24c58930581e8c4114387481"
+    },
+    {
+      "path": "examples/17_jerk_current/data/jc_G_ordered_yyyy-e4a257ac.dat",
+      "bytes": 657,
+      "sha256": "e4a257acb801d90d0e1fbc4b9bf0a4be1c6c5c2db39d499eff35821bf6ef0044"
+    },
+    {
+      "path": "examples/17_jerk_current/data/two_band_controls358.json",
+      "bytes": 1617,
+      "sha256": "261ec149376ae624d16cad1a3a3b61a0946ba55d142992cc1f763cc4cd12f17c"
+    },
+    {
+      "path": "examples/17_jerk_current/data/two_band_dense200/analytical_vs_wanniernlqg.csv",
+      "bytes": 24689,
+      "sha256": "7ab1fb5923af95caae4dde49a8a8dc277d13fc8767a0ae30e7b37977569adc7e"
+    },
+    {
+      "path": "examples/17_jerk_current/data/two_band_dense200/comparison.json",
+      "bytes": 15907,
+      "sha256": "e8f8dc4d5f57555a1d7c4b8993ff60b54091148ffc3ded5c9ff5ed825c86c994"
+    }
+  ],
+  "scope": "Selected plot data; no external model qualification"
+}

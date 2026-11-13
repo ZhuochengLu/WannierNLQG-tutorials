@@ -1,0 +1,132 @@
+{
+  "schema": "tutorial-release-preparation/1",
+  "version": "1.2.0",
+  "status": "LOCAL_ENGINEERING_PREPARATION_PASS_PUBLICATION_CONDITIONS_OPEN",
+  "input_inventory": {
+    "total": 154,
+    "reference": 89,
+    "smoke": 65,
+    "material_total": 97,
+    "material_reference": 54,
+    "material_smoke": 43
+  },
+  "asset_distribution_manifest": "manifests/material_distribution.json",
+  "asset_distribution_manifest_sha256": "d041ac12d1b079775def17125cd64f5daee60ae60c2aa5f68a35cc8c94d31ce7",
+  "asset_set": "tutorial-unified-GeS-Fe-20261109",
+  "raw_files": 4,
+  "raw_bytes": 7196026439,
+  "compressed_bytes": 351448923,
+  "archive_names": [
+    "tutorial-data-1.2.0-GeS-model3.tar.gz",
+    "tutorial-data-1.2.0-Fe-model3.tar.gz"
+  ],
+  "actual_split_required": false,
+  "split_path_control": "tiny synthetic split/reassembly plus hash/traversal/link/overwrite/unpublished-URL controls",
+  "local_acquisition": "PASS: copies newly created checked archives into an empty downloads directory",
+  "empty_install": "PASS: exclusive absent root, archive/member/raw identities checked",
+  "current_reader": {
+    "Julia": "1.13.0",
+    "scientific_qualification": "NOT_EVALUATED",
+    "materials": [
+      {
+        "read_mode": "mmap",
+        "components": 55,
+        "all_payload_finite": true,
+        "R": 465,
+        "material": "GeS",
+        "operator_classes": 11,
+        "schema": "3.0",
+        "TB_operator_max_abs": {
+          "r1_angstrom": 4.440893719774331e-16,
+          "r3_angstrom": 4.973799150320701e-14,
+          "r2_angstrom": 4.884981308350689e-15,
+          "H_eV": 4.796163466380676e-14
+        },
+        "orbitals": 32
+      },
+      {
+        "read_mode": "mmap",
+        "components": 31,
+        "all_payload_finite": true,
+        "R": 1115,
+        "material": "Fe",
+        "operator_classes": 7,
+        "schema": "3.0",
+        "TB_operator_max_abs": {
+          "r1_angstrom": 5.551115123125783e-16,
+          "r3_angstrom": 4.996003618165921e-16,
+          "r2_angstrom": 4.996003610813204e-16,
+          "H_eV": 4.796163466380676e-14
+        },
+        "orbitals": 18
+      }
+    ],
+    "status": "FOUR_INSTALLED_ASSETS_CURRENT_READER_PASS",
+    "source_manifest": "8311ffc1ceda424088a959bfe374ad1a855aa9c5ccc9786422582f4ab212efd0",
+    "package_version": "1.2.0",
+    "new_responses": 0
+  },
+  "ordinary_config_check": {
+    "status": "ALL154_CONFIGS_PASS",
+    "inputs": 154,
+    "source_manifest": "8311ffc1ceda424088a959bfe374ad1a855aa9c5ccc9786422582f4ab212efd0",
+    "scientific_execution": false
+  },
+  "source_stat_unchanged": true,
+  "privacy_scan": {
+    "mode": "full raw-byte streaming fixed-pattern check while packing",
+    "patterns": [
+      "absolute user-home prefix",
+      "mounted-volume prefix",
+      "Unix home prefix",
+      "PEM generic/RSA private-key headers"
+    ],
+    "hits": {
+      "Materials/GeS/model_tb.dat": {},
+      "Materials/GeS/operators.h5": {},
+      "Materials/Fe/model_tb.dat": {},
+      "Materials/Fe/operators.h5": {}
+    },
+    "qualification": "LIMITED_PATTERN_SCAN_NOT_COMPLETE_SECRET_OR_RIGHTS_AUDIT"
+  },
+  "resource": {
+    "request_cpu": 3,
+    "request_rss_gib": 32,
+    "request_seconds": 1800,
+    "samples": 120,
+    "sampled_peak_rss_kib": 11803680,
+    "last_sample_elapsed_seconds": 120.56449616607279,
+    "host_swapouts_pages": [
+      88
+    ],
+    "complete_identity_count": 6,
+    "strictly_released": true,
+    "canonical_close_revision": 597,
+    "peer_allocations_preserved": true
+  },
+  "new_responses": 0,
+  "source_414_rejection": {
+    "submissions": 0,
+    "reason": "original lifecycle executable pin missing; original414 frozen request retained; independent415 used Python/Julia binary pins"
+  },
+  "wrapper_warnings": "Julia1.13 emitted world-age warnings for the private check helper include; actual154 checks completed/root0; no WN source changed",
+  "public_download": "NOT_RUN_NEW_ASSETS_NOT_PUBLISHED",
+  "public_upload": false,
+  "rights": "NOT_CONFIRMED: GeS/Fe owner permission, data license, attribution; separate THG third-party digitization determination",
+  "scientific_boundaries": {
+    "GeS_jerk_xxxx": "FAIL original1% mesh test; no new response",
+    "chapter12_Z": "NOT_CONVERGED; material qualification not established",
+    "THG": "finite valley, budget terminations, paper prescription differs, two expressions differ, not full-spectrum convergence"
+  },
+  "evidence_hashes": {
+    "report.json": "8d901664b8472618c06afcd4d1ff4cf85685e2ec5dd10f36c4c8f74f2dc7758b",
+    "pack-report.json": "39de27bb78ed81b741d5a12a60efbc8d5aa1d243a77db0cc2b4d725925395e01",
+    "install-report.json": "a79784564f101d80dd185a247ebad4ffd63c2d9611194376e50d1fb5c1d5bb62",
+    "reader-report.json": "c63a15f1543865d007e796c106d54b6303f668134949a553d09e84aeee21fbc2",
+    "inputs-report.json": "7f195efa11f57fb7601e518a969aec0898b9a06b60e2cb67f1355af6a2a841bb",
+    "resources.jsonl": "841b3fb62d2bece4c76a4bab220b3b10bfd83125478160ab6a244b19c86314f1",
+    "exit.json": "32805d78ff54ea50f571fd021844afd34662c083c22bdc4c996dc2536b698aa1"
+  },
+  "strict_release_evidence_sha256": "51879d221c680bb9e0c19269c031b3048a4019d7c264f1cb41fc8102e0930da5",
+  "source_payload_verified": 1526
+}

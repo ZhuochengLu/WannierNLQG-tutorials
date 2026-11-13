@@ -1,27 +1,38 @@
 {
-  "mode": "single-map",
-  "metadata": "../results/reference/kslice_zeeman_interband_berry_curvature_conventional/metadata.txt",
-  "panels": [
-    {
-      "id": "real_part",
-      "real": "../results/reference/kslice_zeeman_interband_berry_curvature_conventional/GeS_zibck_conv.dat",
-      "title": "Zeeman Interband Berry Curvature",
-      "order": 1
-    }
-  ],
-  "coordinate": "centered",
-  "projection": "intrinsic-plane",
-  "periodic_centered": true,
-  "part": "real",
-  "norm": "diverging",
-  "percentile": 99.5,
-  "cmap": "RdBu_r",
-  "colorbar_label": "native output units",
   "output": {
-    "stem": "../figures/kslice_zeeman_interband_berry_curvature_conventional",
+    "stem": "kslice_zeeman_interband_berry_curvature_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "map",
+    "data": "../data/model_zibck_conv-8e083ab5.dat",
+    "transform": [
+      "fftshift",
+      "transpose"
+    ],
+    "extent": [
+      -0.5,
+      0.5,
+      -0.5,
+      0.5
+    ],
+    "aspect": "equal",
+    "xlabel": "$u$ along $\\bm{v}_1$",
+    "ylabel": "$v$ along $\\bm{v}_2$",
+    "title": "Zeeman Interband Berry Curvature",
+    "colorbar_label": "native output units",
+    "color": {
+      "kind": "diverging",
+      "cmap": "RdBu_r",
+      "limit": 0.004974216795361603
+    }
   }
 }

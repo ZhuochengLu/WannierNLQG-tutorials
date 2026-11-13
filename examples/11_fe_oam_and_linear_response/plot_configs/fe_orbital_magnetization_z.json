@@ -1,0 +1,187 @@
+{
+  "output": {
+    "stem": "fe_orbital_magnetization_z",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "kind": "grid",
+    "rows": 1,
+    "cols": 3,
+    "figsize": [
+      13,
+      4.2
+    ],
+    "panels": [
+      {
+        "kind": "line",
+        "label": "(a)",
+        "title": "Occupied self rotation",
+        "xlabel": "$T$ (K)",
+        "ylabel": "$M_z^{\\mathrm{SRocc}}$ ($\\mu_B$/cell)",
+        "xticks": [
+          0
+        ],
+        "xlim": [
+          -0.5,
+          0.5
+        ],
+        "ylim": [
+          -0.065,
+          -0.05
+        ],
+        "legend": true,
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/orbital_magnetization_z-1409df76b0.dat",
+            "x_column": 0,
+            "y_column": 1,
+            "label": "Conventional",
+            "color": "#104E8B",
+            "linestyle": "None",
+            "marker": "o",
+            "markersize": 6
+          },
+          {
+            "data": "../data/orbital_magnetization_z-1409df76b0.dat",
+            "x_column": 0,
+            "y_column": 4,
+            "label": "Projector",
+            "color": "#FF7F24",
+            "linestyle": "None",
+            "marker": "x",
+            "markersize": 6
+          }
+        ],
+        "yticks": [
+          -0.064,
+          -0.06,
+          -0.056,
+          -0.052
+        ],
+        "yticklabels": [
+          "\\textnormal{-0.064}",
+          "\\textnormal{-0.060}",
+          "\\textnormal{-0.056}",
+          "\\textnormal{-0.052}"
+        ]
+      },
+      {
+        "kind": "line",
+        "label": "(b)",
+        "title": "Occupied center motion",
+        "xlabel": "$T$ (K)",
+        "ylabel": "$M_z^{\\mathrm{CMocc}}$ ($\\mu_B$/cell)",
+        "xticks": [
+          0
+        ],
+        "xlim": [
+          -0.5,
+          0.5
+        ],
+        "ylim": [
+          0.033,
+          0.043
+        ],
+        "legend": true,
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/orbital_magnetization_z-1409df76b0.dat",
+            "x_column": 0,
+            "y_column": 2,
+            "label": "Conventional",
+            "color": "#104E8B",
+            "linestyle": "None",
+            "marker": "o",
+            "markersize": 6
+          },
+          {
+            "data": "../data/orbital_magnetization_z-1409df76b0.dat",
+            "x_column": 0,
+            "y_column": 5,
+            "label": "Projector",
+            "color": "#FF7F24",
+            "linestyle": "None",
+            "marker": "x",
+            "markersize": 6
+          }
+        ],
+        "yticks": [
+          0.034,
+          0.036,
+          0.038,
+          0.04,
+          0.042
+        ],
+        "yticklabels": [
+          "\\textnormal{0.034}",
+          "\\textnormal{0.036}",
+          "\\textnormal{0.038}",
+          "\\textnormal{0.040}",
+          "\\textnormal{0.042}"
+        ]
+      },
+      {
+        "kind": "line",
+        "label": "(c)",
+        "title": "Total",
+        "xlabel": "$T$ (K)",
+        "ylabel": "$M_z$ ($\\mu_B$/cell)",
+        "xticks": [
+          0
+        ],
+        "xlim": [
+          -0.5,
+          0.5
+        ],
+        "ylim": [
+          -0.025,
+          -0.015
+        ],
+        "legend": true,
+        "legend_frame": true,
+        "series": [
+          {
+            "data": "../data/orbital_magnetization_z-1409df76b0.dat",
+            "x_column": 0,
+            "y_column": 3,
+            "label": "Conventional",
+            "color": "#104E8B",
+            "linestyle": "None",
+            "marker": "o",
+            "markersize": 6
+          },
+          {
+            "data": "../data/orbital_magnetization_z-1409df76b0.dat",
+            "x_column": 0,
+            "y_column": 6,
+            "label": "Projector",
+            "color": "#FF7F24",
+            "linestyle": "None",
+            "marker": "x",
+            "markersize": 6
+          }
+        ],
+        "yticks": [
+          -0.024,
+          -0.022,
+          -0.02,
+          -0.018,
+          -0.016
+        ],
+        "yticklabels": [
+          "\\textnormal{-0.024}",
+          "\\textnormal{-0.022}",
+          "\\textnormal{-0.020}",
+          "\\textnormal{-0.018}",
+          "\\textnormal{-0.016}"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+# Current WannierNLQG 1.2.0 example; original teaching mesh and physical parameters.
+[ model ]
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 2
+vector_1 = [1.0, 0.0, 0.0]
+vector_2 = [0.0, 1.0, 0.0]
+
+[ response.tasks ]
+
+[ response.tasks.kslice_shift_vector_geometric_loop ]
+kind = "shift_vector"
+method = "Geometric_Loop"
+
+[ response.tasks.kslice_shift_vector_geometric_loop.numerics ]
+degeneracy_threshold = 0.002
+finite_difference_step = 0.0001
+
+[ response.tasks.kslice_shift_vector_geometric_loop.observable ]
+component = [2, 2, 2]
+conduction = [21, 22]
+kind = "transition"
+valence = [19, 20]

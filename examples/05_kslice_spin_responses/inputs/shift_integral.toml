@@ -1,0 +1,28 @@
+[ model ]
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "bz_mesh"
+spatial_dimension = 2
+
+[ response.tasks ]
+
+[ response.tasks.integral_shift_spin_fullbands_check ]
+fermi_energy_ev = -2.5
+kind = "shift_spin_current"
+photon_energies_ev = [3.0150753768844223]
+temperature_k = 0.0
+
+[ response.tasks.integral_shift_spin_fullbands_check.numerics ]
+denominator_regularization = 0.001
+broadening = 0.06

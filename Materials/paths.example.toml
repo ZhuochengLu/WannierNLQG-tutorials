@@ -1,0 +1,6 @@
+# Private bindings for the one accepted pair per material. No numerical settings.
+[paths]
+"Materials/Fe/model_tb.dat" = "../user-materials/Fe/model_tb.dat"
+"Materials/Fe/operators.h5" = "../user-materials/Fe/operators.h5"
+"Materials/GeS/model_tb.dat" = "../user-materials/GeS/model_tb.dat"
+"Materials/GeS/operators.h5" = "../user-materials/GeS/operators.h5"

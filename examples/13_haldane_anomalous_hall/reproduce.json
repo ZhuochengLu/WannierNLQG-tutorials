@@ -1,0 +1,824 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "tb_topological",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological.toml",
+      "task_ids": [
+        "tb_topological"
+      ],
+      "input_sha256": "b7bdf339db33a82021bb4282cbaca4ecd6979122e32f6d3e04f95789b933913e",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/tb/topological",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "b7bdf339db33a82021bb4282cbaca4ecd6979122e32f6d3e04f95789b933913e",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_berry_curvature.dat": "9e624c7ace8ac5af80909ea72ece78e20ad4b11e961efc74a729ee91ccf69d6e",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_drude.dat": "3c8f23b5811b934523eca7f31c93c36f81acf981d94f842323a758814326a9fe",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_quantum_metric.dat": "3b3b9478c6808fb9ff1beee9f32cef55959fc1b748b87c113204dc2f853a1310",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_total.dat": "eb5fb4577ee0b765954f2a4a38618aea345bacaeb7007ffdda6a19fc8782c45a"
+        }
+      }
+    },
+    {
+      "case": "analytic_topological",
+      "input": "examples/13_haldane_anomalous_hall/inputs/analytic_topological.toml",
+      "task_ids": [
+        "analytic_topological"
+      ],
+      "input_sha256": "427b5dac2e5fa5af50bb65efe2296a53c6a1a507c4785dcbb62b0ff501d748d3",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/analytic/topological",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "427b5dac2e5fa5af50bb65efe2296a53c6a1a507c4785dcbb62b0ff501d748d3",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_berry_curvature.dat": "3cf10f62aedd1dea6287ce37a5f276de8aa843c761e666611c169cee5f314c07",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_drude.dat": "4e254c6fe72fede3fc53d0f931674ddaddb14b1a82565eeeaa5585dc7b93de45",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_quantum_metric.dat": "2c2c7486063eae27e6c6f5ac6f7c58813938a03b9834febcd4037bbd7e14f3a1",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_total.dat": "06f5419e1e93e32b84a1b1398a70a09814cec0e648032b643f3bd3b22d9368c1"
+        }
+      }
+    },
+    {
+      "case": "tb_trivial",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_trivial.toml",
+      "task_ids": [
+        "tb_trivial"
+      ],
+      "input_sha256": "71b6f4141327ba1cb8635d7b6797c65646d9164ab737fc59376f560eef46da3a",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/tb/trivial",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "71b6f4141327ba1cb8635d7b6797c65646d9164ab737fc59376f560eef46da3a",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_berry_curvature.dat": "564314bd6f5da301150874cff8bd886c03c92741c75277bfa6f0003634b3a527",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_drude.dat": "d44b65421474c58c50ba5afbe0433bb9d8dee8e1a5c426641b6c18342577d27d",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_quantum_metric.dat": "16005829360a6242657e9f8b9545826b80714367626cbc9e91ceb1ea1cf8a103",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_total.dat": "b4968c377af53426a3cb23f4a04b4592121438b13f12e77d19b5d1a349f6da1a"
+        }
+      }
+    },
+    {
+      "case": "analytic_trivial",
+      "input": "examples/13_haldane_anomalous_hall/inputs/analytic_trivial.toml",
+      "task_ids": [
+        "analytic_trivial"
+      ],
+      "input_sha256": "d824652f6bcc621d95638c4278ab3024e226cc008352fc73725c2b3af3b7ae5f",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/analytic/trivial",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "d824652f6bcc621d95638c4278ab3024e226cc008352fc73725c2b3af3b7ae5f",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_berry_curvature.dat": "5b1dee11a18601626c426c080e2749a39e4aa3ec56011de3e5757f94b829f9a1",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_drude.dat": "1c56edf2b6a88c885b37e7079ecd992ff73c8567477076fd80f3b9c19228b2f9",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_quantum_metric.dat": "6eca142c5f7972613b2fc1bce25b86ea326f1896c015b53ba1976c071d32fd91",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_total.dat": "37a35244523e76fc511404c799b951674b950f8edf08dd81a335abd61f7bc027"
+        }
+      }
+    },
+    {
+      "case": "tb_reversed",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_reversed.toml",
+      "task_ids": [
+        "tb_reversed"
+      ],
+      "input_sha256": "f702acdd53616db0b72bf0374cc4f5909764b91ae3e7f6cddc7294d0220fb315",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/tb/reversed",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "f702acdd53616db0b72bf0374cc4f5909764b91ae3e7f6cddc7294d0220fb315",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_berry_curvature.dat": "d0904746bb90b0530ac1cc6bd23330f467268ef06d084650d2de27e14ba5ce79",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_drude.dat": "4d3546126f86b4da8d062a5c40b78433727a639d2b418e56658ab21b03c3bce9",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_quantum_metric.dat": "a66d34c89b9d793a25ac3dfa0da601ffa29edc37865b89073d08ab06ed92d3c1",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_total.dat": "02b375e20895d4573a98acbc8448afe98be1faaefdd7407588d10d7ad390304c"
+        }
+      }
+    },
+    {
+      "case": "analytic_reversed",
+      "input": "examples/13_haldane_anomalous_hall/inputs/analytic_reversed.toml",
+      "task_ids": [
+        "analytic_reversed"
+      ],
+      "input_sha256": "57a2cdd71491a5c780aad0130cc5cabbb4665ee02669a0dd74dc2061b58fe742",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/analytic/reversed",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "57a2cdd71491a5c780aad0130cc5cabbb4665ee02669a0dd74dc2061b58fe742",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_berry_curvature.dat": "caf9d6eb63342192de64dba7085c2f43e1dcb320f52c13c0631c00f1e77f45fa",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_drude.dat": "cd8097664960d4c54161b4befc97abc07ca2b8541b451f93067b0cab3831cec0",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_quantum_metric.dat": "c1c09beb7981caeb1bb821e58ab6acbe2b72f981d6d5d1ed9dc0dcfcc40d00c7",
+          "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_total.dat": "13636e15451405b6515e9bddfb45d3e0c2adfbd6ea22bc71450b062945892439"
+        }
+      }
+    },
+    {
+      "case": "tb_topological_n61_g002",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n61_g002.toml",
+      "task_ids": [
+        "tb_topological_n61_g002"
+      ],
+      "input_sha256": "4f9e03aef6f532168499373248c70a3b372e72db03838aa20ab72caeb9e442a0",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/tb/topological",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            61,
+            61,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "4f9e03aef6f532168499373248c70a3b372e72db03838aa20ab72caeb9e442a0",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_berry_curvature.dat": "bfde648ce58272201e23524fc907009b92b6cdef8738d2dc495741bc2a8a3917",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_drude.dat": "18e75097a3cb7008337de23ad744155b4485611c20327de4a5b2390e0bf25ca9",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_quantum_metric.dat": "3fd484a339c6470c0fc34c7eac0363092f972fa7414110b7fd91616eb6ca70c4",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_total.dat": "e034a046a0546de7276d2c3caf2a79deb283b34fa1e35f0f3b648bf7e2d8101a"
+        }
+      }
+    },
+    {
+      "case": "tb_topological_n181_g002",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n181_g002.toml",
+      "task_ids": [
+        "tb_topological_n181_g002"
+      ],
+      "input_sha256": "1f8116ddf0342cc8faa6af1805140208e05de76e907d89d711cbf6313b634c25",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/tb/topological",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            181,
+            181,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "1f8116ddf0342cc8faa6af1805140208e05de76e907d89d711cbf6313b634c25",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_berry_curvature.dat": "6ec7f966af3a6ce5e183808a9de9fea74290dcfed5eca1602d4e4dd10b72f45f",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_drude.dat": "82f7663ccd7821d75a13ad82d9271c35e3326ea742401f8da066d8698ad6cd4d",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_quantum_metric.dat": "d79bce1ace6a059d38b5c4662c34844d8f4171a14fa4b3f63f055ddf1790b082",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_total.dat": "0a996489b69f6e1647b15443e7d924c72d7e5cc7dafc5376c3a9cd0f828677bc"
+        }
+      }
+    },
+    {
+      "case": "tb_topological_n121_g001",
+      "input": "examples/13_haldane_anomalous_hall/inputs/tb_topological_n121_g001.toml",
+      "task_ids": [
+        "tb_topological_n121_g001"
+      ],
+      "input_sha256": "15ebf0d75c4be0f551ce5b140db6f0a7ea77f0dedc85a8f7849ec16967d36a4e",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "haldane/tb/topological",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            121,
+            121,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "15ebf0d75c4be0f551ce5b140db6f0a7ea77f0dedc85a8f7849ec16967d36a4e",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_berry_curvature.dat": "edd31f53e56a8ac4f2627caff6aa6d7347788801fb754ffb44d7410a2da9c0c8",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_drude.dat": "3d1bfdf852ce0f96af2a39b2aa8767bba87ee6fb2d64efeb52f542982f0a81f3",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_quantum_metric.dat": "333ea982ab8ab6ca9d0cfd60464ac70fe536b590c996e5c6d03192edf86e128a",
+          "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_total.dat": "0b8bf0517f5ec97ea6f59c2c5c6b7eefa8d59e47152f9bdde1ecc55a3090f4f6"
+        }
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "chapter_reference_figures",
+      "chapter": "13_haldane_anomalous_hall",
+      "engine": "specialized_script",
+      "data": [
+        "examples/13_haldane_anomalous_hall/data/bands_gamma_k_m_kprime_gamma.tsv",
+        "examples/13_haldane_anomalous_hall/data/hall_curves.tsv",
+        "examples/13_haldane_anomalous_hall/data/reference.json",
+        "examples/13_haldane_anomalous_hall/data/convergence.tsv"
+      ],
+      "figures": [
+        "examples/13_haldane_anomalous_hall/figures/haldane_bands.png",
+        "examples/13_haldane_anomalous_hall/figures/haldane_convergence.png",
+        "examples/13_haldane_anomalous_hall/figures/haldane_hall_vs_mu.png",
+        "examples/13_haldane_anomalous_hall/figures/haldane_phase_diagram.png",
+        "examples/13_haldane_anomalous_hall/figures/haldane_bands.pdf",
+        "examples/13_haldane_anomalous_hall/figures/haldane_convergence.pdf",
+        "examples/13_haldane_anomalous_hall/figures/haldane_hall_vs_mu.pdf",
+        "examples/13_haldane_anomalous_hall/figures/haldane_phase_diagram.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/13_haldane_anomalous_hall/inputs/tb_topological.toml",
+        "examples/13_haldane_anomalous_hall/inputs/analytic_topological.toml",
+        "examples/13_haldane_anomalous_hall/inputs/tb_trivial.toml",
+        "examples/13_haldane_anomalous_hall/inputs/analytic_trivial.toml",
+        "examples/13_haldane_anomalous_hall/inputs/tb_reversed.toml",
+        "examples/13_haldane_anomalous_hall/inputs/analytic_reversed.toml",
+        "examples/13_haldane_anomalous_hall/inputs/tb_topological_n61_g002.toml",
+        "examples/13_haldane_anomalous_hall/inputs/tb_topological_n181_g002.toml",
+        "examples/13_haldane_anomalous_hall/inputs/tb_topological_n121_g001.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Current public725 actual execution at all original case meshes; saved native results and deterministic display conversion retained.",
+      "data_formats": {},
+      "script": "examples/13_haldane_anomalous_hall/plot_reference.py",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 210,
+        "parent_state": "RUN_FAILED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": true
+      },
+      "provenance": {
+        "original_figure_id": "chapter_reference_figures",
+        "current_verified_public_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "actual_current_case_executions": {
+          "tb_topological": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "b7bdf339db33a82021bb4282cbaca4ecd6979122e32f6d3e04f95789b933913e",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_berry_curvature.dat": "9e624c7ace8ac5af80909ea72ece78e20ad4b11e961efc74a729ee91ccf69d6e",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_drude.dat": "3c8f23b5811b934523eca7f31c93c36f81acf981d94f842323a758814326a9fe",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_quantum_metric.dat": "3b3b9478c6808fb9ff1beee9f32cef55959fc1b748b87c113204dc2f853a1310",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological/linear_transport_total.dat": "eb5fb4577ee0b765954f2a4a38618aea345bacaeb7007ffdda6a19fc8782c45a"
+            }
+          },
+          "analytic_topological": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "427b5dac2e5fa5af50bb65efe2296a53c6a1a507c4785dcbb62b0ff501d748d3",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_berry_curvature.dat": "3cf10f62aedd1dea6287ce37a5f276de8aa843c761e666611c169cee5f314c07",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_drude.dat": "4e254c6fe72fede3fc53d0f931674ddaddb14b1a82565eeeaa5585dc7b93de45",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_quantum_metric.dat": "2c2c7486063eae27e6c6f5ac6f7c58813938a03b9834febcd4037bbd7e14f3a1",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_topological/linear_transport_total.dat": "06f5419e1e93e32b84a1b1398a70a09814cec0e648032b643f3bd3b22d9368c1"
+            }
+          },
+          "tb_trivial": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "71b6f4141327ba1cb8635d7b6797c65646d9164ab737fc59376f560eef46da3a",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_berry_curvature.dat": "564314bd6f5da301150874cff8bd886c03c92741c75277bfa6f0003634b3a527",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_drude.dat": "d44b65421474c58c50ba5afbe0433bb9d8dee8e1a5c426641b6c18342577d27d",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_quantum_metric.dat": "16005829360a6242657e9f8b9545826b80714367626cbc9e91ceb1ea1cf8a103",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_trivial/linear_transport_total.dat": "b4968c377af53426a3cb23f4a04b4592121438b13f12e77d19b5d1a349f6da1a"
+            }
+          },
+          "analytic_trivial": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "d824652f6bcc621d95638c4278ab3024e226cc008352fc73725c2b3af3b7ae5f",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_berry_curvature.dat": "5b1dee11a18601626c426c080e2749a39e4aa3ec56011de3e5757f94b829f9a1",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_drude.dat": "1c56edf2b6a88c885b37e7079ecd992ff73c8567477076fd80f3b9c19228b2f9",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_quantum_metric.dat": "6eca142c5f7972613b2fc1bce25b86ea326f1896c015b53ba1976c071d32fd91",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_trivial/linear_transport_total.dat": "37a35244523e76fc511404c799b951674b950f8edf08dd81a335abd61f7bc027"
+            }
+          },
+          "tb_reversed": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "f702acdd53616db0b72bf0374cc4f5909764b91ae3e7f6cddc7294d0220fb315",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_berry_curvature.dat": "d0904746bb90b0530ac1cc6bd23330f467268ef06d084650d2de27e14ba5ce79",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_drude.dat": "4d3546126f86b4da8d062a5c40b78433727a639d2b418e56658ab21b03c3bce9",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_quantum_metric.dat": "a66d34c89b9d793a25ac3dfa0da601ffa29edc37865b89073d08ab06ed92d3c1",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_reversed/linear_transport_total.dat": "02b375e20895d4573a98acbc8448afe98be1faaefdd7407588d10d7ad390304c"
+            }
+          },
+          "analytic_reversed": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "57a2cdd71491a5c780aad0130cc5cabbb4665ee02669a0dd74dc2061b58fe742",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_berry_curvature.dat": "caf9d6eb63342192de64dba7085c2f43e1dcb320f52c13c0631c00f1e77f45fa",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_drude.dat": "cd8097664960d4c54161b4befc97abc07ca2b8541b451f93067b0cab3831cec0",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_quantum_metric.dat": "c1c09beb7981caeb1bb821e58ab6acbe2b72f981d6d5d1ed9dc0dcfcc40d00c7",
+              "examples/13_haldane_anomalous_hall/data/current725/analytic_reversed/linear_transport_total.dat": "13636e15451405b6515e9bddfb45d3e0c2adfbd6ea22bc71450b062945892439"
+            }
+          },
+          "tb_topological_n61_g002": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "4f9e03aef6f532168499373248c70a3b372e72db03838aa20ab72caeb9e442a0",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_berry_curvature.dat": "bfde648ce58272201e23524fc907009b92b6cdef8738d2dc495741bc2a8a3917",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_drude.dat": "18e75097a3cb7008337de23ad744155b4485611c20327de4a5b2390e0bf25ca9",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_quantum_metric.dat": "3fd484a339c6470c0fc34c7eac0363092f972fa7414110b7fd91616eb6ca70c4",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n61_g002/linear_transport_total.dat": "e034a046a0546de7276d2c3caf2a79deb283b34fa1e35f0f3b648bf7e2d8101a"
+            }
+          },
+          "tb_topological_n181_g002": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "1f8116ddf0342cc8faa6af1805140208e05de76e907d89d711cbf6313b634c25",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_berry_curvature.dat": "6ec7f966af3a6ce5e183808a9de9fea74290dcfed5eca1602d4e4dd10b72f45f",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_drude.dat": "82f7663ccd7821d75a13ad82d9271c35e3326ea742401f8da066d8698ad6cd4d",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_quantum_metric.dat": "d79bce1ace6a059d38b5c4662c34844d8f4171a14fa4b3f63f055ddf1790b082",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n181_g002/linear_transport_total.dat": "0a996489b69f6e1647b15443e7d924c72d7e5cc7dafc5376c3a9cd0f828677bc"
+            }
+          },
+          "tb_topological_n121_g001": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "15ebf0d75c4be0f551ce5b140db6f0a7ea77f0dedc85a8f7849ec16967d36a4e",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_berry_curvature.dat": "edd31f53e56a8ac4f2627caff6aa6d7347788801fb754ffb44d7410a2da9c0c8",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_drude.dat": "3d1bfdf852ce0f96af2a39b2aa8767bba87ee6fb2d64efeb52f542982f0a81f3",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_quantum_metric.dat": "333ea982ab8ab6ca9d0cfd60464ac70fe536b590c996e5c6d03192edf86e128a",
+              "examples/13_haldane_anomalous_hall/data/current725/tb_topological_n121_g001/linear_transport_total.dat": "0b8bf0517f5ec97ea6f59c2c5c6b7eefa8d59e47152f9bdde1ecc55a3090f4f6"
+            }
+          }
+        },
+        "bounded_Hall_reuse_without_new_spectrum": {},
+        "current_display_input_sha256": {
+          "examples/13_haldane_anomalous_hall/data/bands_gamma_k_m_kprime_gamma.tsv": "6855c363b43006035bf0895110e9b725d0d09bd6ec76d9238ac586bcd8c77596",
+          "examples/13_haldane_anomalous_hall/data/hall_curves.tsv": "8620ce538e00e4a498c56485a83cfefa3cf585727b5e4b8a502f9d252f46da5e",
+          "examples/13_haldane_anomalous_hall/data/reference.json": "0f68008e82fbcbaa4edb0c2a8dbc65e335c5c0ec57c52c0b18b8a028da2dc78b",
+          "examples/13_haldane_anomalous_hall/data/convergence.tsv": "3ae7700f38d7b1062265910ccc5fa8c26fb21f6b4561e0e91060349534290ad6"
+        },
+        "retained_source_record": {
+          "original_figure_id": "chapter_reference_figures",
+          "original_data_sha256": {
+            "examples/13_haldane_anomalous_hall/validation/bands_gamma_k_m_kprime_gamma.tsv": "6855c363b43006035bf0895110e9b725d0d09bd6ec76d9238ac586bcd8c77596",
+            "examples/13_haldane_anomalous_hall/validation/hall_curves.tsv": "e670187c0f0a66ae07834fa6734ed235324a885f0abb616e450ff6751bdfbd5f",
+            "examples/13_haldane_anomalous_hall/validation/reference.json": "2d2661a743a954f43bbc2f8357450f22e392541d5a041e667064d778039ed93a",
+            "examples/13_haldane_anomalous_hall/validation/convergence.tsv": "cf9e0973bf71a58fdb5ac13c66d90a8dc22dfc11c013489a3423c402925e28fe",
+            "examples/13_haldane_anomalous_hall/validation/smoke.json": "4ff549ce687a9f5cf7ef947f5d72464784625a9e5751dd6d3e68572970ac66b9",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_berry_curvature.dat": "a9254490dffeee99b1b88ef4506b15384ef976e5bebb6995392a62fbd47ea11e",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/summary.json": "0053602a58cb53b1d507a7d28727ba84f2716ff5b62cd778766e1cf625e21d3c",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/metadata.txt": "1133d0f78a236be11852b1ed4ee128c25cdd9814be939d403c6157fe1d50bb7c",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_drude.dat": "70855517be327c18760976bce50aeec5151a016af06e2702ee312251e299c860",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_total.dat": "a7328d01d8a9540781d0fcc93c24ceb44a7b16d687828a91c16e794ac4f543ff",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/spectral_response_metadata.txt": "406fea1faa9723cefe41f04883f0ababd97e7dee1c0fb170627b1428edb98096",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_quantum_metric.dat": "30ad36ceb4eff378db16cafda5b92c72d6e80e7556e6adae434086ab34c8b8a4",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_berry_curvature.dat": "83a648a5d7647135e879bb1f4007166fd56d0b386032d421f6f843c934ab6379",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/summary.json": "2ba491fa28a5060be4d4322cc5e85034ecf3240024b4d7af4fd40a386cde818d",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/metadata.txt": "af010edc71a1f0d829ef4502fa9ebca2bdeb15eb45cb6ab2eb18b2e08c04915b",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_drude.dat": "c8071aa16cc71a696f25c85c80259c2d2f2e6dd1721f13fa24ec379244b0560c",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_total.dat": "0bf0a90e07b981cfa8298848fa1b4579b39cd6c7aeeee483b7f6505da55a5694",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/spectral_response_metadata.txt": "5a2dbaf0e737b872d7c94ba752cb2f9247b5f2e8f48612f8ff575cf1f3dcdaec",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_quantum_metric.dat": "72fb6f1c22bf36113383f343a86aeadb7682704daea08183d4f13b1f3ffaa03b",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_berry_curvature.dat": "e0b9e40e98ab1ff7f80fe77c4a7238e2cd13eb5038a64c77fc249cc6f73ec279",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/summary.json": "51dc4cd7e218b4e424ff9ebdd63848ef43d805661e61d9ee0dde14017049e9c7",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/metadata.txt": "33d574c61f8452448bce68dc93414c1b6f2ab35e91d7cab03fadeab12636e71b",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_drude.dat": "cc77556b5ba6e41e6dc7104f390ae1c39016f76fda4eb929edbd0f949ae9fc43",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_total.dat": "cb5d3d8b412c4df993ddd4a3db6aa0e600a6f79a1855be3f61810f53bbaf581a",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/spectral_response_metadata.txt": "2fcebde5ee252ccde03c36eeac28dcdbc9e4edf263ec50007ee4499eb3e8f5bb",
+            "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_quantum_metric.dat": "f40f8c82cbc1274163594d55d5c573fbed958305f2fe476c64effd4f72acab31",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_berry_curvature.dat": "2bb57e85890958d2fb98e759b7595240da9b2aa1c67745b0fb8eeef98003e3cb",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/summary.json": "de7a95f85c90f7ed6cecca0f4c081b3162d293b6741f60ba17781401c01b51b0",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/metadata.txt": "301898517b6f9bbb97b1018a15923f377cd196eb286a4fd09045e70bc33840ae",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_drude.dat": "6b8b7295fed2ed49c4990bd227257ffaaa05c415ae25d8fff4d3ba5b69435909",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_total.dat": "af311c6406e7439697ebbcd77c01a235898b272acf0350f12f53d032acffef73",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/spectral_response_metadata.txt": "bfb96429e8e5e4deef594f51b2f755c339ff5584eda7f748e6596ac74305b9f1",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_quantum_metric.dat": "f338428f2d436ba57e5c2efbeb27ede893962e5db4e4b6f49130c8b6c3f5cd41",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_berry_curvature.dat": "5843868b00bd204cf84ab85c25add5ddd2fb4bc1bd4d3b44e9a1be46264c8a6e",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/summary.json": "ae52da5e00119cdf91c2f03f1430b9555f99165397b9c14526c5dca32f99a793",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/metadata.txt": "7191f4ce93c4600d009c25f747be2e12aba9ce9701ad25ea73cfc9d86d51de94",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_drude.dat": "dad9f187e41c1bd05e59e21f7259bbd949ad6b20563578dd5cc49af5c1b3dfff",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_total.dat": "258b4bb33514f58036e2b71d911260247b0593e8e6fee9deca3e5494e5b447e0",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/spectral_response_metadata.txt": "f849e6cfefc67d5f6dd7bc954e4d833fb93e9961c2554d34867a580f373505fb",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_quantum_metric.dat": "2cb403ccd9899b0ed2aaaa6470f86636b0ff93e6d9195b242d518e1b598ede12",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_berry_curvature.dat": "1d73eec01507b76f24ed18994000ad06d9ae2c112a861d4b5e036cebe5be4291",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/summary.json": "ec2f445a9235cbd0d12f0c490a47652c2c69cbce523902c8783114ff75d6d315",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/metadata.txt": "3d20c95bb57227ff0cfdf3e3b52f6b8b5db7be3205032d63965adad907ced073",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_drude.dat": "cf2b07385ac99ac142af2a79c3e6ce7e2851af1100a06c1897034b2a8998a9ab",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_total.dat": "f98572fc44c49f2dbe7bd669ba447aa0078356b236c32aa66740de4307763993",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/spectral_response_metadata.txt": "6551eeddefd5666f8e4b699ec241d246773aedc5011c525c493b0b394e772807",
+            "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_quantum_metric.dat": "ec30e718445f32a3af210eb689c7d33a0bdee4b7c54776491f11b03ad40bef42",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_berry_curvature.dat": "a04fab9a4e727d86e7002723761f91bfeb1031327505061c1c49e85550ac2f99",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/summary.json": "6749779a52bea23f8559b825d9e2aa6c7a31ed293383bdf8b58294057c70cabf",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/metadata.txt": "7afde514cb03e0a417809732876dcddaace6eaa349f6c16437aad68ae68d356b",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_drude.dat": "52f1fb8de0c2ad84d9764709057b140b0eb1ebfa8c13c8ea845a0e1807da6fe8",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_total.dat": "cab2acbac73cd6934c616b870f0a12f5eb137becd47dfbcd824056746797e93e",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/spectral_response_metadata.txt": "7e16f579544565aded6611dba603862021170630b98e4deeb170f701ed9077f8",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_quantum_metric.dat": "263e1428940bb7a41a1adc8c6c4c593c0b31b22a79d91eb34c985016ef0a98a9",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_berry_curvature.dat": "219768818ed10a1893b9f1d322ea0bc52f83ebe241c94c2337ee2ff9dd61a117",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/summary.json": "fdcfd7f485b16f91d926076ccd749f1bb93628aec6035d5dd3f7143650b3dec2",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/metadata.txt": "72e48d3d318e2355f80c2f9aec5468e78954f9f3a8714673ce0418186cd88fdc",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_drude.dat": "6299d60a4bb0a28a2a1270b8c2adf73ae0f1e3010d68f6c9cdbe7139c14ad5b5",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_total.dat": "63abd21277bfc9f382824f600b7778092a88eee4eb77126757cd546f05d268cf",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/spectral_response_metadata.txt": "d2defc2ccacf871942586bfd7ded0efbee8bdfcf9e5530b5eefdd842912c6692",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_quantum_metric.dat": "d97f2241dfdefa2844412a5da6fb97c7c8a08d33f1c38929aba436cf9225c76d",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_berry_curvature.dat": "066bc0c9f03c9bfb9ea9627ec47e5d0a09944e6a048d49b4f40ba7753fee7d1c",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/summary.json": "c87564e5bcdf3c0848a4c9bdab1e4dd4b55f27647d6d5bdb30292eb754660341",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/metadata.txt": "1b5c1982fe2bf233bab1fbbca3060afd5cff95ddff388f264c772549d946325b",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_drude.dat": "70855517be327c18760976bce50aeec5151a016af06e2702ee312251e299c860",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_total.dat": "90ff14dbe338149c8f2779f521161b2546366f52bff08d673a9731f8e0f64035",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/spectral_response_metadata.txt": "047286792093bcc848223f3ed2fefe60afef277311f3a6e2044d8add119f2af9",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_quantum_metric.dat": "a9139fec25e597e4fb7bbf7b3baf17f029cfeae50b87c4e0bd599497af83446f",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_berry_curvature.dat": "8a5dd54141ba2fb6b4a6daaf37fec79caf2a3fe2dc776d6ea3874cccedaf3302",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/summary.json": "bfd02de021fba00e5e1e35dd6d873184454b46869fdce4cb9f8b0e1b324d9d89",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/metadata.txt": "4577dbb3159b909a0a76bdaaf30faa7c685a53a507559bed145619425cd769fb",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_drude.dat": "62fb50e4b81abe62bcc0778c192c0819fffd22a9d480dd6ad5642e8827e19d27",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_total.dat": "8546aef2fef8b6f69d27a3b00a59c8a513f8a658ef8d350c93f30838a4ba1686",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/spectral_response_metadata.txt": "ee943d6600c8041afcd3713fcb407b1eb56192fd2bf1b28acbbd15247b07e225",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_quantum_metric.dat": "1962889c83cf2c2c5108ba79a445970f996ac56b6bff67cd7b1bec77280811cf",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_berry_curvature.dat": "9846c678aa75a1d9dba692a18dbb367ef26365fc97418304695d1467216e4e52",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/summary.json": "06e5b72a95b24fa001d49996e4d2a14f634d2ed4183a27d4c95c388143f36d76",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/metadata.txt": "6a644aaf412eb5643945ef73449b4337bce940de10192549c4dcd6538917cb58",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_drude.dat": "fce815b327070ab0e81340b83dea17bd47a954f5be17406c4778b6ca590b7342",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_total.dat": "9e2eb8d20847e204d6dc9943565618eb10aead3e141f49f61810951a3489d5ee",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/spectral_response_metadata.txt": "1b630466e6035d1e704c6bdbaf6c4060b13bc41ee323b8e354078a4377ea3583",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_quantum_metric.dat": "a85f3ff8df21fd885e406813f31540ff082bfc52ee32bcaa582088fcbd25814e",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_berry_curvature.dat": "2ce6e80dc6a43c90a2b77a32e53bbfea22640135682849e15dc9f7a471d78312",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/summary.json": "8769bb58cddd3613d68c9d005d62d59643e4f16f173899af4f2fbfa35ba1cf51",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/metadata.txt": "fcadedeb9d44bc5059b613972f414b46a83c966f0ccb33fd835f2d5aad521949",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_drude.dat": "d745f44859facfc620282f273278693e1c6da1615928ab86ac736e31ca28e020",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_total.dat": "8aa9eb44455c9b61e7fac1649a7e767e486b7cf3a3cdeb72add1847362b9f506",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/spectral_response_metadata.txt": "4df4714020d631a25a4fa05a4112cabca454c83a96c699a5ae0bd6a17831eb83",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_quantum_metric.dat": "667658b2444aa1bd77107078fa0c8f7d8de60e3cb72c01c9da91e0c86371a1c3",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_berry_curvature.dat": "9093b43357fed76afe2adad0bb764969f654a2bed36cb7770b6d5a4c7260c410",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/summary.json": "08d71318ab0a7fa0b1c3f96b37bc564668a77f58ba155c85b6d489533a81da16",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/metadata.txt": "6db98b10a10de84ae9873148f3ed9795ec2701b864b85e9a1e86b0d7f7e6ad67",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_drude.dat": "c1351f9f6c2bfaf65ea83026d78534acd693d7d08d82d2988a5e371b07421669",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_total.dat": "a3e35ac60f76c6daaa2bd3c1c61614ec33d1aa542d6304104f2b93e39728db9b",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/spectral_response_metadata.txt": "12508d5600eff80225a38ce9cfcec66e092d800fd592beba6ed3b8646140cc61",
+            "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_quantum_metric.dat": "9915017c0c0d4da3b92a9c949ccaa432cd735e3c85b52f8bae459f966e77f45a",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_berry_curvature.dat": "6bd73a5cfe4d2ade87c67c3d902beaab6d6ad1b045e305888e71bdbd99fdfe9e",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/summary.json": "4ec1d5112f1d2547288d8d735ed67d2ffbe240de4c8b6ef5af25c992e63a2239",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/metadata.txt": "becc82b5b50f5ec8365f9dba4bb635c32b60e448fe5afafc30ea910db4d00ff2",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_drude.dat": "f205e9a85be028702cdf305d6ae657d9fa678c3dc6f8d0649840864db3c68e92",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_total.dat": "7a8ce0b9874c3b6a3b14450644c8f902a72f3b2a016b7b64d5e8f3c42f2b2a5c",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/spectral_response_metadata.txt": "a7679b3ccfca391f8b8cffcdb8fba2386a4c2a9955740359e0955aaecabaae04",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_quantum_metric.dat": "756b47d2c0f6a9160c108df41ae0ecc12c139f73068cf7afba26a4f818cc7f9b",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_berry_curvature.dat": "1d8fc393c248b53c46e97d9db6b06c7de4b911a340bc7df2e85f31725d659180",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/summary.json": "a2265543b13a6641964c41931c55521f28f9fec8819bc5e770b2e7292a262449",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/metadata.txt": "d94f868efa1b2555c1a2ccbf2ead6ea30da065325282acd4f68caa4b6510adb0",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_drude.dat": "70855517be327c18760976bce50aeec5151a016af06e2702ee312251e299c860",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_total.dat": "d44d2564ce3336c139106593be2fc4fbcd5c5c49a0df6bff7cfed4b3f58fad38",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/spectral_response_metadata.txt": "c0f35d2444d4556752e141d64e661d54b4b50886da5a48c72d85275c0afd41f1",
+            "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_quantum_metric.dat": "2a42b75c83a3645203628290fb51e052a47536fad1901a4bfbfe83c8e799cbee"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "unchanged_independent_reference_and_supplementary_data_retain_original_source": true,
+        "old_source_record_not_relabelled_as_current_execution": true,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "manifests/retained-source-records/followup334/13_haldane_anomalous_hall__chapter_reference_figures.provenance.json",
+        "source_file_sha256": "4b0fe466cdaa187ef21651aef41ceb9659e66135fc4ad8ae3a4d9ceb4e04169f",
+        "payload_sha256": "4b83409c6e0cf5131027e332938b040d93f4afc30e7535bc05a1bc1917f41606",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "previous_provenance": {
+        "original_figure_id": "chapter_reference_figures",
+        "original_data_sha256": {
+          "examples/13_haldane_anomalous_hall/validation/bands_gamma_k_m_kprime_gamma.tsv": "6855c363b43006035bf0895110e9b725d0d09bd6ec76d9238ac586bcd8c77596",
+          "examples/13_haldane_anomalous_hall/validation/hall_curves.tsv": "e670187c0f0a66ae07834fa6734ed235324a885f0abb616e450ff6751bdfbd5f",
+          "examples/13_haldane_anomalous_hall/validation/reference.json": "2d2661a743a954f43bbc2f8357450f22e392541d5a041e667064d778039ed93a",
+          "examples/13_haldane_anomalous_hall/validation/convergence.tsv": "cf9e0973bf71a58fdb5ac13c66d90a8dc22dfc11c013489a3423c402925e28fe",
+          "examples/13_haldane_anomalous_hall/validation/smoke.json": "4ff549ce687a9f5cf7ef947f5d72464784625a9e5751dd6d3e68572970ac66b9",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_berry_curvature.dat": "a9254490dffeee99b1b88ef4506b15384ef976e5bebb6995392a62fbd47ea11e",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/summary.json": "0053602a58cb53b1d507a7d28727ba84f2716ff5b62cd778766e1cf625e21d3c",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/metadata.txt": "1133d0f78a236be11852b1ed4ee128c25cdd9814be939d403c6157fe1d50bb7c",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_drude.dat": "70855517be327c18760976bce50aeec5151a016af06e2702ee312251e299c860",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_total.dat": "a7328d01d8a9540781d0fcc93c24ceb44a7b16d687828a91c16e794ac4f543ff",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/spectral_response_metadata.txt": "406fea1faa9723cefe41f04883f0ababd97e7dee1c0fb170627b1428edb98096",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_topological/linear_transport_quantum_metric.dat": "30ad36ceb4eff378db16cafda5b92c72d6e80e7556e6adae434086ab34c8b8a4",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_berry_curvature.dat": "83a648a5d7647135e879bb1f4007166fd56d0b386032d421f6f843c934ab6379",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/summary.json": "2ba491fa28a5060be4d4322cc5e85034ecf3240024b4d7af4fd40a386cde818d",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/metadata.txt": "af010edc71a1f0d829ef4502fa9ebca2bdeb15eb45cb6ab2eb18b2e08c04915b",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_drude.dat": "c8071aa16cc71a696f25c85c80259c2d2f2e6dd1721f13fa24ec379244b0560c",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_total.dat": "0bf0a90e07b981cfa8298848fa1b4579b39cd6c7aeeee483b7f6505da55a5694",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/spectral_response_metadata.txt": "5a2dbaf0e737b872d7c94ba752cb2f9247b5f2e8f48612f8ff575cf1f3dcdaec",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_trivial/linear_transport_quantum_metric.dat": "72fb6f1c22bf36113383f343a86aeadb7682704daea08183d4f13b1f3ffaa03b",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_berry_curvature.dat": "e0b9e40e98ab1ff7f80fe77c4a7238e2cd13eb5038a64c77fc249cc6f73ec279",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/summary.json": "51dc4cd7e218b4e424ff9ebdd63848ef43d805661e61d9ee0dde14017049e9c7",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/metadata.txt": "33d574c61f8452448bce68dc93414c1b6f2ab35e91d7cab03fadeab12636e71b",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_drude.dat": "cc77556b5ba6e41e6dc7104f390ae1c39016f76fda4eb929edbd0f949ae9fc43",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_total.dat": "cb5d3d8b412c4df993ddd4a3db6aa0e600a6f79a1855be3f61810f53bbaf581a",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/spectral_response_metadata.txt": "2fcebde5ee252ccde03c36eeac28dcdbc9e4edf263ec50007ee4499eb3e8f5bb",
+          "examples/13_haldane_anomalous_hall/results/smoke/tb_reversed/linear_transport_quantum_metric.dat": "f40f8c82cbc1274163594d55d5c573fbed958305f2fe476c64effd4f72acab31",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_berry_curvature.dat": "2bb57e85890958d2fb98e759b7595240da9b2aa1c67745b0fb8eeef98003e3cb",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/summary.json": "de7a95f85c90f7ed6cecca0f4c081b3162d293b6741f60ba17781401c01b51b0",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/metadata.txt": "301898517b6f9bbb97b1018a15923f377cd196eb286a4fd09045e70bc33840ae",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_drude.dat": "6b8b7295fed2ed49c4990bd227257ffaaa05c415ae25d8fff4d3ba5b69435909",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_total.dat": "af311c6406e7439697ebbcd77c01a235898b272acf0350f12f53d032acffef73",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/spectral_response_metadata.txt": "bfb96429e8e5e4deef594f51b2f755c339ff5584eda7f748e6596ac74305b9f1",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_reversed/linear_transport_quantum_metric.dat": "f338428f2d436ba57e5c2efbeb27ede893962e5db4e4b6f49130c8b6c3f5cd41",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_berry_curvature.dat": "5843868b00bd204cf84ab85c25add5ddd2fb4bc1bd4d3b44e9a1be46264c8a6e",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/summary.json": "ae52da5e00119cdf91c2f03f1430b9555f99165397b9c14526c5dca32f99a793",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/metadata.txt": "7191f4ce93c4600d009c25f747be2e12aba9ce9701ad25ea73cfc9d86d51de94",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_drude.dat": "dad9f187e41c1bd05e59e21f7259bbd949ad6b20563578dd5cc49af5c1b3dfff",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_total.dat": "258b4bb33514f58036e2b71d911260247b0593e8e6fee9deca3e5494e5b447e0",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/spectral_response_metadata.txt": "f849e6cfefc67d5f6dd7bc954e4d833fb93e9961c2554d34867a580f373505fb",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_trivial/linear_transport_quantum_metric.dat": "2cb403ccd9899b0ed2aaaa6470f86636b0ff93e6d9195b242d518e1b598ede12",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_berry_curvature.dat": "1d73eec01507b76f24ed18994000ad06d9ae2c112a861d4b5e036cebe5be4291",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/summary.json": "ec2f445a9235cbd0d12f0c490a47652c2c69cbce523902c8783114ff75d6d315",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/metadata.txt": "3d20c95bb57227ff0cfdf3e3b52f6b8b5db7be3205032d63965adad907ced073",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_drude.dat": "cf2b07385ac99ac142af2a79c3e6ce7e2851af1100a06c1897034b2a8998a9ab",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_total.dat": "f98572fc44c49f2dbe7bd669ba447aa0078356b236c32aa66740de4307763993",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/spectral_response_metadata.txt": "6551eeddefd5666f8e4b699ec241d246773aedc5011c525c493b0b394e772807",
+          "examples/13_haldane_anomalous_hall/results/smoke/analytic_topological/linear_transport_quantum_metric.dat": "ec30e718445f32a3af210eb689c7d33a0bdee4b7c54776491f11b03ad40bef42",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_berry_curvature.dat": "a04fab9a4e727d86e7002723761f91bfeb1031327505061c1c49e85550ac2f99",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/summary.json": "6749779a52bea23f8559b825d9e2aa6c7a31ed293383bdf8b58294057c70cabf",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/metadata.txt": "7afde514cb03e0a417809732876dcddaace6eaa349f6c16437aad68ae68d356b",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_drude.dat": "52f1fb8de0c2ad84d9764709057b140b0eb1ebfa8c13c8ea845a0e1807da6fe8",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_total.dat": "cab2acbac73cd6934c616b870f0a12f5eb137becd47dfbcd824056746797e93e",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/spectral_response_metadata.txt": "7e16f579544565aded6611dba603862021170630b98e4deeb170f701ed9077f8",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological/linear_transport_quantum_metric.dat": "263e1428940bb7a41a1adc8c6c4c593c0b31b22a79d91eb34c985016ef0a98a9",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_berry_curvature.dat": "219768818ed10a1893b9f1d322ea0bc52f83ebe241c94c2337ee2ff9dd61a117",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/summary.json": "fdcfd7f485b16f91d926076ccd749f1bb93628aec6035d5dd3f7143650b3dec2",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/metadata.txt": "72e48d3d318e2355f80c2f9aec5468e78954f9f3a8714673ce0418186cd88fdc",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_drude.dat": "6299d60a4bb0a28a2a1270b8c2adf73ae0f1e3010d68f6c9cdbe7139c14ad5b5",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_total.dat": "63abd21277bfc9f382824f600b7778092a88eee4eb77126757cd546f05d268cf",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/spectral_response_metadata.txt": "d2defc2ccacf871942586bfd7ded0efbee8bdfcf9e5530b5eefdd842912c6692",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_trivial/linear_transport_quantum_metric.dat": "d97f2241dfdefa2844412a5da6fb97c7c8a08d33f1c38929aba436cf9225c76d",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_berry_curvature.dat": "066bc0c9f03c9bfb9ea9627ec47e5d0a09944e6a048d49b4f40ba7753fee7d1c",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/summary.json": "c87564e5bcdf3c0848a4c9bdab1e4dd4b55f27647d6d5bdb30292eb754660341",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/metadata.txt": "1b5c1982fe2bf233bab1fbbca3060afd5cff95ddff388f264c772549d946325b",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_drude.dat": "70855517be327c18760976bce50aeec5151a016af06e2702ee312251e299c860",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_total.dat": "90ff14dbe338149c8f2779f521161b2546366f52bff08d673a9731f8e0f64035",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/spectral_response_metadata.txt": "047286792093bcc848223f3ed2fefe60afef277311f3a6e2044d8add119f2af9",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n181_g002/linear_transport_quantum_metric.dat": "a9139fec25e597e4fb7bbf7b3baf17f029cfeae50b87c4e0bd599497af83446f",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_berry_curvature.dat": "8a5dd54141ba2fb6b4a6daaf37fec79caf2a3fe2dc776d6ea3874cccedaf3302",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/summary.json": "bfd02de021fba00e5e1e35dd6d873184454b46869fdce4cb9f8b0e1b324d9d89",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/metadata.txt": "4577dbb3159b909a0a76bdaaf30faa7c685a53a507559bed145619425cd769fb",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_drude.dat": "62fb50e4b81abe62bcc0778c192c0819fffd22a9d480dd6ad5642e8827e19d27",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_total.dat": "8546aef2fef8b6f69d27a3b00a59c8a513f8a658ef8d350c93f30838a4ba1686",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/spectral_response_metadata.txt": "ee943d6600c8041afcd3713fcb407b1eb56192fd2bf1b28acbbd15247b07e225",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_reversed/linear_transport_quantum_metric.dat": "1962889c83cf2c2c5108ba79a445970f996ac56b6bff67cd7b1bec77280811cf",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_berry_curvature.dat": "9846c678aa75a1d9dba692a18dbb367ef26365fc97418304695d1467216e4e52",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/summary.json": "06e5b72a95b24fa001d49996e4d2a14f634d2ed4183a27d4c95c388143f36d76",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/metadata.txt": "6a644aaf412eb5643945ef73449b4337bce940de10192549c4dcd6538917cb58",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_drude.dat": "fce815b327070ab0e81340b83dea17bd47a954f5be17406c4778b6ca590b7342",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_total.dat": "9e2eb8d20847e204d6dc9943565618eb10aead3e141f49f61810951a3489d5ee",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/spectral_response_metadata.txt": "1b630466e6035d1e704c6bdbaf6c4060b13bc41ee323b8e354078a4377ea3583",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_reversed/linear_transport_quantum_metric.dat": "a85f3ff8df21fd885e406813f31540ff082bfc52ee32bcaa582088fcbd25814e",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_berry_curvature.dat": "2ce6e80dc6a43c90a2b77a32e53bbfea22640135682849e15dc9f7a471d78312",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/summary.json": "8769bb58cddd3613d68c9d005d62d59643e4f16f173899af4f2fbfa35ba1cf51",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/metadata.txt": "fcadedeb9d44bc5059b613972f414b46a83c966f0ccb33fd835f2d5aad521949",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_drude.dat": "d745f44859facfc620282f273278693e1c6da1615928ab86ac736e31ca28e020",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_total.dat": "8aa9eb44455c9b61e7fac1649a7e767e486b7cf3a3cdeb72add1847362b9f506",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/spectral_response_metadata.txt": "4df4714020d631a25a4fa05a4112cabca454c83a96c699a5ae0bd6a17831eb83",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_trivial/linear_transport_quantum_metric.dat": "667658b2444aa1bd77107078fa0c8f7d8de60e3cb72c01c9da91e0c86371a1c3",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_berry_curvature.dat": "9093b43357fed76afe2adad0bb764969f654a2bed36cb7770b6d5a4c7260c410",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/summary.json": "08d71318ab0a7fa0b1c3f96b37bc564668a77f58ba155c85b6d489533a81da16",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/metadata.txt": "6db98b10a10de84ae9873148f3ed9795ec2701b864b85e9a1e86b0d7f7e6ad67",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_drude.dat": "c1351f9f6c2bfaf65ea83026d78534acd693d7d08d82d2988a5e371b07421669",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_total.dat": "a3e35ac60f76c6daaa2bd3c1c61614ec33d1aa542d6304104f2b93e39728db9b",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/spectral_response_metadata.txt": "12508d5600eff80225a38ce9cfcec66e092d800fd592beba6ed3b8646140cc61",
+          "examples/13_haldane_anomalous_hall/results/reference/analytic_topological/linear_transport_quantum_metric.dat": "9915017c0c0d4da3b92a9c949ccaa432cd735e3c85b52f8bae459f966e77f45a",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_berry_curvature.dat": "6bd73a5cfe4d2ade87c67c3d902beaab6d6ad1b045e305888e71bdbd99fdfe9e",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/summary.json": "4ec1d5112f1d2547288d8d735ed67d2ffbe240de4c8b6ef5af25c992e63a2239",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/metadata.txt": "becc82b5b50f5ec8365f9dba4bb635c32b60e448fe5afafc30ea910db4d00ff2",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_drude.dat": "f205e9a85be028702cdf305d6ae657d9fa678c3dc6f8d0649840864db3c68e92",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_total.dat": "7a8ce0b9874c3b6a3b14450644c8f902a72f3b2a016b7b64d5e8f3c42f2b2a5c",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/spectral_response_metadata.txt": "a7679b3ccfca391f8b8cffcdb8fba2386a4c2a9955740359e0955aaecabaae04",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n121_g001/linear_transport_quantum_metric.dat": "756b47d2c0f6a9160c108df41ae0ecc12c139f73068cf7afba26a4f818cc7f9b",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_berry_curvature.dat": "1d8fc393c248b53c46e97d9db6b06c7de4b911a340bc7df2e85f31725d659180",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/summary.json": "a2265543b13a6641964c41931c55521f28f9fec8819bc5e770b2e7292a262449",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/metadata.txt": "d94f868efa1b2555c1a2ccbf2ead6ea30da065325282acd4f68caa4b6510adb0",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_drude.dat": "70855517be327c18760976bce50aeec5151a016af06e2702ee312251e299c860",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_total.dat": "d44d2564ce3336c139106593be2fc4fbcd5c5c49a0df6bff7cfed4b3f58fad38",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/spectral_response_metadata.txt": "c0f35d2444d4556752e141d64e661d54b4b50886da5a48c72d85275c0afd41f1",
+          "examples/13_haldane_anomalous_hall/results/reference/tb_topological_n61_g002/linear_transport_quantum_metric.dat": "2a42b75c83a3645203628290fb51e052a47536fad1901a4bfbfe83c8e799cbee"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 1
+}

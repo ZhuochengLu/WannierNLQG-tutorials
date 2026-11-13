@@ -1,0 +1,37 @@
+[ model ]
+real_space_operator_bundle_file = "../../../Materials/GeS/operators.h5"
+model_file = "../../../Materials/GeS/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+k_mesh = [200, 200]
+kind = "k_slice"
+origin = [0.0, 0.0, 0.0]
+spatial_dimension = 2
+vector_1 = [1.0, 0.0, 0.0]
+vector_2 = [0.0, 1.0, 0.0]
+
+[ response.tasks ]
+
+[ response.tasks.kslice_injection_spin_yzxy_fullbands ]
+fermi_energy_ev = -2.5
+kind = "injection_spin_current"
+photon_energies_ev = [3.0150753768844223]
+temperature_k = 0.0
+
+[ response.tasks.kslice_injection_spin_yzxy_fullbands.numerics ]
+denominator_regularization = 0.001
+broadening = 0.06
+
+[ response.tasks.kslice_injection_spin_yzxy_fullbands.observable ]
+component = [2, 3, 1, 2]
+conduction = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+kind = "transition"
+valence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]

@@ -1,29 +1,46 @@
 {
-  "mode": "single",
-  "input": "../results/reference/integral_injection_spin_current_conventional/GeS_isc_conv.dat",
-  "label": "integral_injection_spin_current_conventional",
-  "components": "yyyy",
-  "part": "real",
-  "unit": "native output units",
-  "x_window": [
-    0.0,
-    4.0
-  ],
-  "panel_size_inches": [
-    4.8,
-    3.4
-  ],
-  "curves": {
-    "integral_injection_spin_current_conventional": {
-      "marker": "",
-      "linewidth": 1.6
-    }
-  },
   "output": {
-    "stem": "../figures/integral_injection_spin_current_conventional",
+    "stem": "integral_injection_spin_current_conventional",
+    "dpi": 600,
     "formats": [
-      "pdf",
-      "png"
+      "png",
+      "pdf"
     ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "line",
+    "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "ylabel": "$\\mathrm{Re}\\,\\sigma^{asbc}$ (native output units)",
+    "xlim": [
+      0.0,
+      4.0
+    ],
+    "legend": true,
+    "series": [
+      {
+        "data": "../data/isc_spectrum-016213a21c.dat",
+        "x_column": 1,
+        "y_column": 44,
+        "label": "yzxy",
+        "color": "#104E8B",
+        "linestyle": "-",
+        "linewidth": 1.6
+      },
+      {
+        "data": "../data/isc_spectrum-016213a21c.dat",
+        "x_column": 1,
+        "y_column": 46,
+        "label": "yzyx",
+        "color": "#FF7F24",
+        "linestyle": "--",
+        "linewidth": 1.6
+      }
+    ],
+    "title": "GeS spin injection current (Conventional)",
+    "legend_frame": true
   }
 }

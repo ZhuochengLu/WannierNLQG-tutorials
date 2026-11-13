@@ -1,0 +1,56 @@
+{
+  "scope": "Software name clarity and PDF minus glyph compatibility; plotting only; no response calculation",
+  "response_recomputed": false,
+  "input_sha256": {
+    "examples/16_monolayer_graphene_thg/data/valley_distribution402/summary.json": "fa095d8d9b4f8c45015c64e80abc87848528dcab7255f40dc87c442ffa7e79e7",
+    "examples/16_monolayer_graphene_thg/data/valley_distribution402/wn30_unregrouped_two_spin.dat": "131ed65e30c8fe958ef25bacde9e94b7248d09c83fd5395e9b780f833a8a480e",
+    "examples/16_monolayer_graphene_thg/data/valley_distribution402/wn30_regrouped_two_spin.dat": "2615ab7dbc803457cfafbe1bb321be137484c41cf632dac33ad714ea7208ec94",
+    "examples/16_monolayer_graphene_thg/data/paper_fig3a382/display_fourier_si.dat": "4447f5cf256dce0146451200b5e1101b0569f7bf1660eacfe6f2cb360b5b3446",
+    "examples/16_monolayer_graphene_thg/plot_configs/thg_valley_30meV.json": "8c2a6ac3207ffe96cb38a536a5cd5ef5f49feb529df53d3fbfe1149ab9ee803b",
+    "scripts/plot_support/nlqg_figure.py": "1a0ff11a9652a74eff238d308e4da4e3e9bc78da9441107f76e3f92b6ba5cb2d"
+  },
+  "changed_files": {
+    "examples/14_rice_mele_shift_current/README.md": {
+      "before_sha256": "cb0860889427a23467df627afd1ebd61af38c034b8d16efdacc54911c2e203ea",
+      "after_sha256": "6d7a570fae3dc019d3ceac021002bad872bef03a6608574990f3846e4792f786"
+    },
+    "examples/16_monolayer_graphene_thg/README.md": {
+      "before_sha256": "424e7b4ec34cf7b5a8f5435d7ff46a13c532b135b90c73566c399a806f85d36a",
+      "after_sha256": "9c1c4bd646aa120bc2f0881aaa51c555fd4866f71318b1353e3f2c18087ef668"
+    },
+    "examples/16_monolayer_graphene_thg/plot_valleys.py": {
+      "before_sha256": "a13471972606ea41cce0539a28c731f0c13314183b5063e13ab0604153b6ca78",
+      "after_sha256": "c95c22078b7dc0f04d896d9be25e77a41c63fe9a5421fb946083d8e38fe13e9e"
+    },
+    "examples/16_monolayer_graphene_thg/prepare_paper_curve.py": {
+      "before_sha256": "6c5c1b74b949928b05e11a85988e9858a070956efd8f5a95d8c044587a840cef",
+      "after_sha256": "e07788fbab00d5e61a0836446fbee3625b6273b9a9d25edc7d49453b403af3a5"
+    },
+    "examples/16_monolayer_graphene_thg/data/paper_fig3a382/REUSE_NOTICE.md": {
+      "before_sha256": "2125301e015a058d172bb7906c4cf47bc5d0ecc02d9701f159c50c3b5899c159",
+      "after_sha256": "d6c3c37f01c067283d5af32fe1ac69218cd696db0d61ba1cdb13e2cbbaa7ad4d"
+    },
+    "THIRD_PARTY_REFERENCES.md": {
+      "before_sha256": "4ff8369f39816d3f7b2409d02ad321a12a45f3c60886aa38449a49e19c58e3b2",
+      "after_sha256": "bb05d7593c12f8d6bb754b2fe4a4a9bbe7dbf0e3abe636fd00ade33294c16325"
+    },
+    "examples/16_monolayer_graphene_thg/figures/thg_valley_magnitude.png": {
+      "before_sha256": "b563f1b7e25849a7f6950955f95f275fdde632032eb4fa5f690282ba646e979c",
+      "after_sha256": "7a0dc5e5ac004afd75b57e77fd92500731ac2aca6abea0b031bca4d4bdc9e8d6"
+    },
+    "examples/16_monolayer_graphene_thg/figures/thg_valley_magnitude.pdf": {
+      "before_sha256": "7566a0de3a7f6727ddf82cc891be7c9c6cc01cf72ab3d52f7c33b0b65af0817c",
+      "after_sha256": "ac0cb539761299b7db9578952d9074537b0b3802f1b7fc8bf8b558ad71e1f8f3"
+    },
+    "examples/16_monolayer_graphene_thg/figures/thg_valley_complex.png": {
+      "before_sha256": "0aff99378c309ab1e2100b70b94b928d0dc512d445cd69394052818876aedc09",
+      "after_sha256": "9422fcb0073eca21330e3d6a0d4c0e69c03300f789ddbb36b0392adb539731e6"
+    },
+    "examples/16_monolayer_graphene_thg/figures/thg_valley_complex.pdf": {
+      "before_sha256": "3859097194e977f13d1c40b59cc50a84dbd7b50e3a3c03dae8bb54acbefe1b8e",
+      "after_sha256": "f93a77398a8f505b7b0df373126019435e37e8addc2fac805dacecc9890de6f7"
+    }
+  },
+  "validation": "PNG and independent Poppler PDF previews visually inspected; no clipping or overlap; signs and exponent glyphs visible; style environment and glyph checks passed",
+  "qualification": "No change to numerical data or scientific conclusions; prior release candidate hash inventory requires reconciliation by its owner."
+}

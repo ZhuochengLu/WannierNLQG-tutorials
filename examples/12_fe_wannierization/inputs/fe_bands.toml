@@ -1,0 +1,26 @@
+# Editable tutorial input. Named-task schema; all supplied parameter values retained.
+[ model ]
+model_file = "../../../Materials/Fe/model_tb.dat"
+real_space_replica_policy = "auto"
+source = "wannier"
+
+
+[ response ]
+
+[ response.execution ]
+fourier_backend = "direct"
+
+[ response.sampling ]
+kind = "k_path"
+kpoints_per_segment = [201, 201, 201, 201]
+spatial_dimension = 3
+
+[ response.sampling.nodes ]
+fractional_coordinates = [[0.0, 0.0, 0.0], [0.5, -0.5, -0.5], [0.75, 0.25, -0.25], [0.5, 0.0, -0.5], [0.0, 0.0, 0.0]]
+label = ["Γ", "H", "P", "N", "Γ"]
+
+[ response.tasks ]
+
+[ response.tasks.fe_bands ]
+fermi_energy_ev = 5.7156290716733436
+kind = "band_structure"

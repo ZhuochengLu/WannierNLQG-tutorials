@@ -1,0 +1,64 @@
+{
+  "output": {
+    "stem": "shift_current_methods",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "figure": {
+    "figsize": [
+      6.0,
+      4.3
+    ],
+    "kind": "line",
+    "xlabel": "$\\hbar\\omega\\ \\mathrm{(eV)}$",
+    "ylabel": "$\\mathrm{Re}\\,\\sigma^{yyy}$ (native output units)",
+    "xlim": [
+      0.0,
+      4.0
+    ],
+    "legend": true,
+    "series": [
+      {
+        "data": "../data/operators_sc_conv-c07167e1.dat",
+        "x_column": 1,
+        "y_column": 16,
+        "label": "Conventional",
+        "color": "#104E8B",
+        "linestyle": "-",
+        "linewidth": 1.6
+      },
+      {
+        "data": "../data/operators_sc_proj-f145af8e.dat",
+        "x_column": 1,
+        "y_column": 16,
+        "label": "Projector",
+        "color": "#BA55D3",
+        "linestyle": "-.",
+        "linewidth": 1.6
+      },
+      {
+        "data": "../data/operators_sc_geo-95b15239.dat",
+        "x_column": 1,
+        "y_column": 16,
+        "label": "Geometric Loop",
+        "color": "#FF7F24",
+        "linestyle": "--",
+        "linewidth": 1.6
+      },
+      {
+        "data": "../data/operators_sc_wilson-8d8169f4.dat",
+        "x_column": 1,
+        "y_column": 16,
+        "label": "Wilson Loop",
+        "color": "#3CB371",
+        "linestyle": ":",
+        "linewidth": 1.6
+      }
+    ],
+    "title": "GeS shift current: method comparison",
+    "legend_frame": true
+  }
+}

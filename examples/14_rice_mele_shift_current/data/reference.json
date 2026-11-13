@@ -1,0 +1,7 @@
+{
+    "profile": "reference",
+    "matrix_max_difference_ev": 0,
+    "package_version": "1.2.0",
+    "model_source_sha256": "9f7062228cd217131c9d529caef5b7eccaed4345e15e725adfc46ac923830f23",
+    "band_max_difference_ev": 4.440892098500626e-16
+}

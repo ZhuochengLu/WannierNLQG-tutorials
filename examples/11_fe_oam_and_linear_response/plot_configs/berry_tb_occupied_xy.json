@@ -1,0 +1,37 @@
+{
+  "output": {
+    "stem": "berry_tb_occupied_xy",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ],
+    "outlined_pdf": false
+  },
+  "figure": {
+    "kind": "map",
+    "figsize": [
+      6.6,
+      5.0
+    ],
+    "data": "../data/model_bck_sum_conv-d511ca02.dat",
+    "transform": [
+      "transpose"
+    ],
+    "color": {
+      "kind": "signed_log",
+      "cmap": "RdBu_r",
+      "linthresh": 1.0
+    },
+    "extent": [
+      -0.0025,
+      0.9975,
+      -0.0025,
+      0.9975
+    ],
+    "xlabel": "$u$",
+    "ylabel": "$v$",
+    "colorbar_label": "$\\Omega^{\\mathrm{occ}}_{xy}\\ (\\mathrm{\\AA}^{2})$",
+    "title": "Fe TB, $\\eta=0$"
+  }
+}

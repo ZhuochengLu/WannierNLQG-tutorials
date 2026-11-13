@@ -1,0 +1,99 @@
+{
+  "status": "MODEL_SPECIFIC_BOUND_ESTABLISHED_NOT_A_NEW_INTEGRAL",
+  "historical_source_manifest_sha256": "d0a7513b0dc36f600e7c1e7ac04fd57f1054ace9ca9408af24956ffefb42e825",
+  "current_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+  "gap_lower_bound_ev": "0.4",
+  "eta_ev": "0.001",
+  "pair_ratio_lower_bound": "0.999987500117186523445129337311208245158216450217879446420284",
+  "maximum_relative_change_in_antisymmetric_Hall_channel": "0.000012499882813476554870662688791754841783549782120553579716",
+  "maximum_absolute_change_if_old_abs_Hall_le_half_quantum": "0.000006249941406738277435331344395877420891774891060276789858",
+  "applies_to_all_161_chemical_potentials_not_only_in_gap": true,
+  "assumptions_and_derivation": [
+    "Fixed two-band point-orbital Dirac H=v*kx*sigma_x+v*ky*sigma_y+m*sigma_z, v=2, |m|=.2, zero ambient connection/curvature; Delta=2*sqrt(m^2+v^2*k^2)>=.4eV.",
+    "Old exact-spectral position and current prepared r_eta differ by f=Delta^2/(Delta^2+eta^2) for the only interband pair; its Q tensor differs by f^2. The unchanged array constructor and actual70point check318 independently confirm the relation at both mass signs and all original cutoffs.",
+    "The kernel Hall weight is (f_lower-f_upper)*Delta^2/(Delta^2+gamma_inter^2)*Im(Qxy). Occupation difference is nonnegative, finite-width factor is nonnegative, and Dirac curvature has one sign throughout the square. Positive quadrature weights therefore cannot cancel the Hall channel.",
+    "Consequently (1-delta)*|G_H_old(mu)| <= |G_H_new(mu)| <= |G_H_old(mu)| pointwise in mu, apart from ordinary floating-point summation error. No bound is inferred by dividing a cancellation-prone general optical spectrum.",
+    "Contact curvature vanishes here. The Drude and quantum-metric tensors are symmetric, so the antisymmetric Hall combination eliminates them. This proof does not certify either longitudinal response or arbitrary matrix elements.",
+    "The additional T=0 kernel optimization only skips exact-zero finite arithmetic; it does not change nonzero occupations, band masks, gamma or normalizations."
+  ],
+  "scope_limits": [
+    "Does not assert byte identity or a completed current6401/9601 full-axis run.",
+    "Does not alter stored historical values or propagate a uniform multiplicative correction.",
+    "Does not certify finite-grid convergence, half-plane-limit accuracy, longitudinal conductivity, or an arbitrary multiband material.",
+    "General exact relative bounds would fail in a sign-changing/cancellation-prone integrand; this model-specific sign proof is necessary."
+  ],
+  "actual_point_identity_max_error": 7.119291619286993e-15,
+  "current_full_integral_control_already_executed": "WN-Tutorial-provenance320/hall_positive_g0001",
+  "cases": [
+    {
+      "case": "hall_negative",
+      "input_sha256": "2495cc43c035923e96c46953095467af96c52b5fb38bbb73eec59fa03a29b8a7",
+      "mesh": [
+        6401,
+        6401
+      ],
+      "axis_points": 161,
+      "retained_table_sha256": "567b8c824dc30428c5da9aeffdab581304ad2dea294f657b4175171a852da327",
+      "classification": "HISTORICAL_RESULT_WITH_ANALYTIC_APPLICABILITY_BOUND",
+      "not_a_current_full_axis_execution": true
+    },
+    {
+      "case": "hall_positive",
+      "input_sha256": "00e7546286cfee30994a812a24397f0d41c36cc63b118649ab64b9f2a3c0bc6e",
+      "mesh": [
+        6401,
+        6401
+      ],
+      "axis_points": 161,
+      "retained_table_sha256": "0a5c745bb2b77c25378ba80984e6d4bc15f852246d92db6c8aeb02e6c43f8495",
+      "classification": "HISTORICAL_RESULT_WITH_ANALYTIC_APPLICABILITY_BOUND",
+      "not_a_current_full_axis_execution": true
+    },
+    {
+      "case": "hall_positive_n9601",
+      "input_sha256": "f5c1f38c6b8962aa4c34c53915699286c033cc678352ced9d3869fdce601fac2",
+      "mesh": [
+        9601,
+        9601
+      ],
+      "axis_points": 161,
+      "retained_table_sha256": "cb5b94251d00697a82e5a7fe72bf7d5c434ede98d1b5893012f6235b5b653738",
+      "classification": "HISTORICAL_RESULT_WITH_ANALYTIC_APPLICABILITY_BOUND",
+      "not_a_current_full_axis_execution": true
+    }
+  ],
+  "source_files": {
+    "src/Responses/LinearTransport/LinearTransportKernels.jl": {
+      "historical_sha256": "b92556546ace5130990f57f9f27df151be287b9742e3b4c3de0870230e2f564e",
+      "current_sha256": "589435e124675530e92c6a301df2e2cc750c83bafe7e0c0cb1a3571654e4d651"
+    },
+    "src/Responses/LinearTransport/LinearTransport.jl": {
+      "historical_sha256": "97540abd5571c35fc21075ae0549e1dc13d34cae72571439c37c0118afaf4dd8",
+      "current_sha256": "97540abd5571c35fc21075ae0549e1dc13d34cae72571439c37c0118afaf4dd8"
+    },
+    "src/MatrixElements/Interpolated/SpectralResponseGeometry.jl": {
+      "historical_sha256": "0f33483679f5f875b8305b93c4d7eaad190b3ec9adf1f59d252608faebcd5946",
+      "current_sha256": "5c41f47d4e3b7a8a65610adc8e4953873bede11876af332fe80c538012aa7ed2"
+    },
+    "src/MatrixElements/Interpolated/PositionMatrixElements.jl": {
+      "historical_sha256": "c99830f07ab748b2e3eedbb49104047c1bbcb822929351ba5096191e6c03f9ba",
+      "current_sha256": "c9a37e841e3da0562d913dd2247295eace787e4e124aa399f4faac95a79c197f"
+    }
+  },
+  "model_file_sha256": "1031b384ecbd0d4e8a795fd1590271dc8878ddd0cfabcf1ff498ff87c2af3987",
+  "no_Julia_run_by_this_script": true,
+  "no_new_integration": true,
+  "completed_dense_mesh_control": {
+    "execution_id": "WN-Tutorial-provenance320",
+    "case": "hall_positive_g0001",
+    "mesh": [
+      6401,
+      6401
+    ],
+    "chemical_potentials": 3,
+    "maximum_measured_relative_difference": 4.178392025541447e-06,
+    "uniform_analytic_bound": 1.2499882813476554e-05,
+    "within_bound": true,
+    "not_a_full161mu_run": true
+  }
+}

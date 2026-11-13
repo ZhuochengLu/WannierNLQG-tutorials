@@ -1,83 +1,102 @@
-# Band structure
+# 01 · Band structure of GeS
 
-TB bands on Γ-X-S-Y-Γ and a diagnostic comparison with unchanged VASP eigenvalues.
+## In this tutorial
 
-## 1. Physical quantity and method
+- Construct a reciprocal-space Hamiltonian from a Wannier tight-binding model.
+- Read band energies along a high-symmetry path using one common energy reference.
+- Distinguish a band-path comparison from convergence of a material response.
 
-Each row is one independently executable `TaskConfig`. Integral tasks retain the complete native tensor; the component column is the default visualization selection.
+## Physics and model
 
-| Case | Quantity | Method | Reference mesh | Photon energy (eV) | Component | Band selection | Optional spin data |
-|---|---|---|---:|---:|---|---|---|
-| `band_structure.jl` | `band_structure` | `conventional` | path | n/a | `fulltensor` | `"all bands"` | no |
+A Wannier model stores Hamiltonian matrix elements between localized orbitals in different cells. In the cell-periodic Fourier representation, the interpolation used here has the positive-phase convention
 
-The component and ordered band selection are explicit in every case file and repeated in `summary.json`.
+$$
+H^{(\mathrm{W})}_{ij}(\mathbf{k})
+=\sum_{\mathbf R}\frac{H_{ij}(\mathbf R)}{d_{\mathbf R}}
+e^{2\pi i\mathbf{k}_{\mathrm{frac}}\cdot\mathbf R}.
+$$
 
-## 2. Inputs
+Here $i,j$ label Wannier orbitals, $\mathbf R$ is an integer lattice vector, $\mathbf{k}_{\mathrm{frac}}$ is the fractional reciprocal coordinate, and $d_{\mathbf R}$ is the real-space degeneracy weight in the loaded model. The factor $2\pi$ belongs to fractional coordinates. Do not replace the model's replica weights by a different counting rule. The phase equals $e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. Center-convention transformations can change matrix representations without changing their eigenvalues.
 
-- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
-- Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
-- This chapter needs only the committed ordinary `GeS_tb.dat` model.
-- Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
+At each point on the path, diagonalizing the Hermitian Hamiltonian gives the band energies:
 
-## 3. Parameter contract
+$$
+H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)
+=U(\mathbf k)\operatorname{diag}[\epsilon_n(\mathbf k)],
+\qquad
+\epsilon_n^{\mathrm{plot}}(\mathbf k)=\epsilon_n(\mathbf k)-E_{\mathrm{ref}}.
+$$
 
-| Parameter | Reference value |
-|---|---|
-| Fermi energy / temperature | `-2.5 eV` / `0 K` for optical tasks |
-| Broadening | Gaussian, `0.060 eV` for optical tasks |
-| Denominator regularization | `0.001 eV` where applicable |
-| Finite-difference step | `1e-4 Å^-1` for derivative geometry |
-| Degeneracy threshold | `0.002 eV` |
-| Bands | `V=[19,20]`, `C1=[21,22]`, `C2=[23,24]` |
-| Fourier / centers | `direct` / `Convention_II` |
-| Output precision | 17 digits; no tutorial-side numerical reordering or truncation |
+The columns of $U$ are eigenvectors. The same $E_{\mathrm{ref}}$ is subtracted from every plotted dataset; an independently fitted offset would conceal part of the interpolation error. Energy agreement is necessary for a useful model, but does not establish accuracy of position matrix elements or optical response.
 
-The case file is authoritative: parameters irrelevant to a quantity are not artificially applied. `smoke` changes only mesh/path density.
+## Parameters
 
-## 4. Run and visualize
+Use [band_structure.toml](inputs/band_structure.toml) after following the [material setup guide](../../Materials/README.md).
+
+| Parameter | Value | Meaning |
+| --- | --- | --- |
+| Material model | Materials/GeS/model_tb.dat | Supplied 32-orbital GeS model |
+| Path | Γ–X–S–Y–Γ | Ordered high-symmetry points |
+| Points per segment | 51 | Resolution of each path segment |
+| $E_{\mathrm{ref}}$ | −2.5 eV | Common energy reference |
+| Sampling dimension | 2 | Current input's spatial dimension |
+| Fourier backend | direct | Real-space Fourier interpolation |
+| Replica policy | auto | Interpret replicas using the model representation |
+| Band display window | −5 to 5 eV | Relative to the common reference |
+| Error window | −1 to 1 eV | Selects matched DFT energies for error statistics |
+| Matching tolerance | 0.002 eV | Near-degeneracy tolerance of the supplied comparison |
+
+The first seven entries describe the calculation input; the last three describe the supplied comparison figure. One band run does not also generate a DFT reference.
+
+## Run
+
+From the repository root, check the input and calculate into a new directory:
 
 ```bash
-julia --project=. examples/01_band_structure/run.jl --profile=smoke
-julia --project=. examples/01_band_structure/run.jl --profile=reference
-julia --project=. scripts/visualize_all.jl
+julia --project=.runtime/env scripts/run_group.jl 01 --check
+julia --project=.runtime/env scripts/run_group.jl 01 --case=band_structure --output=.runtime/band_structure
 ```
 
-Individual smoke commands:
+The check command inspects configuration and dependencies; it does not calculate bands. To change the path or sampling, edit a copy of the input and retain the same model and energy reference for a controlled comparison.
+
+## Read the figures
+
+The figures use supplied numerical tables. Redrawing them does not run the calculation above.
+
+### 1. Band dispersion
+
+<a href="figures/audited_zeroU_repaired_review_bands.png"><img src="figures/audited_zeroU_repaired_review_bands.png" alt="GeS Wannier and DFT band energies" width="880"></a>
+
+First locate the gap and the states closest to it. Then follow the dispersion between labeled points. The DFT pool contains more bands than the Wannier model, so equal column numbers need not identify equivalent states.
+
+[Original PNG](figures/audited_zeroU_repaired_review_bands.png) · [PDF](figures/audited_zeroU_repaired_review_bands.pdf)
+
+### 2. Interpolation error
+
+<a href="figures/audited_zeroU_repaired_review_errors.png"><img src="figures/audited_zeroU_repaired_review_errors.png" alt="GeS matched-band energy errors" width="680"></a>
+
+Read the RMS and maximum absolute errors together: RMS summarizes the selected states while the maximum exposes the largest mismatch. Their energy-selection window is narrower than the band-display window. No interpolation accuracy threshold is established by drawing these curves.
+
+[Original PNG](figures/audited_zeroU_repaired_review_errors.png) · [PDF](figures/audited_zeroU_repaired_review_errors.pdf)
+
+## Redraw and check
 
 ```bash
-julia --project=. examples/01_band_structure/cases/band_structure.jl --profile=smoke
+python examples/01_band_structure/plot.py --figure=audited_zeroU_repaired_review --output=.runtime/plot-audited_zeroU_repaired_review
 ```
 
-Existing result directories are never overwritten.
+A high-symmetry path leaves most of the Brillouin zone untested. Before quantitative use, examine additional momenta and the energy range relevant to the intended observable. The supplied material comparison is not a convergence certificate.
 
-## 5. Output interpretation
+[Reproducibility](reproduce.json)
 
-- `band_structure`: `GeS_bands.dat`, `GeS_kpath.json`
+## Full-path view
 
-Every task directory also contains native `metadata.txt` and a tutorial `summary.json` with input/output SHA-256 values. Complex K-slice quantities retain separate real (`_r_`) and imaginary (`_i_`) files; the default figure shows the real part. `raw/`-style quantities retain the package's native stable filenames without renaming.
+The [full band plot](figures/audited_zeroU_repaired_full_bands.png) and [full error plot](figures/audited_zeroU_repaired_full_errors.png) show the wider path; the two figures above retain the matched review window. Both calculations use one fixed energy reference. The matching pool and the displayed energy window serve different purposes: an energy-set match checks interpolation of the retained eigenvalues, and does not prove equality of Bloch eigenvectors, optical matrix elements or a new self-consistent solution.
 
-## 6. Figure-reading guide
+```bash
+python examples/01_band_structure/plot.py --figure=audited_zeroU_repaired_full --output=.runtime/ges-full-bands
+```
 
-K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+## References
 
-Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
-
-![GeS vasp band](figures/GeS_vasp_band.png)  [PDF](figures/GeS_vasp_band.pdf) [Plot audit](figures/GeS_vasp_band.plot.json)
-
-*VASP path bands; energy relative to the shared Fermi level (eV); presentation only.*
-
-![band structure](figures/band_structure.png)  [PDF](figures/band_structure.pdf) [Plot audit](figures/band_structure.plot.json)
-
-*Conventional TB path bands; energy relative to the shared Fermi level (eV); presentation only.*
-
-![GeS band comparison](figures/GeS_band_comparison.png)  [PDF](figures/GeS_band_comparison.pdf) [Plot audit](figures/GeS_band_comparison.plot.json)
-
-*DFT/TB path-band comparison on one energy reference (eV); diagnostic display, not a band-fit qualification.*
-
-## 7. Relation to the manuscript
-
-This tutorial follows quantities and parameter choices used in the manuscript workflow, but uses the released ordinary GeS model and a separately audited VASP display reference. It is not a byte-identical reconstruction of the manuscript's SAWF band bundle and is not evidence that manuscript figures were reproduced.
-
-## 8. Qualification limits
-
-Committed outputs are `TUTORIAL_NUMERICAL_EVIDENCE`: finite, hashed, and reproduced with WannierNLQG v1.0.1 at the stated mesh. They are not Physics PASS or Production PASS. Differences between Conventional, Geometric Loop, and Wilson Loop are displayed as method differences, not automatically classified as errors.
+- N. Marzari, A. A. Mostofi, J. R. Yates, I. Souza, and D. Vanderbilt, “Maximally localized Wannier functions: Theory and applications,” *Reviews of Modern Physics* **84**, 1419–1475 (2012). [DOI](https://doi.org/10.1103/RevModPhys.84.1419). Background for Wannier interpolation and its physical scope.

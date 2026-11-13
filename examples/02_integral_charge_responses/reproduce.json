@@ -1,0 +1,711 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "injection_current_conventional",
+      "input": "examples/02_integral_charge_responses/inputs/injection_current_conventional.toml",
+      "task_ids": [
+        "integral_injection_current_conventional"
+      ],
+      "input_sha256": "06e5f43f41457aac38517767d88b40d05915c56ffedef393a0eca286fdf575af",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "shift_current_conventional",
+      "input": "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml",
+      "task_ids": [
+        "integral_shift_current_conventional"
+      ],
+      "input_sha256": "84801e98761978ad2f57dcf809b3754d5b00b9c68440c928ce8cad759e946685",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          100,
+          100
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "previous_execution_record": {
+        "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+        "unified_result_evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "84801e98761978ad2f57dcf809b3754d5b00b9c68440c928ce8cad759e946685",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_current_geometric_loop",
+      "input": "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml",
+      "task_ids": [
+        "integral_shift_current_geometric_loop"
+      ],
+      "input_sha256": "176da9ebbe4915092fbadc37d501cf3279ac6e9c0a6e22eba45c349dea640818",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          100,
+          100
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "previous_execution_record": {
+        "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+        "unified_result_evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "176da9ebbe4915092fbadc37d501cf3279ac6e9c0a6e22eba45c349dea640818",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_current_wilson_loop",
+      "input": "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml",
+      "task_ids": [
+        "integral_shift_current_wilson_loop"
+      ],
+      "input_sha256": "4e53cff4e8c6704fa23a0beb0dd5564be5f730405004a842d3b4e15b053599ac",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          100,
+          100
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "previous_execution_record": {
+        "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+        "unified_result_evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "4e53cff4e8c6704fa23a0beb0dd5564be5f730405004a842d3b4e15b053599ac",
+        "response_recomputed_during_check": false
+      }
+    },
+    {
+      "case": "shift_current_projector",
+      "input": "examples/02_integral_charge_responses/inputs/shift_current_projector.toml",
+      "task_ids": [
+        "integral_shift_current_projector"
+      ],
+      "input_sha256": "286ed07356df49411ef3bd5217c6a8db63e77609ddb6ea3ea4967f8d21d509c7",
+      "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/GeS/operators.h5",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "response_grouping": "Adjacent consecutive energy gaps for Projector/Geometric_Loop/Wilson_Loop; conventional exact spectral guards unchanged."
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "new_computation": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "mesh": [
+          100,
+          100
+        ],
+        "all_finite": true,
+        "material_or_convergence_qualified": false
+      },
+      "previous_execution_record": {
+        "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+        "unified_result_evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_tutorial_entry_check": {
+        "status": "PASS",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "input_sha256": "286ed07356df49411ef3bd5217c6a8db63e77609ddb6ea3ea4967f8d21d509c7",
+        "response_recomputed_during_check": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "integral_injection_current_conventional",
+      "chapter": "02_integral_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/02_integral_charge_responses/data/model_ic_conv-ae64e0a2.dat"
+      ],
+      "figures": [
+        "examples/02_integral_charge_responses/figures/integral_injection_current_conventional.png",
+        "examples/02_integral_charge_responses/figures/integral_injection_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/02_integral_charge_responses/inputs/injection_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/02_integral_charge_responses/plot_configs/integral_injection_current_conventional.json",
+      "provenance": {
+        "original_figure_id": "integral_injection_current_conventional.skill-8",
+        "original_data_sha256": {
+          "examples/02_integral_charge_responses/results/reference-center-frame-20261106/integral_injection_current_conventional/model_ic_conv.dat": "ae64e0a2c8606608b44e1d9bc399edab3862f988ad875a5562eff2f34bcc7e01"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/02_integral_charge_responses/results/reference-center-frame-20261106/integral_injection_current_conventional/executed-group-input.toml": "553460239819256dea502e4e040178b1d93c3b426268bcd2772989ea759db8df"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/02_integral_charge_responses/data/integral_injection_current_conventional.provenance.json",
+        "source_file_sha256": "19006b1bb58174b56ffedfa6b0b11827227a5936ee359eec0398b23dce4399ee",
+        "payload_sha256": "cd3188d0000d07d158834e5cc4aa34c479bb3cf9c9802517d4dcb2fa4998a9de",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "components": [
+          "Im xxy",
+          "Im xyx"
+        ],
+        "x_column": 1,
+        "y_columns": [
+          5,
+          7
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true,
+        "notes": [
+          "Ordered injection-rate coefficients; no extra factor of two or relaxation time applied."
+        ]
+      }
+    },
+    {
+      "id": "integral_shift_current_conventional",
+      "chapter": "02_integral_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/02_integral_charge_responses/data/operators_sc_conv-c07167e1.dat"
+      ],
+      "figures": [
+        "examples/02_integral_charge_responses/figures/integral_shift_current_conventional.png",
+        "examples/02_integral_charge_responses/figures/integral_shift_current_conventional.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/02_integral_charge_responses/plot_configs/integral_shift_current_conventional.json",
+      "provenance": {
+        "original_figure_id": "integral_shift_current_conventional",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "mesh": [
+          100,
+          100
+        ],
+        "data_sha256": {
+          "examples/02_integral_charge_responses/data/operators_sc_conv-c07167e1.dat": "c07167e18a1e0cbe851cf5884d7d13cffcea4c633734542a0a4695c6d2c5e3e8"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/02_integral_charge_responses/data/integral_shift_current_conventional.provenance.json",
+        "source_file_sha256": "7a2b8c7d0a129817ed86f322f3844efbd7ac2bb8b6b0e6184e087ed9d24e3503",
+        "payload_sha256": "c5ae14f7bf3f942bf560dbe3212f6bce3df3c23a8d0955055c3b8befaf098160",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": false,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "5b2f8a8d104e3c29020a5ea11bf68f59f4c652a25b38f8eb54c7f077953035ec",
+        "pdf_sha256": "46914934292788372cb7d8ea2b546c81e509576cd0c507d39066cc2cb1b4903d"
+      }
+    },
+    {
+      "id": "integral_shift_current_geometric_loop",
+      "chapter": "02_integral_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/02_integral_charge_responses/data/operators_sc_geo-95b15239.dat"
+      ],
+      "figures": [
+        "examples/02_integral_charge_responses/figures/integral_shift_current_geometric_loop.png",
+        "examples/02_integral_charge_responses/figures/integral_shift_current_geometric_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/02_integral_charge_responses/plot_configs/integral_shift_current_geometric_loop.json",
+      "provenance": {
+        "original_figure_id": "integral_shift_current_geometric_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "mesh": [
+          100,
+          100
+        ],
+        "data_sha256": {
+          "examples/02_integral_charge_responses/data/operators_sc_geo-95b15239.dat": "95b152391182a9f56d3faf6432e35e83d9598c6907fb7f6478a7f654f6338938"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/02_integral_charge_responses/data/integral_shift_current_geometric_loop.provenance.json",
+        "source_file_sha256": "d767758176b8adb30f7256f652af2724a85d66e44cd6783e7f975600d5a6c43b",
+        "payload_sha256": "431e8d802c66f5e66d50a36b7e60cc1794f394a98100c82d71c3c23218576eb1",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": false,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "669fa626903b514d3ddfe4ef5f1d0a300b8a7b9735fe56718ef4e526d2b49bd6",
+        "pdf_sha256": "5ab217609f22e42474665f31c5c020ebaf08f60ee9cf3256ec39a850e7eb64d7"
+      }
+    },
+    {
+      "id": "integral_shift_current_wilson_loop",
+      "chapter": "02_integral_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/02_integral_charge_responses/data/operators_sc_wilson-8d8169f4.dat"
+      ],
+      "figures": [
+        "examples/02_integral_charge_responses/figures/integral_shift_current_wilson_loop.png",
+        "examples/02_integral_charge_responses/figures/integral_shift_current_wilson_loop.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/02_integral_charge_responses/plot_configs/integral_shift_current_wilson_loop.json",
+      "provenance": {
+        "original_figure_id": "integral_shift_current_wilson_loop",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "mesh": [
+          100,
+          100
+        ],
+        "data_sha256": {
+          "examples/02_integral_charge_responses/data/operators_sc_wilson-8d8169f4.dat": "8d8169f47291db5897c473da6598d7bfbe9b0cd279cd88b260ed336a9fcb144c"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/02_integral_charge_responses/data/integral_shift_current_wilson_loop.provenance.json",
+        "source_file_sha256": "240b60bc441c1da84d9661495df144eb1012fa016d969422e8b0165c1f5e725b",
+        "payload_sha256": "6ddc11c65f9b79c459c2733f36f67583e2896fad9993f29bc46310402d845fe9",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": false,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "eb21f657e2ecbc89a6e15a9aa2375468491053934b8228911cf265ce7db834cd",
+        "pdf_sha256": "e814872b010f145b08dcdf10254d8eb3d54abae8cac736116a57593885f150fa"
+      }
+    },
+    {
+      "id": "shift_current_methods",
+      "chapter": "02_integral_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/02_integral_charge_responses/data/operators_sc_conv-c07167e1.dat",
+        "examples/02_integral_charge_responses/data/operators_sc_proj-f145af8e.dat",
+        "examples/02_integral_charge_responses/data/operators_sc_geo-95b15239.dat",
+        "examples/02_integral_charge_responses/data/operators_sc_wilson-8d8169f4.dat"
+      ],
+      "figures": [
+        "examples/02_integral_charge_responses/figures/shift_current_methods.png",
+        "examples/02_integral_charge_responses/figures/shift_current_methods.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml",
+        "examples/02_integral_charge_responses/inputs/shift_current_projector.toml",
+        "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml",
+        "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_FOUR_METHOD_CURRENT_PUBLIC_SOURCE_COMPARISON",
+      "data_formats": {},
+      "recipe": "examples/02_integral_charge_responses/plot_configs/shift_current_methods.json",
+      "display_selection": {
+        "component": "Re yyy",
+        "source_values_unchanged": true,
+        "same_axis_and_scale": true
+      },
+      "derived_from": [
+        "integral_shift_current_conventional",
+        "integral_shift_current_geometric_loop",
+        "integral_shift_current_wilson_loop"
+      ],
+      "source_records": [
+        {
+          "figure_id": "integral_shift_current_conventional",
+          "record": "examples/02_integral_charge_responses/reproduce.json#/figures/1"
+        },
+        {
+          "figure_id": "integral_shift_current_geometric_loop",
+          "record": "examples/02_integral_charge_responses/reproduce.json#/figures/2"
+        },
+        {
+          "figure_id": "integral_shift_current_wilson_loop",
+          "record": "examples/02_integral_charge_responses/reproduce.json#/figures/3"
+        }
+      ],
+      "comparison_record": "manifests/shift_current_comparison.json",
+      "provenance": {
+        "original_figure_id": "shift_current_methods",
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "response_recomputed": true,
+        "mesh": [
+          100,
+          100
+        ],
+        "component": "Re yyy",
+        "all_methods_same_axis": true,
+        "comparisons": {
+          "Conventional": {
+            "relative_L2_from_conventional": 0.0,
+            "max_absolute_difference_from_conventional": 0.0
+          },
+          "Geometric_Loop": {
+            "relative_L2_from_conventional": 0.008004883115081662,
+            "max_absolute_difference_from_conventional": 1.507486000000002e-07
+          },
+          "Projector": {
+            "relative_L2_from_conventional": 0.003420163200334081,
+            "max_absolute_difference_from_conventional": 7.599379999999931e-08
+          },
+          "Wilson_Loop": {
+            "relative_L2_from_conventional": 0.0037148522663961324,
+            "max_absolute_difference_from_conventional": 8.281109999999863e-08
+          }
+        },
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/02_integral_charge_responses/data/shift_current_methods.provenance.json",
+        "source_file_sha256": "7b8f3edb0e5d3e008905e14d5b91ed8df4c810a96f5143031f4e6fb7ab6d0ec5",
+        "payload_sha256": "2574f1f939a16390d15bcbd283249bbfb30d162f0ed14c5a147abc71587d6093",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "5f0934439ea4eaac7cfed6427e087f17a7ef161f1827fd3bb6eb1f33aaf38449",
+        "pdf_sha256": "d4ffb065039e1289cb15ca359b2c9bdabd1526484c44558b2f000cd813118501"
+      }
+    },
+    {
+      "id": "integral_shift_current_projector",
+      "chapter": "02_integral_charge_responses",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/02_integral_charge_responses/data/operators_sc_proj-f145af8e.dat"
+      ],
+      "figures": [
+        "examples/02_integral_charge_responses/figures/integral_shift_current_projector.png",
+        "examples/02_integral_charge_responses/figures/integral_shift_current_projector.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/02_integral_charge_responses/inputs/shift_current_projector.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "data_formats": {},
+      "recipe": "examples/02_integral_charge_responses/plot_configs/integral_shift_current_projector.json",
+      "provenance": {
+        "original_figure_id": "integral_shift_current_projector",
+        "response_recomputed": true,
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "software_version": "1.2.0",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "ab9b59de4381064378510eefff602f1d529b3433eb0d4283479c35d3f5898f00",
+        "mesh": [
+          100,
+          100
+        ],
+        "data_sha256": {
+          "examples/02_integral_charge_responses/data/operators_sc_proj-f145af8e.dat": "f145af8e3336dd61e65540fe3df36747aa816fc7bc855daae6b39375ecfa8a63"
+        },
+        "actual_child_return_code": 0,
+        "all_finite": true,
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "response_grouping": "adjacent-gap chaining; threshold 0.002 eV for Projector and loop methods",
+        "physical_broadening_changed": false,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "examples/02_integral_charge_responses/data/integral_shift_current_projector.provenance.json",
+        "source_file_sha256": "563f2e6d597a7414c04cc283890abddb2115e1a4931a23fe70660b283de55ef6",
+        "payload_sha256": "27c174d8e9519ce9f8fa1a429a7ed07907d62fd12fca4c9460e53f47b0c334cb",
+        "encoding": "json-sort-keys-utf8-compact",
+        "identity_kind": "CURRENT_CALCULATION_INLINE_RECORD"
+      },
+      "display_selection": {
+        "numerical_recalculation": true,
+        "raw_source_values_unchanged": true,
+        "real_part_displayed": true,
+        "full_data_range_retained": true,
+        "common_scale_for_same_observable": false,
+        "display_factor": 1.0
+      },
+      "plot_execution": {
+        "status": "RENDERED_AND_VISUALLY_REVIEWED",
+        "formats": [
+          "png",
+          "pdf"
+        ],
+        "dpi": 600,
+        "font_and_glyph_checks": true,
+        "png_sha256": "a7652fb94b007d6920fb71572fb15f2c8a456b95abcb44b4a11e96f012070507",
+        "pdf_sha256": "dd2725a4ed7d1c50a8bcc40e9c0c69fc8787e3da4cc8b93f3e27eb63270c1bcb"
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 6
+}

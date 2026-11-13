@@ -1,103 +1,132 @@
-# Quantum-geometric multipoles
+# Momentum derivatives of quantum geometry
 
-First and second momentum derivatives and the quantum Christoffel symbol.
+## In this tutorial
 
-## 1. Physical quantity and method
+- Connect dipoles and quadrupoles to momentum derivatives.
+- Keep derivative indices and physical units explicit.
+- Test finite-difference step and k-mesh resolution separately.
 
-Each row is one independently executable `TaskConfig`. Integral tasks retain the complete native tensor; the component column is the default visualization selection.
+## Physics and model
 
-| Case | Quantity | Method | Reference mesh | Photon energy (eV) | Component | Band selection | Optional spin data |
-|---|---|---|---:|---:|---|---|---|
-| `berry_curvature_dipole_conventional.jl` | `berry_curvature_dipole` | `conventional` | 200×200 | None | `(1,2,2)` | `{"subspace":[19,20]}` | no |
-| `berry_curvature_quadrupole_conventional.jl` | `berry_curvature_quadrupole` | `conventional` | 200×200 | None | `(1,2,2,2)` | `{"subspace":[19,20]}` | no |
-| `quantum_metric_dipole_conventional.jl` | `quantum_metric_dipole` | `conventional` | 200×200 | None | `(2,2,2)` | `{"subspace":[19,20]}` | no |
-| `quantum_metric_quadrupole_conventional.jl` | `quantum_metric_quadrupole` | `conventional` | 200×200 | None | `(2,2,2,2)` | `{"subspace":[19,20]}` | no |
-| `quantum_christoffel_symbol_conventional.jl` | `quantum_christoffel_symbol` | `conventional` | 200×200 | None | `(2,2,2)` | `{"subspace":[19,20]}` | no |
+A derivative emphasizes where geometry changes, rather than simply where it is large. Write $\partial_c=\partial/\partial k_c$, with Cartesian $k_c$ in Å$^{-1}$. For a selected subspace,
 
-Derivative indices precede the underlying geometry indices: BCD `(d,a,b)`, BCQ `(d1,d2,a,b)`, QMD `(d,a,b)`, QMQ `(d1,d2,a,b)`. QCS uses `(a,b,c)`.
+$$
+\text{Dipoles:}\quad \partial_c\Omega_S^{ab},\ \partial_c g_S^{ab},
+\qquad
+\text{Quadrupoles:}\quad \partial_c\partial_d\Omega_S^{ab},\ \partial_c\partial_d g_S^{ab}.
+$$
 
-## 2. Inputs
+The component arrays place the geometry indices first and derivatives last: [a,b,c] for a dipole and [a,b,c,d] for a quadrupole. Thus [1,2,2] means the $y$ derivative of $\Omega^{xy}$. The underlying geometry has units Å²; its first and second derivatives have units Å³ and Å⁴.
 
-- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
-- Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
-- This chapter needs only the committed ordinary `GeS_tb.dat` model.
-- Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
+The finite-difference kernels use Cartesian displacement $h$:
 
-## 3. Parameter contract
+$$
+\partial_c F(\mathbf k)\simeq
+\frac{F(\mathbf k+h\mathbf e_c)-F(\mathbf k-h\mathbf e_c)}{2h},
+\qquad
+\partial_c^2 F(\mathbf k)\simeq
+\frac{F(\mathbf k+h\mathbf e_c)-2F(\mathbf k)+F(\mathbf k-h\mathbf e_c)}{h^2}.
+$$
 
-| Parameter | Reference value |
-|---|---|
-| Fermi energy / temperature | `-2.5 eV` / `0 K` for optical tasks |
-| Broadening | Gaussian, `0.060 eV` for optical tasks |
-| Denominator regularization | `0.001 eV` where applicable |
-| Finite-difference step | `1e-4 Å^-1` for derivative geometry |
-| Degeneracy threshold | `0.002 eV` |
-| Bands | `V=[19,20]`, `C1=[21,22]`, `C2=[23,24]` |
-| Fourier / centers | `direct` / `Convention_II` |
-| Output precision | 17 digits; no tutorial-side numerical reordering or truncation |
+$F$ is a selected curvature or metric component and $\mathbf e_c$ a Cartesian unit vector. Mixed derivatives use a four-corner stencil. The implementation converts Cartesian displacements into fractional-coordinate offsets; $h$ is not a reciprocal-lattice fraction.
 
-The case file is authoritative: parameters irrelevant to a quantity are not artificially applied. `smoke` changes only mesh/path density.
+The first-kind quantum Christoffel quantity is
 
-## 4. Run and visualize
+$$
+\Gamma_{r;lj}=\tfrac12\left(\partial_j g_{lr}+\partial_l g_{rj}-\partial_r g_{lj}\right).
+$$
+
+Its input order is [r,l,j] and its units are Å³. For [2,2,2], it is one half of the $y$ derivative of $g_{yy}$. No inverse metric is applied. The derivative kernels in `QuantumGeometryDerivatives.jl` fix these stencils and index conventions. The metric-related inputs here differentiate the internal metric.
+
+These local maps omit occupations and Brillouin-zone integration. They are not yet a nonlinear Hall coefficient or a magnetization response.
+
+## Parameters
+
+All examples use Materials/GeS/model_tb.dat with replica policy auto. Metric-related examples also request Materials/GeS/operators.h5 and set include_external=false.
+
+Set up the shared files with the [material data guide](../../Materials/README.md).
+
+| Parameter | Value | Meaning |
+| --- | --- | --- |
+| Selected subspace | [19,20] | Trace geometry, excluding intra-subspace transitions |
+| Berry / metric dipole | [1,2,2] / [2,2,2] | Last index is the derivative direction |
+| Berry / metric quadrupole | [1,2,2,2] / [2,2,2,2] | Last two indices are derivative directions |
+| Christoffel component | [2,2,2] | Order [r,l,j] |
+| finite_difference_step | 0.0001 Å⁻¹ | Cartesian displacement h |
+| denominator_regularization | 0.0 eV | Distinct from the step |
+| include_external | false for metric-related inputs | Internal metric derivatives |
+| k mesh | [200,200] | Two-dimensional k-slice |
+| Slice coordinates | origin=[0,0,0]; vectors [1,0,0], [0,1,0] | Fractional reciprocal-space sampling plane |
+| Fourier backend | direct | Evaluation of the real-space model |
+
+## Run
+
+From the repository root, check the inputs, then run either example into a new output directory:
 
 ```bash
-julia --project=. examples/07_qg_multipoles/run.jl --profile=smoke
-julia --project=. examples/07_qg_multipoles/run.jl --profile=reference
-julia --project=. scripts/visualize_all.jl
+julia --project=.runtime/env scripts/run_group.jl 07 --check
+julia --project=.runtime/env scripts/run_group.jl 07 --case=berry_curvature_dipole_conventional --output=.runtime/berry_curvature_dipole_conventional
+julia --project=.runtime/env scripts/run_group.jl 07 --case=quantum_metric_dipole_conventional --output=.runtime/quantum_metric_dipole_conventional
 ```
 
-Individual smoke commands:
+The check command does not calculate the response. Use a fresh output directory for each run.
+
+Start with [Berry curvature dipole](inputs/berry_curvature_dipole_conventional.toml) and [quantum metric dipole](inputs/quantum_metric_dipole_conventional.toml). Their component arrays are [1,2,2] and [2,2,2], respectively. The [Berry quadrupole](inputs/berry_curvature_quadrupole_conventional.toml), [metric quadrupole](inputs/quantum_metric_quadrupole_conventional.toml), and [Christoffel](inputs/quantum_christoffel_symbol_conventional.toml) inputs extend this exercise.
+
+## Read the figures
+
+The figures below use the supplied example data. Redrawing them does not execute the calculation inputs above.
+
+### Berry curvature derivative
+
+<a href="figures/kslice_berry_curvature_dipole_conventional.png"><img src="figures/kslice_berry_curvature_dipole_conventional.png" alt="Berry curvature derivative" width="680"></a>
+
+The displayed derivative is labeled as the y derivative of the xy Berry curvature, in cubic angstroms. Use its sign changes to distinguish increasing and decreasing regions. The signed-log scale is not a linear measure of the contrast. [Original PNG](figures/kslice_berry_curvature_dipole_conventional.png) · [PDF](figures/kslice_berry_curvature_dipole_conventional.pdf).
+
+### Internal metric derivative
+
+<a href="figures/kslice_quantum_metric_dipole_conventional.png"><img src="figures/kslice_quantum_metric_dipole_conventional.png" alt="Internal metric derivative" width="680"></a>
+
+The map displays the y derivative of the internal yy metric, also in cubic angstroms. Although a diagonal metric is nonnegative, its derivative can have either sign. Compare this map with the metric map in Chapter 06 to understand the difference between magnitude and variation. [Original PNG](figures/kslice_quantum_metric_dipole_conventional.png) · [PDF](figures/kslice_quantum_metric_dipole_conventional.pdf).
+
+## Redraw and check
+
+Redraw either core figure into a new directory:
 
 ```bash
-julia --project=. examples/07_qg_multipoles/cases/berry_curvature_dipole_conventional.jl --profile=smoke
-julia --project=. examples/07_qg_multipoles/cases/berry_curvature_quadrupole_conventional.jl --profile=smoke
-julia --project=. examples/07_qg_multipoles/cases/quantum_metric_dipole_conventional.jl --profile=smoke
-julia --project=. examples/07_qg_multipoles/cases/quantum_metric_quadrupole_conventional.jl --profile=smoke
-julia --project=. examples/07_qg_multipoles/cases/quantum_christoffel_symbol_conventional.jl --profile=smoke
+python examples/07_qg_multipoles/plot.py --figure=kslice_berry_curvature_dipole_conventional --output=.runtime/plot-kslice_berry_curvature_dipole_conventional
+python examples/07_qg_multipoles/plot.py --figure=kslice_quantum_metric_dipole_conventional --output=.runtime/plot-kslice_quantum_metric_dipole_conventional
 ```
 
-Existing result directories are never overwritten.
+Try reducing the finite-difference step and increasing the k mesh separately, writing each calculation to a new directory. A stable derivative should not depend strongly on either choice within the accuracy you need.
 
-## 5. Output interpretation
+Zero regularization and small gaps can produce very sharp features. Derivatives amplify numerical error, particularly at second order; the plotted peaks are not established converged values. Metric-related results here omit external contributions. Do not infer a large measurable transport response from a large local derivative alone.
 
-- `kslice_berry_curvature_dipole_conventional`: `GeS_bcdk_subspace_19_20_conv.dat`
-- `kslice_berry_curvature_quadrupole_conventional`: `GeS_bcqk_subspace_19_20_conv.dat`
-- `kslice_quantum_metric_dipole_conventional`: `GeS_qmdk_subspace_19_20_conv.dat`
-- `kslice_quantum_metric_quadrupole_conventional`: `GeS_qmqk_subspace_19_20_conv.dat`
-- `kslice_quantum_christoffel_symbol_conventional`: `GeS_qcsk_subspace_19_20_conv.dat`
+[Reproducibility](reproduce.json)
 
-Every task directory also contains native `metadata.txt` and a tutorial `summary.json` with input/output SHA-256 values. Complex K-slice quantities retain separate real (`_r_`) and imaginary (`_i_`) files; the default figure shows the real part. `raw/`-style quantities retain the package's native stable filenames without renaming.
+## Second derivatives and the metric connection
 
-## 6. Figure-reading guide
+<a href="figures/kslice_berry_curvature_quadrupole_conventional.png"><img src="figures/kslice_berry_curvature_quadrupole_conventional.png" alt="Berry-curvature quadrupole" width="680"></a>
 
-K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+[PDF](figures/kslice_berry_curvature_quadrupole_conventional.pdf)
 
-Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+<a href="figures/kslice_quantum_metric_quadrupole_conventional.png"><img src="figures/kslice_quantum_metric_quadrupole_conventional.png" alt="Internal metric quadrupole" width="680"></a>
 
-![kslice berry curvature dipole conventional](figures/kslice_berry_curvature_dipole_conventional.png)  [PDF](figures/kslice_berry_curvature_dipole_conventional.pdf) [Plot audit](figures/kslice_berry_curvature_dipole_conventional.plot.json)
+[PDF](figures/kslice_quantum_metric_quadrupole_conventional.pdf)
 
-*Conventional Berry-curvature dipole of subspace [19,20], component (1,2,2); native output units; presentation only.*
+<a href="figures/kslice_quantum_christoffel_symbol_conventional.png"><img src="figures/kslice_quantum_christoffel_symbol_conventional.png" alt="First-kind quantum Christoffel symbol" width="680"></a>
 
-![kslice berry curvature quadrupole conventional](figures/kslice_berry_curvature_quadrupole_conventional.png)  [PDF](figures/kslice_berry_curvature_quadrupole_conventional.pdf) [Plot audit](figures/kslice_berry_curvature_quadrupole_conventional.plot.json)
+[PDF](figures/kslice_quantum_christoffel_symbol_conventional.pdf)
 
-*Conventional Berry-curvature quadrupole of subspace [19,20], component (1,2,2,2); native output units; presentation only.*
+The quadrupoles have units Å⁴ and the first-kind Christoffel symbol has units Å³. For the shown component, $\Gamma_{y;yy}=\tfrac12\partial_y g_{yy}$; it is not the connection obtained after multiplying by an inverse metric. First and second differences amplify short-scale structure and numerical noise differently. The supplied peak heights are finite-step, finite-grid results, so a sharper quadrupole does not by itself establish a stronger physical response. Keep the Cartesian step, the selected subspace and the momentum mesh separate when testing stability.
 
-![kslice quantum metric dipole conventional](figures/kslice_quantum_metric_dipole_conventional.png)  [PDF](figures/kslice_quantum_metric_dipole_conventional.pdf) [Plot audit](figures/kslice_quantum_metric_dipole_conventional.plot.json)
+```bash
+python examples/07_qg_multipoles/plot.py --figure=kslice_berry_curvature_quadrupole_conventional --output=.runtime/berry-quadrupole
+python examples/07_qg_multipoles/plot.py --figure=kslice_quantum_metric_quadrupole_conventional --output=.runtime/metric-quadrupole
+python examples/07_qg_multipoles/plot.py --figure=kslice_quantum_christoffel_symbol_conventional --output=.runtime/christoffel
+```
 
-*Conventional quantum-metric dipole of subspace [19,20], component (2,2,2); native output units; presentation only.*
+## References
 
-![kslice quantum metric quadrupole conventional](figures/kslice_quantum_metric_quadrupole_conventional.png)  [PDF](figures/kslice_quantum_metric_quadrupole_conventional.pdf) [Plot audit](figures/kslice_quantum_metric_quadrupole_conventional.plot.json)
-
-*Conventional quantum-metric quadrupole of subspace [19,20], component (2,2,2,2); native output units; presentation only.*
-
-![kslice quantum christoffel symbol conventional](figures/kslice_quantum_christoffel_symbol_conventional.png)  [PDF](figures/kslice_quantum_christoffel_symbol_conventional.pdf) [Plot audit](figures/kslice_quantum_christoffel_symbol_conventional.plot.json)
-
-*Conventional quantum Christoffel symbol of subspace [19,20], component (2,2,2); native output units; presentation only.*
-
-## 7. Relation to the manuscript
-
-This tutorial follows quantities and parameter choices used in the manuscript workflow, but uses the released ordinary GeS model and a separately audited VASP display reference. It is not a byte-identical reconstruction of the manuscript's SAWF band bundle and is not evidence that manuscript figures were reproduced.
-
-## 8. Qualification limits
-
-Committed outputs are `TUTORIAL_NUMERICAL_EVIDENCE`: finite, hashed, and reproduced with WannierNLQG v1.0.1 at the stated mesh. They are not Physics PASS or Production PASS. Differences between Conventional, Geometric Loop, and Wilson Loop are displayed as method differences, not automatically classified as errors.
+- I. Sodemann and L. Fu, “Quantum Nonlinear Hall Effect Induced by Berry Curvature Dipole in Time-Reversal Invariant Materials,” *Physical Review Letters* **115**, 216806 (2015). [DOI](https://doi.org/10.1103/PhysRevLett.115.216806). Physical context for the occupation-weighted integrated dipole.
+- J. P. Provost and G. Vallée, “Riemannian structure on manifolds of quantum states,” *Communications in Mathematical Physics* **76**, 289–301 (1980). [DOI](https://doi.org/10.1007/BF02193559). Geometric background for the metric.

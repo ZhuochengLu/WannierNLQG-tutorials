@@ -1,0 +1,795 @@
+{
+  "scope": "all selected mapped figure files",
+  "files": [
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_bands.pdf",
+      "bytes": 398123,
+      "sha256": "eec7b17ccfe589260b629a9b919289c4018ec1cf323345c4c076b8a76937636e"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_bands.png",
+      "bytes": 926304,
+      "sha256": "c370c4de5402ca28c769ee16027eb54369c5e026aa052c0cac4e8a2d91d6924e"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_errors.pdf",
+      "bytes": 355996,
+      "sha256": "589e9df6872200573f2db218a8c5b90f56c33aa4541286f4a1fedfa245b76ffe"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_errors.png",
+      "bytes": 225395,
+      "sha256": "99c68b62970bb63e63c64a19c43859e5ad81c94edf3a50c57026e68fac98b889"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_bands.pdf",
+      "bytes": 395643,
+      "sha256": "2172d5acadc0f7e9630822c92e10e49569041fbeae77b271fe37f69b91457438"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_bands.png",
+      "bytes": 1018981,
+      "sha256": "731394bac557996542350b098071695dc482e775c43e657e08cd66f15ab2f42e"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_errors.pdf",
+      "bytes": 355996,
+      "sha256": "589e9df6872200573f2db218a8c5b90f56c33aa4541286f4a1fedfa245b76ffe"
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_errors.png",
+      "bytes": 225395,
+      "sha256": "99c68b62970bb63e63c64a19c43859e5ad81c94edf3a50c57026e68fac98b889"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_injection_current_conventional.pdf",
+      "bytes": 400404,
+      "sha256": "f1167807b5d6a0201a78f177f4489e167435154ad673cec723f2839490830a99"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_injection_current_conventional.png",
+      "bytes": 244941,
+      "sha256": "d490dacd57a263374d9ef324168070fa94f8f8ce2e6a6154b1ff49c34cdaf7f2"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_conventional.pdf",
+      "bytes": 399588,
+      "sha256": "46914934292788372cb7d8ea2b546c81e509576cd0c507d39066cc2cb1b4903d"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_conventional.png",
+      "bytes": 218366,
+      "sha256": "5b2f8a8d104e3c29020a5ea11bf68f59f4c652a25b38f8eb54c7f077953035ec"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_geometric_loop.pdf",
+      "bytes": 399567,
+      "sha256": "5ab217609f22e42474665f31c5c020ebaf08f60ee9cf3256ec39a850e7eb64d7"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_geometric_loop.png",
+      "bytes": 220543,
+      "sha256": "669fa626903b514d3ddfe4ef5f1d0a300b8a7b9735fe56718ef4e526d2b49bd6"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_projector.pdf",
+      "bytes": 399574,
+      "sha256": "dd2725a4ed7d1c50a8bcc40e9c0c69fc8787e3da4cc8b93f3e27eb63270c1bcb"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_projector.png",
+      "bytes": 218436,
+      "sha256": "a7652fb94b007d6920fb71572fb15f2c8a456b95abcb44b4a11e96f012070507"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_wilson_loop.pdf",
+      "bytes": 399577,
+      "sha256": "e814872b010f145b08dcdf10254d8eb3d54abae8cac736116a57593885f150fa"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/integral_shift_current_wilson_loop.png",
+      "bytes": 219398,
+      "sha256": "eb21f657e2ecbc89a6e15a9aa2375468491053934b8228911cf265ce7db834cd"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/shift_current_methods.pdf",
+      "bytes": 401699,
+      "sha256": "d4ffb065039e1289cb15ca359b2c9bdabd1526484c44558b2f000cd813118501"
+    },
+    {
+      "path": "examples/02_integral_charge_responses/figures/shift_current_methods.png",
+      "bytes": 299304,
+      "sha256": "5f0934439ea4eaac7cfed6427e087f17a7ef161f1827fd3bb6eb1f33aaf38449"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.pdf",
+      "bytes": 399853,
+      "sha256": "da12f44022031c3d74b214a3674fa8077058c070f72cba711f36dec42d2bdae7"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/figures/integral_injection_spin_current_conventional.png",
+      "bytes": 262675,
+      "sha256": "8eef68f4ad56752241e1f66d837ad56d157a77ef3f4bdd30267f53b5407bc327"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/figures/integral_shift_spin_current_conventional.pdf",
+      "bytes": 400427,
+      "sha256": "e30410f1f27dbb57a056dce5aff428f7cd18f7bce5df80837e0d372de95c8b2f"
+    },
+    {
+      "path": "examples/03_integral_spin_responses/figures/integral_shift_spin_current_conventional.png",
+      "bytes": 236393,
+      "sha256": "483a262fb034172fb1c8fdf63e20cf3afbed0000ff3f6d75ce99b7883e4cb0ee"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.pdf",
+      "bytes": 400809,
+      "sha256": "7eb96561310278da513251055671a71a2417378198db9970f35290329254db36"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.png",
+      "bytes": 169271,
+      "sha256": "f32d62d11a84fa762f9e5cbd9562abfd988fb7c003b3ddc77d7ed367223125a6"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_conventional.pdf",
+      "bytes": 413046,
+      "sha256": "cd9bca083540772202d4e9772c3ae9c2e49ad64162d52f913acf58e0ebe8a92a"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_conventional.png",
+      "bytes": 184700,
+      "sha256": "3fb742b85ad33490411653ef7c0965f0967c82e36877e95f830cde8cabc0b990"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_geometric_loop.pdf",
+      "bytes": 413888,
+      "sha256": "c1a31996cbe96863731d02779302a04893565ab22aa07a1d90544521e2d262ce"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_geometric_loop.png",
+      "bytes": 186473,
+      "sha256": "51abc0736471d42c24bf1e0a64c39176b794aa33549fa46e21d64be9009b7ef4"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_projector.pdf",
+      "bytes": 412902,
+      "sha256": "6482841a8d0c8649dd808ca3bfba39d04327430b0f69256875c37ac3781cf3b4"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_projector.png",
+      "bytes": 184740,
+      "sha256": "f1f3dd3472379e9d641426c53724532abd10619c7f6542f51c8c5f0de59441a5"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_wilson_loop.pdf",
+      "bytes": 412903,
+      "sha256": "8ef0cfcee62ae0b43504878d51d31f5b6d72de3dc7b72067b61b27cbcb92cd59"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_wilson_loop.png",
+      "bytes": 185557,
+      "sha256": "3589dcddcdd6eca67d5de37c366b0802f47fd36fed564e433eaebc4b3b5bff90"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.pdf",
+      "bytes": 407101,
+      "sha256": "23aa60f145f1064c7d3b6ead60703a918dce23d1f793b5e5732a7361f0146a6e"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.png",
+      "bytes": 176377,
+      "sha256": "bbc43c94df29d95dbf5232a3e8de077b10f1509c27c5412c9429ee12645ecda8"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_yzxy_fullbands.pdf",
+      "bytes": 440058,
+      "sha256": "2e3523090bbc1d7f043ab2691419a32ac3beb28b6e5783adc595f9974bfde2e2"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_yzxy_fullbands.png",
+      "bytes": 270819,
+      "sha256": "9cbf12d6b9fb7a6e735ed113632b1839d448e7b015921126f5292f8fd9682825"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.pdf",
+      "bytes": 400617,
+      "sha256": "d626b3143a3f7c20e1dcab9b3556b1ff3484b96ed36d1087719881ea95a3ced2"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_shift_spin_current_conventional.png",
+      "bytes": 178290,
+      "sha256": "7f0f0451efab67d74010de6dca914490a076b236bff31272e28bb359d3e8dd4b"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_shift_spin_yzxy_fullbands.pdf",
+      "bytes": 432880,
+      "sha256": "bf376ef1598cb6b76113b1f33259b2f1833303986e02a8a6cb51bab58065bb1c"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/figures/kslice_shift_spin_yzxy_fullbands.png",
+      "bytes": 237884,
+      "sha256": "cee33412e6a51f8512cd485bb1036891fc3803cad9e24730419ad10f39ec8247"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_berry_curvature_conventional.pdf",
+      "bytes": 509276,
+      "sha256": "430b017b7097d186c8100d6eadcee441a37e3bb49e25fcc4a353ecf3c53f3b8c"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_berry_curvature_conventional.png",
+      "bytes": 201455,
+      "sha256": "f171f707fc771b74c44d162f0081d76190fb641550044d0bb54a3d2c998fac73"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_interband_berry_curvature_conventional.pdf",
+      "bytes": 519103,
+      "sha256": "eb6c8306db559b879b5a633d8b83e6952ff5ab0860670e3b1c7f89387fd84137"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_interband_berry_curvature_conventional.png",
+      "bytes": 179536,
+      "sha256": "b265c646b1a6302803a4c2087c41f9bb7d0d3734271f7b8f759062bd1e9b5079"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_interband_quantum_metric_conventional.pdf",
+      "bytes": 522327,
+      "sha256": "947cdfd6c4fa9a667fb9bdaa2458e3755f46e9f4f13f3fef4502e07419852abd"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_interband_quantum_metric_conventional.png",
+      "bytes": 191881,
+      "sha256": "2251935080670680b39fef3f847a084021d782d2a7c12ddd89aa116bc0fe6945"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_quantum_metric_conventional.pdf",
+      "bytes": 533792,
+      "sha256": "a2c801be042e1656822d2e7975d7098869911cc9f160b0b9dc88119dc8413a09"
+    },
+    {
+      "path": "examples/06_qg_pairwise/figures/kslice_quantum_metric_conventional.png",
+      "bytes": 155650,
+      "sha256": "316c00ecc9d794957137593396e6305e6372804f738584f080f8554ee231703a"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_berry_curvature_dipole_conventional.pdf",
+      "bytes": 521111,
+      "sha256": "be18617bc68c6bfe17e593fb9cc5a861791e374520b552a09ebeea534439e4bb"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_berry_curvature_dipole_conventional.png",
+      "bytes": 218960,
+      "sha256": "64b7ce1513f3049cef48cc95c3b41fed6ca74bf7c3d21ee62ffb67021e7be62f"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_berry_curvature_quadrupole_conventional.pdf",
+      "bytes": 521019,
+      "sha256": "f3f7c6ed83d3a7055b2d78f6c19ec086d09f55bab5168ecc8d53eb115c21cddc"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_berry_curvature_quadrupole_conventional.png",
+      "bytes": 189610,
+      "sha256": "99f4711c7554464bb7bcdf146d14d7ca486ee048e00d89ea7fd979d33d12d692"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_christoffel_symbol_conventional.pdf",
+      "bytes": 531444,
+      "sha256": "e853db8ae130a249e387af2eed1081aacbee8eef300a0ed01d113e8f1c5e6370"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_christoffel_symbol_conventional.png",
+      "bytes": 224381,
+      "sha256": "be9ee6a0a03db9a4752102b90b300772743e6629bff9a2df944d1a08f22c798c"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_metric_dipole_conventional.pdf",
+      "bytes": 530550,
+      "sha256": "6f524bda4e757a366e95afcc8aecb0def2c544fe2f11d3ef7b5eec33ab714073"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_metric_dipole_conventional.png",
+      "bytes": 226869,
+      "sha256": "a4dcf12bf6f24957b82c87979bbafe7cac43bb02f539ed8057ee8b488d4ce730"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.pdf",
+      "bytes": 468133,
+      "sha256": "a48932b95011f75c7e3c88dd2be76b363c51f7a01ed365997dd472c1a80edf68"
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.png",
+      "bytes": 140594,
+      "sha256": "1ad53f4f844320ebcb62a540a6758f530c697b17ed04b3ea2f0eec59df9eb422"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_conventional.pdf",
+      "bytes": 477529,
+      "sha256": "bd3bbd8f6e105363e3b4394669f0a4f84025cd79069a0849b0e0f7924dc9776d"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_conventional.png",
+      "bytes": 182543,
+      "sha256": "cdea083ee65a665e295bdc82951312ec5a1364dc86b36a0663f4ac12f64dd7bc"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_wilson_loop.pdf",
+      "bytes": 477713,
+      "sha256": "c936ae294edcd01ea4903e2b80a21b11e55af59de3052d3a6e4ad42031baa9a3"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_quantum_hermitian_connection_wilson_loop.png",
+      "bytes": 182808,
+      "sha256": "5bbab38b7cc91c34dbba26d33e11c5695855c98c4924d1dfd3b5c35dd88ec12c"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_shift_vector_geometric_loop.pdf",
+      "bytes": 472203,
+      "sha256": "9265fe8637a7ca8c8bbbdd32be8d5ee9fce587fbf97dd4a4609ca49d34d13109"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_shift_vector_geometric_loop.png",
+      "bytes": 257035,
+      "sha256": "870e6541bb9e6679084c1e7eac824d2b1ad340cf628ef267c389d15d39491e9c"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_shift_vector_wilson_loop.pdf",
+      "bytes": 472178,
+      "sha256": "d64bd51461c37571b49d6b58f0502a0ff46dd45d925e84af93f22dad7a217a17"
+    },
+    {
+      "path": "examples/08_shift_geometry/figures/kslice_shift_vector_wilson_loop.png",
+      "bytes": 256142,
+      "sha256": "031a26006556b4f751448119a0d3e4531b24c9ebea2834852ec919ba152c2b7c"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.pdf",
+      "bytes": 459670,
+      "sha256": "d97967cbcfb8f4ca3b1f9f72fdc455f3cab5c253e55607e764c2a27963ad20e3"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_hermitian_curvature_tensor_conventional.png",
+      "bytes": 171845,
+      "sha256": "6b114569de0c457ac3eb5019bc685a33b0347a048db8c1cd7dea082bbd601a7f"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_triple_phase_product_conventional.pdf",
+      "bytes": 448708,
+      "sha256": "7cfa69cc12190bcfb0afc81cb939f094a2e3b5416813de2012ded74fccacaa35"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_triple_phase_product_conventional.png",
+      "bytes": 185747,
+      "sha256": "a54dcc4373a3a304df60623addf8e0ad3a4da0b951ed4cfce6054d9d8150cef9"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_berry_curvature_conventional.pdf",
+      "bytes": 454616,
+      "sha256": "f63d9fe626f3a1a79429c16ff3a15a50e7d4e95c39ce86f5c631254b659814eb"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_berry_curvature_conventional.png",
+      "bytes": 204361,
+      "sha256": "91bbe46130741bf1a104a77806c8811d33d153144f313685a3a232a74ee08ab4"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_quantum_metric_conventional.pdf",
+      "bytes": 118228,
+      "sha256": "74f4da1350038b02f9ca70d57282b1b3d247548a23ba1562b3f278a0854c5fa7"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/figures/kslice_zeeman_interband_quantum_metric_conventional.png",
+      "bytes": 265306,
+      "sha256": "3e9bc7c027d47bc07ff72de9f1d2a3e468fb2642d0a9a57e39d6f23fef252078"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/figures/shg_chi_yyy.pdf",
+      "bytes": 401895,
+      "sha256": "5f6a56c93b44b9228d12f78bdfefcf9e7115513278a7c24002a917985f834e42"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/figures/shg_chi_yyy.png",
+      "bytes": 348057,
+      "sha256": "22ccd7b777653ac42f66cb974f38fbd0ae08abe1b186e286d206798a48b62653"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/figures/shg_sigma_yyy.pdf",
+      "bytes": 401920,
+      "sha256": "ff5a6451880ac0ffbf5c6413bbb4513a8220b55ac7a187885268afcd7aa4fe1d"
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/figures/shg_sigma_yyy.png",
+      "bytes": 376322,
+      "sha256": "9464f7f78a91a1d4d281e0256222e4a1db02d6af41216d3be763f3b4f00557f5"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/berry_sos_occupied_xy.pdf",
+      "bytes": 472679,
+      "sha256": "08471770af26945dde294974a52338d899950c6c6334d3c1867f4c298ed486e1"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/berry_sos_occupied_xy.png",
+      "bytes": 404669,
+      "sha256": "36d6e55009234b1c687c166949f7296c73fb21bc1d2b4d177e5d6d9c723ca8ed"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/berry_tb_occupied_xy.pdf",
+      "bytes": 472667,
+      "sha256": "9ef38790d020505ca43ca55333766528de66b98e51fb9211fc0999c378e27778"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/berry_tb_occupied_xy.png",
+      "bytes": 402971,
+      "sha256": "42f784d31b2175614c415fab7d966094a449451456a0ae4eca292bb6fb794f7f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/berry_transport_equivalent_xy.pdf",
+      "bytes": 502891,
+      "sha256": "5cc125c9f38793c2da9588deee0e516bd73b72a93ff98dff1244c7244d404db7"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/berry_transport_equivalent_xy.png",
+      "bytes": 396378,
+      "sha256": "95eff4be17767aeee20218484a3a6949b3a9c5f2b2b2e67ed234ff09a75b835c"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xx.pdf",
+      "bytes": 56042,
+      "sha256": "efa03e634c99b372a4d168ae19bc49bdad7623e12831e4c130457045aae3b5a8"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xx.png",
+      "bytes": 255813,
+      "sha256": "5a86f54c97e2cc5d83c31117c9d20cd2ffb4a0940f7e4e203e22ca1f2a4e54a3"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xy.pdf",
+      "bytes": 55540,
+      "sha256": "a124b091249be89c8e788f8ec674a240c1a8cdfb8618a118cf86dbd7ccf1eb2f"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xy.png",
+      "bytes": 353349,
+      "sha256": "ca3b306c7ddb473b7e18e3d2a0f0964265ad99058f59faee60ae99aedd15eb29"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xx_spectra.pdf",
+      "bytes": 54069,
+      "sha256": "557220e9588e2e85a14ccc127909d800419dbf967a811265ba2e71647c6f00b9"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xx_spectra.png",
+      "bytes": 238185,
+      "sha256": "091b82b70a87ee8ed15c5a0cb9b2908a137906b6350318ff7ec28eb7d57139a6"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xy_spectra.pdf",
+      "bytes": 50306,
+      "sha256": "a1aaad42ba7a3ae9ce5463ef589f4883c1e9471cc5a6092eb590139733964bc7"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xy_spectra.png",
+      "bytes": 299238,
+      "sha256": "79e81fc5c605ca268a7ad801aa7828b34774c1ac4bd5764c91c5787dc6c90f69"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_orbital_magnetization_z.pdf",
+      "bytes": 48775,
+      "sha256": "7387b89e9c443dda50436b7a6215c42e8bbcd36c099fa7a7c25d5e06b30d283d"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/figures/fe_orbital_magnetization_z.png",
+      "bytes": 432300,
+      "sha256": "ee3dbccd53b64b489fcb36940424078d828680ffdc6f3a6eef02bd40d8215bf2"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.pdf",
+      "bytes": 408694,
+      "sha256": "46845b94ebecccf9ddad1aeb27a61cdcffbdd9cc47f02d78a774f41fd3525b69"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.png",
+      "bytes": 1955231,
+      "sha256": "03a7358a13bf852dcd8d96405c0a451ee32b4788a8e2e53c0ef28a083c7157e6"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.pdf",
+      "bytes": 363463,
+      "sha256": "7e53e3541b69b87abf8170d4eddfa9be2771ad3a009b359ed07563a5c0f90145"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.png",
+      "bytes": 402120,
+      "sha256": "ce844fa66802803561f28bdfcc4718b50150397b36affd39c6d1b1c7848cc16c"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.pdf",
+      "bytes": 391701,
+      "sha256": "8dfe97e4b10a6ecaecd9f769ee5d71e9e5a5b35b1ef5aa135cb677136a1e52f6"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.png",
+      "bytes": 1266107,
+      "sha256": "eec7d1077da878d36fc0efe4422fb23e0caa1d2736fba2c87521d79b89b70ed1"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.pdf",
+      "bytes": 363463,
+      "sha256": "7e53e3541b69b87abf8170d4eddfa9be2771ad3a009b359ed07563a5c0f90145"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.png",
+      "bytes": 402120,
+      "sha256": "ce844fa66802803561f28bdfcc4718b50150397b36affd39c6d1b1c7848cc16c"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_bands.pdf",
+      "bytes": 391742,
+      "sha256": "973fbbd45758719f6f6e6f6546f1ec33b79251693ad435a3a1c2fe6a20fdf7af"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_bands.png",
+      "bytes": 1263974,
+      "sha256": "c80202f3fd061e13353cc272934b55756293682982414f885707b7542a3b579f"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_errors.pdf",
+      "bytes": 363486,
+      "sha256": "01a6fd48c607916b1ca47b5d4bbc979021d7735b092855fc03361b5060c9d525"
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/native_fe_diagnostic_review_errors.png",
+      "bytes": 402758,
+      "sha256": "928f73cc21c18728c9f368e928d363682d165cd717920d6b5d3871ab488dea28"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_bands.pdf",
+      "bytes": 484192,
+      "sha256": "f603349a0953b60738d0a664a772820749bbfc599a9a1127221e6c11aedc2ea0"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_bands.png",
+      "bytes": 428844,
+      "sha256": "561fcc99f6f954250fc50008b1f5496adc82b78940b60f8b042102e7fd6edf20"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_convergence.pdf",
+      "bytes": 399631,
+      "sha256": "6502a69e7e531f964014aad6e746b44f7cafef631c69efc46575c40ec6ea6100"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_convergence.png",
+      "bytes": 199136,
+      "sha256": "dfdd3e18e15554794eb1f3a99798686b0ac67b5dc6bd159c8647dd61523e42e4"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_hall_vs_mu.pdf",
+      "bytes": 588050,
+      "sha256": "d3258dddbd5062b59b3a1179b6449c1ff4d3f2753ead869c66368fb9231338b9"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_hall_vs_mu.png",
+      "bytes": 434828,
+      "sha256": "210e38707739c786af4112017b783da1d0622829df9fb8b2816082aba7f06a71"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_phase_diagram.pdf",
+      "bytes": 447755,
+      "sha256": "69458cffb62cb345e9560c4cb98702006c78d65942bb85ebde2f907368938164"
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_phase_diagram.png",
+      "bytes": 418903,
+      "sha256": "b1d44f2c10204ea795a50a299452c812cb3b5061a5998bac0b987c361b26edca"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_bands_shift_vector.pdf",
+      "bytes": 378932,
+      "sha256": "79a390a858f318c2a892ae38d17c68967d74c8cf38d133db51cdb0d9463c6ee8"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_bands_shift_vector.png",
+      "bytes": 257772,
+      "sha256": "147b574d99fda7d2c884c98924b6ba53d5122c934b2561f25467c02a967f09fc"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_convergence.pdf",
+      "bytes": 432238,
+      "sha256": "11355e3520c6df93b5c3ae21a142920d7d6cd610f8d786108a701b59be3f99da"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_convergence.png",
+      "bytes": 261083,
+      "sha256": "9023cc25dc979fcf4147e22e8034c77ec762dbf11e9d06e31b6cea3eeebefd35"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_shift_current.pdf",
+      "bytes": 403488,
+      "sha256": "796ecb1ce57a4a6aac3ca8251fca7c173a1c8ff7bc289eccbd3abc757008038e"
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_shift_current.png",
+      "bytes": 322544,
+      "sha256": "1e2e07ffac47131a1b0e423386e9ee2b2bb1f1faa26869b2b4125d5449ab958e"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_bands_berry.pdf",
+      "bytes": 563917,
+      "sha256": "cda5d9ce2f4d0b52f262607477e101b9c0ddd774aa02330eff6b8e8f828810ad"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_bands_berry.png",
+      "bytes": 421328,
+      "sha256": "81fd7215e48dc3392d69ac71e00478533e52f91a55e175a569b441ec607fae7c"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_convergence.pdf",
+      "bytes": 410469,
+      "sha256": "a5aa8c198ca661eeae16fc6f45ae370cb97942afd897e1ec6646f47d98df2552"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_convergence.png",
+      "bytes": 817777,
+      "sha256": "482e90805f63baa49441e811f31f2ae9799a0b55851ff4daed1122dde716803d"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_cutoff_dependence.pdf",
+      "bytes": 409590,
+      "sha256": "48bf1c4ea2cd9b84bd3d32ebcf03f2fa87399438d75e69bf8dacb83d0e14ee49"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_cutoff_dependence.png",
+      "bytes": 831481,
+      "sha256": "83723be6fd7fe77172a966ec3ae073d7827445e5ff3ae90b527ec913571b1198"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_hall_vs_mu.pdf",
+      "bytes": 401495,
+      "sha256": "6846d051e3dd21cabce61478b9496118423e332caaeacd83af02306dd6588c39"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_hall_vs_mu.png",
+      "bytes": 331351,
+      "sha256": "75b266c0c6a23891308fc2e7caf2e3a5aeb74cab2f8115dffc54673fb78d50b0"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_optical_conductivity.pdf",
+      "bytes": 408386,
+      "sha256": "e492266cd1af94fc28114926ff05edad7dee4ec18d4dd5498d90ef746d667fe1"
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_optical_conductivity.png",
+      "bytes": 919400,
+      "sha256": "dbb550fe96294d55d4df39a58a64d997bf25152857eb7193d42aadcb2a5d1c3d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/low_frequency.pdf",
+      "bytes": 434126,
+      "sha256": "a411067f8a427ffc2102d811d4530dea3d32d6048b54c39554d9a643a060bc3f"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/low_frequency.png",
+      "bytes": 349351,
+      "sha256": "11fe80bec1cee4daedc738baf3648a412ee9bfb33c236cf3a250463a7c860d9c"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/mesh_scan.pdf",
+      "bytes": 409017,
+      "sha256": "3922f6a43f31c5790d3aa786af151ab20828f6f5b65af05aa6f3fb049c6710f1"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/mesh_scan.png",
+      "bytes": 793264,
+      "sha256": "1fdc863bbd148bf71b75eab98ed9dd7634ed66b76e7a5e68019229fc5e211358"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/regrouped_terms.pdf",
+      "bytes": 408131,
+      "sha256": "b70036a39e737d9e72846339aeef784be9a23cf5826d9bc88f74a32d7568ff82"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/regrouped_terms.png",
+      "bytes": 659410,
+      "sha256": "c2e54552b83dc19f3aaebc3ab75462ab721d35c2c02167adddc97cace910e907"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/spectra.pdf",
+      "bytes": 404515,
+      "sha256": "e1fa2389bd8113fb2c81e935ef1382115c74a17cb2ae8d792dd7313ab27e9257"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/spectra.png",
+      "bytes": 632924,
+      "sha256": "5042b90d65887a412bb616d5a2d2eed9c2dcbdff1cdfee0eae9e46d16f8312e7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_distribution_low.pdf",
+      "bytes": 400235,
+      "sha256": "3ea8107d9c6ca6c7d4dbdd69a0e447dbf83ced583089eaf515c69d26423b2e48"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_distribution_low.png",
+      "bytes": 239603,
+      "sha256": "fca2ef5dcf46e522ee9ecc80c1f0b7b195da7d3af3e1dcb41eb09e3139127db7"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_distribution_spectra.pdf",
+      "bytes": 403501,
+      "sha256": "1d7772e4f08d8552eb26d512b081a9feb0e078c0f6422dd0752ebea1ecf9e4f5"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_distribution_spectra.png",
+      "bytes": 440024,
+      "sha256": "457176b1a875f160a90ce9c1a0ffb84fc185ca1b938782531158566a642f7d8b"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_complex.pdf",
+      "bytes": 407162,
+      "sha256": "1b8e47c38565832bdde6b59d0ce9025041ccfe7502aeb3d9fda1dec9bccbaa9d"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_complex.png",
+      "bytes": 437460,
+      "sha256": "6b703ab9d13dd448bdb46d7426dcf02eb0dc7635a15917b96f6738bd017b2c25"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_magnitude.pdf",
+      "bytes": 441147,
+      "sha256": "42955db1b4abb6b9daffede7a27da85489a92c0b6df5fa302ade758904f727cb"
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/thg_valley_magnitude.png",
+      "bytes": 647846,
+      "sha256": "9d411c5faab08aa4f0594a9d33e0b4659db495e4673a483c113017c570f22286"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_dense_current.pdf",
+      "bytes": 363449,
+      "sha256": "94cda4f3d4984f6784155ef8221449cd9d93db90f7fe88b3a22574e5091e8e53"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_dense_current.png",
+      "bytes": 407748,
+      "sha256": "f16a74e6c555c3dd925cc6d0f684c0bdc7d15d578b165ad5c98c7a3ae0f15527"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_mesh_current.pdf",
+      "bytes": 401097,
+      "sha256": "2a8b936f1aae8d2524b95fb448392080f3bf1aebb674ede8f9da78e33a0b9bcf"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_mesh_current.png",
+      "bytes": 417504,
+      "sha256": "17dc5c2cfaa5d233835b17f1566b6f5f92598544e91d29712879bd585b78e013"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_pilot_bulk.pdf",
+      "bytes": 401269,
+      "sha256": "018eaeddea8eb1272bc65263a261339f3f53e8da5e1667772c5492085bec804e"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_pilot_bulk.png",
+      "bytes": 212163,
+      "sha256": "29c15ecced5da6e6dbcd27f3f482076116f17bb7ae01cd72a5669374674e2e9d"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_pilot_sheet.pdf",
+      "bytes": 401036,
+      "sha256": "9968248b1408515666c301e9a79e6d8f0c2280fd3472c5e95e3ddd6f925d5ced"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_pilot_sheet.png",
+      "bytes": 187287,
+      "sha256": "bf80d687eb03bf80bd1a84f412444d760338507047236f067d06283d6591c161"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/two_band_analytical_vs_wanniernlqg.pdf",
+      "bytes": 346951,
+      "sha256": "4439cc9cfee2768bf2e6c08e5462878cfd3b5a00e772a53f6e878db81a173b06"
+    },
+    {
+      "path": "examples/17_jerk_current/figures/two_band_analytical_vs_wanniernlqg.png",
+      "bytes": 484929,
+      "sha256": "a000c7306bf8f62519a633504508e30a781949668367a3a3253409e37f0c0ffc"
+    }
+  ]
+}

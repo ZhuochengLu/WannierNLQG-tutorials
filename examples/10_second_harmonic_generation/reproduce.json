@@ -1,0 +1,141 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "second_harmonic_generation_conventional",
+      "input": "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml",
+      "task_ids": [
+        "integral_second_harmonic_generation_conventional"
+      ],
+      "input_sha256": "1b36e128c03eed0b368c074011e665659767902453e01d7b5e55782970243977",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/GeS/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            100,
+            100
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "shg_sigma_yyy",
+      "chapter": "10_second_harmonic_generation",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/10_second_harmonic_generation/data/shg_sigma_yyy-9ca8a970.dat"
+      ],
+      "figures": [
+        "examples/10_second_harmonic_generation/figures/shg_sigma_yyy.png",
+        "examples/10_second_harmonic_generation/figures/shg_sigma_yyy.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/10_second_harmonic_generation/plot_configs/shg_sigma_yyy.json",
+      "provenance": {
+        "original_figure_id": "shg_sigma_yyy.skill-0",
+        "original_data_sha256": {
+          "examples/10_second_harmonic_generation/results/reference-center-frame-20261106/integral_second_harmonic_generation_conventional/shg_sigma_yyy.dat": "9ca8a970306e46eb28fe1d840d762f847208030b43d4c280f25d748a6d36d5a3"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/10_second_harmonic_generation/results/reference-center-frame-20261106/integral_second_harmonic_generation_conventional/executed-group-input.toml": "d5102a3dbf8db22b3bc516343fbe430fad27ea6609dedbdc52a765c52356ac70"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/10_second_harmonic_generation/data/shg_sigma_yyy.provenance.json",
+        "source_file_sha256": "88fed216f734e6fa7afbf3569678f2aa8420d4b3d9fc182ea6efae75f03f7725",
+        "payload_sha256": "23762f02298f6dcc5b9420e01d4009328fd9bf9fe1a040b88aa8b86052bc7826",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Use a physical display title; numerical limitations remain in the tutorial."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    },
+    {
+      "id": "shg_chi_yyy",
+      "chapter": "10_second_harmonic_generation",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/10_second_harmonic_generation/data/shg_chi_yyy-c90aa18f.dat"
+      ],
+      "figures": [
+        "examples/10_second_harmonic_generation/figures/shg_chi_yyy.png",
+        "examples/10_second_harmonic_generation/figures/shg_chi_yyy.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "data_formats": {},
+      "recipe": "examples/10_second_harmonic_generation/plot_configs/shg_chi_yyy.json",
+      "provenance": {
+        "original_figure_id": "shg_chi_yyy.skill-1",
+        "original_data_sha256": {
+          "examples/10_second_harmonic_generation/results/reference-center-frame-20261106/integral_second_harmonic_generation_conventional/shg_chi_yyy.dat": "c90aa18fc117c05f82991b65c516baa9d103bc8fe7c44b6862634f0a87037324"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/10_second_harmonic_generation/results/reference-center-frame-20261106/integral_second_harmonic_generation_conventional/executed-group-input.toml": "d5102a3dbf8db22b3bc516343fbe430fad27ea6609dedbdc52a765c52356ac70"
+        },
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/10_second_harmonic_generation/data/shg_chi_yyy.provenance.json",
+        "source_file_sha256": "a5ac91cfd0979e35aeb60c595e803861a2d9944088ea4fb2ca7f764e2a4f48cd",
+        "payload_sha256": "cbe77f06fcaf4e4e1e45f6606d62d32e0c8666bbbc32921ae0bcc334c8966be9",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [
+          "Use a physical display title; numerical limitations remain in the tutorial."
+        ],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 2
+}

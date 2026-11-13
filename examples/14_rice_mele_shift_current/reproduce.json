@@ -1,0 +1,715 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "tb_polar",
+      "input": "examples/14_rice_mele_shift_current/inputs/tb_polar.toml",
+      "task_ids": [
+        "tb_polar"
+      ],
+      "input_sha256": "3744bcd40d5d1483ee4d05bd520bd0bb5b63a694af100089d5cc473f685d6b1c",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/tb/polar",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "3744bcd40d5d1483ee4d05bd520bd0bb5b63a694af100089d5cc473f685d6b1c",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/tb_polar/polar_sc_conv.dat": "a7f4dee9b8810499b9366aeb986fbb4b95427cbb4ad51cf417d528d780ac1e66"
+        }
+      }
+    },
+    {
+      "case": "analytic_polar",
+      "input": "examples/14_rice_mele_shift_current/inputs/analytic_polar.toml",
+      "task_ids": [
+        "analytic_polar"
+      ],
+      "input_sha256": "18664ea119f11b6558a61c0fcbe4fbcf023a651a3ed8b02e4519ca4080adc836",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/analytic/polar",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "18664ea119f11b6558a61c0fcbe4fbcf023a651a3ed8b02e4519ca4080adc836",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/analytic_polar/polar_sc_conv.dat": "6d24827f0b91bffcc5a5b907828523623fcb56784ddcc68a2f7024fe3bdbf428"
+        }
+      }
+    },
+    {
+      "case": "tb_reversed",
+      "input": "examples/14_rice_mele_shift_current/inputs/tb_reversed.toml",
+      "task_ids": [
+        "tb_reversed"
+      ],
+      "input_sha256": "55a991a84774c2d2e3358c5938d728e2423a172b3abbf19479bbf29994894fab",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/tb/reversed",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "55a991a84774c2d2e3358c5938d728e2423a172b3abbf19479bbf29994894fab",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/tb_reversed/reversed_sc_conv.dat": "98fe908f031b41f194f9b612643068642285277bcfc742b8ad5a877ab2771649"
+        }
+      }
+    },
+    {
+      "case": "analytic_reversed",
+      "input": "examples/14_rice_mele_shift_current/inputs/analytic_reversed.toml",
+      "task_ids": [
+        "analytic_reversed"
+      ],
+      "input_sha256": "e1fc94d6315159a2e1cecbafed96315f104827bd745a97c0bc97d216d585c2a2",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/analytic/reversed",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "e1fc94d6315159a2e1cecbafed96315f104827bd745a97c0bc97d216d585c2a2",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/analytic_reversed/reversed_sc_conv.dat": "94a9ea8df639fb90270cf0792c17a94779098e7daeda3c59b2ec05e1efc98c4b"
+        }
+      }
+    },
+    {
+      "case": "tb_ssh",
+      "input": "examples/14_rice_mele_shift_current/inputs/tb_ssh.toml",
+      "task_ids": [
+        "tb_ssh"
+      ],
+      "input_sha256": "4c2d2422b4f28c252cb5948d53ce3637b153d458f6f5965e587eff347ec72129",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/tb/ssh",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "4c2d2422b4f28c252cb5948d53ce3637b153d458f6f5965e587eff347ec72129",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/tb_ssh/ssh_sc_conv.dat": "5e1f4d66ce4100e4c7d98c2f76a1d1da365c6f040f557ba6cb763a3bc9375d60"
+        }
+      }
+    },
+    {
+      "case": "analytic_ssh",
+      "input": "examples/14_rice_mele_shift_current/inputs/analytic_ssh.toml",
+      "task_ids": [
+        "analytic_ssh"
+      ],
+      "input_sha256": "000e03d8a17152fe4bee076b253eb1e96980a764fc3b1f6d302c8bb897dadad1",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/analytic/ssh",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "000e03d8a17152fe4bee076b253eb1e96980a764fc3b1f6d302c8bb897dadad1",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/analytic_ssh/ssh_sc_conv.dat": "5e1f4d66ce4100e4c7d98c2f76a1d1da365c6f040f557ba6cb763a3bc9375d60"
+        }
+      }
+    },
+    {
+      "case": "tb_ionic",
+      "input": "examples/14_rice_mele_shift_current/inputs/tb_ionic.toml",
+      "task_ids": [
+        "tb_ionic"
+      ],
+      "input_sha256": "155344b4d3f837b1538fe1484810e555c7b9d05b61e2774a12efa8b75f9d00de",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/tb/ionic",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "155344b4d3f837b1538fe1484810e555c7b9d05b61e2774a12efa8b75f9d00de",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/tb_ionic/ionic_sc_conv.dat": "2ddb2517e864baaed84847f7f72ff685b98f28c1c99ea6632136b47d9e685a1d"
+        }
+      }
+    },
+    {
+      "case": "analytic_ionic",
+      "input": "examples/14_rice_mele_shift_current/inputs/analytic_ionic.toml",
+      "task_ids": [
+        "analytic_ionic"
+      ],
+      "input_sha256": "b556463565b567e62ebdcc7ef50034ffb09c7a5cf89af9da6f7e6a1c4cf36c2e",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/analytic/ionic",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            801,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "b556463565b567e62ebdcc7ef50034ffb09c7a5cf89af9da6f7e6a1c4cf36c2e",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/analytic_ionic/ionic_sc_conv.dat": "0211ad5ce51a6c206d2ad1fe271cd6f552992d38d9c5fa09a85381ae1d0bdbe5"
+        }
+      }
+    },
+    {
+      "case": "tb_polar_n401",
+      "input": "examples/14_rice_mele_shift_current/inputs/tb_polar_n401.toml",
+      "task_ids": [
+        "tb_polar_n401"
+      ],
+      "input_sha256": "87f472c50ca76516267b9e7a701cddbc65675ceaf857cbe1effa94079c230f45",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/tb/polar",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            401,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "87f472c50ca76516267b9e7a701cddbc65675ceaf857cbe1effa94079c230f45",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/tb_polar_n401/polar_sc_conv.dat": "d24d8ecfc402a765eb0d6750477348799a0a058cec9fbb352fad34fe2c23aa60"
+        }
+      }
+    },
+    {
+      "case": "tb_polar_n1601",
+      "input": "examples/14_rice_mele_shift_current/inputs/tb_polar_n1601.toml",
+      "task_ids": [
+        "tb_polar_n1601"
+      ],
+      "input_sha256": "ea45712fe5081424bc00efe43c52d97834d9933ec042fe8faecd0eb8be086a4e",
+      "calculation_record": "Actual current public725 execution at the existing reference settings; old results retained in the external verified archive.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "identity": "rice_mele/tb/polar",
+          "source": "julia"
+        },
+        "sampling": {
+          "k_mesh": [
+            1601,
+            1
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 2
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "current_execution_followup329": {
+        "execution_id": "WN-Tutorial-provenance316",
+        "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "software_version": "1.2.0",
+        "input_sha256": "ea45712fe5081424bc00efe43c52d97834d9933ec042fe8faecd0eb8be086a4e",
+        "actual_return_code": 0,
+        "complete_recorded_identities_released": 6,
+        "material_or_convergence_qualified": false,
+        "result_data_sha256": {
+          "examples/14_rice_mele_shift_current/data/current725/tb_polar_n1601/polar_sc_conv.dat": "3a22471a44a6b2fac22e2b0503cebb10c9cd602002f127cfaa266446418813b4"
+        }
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "chapter_reference_figures",
+      "chapter": "14_rice_mele_shift_current",
+      "engine": "specialized_script",
+      "data": [
+        "examples/14_rice_mele_shift_current/data/bands_shift_vector.tsv",
+        "examples/14_rice_mele_shift_current/data/reference_spectrum.json",
+        "examples/14_rice_mele_shift_current/data/shift_current_curves.tsv",
+        "examples/14_rice_mele_shift_current/data/reference.json",
+        "examples/14_rice_mele_shift_current/data/convergence.tsv"
+      ],
+      "figures": [
+        "examples/14_rice_mele_shift_current/figures/rice_mele_bands_shift_vector.png",
+        "examples/14_rice_mele_shift_current/figures/rice_mele_convergence.png",
+        "examples/14_rice_mele_shift_current/figures/rice_mele_shift_current.png",
+        "examples/14_rice_mele_shift_current/figures/rice_mele_bands_shift_vector.pdf",
+        "examples/14_rice_mele_shift_current/figures/rice_mele_convergence.pdf",
+        "examples/14_rice_mele_shift_current/figures/rice_mele_shift_current.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/14_rice_mele_shift_current/inputs/tb_polar.toml",
+        "examples/14_rice_mele_shift_current/inputs/analytic_polar.toml",
+        "examples/14_rice_mele_shift_current/inputs/tb_reversed.toml",
+        "examples/14_rice_mele_shift_current/inputs/analytic_reversed.toml",
+        "examples/14_rice_mele_shift_current/inputs/tb_ssh.toml",
+        "examples/14_rice_mele_shift_current/inputs/analytic_ssh.toml",
+        "examples/14_rice_mele_shift_current/inputs/tb_ionic.toml",
+        "examples/14_rice_mele_shift_current/inputs/analytic_ionic.toml",
+        "examples/14_rice_mele_shift_current/inputs/tb_polar_n401.toml",
+        "examples/14_rice_mele_shift_current/inputs/tb_polar_n1601.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Current public725 actual execution at all original case meshes; saved native results and deterministic display conversion retained.",
+      "data_formats": {},
+      "script": "examples/14_rice_mele_shift_current/plot_reference.py",
+      "redraw_verification": {
+        "scope": "plot_only_existing_values",
+        "run": 210,
+        "parent_state": "RUN_FAILED",
+        "artifact_review": "PNG_AND_PDF_PASS",
+        "failed_parent_not_upgraded": true
+      },
+      "provenance": {
+        "original_figure_id": "chapter_reference_figures",
+        "current_verified_public_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "actual_current_case_executions": {
+          "tb_polar": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "3744bcd40d5d1483ee4d05bd520bd0bb5b63a694af100089d5cc473f685d6b1c",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/tb_polar/polar_sc_conv.dat": "a7f4dee9b8810499b9366aeb986fbb4b95427cbb4ad51cf417d528d780ac1e66"
+            }
+          },
+          "analytic_polar": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "18664ea119f11b6558a61c0fcbe4fbcf023a651a3ed8b02e4519ca4080adc836",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/analytic_polar/polar_sc_conv.dat": "6d24827f0b91bffcc5a5b907828523623fcb56784ddcc68a2f7024fe3bdbf428"
+            }
+          },
+          "tb_reversed": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "55a991a84774c2d2e3358c5938d728e2423a172b3abbf19479bbf29994894fab",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/tb_reversed/reversed_sc_conv.dat": "98fe908f031b41f194f9b612643068642285277bcfc742b8ad5a877ab2771649"
+            }
+          },
+          "analytic_reversed": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "e1fc94d6315159a2e1cecbafed96315f104827bd745a97c0bc97d216d585c2a2",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/analytic_reversed/reversed_sc_conv.dat": "94a9ea8df639fb90270cf0792c17a94779098e7daeda3c59b2ec05e1efc98c4b"
+            }
+          },
+          "tb_ssh": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "4c2d2422b4f28c252cb5948d53ce3637b153d458f6f5965e587eff347ec72129",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/tb_ssh/ssh_sc_conv.dat": "5e1f4d66ce4100e4c7d98c2f76a1d1da365c6f040f557ba6cb763a3bc9375d60"
+            }
+          },
+          "analytic_ssh": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "000e03d8a17152fe4bee076b253eb1e96980a764fc3b1f6d302c8bb897dadad1",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/analytic_ssh/ssh_sc_conv.dat": "5e1f4d66ce4100e4c7d98c2f76a1d1da365c6f040f557ba6cb763a3bc9375d60"
+            }
+          },
+          "tb_ionic": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "155344b4d3f837b1538fe1484810e555c7b9d05b61e2774a12efa8b75f9d00de",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/tb_ionic/ionic_sc_conv.dat": "2ddb2517e864baaed84847f7f72ff685b98f28c1c99ea6632136b47d9e685a1d"
+            }
+          },
+          "analytic_ionic": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "b556463565b567e62ebdcc7ef50034ffb09c7a5cf89af9da6f7e6a1c4cf36c2e",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/analytic_ionic/ionic_sc_conv.dat": "0211ad5ce51a6c206d2ad1fe271cd6f552992d38d9c5fa09a85381ae1d0bdbe5"
+            }
+          },
+          "tb_polar_n401": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "87f472c50ca76516267b9e7a701cddbc65675ceaf857cbe1effa94079c230f45",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/tb_polar_n401/polar_sc_conv.dat": "d24d8ecfc402a765eb0d6750477348799a0a058cec9fbb352fad34fe2c23aa60"
+            }
+          },
+          "tb_polar_n1601": {
+            "execution_id": "WN-Tutorial-provenance316",
+            "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+            "software_version": "1.2.0",
+            "input_sha256": "ea45712fe5081424bc00efe43c52d97834d9933ec042fe8faecd0eb8be086a4e",
+            "actual_return_code": 0,
+            "complete_recorded_identities_released": 6,
+            "material_or_convergence_qualified": false,
+            "result_data_sha256": {
+              "examples/14_rice_mele_shift_current/data/current725/tb_polar_n1601/polar_sc_conv.dat": "3a22471a44a6b2fac22e2b0503cebb10c9cd602002f127cfaa266446418813b4"
+            }
+          }
+        },
+        "bounded_Hall_reuse_without_new_spectrum": {},
+        "current_display_input_sha256": {
+          "examples/14_rice_mele_shift_current/data/bands_shift_vector.tsv": "ee29d2c5d47a91a4939f9b06f35cef167fe8ddc672f8c5dfb540ab2c889e6030",
+          "examples/14_rice_mele_shift_current/data/reference_spectrum.json": "76cf7c53177b0e9ea8b95c4909f1fdc4416a5dac9749e2b6989f4ba89a03063b",
+          "examples/14_rice_mele_shift_current/data/shift_current_curves.tsv": "8435d2f54e78f49920326c1e27512b6ebcfd4b57c47ca8bf900c3abd73bf5c6a",
+          "examples/14_rice_mele_shift_current/data/reference.json": "cd89e5d05d1928a98fb8d4e14931d6ad4cf4ba4443fa1fea96dacb540159b012",
+          "examples/14_rice_mele_shift_current/data/convergence.tsv": "4b19405196e4b415bfc9118ef7e760f72b35e2c72b8db3ec48dfc1304390deee"
+        },
+        "retained_source_record": {
+          "original_figure_id": "chapter_reference_figures",
+          "original_data_sha256": {
+            "examples/14_rice_mele_shift_current/validation/bands_shift_vector.tsv": "ee29d2c5d47a91a4939f9b06f35cef167fe8ddc672f8c5dfb540ab2c889e6030",
+            "examples/14_rice_mele_shift_current/validation/smoke_spectrum.json": "46713aaacf1a9a62619347884c3bdab62ce292954434f7e06db7f268b9dc1ac8",
+            "examples/14_rice_mele_shift_current/validation/reference_spectrum.json": "5198cdef1531d914b4dd1809090091ff695c346b8249989fb6b3391ccf0f004c",
+            "examples/14_rice_mele_shift_current/validation/shift_current_curves.tsv": "b1582ccb6a7d7f883518ac161a096ff22ea1fd76e0cbdb18d41b06c04f9ea773",
+            "examples/14_rice_mele_shift_current/validation/reference.json": "cd89e5d05d1928a98fb8d4e14931d6ad4cf4ba4443fa1fea96dacb540159b012",
+            "examples/14_rice_mele_shift_current/validation/convergence.tsv": "5e1ea380427e6bbeae04e1be99a47d233671572c2597a47c1e7a91afa7e3713a",
+            "examples/14_rice_mele_shift_current/validation/smoke.json": "b527344216ba2b463638a9f2278d6afecc19781601068e77b4c08a7a62fa80b7",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_ssh/summary.json": "924bae9b72d0c0865e79878a6b3bba4d943e1ea7cdb0ec6d10b56cdda78effa5",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_ssh/metadata.txt": "59bd22d65afee2001a8a66358b8c767238fe04a8196ba6aab59ee06f288ebbf2",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_ssh/rice_mele_sc_conv.dat": "5726d69fa4393aafa1a2ec1121cc545f2b9478928389622d9e5b21f2b191974c",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_polar/summary.json": "aa3f48fdffba5756e247fd8c49678e701868236c7f6d56fbce286e386c1c3712",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_polar/metadata.txt": "a616a22f1e4e1104e3e839861a945cdab28ceadcbfd9d6311f6b8e354786c51a",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_polar/rice_mele_sc_conv.dat": "e71b52899f23cf22b4689f61f2a415da79bef6ea5037c5905a800967f43b0aaa",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_ionic/summary.json": "e9f947271b3b717bad215baca327423ce2f3b92cb059d80eeff80517c854c4df",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_ionic/metadata.txt": "c3322e72445f7e288099f36719f22a446ead19ebefb1db3f2c5220be9ec9e114",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_ionic/rice_mele_sc_conv.dat": "360e65af477f38ed02234584ede953c96dd4e04f672473c583defab5d6faef10",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_ssh/summary.json": "88e0551887e9d408337fdf6e9bbb090ab230ddc5d5622c59127b644419131e70",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_ssh/metadata.txt": "51dd1043f0fb9891d930c87c7095015ff1249abb81d0fb57e7c0de5a52189680",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_ssh/rice_mele_sc_conv.dat": "5726d69fa4393aafa1a2ec1121cc545f2b9478928389622d9e5b21f2b191974c",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_reversed/summary.json": "c3852ad70548596330977ab02933ce3d8293cf1dfe9f381dc5509a4de84fe398",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_reversed/metadata.txt": "7f102c9558a5fa569a4c8af0bfcb7fe487567983b97745dd488497778f9cc692",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_reversed/rice_mele_sc_conv.dat": "7626352c39768f96b9c4094750131f8d65fa6218fb41ee69a7f315795a7b70f8",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_reversed/summary.json": "769ed79055d774b7c657810c39218423ad19ee7c035c0f0472bf17906224257a",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_reversed/metadata.txt": "c43ed98193e737cee355ade1a2d3585f6f27d95917563bcc7ea312e75b419dbe",
+            "examples/14_rice_mele_shift_current/results/smoke/analytic_reversed/rice_mele_sc_conv.dat": "bb82ed71216a502cddb72f206e7e88e5d41c295102d16ced13f1bbdab3a7e0c9",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_ionic/summary.json": "ff437eaa9cc08c6db3440518e1e0fa8b348f7575554c5c28f851c36e4e38025e",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_ionic/metadata.txt": "7e6b851724ab11f7b5cfabfaedac4c13e586a1fb6997f5fdeffa2a4573f25446",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_ionic/rice_mele_sc_conv.dat": "4d33bee3011df59a77fb94c032f8a09fc61d7765de2666d767009a2d8c6cecfd",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_polar/summary.json": "9bf9d0bc3e02029cabc2bafcab93b83118dd0c755f3ba373120cfb2ad7dbb97e",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_polar/metadata.txt": "606d113694abc98e8ed8b07e2898088631d83a4adfbd535a7fe96e1dac1c7ff5",
+            "examples/14_rice_mele_shift_current/results/smoke/tb_polar/rice_mele_sc_conv.dat": "6ec4bc938ed61328cf2c62b9187eed3014f1f021ebb621912896713b8015e583",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar_n1601/summary.json": "ff4847dd24a0d40f7cc75224ef7eb19f1a104f935fd85502a3fa4c562c68c82c",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar_n1601/metadata.txt": "ce6bd8876f3ab910a1f5c088bfc7d62964daf6a888489b109e818898028216f1",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar_n1601/rice_mele_sc_conv.dat": "38e47e0bf1f77057e9ce3795ebae8378e8db515158a033ab2efcd3c661d41a6a",
+            "examples/14_rice_mele_shift_current/results/reference/tb_ssh/summary.json": "030ec6d6e45a51c2b2f17c458753a20953100d9176f65cb95a87834a104df82b",
+            "examples/14_rice_mele_shift_current/results/reference/tb_ssh/metadata.txt": "9001f4119b8c986858443207d01bad61a5a54f5effc94af461f8e0725361155c",
+            "examples/14_rice_mele_shift_current/results/reference/tb_ssh/rice_mele_sc_conv.dat": "4dbdd62b0012e381cdc472fd7c9c718b31bd29daf5a3dbef48855b7183ad548c",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_polar/summary.json": "b2e7dd167c2061df1ad0a3d7bc5c2666d3f7426b242311365ccbfe83ce5600af",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_polar/metadata.txt": "016acf4bd0dd9a6135fea3c2b19e210fdb88141d49116a71595dd300ef934c72",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_polar/rice_mele_sc_conv.dat": "0a4c3a3aef801d6836a5f897e505137182716be8e572c0c1e70ff255fe6ae6e5",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_ionic/summary.json": "1aebb5fac8d32097410ef2f093fd8df294b70c0a9a7e520c041b99364a7280d6",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_ionic/metadata.txt": "d04ca6f44a92e27e4bb1f4ac87605f63a18f391627395c2e732ba0b63ad7a7f9",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_ionic/rice_mele_sc_conv.dat": "e073d47d9f5c8362555f90a3c2bd12a21b8ffdbe688744e70cd1debdde5fa27d",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_ssh/summary.json": "98f0213d82b3ac9c4b8ec5cf21e1a68bce1c340be22cbdb6f72032b390aceb2a",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_ssh/metadata.txt": "982d8ae7ec5cc5cac5c8d697a33588f7c61468389935bbfdd0bd44036a4be70b",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_ssh/rice_mele_sc_conv.dat": "4dbdd62b0012e381cdc472fd7c9c718b31bd29daf5a3dbef48855b7183ad548c",
+            "examples/14_rice_mele_shift_current/results/reference/tb_reversed/summary.json": "0ff575560491747da66a45c05a6c9c25de6a31d9ed0713513132695456a32224",
+            "examples/14_rice_mele_shift_current/results/reference/tb_reversed/metadata.txt": "63a19a5f51593e3b0b6c400c53cffe1243abc212687ebdee11476240a9c31201",
+            "examples/14_rice_mele_shift_current/results/reference/tb_reversed/rice_mele_sc_conv.dat": "5df080c693c8238be67981765c2dd8633e16505b50747577715f5520cd916d6d",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_reversed/summary.json": "a0d8f5c1932a017153634e9eb35957c1e1e7d9037480d6bb29a9bfab1e9515fb",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_reversed/metadata.txt": "ea9d4e26b0efd139ebd0dfe4e831c5fefaab6032b0b48fdd2496845a22da1df2",
+            "examples/14_rice_mele_shift_current/results/reference/analytic_reversed/rice_mele_sc_conv.dat": "3d8fe0c00481291d5efc76ec48534a55c883c796dc3afb968515a936e8830a3f",
+            "examples/14_rice_mele_shift_current/results/reference/tb_ionic/summary.json": "6d8668d49db3bcd0283e1d5411ceb1cef761a33cc62a4b52747e28a9a4fc3342",
+            "examples/14_rice_mele_shift_current/results/reference/tb_ionic/metadata.txt": "77ff1956ade34f1be0391eb4e1c394628f75a9ca73a8058a148dc592a389f0fb",
+            "examples/14_rice_mele_shift_current/results/reference/tb_ionic/rice_mele_sc_conv.dat": "0fccd9e1528792688627850c1aed3c1db6e2ac342398fab4ffb007db80c3a880",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar/summary.json": "01f0109c70c7a005ec925117cb9400e5b8fd5219e89f7c87f7d8b894e4612732",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar/metadata.txt": "1166627e6be77d4682592f7151728c60a48a25532c77fc639f62215dabb9f19f",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar/rice_mele_sc_conv.dat": "9195931ae860b06b1721ff80c05ada560fad40c417a8a8ab2f49d863eab7a3da",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar_n401/summary.json": "288040ceda8c0b1b25799437cfb09906e1af10604afee1acd635d1c40aaa8abf",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar_n401/metadata.txt": "f0b4bd2c6c3999393bfd65075d3b191907c68e555f43ca0fc15342e2ee3f29a9",
+            "examples/14_rice_mele_shift_current/results/reference/tb_polar_n401/rice_mele_sc_conv.dat": "959f8872c23e2058b7bae95fc87c3759e1ffe06c6f3368192bfa9ae5cfc3db3b"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true,
+          "restored_reference_helper_sha256": "3ca84e29ba03ac8f83d7d752696c54ce6e7fe655c07c2f78b1e7f452a3399de2"
+        },
+        "unchanged_independent_reference_and_supplementary_data_retain_original_source": true,
+        "old_source_record_not_relabelled_as_current_execution": true,
+        "material_or_convergence_qualified": false
+      },
+      "provenance_source": {
+        "merged_from": "manifests/retained-source-records/followup334/14_rice_mele_shift_current__chapter_reference_figures.provenance.json",
+        "source_file_sha256": "0639d7378e41af4f0dd8e8f65b7b9810317edec70ff62f1d76378e4a13c4da10",
+        "payload_sha256": "1b7f358ca05be3b25a108b69e49cbd82d497919d7779fdf3edea804965b6d987",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "previous_provenance": {
+        "original_figure_id": "chapter_reference_figures",
+        "original_data_sha256": {
+          "examples/14_rice_mele_shift_current/validation/bands_shift_vector.tsv": "ee29d2c5d47a91a4939f9b06f35cef167fe8ddc672f8c5dfb540ab2c889e6030",
+          "examples/14_rice_mele_shift_current/validation/smoke_spectrum.json": "46713aaacf1a9a62619347884c3bdab62ce292954434f7e06db7f268b9dc1ac8",
+          "examples/14_rice_mele_shift_current/validation/reference_spectrum.json": "5198cdef1531d914b4dd1809090091ff695c346b8249989fb6b3391ccf0f004c",
+          "examples/14_rice_mele_shift_current/validation/shift_current_curves.tsv": "b1582ccb6a7d7f883518ac161a096ff22ea1fd76e0cbdb18d41b06c04f9ea773",
+          "examples/14_rice_mele_shift_current/validation/reference.json": "cd89e5d05d1928a98fb8d4e14931d6ad4cf4ba4443fa1fea96dacb540159b012",
+          "examples/14_rice_mele_shift_current/validation/convergence.tsv": "5e1ea380427e6bbeae04e1be99a47d233671572c2597a47c1e7a91afa7e3713a",
+          "examples/14_rice_mele_shift_current/validation/smoke.json": "b527344216ba2b463638a9f2278d6afecc19781601068e77b4c08a7a62fa80b7",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_ssh/summary.json": "924bae9b72d0c0865e79878a6b3bba4d943e1ea7cdb0ec6d10b56cdda78effa5",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_ssh/metadata.txt": "59bd22d65afee2001a8a66358b8c767238fe04a8196ba6aab59ee06f288ebbf2",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_ssh/rice_mele_sc_conv.dat": "5726d69fa4393aafa1a2ec1121cc545f2b9478928389622d9e5b21f2b191974c",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_polar/summary.json": "aa3f48fdffba5756e247fd8c49678e701868236c7f6d56fbce286e386c1c3712",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_polar/metadata.txt": "a616a22f1e4e1104e3e839861a945cdab28ceadcbfd9d6311f6b8e354786c51a",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_polar/rice_mele_sc_conv.dat": "e71b52899f23cf22b4689f61f2a415da79bef6ea5037c5905a800967f43b0aaa",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_ionic/summary.json": "e9f947271b3b717bad215baca327423ce2f3b92cb059d80eeff80517c854c4df",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_ionic/metadata.txt": "c3322e72445f7e288099f36719f22a446ead19ebefb1db3f2c5220be9ec9e114",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_ionic/rice_mele_sc_conv.dat": "360e65af477f38ed02234584ede953c96dd4e04f672473c583defab5d6faef10",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_ssh/summary.json": "88e0551887e9d408337fdf6e9bbb090ab230ddc5d5622c59127b644419131e70",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_ssh/metadata.txt": "51dd1043f0fb9891d930c87c7095015ff1249abb81d0fb57e7c0de5a52189680",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_ssh/rice_mele_sc_conv.dat": "5726d69fa4393aafa1a2ec1121cc545f2b9478928389622d9e5b21f2b191974c",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_reversed/summary.json": "c3852ad70548596330977ab02933ce3d8293cf1dfe9f381dc5509a4de84fe398",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_reversed/metadata.txt": "7f102c9558a5fa569a4c8af0bfcb7fe487567983b97745dd488497778f9cc692",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_reversed/rice_mele_sc_conv.dat": "7626352c39768f96b9c4094750131f8d65fa6218fb41ee69a7f315795a7b70f8",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_reversed/summary.json": "769ed79055d774b7c657810c39218423ad19ee7c035c0f0472bf17906224257a",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_reversed/metadata.txt": "c43ed98193e737cee355ade1a2d3585f6f27d95917563bcc7ea312e75b419dbe",
+          "examples/14_rice_mele_shift_current/results/smoke/analytic_reversed/rice_mele_sc_conv.dat": "bb82ed71216a502cddb72f206e7e88e5d41c295102d16ced13f1bbdab3a7e0c9",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_ionic/summary.json": "ff437eaa9cc08c6db3440518e1e0fa8b348f7575554c5c28f851c36e4e38025e",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_ionic/metadata.txt": "7e6b851724ab11f7b5cfabfaedac4c13e586a1fb6997f5fdeffa2a4573f25446",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_ionic/rice_mele_sc_conv.dat": "4d33bee3011df59a77fb94c032f8a09fc61d7765de2666d767009a2d8c6cecfd",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_polar/summary.json": "9bf9d0bc3e02029cabc2bafcab93b83118dd0c755f3ba373120cfb2ad7dbb97e",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_polar/metadata.txt": "606d113694abc98e8ed8b07e2898088631d83a4adfbd535a7fe96e1dac1c7ff5",
+          "examples/14_rice_mele_shift_current/results/smoke/tb_polar/rice_mele_sc_conv.dat": "6ec4bc938ed61328cf2c62b9187eed3014f1f021ebb621912896713b8015e583",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar_n1601/summary.json": "ff4847dd24a0d40f7cc75224ef7eb19f1a104f935fd85502a3fa4c562c68c82c",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar_n1601/metadata.txt": "ce6bd8876f3ab910a1f5c088bfc7d62964daf6a888489b109e818898028216f1",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar_n1601/rice_mele_sc_conv.dat": "38e47e0bf1f77057e9ce3795ebae8378e8db515158a033ab2efcd3c661d41a6a",
+          "examples/14_rice_mele_shift_current/results/reference/tb_ssh/summary.json": "030ec6d6e45a51c2b2f17c458753a20953100d9176f65cb95a87834a104df82b",
+          "examples/14_rice_mele_shift_current/results/reference/tb_ssh/metadata.txt": "9001f4119b8c986858443207d01bad61a5a54f5effc94af461f8e0725361155c",
+          "examples/14_rice_mele_shift_current/results/reference/tb_ssh/rice_mele_sc_conv.dat": "4dbdd62b0012e381cdc472fd7c9c718b31bd29daf5a3dbef48855b7183ad548c",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_polar/summary.json": "b2e7dd167c2061df1ad0a3d7bc5c2666d3f7426b242311365ccbfe83ce5600af",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_polar/metadata.txt": "016acf4bd0dd9a6135fea3c2b19e210fdb88141d49116a71595dd300ef934c72",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_polar/rice_mele_sc_conv.dat": "0a4c3a3aef801d6836a5f897e505137182716be8e572c0c1e70ff255fe6ae6e5",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_ionic/summary.json": "1aebb5fac8d32097410ef2f093fd8df294b70c0a9a7e520c041b99364a7280d6",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_ionic/metadata.txt": "d04ca6f44a92e27e4bb1f4ac87605f63a18f391627395c2e732ba0b63ad7a7f9",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_ionic/rice_mele_sc_conv.dat": "e073d47d9f5c8362555f90a3c2bd12a21b8ffdbe688744e70cd1debdde5fa27d",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_ssh/summary.json": "98f0213d82b3ac9c4b8ec5cf21e1a68bce1c340be22cbdb6f72032b390aceb2a",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_ssh/metadata.txt": "982d8ae7ec5cc5cac5c8d697a33588f7c61468389935bbfdd0bd44036a4be70b",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_ssh/rice_mele_sc_conv.dat": "4dbdd62b0012e381cdc472fd7c9c718b31bd29daf5a3dbef48855b7183ad548c",
+          "examples/14_rice_mele_shift_current/results/reference/tb_reversed/summary.json": "0ff575560491747da66a45c05a6c9c25de6a31d9ed0713513132695456a32224",
+          "examples/14_rice_mele_shift_current/results/reference/tb_reversed/metadata.txt": "63a19a5f51593e3b0b6c400c53cffe1243abc212687ebdee11476240a9c31201",
+          "examples/14_rice_mele_shift_current/results/reference/tb_reversed/rice_mele_sc_conv.dat": "5df080c693c8238be67981765c2dd8633e16505b50747577715f5520cd916d6d",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_reversed/summary.json": "a0d8f5c1932a017153634e9eb35957c1e1e7d9037480d6bb29a9bfab1e9515fb",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_reversed/metadata.txt": "ea9d4e26b0efd139ebd0dfe4e831c5fefaab6032b0b48fdd2496845a22da1df2",
+          "examples/14_rice_mele_shift_current/results/reference/analytic_reversed/rice_mele_sc_conv.dat": "3d8fe0c00481291d5efc76ec48534a55c883c796dc3afb968515a936e8830a3f",
+          "examples/14_rice_mele_shift_current/results/reference/tb_ionic/summary.json": "6d8668d49db3bcd0283e1d5411ceb1cef761a33cc62a4b52747e28a9a4fc3342",
+          "examples/14_rice_mele_shift_current/results/reference/tb_ionic/metadata.txt": "77ff1956ade34f1be0391eb4e1c394628f75a9ca73a8058a148dc592a389f0fb",
+          "examples/14_rice_mele_shift_current/results/reference/tb_ionic/rice_mele_sc_conv.dat": "0fccd9e1528792688627850c1aed3c1db6e2ac342398fab4ffb007db80c3a880",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar/summary.json": "01f0109c70c7a005ec925117cb9400e5b8fd5219e89f7c87f7d8b894e4612732",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar/metadata.txt": "1166627e6be77d4682592f7151728c60a48a25532c77fc639f62215dabb9f19f",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar/rice_mele_sc_conv.dat": "9195931ae860b06b1721ff80c05ada560fad40c417a8a8ab2f49d863eab7a3da",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar_n401/summary.json": "288040ceda8c0b1b25799437cfb09906e1af10604afee1acd635d1c40aaa8abf",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar_n401/metadata.txt": "f0b4bd2c6c3999393bfd65075d3b191907c68e555f43ca0fc15342e2ee3f29a9",
+          "examples/14_rice_mele_shift_current/results/reference/tb_polar_n401/rice_mele_sc_conv.dat": "959f8872c23e2058b7bae95fc87c3759e1ffe06c6f3368192bfa9ae5cfc3db3b"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "restored_reference_helper_sha256": "3ca84e29ba03ac8f83d7d752696c54ce6e7fe655c07c2f78b1e7f452a3399de2"
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 1
+}

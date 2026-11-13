@@ -1,0 +1,1149 @@
+{
+  "schema": "tutorial-current-case-reproduction/4",
+  "cases": [
+    {
+      "case": "oam_conventional_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml",
+      "task_ids": [
+        "oam_conventional_T000"
+      ],
+      "input_sha256": "88fa93e6e002d74df336c5ded8ce276982b2c624761d51c94ca32d2e513534b9",
+      "calculation_record": "Original40^3case completed in303; existing vector tables read back using the repaired ordinary reader310. No integral recalculation.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_replica_policy": "auto",
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/Fe/operators.h5",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            40,
+            40,
+            40
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "preceding_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      },
+      "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "executed_group_input_sha256": "965c78eab1b41a576579e49b3fd7ae33fee1d4ff093618af24e78f43958d4743",
+        "active_case_input_sha256": "88fa93e6e002d74df336c5ded8ce276982b2c624761d51c94ca32d2e513534b9",
+        "original_mesh": [
+          40,
+          40,
+          40
+        ],
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "source_bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "original_format2_bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_srocc-97e4df548a.dat": "97e4df548ac577e5aa72e463ddc59ed5b0696528e8cb8fa56832d391a04acee3",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_cmocc-e61b58bda5.dat": "e61b58bda5767ca8d8329d74dad5d67a50ae68f2b200e8e71be9dc9cb9f36354",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_total-8d290e7fd8.dat": "8d290e7fd868b0d9a4145c509b5106f925ade45caee8eb5200927bfeb344a3b5"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "ordinary_readback": "PASS",
+        "new_integrals_for_reader_fix": 0,
+        "material_or_convergence_qualified": false,
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "response_kernels_unchanged_since_actual303": true
+      }
+    },
+    {
+      "case": "oam_projector_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml",
+      "task_ids": [
+        "oam_projector_T000"
+      ],
+      "input_sha256": "1544a18fb7c6e398a27e9d41b19c7a3ed5f935359dc22a2802e0161f40864b76",
+      "calculation_record": "Original40^3case completed in303; existing vector tables read back using the repaired ordinary reader310. No integral recalculation.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "real_space_replica_policy": "auto",
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/Fe/operators.h5",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            40,
+            40,
+            40
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "preceding_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      },
+      "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+      "unified_result_evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "executed_group_input_sha256": "965c78eab1b41a576579e49b3fd7ae33fee1d4ff093618af24e78f43958d4743",
+        "active_case_input_sha256": "1544a18fb7c6e398a27e9d41b19c7a3ed5f935359dc22a2802e0161f40864b76",
+        "original_mesh": [
+          40,
+          40,
+          40
+        ],
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "source_bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "original_format2_bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_srocc-a9bab52493.dat": "a9bab524934e724b8f7137fc499822c1938a75260c0c0d8a42f4e2aa3b091540",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_cmocc-d8ee3a1471.dat": "d8ee3a147103c0c4260c9819e290572a3e3db15833fd0c9d5f71564224683222",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_total-47d24ce758.dat": "47d24ce7587a75d348c74688d2df377c8194c237980ebe4d6e68851482f5f0ac"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "ordinary_readback": "PASS",
+        "new_integrals_for_reader_fix": 0,
+        "material_or_convergence_qualified": false,
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "response_kernels_unchanged_since_actual303": true
+      }
+    },
+    {
+      "case": "linear_transport_conventional_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T000.toml",
+      "task_ids": [
+        "linear_transport_conventional_T000"
+      ],
+      "input_sha256": "68f77037a93bf154a1cfc743ffa9a7f6bfba31ebec32519306209c0c68ed06d2",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "source": "wannier",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            40,
+            40,
+            40
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-a5ecc9b6.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-2124a589.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-c5713e52.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-a3431b2e.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    {
+      "case": "linear_transport_projector_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T000.toml",
+      "task_ids": [
+        "linear_transport_projector_T000"
+      ],
+      "input_sha256": "8893557f86f22f1ed75f63af730775f3e3542e9eb5b60f8dadb098447049b5d9",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "source": "wannier",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            40,
+            40,
+            40
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-16956929.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-ec0fe37f.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-f9a42191.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-eb9b49a2.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    {
+      "case": "linear_optical_conventional_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml",
+      "task_ids": [
+        "linear_optical_conventional_T000"
+      ],
+      "input_sha256": "be68f2f9c92b04a499fed9d79d8079b5481217b2f98b269f262c4fdf982485a6",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "source": "wannier",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            40,
+            40,
+            40
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    {
+      "case": "linear_optical_projector_T000",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml",
+      "task_ids": [
+        "linear_optical_projector_T000"
+      ],
+      "input_sha256": "52108f4d8230c251a6b27d895937b3b64f09ce935eb6492e4be6dc7d4d3aece5",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "source": "wannier",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            40,
+            40,
+            40
+          ],
+          "kind": "bz_mesh",
+          "spatial_dimension": 3
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-94e24be1.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-db5c7f88.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-3d1ed7b2.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    {
+      "case": "berry_sos_occupied_xy",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
+      "task_ids": [
+        "berry_sos_occupied_xy"
+      ],
+      "input_sha256": "c0f93d7d2d5d3f6e214fe0ad471cda4b3d3f4eb62943e4db545321a69352d8e7",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "real_space_operator_bundle_file": "../../../Materials/Fe/operators.h5",
+          "source": "wannier",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 3,
+          "vector_1": [
+            -0.5,
+            0.5,
+            0.5
+          ],
+          "vector_2": [
+            0.5,
+            0.5,
+            -0.5
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 186,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    {
+      "case": "berry_transport_equivalent_xy",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml",
+      "task_ids": [
+        "berry_transport_equivalent_xy"
+      ],
+      "input_sha256": "636995333f64f17b0a013e4c6171c43e843d0ea212c93d9e9c13a2affc3ec3ba",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": false,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "source": "wannier",
+          "real_space_replica_policy": "auto"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 3,
+          "vector_1": [
+            -0.5,
+            0.5,
+            0.5
+          ],
+          "vector_2": [
+            0.5,
+            0.5,
+            -0.5
+          ]
+        },
+        "geometry_default_migration": "NO_NEW_DEFAULT_CLAIM"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "execution_id": "Fe-tutorial-berry-h5-20261106-001",
+        "actual_input_sha256": "d65e45f206cf1290bf5df81690e527b3164dd4e23df49acadaacc36ad36d69f7",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-cde8701d.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-72c6df4d.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-245c6fd2.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-bd567789.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    {
+      "case": "berry_tb_occupied_xy",
+      "input": "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml",
+      "task_ids": [
+        "berry_tb_occupied_xy"
+      ],
+      "input_sha256": "0542fbfdc3abc6957b01994545e5deea63d998ba4880217062f648351cae307e",
+      "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
+      "matching_new_default_values": true,
+      "provenance": {
+        "model": {
+          "model_file": "../../../Materials/Fe/model_tb.dat",
+          "real_space_replica_policy": "auto",
+          "source": "wannier"
+        },
+        "sampling": {
+          "k_mesh": [
+            200,
+            200
+          ],
+          "kind": "k_slice",
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "spatial_dimension": 3,
+          "vector_1": [
+            -0.5,
+            0.5,
+            0.5
+          ],
+          "vector_2": [
+            0.5,
+            0.5,
+            -0.5
+          ]
+        },
+        "geometry_default_migration": "ACTIVE_EXPLICIT_ZERO_INTERNAL_1.2.0",
+        "actual_result_run": 186,
+        "actual_computation_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987"
+      },
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "material_binding_status": "UNIFIED_PAIR_CONTENT_VERIFIED",
+      "unified_result_evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    }
+  ],
+  "figures": [
+    {
+      "id": "fe_orbital_magnetization_z",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/orbital_magnetization_z-1409df76b0.dat",
+        "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_srocc-97e4df548a.dat",
+        "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_cmocc-e61b58bda5.dat",
+        "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_total-8d290e7fd8.dat",
+        "examples/11_fe_oam_and_linear_response/data/om_projector_T000_srocc-a9bab52493.dat",
+        "examples/11_fe_oam_and_linear_response/data/om_projector_T000_cmocc-d8ee3a1471.dat",
+        "examples/11_fe_oam_and_linear_response/data/om_projector_T000_total-47d24ce758.dat"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/fe_orbital_magnetization_z.png",
+        "examples/11_fe_oam_and_linear_response/figures/fe_orbital_magnetization_z.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml",
+        "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "TWO_RETAINED_T000_NATIVE_VECTOR_TABLE_SETS",
+      "calculation_reproduction_status": "Two retained 0 K original 40^3 data sets; their ordinary result readbacks310 passed. No new response calculation.",
+      "data_formats": {},
+      "recipe": "examples/11_fe_oam_and_linear_response/plot_configs/fe_orbital_magnetization_z.json",
+      "provenance": {
+        "original_figure_id": "fe_orbital_magnetization_z",
+        "calculation_source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_id": "WN-Tutorial-materials303",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_srocc-97e4df548a.dat": "97e4df548ac577e5aa72e463ddc59ed5b0696528e8cb8fa56832d391a04acee3",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_cmocc-e61b58bda5.dat": "e61b58bda5767ca8d8329d74dad5d67a50ae68f2b200e8e71be9dc9cb9f36354",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_total-8d290e7fd8.dat": "8d290e7fd868b0d9a4145c509b5106f925ade45caee8eb5200927bfeb344a3b5",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T300_srocc-34125dc5d5.dat": "34125dc5d56699c65c581a71690f9e5fa3f5390a07b3a6bf7363a83ba1729a30",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T300_cmocc-e5e6a26184.dat": "e5e6a261841fcc7077dbcb0df4a2564df84abea84c1da29dfc21f44901355ecb",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T300_total-5002b0f523.dat": "5002b0f5236765963ca9f3a9bf83ba72aa6483f73c70d7e0db31aebf1b30da80",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_srocc-a9bab52493.dat": "a9bab524934e724b8f7137fc499822c1938a75260c0c0d8a42f4e2aa3b091540",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_cmocc-d8ee3a1471.dat": "d8ee3a147103c0c4260c9819e290572a3e3db15833fd0c9d5f71564224683222",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_total-47d24ce758.dat": "47d24ce7587a75d348c74688d2df377c8194c237980ebe4d6e68851482f5f0ac",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T300_srocc-789d9220fc.dat": "789d9220fcbb42cb3afa69bff5087c6f99b381073c1ab7474de72c5c689ee336",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T300_cmocc-9e2731dfb8.dat": "9e2731dfb81e375af68f2e25589c888f3799dabbb8c97bc390b2c0760702600f",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T300_total-3262810025.dat": "3262810025453a94215b70bb98fb5dbe6e537e657185ad426d53300eccc50c3a"
+        },
+        "display_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/orbital_magnetization_z-19471a0e16.dat": "19471a0e1618e15070fa49ed05fd2dc483e92b0912ef27fb28b3dd41ee095cc6"
+        },
+        "display_transform": "Select z-real from each native1x7vector table; rowsT0,T300; columnsC_SRocc,C_CMocc,C_total,P_SRocc,P_CMocc,P_total; no rescaling or interpolated points.",
+        "units": "muB/cell",
+        "complete_recorded_cohort_released": true,
+        "new_response_calculations_for_readback": 0,
+        "material_or_convergence_qualified": false,
+        "ordinary_readback": "PASS",
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "plot_actual_exit": 0,
+        "PNG_and_independent_PDF_preview_visual_review": "PASS",
+        "plot_complete_recorded_identities_GONE": 22
+      },
+      "provenance_source": {
+        "merged_from": "retained-source-records/fe_orbital_magnetization_z.provenance.json",
+        "source_file_sha256": "e238574b24190ea9ab62eeb458e2ecc49b98e9bfceeca8eb47ac5f046e3c0659",
+        "payload_sha256": "7c1077c2c1a6932f2c2d2c24a8290cb2e0438c8e01aa973180dca1a68195a580",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "current_display": "0 K only; 2026-11-11 redraw from retained 0 K data, no response recalculation; original provenance is immutable history."
+      },
+      "provenance_scope": "Immutable provenance and provenance_source below describe the archived previous four-case, 0 K and 300 K display; their historical paths are not current dependencies. See current_display_provenance for the active 0 K display.",
+      "current_display_provenance": {
+        "display_data": "examples/11_fe_oam_and_linear_response/data/orbital_magnetization_z-1409df76b0.dat",
+        "display_data_sha256": "1409df76b04f2767738e1f853602ae3b51a355195f54ef7aacc48e209e0d0d8a",
+        "source_raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_srocc-97e4df548a.dat": "97e4df548ac577e5aa72e463ddc59ed5b0696528e8cb8fa56832d391a04acee3",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_cmocc-e61b58bda5.dat": "e61b58bda5767ca8d8329d74dad5d67a50ae68f2b200e8e71be9dc9cb9f36354",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_total-8d290e7fd8.dat": "8d290e7fd868b0d9a4145c509b5106f925ade45caee8eb5200927bfeb344a3b5",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_srocc-a9bab52493.dat": "a9bab524934e724b8f7137fc499822c1938a75260c0c0d8a42f4e2aa3b091540",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_cmocc-d8ee3a1471.dat": "d8ee3a147103c0c4260c9819e290572a3e3db15833fd0c9d5f71564224683222",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_total-47d24ce758.dat": "47d24ce7587a75d348c74688d2df377c8194c237980ebe4d6e68851482f5f0ac"
+        },
+        "derivation": "Retain the 0 K row from the previous display table, originally assembled by selecting z-real from each 0 K native 1x7 vector table; columns T_K, C_SRocc, C_CMocc, C_total, P_SRocc, P_CMocc, P_total. No rescaling or interpolation.",
+        "previous_display_table_sha256": "19471a0e1618e15070fa49ed05fd2dc483e92b0912ef27fb28b3dd41ee095cc6",
+        "previous_display_table_status": "Archived previous two-temperature display; not an active dependency.",
+        "units": "muB/cell",
+        "response_recomputed": false
+      }
+    },
+    {
+      "id": "fe_linear_optical_xx_spectra",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xx_spectra.png",
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xx_spectra.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml",
+        "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Parameter-identical existing unified-model result selected; original source and old figure preserved in rollback evidence.",
+      "data_formats": {},
+      "recipe": "examples/11_fe_oam_and_linear_response/plot_configs/fe_linear_optical_xx_spectra.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "original_figure_id": "historical_Fe_linear_optical_xx_spectra",
+        "original_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T300/linear_optical_response_total.dat": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T000/linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T300/linear_optical_response_total.dat": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "previous_selection": {
+          "original_figure_id": "historical_Fe_linear_optical_xx_spectra",
+          "original_data_sha256": {
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T300/linear_optical_response_total.dat": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T000/linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T300/linear_optical_response_total.dat": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "selected_result_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat": "5686cbf54559498f20c356cc1c1ee198ee4b4b4da69de89e5fb093e6dd302414",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-75579c99.dat": "75579c998e4e81a0ff3c8a31b196c78d45a0a58a0cb4c20cddfb6d932904d6b3",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat": "f2ef58b1d71c9e57469656ab50de0fd0755dde98b7e659c220672cbb44c3cd85",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-62fef52d.dat": "62fef52d3c251348903a47a3e60c4b92d7da8c79085a655f8a701d67601cd1cd"
+        },
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "response_recomputed_this_migration": false,
+        "historical_data_retained_in_backup": true,
+        "current_selection": "Existing actual result with unified TB/operator identity; not a relabeled old-model curve."
+      },
+      "provenance_source": {
+        "merged_from": "examples/11_fe_oam_and_linear_response/data/historical_Fe_linear_optical_xx_spectra.provenance.json",
+        "source_file_sha256": "72c3c144f90a7645879e215e891ee40ab9883563715765f6acaae4914975d127",
+        "payload_sha256": "695eb2b1bf3bbad1c6339080aa9d5234a8f9831d3c03be7d24517619d1a5ee29",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ],
+        "current_display": "0 K only; 2026-11-11 redraw from retained 0 K data, no response recalculation; original provenance is immutable history."
+      }
+    },
+    {
+      "id": "fe_linear_optical_decomposition_xx",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xx.png",
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xx.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Parameter-identical existing unified-model result selected; original source and old figure preserved in rollback evidence.",
+      "data_formats": {},
+      "recipe": "examples/11_fe_oam_and_linear_response/plot_configs/fe_linear_optical_decomposition_xx.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "original_figure_id": "historical_Fe_linear_optical_decomposition_xx",
+        "original_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_drude.dat": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_quantum_metric.dat": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_berry_curvature.dat": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "previous_selection": {
+          "original_figure_id": "historical_Fe_linear_optical_decomposition_xx",
+          "original_data_sha256": {
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_drude.dat": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_quantum_metric.dat": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_berry_curvature.dat": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "selected_result_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat": "0670b356e606d9139bdc70cc2cba4bd9e01e5b954807fa99179d6bf67607093f",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat": "53f16779cdaf8246713f6f5af695c575386185ba77bafe3e03ef4853ef456efe",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat": "334e27539176139e0e28373903630ed7206526a8de38ca2959cd75015304a29a",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat": "5686cbf54559498f20c356cc1c1ee198ee4b4b4da69de89e5fb093e6dd302414"
+        },
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "response_recomputed_this_migration": false,
+        "historical_data_retained_in_backup": true,
+        "current_selection": "Existing actual result with unified TB/operator identity; not a relabeled old-model curve."
+      },
+      "provenance_source": {
+        "merged_from": "examples/11_fe_oam_and_linear_response/data/historical_Fe_linear_optical_decomposition_xx.provenance.json",
+        "source_file_sha256": "fd92d298b7322bc9f69c3049900ebb753f8ca547097b041dbd02bd91ba347caf",
+        "payload_sha256": "d13b3e8b87c22c3ccd52eb71e72239fb594d892e9db3b2c8fd4870bc81205fc5",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ],
+        "displayed_case": "linear_optical_conventional_T000",
+        "current_display": "0 K only; 2026-11-11 redraw from retained 0 K data, no response recalculation; original provenance is immutable history."
+      }
+    },
+    {
+      "id": "fe_linear_optical_xy_spectra",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xy_spectra.png",
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_xy_spectra.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml",
+        "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Parameter-identical existing unified-model result selected; original source and old figure preserved in rollback evidence.",
+      "data_formats": {},
+      "recipe": "examples/11_fe_oam_and_linear_response/plot_configs/fe_linear_optical_xy_spectra.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "original_figure_id": "historical_Fe_linear_optical_xy_spectra",
+        "original_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T300/linear_optical_response_total.dat": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T000/linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T300/linear_optical_response_total.dat": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "previous_selection": {
+          "original_figure_id": "historical_Fe_linear_optical_xy_spectra",
+          "original_data_sha256": {
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T300/linear_optical_response_total.dat": "f9ce8c164b0311af0b7e81469cac853579cd2d84386b9be9fdb6a28fe051bbe0",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T000/linear_optical_response_total.dat": "e4d40af65d70618adbbefde58a4bc3cf06278350e196f2a3b96c7e3fa18f93eb",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_projector_T300/linear_optical_response_total.dat": "3190bb2573d3e6ad85daee5def35dfbf133b38469626d506bebe189cb0fce339"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "selected_result_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat": "5686cbf54559498f20c356cc1c1ee198ee4b4b4da69de89e5fb093e6dd302414",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-75579c99.dat": "75579c998e4e81a0ff3c8a31b196c78d45a0a58a0cb4c20cddfb6d932904d6b3",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat": "f2ef58b1d71c9e57469656ab50de0fd0755dde98b7e659c220672cbb44c3cd85",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-62fef52d.dat": "62fef52d3c251348903a47a3e60c4b92d7da8c79085a655f8a701d67601cd1cd"
+        },
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "response_recomputed_this_migration": false,
+        "historical_data_retained_in_backup": true,
+        "current_selection": "Existing actual result with unified TB/operator identity; not a relabeled old-model curve."
+      },
+      "provenance_source": {
+        "merged_from": "examples/11_fe_oam_and_linear_response/data/historical_Fe_linear_optical_xy_spectra.provenance.json",
+        "source_file_sha256": "0682e42ac098060074c475f49e9f46a3ab4b1c06438a0d29e1f8d7741aa75cf7",
+        "payload_sha256": "3cffa216272f404bb09634684e1c1cb39cd0f4b14e7370924ace6fb51ab66ea5",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ],
+        "current_display": "0 K only; 2026-11-11 redraw from retained 0 K data, no response recalculation; original provenance is immutable history."
+      }
+    },
+    {
+      "id": "fe_linear_optical_decomposition_xy",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "portable_manifest",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xy.png",
+        "examples/11_fe_oam_and_linear_response/figures/fe_linear_optical_decomposition_xy.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Parameter-identical existing unified-model result selected; original source and old figure preserved in rollback evidence.",
+      "data_formats": {},
+      "recipe": "examples/11_fe_oam_and_linear_response/plot_configs/fe_linear_optical_decomposition_xy.json",
+      "unified_material_result_selected": true,
+      "provenance": {
+        "original_figure_id": "historical_Fe_linear_optical_decomposition_xy",
+        "original_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_drude.dat": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_quantum_metric.dat": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_berry_curvature.dat": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+          "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {},
+        "scientific_identity": {
+          "new_default_result": false
+        },
+        "historical_control_not_correctness_oracle": true,
+        "previous_selection": {
+          "original_figure_id": "historical_Fe_linear_optical_decomposition_xy",
+          "original_data_sha256": {
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_drude.dat": "4aaa60e2ab5850a27393fb1fd53dd76db12b29a9ca3d0bb9e6951c46fa6743c1",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_quantum_metric.dat": "9defe0d5abf80d4edf722bea660c5e74061e043688a8c461cab12e6ebd90bfdb",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_berry_curvature.dat": "ee97b10b2d5b266c6167579749d50724d66cabc1146ac6eb86d92f433e33455f",
+            "examples/11_fe_oam_and_linear_response/results/reference/linear_optical_conventional_T000/linear_optical_response_total.dat": "6fda8fb5493560315badc876a4d692a89ffc2c2b23f7aa2ec40989284a053938"
+          },
+          "response_recomputed": false,
+          "original_input_sha256": {},
+          "scientific_identity": {
+            "new_default_result": false
+          },
+          "historical_control_not_correctness_oracle": true
+        },
+        "selected_result_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat": "0670b356e606d9139bdc70cc2cba4bd9e01e5b954807fa99179d6bf67607093f",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat": "53f16779cdaf8246713f6f5af695c575386185ba77bafe3e03ef4853ef456efe",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat": "334e27539176139e0e28373903630ed7206526a8de38ca2959cd75015304a29a",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat": "5686cbf54559498f20c356cc1c1ee198ee4b4b4da69de89e5fb093e6dd302414"
+        },
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "response_recomputed_this_migration": false,
+        "historical_data_retained_in_backup": true,
+        "current_selection": "Existing actual result with unified TB/operator identity; not a relabeled old-model curve."
+      },
+      "provenance_source": {
+        "merged_from": "examples/11_fe_oam_and_linear_response/data/historical_Fe_linear_optical_decomposition_xy.provenance.json",
+        "source_file_sha256": "f66592cd4beb6dfa5e945ed05e2fd5dcfec7103af8c408d8f8c9697c66463c64",
+        "payload_sha256": "8d976669777f85b0b0f7e84648bde713b9d8f4ef7d500ca508eb1c9f173d97d0",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ],
+        "displayed_case": "linear_optical_conventional_T000",
+        "current_display": "0 K only; 2026-11-11 redraw from retained 0 K data, no response recalculation; original provenance is immutable history."
+      }
+    },
+    {
+      "id": "berry_sos_occupied_xy",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "retained_plot_bundle",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/model_bck_sum_conv-288500c6.dat",
+        "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.npz",
+        "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.json"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/berry_sos_occupied_xy.png",
+        "examples/11_fe_oam_and_linear_response/figures/berry_sos_occupied_xy.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "provenance": {
+        "original_figure_id": "berry_sos_occupied_xy.new-default-f278",
+        "original_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/new-default-development-f278-20261108/berry_sos_occupied_xy/model_bck_sum_conv.dat": "288500c6b147f096979cb8890659b9f201fd8178dcd6575287e09a4a51b0412b"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/new-default-development-f278-20261108/berry_sos_occupied_xy/executed-input.toml": "9450453176ed2bb2dc336bbf85feb2c8d9dc090ea3a5619f7f6059e73507ae4d"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "288500c6b147f096979cb8890659b9f201fd8178dcd6575287e09a4a51b0412b",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/11_fe_oam_and_linear_response/data/berry_sos_occupied_xy.provenance.json",
+        "source_file_sha256": "a4de79bf7e27cad72ee263f52fca0d332c4602c2b93c7c1500d3f41f77ea33ba",
+        "payload_sha256": "9423b96a43b6b812e786039a2af2e983bd6df9f5272175d9386cb2a0afa8c77a",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "notes": [],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      },
+      "script": "examples/11_fe_oam_and_linear_response/plot_fe_ahe.py",
+      "script_args": [
+        "--figure",
+        "berry_sos_occupied_xy"
+      ],
+      "rendering_contract": {
+        "coordinates": "uncentered intrinsic u,v; actuali/200 nodes, no fftshift",
+        "corner_markers": [
+          "Gamma000",
+          "H100",
+          "H001",
+          "Gamma101"
+        ],
+        "color": "exact signed exponent, linthresh1, shared physical limits[-10000,10000], zero green",
+        "contours": {
+          "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+          "mu_ev": 5.7156290716733436,
+          "shape": [
+            200,
+            200,
+            18
+          ],
+          "energy": "E-minus-mu",
+          "u_fast": true,
+          "original_band_sha256": "ee2435c6e014cf5d46d2bde2425501e3bd97d6c26821b27363bbf3a9838de55d",
+          "array_sha256": "18b90d1ebdc9fe01dfc7fd4440474cf93c28dafcf0e7395b692d69503911b7fb",
+          "coordinates": "k=-.5u+.5v, .5u+.5v, .5u-.5v; u=i/200,v=j/200",
+          "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
+        },
+        "all_input_and_table_values_unchanged": true
+      }
+    },
+    {
+      "id": "berry_tb_occupied_xy",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "retained_plot_bundle",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/model_bck_sum_conv-d511ca02.dat",
+        "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.npz",
+        "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.json"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/berry_tb_occupied_xy.png",
+        "examples/11_fe_oam_and_linear_response/figures/berry_tb_occupied_xy.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "data_formats": {},
+      "provenance": {
+        "original_figure_id": "berry_tb_occupied_xy.new-default-f278",
+        "original_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/new-default-development-f278-20261108/berry_tb_occupied_xy/model_bck_sum_conv.dat": "d511ca029cbcd549cf844eba95f55aa25bb5c349d5d53882c3e915b31fd501c7"
+        },
+        "response_recomputed": false,
+        "original_input_sha256": {
+          "examples/11_fe_oam_and_linear_response/results/new-default-development-f278-20261108/berry_tb_occupied_xy/executed-input.toml": "095bf93fc68d74809e362e5f6da8e9167cc5355aaca0db1f156bedc22b89f3f9"
+        },
+        "scientific_identity": {
+          "source_manifest_sha256": "f2780d1f3a06ef8dc709a81added5b2d06735ca33de0f95a9ef400c2ba860987",
+          "raw_data_sha256": "d511ca029cbcd549cf844eba95f55aa25bb5c349d5d53882c3e915b31fd501c7",
+          "new_default_result": true
+        },
+        "historical_control_not_correctness_oracle": true
+      },
+      "provenance_source": {
+        "merged_from": "examples/11_fe_oam_and_linear_response/data/berry_tb_occupied_xy.provenance.json",
+        "source_file_sha256": "e6d7fe4315529d4be9ba565a3f3b280ef134c5d01790a3bf07ed5ceaaba1e348",
+        "payload_sha256": "49dc1f3af68d07377d3c2d51c0ddad4a734da05c1d14dbc6564eeff299322d2d",
+        "encoding": "json-sort-keys-utf8-compact"
+      },
+      "display_selection": {
+        "source_values_unchanged": true,
+        "numerical_recalculation": false,
+        "notes": [
+          "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
+        ],
+        "main_readme_display": false
+      },
+      "script": "examples/11_fe_oam_and_linear_response/plot_fe_ahe.py",
+      "script_args": [
+        "--figure",
+        "berry_tb_occupied_xy"
+      ],
+      "rendering_contract": {
+        "coordinates": "uncentered intrinsic u,v; actuali/200 nodes, no fftshift",
+        "corner_markers": [
+          "Gamma000",
+          "H100",
+          "H001",
+          "Gamma101"
+        ],
+        "color": "exact signed exponent, linthresh1, shared physical limits[-10000,10000], zero green",
+        "contours": {
+          "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+          "mu_ev": 5.7156290716733436,
+          "shape": [
+            200,
+            200,
+            18
+          ],
+          "energy": "E-minus-mu",
+          "u_fast": true,
+          "original_band_sha256": "ee2435c6e014cf5d46d2bde2425501e3bd97d6c26821b27363bbf3a9838de55d",
+          "array_sha256": "18b90d1ebdc9fe01dfc7fd4440474cf93c28dafcf0e7395b692d69503911b7fb",
+          "coordinates": "k=-.5u+.5v, .5u+.5v, .5u-.5v; u=i/200,v=j/200",
+          "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
+        },
+        "all_input_and_table_values_unchanged": true
+      }
+    },
+    {
+      "id": "berry_transport_equivalent_xy",
+      "chapter": "11_fe_oam_and_linear_response",
+      "engine": "retained_plot_bundle",
+      "data": [
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-cde8701d.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-72c6df4d.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-245c6fd2.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_total-bd567789.dat",
+        "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.npz",
+        "examples/11_fe_oam_and_linear_response/data/fe_fermi_plane343.json"
+      ],
+      "figures": [
+        "examples/11_fe_oam_and_linear_response/figures/berry_transport_equivalent_xy.png",
+        "examples/11_fe_oam_and_linear_response/figures/berry_transport_equivalent_xy.pdf"
+      ],
+      "related_current_inputs": [
+        "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml"
+      ],
+      "recorded_execution_inputs": [],
+      "archived_setting_templates": [],
+      "model_provenance_files": [],
+      "retained_legacy_case_builders": [],
+      "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
+      "calculation_reproduction_status": "Retained actual native transport KSlice tables, same unified Fe TB/frame; current redraw is finite-relaxation Berry-channel conversion, not static SOS equality.",
+      "data_formats": {},
+      "provenance": {
+        "response_recomputed": false,
+        "input": "berry_transport_equivalent_xy",
+        "normalization": "Omega_eff=-K_Berry/(e^2/hbar*1e-20); native S*m^2 k_integrand, no Nk division",
+        "relaxation_ev": 0.05,
+        "not_pointwise_equivalent_to_static_sos": true,
+        "original_figure_id": "berry_transport_equivalent_xy.native-retained-tables"
+      },
+      "provenance_source": {
+        "encoding": "json-sort-keys-utf8-compact",
+        "source_file_sha256": "267821b0d7ccddf5150b296e03ff678eb0c35f28bd461ec8ff3bbfa8b1ea0b9b",
+        "merged_from": "presentation342/berry_transport_equivalent_xy.provenance.json",
+        "payload_sha256": "267821b0d7ccddf5150b296e03ff678eb0c35f28bd461ec8ff3bbfa8b1ea0b9b"
+      },
+      "display_selection": {
+        "notes": [],
+        "numerical_recalculation": false,
+        "source_values_unchanged": true
+      },
+      "script": "examples/11_fe_oam_and_linear_response/plot_fe_ahe.py",
+      "script_args": [
+        "--figure",
+        "berry_transport_equivalent_xy"
+      ],
+      "rendering_contract": {
+        "coordinates": "uncentered intrinsic u,v; actuali/200 nodes, no fftshift",
+        "corner_markers": [
+          "Gamma000",
+          "H100",
+          "H001",
+          "Gamma101"
+        ],
+        "color": "exact signed exponent, linthresh1, shared physical limits[-10000,10000], zero green",
+        "contours": {
+          "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+          "mu_ev": 5.7156290716733436,
+          "shape": [
+            200,
+            200,
+            18
+          ],
+          "energy": "E-minus-mu",
+          "u_fast": true,
+          "original_band_sha256": "ee2435c6e014cf5d46d2bde2425501e3bd97d6c26821b27363bbf3a9838de55d",
+          "array_sha256": "18b90d1ebdc9fe01dfc7fd4440474cf93c28dafcf0e7395b692d69503911b7fb",
+          "coordinates": "k=-.5u+.5v, .5u+.5v, .5u-.5v; u=i/200,v=j/200",
+          "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
+        },
+        "all_input_and_table_values_unchanged": true
+      }
+    }
+  ],
+  "historical_payload": "preserved outside this tree in the verified full local archive",
+  "inline_provenance_count": 8
+}

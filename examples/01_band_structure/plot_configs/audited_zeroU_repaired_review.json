@@ -1,0 +1,88 @@
+{
+  "output": {
+    "stem": "audited_zeroU_repaired_review",
+    "dpi": 600,
+    "formats": [
+      "png",
+      "pdf"
+    ]
+  },
+  "comparison": {
+    "purpose": "diagnostic",
+    "title": "GeS electronic bands",
+    "energy_reference": {
+      "value_ev": -2.5,
+      "label": "same declared energy reference, no fitted offset"
+    },
+    "degeneracy_tolerance_ev": 0.002,
+    "reference": {
+      "id": "dft",
+      "label": "DFT SOC (energy-set pool)",
+      "data": "../data/dft_common_path_absolute-46dfe144.dat",
+      "x_column": 0,
+      "energy_columns": {
+        "start": 1,
+        "stop": 145
+      },
+      "fitted_band_indices": {
+        "start": 0,
+        "stop": 144
+      },
+      "display_band_indices": "all"
+    },
+    "models": [
+      {
+        "id": "new_tb",
+        "label": "Wannier TB",
+        "data": "../data/current_common_path_absolute725.dat",
+        "x_column": 0,
+        "energy_columns": {
+          "start": 1,
+          "stop": 33
+        },
+        "usable_for_bands": false,
+        "qualification_label": "Band accuracy not established",
+        "matching": {
+          "mode": "automatic"
+        }
+      }
+    ],
+    "metric_windows": [
+      {
+        "id": "near_fermi",
+        "label": "within 1 eV of common reference",
+        "min_ev": -1,
+        "max_ev": 1
+      },
+      {
+        "id": "display",
+        "label": "display window",
+        "min_ev": -5,
+        "max_ev": 5
+      }
+    ],
+    "error_window_id": "near_fermi",
+    "xticks": [
+      0.0,
+      0.8628188325288492,
+      1.554221556187854,
+      2.417040388716709,
+      3.108443112375705
+    ],
+    "xticklabels": [
+      "\\textGamma",
+      "\\textnormal{X}",
+      "\\textnormal{S}",
+      "\\textnormal{Y}",
+      "\\textGamma"
+    ],
+    "ylim": [
+      -5,
+      5
+    ],
+    "figsize_bands": [
+      7.8,
+      5.4
+    ]
+  }
+}

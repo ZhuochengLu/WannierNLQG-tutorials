@@ -1,0 +1,473 @@
+{
+  "scope": "plot-only relocation checks",
+  "diagrams": 29,
+  "files": [
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_conventional.png",
+      "sha256": "9c304d234425b7d140b19827c4341221e265f7e2f3cda5e5919d757126238145",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/figures/kslice_shift_current_conventional.pdf",
+      "sha256": "a5242ba1fbaba1653d29738597bd6620517718b777e4dd58e20e1da174686c06",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.png",
+      "sha256": "b4b589147f34182bfc39bb803361a0f7bc9b65de6660161e0197291974e15e50",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/07_qg_multipoles/figures/kslice_quantum_metric_quadrupole_conventional.pdf",
+      "sha256": "49c7e0622ebbaba7e389438944117537e63807a69678e329c0bc91f14ab59c26",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/figures/research_same_rate_JH_z.png",
+      "sha256": "107a2ced2c212eeb07837a6fad3f16a7a028ce83eaf615cde1075b7d299c5eb1",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/10_second_harmonic_generation/figures/research_same_rate_JH_z.pdf",
+      "sha256": "56c26d86ecb90a2cc820e451be8f4b36344d422fcd320cb30f16e55ddeda4771",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_bands.png",
+      "sha256": "052e14af11403e1595831d08db173f552c8b3bbe83f4811fe4f2ac3850b9c4aa",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_errors.png",
+      "sha256": "57a60f48fbd9d4a0b58d1917bad87fe081dddbf2eea55181e75ea3a23a5a20d9",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_bands.pdf",
+      "sha256": "9e7cfca2058900661008d7925276c94bc31d552436eaeeeb7a91c76d0b554de7",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_review_errors.pdf",
+      "sha256": "54d946665b5f0108256e2f8f26be225687b440a594d09bad3d2afc9713f4cb7f",
+      "run": 207,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_bands.png",
+      "sha256": "561fcc99f6f954250fc50008b1f5496adc82b78940b60f8b042102e7fd6edf20",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_convergence.png",
+      "sha256": "fd44aecd7b7d86ebc1044604ef074c4eebf873e1f27764ffd4b495b809ba3e2b",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_hall_vs_mu.png",
+      "sha256": "b23f4623bdfd926310be3e6bd59f1c970b915e5903b1cb9694e6c55828f44d55",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_phase_diagram.png",
+      "sha256": "b1d44f2c10204ea795a50a299452c812cb3b5061a5998bac0b987c361b26edca",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_bands.pdf",
+      "sha256": "f603349a0953b60738d0a664a772820749bbfc599a9a1127221e6c11aedc2ea0",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_convergence.pdf",
+      "sha256": "fab35d19646e571b8a04518c2a7646a4aeb11cd09f644f7124790d97794819a1",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_hall_vs_mu.pdf",
+      "sha256": "b5d140490e8a3dd88880c6ec79d1603533f7f5ca30d93cbf88dded55cf79fd7b",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/13_haldane_anomalous_hall/figures/haldane_phase_diagram.pdf",
+      "sha256": "69458cffb62cb345e9560c4cb98702006c78d65942bb85ebde2f907368938164",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_bands_shift_vector.png",
+      "sha256": "147b574d99fda7d2c884c98924b6ba53d5122c934b2561f25467c02a967f09fc",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_convergence.png",
+      "sha256": "ea9379a5d75902993c6b2b21ccd2190e6b082fa2ca40b13b4bff08d858796e13",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_shift_current.png",
+      "sha256": "fd33e374aef75c68d91058e4b7e64a0972ffa0f73633d69b2410fac2e9965c87",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_bands_shift_vector.pdf",
+      "sha256": "289684ead425aaabc1852eb0feb611aaaebc730f12543b6c4309c7fbfa04e1ed",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_convergence.pdf",
+      "sha256": "37adc4bfef1dd8e3448556bfe18d7eaf1829c4f99e952b88aa18e4be09ba7e3f",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/14_rice_mele_shift_current/figures/rice_mele_shift_current.pdf",
+      "sha256": "65708005dffb8d7254f119dfa7deb61f01052625feac8cc08ff16cfea60dff8d",
+      "run": 210,
+      "parent_state": "RUN_FAILED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_bands_berry.png",
+      "sha256": "81fd7215e48dc3392d69ac71e00478533e52f91a55e175a569b441ec607fae7c",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_convergence.png",
+      "sha256": "ea41787bcbfadc1da5b54526a2c5fc4f649856645336a05d084658d7d058dde6",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_cutoff_dependence.png",
+      "sha256": "893ec797a5aab11965c3808776fbb134298c7eb2049f648b41a35258ef263755",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_hall_vs_mu.png",
+      "sha256": "3b76a545b6b8957eed9098f1771dbf29f0c0187944b1017e969e9a17c7a951ab",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_optical_conductivity.png",
+      "sha256": "3ade3c0e7a489985e36cbe930a9a6bc6b2c970bbd942bf7b3c8f48f7161303f7",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_bands_berry.pdf",
+      "sha256": "ce4da1356ad9c894438c221c1979327f67f79de3d8fbe89a6047ee501e51ff15",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_convergence.pdf",
+      "sha256": "817513f1cc5877bba8baa0a4ddb66e49db7ef8d3a45dc1ff023e8a3ec0ea4341",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_cutoff_dependence.pdf",
+      "sha256": "5bcd70ce1fd8cc5dc0e020742c55079f132afa2886fb8d6a0131fecd85b67be1",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_hall_vs_mu.pdf",
+      "sha256": "67445179ff0773bf62e901a84b59271af4ad3d2d3e46edb5842f35c90037ee83",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/15_nonperiodic_dirac_response/figures/dirac_optical_conductivity.pdf",
+      "sha256": "a9d0f08b071289643ff2db1fea3d0ffb39a77e24e28095976e6f1804de50a1a5",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/low_frequency.png",
+      "sha256": "11fe80bec1cee4daedc738baf3648a412ee9bfb33c236cf3a250463a7c860d9c",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/mesh_scan.png",
+      "sha256": "1fdc863bbd148bf71b75eab98ed9dd7634ed66b76e7a5e68019229fc5e211358",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/regrouped_terms.png",
+      "sha256": "c2e54552b83dc19f3aaebc3ab75462ab721d35c2c02167adddc97cace910e907",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/spectra.png",
+      "sha256": "cd386eb389a01ed595ba0bf5f3d413343db112e9e29a64d067d6e97287b47083",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/low_frequency.pdf",
+      "sha256": "a411067f8a427ffc2102d811d4530dea3d32d6048b54c39554d9a643a060bc3f",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/mesh_scan.pdf",
+      "sha256": "3922f6a43f31c5790d3aa786af151ab20828f6f5b65af05aa6f3fb049c6710f1",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/regrouped_terms.pdf",
+      "sha256": "b70036a39e737d9e72846339aeef784be9a23cf5826d9bc88f74a32d7568ff82",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/16_monolayer_graphene_thg/figures/spectra.pdf",
+      "sha256": "4dd1a2700279ee0335c18d4b992879aba3ec8624315785256becbe20b674c20d",
+      "run": 212,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_dense200_spectrum.png",
+      "sha256": "3b78b334a4c1a7794f1f89b1fce6e40347a2a04698e8976dbe489ffff679f595",
+      "run": 213,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/17_jerk_current/figures/ges_dense200_spectrum.pdf",
+      "sha256": "6b68fdafe11d81ad657565001de6b5f008be495d4258870765d6426074f04866",
+      "run": 213,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/17_jerk_current/figures/two_band_analytical_vs_wanniernlqg.png",
+      "sha256": "a000c7306bf8f62519a633504508e30a781949668367a3a3253409e37f0c0ffc",
+      "run": 213,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/17_jerk_current/figures/two_band_analytical_vs_wanniernlqg.pdf",
+      "sha256": "4439cc9cfee2768bf2e6c08e5462878cfd3b5a00e772a53f6e878db81a173b06",
+      "run": 213,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_bands.png",
+      "sha256": "a00b8630d27d0a192409587383bfc09f29bd53187165a96e0227a9c9387d32ab",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_errors.png",
+      "sha256": "57a60f48fbd9d4a0b58d1917bad87fe081dddbf2eea55181e75ea3a23a5a20d9",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_bands.pdf",
+      "sha256": "bb24151ede7be7fcf7044bcb0f278d00c74f6c5faba18e9a75f151a09228d1fd",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/01_band_structure/figures/audited_zeroU_repaired_full_errors.pdf",
+      "sha256": "54d946665b5f0108256e2f8f26be225687b440a594d09bad3d2afc9713f4cb7f",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.png",
+      "sha256": "e4f13e65297143ca29c3a52a53af4c66ccbbf77d9c0eaaaae7c44ad9b9efafe3",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.png",
+      "sha256": "0d6496a5400c3dc9b0e0f97fd65536d19f98a747ba7186896b5c64b560460e21",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_bands.pdf",
+      "sha256": "74ede21847659977ff872847a072b4c1fd63fbf4aaabbe30487e8e6f4ed983a5",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_full_errors.pdf",
+      "sha256": "f539bc8ff5f4215ae1cd4a3f43dfb74e475916bf018deed59c9e2cc87abf49cd",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.png",
+      "sha256": "a33448002a226452a4e41910a8b3ade72978e327de6e7a20b4833978338e559a",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.png",
+      "sha256": "0d6496a5400c3dc9b0e0f97fd65536d19f98a747ba7186896b5c64b560460e21",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_bands.pdf",
+      "sha256": "5f967b9a4a19672ef37026a88b03519121a38b2d2fdd7103b84351edcd8206c8",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    },
+    {
+      "path": "examples/12_fe_wannierization/figures/audited_previous_new_Fe_review_errors.pdf",
+      "sha256": "f539bc8ff5f4215ae1cd4a3f43dfb74e475916bf018deed59c9e2cc87abf49cd",
+      "run": 214,
+      "parent_state": "EXECUTED",
+      "independent_artifact_review": "PNG_AND_INDEPENDENT_PDF_PREVIEW_VISUALLY_CHECKED",
+      "response_recomputed": false
+    }
+  ],
+  "all_png_and_independent_pdf_previews_visually_checked": true,
+  "material_responses_recomputed_for_cleanup": false,
+  "run210": "Parent remains RUN_FAILED; only its two completed and independently inspected chapter outputs are used."
+}

@@ -1,0 +1,25 @@
+# schema=wanniernlqg.linear-transport-vector/6.0
+# quantity=linear_transport
+# method=conventional
+# temperature_K=0.0
+# fermi_energies_count=1
+# fermi_energies_definition=wanniernlqg.fermi-energy-axis/2.0:eV:1:0000000000000000
+# producer_package_version=1.2.0
+# model_identity=wanniernlqg.owned-data/1:9387:2167928209265583:5
+# input_identity=wanniernlqg.owned-data/1:9387:2167928209265583:5
+# gamma_intra_ev=0.01
+# gamma_inter_ev=0.01
+# fs_kind=gaussian
+# eta_fs_ev=0.01
+# mpi_size=1
+# julia_threads_per_rank=2
+# qualification_status=COMPUTATION_READY
+# input_semantics=effective_position_operator_model
+# operator_inventory=NOT_APPLICABLE_DEFINED_FINITE_MODEL
+# operator_model_schema=NOT_APPLICABLE_DEFINED_FINITE_MODEL
+# content_authentication=NOT_PERFORMED
+# task_definition=wanniernlqg.spectral-task-definition/1:("schema" => "wanniernlqg.linear-transport-vector/6.0", "quantity" => "linear_transport", "method" => "conventional", "temperature_K" => "0.0", "fermi_energies_count" => "1", "fermi_energies_definition" => "wanniernlqg.fermi-energy-axis/2.0:eV:1:0000000000000000", "producer_package_version" => "1.2.0", "model_identity" => "wanniernlqg.owned-data/1:9387:2167928209265583:5", "input_identity" => "wanniernlqg.owned-data/1:9387:2167928209265583:5", "gamma_intra_ev" => "0.01", "gamma_inter_ev" => "0.01", "fs_kind" => "gaussian", "eta_fs_ev" => "0.01", "mpi_size" => "1", "julia_threads_per_rank" => "2", "qualification_status" => "COMPUTATION_READY", "input_semantics" => "effective_position_operator_model", "operator_inventory" => "NOT_APPLICABLE_DEFINED_FINITE_MODEL", "operator_model_schema" => "NOT_APPLICABLE_DEFINED_FINITE_MODEL", "content_authentication" => "NOT_PERFORMED")
+# term=berry_curvature
+# units=S/m
+# mu_eV xx_real xx_imag xy_real xy_imag xz_real xz_imag yx_real yx_imag yy_real yy_imag yz_real yz_imag zx_real zx_imag zy_real zy_imag zz_real zz_imag
+0.0000000000000000e+00 -1.3476850249354979e-14 0.0000000000000000e+00 -1.9369659860054708e+04 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 1.9369659860054711e+04 0.0000000000000000e+00 6.9192434505135565e-15 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00 0.0000000000000000e+00

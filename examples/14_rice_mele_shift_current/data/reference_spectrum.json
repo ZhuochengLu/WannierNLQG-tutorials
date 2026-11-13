@@ -1,0 +1,66 @@
+{
+  "actual_route_metadata_sha256": {
+    "analytic_ionic": "d04ca6f44a92e27e4bb1f4ac87605f63a18f391627395c2e732ba0b63ad7a7f9",
+    "analytic_polar": "016acf4bd0dd9a6135fea3c2b19e210fdb88141d49116a71595dd300ef934c72",
+    "analytic_reversed": "ea9d4e26b0efd139ebd0dfe4e831c5fefaab6032b0b48fdd2496845a22da1df2",
+    "analytic_ssh": "982d8ae7ec5cc5cac5c8d697a33588f7c61468389935bbfdd0bd44036a4be70b",
+    "tb_ionic": "77ff1956ade34f1be0391eb4e1c394628f75a9ca73a8058a148dc592a389f0fb",
+    "tb_polar": "1166627e6be77d4682592f7151728c60a48a25532c77fc639f62215dabb9f19f",
+    "tb_reversed": "63a19a5f51593e3b0b6c400c53cffe1243abc212687ebdee11476240a9c31201",
+    "tb_ssh": "9001f4119b8c986858443207d01bad61a5a54f5effc94af461f8e0725361155c"
+  },
+  "analytic_bandgap_eV": 1.8882796403075472,
+  "analytic_max_fraction": {
+    "polar": 0.0029745317007513782,
+    "reversed": 0.0029745317007513782
+  },
+  "analytic_transition_upper_eV": 2.193171219946131,
+  "convergence_sha256": "5e1ea380427e6bbeae04e1be99a47d233671572c2597a47c1e7a91afa7e3713a",
+  "inversion_max_fraction": {
+    "ionic": 9.854045969684835e-10,
+    "ssh": 0.0
+  },
+  "mesh_401_801_max_fraction": 1.3518507006845764e-15,
+  "mesh_801_1601_max_fraction": 8.602686277083668e-16,
+  "package_version": "1.2.0",
+  "peak_positions": {
+    "polar": {
+      "high": {
+        "analytic_eV": 2.16,
+        "computed_eV": 2.16
+      },
+      "low": {
+        "analytic_eV": 1.92,
+        "computed_eV": 1.92
+      }
+    },
+    "reversed": {
+      "high": {
+        "analytic_eV": 2.16,
+        "computed_eV": 2.16
+      },
+      "low": {
+        "analytic_eV": 1.92,
+        "computed_eV": 1.92
+      }
+    }
+  },
+  "polar_peak_A_per_V2": 5.513841086196277e-05,
+  "profile": "reference",
+  "reversal_max_fraction": 0.0,
+  "route_max_fraction": {
+    "ionic": 1.473384054856171e-11,
+    "polar": 0.0009999725751597582,
+    "reversed": 0.0009999725751597582,
+    "ssh": 0.0
+  },
+  "shift_current_curves_sha256": "b1582ccb6a7d7f883518ac161a096ff22ea1fd76e0cbdb18d41b06c04f9ea773",
+  "tolerances_fraction_of_polar_peak": {
+    "analytic": 0.02,
+    "inversion": 0.0001,
+    "mesh": 0.005,
+    "reversal": 0.001,
+    "route": 0.001
+  },
+  "record_role": "Retained validation of the preceding calculated dataset and unchanged independent equation21 reference; current numerical-table validation is current_validation725.json."
+}

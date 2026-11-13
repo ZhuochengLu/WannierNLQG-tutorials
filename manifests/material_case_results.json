@@ -1,0 +1,1646 @@
+{
+  "schema": "tutorial-material-case-results/1",
+  "actual_execution_reuse": {
+    "linear_optical_conventional_T000": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_optical_conventional_T300": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-6079d182.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-20622da3.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-ef4fbac4.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-75579c99.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_optical_projector_T000": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-94e24be1.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-db5c7f88.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-3d1ed7b2.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_optical_projector_T300": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-c5119be9.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-70c4f135.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-81800e28.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-62fef52d.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_transport_conventional_T000": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-a5ecc9b6.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-2124a589.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-c5713e52.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_total-a3431b2e.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_transport_conventional_T300": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-40bdd36a.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-c0f2c887.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-59990ac3.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_total-18e3fdb7.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_transport_projector_T000": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-16956929.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-ec0fe37f.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-f9a42191.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_total-eb9b49a2.dat"
+      ],
+      "new_computation": false
+    },
+    "linear_transport_projector_T300": {
+      "execution_id": "Fe-tutorial-linear-20261106-002",
+      "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+      "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-32d0d741.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-eea963f1.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-707eefd1.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_total-198db543.dat"
+      ],
+      "new_computation": false
+    },
+    "berry_transport_equivalent_xy": {
+      "execution_id": "Fe-tutorial-berry-h5-20261106-001",
+      "actual_input_sha256": "d65e45f206cf1290bf5df81690e527b3164dd4e23df49acadaacc36ad36d69f7",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-cde8701d.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-72c6df4d.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-245c6fd2.dat",
+        "examples/11_fe_oam_and_linear_response/data/linear_transport_total-bd567789.dat"
+      ],
+      "new_computation": false
+    },
+    "fe_bands": {
+      "execution_id": "Fe-tutorial-bands-20261106-001",
+      "actual_input_sha256": "25e399214d6b5998db7ba5b0a6afdbc8edb2c9becb32eb6936a27b35a9c8788e",
+      "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/12_fe_wannierization/data/model_bands-eb4ca8ce.dat"
+      ],
+      "new_computation": false
+    },
+    "injection_spin_current_conventional": {
+      "execution_id": "GeS-canonical-spin-integral035",
+      "actual_input_sha256": "3360def0b61a208881ac276078ce077c822b88c6be89187c2c51e5b38ba098c4",
+      "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/03_integral_spin_responses/data/model_isc_conv-cf49e039.dat"
+      ],
+      "new_computation": false,
+      "chapter": "03_integral_spin_responses"
+    },
+    "shift_spin_current_conventional": {
+      "execution_id": "GeS-canonical-spin-integral035",
+      "actual_input_sha256": "3360def0b61a208881ac276078ce077c822b88c6be89187c2c51e5b38ba098c4",
+      "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/03_integral_spin_responses/data/model_ssc_conv-d0bb4ea8.dat"
+      ],
+      "new_computation": false,
+      "chapter": "03_integral_spin_responses"
+    },
+    "ges_pilot_sheet": {
+      "execution_id": "WN-Tutorial-unified-validation237",
+      "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+      "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "actual_input_sha256": "2606e45d0f35d2deb61312d9456a34353cea87c616b4f82d617fdb82ba497ca7",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/17_jerk_current/data/jc_G_ordered_xxxx-5a697a2e.dat",
+        "examples/17_jerk_current/data/jc_G_ordered_yyyy-940abdfe.dat"
+      ],
+      "new_computation": true,
+      "mesh": [
+        7,
+        5,
+        1
+      ],
+      "energies_ev": [
+        2.0,
+        2.5
+      ],
+      "physics_qualification": false
+    },
+    "ges_pilot_bulk": {
+      "execution_id": "WN-Tutorial-unified-validation237",
+      "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+      "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "actual_input_sha256": "36c44f4e50ff30cbb2a653657d7fb9f549bfa25a0b57e8182966a2b00433a7da",
+      "task_and_sampling_equal": true,
+      "reused_complete_results": [
+        "examples/17_jerk_current/data/jc_G_ordered_xxxx-18974147.dat",
+        "examples/17_jerk_current/data/jc_G_ordered_yyyy-1ded8bcd.dat"
+      ],
+      "new_computation": true,
+      "mesh": [
+        7,
+        5,
+        1
+      ],
+      "energies_ev": [
+        2.0,
+        2.5
+      ],
+      "physics_qualification": false
+    },
+    "05_kslice_spin_responses/injection_spin_current_conventional": {
+      "execution_id": "GeS-selected-new-kslice058",
+      "actual_input_sha256": "a08b3238959a87cb41598a14e61f7f628f54a5f3cda1fb319167c799e71b3c4b",
+      "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+      "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+      "task_and_sampling_equal": true,
+      "new_computation": false,
+      "scope": "Selected current panel; old/delta panels remain explicit historical comparisons."
+    },
+    "05_kslice_spin_responses/shift_spin_current_conventional": {
+      "execution_id": "GeS-selected-new-kslice058",
+      "actual_input_sha256": "a08b3238959a87cb41598a14e61f7f628f54a5f3cda1fb319167c799e71b3c4b",
+      "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+      "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+      "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+      "task_and_sampling_equal": true,
+      "new_computation": false,
+      "scope": "Selected current panel; old/delta panels remain explicit historical comparisons."
+    }
+  },
+  "affected_figures": [
+    "fe_linear_optical_decomposition_xx",
+    "fe_linear_optical_decomposition_xy",
+    "fe_linear_optical_xx_spectra",
+    "fe_linear_optical_xy_spectra",
+    "integral_injection_spin_current_conventional",
+    "integral_shift_current_conventional",
+    "integral_shift_current_geometric_loop",
+    "integral_shift_current_projector",
+    "integral_shift_current_wilson_loop",
+    "integral_shift_spin_current_conventional",
+    "kslice_quantum_hermitian_connection_conventional",
+    "kslice_quantum_hermitian_connection_wilson_loop",
+    "kslice_shift_current_conventional",
+    "kslice_shift_current_geometric_loop",
+    "kslice_shift_current_projector",
+    "kslice_shift_current_wilson_loop",
+    "kslice_shift_vector_geometric_loop",
+    "kslice_shift_vector_wilson_loop",
+    "linear_optical_conventional_T000",
+    "linear_optical_conventional_T300",
+    "linear_optical_projector_T000",
+    "linear_optical_projector_T300",
+    "linear_transport_conventional_T000",
+    "linear_transport_conventional_T300",
+    "linear_transport_projector_T000",
+    "linear_transport_projector_T300",
+    "shift_current_methods"
+  ],
+  "old_inputs_not_evidence_of_actual_executed_model": true,
+  "jerk_original35point_reruns": [
+    {
+      "case": "ges_pilot_sheet",
+      "component": "jc_G_ordered_xxxx",
+      "current_vs_historical_max_abs": 5.216861609369516e-09,
+      "same_two_declared_energies": true
+    },
+    {
+      "case": "ges_pilot_sheet",
+      "component": "jc_G_ordered_yyyy",
+      "current_vs_historical_max_abs": 662000.0604945027,
+      "same_two_declared_energies": true
+    },
+    {
+      "case": "ges_pilot_bulk",
+      "component": "jc_G_ordered_xxxx",
+      "current_vs_historical_max_abs": 2.052734375,
+      "same_two_declared_energies": true
+    },
+    {
+      "case": "ges_pilot_bulk",
+      "component": "jc_G_ordered_yyyy",
+      "current_vs_historical_max_abs": 260670408513059.5,
+      "same_two_declared_energies": true
+    }
+  ],
+  "case_sources_by_input": {
+    "examples/01_band_structure/inputs/band_structure.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/02_integral_charge_responses/inputs/injection_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/02_integral_charge_responses/inputs/shift_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/02_integral_charge_responses/inputs/shift_current_geometric_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/02_integral_charge_responses/inputs/shift_current_wilson_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/03_integral_spin_responses/inputs/injection_spin_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/03_integral_spin_responses/data/isc_spectrum-016213a21c.dat": "016213a21c7348045d46c54a4dd3dd0d5d573e851a7f1136d112bbdca45b041d"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "725839e22d85d577bea080699d03feca67591c40561cd80a16f45e3fd1623f67",
+        "active_case_input_sha256": "4f4e9e3a6e18bece459102cb4d8ae771eed88553c384564d06faa7979fc6693c",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "preceding_result": {
+        "material_set_id": "GeS-pairWS-canonical-spin034",
+        "evidence": {
+          "execution_id": "GeS-canonical-spin-integral035",
+          "actual_input_sha256": "3360def0b61a208881ac276078ce077c822b88c6be89187c2c51e5b38ba098c4",
+          "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+          "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "task_and_sampling_equal": true,
+          "reused_complete_results": [
+            "examples/03_integral_spin_responses/data/model_isc_conv-cf49e039.dat"
+          ],
+          "new_computation": false
+        }
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/03_integral_spin_responses/inputs/shift_spin_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/03_integral_spin_responses/data/ssc_spectrum-bc146224e9.dat": "bc146224e9200d8d8e203684aac09f77f50436966651c384862c6135bb157352"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "725839e22d85d577bea080699d03feca67591c40561cd80a16f45e3fd1623f67",
+        "active_case_input_sha256": "bcbbd8c519a9ec2410457e0b46a93f9dfaac2632e90e49dd1c7748ff4c596ae0",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "preceding_result": {
+        "material_set_id": "GeS-pairWS-canonical-spin034",
+        "evidence": {
+          "execution_id": "GeS-canonical-spin-integral035",
+          "actual_input_sha256": "3360def0b61a208881ac276078ce077c822b88c6be89187c2c51e5b38ba098c4",
+          "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+          "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "task_and_sampling_equal": true,
+          "reused_complete_results": [
+            "examples/03_integral_spin_responses/data/model_ssc_conv-d0bb4ea8.dat"
+          ],
+          "new_computation": false
+        }
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "744dabb87273ea3a1062fb226577e11d967dcd042eb9c1033f7089116a9c499d",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Actual full-band Conventional map from successful child278, with same source/model/controls",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_conv-68b1f11c.dat": "68b1f11ce167a332b810d993b22c0190cd2ee604bf4a37f6318e7592acc4238f",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_conv-3b68d2ae.dat": "3b68d2aec19f34acad7a02826a494014457efc20ef010f91c51a4df5e2582406",
+          "examples/04_kslice_charge_responses/data/display_sck_r_conv-e3c55260.dat": "e3c552606bc21ff132b194f87b4d4fd2d522d61ab6acc82bd2a8ddd7f1ac55a2"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_geo-5e757f1e.dat": "5e757f1e4775648cd3efe001c27f0fbf7a86e37bb9e12911fbdc8000f0ab49f7",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_geo-0fb24f8f.dat": "0fb24f8f5a82f50914e94e8ecd3c26618f5a20fc478784534a8fa3d5fb851869",
+          "examples/04_kslice_charge_responses/data/display_sck_r_geo-056d2957.dat": "056d29579be8d36042f07a8a9f00060c3ca2a92a659895c0fc9866e2567417bf"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_wilson-ca3e25c8.dat": "ca3e25c84187b486c54b98e5f0f76ae052baf919cc1190fa153fe509e571334f",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_wilson-498e7809.dat": "498e7809c2597d56418d2b5c1613e4d1b5903f827300402cfca8fa4fd171628a",
+          "examples/04_kslice_charge_responses/data/display_sck_r_wilson-c945db37.dat": "c945db374070e84e7f7828e919490d8ae3c49cc0357636ffec562a1bc2da8fa0"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/isc_yyyy_imag-0e8d3bdef6.dat": "0e8d3bdef6edb0e31d294314ac61bb056169db0cdff809b5c459e5584d1f8e85",
+          "examples/05_kslice_spin_responses/data/isc_yyyy_real-e7b5e8881a.dat": "e7b5e8881a0a7d0ccb5fa5d140f1e770b3e91df03edc8ef44de5dbc2550a3943"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "active_case_input_sha256": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "preceding_result": {
+        "material_set_id": "GeS-pairWS-canonical-spin034",
+        "evidence": {
+          "execution_id": "GeS-selected-new-kslice058",
+          "actual_input_sha256": "a08b3238959a87cb41598a14e61f7f628f54a5f3cda1fb319167c799e71b3c4b",
+          "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+          "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+          "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "task_and_sampling_equal": true,
+          "new_computation": false,
+          "scope": "Selected current panel; old/delta panels remain explicit historical comparisons."
+        }
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "raw_data_sha256": {
+          "examples/05_kslice_spin_responses/data/ssc_yyyy_real-707f32136c.dat": "707f32136c9981361b116e121e322902dc9de387de4bad4bbca18838bcbe7e32",
+          "examples/05_kslice_spin_responses/data/ssc_yyyy_imag-daad68ca75.dat": "daad68ca756059ef0f6f409c4434e440169a05d4c024086216cf380943cfccd7"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "material_binding": {
+          "model_sha256": "0071f31d8b452d3187d3ee8c306a7195dcd3eb98e8beb1c64c9768ac22446661",
+          "original_model_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "format": "3.0",
+          "all_numeric_payload_bits_preserved": true,
+          "model": "Materials/GeS/operators.h5",
+          "tb": "Materials/GeS/model_tb.dat"
+        },
+        "new_SCF": 0,
+        "new_Wannierization": 0,
+        "case_group_actual_exit": 0,
+        "shared_parent_actual_exit": 1,
+        "complete_recorded_cohort_released": true,
+        "executed_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "active_case_input_sha256": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "preceding_result": {
+        "material_set_id": "GeS-pairWS-canonical-spin034",
+        "evidence": {
+          "execution_id": "GeS-selected-new-kslice058",
+          "actual_input_sha256": "a08b3238959a87cb41598a14e61f7f628f54a5f3cda1fb319167c799e71b3c4b",
+          "source_manifest_sha256": "b239ce8a0322ef991f2d8086a9292e116b6abac2935c039e4b16d0a70ab9ffc4",
+          "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+          "source_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "task_and_sampling_equal": true,
+          "new_computation": false,
+          "scope": "Selected current panel; old/delta panels remain explicit historical comparisons."
+        }
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/07_qg_multipoles/inputs/berry_curvature_dipole_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/07_qg_multipoles/inputs/berry_curvature_quadrupole_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          200,
+          200
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/10_second_harmonic_generation/inputs/second_harmonic_generation_conventional.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T000.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "executed_group_input_sha256": "965c78eab1b41a576579e49b3fd7ae33fee1d4ff093618af24e78f43958d4743",
+        "active_case_input_sha256": "88fa93e6e002d74df336c5ded8ce276982b2c624761d51c94ca32d2e513534b9",
+        "original_mesh": [
+          40,
+          40,
+          40
+        ],
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "source_bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "original_format2_bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_srocc-97e4df548a.dat": "97e4df548ac577e5aa72e463ddc59ed5b0696528e8cb8fa56832d391a04acee3",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_cmocc-e61b58bda5.dat": "e61b58bda5767ca8d8329d74dad5d67a50ae68f2b200e8e71be9dc9cb9f36354",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T000_total-8d290e7fd8.dat": "8d290e7fd868b0d9a4145c509b5106f925ade45caee8eb5200927bfeb344a3b5"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "ordinary_readback": "PASS",
+        "new_integrals_for_reader_fix": 0,
+        "material_or_convergence_qualified": false,
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "response_kernels_unchanged_since_actual303": true
+      },
+      "preceding_result": {
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_entry_check": "ORIGINAL303_INPUT_AND_ACTUAL310_ORDINARY_RESULT_READER_PASS"
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/oam_conventional_T300.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "executed_group_input_sha256": "965c78eab1b41a576579e49b3fd7ae33fee1d4ff093618af24e78f43958d4743",
+        "active_case_input_sha256": "17c5b8999ec6ed4cb22a2bcaef88a763e051c00cc05a3930b8abeb51073873e3",
+        "original_mesh": [
+          40,
+          40,
+          40
+        ],
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "source_bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "original_format2_bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T300_srocc-34125dc5d5.dat": "34125dc5d56699c65c581a71690f9e5fa3f5390a07b3a6bf7363a83ba1729a30",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T300_cmocc-e5e6a26184.dat": "e5e6a261841fcc7077dbcb0df4a2564df84abea84c1da29dfc21f44901355ecb",
+          "examples/11_fe_oam_and_linear_response/data/om_conventional_T300_total-5002b0f523.dat": "5002b0f5236765963ca9f3a9bf83ba72aa6483f73c70d7e0db31aebf1b30da80"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "ordinary_readback": "PASS",
+        "new_integrals_for_reader_fix": 0,
+        "material_or_convergence_qualified": false,
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "response_kernels_unchanged_since_actual303": true
+      },
+      "preceding_result": {
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_entry_check": "ORIGINAL303_INPUT_AND_ACTUAL310_ORDINARY_RESULT_READER_PASS"
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T000.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "executed_group_input_sha256": "965c78eab1b41a576579e49b3fd7ae33fee1d4ff093618af24e78f43958d4743",
+        "active_case_input_sha256": "1544a18fb7c6e398a27e9d41b19c7a3ed5f935359dc22a2802e0161f40864b76",
+        "original_mesh": [
+          40,
+          40,
+          40
+        ],
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "source_bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "original_format2_bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_srocc-a9bab52493.dat": "a9bab524934e724b8f7137fc499822c1938a75260c0c0d8a42f4e2aa3b091540",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_cmocc-d8ee3a1471.dat": "d8ee3a147103c0c4260c9819e290572a3e3db15833fd0c9d5f71564224683222",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T000_total-47d24ce758.dat": "47d24ce7587a75d348c74688d2df377c8194c237980ebe4d6e68851482f5f0ac"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "ordinary_readback": "PASS",
+        "new_integrals_for_reader_fix": 0,
+        "material_or_convergence_qualified": false,
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "response_kernels_unchanged_since_actual303": true
+      },
+      "preceding_result": {
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_entry_check": "ORIGINAL303_INPUT_AND_ACTUAL310_ORDINARY_RESULT_READER_PASS"
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/oam_projector_T300.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "WN-Tutorial-materials303",
+        "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+        "reader_execution_id": "WN-Tutorial-Fe-readback310",
+        "reader_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "executed_group_input_sha256": "965c78eab1b41a576579e49b3fd7ae33fee1d4ff093618af24e78f43958d4743",
+        "active_case_input_sha256": "664df2f75164c1d96864cda484094821e897d69c42e6502f9b9559b034cc3aa2",
+        "original_mesh": [
+          40,
+          40,
+          40
+        ],
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "source_bundle_sha256": "7a2c6868ef3d4bc47c1321084db430ed6093a2eddb4b4b0586a8cb2b100d5e51",
+        "original_format2_bundle_sha256": "13b442454fed941678d76c1765ce7b41239e6ff073d9b2b779857a8d3c0821df",
+        "raw_data_sha256": {
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T300_srocc-789d9220fc.dat": "789d9220fcbb42cb3afa69bff5087c6f99b381073c1ab7474de72c5c689ee336",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T300_cmocc-9e2731dfb8.dat": "9e2731dfb81e375af68f2e25589c888f3799dabbb8c97bc390b2c0760702600f",
+          "examples/11_fe_oam_and_linear_response/data/om_projector_T300_total-3262810025.dat": "3262810025453a94215b70bb98fb5dbe6e537e657185ad426d53300eccc50c3a"
+        },
+        "effective_denominator_regularization_ev": 0.001,
+        "ordinary_readback": "PASS",
+        "new_integrals_for_reader_fix": 0,
+        "material_or_convergence_qualified": false,
+        "reader_actual_exit": 0,
+        "reader_complete_recorded_cohort_GONE": 6,
+        "original_output_files_unchanged": true,
+        "original_parent_actual_exit": 1,
+        "original_parent_postcheck_failure_preserved": true,
+        "response_tables_complete": true,
+        "current_reader_actual_exit": 0,
+        "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+        "current_adopted_public_manifest": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "response_kernels_unchanged_since_actual303": true
+      },
+      "preceding_result": {
+        "material_set_id": "Fe-U559-orbital-frame145",
+        "evidence": {
+          "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+          "new_computation": false
+        }
+      },
+      "normal_entry_check": "ORIGINAL303_INPUT_AND_ACTUAL310_ORDINARY_RESULT_READER_PASS"
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T000.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-a5ecc9b6.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-2124a589.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-c5713e52.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-a3431b2e.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_transport_conventional_T300.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-40bdd36a.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-c0f2c887.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-59990ac3.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-18e3fdb7.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T000.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-16956929.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-ec0fe37f.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-f9a42191.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-eb9b49a2.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_transport_projector_T300.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-32d0d741.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-eea963f1.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-707eefd1.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-198db543.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T000.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-334e2753.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-0670b356.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-53f16779.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-5686cbf5.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_optical_conventional_T300.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-6079d182.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-20622da3.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-ef4fbac4.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-75579c99.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T000.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-94e24be1.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-db5c7f88.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-3d1ed7b2.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-f2ef58b1.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/linear_optical_projector_T300.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-linear-20261106-002",
+        "source_manifest_sha256": "93c862fd221afdb1aab0e5bdc21c9c0d5f10fbcb3c0ae0c841815d909e5a0613",
+        "actual_input_sha256": "ea9523b5aaa7a8fd15173b1649769e606c588364a09b0c06b11016a4d176e6b0",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_berry_curvature-c5119be9.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_drude-70c4f135.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_quantum_metric-81800e28.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_optical_response_total-62fef52d.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-berry-h5-20261106-001",
+        "actual_input_sha256": "d65e45f206cf1290bf5df81690e527b3164dd4e23df49acadaacc36ad36d69f7",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_berry_curvature-cde8701d.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_drude-72c6df4d.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_quantum_metric-245c6fd2.dat",
+          "examples/11_fe_oam_and_linear_response/data/linear_transport_total-bd567789.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
+        "new_computation": false
+      }
+    },
+    "examples/12_fe_wannierization/inputs/fe_bands.toml": {
+      "material_set_id": "Fe-U559-orbital-frame145",
+      "evidence": {
+        "execution_id": "Fe-tutorial-bands-20261106-001",
+        "actual_input_sha256": "25e399214d6b5998db7ba5b0a6afdbc8edb2c9becb32eb6936a27b35a9c8788e",
+        "source_model_tb_sha256": "5efdff9a7a854342bf44218d01d622d9c9845a386c65019cc571e6d33e011149",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/12_fe_wannierization/data/model_bands-eb4ca8ce.dat"
+        ],
+        "new_computation": false
+      }
+    },
+    "examples/17_jerk_current/inputs/ges_pilot_sheet.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "execution_id": "WN-Tutorial-unified-validation237",
+        "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "actual_input_sha256": "2606e45d0f35d2deb61312d9456a34353cea87c616b4f82d617fdb82ba497ca7",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/17_jerk_current/data/jc_G_ordered_xxxx-5a697a2e.dat",
+          "examples/17_jerk_current/data/jc_G_ordered_yyyy-940abdfe.dat"
+        ],
+        "new_computation": true,
+        "mesh": [
+          7,
+          5,
+          1
+        ],
+        "energies_ev": [
+          2.0,
+          2.5
+        ],
+        "physics_qualification": false
+      }
+    },
+    "examples/17_jerk_current/inputs/ges_pilot_bulk.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "execution_id": "WN-Tutorial-unified-validation237",
+        "source_manifest_sha256": "ccabbdcd8cee36da19161e02f228e80029b538774b1de758c774f4c01bf03f92",
+        "source_model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "actual_input_sha256": "36c44f4e50ff30cbb2a653657d7fb9f549bfa25a0b57e8182966a2b00433a7da",
+        "task_and_sampling_equal": true,
+        "reused_complete_results": [
+          "examples/17_jerk_current/data/jc_G_ordered_xxxx-18974147.dat",
+          "examples/17_jerk_current/data/jc_G_ordered_yyyy-1ded8bcd.dat"
+        ],
+        "new_computation": true,
+        "mesh": [
+          7,
+          5,
+          1
+        ],
+        "energies_ev": [
+          2.0,
+          2.5
+        ],
+        "physics_qualification": false
+      }
+    },
+    "examples/02_integral_charge_responses/inputs/shift_current_projector.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "new_computation": true,
+        "original_mesh": [
+          100,
+          100
+        ],
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    },
+    "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml": {
+      "material_set_id": "GeS-pairWS-canonical-spin034",
+      "evidence": {
+        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+        "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+        "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+        "executed_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "meaning": "All occupied-to-empty external transitions at mu=-2.5 eV, T=0; complete intermediate states retained"
+        },
+        "reuse_basis": "Existing native map already consumed the full active transition domain; values retained exactly",
+        "data_sha256": {
+          "examples/04_kslice_charge_responses/data/operators_sck_r_proj-fd869724.dat": "fd869724baf5795b3a9cdaafee1fb271a7fd00c76626e5db6f44ee305d2f03c9",
+          "examples/04_kslice_charge_responses/data/operators_sck_i_proj-9bfd6206.dat": "9bfd6206432e5c993afb4a5ce25732d3f404df938c26ca3120bdfe9a849c5f22",
+          "examples/04_kslice_charge_responses/data/display_sck_r_proj-b195e508.dat": "b195e508c7b5b7f8208a897d2977ba752d4db3c0ff6e8c0f708378a8763937ca"
+        },
+        "material_or_convergence_qualified": false
+      },
+      "normal_entry_check": "PASS"
+    }
+  },
+  "shift_current_current_source_comparison": {
+    "schema": "tutorial-shift-current-comparison/2",
+    "status": "COMPLETE_CURRENT_SOURCE_FINITE_MESH_COMPARISON",
+    "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+    "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+    "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+    "mesh": [
+      100,
+      100
+    ],
+    "energy_grid": {
+      "start_ev": 0,
+      "end_ev": 4,
+      "points": 200
+    },
+    "component": "Re yyy",
+    "same_axis_all_methods": true,
+    "selected_methods": [
+      "Conventional",
+      "Projector",
+      "Geometric_Loop",
+      "Wilson_Loop"
+    ],
+    "comparisons": {
+      "Conventional": {
+        "relative_L2_from_conventional": 0.0,
+        "max_absolute_difference_from_conventional": 0.0
+      },
+      "Geometric_Loop": {
+        "relative_L2_from_conventional": 0.008004883115081662,
+        "max_absolute_difference_from_conventional": 1.507486000000002e-07
+      },
+      "Projector": {
+        "relative_L2_from_conventional": 0.003420163200334081,
+        "max_absolute_difference_from_conventional": 7.599379999999931e-08
+      },
+      "Wilson_Loop": {
+        "relative_L2_from_conventional": 0.0037148522663961324,
+        "max_absolute_difference_from_conventional": 8.281109999999863e-08
+      }
+    },
+    "symmetry_residuals": {
+      "Conventional": {
+        "complex_tensor_peak": 1.0055474e-05,
+        "imaginary_same_optical_slot_max": 5.7484426e-20,
+        "xxy_minus_xyx_max": 2.3793696e-10,
+        "mirror_forbidden_max": 1.766850400733754e-10
+      },
+      "Geometric_Loop": {
+        "complex_tensor_peak": 1.0027645e-05,
+        "imaginary_same_optical_slot_max": 0.0,
+        "xxy_minus_xyx_max": 2.5723924e-11,
+        "mirror_forbidden_max": 1.0939882188483783e-11
+      },
+      "Projector": {
+        "complex_tensor_peak": 1.0035258e-05,
+        "imaginary_same_optical_slot_max": 2.53438e-13,
+        "xxy_minus_xyx_max": 9.294000624818788e-10,
+        "mirror_forbidden_max": 9.055803845084617e-10
+      },
+      "Wilson_Loop": {
+        "complex_tensor_peak": 1.0033595e-05,
+        "imaginary_same_optical_slot_max": 5.4503301e-19,
+        "xxy_minus_xyx_max": 2.598393e-11,
+        "mirror_forbidden_max": 1.0900130505491738e-11
+      }
+    },
+    "method_definitions": {
+      "Conventional": "Generalized position derivatives; exact spectral guards retained.",
+      "Projector": "Transported finite-difference projectors at h=0.0001 inverse angstrom; adjacent-gap response groups.",
+      "Geometric_Loop": "Geometric loop at h=0.0001 inverse angstrom; adjacent-gap response groups.",
+      "Wilson_Loop": "Wilson loop at h=0.0001 inverse angstrom; adjacent-gap response groups."
+    },
+    "material_physics_or_convergence_qualified": false,
+    "comparison_reference_is_correctness_oracle": false
+  },
+  "current_local_geometry_limitations": {
+    "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+    "chapters": {
+      "04": {
+        "band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        },
+        "same_grid_full_band_comparison": {
+          "status": "SAME_GRID_SAME_FREQUENCY_NATIVE_LOCAL_INTEGRAL_CONSISTENCY_RECORDED",
+          "mesh": [
+            200,
+            200
+          ],
+          "photon_energy_ev": 3.0,
+          "band_domain": "Full occupied1:20\u2192empty21:32 (GeS atmu=-2.5,T0); coverage established by same-grid native integral equality, not merely by model band count.",
+          "normalization": "Native local cells already contain1/Nk and cell measure/physical prefactors. Sum once; no extra division by40000.",
+          "rows": {
+            "conventional": {
+              "native_integral_Re_yyy": 8.6462584e-06,
+              "sum_40000_native_local_cells": 8.64625837982018e-06,
+              "absolute_sum_integral_difference": 2.0179819661537805e-14,
+              "relative_sum_integral_difference": 2.333936689728846e-09,
+              "pointwise_relative_L2_from_conventional": 0.0,
+              "signed_relative_integral_difference_from_conventional": 0.0,
+              "positive_difference": 0.0,
+              "negative_difference": 0.0,
+              "signed_over_L1_difference": 0,
+              "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.6044787936217e-06
+            },
+            "projector": {
+              "native_integral_Re_yyy": 8.6488699e-06,
+              "sum_40000_native_local_cells": 8.648869888385873e-06,
+              "absolute_sum_integral_difference": 1.1614127831661124e-14,
+              "relative_sum_integral_difference": 1.3428491793196177e-09,
+              "pointwise_relative_L2_from_conventional": 0.006403586567544119,
+              "signed_relative_integral_difference_from_conventional": 0.0003020391539292677,
+              "positive_difference": 6.607986184514004e-09,
+              "negative_difference": -3.9964776188192745e-09,
+              "signed_over_L1_difference": 0.2462650270798094,
+              "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.602903187500516e-06
+            },
+            "geometric_loop": {
+              "native_integral_Re_yyy": 8.6379619e-06,
+              "sum_40000_native_local_cells": 8.637961857327543e-06,
+              "absolute_sum_integral_difference": 4.2672457703355794e-14,
+              "relative_sum_integral_difference": 4.940107216050849e-09,
+              "pointwise_relative_L2_from_conventional": 0.02407725574016335,
+              "signed_relative_integral_difference_from_conventional": -0.0009595506088505587,
+              "positive_difference": 1.2094827462383642e-07,
+              "negative_difference": -1.2924479711647213e-07,
+              "signed_over_L1_difference": 0.03316048056377514,
+              "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.59279708882055e-06
+            },
+            "wilson_loop": {
+              "native_integral_Re_yyy": 8.6488873e-06,
+              "sum_40000_native_local_cells": 8.648887345631181e-06,
+              "absolute_sum_integral_difference": 4.5631181057564744e-14,
+              "relative_sum_integral_difference": 5.2759596967827835e-09,
+              "pointwise_relative_L2_from_conventional": 0.006422109721433521,
+              "signed_relative_integral_difference_from_conventional": 0.00030405820593309236,
+              "positive_difference": 6.635691933703808e-09,
+              "negative_difference": -4.006726122701718e-09,
+              "signed_over_L1_difference": 0.24702711329966515,
+              "nested_100x100_sum_at_same3ev_not_independent_public_replay": 8.602896436653783e-06
+            }
+          },
+          "table_print_precision": "Native integral output7digits after decimal scientific; local maps retain more digits. Compare with rounding-aware tolerance.",
+          "source_or_numerical_policy_changed": false,
+          "material_or_convergence_qualified": false
+        },
+        "all_k_equivalence": "NOT_CLAIMED",
+        "response_block_closure": {
+          "original_mesh": [
+            200,
+            200
+          ],
+          "minimum_gap_20_21_ev": 1.8782425623605536,
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "checked_points": 40000,
+          "minimum_conduction_ev": -1.6047655674238184,
+          "wrong_occupation_partitions": 0,
+          "intermediate_band_window": -1,
+          "new_SCF": 0,
+          "response_threshold_ev": 0.002,
+          "response_rule": "Native adjacent-gap chaining including numerical-equality safeguard",
+          "source_or_threshold_changed": false,
+          "mu_ev": -2.5,
+          "cut_response_blocks": 0,
+          "maximum_valence_ev": -3.3439491683042264,
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
+          "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
+          "scope": "Original finite32-band model and original200x200 slice only; not material or mesh-convergence qualification"
+        }
+      },
+      "08": {
+        "position_QHC_methods_shown": [
+          "Conventional",
+          "Wilson_Loop"
+        ],
+        "Geometric_Loop_QHC": "REMOVED_FROM_ACTIVE_TUTORIAL",
+        "selected_block_covariance": "NOT_CERTIFIED_FOR_PARTIAL_RESPONSE_BLOCKS",
+        "shift_vector_data": "UNCHANGED"
+      }
+    },
+    "status": "SAME_GRID_METHOD_DIFFERENCES_REMAIN; DO_NOT_CLAIM_POINTWISE_EQUIVALENCE"
+  },
+  "current_model_format_copy": {
+    "evidence": "manifests/model_format_copy302.json",
+    "scope": "Four-file selected physical model set unchanged; two operator storage files converted without changing numerical payloads. Historical calculations retain their actual original file/source identities."
+  },
+  "spin_case_refresh303": {
+    "source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+    "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+    "new_original_mesh_cases": 4,
+    "new_SCF": 0,
+    "new_Wannierization": 0,
+    "rendered_and_visually_checked_figures": 4,
+    "shared_parent_actual_exit": 1,
+    "spin_case_groups_actual_exit": [
+      0,
+      0
+    ],
+    "full_recorded_cohort_strictly_released": true,
+    "material_or_convergence_qualified": false
+  },
+  "Fe_OM_reader_recovery310": {
+    "original_calculation": "WN-Tutorial-materials303",
+    "calculation_source_manifest_sha256": "59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3",
+    "readback_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+    "source_status": "FROZEN_CANDIDATE_NOT_FORMAL_PROMOTION",
+    "normal_readback_cases": 4,
+    "reader_actual_exit": 0,
+    "original_files_sha256_and_identity_unchanged": true,
+    "new_integrals": 0,
+    "original_parent303_actual_exit": 1,
+    "original_parent303_failure_preserved": true,
+    "material_or_convergence_qualified": false,
+    "reader_source_current_status": "LOCALLY_PROMOTED_PUBLIC1.2.0",
+    "plot311_actual_exit": 0,
+    "plot311_PNG_and_PDF_visual_review": "PASS"
+  }
+}

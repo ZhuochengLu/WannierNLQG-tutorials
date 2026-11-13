@@ -1,113 +1,143 @@
-# Shift geometry
+# Shift vectors and quantum Hermitian connections
 
-Shift vectors and quantum Hermitian connections from three supported constructions.
+## In this tutorial
 
-## 1. Physical quantity and method
+- Relate a transition displacement to a covariant derivative of its optical matrix element.
+- Distinguish shift vector, quantum Hermitian connection, and integrated current.
+- Compare methods at fixed band groups and numerical conventions.
 
-Each row is one independently executable `TaskConfig`. Integral tasks retain the complete native tensor; the component column is the default visualization selection.
+## Physics and model
 
-| Case | Quantity | Method | Reference mesh | Photon energy (eV) | Component | Band selection | Optional spin data |
-|---|---|---|---:|---:|---|---|---|
-| `shift_vector_geometric_loop.jl` | `shift_vector` | `geometric_loop` | 200×200 | None | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `shift_vector_wilson_loop.jl` | `shift_vector` | `wilson_loop` | 200×200 | None | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `quantum_hermitian_connection_conventional.jl` | `quantum_hermitian_connection` | `conventional` | 200×200 | None | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `quantum_hermitian_connection_geometric_loop.jl` | `quantum_hermitian_connection` | `geometric_loop` | 200×200 | None | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `quantum_hermitian_connection_wilson_loop.jl` | `quantum_hermitian_connection` | `wilson_loop` | 200×200 | None | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
+For valence state $v$ and conduction state $c$, use the Hamiltonian-gauge position matrix $r^y_{mn}=i\langle u_m|\partial_yu_n\rangle$. The generalized derivative is written with the derivative direction after the semicolon. For the $vc$ matrix element used on the shifted leg of the loop,
 
-The component and ordered band selection are explicit in every case file and repeated in `summary.json`.
+$$
+r_{vc}^{y;y}=\partial_y r^y_{vc}
+-i(r^y_{vv}-r^y_{cc})r^y_{vc},
+\qquad
+R_{vc}^{y;y}=\frac{i r_{vc}^{y;y}}{r^y_{vc}}.
+$$
 
-## 2. Inputs
+$\partial_y$ differentiates with respect to Cartesian $k_y$ in Å$^{-1}$, so $r^y_{vc}$ and $R_{vc}^{y;y}$ have units Å, while $r_{vc}^{y;y}$ has units Å². The phase-gradient and diagonal-connection terms depend separately on gauge; their combination does not. $R$ is generally complex; its real part gives the transition displacement. At a zero optical matrix element the ratio is undefined. A divergent shift vector need not produce a divergent current, because the transition weight also vanishes.
 
-- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
-- Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
-- This chapter needs only the committed ordinary `GeS_tb.dat` model.
-- Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
+The main shift-vector example uses **Wilson Loop** at zero photon momentum. For an isolated transition, its closed product contains position matrix elements:
 
-## 3. Parameter contract
+$$
+\mathcal L_\pm=\langle v_k|v_{k\pm h}\rangle
+r^y_{vc}(k\pm h)\langle c_{k\pm h}|c_k\rangle r^y_{cv}(k).
+$$
 
-| Parameter | Reference value |
-|---|---|
-| Fermi energy / temperature | `-2.5 eV` / `0 K` for optical tasks |
-| Broadening | Gaussian, `0.060 eV` for optical tasks |
-| Denominator regularization | `0.001 eV` where applicable |
-| Finite-difference step | `1e-4 Å^-1` for derivative geometry |
-| Degeneracy threshold | `0.002 eV` |
-| Bands | `V=[19,20]`, `C1=[21,22]`, `C2=[23,24]` |
-| Fourier / centers | `direct` / `Convention_II` |
-| Output precision | 17 digits; no tutorial-side numerical reordering or truncation |
+Here the displacement is along Cartesian $k_y$. The symmetric complex logarithmic derivative is
 
-The case file is authoritative: parameters irrelevant to a quantity are not artificially applied. `smoke` changes only mesh/path density.
+$$
+\mathcal R_h=\frac{i}{2h}\left[\log\mathcal L_+-\log\mathcal L_-\right],
+\qquad R_h=\operatorname{Re}\mathcal R_h.
+$$
 
-## 4. Run and visualize
+The retained Geometric-loop comparison instead uses velocity insertions. At zero photon momentum and for isolated bands, its ordered factors are $\langle v_k|v_{k+h}\rangle V^y_{vc}(k+h)\langle c_{k+h}|c_k\rangle V^y_{cv}(k)$, up to a positive constant, with $V$ the velocity vertex. This fixes the $vc$ orientation above. On a smooth branch with a nonzero transition element, $\lim_{h\to0}R_h=\operatorname{Re}R_{vc}^{y;y}$. This real-part relation does not identify the full complex velocity- and position-based logarithmic derivatives.
+
+The Wilson product is implemented in `WilsonLoopShiftVector.jl`; the shared logarithmic derivative and pair average are defined in `GeometricLoopShiftVector.jl`. The runtime averages the complex kernel over the requested conduction–valence pairs, and the figure displays its real part. These routines fix the logarithm branch and treatment of vanishing links. Differentiating an arbitrarily unwrapped phase is not the same operation. Degenerate groups require the complete block construction, not independently assigned eigenvector phases or ratios of group-averaged matrix elements.
+
+The Conventional quantum Hermitian connection shown below has diagonal component
+
+$$
+\mathcal C_{CV}^{yyy}=
+\frac{1}{N_C N_V}\sum_{c\in C,v\in V}r_{vc}^{y;y}r^y_{cv}.
+$$
+
+$C=\{21,22\}$ and $V=\{19,20\}$ give $N_C=N_V=2$. The connection kernel in `ConventionalQuantumGeometry.jl` is a generally complex pair average. It has dimensions Å³, unlike the shift vector. Neither expression includes occupation differences, resonant energy selection, or momentum integration; a local geometric map is not a shift-current spectrum.
+
+## Parameters
+
+The examples use the unified `Materials/GeS/model_tb.dat` and matching `Materials/GeS/operators.h5` bundle, with replica policy `auto` and Fourier backend `direct`. The recorded public 1.2.0 calculation uses the original 200 × 200 mesh and the parameters below.
+
+Set up the shared files with the [material data guide](../../Materials/README.md).
+
+| Parameter | Value | Meaning |
+| --- | --- | --- |
+| Transition groups | valence=[19,20], conduction=[21,22] | Four ordered valence–conduction pairs |
+| Component | [2,2,2] | Derivative along y; both optical directions y |
+| Loop finite_difference_step | 0.0001 Å⁻¹ | Cartesian displacement h |
+| Shift-vector method | Wilson Loop | Main figure; Geometric Loop is the comparison |
+| QHC methods | Conventional, Wilson Loop | Position-defined connection |
+| Momentum transfer | q=0 | Vertical transitions |
+| k mesh | [200,200] | Two-dimensional k-slice |
+| Slice coordinates | origin=[0,0,0]; vectors [1,0,0], [0,1,0] | Fractional reciprocal-space sampling plane |
+| Fourier backend | direct | Evaluation of the real-space model |
+
+## Run
+
+From the repository root, check the inputs, then run either example into a new output directory:
 
 ```bash
-julia --project=. examples/08_shift_geometry/run.jl --profile=smoke
-julia --project=. examples/08_shift_geometry/run.jl --profile=reference
-julia --project=. scripts/visualize_all.jl
+julia --project=.runtime/env scripts/run_group.jl 08 --check
+julia --project=.runtime/env scripts/run_group.jl 08 --case=shift_vector_wilson_loop --output=.runtime/shift_vector_wilson_loop
+julia --project=.runtime/env scripts/run_group.jl 08 --case=quantum_hermitian_connection_conventional --output=.runtime/quantum_hermitian_connection_conventional
 ```
 
-Individual smoke commands:
+The check command does not calculate the response. Use a fresh output directory for each run.
+
+Begin with the [Wilson Loop shift vector](inputs/shift_vector_wilson_loop.toml) and [Conventional connection](inputs/quantum_hermitian_connection_conventional.toml). The [Geometric Loop shift vector](inputs/shift_vector_geometric_loop.toml) and [Wilson Loop connection](inputs/quantum_hermitian_connection_wilson_loop.toml) remain available for method comparisons.
+
+## Read the figures
+
+The figures below use complete supplied calculations for the stated source, mesh, and band groups. Redrawing them does not execute the calculation inputs above. Both loop methods use adjacent-gap response groups with threshold 0.002 eV, including the numerical-equality safeguard. Grouping does not average individual energies; exact spectral guards remain independent.
+
+### Shift vector
+
+<table>
+<tr>
+<td><a href="figures/kslice_shift_vector_wilson_loop.png"><img src="figures/kslice_shift_vector_wilson_loop.png" alt="Wilson-loop shift vector" width="400"></a><br>Wilson-loop shift vector</td>
+<td><a href="figures/kslice_shift_vector_geometric_loop.png"><img src="figures/kslice_shift_vector_geometric_loop.png" alt="Geometric-loop shift vector" width="400"></a><br>Geometric-loop shift vector</td>
+</tr>
+</table>
+
+
+The core figure shows the **Wilson-loop** real $R^{y;y}$ in Å, averaged over the requested valence [19,20] and conduction [21,22] pairs. The 200 × 200 map uses $h=10^{-4}$ Å⁻¹ and a 0.002 eV adjacent-gap response-group threshold. Its symmetric logarithmic color scale is linear within ±1 Å; the full numerical range, −1321.43 to +647.89 Å, is retained without clipping. The axes follow the two sampling vectors, and pixel centers coincide with the actual sampled points.
+
+Large values near weak optical links are sensitive to the finite-difference step and logarithm branch; they should not be read as converged transition displacements. This geometric pair average has no occupation or resonant-energy weight and is not an integrated photocurrent. The [Geometric-loop comparison](figures/kslice_shift_vector_geometric_loop.png) uses the same scale and differs by 5.61% in relative real-array $L^2$ norm on this grid. This finite-grid comparison does not establish equivalence at singular links. [Original PNG](figures/kslice_shift_vector_wilson_loop.png) · [PDF](figures/kslice_shift_vector_wilson_loop.pdf).
+
+### Quantum Hermitian connection
+
+<table>
+<tr>
+<td><a href="figures/kslice_quantum_hermitian_connection_conventional.png"><img src="figures/kslice_quantum_hermitian_connection_conventional.png" alt="Conventional position-defined QHC" width="400"></a><br>Conventional position-defined QHC</td>
+<td><a href="figures/kslice_quantum_hermitian_connection_wilson_loop.png"><img src="figures/kslice_quantum_hermitian_connection_wilson_loop.png" alt="Wilson-loop position-defined QHC" width="400"></a><br>Wilson-loop position-defined QHC</td>
+</tr>
+</table>
+
+
+This map displays the real connection in Å³. The [Wilson-loop map](figures/kslice_quantum_hermitian_connection_wilson_loop.png) shares its linear full-range color limit, approximately ±56.99 Å³. The shift-vector figure uses different dimensions and a different color normalization.
+
+The Wilson-loop real array differs from Conventional by 1.02% in relative $L^2$ norm on this grid. This is a finite-model, selected-band comparison, not a material or convergence qualification. Near-degenerate selections require complete response blocks for a basis-independent subspace comparison; these retained maps do not establish such an all-point equivalence. Geometric Loop is not offered for position-defined QHC: its former velocity-insertion output represents a different object. This restriction does not remove the Geometric-loop shift-vector example above. [Original PNG](figures/kslice_quantum_hermitian_connection_conventional.png) · [PDF](figures/kslice_quantum_hermitian_connection_conventional.pdf).
+
+## Redraw and check
+
+Redraw either core figure into a new directory:
 
 ```bash
-julia --project=. examples/08_shift_geometry/cases/shift_vector_geometric_loop.jl --profile=smoke
-julia --project=. examples/08_shift_geometry/cases/shift_vector_wilson_loop.jl --profile=smoke
-julia --project=. examples/08_shift_geometry/cases/quantum_hermitian_connection_conventional.jl --profile=smoke
-julia --project=. examples/08_shift_geometry/cases/quantum_hermitian_connection_geometric_loop.jl --profile=smoke
-julia --project=. examples/08_shift_geometry/cases/quantum_hermitian_connection_wilson_loop.jl --profile=smoke
+python examples/08_shift_geometry/plot.py --figure=kslice_shift_vector_wilson_loop --output=.runtime/plot-kslice_shift_vector_wilson_loop
+python examples/08_shift_geometry/plot.py --figure=kslice_quantum_hermitian_connection_conventional --output=.runtime/plot-kslice_quantum_hermitian_connection_conventional
 ```
 
-Existing result directories are never overwritten.
+For a method comparison, compute the same object with the same model, band groups, sampling, and numerical settings. Compare the numerical arrays before judging differences from separately scaled images.
 
-## 5. Output interpretation
+Near-degenerate bands and weak optical transitions require particular care when interpreting transition geometry. Check finite-difference and mesh stability, and preserve the defined band-group and threshold conventions. These maps do not establish method agreement or quantitative convergence of an integrated photocurrent.
 
-- `kslice_shift_vector_geometric_loop`: `GeS_svk_i_geo.dat`, `GeS_svk_r_geo.dat`
-- `kslice_shift_vector_wilson_loop`: `GeS_svk_i_wilson.dat`, `GeS_svk_r_wilson.dat`
-- `kslice_quantum_hermitian_connection_conventional`: `GeS_qhck_i_conv.dat`, `GeS_qhck_r_conv.dat`
-- `kslice_quantum_hermitian_connection_geometric_loop`: `GeS_qhck_i_geo.dat`, `GeS_qhck_r_geo.dat`
-- `kslice_quantum_hermitian_connection_wilson_loop`: `GeS_qhck_i_wilson.dat`, `GeS_qhck_r_wilson.dat`
+[Reproducibility](reproduce.json)
 
-Every task directory also contains native `metadata.txt` and a tutorial `summary.json` with input/output SHA-256 values. Complex K-slice quantities retain separate real (`_r_`) and imaginary (`_i_`) files; the default figure shows the real part. `raw/`-style quantities retain the package's native stable filenames without renaming.
+## Companion loop maps
 
-## 6. Figure-reading guide
 
-`GeS_shift_vector_methods` uses a shared color contract for Geometric and Wilson maps; `GeS_qhc_methods` places Conventional, Geometric, and Wilson maps in declared panel order. They expose method differences without classifying those differences as numerical errors.
 
-K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
+Compare the Geometric-loop shift vector with the Wilson-loop shift vector above, and compare the Wilson-loop QHC with the Conventional QHC. These are two separate comparisons, with different units and color normalizations. Weak optical links can make a logarithmic ratio or its phase unstable; a large shift vector alone does not imply a large weighted photocurrent. The position-defined QHC retains its complex transition amplitude rather than replacing a position insertion with a velocity insertion. Geometric Loop is therefore not a third method for the QHC shown here.
 
-Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
+```bash
+python examples/08_shift_geometry/plot.py --figure=kslice_shift_vector_geometric_loop --output=.runtime/geometric-shift-vector
+python examples/08_shift_geometry/plot.py --figure=kslice_quantum_hermitian_connection_wilson_loop --output=.runtime/wilson-qhc
+```
 
-![kslice shift vector geometric loop](figures/kslice_shift_vector_geometric_loop.png)  [PDF](figures/kslice_shift_vector_geometric_loop.pdf) [Plot audit](figures/kslice_shift_vector_geometric_loop.plot.json)
+## References
 
-*Geometric Loop shift-vector K-slice, component (2,2,2); native output units; presentation only.*
-
-![kslice shift vector wilson loop](figures/kslice_shift_vector_wilson_loop.png)  [PDF](figures/kslice_shift_vector_wilson_loop.pdf) [Plot audit](figures/kslice_shift_vector_wilson_loop.plot.json)
-
-*Wilson Loop shift-vector K-slice, component (2,2,2); native output units; presentation only.*
-
-![kslice quantum hermitian connection conventional](figures/kslice_quantum_hermitian_connection_conventional.png)  [PDF](figures/kslice_quantum_hermitian_connection_conventional.pdf) [Plot audit](figures/kslice_quantum_hermitian_connection_conventional.plot.json)
-
-*Conventional quantum Hermitian connection, component (2,2,2); native output units; presentation only.*
-
-![kslice quantum hermitian connection geometric loop](figures/kslice_quantum_hermitian_connection_geometric_loop.png)  [PDF](figures/kslice_quantum_hermitian_connection_geometric_loop.pdf) [Plot audit](figures/kslice_quantum_hermitian_connection_geometric_loop.plot.json)
-
-*Geometric Loop quantum Hermitian connection, component (2,2,2); native output units; presentation only.*
-
-![kslice quantum hermitian connection wilson loop](figures/kslice_quantum_hermitian_connection_wilson_loop.png)  [PDF](figures/kslice_quantum_hermitian_connection_wilson_loop.pdf) [Plot audit](figures/kslice_quantum_hermitian_connection_wilson_loop.plot.json)
-
-*Wilson Loop quantum Hermitian connection, component (2,2,2); native output units; presentation only.*
-
-![GeS shift vector methods](figures/GeS_shift_vector_methods.png)  [PDF](figures/GeS_shift_vector_methods.pdf) [Plot audit](figures/GeS_shift_vector_methods.plot.json)
-
-*Geometric Loop and Wilson Loop shift-vector comparison, component (2,2,2); native output units; presentation only.*
-
-![GeS qhc methods](figures/GeS_qhc_methods.png)  [PDF](figures/GeS_qhc_methods.pdf) [Plot audit](figures/GeS_qhc_methods.plot.json)
-
-*Conventional, Geometric Loop, and Wilson Loop quantum-Hermitian-connection comparison, component (2,2,2); native output units; presentation only.*
-
-## 7. Relation to the manuscript
-
-This tutorial follows quantities and parameter choices used in the manuscript workflow, but uses the released ordinary GeS model and a separately audited VASP display reference. It is not a byte-identical reconstruction of the manuscript's SAWF band bundle and is not evidence that manuscript figures were reproduced.
-
-## 8. Qualification limits
-
-Committed outputs are `TUTORIAL_NUMERICAL_EVIDENCE`: finite, hashed, and reproduced with WannierNLQG v1.0.1 at the stated mesh. They are not Physics PASS or Production PASS. Differences between Conventional, Geometric Loop, and Wilson Loop are displayed as method differences, not automatically classified as errors.
+- J. E. Sipe and A. I. Shkrebtii, “Second-order optical response in semiconductors,” *Physical Review B* **61**, 5337–5352 (2000). [DOI](https://doi.org/10.1103/PhysRevB.61.5337). Background for generalized derivatives and shift current.
+- H. Wang, X. Tang, H. Xu, J. Li, and X. Qian, “Generalized Wilson loop method for nonlinear light-matter interaction,” *npj Quantum Materials* **7**, 61 (2022). [DOI](https://doi.org/10.1038/s41535-022-00472-4). Closed-loop optical geometry.
+- Z. Lu, Z. Qian, Z. Guo, L. Shi, S. Liu, H. Wang, and K. Chang, “Giant Nonlinear Photon-Drag Currents in Moiré Bilayers,” arXiv:2511.16987 (2025; revised 2026). [arXiv](https://arxiv.org/abs/2511.16987). Geometric-loop formulation of nonlinear photon-drag currents.

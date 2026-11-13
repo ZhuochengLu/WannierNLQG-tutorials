@@ -1,96 +1,141 @@
-# K-slice charge responses
+# 04 · Momentum-resolved charge responses
 
-Momentum-resolved real and imaginary charge-response maps at 3.0 eV.
+## In this tutorial
 
-## 1. Physical quantity and method
+- Distinguish the shift contribution from the injection coefficient.
+- Identify selected-band hot spots without confusing them with an integrated response.
+- Read the selected yyy tensor component and compare methods at fixed parameters.
 
-Each row is one independently executable `TaskConfig`. Integral tasks retain the complete native tensor; the component column is the default visualization selection.
+## Physics and model
 
-| Case | Quantity | Method | Reference mesh | Photon energy (eV) | Component | Band selection | Optional spin data |
-|---|---|---|---:|---:|---|---|---|
-| `shift_current_conventional.jl` | `shift_current` | `conventional` | 200×200 | 3 | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `shift_current_geometric_loop.jl` | `shift_current` | `geometric_loop` | 200×200 | 3 | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `shift_current_wilson_loop.jl` | `shift_current` | `wilson_loop` | 200×200 | 3 | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
-| `injection_current_conventional.jl` | `injection_current` | `conventional` | 200×200 | 3 | `(2,2,2)` | `{"conduction":[21,22],"valence":[19,20]}` | no |
+Shift current probes the displacement associated with an optical transition; injection current probes the change in current carried by the excited populations. They are distinct contributions, not two names for the same spectrum.
 
-The component and ordered band selection are explicit in every case file and repeated in `summary.json`.
+For the Conventional method, the stored charge-response kernels are
 
-## 2. Inputs
+$$
+K_{nm}^{abc,\mathrm{shift}}=-i\left(r_{nm}^{c;a}r_{mn}^{b}-r_{mn}^{b;a}r_{nm}^{c}\right),
+$$
 
-- Model: [GeS SOC TB model](../../Materials/GeS/vasp_SOC/README.md).
-- Structure and audit inputs: `GeS.win`, `POSCAR`, `INCAR`, `KPOINTS`, and input manifests in the same material directory.
-- This chapter needs only the committed ordinary `GeS_tb.dat` model.
-- Protected VASP files are not distributed; `POTCAR.txt` records the pseudopotential choices.
+$$
+K_{nm}^{abc,\mathrm{inj}}=\left(h_{mm}^{a}-h_{nn}^{a}\right)r_{nm}^{c}r_{mn}^{b}.
+$$
 
-## 3. Parameter contract
+Here $r_{nm}^{b}=i\langle u_{n\mathbf{k}}|\partial_{k_b}u_{m\mathbf{k}}\rangle$ is the Hamiltonian-gauge position matrix element, including the Wannier-basis position contribution. Following the WannierNLQG manuscript notation, $r_{nm}^{c;a}=\partial_{k_a}r_{nm}^{c}-i(r_{nn}^{a}-r_{mm}^{a})r_{nm}^{c}$ is its generalized derivative: $c$ is the position direction and $a$ after the semicolon is the derivative direction. The indices $a,b,c$ denote the current direction and the two optical-field directions. In this orthogonal Wannier model, $h_{nn}^{a}$ is the diagonal matrix element of the Hamiltonian derivative with respect to Cartesian $k_a$, in eV Å. It is an energy slope, before conversion to a physical velocity.
 
-| Parameter | Reference value |
-|---|---|
-| Fermi energy / temperature | `-2.5 eV` / `0 K` for optical tasks |
-| Broadening | Gaussian, `0.060 eV` for optical tasks |
-| Denominator regularization | `0.001 eV` where applicable |
-| Finite-difference step | `1e-4 Å^-1` for derivative geometry |
-| Degeneracy threshold | `0.002 eV` |
-| Bands | `V=[19,20]`, `C1=[21,22]`, `C2=[23,24]` |
-| Fourier / centers | `direct` / `Convention_II` |
-| Output precision | 17 digits; no tutorial-side numerical reordering or truncation |
+These are **kernels, not conductivities**: occupations, energy selection, physical prefactors, and integration normalization enter separately. The shift-kernel order follows directly by substituting $r_{mn}^{b}R_{mn}^{b;a}=i r_{mn}^{b;a}$ into $r_{mn}^{b}r_{nm}^{c}(R_{mn}^{b;a}-R_{nm}^{c;a})$. Band and optical-field labels must stay attached to their matrix elements. The expressions follow `ConventionalShiftCurrent.jl` and `ConventionalInjectionCurrent.jl` in WannierNLQG v1.2.0. In particular, the ordered-field injection-rate output does not include an external conjugate-frequency factor of two or a steady-state relaxation time.
 
-The case file is authoritative: parameters irrelevant to a quantity are not artificially applied. `smoke` changes only mesh/path density.
+The sampling plane is specified in fractional reciprocal coordinates:
 
-## 4. Run and visualize
+$$
+\mathbf{k}_{\mathrm{frac}}(u,v)=\mathbf{o}+u\mathbf{b}_1+v\mathbf{b}_2.
+$$
+
+The origin and two spanning vectors below define the plane; $u,v$ sample its periodic unit interval. The plots center this interval around zero. This is a display rearrangement, not a change to the underlying momentum points. The shift-current maps include all occupied-to-empty transitions within the 32-band model: valence 1–20 and conduction 21–32 at the stated chemical potential and zero temperature. All 32 model bands remain available in intermediate-state sums. The injection-current example keeps its separate transition selection.
+
+The shift-current inputs use the unified GeS Wannier Hamiltonian in `Materials/GeS/model_tb.dat` and its matching `Materials/GeS/operators.h5` bundle. See the [material setup guide](../../Materials/README.md) before running. A Hamiltonian alone does not establish the optical matrix elements needed by the calculation.
+
+## Symmetry and polarization
+
+The two optical indices are ordered: $b$ multiplies the positive-frequency field and $c$ the negative-frequency field. The real symmetric combination couples to linear polarization; the imaginary antisymmetric combination couples to helicity. Consequently, an imaginary component with $b=c$ is identically zero in the physical response tensor. A nonzero ordered array entry alone does not establish an allowed macroscopic response.
+
+For a time-reversal-symmetric material at zero photon momentum, the integrated charge shift response can have a real symmetric part, while charge injection can have an imaginary antisymmetric part. The real charge-injection channel is forbidden: in particular, integrated injection yyy must vanish. In the GeS orthorhombic axes, the manuscript identifies the $C_{2v}$ operations $m_x$, $C_{2y}$, and $m_z$. These allow real shift yyy and, for in-plane fields, an imaginary charge-injection xxy component paired with the opposite xyx component. They do not permit a finite integrated charge-injection yyy.
+
+Time reversal relates opposite momenta, not each point to itself. A real injection-yyy contribution can be locally nonzero and odd between symmetry-related momenta; cancellation requires complete symmetry-related sampling and band subspaces closed under the operation. This local map must not be interpreted as a finite integrated injection-yyy response.
+
+## Parameters
+
+The [main input](inputs/shift_current_conventional.toml) is the executable specification. The companion inputs use the same sampling and occupation settings.
+
+| Parameter | Value | Meaning |
+| --- | --- | --- |
+| spatial_dimension | 2 | Two-dimensional response calculation |
+| k_mesh | [200, 200] | Momentum points along the two sampling directions |
+| $\mu$, $T$ | −2.5 eV, 0 K | Fermi energy and electronic temperature |
+| Photon energy | 3.0 eV | Energy selection |
+| broadening | 0.06 eV | Gaussian energy width; broadening_type is omitted |
+| fourier_backend | direct | Direct real-space Fourier evaluation |
+| real_space_replica_policy | auto | Model replica treatment |
+| origin | [0, 0, 0] | Fractional reciprocal coordinates |
+| vector_1, vector_2 | [1, 0, 0], [0, 1, 0] | Fractional reciprocal spanning vectors |
+| SC valence, conduction | 1–20, 21–32 | Complete occupied and empty subspaces; no partial response block |
+| component | [2,2,2] | yyy: current, field, field |
+| finite_difference_step | 0.0001 Å⁻¹ | Cartesian reciprocal-space step for Projector and both loop methods |
+
+For the Gaussian convention, the energy width $\eta=0.06$ eV is not its standard deviation: the latter is $\eta/\sqrt{2}$.
+
+## Run
+
+From the repository root, check the inputs and run the Conventional shift case:
 
 ```bash
-julia --project=. examples/04_kslice_charge_responses/run.jl --profile=smoke
-julia --project=. examples/04_kslice_charge_responses/run.jl --profile=reference
-julia --project=. scripts/visualize_all.jl
+julia --project=.runtime/env scripts/run_group.jl 04 --check
+julia --project=.runtime/env scripts/run_group.jl 04 --case=shift_current_conventional --output=.runtime/04-shift_current_conventional
 ```
 
-Individual smoke commands:
+Use a new output directory for each calculation. The check command inspects inputs and dependencies; it does not calculate a response.
+
+Start with [shift_current_conventional](inputs/shift_current_conventional.toml). Other choices are [injection_current_conventional](inputs/injection_current_conventional.toml), [shift_current_projector](inputs/shift_current_projector.toml), [shift_current_geometric_loop](inputs/shift_current_geometric_loop.toml), [shift_current_wilson_loop](inputs/shift_current_wilson_loop.toml), replacing the case and output name in the command above.
+
+## Read the figures
+
+The four shift-current maps were computed with the recorded public 1.2.0 source, the same unified GeS pair, and the original 200 × 200 grid. The injection map retains its separate recorded calculation. Redrawing a figure reads its supplied table and does not execute a response calculation.
+
+### Momentum-resolved shift current
+
+<table>
+<tr>
+<td><a href="figures/kslice_shift_current_conventional.png"><img src="figures/kslice_shift_current_conventional.png" alt="GeS momentum-resolved yyy shift-current contribution, Conventional method" width="400"></a><br>Conventional</td>
+<td><a href="figures/kslice_shift_current_projector.png"><img src="figures/kslice_shift_current_projector.png" alt="GeS momentum-resolved yyy shift-current contribution, Projector method" width="400"></a><br>Projector</td>
+</tr>
+<tr>
+<td><a href="figures/kslice_shift_current_geometric_loop.png"><img src="figures/kslice_shift_current_geometric_loop.png" alt="GeS momentum-resolved yyy shift-current contribution, Geometric Loop method" width="400"></a><br>Geometric Loop</td>
+<td><a href="figures/kslice_shift_current_wilson_loop.png"><img src="figures/kslice_shift_current_wilson_loop.png" alt="GeS momentum-resolved yyy shift-current contribution, Wilson Loop method" width="400"></a><br>Wilson Loop</td>
+</tr>
+</table>
+
+
+[Original PNG](figures/kslice_shift_current_conventional.png)
+
+Read the sign and location of the full-band yyy contribution. The [Projector](figures/kslice_shift_current_projector.png), [Geometric loop](figures/kslice_shift_current_geometric_loop.png), and [Wilson loop](figures/kslice_shift_current_wilson_loop.png) maps use the same full-range color limit as Conventional. The displayed numbers equal the raw native response multiplied by $10^8$; no cells are removed or clipped. A local peak does not by itself identify a converged contribution to the total current.
+
+The four maps use the same external band domain. Their relative real-array $L^2$ differences from Conventional are 0.640% for Projector, 0.642% for Wilson loop and 2.408% for Geometric loop. Summing the local cells reproduces the same-grid, single-frequency native integrals to printed-output precision; do not divide by the number of points a second time. The corresponding signed integral differences are +0.0302%, +0.0304% and −0.0960%. Positive and negative local differences partly cancel, so integral agreement is not a pointwise correctness test. Finite-step, response-group and position-regularization prescriptions still differ; no formula, threshold or physical width was adjusted to force agreement.
+
+The occupied/empty boundary was checked at all 40,000 original grid points: neither selection cuts a response block, and the occupation partition is unchanged. The minimum direct band-20/21 gap is 1.87824 eV, above the 0.002 eV response-group threshold. This checks the chosen finite-model band domain, not material or mesh convergence.
+
+Projector uses transported finite-difference projectors, with the same $h=10^{-4}$ Å⁻¹ used by the loops. Projector and both loop methods use adjacent-gap response groups with threshold 0.002 eV; this threshold is separate from Gaussian broadening and exact spectral guards. [PDF](figures/kslice_shift_current_conventional.pdf).
+
+### Momentum-resolved injection current
+
+<a href="figures/kslice_injection_current_conventional.png"><img src="figures/kslice_injection_current_conventional.png" alt="Momentum-resolved injection current" width="680"></a>
+
+[Original PNG](figures/kslice_injection_current_conventional.png)
+
+Locate the momentum regions contributing to the selected injection coefficient. Its colorbar scale differs from the shift-current figure, so the two color intensities must not be compared as absolute amplitudes. [PDF](figures/kslice_injection_current_conventional.pdf).
+
+## Plot saved results
+
+Plotting uses the supplied numerical tables and does not run a material calculation. Select the figure and a new output directory:
 
 ```bash
-julia --project=. examples/04_kslice_charge_responses/cases/shift_current_conventional.jl --profile=smoke
-julia --project=. examples/04_kslice_charge_responses/cases/shift_current_geometric_loop.jl --profile=smoke
-julia --project=. examples/04_kslice_charge_responses/cases/shift_current_wilson_loop.jl --profile=smoke
-julia --project=. examples/04_kslice_charge_responses/cases/injection_current_conventional.jl --profile=smoke
+python examples/04_kslice_charge_responses/plot.py --figure=kslice_shift_current_conventional --output=.runtime/plot-kslice_shift_current_conventional
+python examples/04_kslice_charge_responses/plot.py --figure=kslice_injection_current_conventional --output=.runtime/plot-kslice_injection_current_conventional
 ```
 
-Existing result directories are never overwritten.
+## What to check
 
-## 5. Output interpretation
+These maps are examples with their stated band domains at one photon energy, not complete frequency spectra or converged transport coefficients. Periodic centering and transposition are display operations. Compare numerical arrays, band selections and color scales before drawing conclusions about agreement between methods.
 
-- `kslice_shift_current_conventional`: `GeS_sck_i_conv.dat`, `GeS_sck_r_conv.dat`
-- `kslice_shift_current_geometric_loop`: `GeS_sck_i_geo.dat`, `GeS_sck_r_geo.dat`
-- `kslice_shift_current_wilson_loop`: `GeS_sck_i_wilson.dat`, `GeS_sck_r_wilson.dat`
-- `kslice_injection_current_conventional`: `GeS_ick_i_conv.dat`, `GeS_ick_r_conv.dat`
+[Reproducibility](reproduce.json) records the figure inputs and calculation sources.
 
-Every task directory also contains native `metadata.txt` and a tutorial `summary.json` with input/output SHA-256 values. Complex K-slice quantities retain separate real (`_r_`) and imaginary (`_i_`) files; the default figure shows the real part. `raw/`-style quantities retain the package's native stable filenames without renaming.
+## Compare the four local methods
 
-## 6. Figure-reading guide
 
-K-slice rendering uses the package's periodic-centered `fftshift + transpose` convention. Heat-map color limits use the symmetric 99.5th percentile for presentation and the sidecar records that clipping; numerical files remain unchanged. Integral figures show the declared component. All PNGs are white-background 600 dpi and each PDF/PNG pair has a `.plot.json` audit sidecar.
 
-Reference-profile figures below display the selected components and units stated in the case table and axes. The PNG/PDF files are presentation artifacts, not additional convergence evidence.
 
-![kslice shift current conventional](figures/kslice_shift_current_conventional.png)  [PDF](figures/kslice_shift_current_conventional.pdf) [Plot audit](figures/kslice_shift_current_conventional.plot.json)
+These panels share the Conventional panel's complete signed color range and display factor. A common color is therefore a common value, rather than a separate per-method peak normalization. Hot spots reflect both transition resonance and optical geometry; positive and negative regions can cancel in the integral. A large local peak need not dominate the signed spectrum. The sum of each local table reproduces its corresponding single-frequency integral on this same grid and with the same full-band selection; it is not a comparison with an independently selected-band spectrum. No extra $1/N_k$ is applied to a table whose stored values already carry that factor.
 
-*Conventional shift-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
+The injection map is a separate transition-selected example and must not be used as the endpoint-band contract for the four full-band shift-current maps.
 
-![kslice shift current geometric loop](figures/kslice_shift_current_geometric_loop.png)  [PDF](figures/kslice_shift_current_geometric_loop.pdf) [Plot audit](figures/kslice_shift_current_geometric_loop.plot.json)
+## References
 
-*Geometric Loop shift-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
-
-![kslice shift current wilson loop](figures/kslice_shift_current_wilson_loop.png)  [PDF](figures/kslice_shift_current_wilson_loop.pdf) [Plot audit](figures/kslice_shift_current_wilson_loop.plot.json)
-
-*Wilson Loop shift-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
-
-![kslice injection current conventional](figures/kslice_injection_current_conventional.png)  [PDF](figures/kslice_injection_current_conventional.pdf) [Plot audit](figures/kslice_injection_current_conventional.plot.json)
-
-*Conventional injection-current K-slice at 3 eV, component (2,2,2); native output units; presentation only.*
-
-## 7. Relation to the manuscript
-
-This tutorial follows quantities and parameter choices used in the manuscript workflow, but uses the released ordinary GeS model and a separately audited VASP display reference. It is not a byte-identical reconstruction of the manuscript's SAWF band bundle and is not evidence that manuscript figures were reproduced.
-
-## 8. Qualification limits
-
-Committed outputs are `TUTORIAL_NUMERICAL_EVIDENCE`: finite, hashed, and reproduced with WannierNLQG v1.0.1 at the stated mesh. They are not Physics PASS or Production PASS. Differences between Conventional, Geometric Loop, and Wilson Loop are displayed as method differences, not automatically classified as errors.
+- J. E. Sipe and A. I. Shkrebtii, “Second-order optical response in semiconductors,” *Physical Review B* **61**, 5337–5352 (2000). [DOI](https://doi.org/10.1103/PhysRevB.61.5337). Background for shift and injection optical responses.
