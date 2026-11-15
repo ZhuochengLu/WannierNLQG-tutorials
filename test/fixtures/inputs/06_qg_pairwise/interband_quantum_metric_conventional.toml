@@ -25,6 +25,5 @@ kind = "interband_quantum_metric"
 
 [ response.tasks.kslice_interband_quantum_metric_conventional.observable ]
 component = [2, 2]
-first = [21, 22]
-kind = "interband_groups"
-second = [19, 20]
+kind = "kslice"
+groups = [[21, 22], [19, 20]]

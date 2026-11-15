@@ -53,6 +53,19 @@ The current five-point inputs do not specify every numerical default. Use their 
 
 See the [material setup guide](../../Materials/README.md) before running GeS. The model comparison and material pilot serve different purposes: agreement in a two-band example does not qualify a material response.
 
+The supplied inputs omit `groups` and retain the total response over the effective
+numerical band window. To request an optional two-band channel, `groups = [[1], [2]]`
+in the task's observable table selects source band 1 → target band 2, restricted
+to positive-gap external absorption pairs. The group meaning is the same for
+Integral and KSlice requests. This does not change intermediate-state sums,
+occupations, broadening, SI normalization or the acceleration-channel formula.
+
+Window boundaries retain the existing numerical equal-energy completion rule;
+Jerk still does not accept `degeneracy_threshold`. The saved tables and figures
+remain their recorded total-response calculations, not new grouped results.
+Adding this optional selection does not require recalculating the unchanged
+default-total examples.
+
 ## Run
 
 From the repository root, check the inputs and run [two_band_tb](inputs/two_band_tb.toml):

@@ -25,6 +25,5 @@ kind = "interband_berry_curvature"
 
 [ response.tasks.kslice_interband_berry_curvature_conventional.observable ]
 component = [1, 2]
-first = [21, 22]
-kind = "interband_groups"
-second = [19, 20]
+kind = "kslice"
+groups = [[21, 22], [19, 20]]

@@ -321,7 +321,7 @@
       "task_ids": [
         "berry_sos_occupied_xy"
       ],
-      "input_sha256": "c0f93d7d2d5d3f6e214fe0ad471cda4b3d3f4eb62943e4db545321a69352d8e7",
+      "input_sha256": "472f09a8015d22f21f7b182ee7a6e793075941e862df5cdbf1d2e167cdf4ebb8",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": true,
       "provenance": {
@@ -363,6 +363,40 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "c0f93d7d2d5d3f6e214fe0ad471cda4b3d3f4eb62943e4db545321a69352d8e7",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "occupied_sum": "only"
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -371,7 +405,7 @@
       "task_ids": [
         "berry_transport_equivalent_xy"
       ],
-      "input_sha256": "636995333f64f17b0a013e4c6171c43e843d0ea212c93d9e9c13a2affc3ec3ba",
+      "input_sha256": "4098270a12cc9c058d73662d620c08cad534d9b1e66d1ea8564bfd3e5265955a",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": false,
       "provenance": {
@@ -419,6 +453,39 @@
           "examples/11_fe_oam_and_linear_response/data/linear_transport_total-bd567789.dat"
         ],
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "636995333f64f17b0a013e4c6171c43e843d0ea212c93d9e9c13a2affc3ec3ba",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          2
+        ],
+        "kind": "kslice"
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -427,7 +494,7 @@
       "task_ids": [
         "berry_tb_occupied_xy"
       ],
-      "input_sha256": "0542fbfdc3abc6957b01994545e5deea63d998ba4880217062f648351cae307e",
+      "input_sha256": "00c1d02088c32a892609acd118967a38346e376879dba6311b82fa07f98a5b60",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": true,
       "provenance": {
@@ -468,6 +535,40 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "0542fbfdc3abc6957b01994545e5deea63d998ba4880217062f648351cae307e",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "occupied_sum": "only"
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     }
   ],
@@ -917,7 +1018,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "provenance": {
         "original_figure_id": "berry_sos_occupied_xy.new-default-f278",
@@ -977,7 +1078,32 @@
           "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
         },
         "all_input_and_table_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml": "472f09a8015d22f21f7b182ee7a6e793075941e862df5cdbf1d2e167cdf4ebb8"
+      },
+      "current_input_validation": {
+        "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "berry_tb_occupied_xy",
@@ -1000,7 +1126,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "provenance": {
         "original_figure_id": "berry_tb_occupied_xy.new-default-f278",
@@ -1063,7 +1189,32 @@
           "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
         },
         "all_input_and_table_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml": "00c1d02088c32a892609acd118967a38346e376879dba6311b82fa07f98a5b60"
+      },
+      "current_input_validation": {
+        "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "berry_transport_equivalent_xy",
@@ -1089,7 +1240,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "Retained actual native transport KSlice tables, same unified Fe TB/frame; current redraw is finite-relaxation Berry-channel conversion, not static SOS equality.",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "provenance": {
         "response_recomputed": false,
@@ -1141,7 +1292,32 @@
           "status": "Actual public band API sampling343; no response recomputation or material convergence qualification"
         },
         "all_input_and_table_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "Retained actual native transport KSlice tables, same unified Fe TB/frame; current redraw is finite-relaxation Berry-channel conversion, not static SOS equality.",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml": "4098270a12cc9c058d73662d620c08cad534d9b1e66d1ea8564bfd3e5265955a"
+      },
+      "current_input_validation": {
+        "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     }
   ],
   "historical_payload": "preserved outside this tree in the verified full local archive",

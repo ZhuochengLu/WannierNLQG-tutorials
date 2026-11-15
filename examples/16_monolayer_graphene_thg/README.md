@@ -70,7 +70,7 @@ First prepare the environment as described in the [repository setup](../../READM
 julia --project=.runtime/env --threads=1 examples/16_monolayer_graphene_thg/run_valleys.jl --input=examples/16_monolayer_graphene_thg/valley_input.toml --batch=all --check=true
 ```
 
-The package loaded by `.runtime/env` must match `reproduction.source_manifest_sha256` in the input for either a new run or `--check`. This is the current replay source pin. The supplied numerical tables retain their original calculation source, and their volume-derived companions retain the separate normalization-validation source. Updating the replay pin does not relabel those records or promise a bitwise repeat.
+The package loaded by `.runtime/env` must match `reproduction.source_manifest_sha256` in the input for either a new run or `--check`. This is the expected replay source pin. Its source binding has been checked by constructing six configurations without response integration. The supplied numerical tables retain their original calculation source, and their volume-derived companions retain the separate normalization-validation source. Updating the replay pin does not relabel those records or promise a bitwise repeat.
 
 With an allocated resource window, run one three-frequency batch into a fresh directory:
 

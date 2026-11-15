@@ -33,6 +33,5 @@ finite_difference_step = 0.0001
 
 [ response.tasks.kslice_shift_current_wilson_loop.observable ]
 component = [2, 2, 2]
-conduction = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
-kind = "transition"
-valence = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+kind = "kslice"
+groups = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]]

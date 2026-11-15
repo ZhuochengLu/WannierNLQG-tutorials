@@ -108,6 +108,16 @@ All entries are S/m. In these tables Hall agrees with the Berry channel to numer
 
 ## Run, redraw and limitations
 
+For the static Berry maps, `berry_sos_occupied_xy` and
+`berry_tb_occupied_xy` now use `observable.kind = "kslice"` with
+`occupied_sum = "only"` and **no** `groups`. This keeps the original sum over
+all occupied states; adding a selected group would change that request.
+The finite-width `berry_transport_equivalent_xy` input uses `kind = "kslice"`
+with omitted `groups`, retaining the total linear-transport response and its
+selected Cartesian component. These are input-shape changes; the static
+curvature, finite-width transport kernel and supplied integral tables keep
+their distinct definitions, units and recorded calculation identities.
+
 From the repository root, check configuration and use a fresh output directory for any case listed above:
 
 ```bash

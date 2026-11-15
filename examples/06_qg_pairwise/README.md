@@ -62,6 +62,14 @@ Set up the shared files with the [material data guide](../../Materials/README.md
 
 ## Run
 
+All slice inputs now use `observable.kind = "kslice"`. A subspace `[19,20]`
+is written as `groups = [[19,20]]`; the interband inputs retain their ordered
+groups as `groups = [[21,22], [19,20]]`. This input migration preserves the
+subspace trace and the interband pair average defined above, including their
+different rank factors. It introduces no occupations, resonant weights or
+conductivity normalization. The supplied tables retain their recorded sources;
+an input conversion is not a new numerical calculation.
+
 From the repository root, check the inputs, then run either example into a new output directory:
 
 ```bash

@@ -26,6 +26,5 @@ kind = "quantum_hermitian_connection"
 
 [ response.tasks.kslice_quantum_hermitian_connection_conventional.observable ]
 component = [2, 2, 2]
-conduction = [21, 22]
-kind = "transition"
-valence = [19, 20]
+kind = "kslice"
+groups = [[21, 22], [19, 20]]

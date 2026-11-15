@@ -27,6 +27,6 @@ kind = "quantum_christoffel_symbol"
 finite_difference_step = 0.0001
 
 [ response.tasks.kslice_quantum_christoffel_symbol_conventional.observable ]
-bands = [19, 20]
 component = [2, 2, 2]
-kind = "subspace"
+kind = "kslice"
+groups = [[19, 20]]

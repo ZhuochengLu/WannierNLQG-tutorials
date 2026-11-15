@@ -25,7 +25,5 @@ kind = "triple_phase_product"
 
 [ response.tasks.kslice_triple_phase_product_conventional.observable ]
 component = [2, 2, 2]
-first = [21, 22]
-kind = "triple_groups"
-second = [23, 24]
-third = [19, 20]
+kind = "kslice"
+groups = [[21, 22], [23, 24], [19, 20]]

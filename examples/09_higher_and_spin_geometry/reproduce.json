@@ -7,7 +7,7 @@
       "task_ids": [
         "kslice_hermitian_curvature_tensor_conventional"
       ],
-      "input_sha256": "e0da8a3f0d29c65c5f8a5289ac385a56f422bc0ef038b96241e9dc62a3baf462",
+      "input_sha256": "221ab9710bdbbfcf048534c8fdbda87dceadbf7847848a02fb826a88b69eb6c3",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": false,
       "provenance": {
@@ -46,6 +46,51 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "e0da8a3f0d29c65c5f8a5289ac385a56f422bc0ef038b96241e9dc62a3baf462",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -54,7 +99,7 @@
       "task_ids": [
         "kslice_triple_phase_product_conventional"
       ],
-      "input_sha256": "dacfee7c1a7b0ba5956f8b25e8959fd809a4a8a91c211199b23fba69ebb86493",
+      "input_sha256": "017a8560a9c331f996d637391c76cc95fb2520c770167acc6ae150630ac1e4b0",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": false,
       "provenance": {
@@ -93,6 +138,54 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "dacfee7c1a7b0ba5956f8b25e8959fd809a4a8a91c211199b23fba69ebb86493",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -101,7 +194,7 @@
       "task_ids": [
         "kslice_zeeman_interband_berry_curvature_conventional"
       ],
-      "input_sha256": "4310d6128a0dd6efc25ed1a7f41da89337bb4641e16466186912ab4144fa63d0",
+      "input_sha256": "c81c3b0eff258eb6921a73632d8ed759f8a400ff31daa49a04909a1f1cb8cf24",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": false,
       "provenance": {
@@ -141,6 +234,49 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "4310d6128a0dd6efc25ed1a7f41da89337bb4641e16466186912ab4144fa63d0",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          3
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -149,7 +285,7 @@
       "task_ids": [
         "kslice_zeeman_interband_quantum_metric_conventional"
       ],
-      "input_sha256": "6f6cb9dbe7654fb57478bd9155ed9295830244965c6eacdc60f28110eb03fdad",
+      "input_sha256": "534addd5a46d1e49dfd5854a80f3cb3e58507294232f5f4e91976baba8e3601c",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": false,
       "provenance": {
@@ -189,6 +325,49 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "6f6cb9dbe7654fb57478bd9155ed9295830244965c6eacdc60f28110eb03fdad",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          3
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     }
   ],
@@ -212,7 +391,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_hermitian_curvature_tensor_conventional.json",
       "provenance": {
@@ -241,7 +420,32 @@
         ],
         "numerical_recalculation": false,
         "source_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml": "221ab9710bdbbfcf048534c8fdbda87dceadbf7847848a02fb826a88b69eb6c3"
+      },
+      "current_input_validation": {
+        "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_triple_phase_product_conventional",
@@ -262,7 +466,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_triple_phase_product_conventional.json",
       "provenance": {
@@ -291,7 +495,32 @@
         "notes": [
           "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
         ]
-      }
+      },
+      "recorded_calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml": "017a8560a9c331f996d637391c76cc95fb2520c770167acc6ae150630ac1e4b0"
+      },
+      "current_input_validation": {
+        "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_zeeman_interband_berry_curvature_conventional",
@@ -312,7 +541,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_berry_curvature_conventional.json",
       "provenance": {
@@ -341,7 +570,32 @@
         ],
         "numerical_recalculation": false,
         "source_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml": "c81c3b0eff258eb6921a73632d8ed759f8a400ff31daa49a04909a1f1cb8cf24"
+      },
+      "current_input_validation": {
+        "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_zeeman_interband_quantum_metric_conventional",
@@ -362,7 +616,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/09_higher_and_spin_geometry/plot_configs/kslice_zeeman_interband_quantum_metric_conventional.json",
       "provenance": {
@@ -384,7 +638,32 @@
         "source_file_sha256": "f5dbdd8b45ed71a4957cc977e805e81db2a3fa468cfa22b2a1621c1d99bb5f97",
         "payload_sha256": "b9c82cddcac1b95827e627b13e46ec9762131c4d450be89c0d9fd9eaa3aea2fe",
         "encoding": "json-sort-keys-utf8-compact"
-      }
+      },
+      "recorded_calculation_reproduction_status": "RECORDED_EXECUTION_TOML_PRESENT; NO_NEW_SOURCE_REPLAY",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml": "534addd5a46d1e49dfd5854a80f3cb3e58507294232f5f4e91976baba8e3601c"
+      },
+      "current_input_validation": {
+        "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     }
   ],
   "historical_payload": "preserved outside this tree in the verified full local archive",

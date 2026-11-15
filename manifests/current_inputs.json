@@ -177,7 +177,8 @@
     "case": "injection_spin_current_conventional",
     "optional_data": true,
     "input": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
-    "sha256": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c"
+    "sha256": "66cbe8d254262a45215d45cb17f162514cc12017da0d5a7f21243899c308ea26",
+    "recorded_input_sha256_before_band_migration": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c"
   },
   {
     "profile": "smoke",
@@ -185,7 +186,8 @@
     "case": "injection_spin_current_conventional",
     "optional_data": true,
     "input": "test/fixtures/inputs/05_kslice_spin_responses/injection_spin_current_conventional.toml",
-    "sha256": "6120a3b24eb727f94446a49aa145b410894f16e155485bb2574991bf9ea6161d"
+    "sha256": "dd1dfb3d3925e3ce49423ffd11a32ff744bc9c15edea9bbbca58981b8a40386d",
+    "recorded_input_sha256_before_band_migration": "6120a3b24eb727f94446a49aa145b410894f16e155485bb2574991bf9ea6161d"
   },
   {
     "profile": "reference",
@@ -193,7 +195,8 @@
     "case": "shift_spin_current_conventional",
     "optional_data": true,
     "input": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
-    "sha256": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc"
+    "sha256": "fd45659344149586797da4f3f0a34e597cdd24a21b95daf923e87c58c25d3ada",
+    "recorded_input_sha256_before_band_migration": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc"
   },
   {
     "profile": "smoke",
@@ -201,7 +204,8 @@
     "case": "shift_spin_current_conventional",
     "optional_data": true,
     "input": "test/fixtures/inputs/05_kslice_spin_responses/shift_spin_current_conventional.toml",
-    "sha256": "7a3d3ea6518c52f577af600fec39a74b514a7592658dfca6d268ef8ad7d8198f"
+    "sha256": "4874b46fe47677fb9a85730fd8537274c7155eedffe9be0c8bf282a2b5b76210",
+    "recorded_input_sha256_before_band_migration": "7a3d3ea6518c52f577af600fec39a74b514a7592658dfca6d268ef8ad7d8198f"
   },
   {
     "profile": "reference",
@@ -461,7 +465,8 @@
     "case": "berry_sos_occupied_xy",
     "optional_data": true,
     "input": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
-    "sha256": "c0f93d7d2d5d3f6e214fe0ad471cda4b3d3f4eb62943e4db545321a69352d8e7"
+    "sha256": "472f09a8015d22f21f7b182ee7a6e793075941e862df5cdbf1d2e167cdf4ebb8",
+    "recorded_input_sha256_before_band_migration": "c0f93d7d2d5d3f6e214fe0ad471cda4b3d3f4eb62943e4db545321a69352d8e7"
   },
   {
     "profile": "smoke",
@@ -476,7 +481,8 @@
     "case": "berry_tb_occupied_xy",
     "optional_data": false,
     "input": "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml",
-    "sha256": "0542fbfdc3abc6957b01994545e5deea63d998ba4880217062f648351cae307e"
+    "sha256": "00c1d02088c32a892609acd118967a38346e376879dba6311b82fa07f98a5b60",
+    "recorded_input_sha256_before_band_migration": "0542fbfdc3abc6957b01994545e5deea63d998ba4880217062f648351cae307e"
   },
   {
     "profile": "smoke",
@@ -491,7 +497,8 @@
     "case": "berry_transport_equivalent_xy",
     "optional_data": true,
     "input": "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml",
-    "sha256": "636995333f64f17b0a013e4c6171c43e843d0ea212c93d9e9c13a2affc3ec3ba"
+    "sha256": "4098270a12cc9c058d73662d620c08cad534d9b1e66d1ea8564bfd3e5265955a",
+    "recorded_input_sha256_before_band_migration": "636995333f64f17b0a013e4c6171c43e843d0ea212c93d9e9c13a2affc3ec3ba"
   },
   {
     "profile": "smoke",
@@ -1060,7 +1067,8 @@
     "case": "shift_yzxy_kslice",
     "optional_data": true,
     "input": "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml",
-    "sha256": "047660cf7a88b13600defce2d76414a9593921bca301b6befd6e4e494e209a58"
+    "sha256": "ff6f4d57643fdacce8c43cce5200f905badc67d04fb292d052a54aa8e9ea6012",
+    "recorded_input_sha256_before_band_migration": "047660cf7a88b13600defce2d76414a9593921bca301b6befd6e4e494e209a58"
   },
   {
     "profile": "reference",
@@ -1068,7 +1076,8 @@
     "case": "shift_yzyx_kslice",
     "optional_data": true,
     "input": "examples/05_kslice_spin_responses/inputs/shift_yzyx_kslice.toml",
-    "sha256": "746d11d27b7c56543289b2c1f45306bccc0c7b828c5b0b050f6eed651331b3ab"
+    "sha256": "02b2284607e796a91768d27b87b187e423f1827b9bb6e9f6f130172b3a2d9343",
+    "recorded_input_sha256_before_band_migration": "746d11d27b7c56543289b2c1f45306bccc0c7b828c5b0b050f6eed651331b3ab"
   },
   {
     "profile": "reference",
@@ -1076,7 +1085,8 @@
     "case": "injection_yzxy_kslice",
     "optional_data": true,
     "input": "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml",
-    "sha256": "43be4b4eb5b540d948515b715ea37360430ad27f9e18704862c1edbb147a80a4"
+    "sha256": "b169299c5da662e8b5709575c290ba153ac245d77ca64a9784b724ae5525d8da",
+    "recorded_input_sha256_before_band_migration": "43be4b4eb5b540d948515b715ea37360430ad27f9e18704862c1edbb147a80a4"
   },
   {
     "profile": "reference",
@@ -1084,7 +1094,8 @@
     "case": "injection_yzyx_kslice",
     "optional_data": true,
     "input": "examples/05_kslice_spin_responses/inputs/injection_yzyx_kslice.toml",
-    "sha256": "ef2087b325ffe9fd00ac8ac2c538baac2748bf02cb6b00f1a696f02854ad6442"
+    "sha256": "bbde20883c218a5f284f7e643cf844bb6a11d2522295bf2b50cf1d682e59d1e5",
+    "recorded_input_sha256_before_band_migration": "ef2087b325ffe9fd00ac8ac2c538baac2748bf02cb6b00f1a696f02854ad6442"
   },
   {
     "profile": "reference",

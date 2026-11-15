@@ -57,6 +57,13 @@ Set up the shared files with the [material data guide](../../Materials/README.md
 
 ## Run
 
+The migrated slice inputs use `observable.kind = "kslice"`. The interband
+and Hermitian-curvature inputs retain `groups = [[21,22], [19,20]]`; the
+triple-phase input retains `groups = [[21,22], [23,24], [19,20]]`. Group order,
+Cartesian-index order and the documented quantity-specific sum/average remain
+unchanged. This input rewrite supplies neither an extra spin factor nor a
+new geometric or conductivity normalization, and does not recalculate the figures.
+
 From the repository root, check the inputs, then run either example into a new output directory:
 
 ```bash

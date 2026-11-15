@@ -25,6 +25,5 @@ kind = "hermitian_curvature_tensor"
 
 [ response.tasks.kslice_hermitian_curvature_tensor_conventional.observable ]
 component = [2, 2, 1, 2]
-first = [21, 22]
-kind = "interband_groups"
-second = [19, 20]
+kind = "kslice"
+groups = [[21, 22], [19, 20]]

@@ -33,6 +33,5 @@ broadening = 0.06
 
 [ response.tasks.kslice_shift_spin_current_conventional.observable ]
 component = [2, 2, 2, 2]
-conduction = [21, 22]
-kind = "transition"
-valence = [19, 20]
+kind = "kslice"
+groups = [[19, 20], [21, 22]]

@@ -24,6 +24,6 @@ vector_2 = [0.0, 1.0, 0.0]
 kind = "berry_curvature"
 
 [ response.tasks.kslice_berry_curvature_conventional.observable ]
-bands = [19, 20]
 component = [1, 2]
-kind = "subspace"
+kind = "kslice"
+groups = [[19, 20]]

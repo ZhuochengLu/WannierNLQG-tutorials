@@ -76,7 +76,27 @@ For the Gaussian convention, the energy width $\eta=0.06$ eV is not its standard
 
 ## Run
 
-The yyyy diagnostics use the recorded development snapshot with source-manifest SHA-256 `59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3`. The allowed-channel maps and integrals use the current source manifest `725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230`. Both use the smooth spin-current prescription; the version label alone does not select that prescription. Exact bindings and calculation records are in [reproduce.json](reproduce.json); point `.runtime/env` to the appropriate recorded build before replay.
+The migrated slice inputs use `observable.kind = "kslice"` and ordered
+`observable.groups = [valence, conduction]`. The yyyy diagnostics retain
+`groups = [[19,20], [21,22]]`; the allowed-channel inputs explicitly list source
+bands 1–20 and target bands 21–32. The selected external contribution is a sum,
+not a pair average, and all 32 bands remain available as intermediate states.
+The two integral inputs omit `groups` and retain their total-response meaning.
+Changing these input keys does not recalculate the supplied tables or change
+their recorded source. No explicit list is automatically expanded to complete
+a response degeneracy block.
+
+
+Current slice output is a local response coefficient without a $1/N_k$ mesh
+weight. Preserve the native spin convention and physical/cell prefactors.
+For matching complete uniform Brillouin-zone sampling, its integral uses the
+mesh average. The saved maps below use the recorded weighted-cell convention
+and their original color scales; they are not unmodified current point-density
+output. Do not sum new point coefficients directly or apply an extra mesh
+division to the saved weighted cells. A general plane is not, by itself, a
+full three-dimensional Brillouin-zone integration rule.
+
+The supplied yyyy diagnostics were calculated with the recorded development snapshot `59c1148608cfab76e02bb1e24b6a9fd87f3b1daa688266f3344c6fd5cc0306a3`; the allowed-channel maps and integrals were calculated with source manifest `725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230`. Both used the smooth spin-current prescription; the version label alone does not select that prescription. Exact bindings and calculation records remain in [reproduce.json](reproduce.json). These hashes identify the saved results, not compatible readers for the migrated input keys. To run the migrated inputs, use a qualified build with the unified `BandSelection` reader; replaying an original recorded calculation instead requires its matching archived input and build.
 
 
 
@@ -117,7 +137,7 @@ For yzxy, the flow is along y, the spin polarization is along z, and the ordered
 
 The calculation uses the same GeS model and operator bundle, direct Fourier evaluation, 0 K, $\mu=-2.5$ eV, Gaussian width 0.06 eV and geometric width 0.001 eV. Here the 200 × 200 periodic plane is evaluated at **600/199 eV** (approximately 3.0150754 eV), an actual frequency point in the chapter 03 spectrum, not the 3.0 eV used by the yyyy diagnostics. Chapter 03 uses a 100 × 100 mesh, whereas the maps and matched single-frequency integrals here use 200 × 200; amplitudes from those two meshes are not asserted to be identical. The transition maps include valence bands 1–20 and conduction bands 21–32, with all 32 model bands available as intermediate states. This selected transition sum must be distinguished from an unrestricted band sum.
 
-The complex map entries already include the mesh weight. For this 2D model and the matched full periodic mesh, their sum agrees with an independently evaluated full-band Brillouin-zone integral at the same frequency and parameters; do not divide by 40,000 again. The selected transition sum agrees in this case, but this equality should be rechecked if the occupation partition or frequency changes. Fractional $u,v$ are coordinates along the two reciprocal spanning vectors, not Cartesian momenta. The signed-log color scales preserve the sign and show values in the indicated scaled native response units, not a dimensionless curvature.
+The saved complex map entries already include the mesh weight. For the recorded source, this 2D model and the matched full periodic mesh, the sum of those saved cells agrees with the separately evaluated full-band Brillouin-zone integral at the same frequency and parameters; do not divide by 40,000 again. The selected transition sum agrees in this case, but this equality should be rechecked if the occupation partition or frequency changes. Fractional $u,v$ are coordinates along the two reciprocal spanning vectors, not Cartesian momenta. The signed-log color scales preserve the sign and show values in the indicated scaled native response units, not a dimensionless curvature.
 
 <a href="figures/kslice_shift_spin_yzxy_fullbands.png"><img src="figures/kslice_shift_spin_yzxy_fullbands.png" alt="Imaginary shift spin response yzxy on the reciprocal plane" width="680"></a>
 

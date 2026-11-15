@@ -54,7 +54,7 @@ Set up the shared files with the [material data guide](../../Materials/README.md
 
 | Parameter | Value | Meaning |
 | --- | --- | --- |
-| Transition groups | valence=[19,20], conduction=[21,22] | Four ordered valence–conduction pairs |
+| Ordered observable groups | [[21,22], [19,20]] | Conduction first, valence second; four ordered pairs |
 | Component | [2,2,2] | Derivative along y; both optical directions y |
 | Loop finite_difference_step | 0.0001 Å⁻¹ | Cartesian displacement h |
 | Shift-vector method | Wilson Loop | Main figure; Geometric Loop is the comparison |
@@ -65,6 +65,23 @@ Set up the shared files with the [material data guide](../../Materials/README.md
 | Fourier backend | direct | Evaluation of the real-space model |
 
 ## Run
+
+The migrated geometric inputs use `observable.kind = "kslice"` and
+`groups = [[21,22], [19,20]]`: **conduction first, valence second**. This retains
+the numerical ordering of the old geometric selector. It is different from the
+source-then-target ordering of the optical response groups in chapters 04 and 05.
+The geometric pair average, its units and its lack of occupation or resonance
+weights remain unchanged. The supplied maps keep their recorded calculation
+sources; converting an input is not a new calculation or a new all-point
+degeneracy-block qualification. A selection that cuts a required complete block
+must be reported rather than silently enlarged.
+
+
+These geometric outputs are local pair averages, not mesh-weighted response
+cells. Neither the saved QHC/shift-vector maps nor their group-key migration
+requires the response-table $N_k$ conversion discussed in chapters 04 and 05.
+Their units remain Å³ and Å, respectively. This distinction does not assert
+basis-independent equivalence for a selection that cuts a required complete block.
 
 From the repository root, check the inputs, then run either example into a new output directory:
 

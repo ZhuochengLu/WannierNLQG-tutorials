@@ -1,8 +1,8 @@
 # Source-bound replay input; supplied data retain their recorded calculation identities.
 # Six folded valley regions; chapter-specific public TaskConfig driver, not the single-task CLI.
 [reproduction]
-# Exact source for a new run/--check; supplied tables keep their separate recorded source.
-source_manifest_sha256 = "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6"
+# Expected local-candidate runtime for a new run/--check; not a published or recorded calculation source.
+source_manifest_sha256 = "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979"
 historical_source_manifest_sha256 = "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
 model_sha256 = "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
 

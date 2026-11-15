@@ -61,6 +61,12 @@ Set up the shared files with the [material data guide](../../Materials/README.md
 
 ## Run
 
+The migrated slice inputs use `observable.kind = "kslice"` and
+`groups = [[19,20]]`. The one ordered group preserves the documented geometric
+trace/reduction and derivative definitions; it does not replace a sum by a
+rank average or change the finite-difference step. All numerical parameters
+and supplied data remain tied to their recorded calculation sources.
+
 From the repository root, check the inputs, then run either example into a new output directory:
 
 ```bash

@@ -31,7 +31,7 @@ fs_kind = "gaussian"
 
 [ response.tasks.berry_transport_equivalent_xy.observable ]
 component = [1, 2]
-kind = "all_bands"
+kind = "kslice"
 
 [ response.tasks.berry_transport_equivalent_xy.relaxation ]
 gamma_inter_ev = 0.05

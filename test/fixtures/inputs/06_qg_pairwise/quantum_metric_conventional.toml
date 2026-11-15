@@ -24,6 +24,6 @@ vector_2 = [0.0, 1.0, 0.0]
 kind = "quantum_metric"
 
 [ response.tasks.kslice_quantum_metric_conventional.observable ]
-bands = [19, 20]
 component = [2, 2]
-kind = "subspace"
+kind = "kslice"
+groups = [[19, 20]]

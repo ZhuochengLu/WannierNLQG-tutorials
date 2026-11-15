@@ -7,7 +7,7 @@
       "task_ids": [
         "kslice_berry_curvature_conventional"
       ],
-      "input_sha256": "e96cf98236791e0d9d965ee9131bfef602f0377684381367d72bd75eb00fec92",
+      "input_sha256": "e60acd1420bee8c6f4c95c44dbd22117d237cf764bca62a8bd5e9361cab4c0ef",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": true,
       "provenance": {
@@ -48,6 +48,45 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "e96cf98236791e0d9d965ee9131bfef602f0377684381367d72bd75eb00fec92",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -56,7 +95,7 @@
       "task_ids": [
         "kslice_interband_berry_curvature_conventional"
       ],
-      "input_sha256": "716a71a6b5f8cfdbdfcb4cde3426f50bf6e6f79f2f061a5121111276f5f11032",
+      "input_sha256": "78c5ecf00fb4927389114bd4ecd3a38b42b16db1b5a5cf4ebadca0ee4e0eb5d6",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": true,
       "provenance": {
@@ -97,6 +136,49 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "716a71a6b5f8cfdbdfcb4cde3426f50bf6e6f79f2f061a5121111276f5f11032",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -105,7 +187,7 @@
       "task_ids": [
         "kslice_interband_quantum_metric_conventional"
       ],
-      "input_sha256": "fea2fd8135aec8f8f59f95c3c3dfc72c9f8a473605bda34f3e582dde114ef065",
+      "input_sha256": "810a31f4ac865614c27a98b2571fdbc36dbe07a550c1c431e10d3981e60db766",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": true,
       "provenance": {
@@ -147,6 +229,49 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "fea2fd8135aec8f8f59f95c3c3dfc72c9f8a473605bda34f3e582dde114ef065",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -155,7 +280,7 @@
       "task_ids": [
         "kslice_quantum_metric_conventional"
       ],
-      "input_sha256": "f5c4fe93a1e4de674abfdf0e3cd825925a4d0fc4b7dd87654261e599f36b56af",
+      "input_sha256": "e72d63c07280cee5923ffa3d059b76f2938bf1e0d9f7857f2ffe166984967988",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": true,
       "provenance": {
@@ -197,6 +322,45 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "f5c4fe93a1e4de674abfdf0e3cd825925a4d0fc4b7dd87654261e599f36b56af",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial438-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     }
   ],
@@ -220,7 +384,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/06_qg_pairwise/plot_configs/kslice_berry_curvature_conventional.json",
       "provenance": {
@@ -249,7 +413,32 @@
         "notes": [],
         "numerical_recalculation": false,
         "source_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml": "e60acd1420bee8c6f4c95c44dbd22117d237cf764bca62a8bd5e9361cab4c0ef"
+      },
+      "current_input_validation": {
+        "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_interband_berry_curvature_conventional",
@@ -270,7 +459,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/06_qg_pairwise/plot_configs/kslice_interband_berry_curvature_conventional.json",
       "provenance": {
@@ -301,7 +490,32 @@
         "notes": [
           "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
         ]
-      }
+      },
+      "recorded_calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml": "78c5ecf00fb4927389114bd4ecd3a38b42b16db1b5a5cf4ebadca0ee4e0eb5d6"
+      },
+      "current_input_validation": {
+        "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_interband_quantum_metric_conventional",
@@ -322,7 +536,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/06_qg_pairwise/plot_configs/kslice_interband_quantum_metric_conventional.json",
       "provenance": {
@@ -353,7 +567,32 @@
         "notes": [
           "English physical titles; current Wannier TB selected where band comparisons are shown; scientific accuracy qualifications retained."
         ]
-      }
+      },
+      "recorded_calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml": "810a31f4ac865614c27a98b2571fdbc36dbe07a550c1c431e10d3981e60db766"
+      },
+      "current_input_validation": {
+        "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_quantum_metric_conventional",
@@ -374,7 +613,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/06_qg_pairwise/plot_configs/kslice_quantum_metric_conventional.json",
       "provenance": {
@@ -403,7 +642,32 @@
         "notes": [],
         "numerical_recalculation": false,
         "source_values_unchanged": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "ACTUAL_F278_ORIGINAL_GRID_DEVELOPMENT_VALUE; SEE_SOURCE_RUN_AND_184_PARENT_FAIL",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml": "e72d63c07280cee5923ffa3d059b76f2938bf1e0d9f7857f2ffe166984967988"
+      },
+      "current_input_validation": {
+        "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial438-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     }
   ],
   "historical_payload": "preserved outside this tree in the verified full local archive",

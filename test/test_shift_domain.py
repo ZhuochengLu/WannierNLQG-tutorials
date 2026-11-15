@@ -1,4 +1,4 @@
-"""Keep the public comparison on the recorded common external transition domain."""
+"""Check migrated input fields separately from the saved weighted-table evidence."""
 from pathlib import Path
 import json
 import math
@@ -17,10 +17,14 @@ class ShiftDomainTests(unittest.TestCase):
                          {'shift_current_' + m for m in ('conventional', 'projector', 'wilson_loop', 'geometric_loop')})
         for row in selected:
             task = next(iter(tomllib.loads((ROOT / row['input']).read_text())['response']['tasks'].values()))
-            self.assertEqual(task['observable']['valence'], list(range(1, 21)))
-            self.assertEqual(task['observable']['conduction'], list(range(21, 33)))
+            observable = task['observable']
+            self.assertEqual(observable['kind'], 'kslice')
+            self.assertEqual(len(observable['groups']), 2)
+            self.assertEqual(observable['groups'][0], list(range(1, 21)))
+            self.assertEqual(observable['groups'][1], list(range(21, 33)))
             self.assertEqual(task['photon_energies_ev'], [3.0])
 
+    # Saved weighted cells are checked here; current point coefficients are not these tables.
     def test_native_cells_sum_once_to_recorded_same_grid_integral(self):
         document = json.loads((ROOT / 'examples/04_kslice_charge_responses/reproduce.json').read_text())
         for figure in document['figures']:

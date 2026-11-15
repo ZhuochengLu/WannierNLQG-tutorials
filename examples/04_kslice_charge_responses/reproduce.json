@@ -7,7 +7,7 @@
       "task_ids": [
         "kslice_injection_current_conventional"
       ],
-      "input_sha256": "9eeafad919dc945ecfaebad6a0804950fb7d46f98e068f52cb294fbf5a039c5d",
+      "input_sha256": "025891ea71eca25de0a125d27a83866f727366ad1474e909e70e0225abfb1b6d",
       "calculation_record": "Existing actual execution retained with its original source identity; active input material references synchronized. No new SCF or Wannierization.",
       "matching_new_default_values": false,
       "provenance": {
@@ -46,6 +46,50 @@
       "unified_result_evidence": {
         "basis": "Same consumed H/r or operator components, checked against accepted selected pair in material audit233; selected historical comparison controls remain labeled.",
         "new_computation": false
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "9eeafad919dc945ecfaebad6a0804950fb7d46f98e068f52cb294fbf5a039c5d",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": "b3b6a680d9ae11908ff48dfa0fba5b6914f7be10e643f69d1f763978fa86edc5",
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -54,7 +98,7 @@
       "task_ids": [
         "kslice_shift_current_conventional"
       ],
-      "input_sha256": "766449594b2c9077fc299c106c6af9483c2ee54aa2e1774de4278a1feb625019",
+      "input_sha256": "ebdd03ad09f0eb6da9ec40de3dc049a3bb4473fe55ae3f084fa8108ba2589820",
       "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
       "matching_new_default_values": false,
       "provenance": {
@@ -219,11 +263,85 @@
           32
         ]
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "766449594b2c9077fc299c106c6af9483c2ee54aa2e1774de4278a1feb625019",
-        "response_recomputed_during_check": false
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "766449594b2c9077fc299c106c6af9483c2ee54aa2e1774de4278a1feb625019",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "744dabb87273ea3a1062fb226577e11d967dcd042eb9c1033f7089116a9c499d",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "766449594b2c9077fc299c106c6af9483c2ee54aa2e1774de4278a1feb625019",
+          "response_recomputed_during_check": false
+        }
       }
     },
     {
@@ -232,7 +350,7 @@
       "task_ids": [
         "kslice_shift_current_geometric_loop"
       ],
-      "input_sha256": "2fc01de92dae92ef4b985e0f68f077fd33dd20400f5d3ccb2f86191396a78b0e",
+      "input_sha256": "9239722cf2afe66cc926c494f5dc9dd6c04eb5a6588888aaf34ca9f6a447c526",
       "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
       "matching_new_default_values": false,
       "provenance": {
@@ -359,49 +477,128 @@
         },
         "material_or_convergence_qualified": false
       },
-      "resolved_band_domain": {
-        "valence": [
-          1,
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "2fc01de92dae92ef4b985e0f68f077fd33dd20400f5d3ccb2f86191396a78b0e",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "producer_input_body_status": "UNVERIFIED_ORIGINAL_BODY_NOT_RECOVERED_LOCALLY"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
           2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20
+          2,
+          2
         ],
-        "conduction": [
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27,
-          28,
-          29,
-          30,
-          31,
-          32
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
         ]
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "2fc01de92dae92ef4b985e0f68f077fd33dd20400f5d3ccb2f86191396a78b0e",
-        "response_recomputed_during_check": false
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": false,
+        "effective_domain": "full_active_window",
+        "meaning": "The saved SC execution did not consume its Transition selector. New groups were not used to produce the saved table or figure.",
+        "conditional_bridge_scope": "Specific complete occupied/empty domain only; no arbitrary-selected-band or new-source execution claim."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "2fc01de92dae92ef4b985e0f68f077fd33dd20400f5d3ccb2f86191396a78b0e",
+          "response_recomputed_during_check": false
+        }
+      },
+      "recorded_domain_declarations": {
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        },
+        "meaning": "Preserved declared/covered domain; not proof that the old SC consumer applied an external selector."
       }
     },
     {
@@ -410,7 +607,7 @@
       "task_ids": [
         "kslice_shift_current_wilson_loop"
       ],
-      "input_sha256": "9b908ecd4cd3d9e35ea6410f02667ece7a88c893b961be7f99f191a51b5df7e5",
+      "input_sha256": "a4fc7b17624e36c6e0c4c8a1ca75726c4d1c8d7f10d4b93f40febff33dde6e9b",
       "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
       "matching_new_default_values": false,
       "provenance": {
@@ -537,49 +734,128 @@
         },
         "material_or_convergence_qualified": false
       },
-      "resolved_band_domain": {
-        "valence": [
-          1,
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "9b908ecd4cd3d9e35ea6410f02667ece7a88c893b961be7f99f191a51b5df7e5",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "producer_input_body_status": "UNVERIFIED_ORIGINAL_BODY_NOT_RECOVERED_LOCALLY"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
           2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20
+          2,
+          2
         ],
-        "conduction": [
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27,
-          28,
-          29,
-          30,
-          31,
-          32
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
         ]
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "9b908ecd4cd3d9e35ea6410f02667ece7a88c893b961be7f99f191a51b5df7e5",
-        "response_recomputed_during_check": false
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": false,
+        "effective_domain": "full_active_window",
+        "meaning": "The saved SC execution did not consume its Transition selector. New groups were not used to produce the saved table or figure.",
+        "conditional_bridge_scope": "Specific complete occupied/empty domain only; no arbitrary-selected-band or new-source execution claim."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "9b908ecd4cd3d9e35ea6410f02667ece7a88c893b961be7f99f191a51b5df7e5",
+          "response_recomputed_during_check": false
+        }
+      },
+      "recorded_domain_declarations": {
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        },
+        "meaning": "Preserved declared/covered domain; not proof that the old SC consumer applied an external selector."
       }
     },
     {
@@ -588,7 +864,7 @@
       "task_ids": [
         "kslice_shift_current_projector"
       ],
-      "input_sha256": "d35fc214ae7a1902fb8c15948f5c41dd7b52463fa5f2f7b13e66f317e6af5ab9",
+      "input_sha256": "639c6c874251833b95475105d54180d1a382514a14fd6acbabc012b54df645e6",
       "calculation_record": "Complete same-source original-grid full-band map; no intermediate-state truncation. Original calculation identities retained.",
       "matching_new_default_values": false,
       "provenance": {
@@ -715,49 +991,128 @@
         },
         "material_or_convergence_qualified": false
       },
-      "resolved_band_domain": {
-        "valence": [
-          1,
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "d35fc214ae7a1902fb8c15948f5c41dd7b52463fa5f2f7b13e66f317e6af5ab9",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "beaa952bfc376cae2936ef3d78b533dcd8c10936b67ea2cb4216548eab3a8b40",
+        "producer_input_body_status": "UNVERIFIED_ORIGINAL_BODY_NOT_RECOVERED_LOCALLY"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
           2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20
+          2,
+          2
         ],
-        "conduction": [
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27,
-          28,
-          29,
-          30,
-          31,
-          32
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
         ]
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "d35fc214ae7a1902fb8c15948f5c41dd7b52463fa5f2f7b13e66f317e6af5ab9",
-        "response_recomputed_during_check": false
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": false,
+        "effective_domain": "full_active_window",
+        "meaning": "The saved SC execution did not consume its Transition selector. New groups were not used to produce the saved table or figure.",
+        "conditional_bridge_scope": "Specific complete occupied/empty domain only; no arbitrary-selected-band or new-source execution claim."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "d35fc214ae7a1902fb8c15948f5c41dd7b52463fa5f2f7b13e66f317e6af5ab9",
+          "response_recomputed_during_check": false
+        }
+      },
+      "recorded_domain_declarations": {
+        "resolved_band_domain": {
+          "valence": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "conduction": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        },
+        "meaning": "Preserved declared/covered domain; not proof that the old SC consumer applied an external selector."
       }
     }
   ],
@@ -781,7 +1136,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "Existing band-selected corrected-consumer display; historical control retained, no response recomputed for cleanup",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json",
       "selected_band_consumer_fix_preserved": true,
@@ -816,7 +1171,32 @@
         "numerical_recalculation": false,
         "source_values_unchanged": true,
         "selection": "Current selected-pair panel only"
-      }
+      },
+      "recorded_calculation_reproduction_status": "Existing band-selected corrected-consumer display; historical control retained, no response recomputed for cleanup",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml": "025891ea71eca25de0a125d27a83866f727366ad1474e909e70e0225abfb1b6d"
+      },
+      "current_input_validation": {
+        "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_current_conventional",
@@ -839,7 +1219,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_conventional.json",
       "selected_band_consumer_fix_preserved": true,
@@ -954,7 +1334,32 @@
         "full_range_no_clipping": true,
         "png_sha256": "3fb742b85ad33490411653ef7c0965f0967c82e36877e95f830cde8cabc0b990",
         "pdf_sha256": "cd9bca083540772202d4e9772c3ae9c2e49ad64162d52f913acf58e0ebe8a92a"
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml": "ebdd03ad09f0eb6da9ec40de3dc049a3bb4473fe55ae3f084fa8108ba2589820"
+      },
+      "current_input_validation": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_current_geometric_loop",
@@ -977,7 +1382,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "calculation_reproduction_status": "SAVED_FULL_ACTIVE_WINDOW_RESPONSE; CURRENT_GROUPED_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_geometric_loop.json",
       "provenance": {
@@ -1084,7 +1489,34 @@
         "full_range_no_clipping": true,
         "png_sha256": "51abc0736471d42c24bf1e0a64c39176b794aa33549fa46e21d64be9009b7ef4",
         "pdf_sha256": "c1a31996cbe96863731d02779302a04893565ab22aa07a1d90544521e2d262ce"
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml": "9239722cf2afe66cc926c494f5dc9dd6c04eb5a6588888aaf34ca9f6a447c526"
+      },
+      "current_input_validation": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": false,
+        "effective_domain": "full_active_window",
+        "meaning": "The saved SC execution did not consume its Transition selector. New groups were not used to produce the saved table or figure.",
+        "conditional_bridge_scope": "Specific complete occupied/empty domain only; no arbitrary-selected-band or new-source execution claim."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_current_wilson_loop",
@@ -1107,7 +1539,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "calculation_reproduction_status": "SAVED_FULL_ACTIVE_WINDOW_RESPONSE; CURRENT_GROUPED_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_wilson_loop.json",
       "provenance": {
@@ -1214,7 +1646,34 @@
         "full_range_no_clipping": true,
         "png_sha256": "3589dcddcdd6eca67d5de37c366b0802f47fd36fed564e433eaebc4b3b5bff90",
         "pdf_sha256": "8ef0cfcee62ae0b43504878d51d31f5b6d72de3dc7b72067b61b27cbcb92cd59"
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml": "a4fc7b17624e36c6e0c4c8a1ca75726c4d1c8d7f10d4b93f40febff33dde6e9b"
+      },
+      "current_input_validation": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": false,
+        "effective_domain": "full_active_window",
+        "meaning": "The saved SC execution did not consume its Transition selector. New groups were not used to produce the saved table or figure.",
+        "conditional_bridge_scope": "Specific complete occupied/empty domain only; no arbitrary-selected-band or new-source execution claim."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_current_projector",
@@ -1237,7 +1696,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "calculation_reproduction_status": "SAVED_FULL_ACTIVE_WINDOW_RESPONSE; CURRENT_GROUPED_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/04_kslice_charge_responses/plot_configs/kslice_shift_current_projector.json",
       "selected_band_consumer_fix_preserved": true,
@@ -1352,7 +1811,34 @@
         "full_range_no_clipping": true,
         "png_sha256": "f1f3dd3472379e9d641426c53724532abd10619c7f6542f51c8c5f0de59441a5",
         "pdf_sha256": "6482841a8d0c8649dd808ca3bfba39d04327430b0f69256875c37ac3781cf3b4"
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_SAME_MODEL_FULL_BAND_DOMAIN; ORIGINAL_200x200_GRID; NO_MATERIAL_CONVERGENCE_CLAIM",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml": "639c6c874251833b95475105d54180d1a382514a14fd6acbabc012b54df645e6"
+      },
+      "current_input_validation": {
+        "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": false,
+        "effective_domain": "full_active_window",
+        "meaning": "The saved SC execution did not consume its Transition selector. New groups were not used to produce the saved table or figure.",
+        "conditional_bridge_scope": "Specific complete occupied/empty domain only; no arbitrary-selected-band or new-source execution claim."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     }
   ],
   "historical_payload": "preserved outside this tree in the verified full local archive",
@@ -1453,5 +1939,7 @@
     "model_tb_sha256": "2808baa3ba824f0045b8baf989950bbc157ab145a550cb5c9ae2acc66fd2bab2",
     "operator_bundle_sha256": "1a35fb1d23b87bd8c39da57288a8810612cb6144246466131f19ec4d6503650e",
     "scope": "Original finite32-band model and original200x200 slice only; not material or mesh-convergence qualification"
-  }
+  },
+  "band_domain_role": "Current source/target declaration and recorded complete-occupation coverage; not proof of old P/G/W selector application.",
+  "response_block_closure_role": "Recorded original-source domain evidence, not a new current-source material calculation."
 }

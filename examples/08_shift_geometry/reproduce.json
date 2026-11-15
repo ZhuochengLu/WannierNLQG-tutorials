@@ -7,7 +7,7 @@
       "task_ids": [
         "kslice_quantum_hermitian_connection_conventional"
       ],
-      "input_sha256": "ce98e07c83bd781259923e12843c37e020bf5021d7f818e2031d470cc4301b1d",
+      "input_sha256": "7418735179ebf2b56a718b69393f3f8a518224b705e5c49aac5b330e71e791e3",
       "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
       "matching_new_default_values": false,
       "provenance": {
@@ -57,11 +57,57 @@
         "all_finite": true,
         "material_or_convergence_qualified": false
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "ce98e07c83bd781259923e12843c37e020bf5021d7f818e2031d470cc4301b1d",
-        "response_recomputed_during_check": false
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "ce98e07c83bd781259923e12843c37e020bf5021d7f818e2031d470cc4301b1d",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "ce98e07c83bd781259923e12843c37e020bf5021d7f818e2031d470cc4301b1d",
+          "response_recomputed_during_check": false
+        }
       }
     },
     {
@@ -70,7 +116,7 @@
       "task_ids": [
         "kslice_quantum_hermitian_connection_wilson_loop"
       ],
-      "input_sha256": "9a281572b3fb615777efa664d12dec46ed2165c3d6053c2892525c829db5deb2",
+      "input_sha256": "8e05c0398988ac237c159732ad8c913d4bf7771391f407dc62641b966ad107b2",
       "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
       "matching_new_default_values": false,
       "provenance": {
@@ -120,11 +166,57 @@
         "all_finite": true,
         "material_or_convergence_qualified": false
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "9a281572b3fb615777efa664d12dec46ed2165c3d6053c2892525c829db5deb2",
-        "response_recomputed_during_check": false
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "9a281572b3fb615777efa664d12dec46ed2165c3d6053c2892525c829db5deb2",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "9a281572b3fb615777efa664d12dec46ed2165c3d6053c2892525c829db5deb2",
+          "response_recomputed_during_check": false
+        }
       }
     },
     {
@@ -133,7 +225,7 @@
       "task_ids": [
         "kslice_shift_vector_geometric_loop"
       ],
-      "input_sha256": "42375527540169be139adce0541c248acb2be3c52c7b661d7560dc5c058b393c",
+      "input_sha256": "6aaaeca1469bd15682a094417694570279355fbfc4607087c6448f029b0e6e01",
       "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
       "matching_new_default_values": false,
       "provenance": {
@@ -183,11 +275,57 @@
         "all_finite": true,
         "material_or_convergence_qualified": false
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "42375527540169be139adce0541c248acb2be3c52c7b661d7560dc5c058b393c",
-        "response_recomputed_during_check": false
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "42375527540169be139adce0541c248acb2be3c52c7b661d7560dc5c058b393c",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "42375527540169be139adce0541c248acb2be3c52c7b661d7560dc5c058b393c",
+          "response_recomputed_during_check": false
+        }
       }
     },
     {
@@ -196,7 +334,7 @@
       "task_ids": [
         "kslice_shift_vector_wilson_loop"
       ],
-      "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+      "input_sha256": "864b050587671ed760827b3e5fd01e616616ec895b28ece5ff0f50a323b65e9d",
       "calculation_record": "Complete original-mesh calculation with the recorded public 1.2.0 source and unified GeS pair.",
       "matching_new_default_values": false,
       "provenance": {
@@ -246,20 +384,66 @@
         "all_finite": true,
         "material_or_convergence_qualified": false
       },
-      "normal_tutorial_entry_check": {
-        "status": "PASS",
-        "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
-        "response_recomputed_during_check": false
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "13ee5b0edd4fcecbf8279337036fa044e0b66e27d24e20d36e31a5d60d2f0ea9",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
       },
-      "current_source_reuse_check": {
-        "status": "REUSED_AFTER_AFFECTED_CALL_PATH_REVIEW",
-        "actual_calculation_source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
-        "reviewed_current_public_source_manifest_sha256": "874ebeb9456ac0a3bc6f1f15102f82744ba06655e5b0040f5a7e62c0680e0bea",
-        "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
-        "new_numerical_calculation": false,
-        "basis": "Wilson shift-vector, spectrum/position/transport/grouping, sampling and output paths are unchanged; current source differences concern withdrawn Geometric-loop QHC support and its precompile registration.",
-        "raw_data_and_figure_hashes_verified": true
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            21,
+            22
+          ],
+          [
+            19,
+            20
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_tutorial_entry_check": {
+          "status": "PASS",
+          "source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+          "response_recomputed_during_check": false
+        },
+        "current_source_reuse_check": {
+          "status": "REUSED_AFTER_AFFECTED_CALL_PATH_REVIEW",
+          "actual_calculation_source_manifest_sha256": "8842d66473f0aa9c92f2b8c5816578061691a46ce06574433a851f71a7d14f7e",
+          "reviewed_current_public_source_manifest_sha256": "874ebeb9456ac0a3bc6f1f15102f82744ba06655e5b0040f5a7e62c0680e0bea",
+          "input_sha256": "7acb07621b89f6c172dcc7a89219fb1dd845f4f1699fa62e3700a66a9bb25e75",
+          "new_numerical_calculation": false,
+          "basis": "Wilson shift-vector, spectrum/position/transport/grouping, sampling and output paths are unchanged; current source differences concern withdrawn Geometric-loop QHC support and its precompile registration.",
+          "raw_data_and_figure_hashes_verified": true
+        }
       }
     }
   ],
@@ -284,7 +468,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/08_shift_geometry/plot_configs/kslice_quantum_hermitian_connection_conventional.json",
       "provenance": {
@@ -337,7 +521,32 @@
         "full_range_no_clipping": true,
         "png_sha256": "cdea083ee65a665e295bdc82951312ec5a1364dc86b36a0663f4ac12f64dd7bc",
         "pdf_sha256": "bd3bbd8f6e105363e3b4394669f0a4f84025cd79069a0849b0e0f7924dc9776d"
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml": "7418735179ebf2b56a718b69393f3f8a518224b705e5c49aac5b330e71e791e3"
+      },
+      "current_input_validation": {
+        "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_quantum_hermitian_connection_wilson_loop",
@@ -359,7 +568,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/08_shift_geometry/plot_configs/kslice_quantum_hermitian_connection_wilson_loop.json",
       "provenance": {
@@ -412,7 +621,32 @@
         "full_range_no_clipping": true,
         "png_sha256": "5bbab38b7cc91c34dbba26d33e11c5695855c98c4924d1dfd3b5c35dd88ec12c",
         "pdf_sha256": "c936ae294edcd01ea4903e2b80a21b11e55af59de3052d3a6e4ad42031baa9a3"
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml": "8e05c0398988ac237c159732ad8c913d4bf7771391f407dc62641b966ad107b2"
+      },
+      "current_input_validation": {
+        "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_vector_geometric_loop",
@@ -434,7 +668,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/08_shift_geometry/plot_configs/kslice_shift_vector_geometric_loop.json",
       "provenance": {
@@ -487,7 +721,32 @@
         "png_sha256": "870e6541bb9e6679084c1e7eac824d2b1ad340cf628ef267c389d15d39491e9c",
         "pdf_sha256": "9265fe8637a7ca8c8bbbdd32be8d5ee9fce587fbf97dd4a4609ca49d34d13109"
       },
-      "presentation_role": "OPTIONAL_METHOD_COMPARISON"
+      "presentation_role": "OPTIONAL_METHOD_COMPARISON",
+      "recorded_calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml": "6aaaeca1469bd15682a094417694570279355fbfc4607087c6448f029b0e6e01"
+      },
+      "current_input_validation": {
+        "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_vector_wilson_loop",
@@ -509,7 +768,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/08_shift_geometry/plot_configs/kslice_shift_vector_wilson_loop.json",
       "provenance": {
@@ -571,7 +830,32 @@
         "new_numerical_calculation": false,
         "basis": "Wilson shift-vector, spectrum/position/transport/grouping, sampling and output paths are unchanged; current source differences concern withdrawn Geometric-loop QHC support and its precompile registration.",
         "raw_data_and_figure_hashes_verified": true
-      }
+      },
+      "recorded_calculation_reproduction_status": "COMPLETE_CURRENT_PUBLIC_SOURCE_ORIGINAL_MESH; FINITE_DATA_VERIFIED; METHOD_OR_MATERIAL_EQUIVALENCE_NOT_CERTIFIED",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml": "864b050587671ed760827b3e5fd01e616616ec895b28ece5ff0f50a323b65e9d"
+      },
+      "current_input_validation": {
+        "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     }
   ],
   "historical_payload": "preserved outside this tree in the verified full local archive",

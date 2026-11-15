@@ -28,4 +28,5 @@ temperature_k = 0.0
 
 [ response.tasks.berry_sos_occupied_xy.observable ]
 component = [1, 2]
-kind = "occupied_bands"
+kind = "kslice"
+occupied_sum = "only"

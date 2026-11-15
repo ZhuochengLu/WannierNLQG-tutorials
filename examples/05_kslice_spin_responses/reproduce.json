@@ -7,7 +7,7 @@
       "task_ids": [
         "kslice_injection_spin_current_conventional"
       ],
-      "input_sha256": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c",
+      "input_sha256": "66cbe8d254262a45215d45cb17f162514cc12017da0d5a7f21243899c308ea26",
       "calculation_record": "Original teaching mesh and parameters, explicit smooth geometric width0.001eV, run303.",
       "matching_new_default_values": false,
       "provenance": {
@@ -86,7 +86,54 @@
         ],
         "material_or_convergence_qualified": false
       },
-      "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "87fa212f040d0fca92d28b06c0d5b56a28ccebdf075f94d4c349312bb962ff2c",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+      }
     },
     {
       "case": "shift_spin_current_conventional",
@@ -94,7 +141,7 @@
       "task_ids": [
         "kslice_shift_spin_current_conventional"
       ],
-      "input_sha256": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc",
+      "input_sha256": "fd45659344149586797da4f3f0a34e597cdd24a21b95daf923e87c58c25d3ada",
       "calculation_record": "Original teaching mesh and parameters, explicit smooth geometric width0.001eV, run303.",
       "matching_new_default_values": false,
       "provenance": {
@@ -173,7 +220,54 @@
         ],
         "material_or_convergence_qualified": false
       },
-      "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "60cfcef75049b377407f39a826873527ef533174ce524268ac87096eb441ddbc",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": null,
+        "actual_execution_group_input_sha256": "3c45d797c1f758b84adeef65a569492c6309d5e29c6eb277ebcf19fba312612a",
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_input_checks": {
+        "normal_entry_check": "PASS_WITH_EXACT_MODEL3_COPY"
+      }
     },
     {
       "case": "shift_yzxy_kslice",
@@ -181,7 +275,7 @@
       "task_ids": [
         "kslice_shift_spin_yzxy_fullbands"
       ],
-      "input_sha256": "047660cf7a88b13600defce2d76414a9593921bca301b6befd6e4e494e209a58",
+      "input_sha256": "ff6f4d57643fdacce8c43cce5200f905badc67d04fb292d052a54aa8e9ea6012",
       "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
       "execution_evidence": {
         "run_id": "tutorial-spin-full-20261111-001",
@@ -197,6 +291,79 @@
           "examples/05_kslice_spin_responses/data/ssc_yzxy_r_fullbands.dat": "2bbf2a8ba468205a5ff97ad35a516f9cb6a0812016443f1fc438e4867855dc33",
           "examples/05_kslice_spin_responses/data/ssc_yzxy_i_fullbands.dat": "94b79e79c1f1096f7cf2ce7a9e900bf729dec8f8884178cdbba80f8a7ed65197"
         }
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "047660cf7a88b13600defce2d76414a9593921bca301b6befd6e4e494e209a58",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": "f5e8581d9f07b01af5703cd65d939f345f6e76c642849a3b879c23ea8b18cb0e",
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          3,
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -205,7 +372,7 @@
       "task_ids": [
         "kslice_shift_spin_yzyx_fullbands"
       ],
-      "input_sha256": "746d11d27b7c56543289b2c1f45306bccc0c7b828c5b0b050f6eed651331b3ab",
+      "input_sha256": "02b2284607e796a91768d27b87b187e423f1827b9bb6e9f6f130172b3a2d9343",
       "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
       "execution_evidence": {
         "run_id": "tutorial-spin-full-20261111-001",
@@ -221,6 +388,79 @@
           "examples/05_kslice_spin_responses/data/ssc_yzyx_r_fullbands.dat": "ae39eda9779d0c500c874561d869b355948ea38fe7d15554620c4be092564235",
           "examples/05_kslice_spin_responses/data/ssc_yzyx_i_fullbands.dat": "a1a15d04bd9d2bf207fc15cf82bc1a3a8f44a3f7a063d77a859ed94da86a42e1"
         }
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "746d11d27b7c56543289b2c1f45306bccc0c7b828c5b0b050f6eed651331b3ab",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": "8ed5256656f3f143014207df91807d4736d78bff6ec036405e0fc3693581f463",
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -229,7 +469,7 @@
       "task_ids": [
         "kslice_injection_spin_yzxy_fullbands"
       ],
-      "input_sha256": "43be4b4eb5b540d948515b715ea37360430ad27f9e18704862c1edbb147a80a4",
+      "input_sha256": "b169299c5da662e8b5709575c290ba153ac245d77ca64a9784b724ae5525d8da",
       "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
       "execution_evidence": {
         "run_id": "tutorial-spin-full-20261111-001",
@@ -245,6 +485,79 @@
           "examples/05_kslice_spin_responses/data/isc_yzxy_r_fullbands.dat": "060dd52b51764b1882a0db650e05757a7200e93987fee7d12f06a9657e232025",
           "examples/05_kslice_spin_responses/data/isc_yzxy_i_fullbands.dat": "c293eaa90f1d4495c09b6fa9d3f5b7ec664d86e9cee96c810b527703450b155d"
         }
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "43be4b4eb5b540d948515b715ea37360430ad27f9e18704862c1edbb147a80a4",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": "546fef16939e0799234d522f6e8202bd7115bd99e96a8ea9f4528aae14600dca",
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          3,
+          1,
+          2
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -253,7 +566,7 @@
       "task_ids": [
         "kslice_injection_spin_yzyx_fullbands"
       ],
-      "input_sha256": "ef2087b325ffe9fd00ac8ac2c538baac2748bf02cb6b00f1a696f02854ad6442",
+      "input_sha256": "bbde20883c218a5f284f7e643cf844bb6a11d2522295bf2b50cf1d682e59d1e5",
       "calculation_record": "Computed on the 200 x 200 teaching mesh, same-frequency single-point response; not a mesh-convergence claim.",
       "execution_evidence": {
         "run_id": "tutorial-spin-full-20261111-001",
@@ -269,6 +582,79 @@
           "examples/05_kslice_spin_responses/data/isc_yzyx_r_fullbands.dat": "0dfadef071ab1e24e9f7bc7b9b2617c0fb121029471c565901c5c9dfab39ac96",
           "examples/05_kslice_spin_responses/data/isc_yzyx_i_fullbands.dat": "f90b255efe0980598659a9c8b219ea976cdb898a7c61e1ace64cba5c19fe5b51"
         }
+      },
+      "recorded_input_identity": {
+        "case_input_sha256_before_migration": "ef2087b325ffe9fd00ac8ac2c538baac2748bf02cb6b00f1a696f02854ad6442",
+        "case_input_sha256_role": "Existing case-file binding; not automatically the actual producer input.",
+        "actual_execution_input_sha256": "accae671f795adc1d420b3aa693ece470b4abd0c29800a8f0800dd928214b1c0",
+        "actual_execution_group_input_sha256": null,
+        "producer_input_body_status": "RETAIN_EXISTING_AVAILABILITY_RECORD"
+      },
+      "input_sha256_role": "CURRENT_INPUT_FILE_BINDING_AFTER_REVIEWED_INSTALLATION_NOT_PRODUCER_IDENTITY",
+      "current_input_validation": {
+        "status": "CONFIGURATION_ONLY_VERIFIED",
+        "run_id": "selection-tutorial426-run01",
+        "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+        "execution_qualification": "DEVELOPMENT_PASS",
+        "model_path_checks": false,
+        "model_header_or_payload_loaded": false,
+        "response_executed": false,
+        "figure_generated": false,
+        "scientific_qualification": "NOT_EVALUATED",
+        "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+      },
+      "current_input_observable": {
+        "component": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "kind": "kslice",
+        "groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        ]
+      },
+      "recorded_result_fields_scope": "Existing calculation_record, provenance, source/result evidence and qualifications refer to the saved producer, not to execution of the migrated input.",
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
       }
     },
     {
@@ -338,7 +724,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json",
       "selected_band_consumer_fix_preserved": true,
@@ -406,7 +792,32 @@
         "numerical_recalculation": false,
         "source_values_unchanged": true,
         "selection": "Current selected-pair panel only"
-      }
+      },
+      "recorded_calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml": "66cbe8d254262a45215d45cb17f162514cc12017da0d5a7f21243899c308ea26"
+      },
+      "current_input_validation": {
+        "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_spin_current_conventional",
@@ -427,7 +838,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "PRESERVED_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_current_conventional.json",
       "selected_band_consumer_fix_preserved": true,
@@ -495,7 +906,32 @@
         "numerical_recalculation": false,
         "source_values_unchanged": true,
         "selection": "Current selected-pair panel only"
-      }
+      },
+      "recorded_calculation_reproduction_status": "Actual original-mesh case group completed with exit0; complete original cohort released. The shared parent retained exit1 from the independent Fe result-reader check.",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml": "fd45659344149586797da4f3f0a34e597cdd24a21b95daf923e87c58c25d3ada"
+      },
+      "current_input_validation": {
+        "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_shift_spin_yzxy_fullbands",
@@ -516,7 +952,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "NEW_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "Computed with independently verified same-grid integral; not mesh-convergence qualified.",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_yzxy_fullbands.json",
       "execution_evidence": {
@@ -527,7 +963,32 @@
         },
         "display_transform": "raw imaginary / 1e12, fftshift then transpose; signed logarithmic color; mesh weight already included",
         "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
-      }
+      },
+      "recorded_calculation_reproduction_status": "Computed with independently verified same-grid integral; not mesh-convergence qualified.",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml": "ff6f4d57643fdacce8c43cce5200f905badc67d04fb292d052a54aa8e9ea6012"
+      },
+      "current_input_validation": {
+        "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     },
     {
       "id": "kslice_injection_spin_yzxy_fullbands",
@@ -548,7 +1009,7 @@
       "model_provenance_files": [],
       "retained_legacy_case_builders": [],
       "case_association_method": "NEW_EXPLICIT_INPUT_ASSOCIATION",
-      "calculation_reproduction_status": "Computed with independently verified same-grid integral; not mesh-convergence qualified.",
+      "calculation_reproduction_status": "SAVED_RECORDED_SOURCE_RESULT; CURRENT_INPUT_CONFIG_ONLY; NO_NEW_RESPONSE_EXECUTION",
       "data_formats": {},
       "recipe": "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_yzxy_fullbands.json",
       "execution_evidence": {
@@ -559,7 +1020,32 @@
         },
         "display_transform": "raw real / 1e25, fftshift then transpose; signed logarithmic color; mesh weight already included",
         "source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
-      }
+      },
+      "recorded_calculation_reproduction_status": "Computed with independently verified same-grid integral; not mesh-convergence qualified.",
+      "related_current_inputs_role": "Navigation to current commands; not evidence that these input bytes produced the saved figure.",
+      "current_input_identities": {
+        "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml": "b169299c5da662e8b5709575c290ba153ac245d77ca64a9784b724ae5525d8da"
+      },
+      "current_input_validation": {
+        "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml": {
+          "status": "CONFIGURATION_ONLY_VERIFIED",
+          "run_id": "selection-tutorial426-run01",
+          "source_manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "source_role": "FROZEN_DEVELOPMENT_CANDIDATE_NOT_FORMAL_PROMOTION",
+          "execution_qualification": "DEVELOPMENT_PASS",
+          "model_path_checks": false,
+          "model_header_or_payload_loaded": false,
+          "response_executed": false,
+          "figure_generated": false,
+          "scientific_qualification": "NOT_EVALUATED",
+          "scope": "Parsed and typed configuration only; not a model/operator or numerical-result qualification."
+        }
+      },
+      "saved_execution_selection": {
+        "selector_applied": "RETAIN_RECORDED_PRODUCER_SEMANTICS",
+        "meaning": "Existing recorded producer/source, reduction, units and qualification remain unchanged; no response was recomputed for the input migration."
+      },
+      "recorded_provenance_scope": "All existing provenance/execution_evidence/table/recipe/image/source hashes retain their recorded producer meanings and qualifications. No model, response or figure was regenerated."
     }
   ],
   "historical_payload": "preserved outside this tree in the verified full local archive",

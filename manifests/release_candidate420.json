@@ -1,7 +1,7 @@
 {
   "schema": "tutorial-pre-github-candidate/1",
   "version": "1.2.0",
-  "status": "LOCAL_TUTORIAL_REPLAY_BINDING_COMPLETE_AWAITING_EXPLICIT_GITHUB_CONFIRMATION",
+  "status": "LOCAL_TUTORIAL_FINAL_RUNTIME_BINDING_COMPLETE_REMOTE_ACTIONS_OWNED_SEPARATELY",
   "tutorial_git_baseline": "96d2690ecd1de196cc2c4c4b33d65b98df28b1de",
   "baseline_is_release_commit": false,
   "software_validation": "software_validation.json",
@@ -89,8 +89,8 @@
     },
     {
       "path": "examples/04_kslice_charge_responses/README.md",
-      "bytes": 12601,
-      "sha256": "e56fcc21d6ca3e01bd268796c58119f81b0786512c0ae10adb6a18474533df5c"
+      "bytes": 14664,
+      "sha256": "5a891ee8b9df890ee6f9b078040db69282b1e8513cb0e11511041aaf39ea8d5c"
     },
     {
       "path": "examples/04_kslice_charge_responses/figures/kslice_injection_current_conventional.pdf",
@@ -103,14 +103,44 @@
       "sha256": "f32d62d11a84fa762f9e5cbd9562abfd988fb7c003b3ddc77d7ed367223125a6"
     },
     {
+      "path": "examples/04_kslice_charge_responses/inputs/injection_current_conventional.toml",
+      "bytes": 835,
+      "sha256": "025891ea71eca25de0a125d27a83866f727366ad1474e909e70e0225abfb1b6d"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/inputs/shift_current_conventional.toml",
+      "bytes": 983,
+      "sha256": "ebdd03ad09f0eb6da9ec40de3dc049a3bb4473fe55ae3f084fa8108ba2589820"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/inputs/shift_current_geometric_loop.toml",
+      "bytes": 1076,
+      "sha256": "9239722cf2afe66cc926c494f5dc9dd6c04eb5a6588888aaf34ca9f6a447c526"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/inputs/shift_current_projector.toml",
+      "bytes": 1056,
+      "sha256": "639c6c874251833b95475105d54180d1a382514a14fd6acbabc012b54df645e6"
+    },
+    {
+      "path": "examples/04_kslice_charge_responses/inputs/shift_current_wilson_loop.toml",
+      "bytes": 1064,
+      "sha256": "a4fc7b17624e36c6e0c4c8a1ca75726c4d1c8d7f10d4b93f40febff33dde6e9b"
+    },
+    {
       "path": "examples/04_kslice_charge_responses/plot_configs/kslice_injection_current_conventional.json",
       "bytes": 1092,
       "sha256": "b3719f6d1e27fd85526e4ff8602536bb9fff79d3b2b14dbf8ea70be7b6114394"
     },
     {
+      "path": "examples/04_kslice_charge_responses/reproduce.json",
+      "bytes": 72245,
+      "sha256": "51c405fd5fb2580c61e8b4912ee25ef3340d4c92f8e0374bcd13e1b10c41f4ea"
+    },
+    {
       "path": "examples/05_kslice_spin_responses/README.md",
-      "bytes": 16127,
-      "sha256": "73571cfbb670932c055671528cae29dbb47e1767235e501928fd3c4a182dce45"
+      "bytes": 17631,
+      "sha256": "6c6f2e3a7ea33c7d32d503c46f7b52e812528aced0d640f23a20443a6f6ca852"
     },
     {
       "path": "examples/05_kslice_spin_responses/figures/kslice_injection_spin_current_conventional.pdf",
@@ -133,6 +163,36 @@
       "sha256": "7f0f0451efab67d74010de6dca914490a076b236bff31272e28bb359d3e8dd4b"
     },
     {
+      "path": "examples/05_kslice_spin_responses/inputs/injection_spin_current_conventional.toml",
+      "bytes": 965,
+      "sha256": "66cbe8d254262a45215d45cb17f162514cc12017da0d5a7f21243899c308ea26"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/inputs/injection_yzxy_kslice.toml",
+      "bytes": 969,
+      "sha256": "b169299c5da662e8b5709575c290ba153ac245d77ca64a9784b724ae5525d8da"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/inputs/injection_yzyx_kslice.toml",
+      "bytes": 969,
+      "sha256": "bbde20883c218a5f284f7e643cf844bb6a11d2522295bf2b50cf1d682e59d1e5"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/inputs/shift_spin_current_conventional.toml",
+      "bytes": 949,
+      "sha256": "fd45659344149586797da4f3f0a34e597cdd24a21b95daf923e87c58c25d3ada"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/inputs/shift_yzxy_kslice.toml",
+      "bytes": 953,
+      "sha256": "ff6f4d57643fdacce8c43cce5200f905badc67d04fb292d052a54aa8e9ea6012"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/inputs/shift_yzyx_kslice.toml",
+      "bytes": 953,
+      "sha256": "02b2284607e796a91768d27b87b187e423f1827b9bb6e9f6f130172b3a2d9343"
+    },
+    {
       "path": "examples/05_kslice_spin_responses/plot_configs/kslice_injection_spin_current_conventional.json",
       "bytes": 1086,
       "sha256": "e5e77509dd336a610293a2931488226456c8a05185274e613495a4faab5040cc"
@@ -141,6 +201,161 @@
       "path": "examples/05_kslice_spin_responses/plot_configs/kslice_shift_spin_current_conventional.json",
       "bytes": 1077,
       "sha256": "fae85e11a588ab8c1ef591e7462e11676afe16320c411943380ac98b1456ce0d"
+    },
+    {
+      "path": "examples/05_kslice_spin_responses/reproduce.json",
+      "bytes": 51740,
+      "sha256": "106d5f7ee11e67a0995ecea88c3ce17f11e67c17b4c91ba7b48552c101f3621e"
+    },
+    {
+      "path": "examples/06_qg_pairwise/README.md",
+      "bytes": 8223,
+      "sha256": "8998ea74ab4fabe8a98044909bd361b027138e5fb9c1db76f1de15e3f7ad7eca"
+    },
+    {
+      "path": "examples/06_qg_pairwise/inputs/berry_curvature_conventional.toml",
+      "bytes": 830,
+      "sha256": "e60acd1420bee8c6f4c95c44dbd22117d237cf764bca62a8bd5e9361cab4c0ef"
+    },
+    {
+      "path": "examples/06_qg_pairwise/inputs/interband_berry_curvature_conventional.toml",
+      "bytes": 880,
+      "sha256": "78c5ecf00fb4927389114bd4ecd3a38b42b16db1b5a5cf4ebadca0ee4e0eb5d6"
+    },
+    {
+      "path": "examples/06_qg_pairwise/inputs/interband_quantum_metric_conventional.toml",
+      "bytes": 948,
+      "sha256": "810a31f4ac865614c27a98b2571fdbc36dbe07a550c1c431e10d3981e60db766"
+    },
+    {
+      "path": "examples/06_qg_pairwise/inputs/quantum_metric_conventional.toml",
+      "bytes": 923,
+      "sha256": "e72d63c07280cee5923ffa3d059b76f2938bf1e0d9f7857f2ffe166984967988"
+    },
+    {
+      "path": "examples/06_qg_pairwise/reproduce.json",
+      "bytes": 33067,
+      "sha256": "e3d8f575fcce2a4dbc9b69e6f78b1f581b6d565b6b89523e01107bc28769a28e"
+    },
+    {
+      "path": "examples/07_qg_multipoles/README.md",
+      "bytes": 9258,
+      "sha256": "5791ba07bf46edbfc57ea8c154561efa5e1760c0605f51af797345dbcb66bbea"
+    },
+    {
+      "path": "examples/07_qg_multipoles/inputs/berry_curvature_dipole_conventional.toml",
+      "bytes": 934,
+      "sha256": "f059d4779f01e24b1f0339795bc545df6e61d469e5c7ef91359c29a3e1c7c01d"
+    },
+    {
+      "path": "examples/07_qg_multipoles/inputs/berry_curvature_quadrupole_conventional.toml",
+      "bytes": 953,
+      "sha256": "08b9d62779b1adb0fa53800fca032255c2bb7820862cbc076d216f5c403c1587"
+    },
+    {
+      "path": "examples/07_qg_multipoles/inputs/quantum_christoffel_symbol_conventional.toml",
+      "bytes": 1006,
+      "sha256": "ed43b82a32e506739c96f361569a331fdb7a2f6638c7f89e2db7623d77c69a9c"
+    },
+    {
+      "path": "examples/07_qg_multipoles/inputs/quantum_metric_dipole_conventional.toml",
+      "bytes": 986,
+      "sha256": "538aeba465b48466e1d55aaa11c26dc47206037f1308d73e8179106405425eb0"
+    },
+    {
+      "path": "examples/07_qg_multipoles/inputs/quantum_metric_quadrupole_conventional.toml",
+      "bytes": 1005,
+      "sha256": "cbf8ffca49a7be926dba733dd9d3e8a23c187d2cefddea99a5486794e9dd4c60"
+    },
+    {
+      "path": "examples/07_qg_multipoles/reproduce.json",
+      "bytes": 42098,
+      "sha256": "1b7faf3e929e5f34dcd6c9d930d05e706da4afc04080c62092220f7f9b881287"
+    },
+    {
+      "path": "examples/08_shift_geometry/README.md",
+      "bytes": 12624,
+      "sha256": "035d9cd3391b776df98ef90e54d62a7b83b9b2582152ad0e87dfbba25bfc1072"
+    },
+    {
+      "path": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_conventional.toml",
+      "bytes": 774,
+      "sha256": "7418735179ebf2b56a718b69393f3f8a518224b705e5c49aac5b330e71e791e3"
+    },
+    {
+      "path": "examples/08_shift_geometry/inputs/quantum_hermitian_connection_wilson_loop.toml",
+      "bytes": 933,
+      "sha256": "8e05c0398988ac237c159732ad8c913d4bf7771391f407dc62641b966ad107b2"
+    },
+    {
+      "path": "examples/08_shift_geometry/inputs/shift_vector_geometric_loop.toml",
+      "bytes": 881,
+      "sha256": "6aaaeca1469bd15682a094417694570279355fbfc4607087c6448f029b0e6e01"
+    },
+    {
+      "path": "examples/08_shift_geometry/inputs/shift_vector_wilson_loop.toml",
+      "bytes": 869,
+      "sha256": "864b050587671ed760827b3e5fd01e616616ec895b28ece5ff0f50a323b65e9d"
+    },
+    {
+      "path": "examples/08_shift_geometry/reproduce.json",
+      "bytes": 41590,
+      "sha256": "fdf91628acfbf7237ddda7cfe55690c84515c0e41b78f5a911ad73e0ef5b2f38"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/README.md",
+      "bytes": 9233,
+      "sha256": "1f646c09b6866998cb938908d8314e3ef4fe15dd988ba42ec56c988eb761d21f"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/inputs/hermitian_curvature_tensor_conventional.toml",
+      "bytes": 710,
+      "sha256": "221ab9710bdbbfcf048534c8fdbda87dceadbf7847848a02fb826a88b69eb6c3"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/inputs/triple_phase_product_conventional.toml",
+      "bytes": 699,
+      "sha256": "017a8560a9c331f996d637391c76cc95fb2520c770167acc6ae150630ac1e4b0"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_berry_curvature_conventional.toml",
+      "bytes": 794,
+      "sha256": "c81c3b0eff258eb6921a73632d8ed759f8a400ff31daa49a04909a1f1cb8cf24"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/inputs/zeeman_interband_quantum_metric_conventional.toml",
+      "bytes": 791,
+      "sha256": "534addd5a46d1e49dfd5854a80f3cb3e58507294232f5f4e91976baba8e3601c"
+    },
+    {
+      "path": "examples/09_higher_and_spin_geometry/reproduce.json",
+      "bytes": 32569,
+      "sha256": "950798ca60f1d4e29e0ac107229b3a1caf409be2d848762f81a62bd88c0d5c25"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/README.md",
+      "bytes": 12557,
+      "sha256": "18ac861c15722f1c8803d98b879e33dd6bd26d588255e3370f625d61fa613684"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/inputs/berry_sos_occupied_xy.toml",
+      "bytes": 919,
+      "sha256": "472f09a8015d22f21f7b182ee7a6e793075941e862df5cdbf1d2e167cdf4ebb8"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/inputs/berry_tb_occupied_xy.toml",
+      "bytes": 845,
+      "sha256": "00c1d02088c32a892609acd118967a38346e376879dba6311b82fa07f98a5b60"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/inputs/berry_transport_equivalent_xy.toml",
+      "bytes": 884,
+      "sha256": "4098270a12cc9c058d73662d620c08cad534d9b1e66d1ea8564bfd3e5265955a"
+    },
+    {
+      "path": "examples/11_fe_oam_and_linear_response/reproduce.json",
+      "bytes": 75817,
+      "sha256": "447d605b860f6f97d44e4a34eecc7ee5a6bd6b18c3517f3589651309b45f5782"
     },
     {
       "path": "examples/13_haldane_anomalous_hall/README.md",
@@ -159,8 +374,8 @@
     },
     {
       "path": "examples/16_monolayer_graphene_thg/README.md",
-      "bytes": 19712,
-      "sha256": "628ab442a67b49b79ef62bab9ddffd50c238008facd9075951e149a6b1ec8181"
+      "bytes": 19814,
+      "sha256": "c1912fc276de5bef0439abc57ad10e4d3f5fa35bafb7be5d72da59820aa0600d"
     },
     {
       "path": "examples/16_monolayer_graphene_thg/collect_valleys.py",
@@ -259,8 +474,8 @@
     },
     {
       "path": "examples/16_monolayer_graphene_thg/reproduce.json",
-      "bytes": 75339,
-      "sha256": "1ef29369337642adedd3abfde942bf0adf77c5a7f3c7ce2ff582892845fe73b0"
+      "bytes": 101373,
+      "sha256": "6a4484fac8e1ffdbfacc5c60d088f5c832cc5810e066ea347a22af87ce9724c4"
     },
     {
       "path": "examples/16_monolayer_graphene_thg/run_valleys.jl",
@@ -274,13 +489,13 @@
     },
     {
       "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
-      "bytes": 5536,
-      "sha256": "cbbd67e66b446d5d1828097fbd60f2909bb695303dcc40a51242d0876565f4a5"
+      "bytes": 5551,
+      "sha256": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800"
     },
     {
       "path": "examples/17_jerk_current/README.md",
-      "bytes": 12260,
-      "sha256": "86ef4eb6cdea9114fed927003c1b3c42d80badff8c621fd2c664d7017e4304c9"
+      "bytes": 13080,
+      "sha256": "de0c681b7d1e82c65b7f9a4de40f4bbb254e669faa8d6066e4ac5bacf20c2f6a"
     },
     {
       "path": "examples/17_jerk_current/figures/ges_dense_current.pdf",
@@ -338,6 +553,11 @@
       "sha256": "322d1e90fe84f314775e34d1974bc7dd8e2e56d2ed5646337f14d36cd991d6a5"
     },
     {
+      "path": "manifests/current_inputs.json",
+      "bytes": 39157,
+      "sha256": "5bf4fbcc4c4fc0d61df82f0ddc9c3741a7d8554c4a27a095c629b48e907bf75f"
+    },
+    {
       "path": "manifests/data_rights_review414.json",
       "bytes": 9023,
       "sha256": "06071ce4d6844253e5539304f17b0a17a6c8ed37c2628103ea1422f5406dacfe"
@@ -358,6 +578,11 @@
       "sha256": "86d04297e7bf7b62bb8c24d890754dfd962d1e96f152463aefa08230ad030853"
     },
     {
+      "path": "manifests/material_case_results.json",
+      "bytes": 135676,
+      "sha256": "7d0dc31e836e8dd2d5bac6e619d966cd0a9b8e9b8227c840dda27acf89e5f0e0"
+    },
+    {
       "path": "manifests/material_distribution.json",
       "bytes": 4023,
       "sha256": "8b293314846362e7d029ae885f43528c3df017408fb1ea09584d950438552ecd"
@@ -365,7 +590,7 @@
     {
       "path": "manifests/material_distribution.sha256",
       "bytes": 93,
-      "sha256": "db812d2a506967ec5717337b0e4cecb80213cbec80c3267b93d016af9e56ca1c"
+      "sha256": "c7c019f6985e3763ffcc10c540bba17c0041f1d77480a742ccc0c712bb5f0df7"
     },
     {
       "path": "manifests/material_licensing420.json",
@@ -381,6 +606,11 @@
       "path": "manifests/release_review416.json",
       "bytes": 10440,
       "sha256": "10cbd5c9cab0cd26d967166231b00a80f5c706e6a1be5858b11270a7b735920f"
+    },
+    {
+      "path": "manifests/reproducibility_map.json",
+      "bytes": 845531,
+      "sha256": "10121b67172e1edae42e5462baf040f6c261e55928ecaa8f58c36f2ccca0969e"
     },
     {
       "path": "manifests/software_name_clarity_20261112.json",
@@ -418,6 +648,136 @@
       "sha256": "b95a000aa2e6bd9e278d186a9a31d09ed8bdd4a9afe65cbc7c48aa14e065ea79"
     },
     {
+      "path": "test/fixtures/inputs/04_kslice_charge_responses/injection_current_conventional.toml",
+      "bytes": 824,
+      "sha256": "6acc64cf768e2a0e97b88efb2276fbf59c8c132818287a939408ed89bc3852c2"
+    },
+    {
+      "path": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_conventional.toml",
+      "bytes": 911,
+      "sha256": "cf856b0610a3e5210b1c223b8697655e20b8c4ad155d2d9eb17fbca7c2385ae8"
+    },
+    {
+      "path": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_geometric_loop.toml",
+      "bytes": 975,
+      "sha256": "e639083e3c3d24a9fed03abacbeed1b86f77e9fd30a0b917e376ae0534111d88"
+    },
+    {
+      "path": "test/fixtures/inputs/04_kslice_charge_responses/shift_current_wilson_loop.toml",
+      "bytes": 963,
+      "sha256": "8f2342789b4aec9ba76a1ed2244b3966d6bd7c58ae5905b906b0e9b5dc51d2c9"
+    },
+    {
+      "path": "test/fixtures/inputs/05_kslice_spin_responses/injection_spin_current_conventional.toml",
+      "bytes": 957,
+      "sha256": "dd1dfb3d3925e3ce49423ffd11a32ff744bc9c15edea9bbbca58981b8a40386d"
+    },
+    {
+      "path": "test/fixtures/inputs/05_kslice_spin_responses/shift_spin_current_conventional.toml",
+      "bytes": 941,
+      "sha256": "4874b46fe47677fb9a85730fd8537274c7155eedffe9be0c8bf282a2b5b76210"
+    },
+    {
+      "path": "test/fixtures/inputs/06_qg_pairwise/berry_curvature_conventional.toml",
+      "bytes": 650,
+      "sha256": "b6def9617d7c26dbd60c7d80512d6189e847f0cebf84346921a2d033f6073fae"
+    },
+    {
+      "path": "test/fixtures/inputs/06_qg_pairwise/interband_berry_curvature_conventional.toml",
+      "bytes": 690,
+      "sha256": "1eaa408fdcddb457f8f4e5a7fe76ea7519ab12318874b0f7196578cd8bd73448"
+    },
+    {
+      "path": "test/fixtures/inputs/06_qg_pairwise/interband_quantum_metric_conventional.toml",
+      "bytes": 687,
+      "sha256": "8e702b4ddbca10000a02200d89dd5c608d54b68d6e6d2ca97e01b590a9ad9787"
+    },
+    {
+      "path": "test/fixtures/inputs/06_qg_pairwise/quantum_metric_conventional.toml",
+      "bytes": 647,
+      "sha256": "d2f01508fa3fd309fdf91d8cce652aea00e66854e9ebeccdc11534c9dc6a8080"
+    },
+    {
+      "path": "test/fixtures/inputs/07_qg_multipoles/berry_curvature_dipole_conventional.toml",
+      "bytes": 778,
+      "sha256": "4e08105c722d8fb3560610080a87dd3ce1d7351787121c2abd8c79e7d8e68e23"
+    },
+    {
+      "path": "test/fixtures/inputs/07_qg_multipoles/berry_curvature_quadrupole_conventional.toml",
+      "bytes": 797,
+      "sha256": "bd45c3124d981d3700c4a9a54be1b33c6b0846100373456e3c0538391261683d"
+    },
+    {
+      "path": "test/fixtures/inputs/07_qg_multipoles/quantum_christoffel_symbol_conventional.toml",
+      "bytes": 794,
+      "sha256": "b05de566216987e92dd12a1f98882b0ec5ce660a922b8f4ebe1dd53124d75f31"
+    },
+    {
+      "path": "test/fixtures/inputs/07_qg_multipoles/quantum_metric_dipole_conventional.toml",
+      "bytes": 774,
+      "sha256": "8dfe099815c9a30175a4d2e51a63d4f46112440c145012a29208bffd1705f5bc"
+    },
+    {
+      "path": "test/fixtures/inputs/07_qg_multipoles/quantum_metric_quadrupole_conventional.toml",
+      "bytes": 793,
+      "sha256": "afe815bc61b5d210014a3981f3613b7e3d3f40c79ea3d3f9d83f97ed09bd6488"
+    },
+    {
+      "path": "test/fixtures/inputs/08_shift_geometry/quantum_hermitian_connection_conventional.toml",
+      "bytes": 702,
+      "sha256": "8c8edc7ab8c40feacbe88843013f0b1d6ff17bdf9bd859212618ac355af7c793"
+    },
+    {
+      "path": "test/fixtures/inputs/08_shift_geometry/quantum_hermitian_connection_wilson_loop.toml",
+      "bytes": 832,
+      "sha256": "8c15abfe3aab9a0350ee89572fa03a736639beca5819ccf070a4a9ef91adeb8c"
+    },
+    {
+      "path": "test/fixtures/inputs/08_shift_geometry/shift_vector_geometric_loop.toml",
+      "bytes": 780,
+      "sha256": "ef9de39470aaf0be0c88ed9a241c2dd6365c0d2389f3192b06a695f70e72f8f7"
+    },
+    {
+      "path": "test/fixtures/inputs/08_shift_geometry/shift_vector_wilson_loop.toml",
+      "bytes": 768,
+      "sha256": "2cef289cc4e6f1411bd00127a559931a360b170a347bdbb3c9be7491ae6fb565"
+    },
+    {
+      "path": "test/fixtures/inputs/09_higher_and_spin_geometry/hermitian_curvature_tensor_conventional.toml",
+      "bytes": 699,
+      "sha256": "fc5ec33dcb1755be83aad1d4a489f9362f6537e5c4e13149a9a86a58a80a5b41"
+    },
+    {
+      "path": "test/fixtures/inputs/09_higher_and_spin_geometry/triple_phase_product_conventional.toml",
+      "bytes": 688,
+      "sha256": "824c810b8ad730c389058b34a6b061d144025bc86699d9998de99d67f1201ed8"
+    },
+    {
+      "path": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_berry_curvature_conventional.toml",
+      "bytes": 785,
+      "sha256": "a7f0b88bb0af72b59571939be8614c3efa8e1299f29cb58ede54705b2f1edb56"
+    },
+    {
+      "path": "test/fixtures/inputs/09_higher_and_spin_geometry/zeeman_interband_quantum_metric_conventional.toml",
+      "bytes": 782,
+      "sha256": "cdab5f5cb1af4efbcc5926eb1d01c849d36eb26ccb1b4258a4f77c1824a92201"
+    },
+    {
+      "path": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_sos_occupied_xy.toml",
+      "bytes": 756,
+      "sha256": "d3e8f971590c80b10b2c913f70c88e57d04c42b8c2d2f5269133195768e39a98"
+    },
+    {
+      "path": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_tb_occupied_xy.toml",
+      "bytes": 680,
+      "sha256": "4d84975dbf47818a3bd3b2a26abb074c019fa0ce8df46164d75d7712bdf3188a"
+    },
+    {
+      "path": "test/fixtures/inputs/11_fe_oam_and_linear_response/berry_transport_equivalent_xy.toml",
+      "bytes": 883,
+      "sha256": "29d49eccc0f80c5b2b585efcb3e6e03911d62dfbc2d5fc8dbc9eb329f3c82b42"
+    },
+    {
       "path": "test/fixtures/inputs/16_monolayer_graphene_thg/T10.toml",
       "bytes": 1001,
       "sha256": "110113288bdafe3fb6414310394634d44f0455dc5d1b8e8e503fb74d9ab40210"
@@ -446,6 +806,11 @@
       "path": "test/fixtures/inputs/17_jerk_current/two_band_tb.toml",
       "bytes": 641,
       "sha256": "279519c17fde74ba3f1c02554654d6479441285c2bb2434464c9d3b0f62c8eb2"
+    },
+    {
+      "path": "test/test_shift_domain.py",
+      "bytes": 2935,
+      "sha256": "8b070ced643295dd3a99641cc1faa1fd50b50c2df33c4b4bd58d2eff650578a8"
     }
   ],
   "new_scientific_calculations": 0,
@@ -455,52 +820,181 @@
   "WN_source_changed": false,
   "GitHub_actions_performed": [],
   "remaining_steps": [
-    "Explicit user confirmation before any GitHub mutation",
-    "Use code-owner final release readiness/source identity evidence; tutorial binding436 is engineering only",
-    "After separately authorized publication: real new-asset public download and applicable remote CI checks"
+    "Solecode/remoteowner consumes finalpositive937whitelist and actual9typed+old5loader evidence separately, then performs authorizedmain/requiredCI/release/assets/historybody pipeline.",
+    "NoFull, material, oldloader rerun or GitHubaction is performed by this tutorialbinding stage."
   ],
   "publication_date": null,
   "dataset_DOI": null,
   "WN_CFF_coordination": "Requested review from existing WN owner; no source-repository metadata edited by Tutorials owner",
-  "inventory_scope": "Changed-file identities above exclude this record to avoid self-hashing; full prospective payload and baseline diff retained in private preparation evidence, not a claimed Git commit",
+  "inventory_scope": "Positive937payload only. Current consumed hashes reflect the assembled overlays; actual scientific producers, old replay pins and historical qualifications retain their separate identities.",
   "scientific_payload_changed": false,
   "figures_changed_for_display_only": false,
   "current_reconciliation": {
-    "id": "current-replay-precompile-pin436",
-    "previous_candidate_manifest_sha256": "f5c81c4eece40ec2edd477bcaeccb38d5c758c278803cfb5899c2b3f3f6300b4",
-    "scope": "Two current replay fields/files updated after workload-only software promotion; no physical control, data, figure or release prose changed.",
-    "previous_current_replay_source_manifest_sha256": "7188eb76e7201179a4447bd4a2224734d4d82c64b4f2bb5dc65e58fd6d236a2f",
-    "current_replay_source_manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
-    "recorded_calculation_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
-    "normalization_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
-    "source_change_scope": "Only src/FirstUse/RepresentativeStaticHallAndMultipoleWorkloads.jl according to code-owner frozen bridge; kernels/Runtime/API/deps/tests unchanged.",
-    "source_bridge_record_sha256": "eae146752b0ed59938cb64cbf628d7863f7a6c3175906fa033625f28b4aac582",
-    "finalpath49_closed_record_sha256": "08cc12a6f52543853606145a3ea1a81aefac00063793b3f3f98b8f649ba70a94",
-    "finalpath49_qualification_record_sha256": "c702877063934c3fd1d2cf6fbe0f49c1394be47fe754db2319182461cf665b79",
-    "current_binding436_status": "DEVELOPMENT_PASS_NOT_SCIENTIFIC",
-    "prior_434_435_receipts_and_725_09_sources_relabelled": false,
-    "new_response_integrations": 0,
-    "new_plots": 0,
-    "new_Full": 0,
-    "GitHub_actions": [],
-    "current_binding436": {
+    "id": "formal-tutorial-runtime457-closed",
+    "scope": "Actual9typedlocalruntimechecks plus reused5oldloadercases; no newmaterialorFullqualification",
+    "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+    "source_roles": {
+      "local_code_candidate_public": {
+        "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "role": "Actualformalpublicsource accepted687; tutorialbinding pending"
+      },
+      "current_configuration_validation_source": {
+        "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+        "runs": [
+          "selection-tutorial426-run01",
+          "selection-tutorial438-run01"
+        ],
+        "scope": "Configuration only"
+      },
+      "recorded_material_calculation": {
+        "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "role": "Actual recorded producer, retained"
+      },
+      "normalization_validation": {
+        "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "role": "Recorded09 transformation validation, retained"
+      },
+      "historical_binding_runs": {
+        "runs": [
+          "434",
+          "435",
+          "436"
+        ],
+        "role": "Original evidence identities, not relabelled as source461 checks"
+      },
+      "intern": "Actualformalprivate658accepted687andkeptlocalonly; no privatepayload distributed here.",
+      "historical_THG_replay_binding": {
+        "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+        "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+        "field": "reproduction.source_manifest_sha256",
+        "preserved": true,
+        "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+        "path_in_current450": "Historical metadata only; current TOML expects source461"
+      },
+      "historical_runtime_binding461": {
+        "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+        "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+        "field": "reproduction.source_manifest_sha256",
+        "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+        "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+        "actual_run_id": "selection-tutorial-runtime472-run01",
+        "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+      },
+      "conditional474_history": {
+        "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+        "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+        "field": "reproduction.source_manifest_sha256",
+        "status": "CONDITIONAL_NOT_EXECUTED",
+        "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+      },
+      "conditional591_history": {
+        "manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+        "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+        "field": "reproduction.source_manifest_sha256",
+        "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+        "meaning": "Expected frozen591runtime only, not publishedsource or savedmaterialproducer"
+      },
+      "local_code_candidate_history": [
+        {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+        },
+        {
+          "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+          "role": "Frozen635candidate only; Full641/formal/runtimebinding stillpending in thispreparation"
+        }
+      ],
+      "intern_history": [
+        "Code-owner465 remains separate and is not included in the public tutorial payload",
+        "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here."
+      ],
+      "conditional635_history": {
+        "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+        "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+        "field": "reproduction.source_manifest_sha256",
+        "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+        "meaning": "Expected635runtime only, not savedmaterialproducer"
+      },
+      "conditional_runtime_history": [
+        {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected657runtime only, not recordedmaterialproducer"
+        }
+      ],
+      "current_formal_THG_runtime": {
+        "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+        "field": "reproduction.source_manifest_sha256",
+        "status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
+        "meaning": "Actualcurrentformalruntime only; saved725producer and09normalization retained"
+      }
+    },
+    "actual_runtime_binding": {
+      "actual_run_id": "WN-Tutorial-final-runtime457",
+      "actual_tutorial_location": "InstalledformalTutorialsroot before thismetadata-onlyclosure",
+      "actual_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
       "actual_root_exit": 0,
       "qualification": "DEVELOPMENT_PASS",
       "scientific_status": "NOT_SCIENTIFIC",
-      "typed_checks": 16,
-      "all_typed_checks_pass": true,
+      "typed_predicate_count": 9,
+      "typed_predicates": {
+        "source_identity": true,
+        "exact_report_fields": true,
+        "actual_source": true,
+        "actual_runtime": true,
+        "no_MPI": true,
+        "six_actual_configs": true,
+        "retained_frequency_plan": true,
+        "no_response": true,
+        "original_wrapper_marker": true
+      },
       "configs": 6,
-      "loader_cases": 5,
-      "target_points": 84,
-      "declared_points": 99,
+      "batch": "band-06-base_new30",
+      "target": 84,
+      "declared": 99,
+      "mpi_initialized": false,
       "response_integrations": 0,
-      "strict_original_complete_identity_count": 5,
-      "strict_released": true,
-      "kernel_containment": "UNKNOWN",
-      "clean_loader_fixture_is_new_response": false,
-      "qualification_and_strict_record_sha256": "fad8c1bba07df5e9c65d1b0ec906df6328d28f9006e1093d7ee97ff008cb5ae6",
-      "exact_input_postread_sha256": "d3f811a14fb9bbcce06f38d94f11bbc4bb001e56581239a7b48ca344ba6f30c0"
-    }
+      "strict_GONE_complete_identities": 4,
+      "containment": "UNKNOWN",
+      "actual_input_sha256": {
+        "examples/16_monolayer_graphene_thg/run_valleys.jl": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d",
+        "examples/16_monolayer_graphene_thg/valley_input.toml": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800",
+        "models/graphene/GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
+      },
+      "original_receipt_sha256": {
+        "binding.json": "8ea713f4fd19398d1c9ced2664ab765850cb1ed294e4238b16f25e56cc922f05",
+        "stdout.log": "71aba75e2bea31fe873e265dc0425ff90e008a606baa7e2553d3006092b9fc03",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "exit.json": "7bf6717ff24a90fb49f94383f08121050763439e3b89787dfc3b591341558024",
+        "qualification": "a9564736bf30b3487596df6200a19da2a7488cacec682edd6aef48f16a39bda9",
+        "strict_release": "5b5a975be4a86b4345497311108226ca2bbd0e7e40ecbc6c5ccaf1243ec599d1"
+      },
+      "final_metadata_closure": "OnlyREADME/reproduce/releaseconsumer change after execution; all3actualreadfiles andsameformalroot remain byteexact, no rerun needed",
+      "new_loader_executions": 0,
+      "reused_saved_loader_cases": 5,
+      "reused_old_loader_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616"
+    },
+    "reused_saved_loader": {
+      "original_run_id": "WN-Tutorial-final-binding436",
+      "cases": {
+        "recorded_calculation_and_validation_accepted": true,
+        "wrong_recorded_source_rejected": true,
+        "clean_current_source_accepted": true,
+        "wrong_clean_source_rejected": true,
+        "wrong_clean_normalization_rejected": true
+      },
+      "original_case_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616",
+      "original_strict_receipt_sha256": "fad8c1bba07df5e9c65d1b0ec906df6328d28f9006e1093d7ee97ff008cb5ae6",
+      "byte_source_bridge_sha256": "2afaddfb20e57eab599e1896b6e8773537bfe80c692761f387e124694a430190",
+      "new_executions": 0
+    },
+    "current_consumed_binding_rows": 160,
+    "single_local_install_record_id": "INSTALL457",
+    "old725_09_4c_434_436_472_roles_preserved": true,
+    "GitHub_actions": []
   },
   "reconciliation_history": [
     {
@@ -573,6 +1067,711 @@
       "software_source_or_41_payload_written": false,
       "GitHub_actions": [],
       "software_qualification_scope": "7188 current replay binding434 is engineering only. WN owner reports latest 63x2 ordinary cold gate FAIL (AHCK3 >0.5s), strictly closed. No software/performance PASS or source promotion is granted by this documentation reconciliation."
+    },
+    {
+      "id": "current-replay-precompile-pin436",
+      "previous_candidate_manifest_sha256": "f5c81c4eece40ec2edd477bcaeccb38d5c758c278803cfb5899c2b3f3f6300b4",
+      "scope": "Two current replay fields/files updated after workload-only software promotion; no physical control, data, figure or release prose changed.",
+      "previous_current_replay_source_manifest_sha256": "7188eb76e7201179a4447bd4a2224734d4d82c64b4f2bb5dc65e58fd6d236a2f",
+      "current_replay_source_manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+      "recorded_calculation_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+      "normalization_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+      "source_change_scope": "Only src/FirstUse/RepresentativeStaticHallAndMultipoleWorkloads.jl according to code-owner frozen bridge; kernels/Runtime/API/deps/tests unchanged.",
+      "source_bridge_record_sha256": "eae146752b0ed59938cb64cbf628d7863f7a6c3175906fa033625f28b4aac582",
+      "finalpath49_closed_record_sha256": "08cc12a6f52543853606145a3ea1a81aefac00063793b3f3f98b8f649ba70a94",
+      "finalpath49_qualification_record_sha256": "c702877063934c3fd1d2cf6fbe0f49c1394be47fe754db2319182461cf665b79",
+      "current_binding436_status": "DEVELOPMENT_PASS_NOT_SCIENTIFIC",
+      "prior_434_435_receipts_and_725_09_sources_relabelled": false,
+      "new_response_integrations": 0,
+      "new_plots": 0,
+      "new_Full": 0,
+      "GitHub_actions": [],
+      "current_binding436": {
+        "actual_root_exit": 0,
+        "qualification": "DEVELOPMENT_PASS",
+        "scientific_status": "NOT_SCIENTIFIC",
+        "typed_checks": 16,
+        "all_typed_checks_pass": true,
+        "configs": 6,
+        "loader_cases": 5,
+        "target_points": 84,
+        "declared_points": 99,
+        "response_integrations": 0,
+        "strict_original_complete_identity_count": 5,
+        "strict_released": true,
+        "kernel_containment": "UNKNOWN",
+        "clean_loader_fixture_is_new_response": false,
+        "qualification_and_strict_record_sha256": "fad8c1bba07df5e9c65d1b0ec906df6328d28f9006e1093d7ee97ff008cb5ae6",
+        "exact_input_postread_sha256": "d3f811a14fb9bbcce06f38d94f11bbc4bb001e56581239a7b48ca344ba6f30c0"
+      }
+    },
+    {
+      "id": "isolated-tutorial-composite449",
+      "scope": "Assembly and byte/metadata consumption identity only; no new runtime or scientific qualification",
+      "parent_release_record_sha256": "8a5f4f8099c687674451d328cba570e742006ac601146fe7b18cb7e60c61bf07",
+      "parent_payload_inventory_sha256": "7666fd11072a00256757707460a8ef73a4b8e5f31e8b033488b1a0ff8847402b",
+      "original937_whitelist_sha256": "337d62f3ac70e9e0a6390fe69054c5ba313907a31acefe80ffab9cb223f2525f",
+      "overlay_stages": [
+        "442",
+        "445",
+        "446",
+        "447",
+        "448"
+      ],
+      "unique_overlay_paths": 76,
+      "resolved_readme_successions": 3,
+      "consumed_binding_rows": 160,
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "legacy_explicit_THG_replay_pin": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "run_with_public461": "Would reject the manifest mismatch in the existing strict wrapper; no rebind or test was performed"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Code-owner465 remains separate and is not included in the public tutorial payload"
+      },
+      "original_binding436_and_prior_reconciliations_preserved": true,
+      "original_scientific_data_figures_recipes_changed": false,
+      "new_Julia_tests_material_or_plot_runs": 0,
+      "formal_install": false,
+      "promotion": false,
+      "remote_operations": [],
+      "static_consumption_followup": {
+        "path": "manifests/reproducibility_map.json",
+        "source": "Canonical unchanged chapter16/17 reproduce records",
+        "case_rows_synchronized": 9,
+        "figure_rows_synchronized": 6,
+        "prior_mirror_kept_in_private_evidence": true,
+        "new_scientific_or_runtime_qualification": false
+      }
+    },
+    {
+      "id": "isolated-tutorial-runtime-pin450",
+      "scope": "Static expected-runtime binding only; actual check pending, not scientific qualification",
+      "parent449_inventory_sha256": "0cde4ec7d0bf8e556b6182efd8f10f8ff19429836161640f39b476ab75689dcd",
+      "parent_release_record_sha256": "a67ca928f3c3e527c9b133f88f39d7582d1391f1456b4a647c640e99d0bc858d",
+      "current_replay_source_manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Code-owner465 remains separate and is not included in the public tutorial payload",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "PREPARED_NOT_EXECUTED",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer"
+        }
+      },
+      "historical436_449_roles_preserved": true,
+      "consumed_binding_rows": 160,
+      "no_response_recomputation": true,
+      "formal_install": false,
+      "remote_operations": []
+    },
+    {
+      "id": "isolated-tutorial-binding-closure451",
+      "scope": "Metadata closure using actual472 execution on450; no new execution or scientific qualification on451",
+      "parent450_inventory_sha256": "4dba9de612c608ae3c7c42a3f472987ad861ad7bd184d75d88ca167c03091cc7",
+      "parent_release_record_sha256": "c48f07a837f1e1907d34913e21e04c864a4a024a69bf787364803dd563d993f2",
+      "current_replay_source_manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Code-owner465 remains separate and is not included in the public tutorial payload",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        }
+      },
+      "actual_binding_evidence": {
+        "actual_run_id": "selection-tutorial-runtime472-run01",
+        "actual_executed_tutorial_snapshot": "450",
+        "actual_root_exit": 0,
+        "qualification": "DEVELOPMENT_PASS",
+        "scientific_status": "NOT_SCIENTIFIC",
+        "kernel_containment_status": "UNKNOWN",
+        "strict_GONE_original_identities": 4,
+        "source_manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+        "binding_probe_sha256": "81470d0e3db1319fab0105d50bba5dc4365d548a56fb1af00feebc410cae2257",
+        "actual_tutorial_input_sha256": {
+          "examples/16_monolayer_graphene_thg/run_valleys.jl": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d",
+          "examples/16_monolayer_graphene_thg/valley_input.toml": "0800a14a16910da6c4f24f824f12dc49a90c04c5f4b3d42f0511507fc16e04e4",
+          "models/graphene/GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
+        },
+        "configs": 6,
+        "batch": "band-06-base_new30",
+        "target": 84,
+        "declared": 99,
+        "response_integrations": 0,
+        "mpi_initialized": false,
+        "saved_loader": "NOT_RERUN_UNCHANGED",
+        "original_receipt_sha256": {
+          "contract.json": "e43d4b4f7ebfdbf2da260dc1b12b6d1d1f5fa6a10e52c975dcae2b284bb4fd2b",
+          "qualify.stdout": "a9564736bf30b3487596df6200a19da2a7488cacec682edd6aef48f16a39bda9",
+          "CLOSED.json": "2222489cc1177ff87dfc4476946d0de0b9417847f2a6488cd0a6635513d2dec7",
+          "binding.json": "3225e5e0f8dbf4d28f7d0c714e9252e71ff05b737fd376c1a558b70cbb5b2517",
+          "stdout.log": "1896d434d6ff47d3323ca2dd9947b9fde2cfdb6dc82f38279a6f434fa84176a7",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit.json": "0de5a667981da3c205c8d1352df30fbfc285595b52c2d839d78fa932c51af827",
+          "env.json": "25e28c6e7b250760ac167d6b3166a30247b89b3100e862ba2cae31763df87e51",
+          "argv.json": "a2b3689fa334870fae9f7c04a019a0010f755daa4f40be2efef91778b0b54015"
+        },
+        "applicability_to451": "Metadata-only successor; exact three inputs, relative layout, source and probe unchanged.472 executed450, not451.",
+        "new_execution_on451": false,
+        "publication_or_scientific_qualification": false
+      },
+      "current_consumed_binding_rows": 160,
+      "original450_449_436_history_preserved": true,
+      "formal_install": false,
+      "new_runtime_or_scientific_runs": 0,
+      "remote_operations": []
+    },
+    {
+      "id": "conditional474-and-publication6-452",
+      "scope": "Isolated prospective metadata/input plan, not installedfullpayload or qualification",
+      "parent451_inventory_sha256": "5f4d90deeb4dc33b9c9e0d891aa614cae5abc6488bdee9c0a16cf2b6b24ff360",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Code-owner465 remains separate and is not included in the public tutorial payload",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "historical_runtime_binding461": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        },
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_NOT_EXECUTED",
+          "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+        }
+      },
+      "current_replay_source_manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+      "original472_on450_and451_bridge_preserved_in_history": true,
+      "source474_runtime_check": "NOT_EXECUTED",
+      "current_consumed_binding_rows": 160,
+      "formal_install": false,
+      "remote_operations": []
+    },
+    {
+      "id": "complete937-conditional591-tutorial454",
+      "scope": "Actualfulltutorialpayload built viaCoW; staticpreparation only, Full/formalpath/newruntimebinding stillpending",
+      "parent451_inventory_sha256": "5f4d90deeb4dc33b9c9e0d891aa614cae5abc6488bdee9c0a16cf2b6b24ff360",
+      "inherited452_merge_plan_sha256": "2f642afcb52afb49063074876e7c4d24135381f096ea4304ce752402f6c78a67",
+      "current_replay_source_manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Code-owner465 remains separate and is not included in the public tutorial payload",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "historical_runtime_binding461": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        },
+        "conditional474_history": {
+          "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_NOT_EXECUTED",
+          "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+        },
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected frozen591runtime only, not publishedsource or savedmaterialproducer"
+        }
+      },
+      "original725_09_4c_436_472_roles_preserved": true,
+      "current_consumed_binding_rows": 160,
+      "newruntimebinding591": "NOT_EXECUTED",
+      "originalPGWplots": "Recordedoldfullactivewindow; no newgroupsmaterialqualification",
+      "formal_install": false,
+      "remote_operations": []
+    },
+    {
+      "id": "complete937-conditional635-tutorial455",
+      "scope": "Actualfulltutorialpayload preparation only; Full/formalpath and new6configurationbinding remainpending",
+      "parent454_inventory_sha256": "2a57cb6467a2050daf29bb99f321cf279ae3d22bb0d403218e5ff3dbb2e73818",
+      "inherited_merge_plan": "keep856/update81; fourpublicationbodies and438sidecar retained",
+      "current_replay_source_manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+          "role": "Frozen635candidate only; Full641/formal/runtimebinding stillpending in thispreparation"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here.",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "historical_runtime_binding461": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        },
+        "conditional474_history": {
+          "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_NOT_EXECUTED",
+          "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+        },
+        "conditional591_history": {
+          "manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected frozen591runtime only, not publishedsource or savedmaterialproducer"
+        },
+        "local_code_candidate_history": [
+          {
+            "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+            "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+          }
+        ],
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected635runtime only, not savedmaterialproducer"
+        },
+        "intern_history": [
+          "Code-owner465 remains separate and is not included in the public tutorial payload"
+        ]
+      },
+      "historical725_09_4c_436_472_roles_preserved": true,
+      "current_consumed_binding_rows": 160,
+      "new635binding": "NOT_EXECUTED",
+      "formal_install": false,
+      "remote_operations": []
+    },
+    {
+      "id": "conditional657-smallproposal456",
+      "scope": "Only3smallfiles over frozen455; no fullrebuild, installedcandidate or runtimeexecution",
+      "parent455_inventory_sha256": "fdf2d51ea0e4b7dd7eec915e963ee8d5c55365fcd5dc254ec7c983a04f79138b",
+      "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "role": "Conditional657target; ownerreportedpublicFull681PASS is distinct from tutorialbinding/formal/publicationqualification"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Codeowner658local-only; ownFull685inprogress as reported, not grantedqualification or partofpublictutorialpayload.",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "historical_runtime_binding461": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        },
+        "conditional474_history": {
+          "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_NOT_EXECUTED",
+          "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+        },
+        "conditional591_history": {
+          "manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected frozen591runtime only, not publishedsource or savedmaterialproducer"
+        },
+        "local_code_candidate_history": [
+          {
+            "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+            "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+          },
+          {
+            "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+            "role": "Frozen635candidate only; Full641/formal/runtimebinding stillpending in thispreparation"
+          }
+        ],
+        "intern_history": [
+          "Code-owner465 remains separate and is not included in the public tutorial payload",
+          "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here."
+        ],
+        "conditional635_history": {
+          "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected635runtime only, not savedmaterialproducer"
+        },
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected657runtime only, not recordedmaterialproducer"
+        }
+      },
+      "original725_09_4c_436_472_roles_preserved": true,
+      "current_consumed_binding_rows": 160,
+      "new657binding": "NOT_EXECUTED",
+      "formal_install": false,
+      "remote_operations": []
+    },
+    {
+      "id": "formal-tutorial-prebinding457",
+      "scope": "Finalsource687accepted, installation andtutorialbinding pending; no newresponseexecution",
+      "parent455_inventory_sha256": "fdf2d51ea0e4b7dd7eec915e963ee8d5c55365fcd5dc254ec7c983a04f79138b",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "role": "Actualformalpublicsource accepted687; tutorialbinding pending"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Actualformalprivate658accepted687andkeptlocalonly; no privatepayload distributed here.",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "historical_runtime_binding461": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        },
+        "conditional474_history": {
+          "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_NOT_EXECUTED",
+          "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+        },
+        "conditional591_history": {
+          "manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected frozen591runtime only, not publishedsource or savedmaterialproducer"
+        },
+        "local_code_candidate_history": [
+          {
+            "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+            "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+          },
+          {
+            "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+            "role": "Frozen635candidate only; Full641/formal/runtimebinding stillpending in thispreparation"
+          }
+        ],
+        "intern_history": [
+          "Code-owner465 remains separate and is not included in the public tutorial payload",
+          "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here."
+        ],
+        "conditional635_history": {
+          "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected635runtime only, not savedmaterialproducer"
+        },
+        "expected_local_THG_runtime": {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "FORMAL_SOURCE_ACCEPTED_BINDING_PENDING",
+          "meaning": "FormalpublicMFaccepted687, no newtutorialexecution yet"
+        },
+        "conditional_runtime_history": [
+          {
+            "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+            "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+            "field": "reproduction.source_manifest_sha256",
+            "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+            "meaning": "Expected657runtime only, not recordedmaterialproducer"
+          }
+        ]
+      },
+      "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+      "source_acceptance706_sha256": "99d20763f88f75cfe10c10ab2160f9f554cd59fb92556df811a2e15fa3a1aec4",
+      "current_consumed_binding_rows": 160,
+      "runtime_binding457": "PENDING",
+      "new_actual_typed_predicates_expected": 9,
+      "saved_loader": "Reuseold5receipts/hash/bytebridge, not newexecution",
+      "formal_tutorial_install": "PENDING",
+      "remote_operations": []
     }
   ],
   "publication_metadata51": {
@@ -583,5 +1782,80 @@
     "parent_consuming_manifest_sha256": "8a5f4f8099c687674451d328cba570e742006ac601146fe7b18cb7e60c61bf07",
     "current_replay_source_manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
     "scientific_receipts_relabelled": false
+  },
+  "publication_metadata51_role": "Preserved preparation record from checkout8d2facf; its4c27runtime field is historical, not current474binding.",
+  "publication_preparation_history": [
+    {
+      "role": "Unexecuted452conditional474publication/runtime merge, retained unchanged",
+      "record": {
+        "scope": "Conditional merge of approvedpublication6 with frozen451history; not remote publication",
+        "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
+        "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
+        "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
+        "approved_publication6_reference": "Original438snapshot retained outside payload",
+        "versioned_asset_urls_verified_live": false,
+        "asset_bytes_checksums_license_notice_unchanged": true,
+        "current_expected_runtime_manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+        "runtime_status": "NOT_EXECUTED_FOR474",
+        "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
+      }
+    },
+    {
+      "role": "454conditional591publicationpreparation retained unchanged",
+      "record": {
+        "scope": "Current591conditional preparation preserves alreadyapprovedpublicationtexts and correctedsidecar; no upload/download or qualification claimed",
+        "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
+        "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
+        "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
+        "approved_publication6_reference": "Original438snapshot retained outside payload",
+        "versioned_asset_urls_verified_live": false,
+        "asset_bytes_checksums_license_notice_unchanged": true,
+        "current_expected_runtime_manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+        "runtime_status": "NOT_EXECUTED_FOR591",
+        "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
+      }
+    },
+    {
+      "role": "455conditional635publication/runtimeproposal preserved unchanged",
+      "record": {
+        "scope": "Current635conditionalpreparation, approvedpublicationbodies and correctedsidecar retained; no publication/runtimePASSclaimed",
+        "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
+        "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
+        "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
+        "approved_publication6_reference": "Original438snapshot retained outside payload",
+        "versioned_asset_urls_verified_live": false,
+        "asset_bytes_checksums_license_notice_unchanged": true,
+        "current_expected_runtime_manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+        "runtime_status": "NOT_EXECUTED_FOR635",
+        "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
+      }
+    },
+    {
+      "role": "Original456proposal retained unchanged",
+      "record": {
+        "scope": "Conditional657test-onlysuccessor proposal; not finalformal/runtime/publication delivery",
+        "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
+        "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
+        "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
+        "approved_publication6_reference": "Original438snapshot retained outside payload",
+        "versioned_asset_urls_verified_live": false,
+        "asset_bytes_checksums_license_notice_unchanged": true,
+        "current_expected_runtime_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "runtime_status": "NOT_EXECUTED_FOR657",
+        "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
+      }
+    }
+  ],
+  "publication_metadata457": {
+    "scope": "Actualcurrentlocalruntime binding complete; no GitHubrelease/upload claim",
+    "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
+    "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
+    "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
+    "approved_publication6_reference": "Original438snapshot retained outside payload",
+    "versioned_asset_urls_verified_live": false,
+    "asset_bytes_checksums_license_notice_unchanged": true,
+    "current_expected_runtime_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+    "runtime_status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
+    "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
   }
 }
