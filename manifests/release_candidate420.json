@@ -1,7 +1,7 @@
 {
   "schema": "tutorial-pre-github-candidate/1",
   "version": "1.2.0",
-  "status": "LOCAL_TUTORIAL_FINAL_RUNTIME_BINDING_COMPLETE_REMOTE_ACTIONS_OWNED_SEPARATELY",
+  "status": "FINAL_LOCAL_TUTORIAL_SOURCE_BINDING458_VERIFIED",
   "tutorial_git_baseline": "96d2690ecd1de196cc2c4c4b33d65b98df28b1de",
   "baseline_is_release_commit": false,
   "software_validation": "software_validation.json",
@@ -474,8 +474,8 @@
     },
     {
       "path": "examples/16_monolayer_graphene_thg/reproduce.json",
-      "bytes": 101373,
-      "sha256": "6a4484fac8e1ffdbfacc5c60d088f5c832cc5810e066ea347a22af87ce9724c4"
+      "bytes": 106630,
+      "sha256": "4fce8cd25ddb3f4de0f08bf05e6b4a400e2b00a1daf32751b0ae3024c06dc076"
     },
     {
       "path": "examples/16_monolayer_graphene_thg/run_valleys.jl",
@@ -490,7 +490,7 @@
     {
       "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
       "bytes": 5551,
-      "sha256": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800"
+      "sha256": "37ca2275c06a5f7a99948312ef3de994f134de4d76a9b07297874602fcd07fba"
     },
     {
       "path": "examples/17_jerk_current/README.md",
@@ -820,8 +820,8 @@
   "WN_source_changed": false,
   "GitHub_actions_performed": [],
   "remaining_steps": [
-    "Solecode/remoteowner consumes finalpositive937whitelist and actual9typed+old5loader evidence separately, then performs authorizedmain/requiredCI/release/assets/historybody pipeline.",
-    "NoFull, material, oldloader rerun or GitHubaction is performed by this tutorialbinding stage."
+    "Sole remote writer integrates this exact three-file delta and verifies required CI for the exact source commit before publication.",
+    "Verify new versioned asset public downloads only after actual release/upload; no such verification claimed here."
   ],
   "publication_date": null,
   "dataset_DOI": null,
@@ -830,13 +830,13 @@
   "scientific_payload_changed": false,
   "figures_changed_for_display_only": false,
   "current_reconciliation": {
-    "id": "formal-tutorial-runtime457-closed",
-    "scope": "Actual9typedlocalruntimechecks plus reused5oldloadercases; no newmaterialorFullqualification",
-    "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+    "id": "formal-tutorial-runtime458-closed",
+    "scope": "Nine actual local runtime predicates and five separately reused original436 cases; not scientific/CI qualification",
+    "current_replay_source_manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
     "source_roles": {
       "local_code_candidate_public": {
-        "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
-        "role": "Actualformalpublicsource accepted687; tutorialbinding pending"
+        "manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
+        "role": "Actual formal718 accepted722, tutorial source binding458 verified; no CI qualification implied"
       },
       "current_configuration_validation_source": {
         "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
@@ -862,7 +862,7 @@
         ],
         "role": "Original evidence identities, not relabelled as source461 checks"
       },
-      "intern": "Actualformalprivate658accepted687andkeptlocalonly; no privatepayload distributed here.",
+      "intern": "Actual formal719 accepted722; local only, not distributed in Tutorials",
       "historical_THG_replay_binding": {
         "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
         "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
@@ -902,11 +902,16 @@
         {
           "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
           "role": "Frozen635candidate only; Full641/formal/runtimebinding stillpending in thispreparation"
+        },
+        {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "role": "Actualformalpublicsource accepted687; tutorialbinding pending"
         }
       ],
       "intern_history": [
         "Code-owner465 remains separate and is not included in the public tutorial payload",
-        "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here."
+        "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here.",
+        "Actualformalprivate658accepted687andkeptlocalonly; no privatepayload distributed here."
       ],
       "conditional635_history": {
         "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
@@ -925,17 +930,31 @@
         }
       ],
       "current_formal_THG_runtime": {
-        "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
         "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
         "field": "reproduction.source_manifest_sha256",
-        "status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
-        "meaning": "Actualcurrentformalruntime only; saved725producer and09normalization retained"
-      }
+        "status": "ACTUAL_FORMAL_RUNTIME_BINDING458_VERIFIED",
+        "meaning": "Actual runtime only; saved725 producer,09 transformation and previous binding records retain original roles"
+      },
+      "formal_runtime_binding_history": [
+        {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
+          "meaning": "Actualcurrentformalruntime only; saved725producer and09normalization retained"
+        }
+      ]
     },
+    "original457_inventory_sha256": "791ca59dab127d0bf24ddf66e6f13268bc04324539b41dadb7acb2777c5481c8",
+    "source_acceptance458_sha256": "dc79c1bd24a49965677cbf0469040000843628bae0040251d6f6535766beb135",
+    "current_consumed_binding_rows": 160,
+    "single_local_install_record_id": "INSTALL458",
+    "GitHub_actions": [],
     "actual_runtime_binding": {
-      "actual_run_id": "WN-Tutorial-final-runtime457",
-      "actual_tutorial_location": "InstalledformalTutorialsroot before thismetadata-onlyclosure",
-      "actual_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+      "actual_run_id": "WN-Tutorial-final-runtime458",
+      "actual_tutorial_location": "Installed formal Tutorials root before metadata-only closure",
+      "actual_source_manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
       "actual_root_exit": 0,
       "qualification": "DEVELOPMENT_PASS",
       "scientific_status": "NOT_SCIENTIFIC",
@@ -961,18 +980,18 @@
       "containment": "UNKNOWN",
       "actual_input_sha256": {
         "examples/16_monolayer_graphene_thg/run_valleys.jl": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d",
-        "examples/16_monolayer_graphene_thg/valley_input.toml": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800",
+        "examples/16_monolayer_graphene_thg/valley_input.toml": "37ca2275c06a5f7a99948312ef3de994f134de4d76a9b07297874602fcd07fba",
         "models/graphene/GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
       },
       "original_receipt_sha256": {
-        "binding.json": "8ea713f4fd19398d1c9ced2664ab765850cb1ed294e4238b16f25e56cc922f05",
-        "stdout.log": "71aba75e2bea31fe873e265dc0425ff90e008a606baa7e2553d3006092b9fc03",
+        "binding.json": "e8a19b3873f71351bc168bb3484ad3ed7b2c381fc12db3d8e1fc2f0758021bec",
+        "stdout.log": "7526e76dd17f1b624767cb62fb938229fff34c5886406dece981249272f907ed",
         "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "exit.json": "7bf6717ff24a90fb49f94383f08121050763439e3b89787dfc3b591341558024",
+        "exit.json": "1c112882a2a530e5054090e3ee825ab8f8b99865423d331f05dfd55ff46cbeb6",
         "qualification": "a9564736bf30b3487596df6200a19da2a7488cacec682edd6aef48f16a39bda9",
-        "strict_release": "5b5a975be4a86b4345497311108226ca2bbd0e7e40ecbc6c5ccaf1243ec599d1"
+        "strict_release": "8a865d767c4ddc4819c3c4f32376ed904e7bcced14a188b0311f912adf1b59d7"
       },
-      "final_metadata_closure": "OnlyREADME/reproduce/releaseconsumer change after execution; all3actualreadfiles andsameformalroot remain byteexact, no rerun needed",
+      "final_metadata_closure": "Only README/reproduce/release metadata after execution; same root and exact three executed inputs unchanged; no rerun",
       "new_loader_executions": 0,
       "reused_saved_loader_cases": 5,
       "reused_old_loader_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616"
@@ -988,13 +1007,10 @@
       },
       "original_case_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616",
       "original_strict_receipt_sha256": "fad8c1bba07df5e9c65d1b0ec906df6328d28f9006e1093d7ee97ff008cb5ae6",
-      "byte_source_bridge_sha256": "2afaddfb20e57eab599e1896b6e8773537bfe80c692761f387e124694a430190",
+      "byte_source_bridge_sha256": "dca811112dfc315d8c343924cb84a1006ca26cba43f75a4c683feff95060a3a3",
       "new_executions": 0
     },
-    "current_consumed_binding_rows": 160,
-    "single_local_install_record_id": "INSTALL457",
-    "old725_09_4c_434_436_472_roles_preserved": true,
-    "GitHub_actions": []
+    "old725_09_4c_434_436_472_457_roles_preserved": true
   },
   "reconciliation_history": [
     {
@@ -1772,6 +1788,173 @@
       "saved_loader": "Reuseold5receipts/hash/bytebridge, not newexecution",
       "formal_tutorial_install": "PENDING",
       "remote_operations": []
+    },
+    {
+      "id": "formal-tutorial-runtime457-closed",
+      "scope": "Actual9typedlocalruntimechecks plus reused5oldloadercases; no newmaterialorFullqualification",
+      "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+      "source_roles": {
+        "local_code_candidate_public": {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "role": "Actualformalpublicsource accepted687; tutorialbinding pending"
+        },
+        "current_configuration_validation_source": {
+          "manifest_sha256": "6b6fac9737d5bb3ace278e5d753c1532fe658305dc0c231faf82f293326b85e0",
+          "runs": [
+            "selection-tutorial426-run01",
+            "selection-tutorial438-run01"
+          ],
+          "scope": "Configuration only"
+        },
+        "recorded_material_calculation": {
+          "manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "role": "Actual recorded producer, retained"
+        },
+        "normalization_validation": {
+          "manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "role": "Recorded09 transformation validation, retained"
+        },
+        "historical_binding_runs": {
+          "runs": [
+            "434",
+            "435",
+            "436"
+          ],
+          "role": "Original evidence identities, not relabelled as source461 checks"
+        },
+        "intern": "Actualformalprivate658accepted687andkeptlocalonly; no privatepayload distributed here.",
+        "historical_THG_replay_binding": {
+          "manifest_sha256": "4c27eb71b58207059d05cfd489aaa7996ed8c12487be4bd3ea535e83ef42b0b6",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "preserved": true,
+          "role": "Historical436 runtime and frozen449 input, retained unchanged in those artifacts",
+          "path_in_current450": "Historical metadata only; current TOML expects source461"
+        },
+        "historical_runtime_binding461": {
+          "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "VERIFIED_ON450_METADATA_APPLICABLE_TO451",
+          "meaning": "New local candidate expected runtime only; not a published source or recorded response producer",
+          "actual_run_id": "selection-tutorial-runtime472-run01",
+          "scope": "Six configuration constructions only; no scientific qualification or new451execution"
+        },
+        "conditional474_history": {
+          "manifest_sha256": "6da3e0ae55e340a32f7ebb222fc04f8778d40c2b86c78f41ec1e4473607a011f",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_NOT_EXECUTED",
+          "meaning": "Only expected474runtime, not savedmaterial producer or source-qualified release"
+        },
+        "conditional591_history": {
+          "manifest_sha256": "f265da66b5d1277a521c609b399b59937d74873111238848a65ef1d928064dc2",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected frozen591runtime only, not publishedsource or savedmaterialproducer"
+        },
+        "local_code_candidate_history": [
+          {
+            "manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+            "role": "Frozen code-owner candidate; not formal/published runtime and not a new tutorial material producer"
+          },
+          {
+            "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+            "role": "Frozen635candidate only; Full641/formal/runtimebinding stillpending in thispreparation"
+          }
+        ],
+        "intern_history": [
+          "Code-owner465 remains separate and is not included in the public tutorial payload",
+          "Currentcodeowner636islocal-only and excluded frompublictutorialpayload; itsownqualification/formalpath is not granted here."
+        ],
+        "conditional635_history": {
+          "manifest_sha256": "62fbc705f5684f7194e82d4dae5c2ddec34076dd3ba7b38b32ad74e2cfb7a791",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+          "meaning": "Expected635runtime only, not savedmaterialproducer"
+        },
+        "conditional_runtime_history": [
+          {
+            "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+            "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+            "field": "reproduction.source_manifest_sha256",
+            "status": "CONDITIONAL_BINDING_NOT_EXECUTED",
+            "meaning": "Expected657runtime only, not recordedmaterialproducer"
+          }
+        ],
+        "current_formal_THG_runtime": {
+          "manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "path": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "field": "reproduction.source_manifest_sha256",
+          "status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
+          "meaning": "Actualcurrentformalruntime only; saved725producer and09normalization retained"
+        }
+      },
+      "actual_runtime_binding": {
+        "actual_run_id": "WN-Tutorial-final-runtime457",
+        "actual_tutorial_location": "InstalledformalTutorialsroot before thismetadata-onlyclosure",
+        "actual_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "actual_root_exit": 0,
+        "qualification": "DEVELOPMENT_PASS",
+        "scientific_status": "NOT_SCIENTIFIC",
+        "typed_predicate_count": 9,
+        "typed_predicates": {
+          "source_identity": true,
+          "exact_report_fields": true,
+          "actual_source": true,
+          "actual_runtime": true,
+          "no_MPI": true,
+          "six_actual_configs": true,
+          "retained_frequency_plan": true,
+          "no_response": true,
+          "original_wrapper_marker": true
+        },
+        "configs": 6,
+        "batch": "band-06-base_new30",
+        "target": 84,
+        "declared": 99,
+        "mpi_initialized": false,
+        "response_integrations": 0,
+        "strict_GONE_complete_identities": 4,
+        "containment": "UNKNOWN",
+        "actual_input_sha256": {
+          "examples/16_monolayer_graphene_thg/run_valleys.jl": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d",
+          "examples/16_monolayer_graphene_thg/valley_input.toml": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800",
+          "models/graphene/GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
+        },
+        "original_receipt_sha256": {
+          "binding.json": "8ea713f4fd19398d1c9ced2664ab765850cb1ed294e4238b16f25e56cc922f05",
+          "stdout.log": "71aba75e2bea31fe873e265dc0425ff90e008a606baa7e2553d3006092b9fc03",
+          "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exit.json": "7bf6717ff24a90fb49f94383f08121050763439e3b89787dfc3b591341558024",
+          "qualification": "a9564736bf30b3487596df6200a19da2a7488cacec682edd6aef48f16a39bda9",
+          "strict_release": "5b5a975be4a86b4345497311108226ca2bbd0e7e40ecbc6c5ccaf1243ec599d1"
+        },
+        "final_metadata_closure": "OnlyREADME/reproduce/releaseconsumer change after execution; all3actualreadfiles andsameformalroot remain byteexact, no rerun needed",
+        "new_loader_executions": 0,
+        "reused_saved_loader_cases": 5,
+        "reused_old_loader_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616"
+      },
+      "reused_saved_loader": {
+        "original_run_id": "WN-Tutorial-final-binding436",
+        "cases": {
+          "recorded_calculation_and_validation_accepted": true,
+          "wrong_recorded_source_rejected": true,
+          "clean_current_source_accepted": true,
+          "wrong_clean_source_rejected": true,
+          "wrong_clean_normalization_rejected": true
+        },
+        "original_case_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616",
+        "original_strict_receipt_sha256": "fad8c1bba07df5e9c65d1b0ec906df6328d28f9006e1093d7ee97ff008cb5ae6",
+        "byte_source_bridge_sha256": "2afaddfb20e57eab599e1896b6e8773537bfe80c692761f387e124694a430190",
+        "new_executions": 0
+      },
+      "current_consumed_binding_rows": 160,
+      "single_local_install_record_id": "INSTALL457",
+      "old725_09_4c_434_436_472_roles_preserved": true,
+      "GitHub_actions": []
     }
   ],
   "publication_metadata51": {
@@ -1844,18 +2027,30 @@
         "runtime_status": "NOT_EXECUTED_FOR657",
         "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
       }
+    },
+    {
+      "role": "Actual457 local runtime metadata retained unchanged",
+      "record": {
+        "scope": "Actualcurrentlocalruntime binding complete; no GitHubrelease/upload claim",
+        "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
+        "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
+        "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
+        "approved_publication6_reference": "Original438snapshot retained outside payload",
+        "versioned_asset_urls_verified_live": false,
+        "asset_bytes_checksums_license_notice_unchanged": true,
+        "current_expected_runtime_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "runtime_status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
+        "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
+      }
     }
   ],
-  "publication_metadata457": {
-    "scope": "Actualcurrentlocalruntime binding complete; no GitHubrelease/upload claim",
-    "checkout_parent_commit": "8d2facf21b46890d02f2d5c6078ea45b69d7fd5c",
-    "checkout_parent_release_manifest_sha256": "e5c1d2eb2eee392ba6383fd79d85264fb5db82c04d9e1cc704d31bf99bad2c75",
-    "parent451_release_manifest_sha256": "7983683239a90feccc77a451e8261aa8e4e07b77e4b988390625218f07c72040",
-    "approved_publication6_reference": "Original438snapshot retained outside payload",
-    "versioned_asset_urls_verified_live": false,
+  "publication_metadata458": {
+    "scope": "Actual current local runtime binding complete; approved publication text/assets unchanged; no new release/upload claim",
+    "current_expected_runtime_manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
+    "runtime_status": "ACTUAL_FORMAL_RUNTIME_BINDING458_VERIFIED",
     "asset_bytes_checksums_license_notice_unchanged": true,
-    "current_expected_runtime_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
-    "runtime_status": "ACTUAL_FORMAL_RUNTIME_BINDING457_VERIFIED",
-    "actual_remote_publication_record": "Owner records separately after exactrequiredCI and actual release/upload success"
+    "versioned_asset_urls_verified_live": false,
+    "source_commit_reported_by_code_owner": "d35d2b8455118315d05fafd5fe7f8efb20fb77b8",
+    "source_CI": "43759685841 reported in progress; no PASS claimed"
   }
 }

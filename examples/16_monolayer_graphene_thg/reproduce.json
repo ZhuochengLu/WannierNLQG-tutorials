@@ -949,13 +949,13 @@
       "input": "examples/16_monolayer_graphene_thg/valley_input.toml",
       "driver": "examples/16_monolayer_graphene_thg/run_valleys.jl",
       "collector": "examples/16_monolayer_graphene_thg/collect_valleys.py",
-      "source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+      "source_manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
       "reason": "SinglepublicTaskConfig perCartesianregion;32explicitvectors preserve executed shape,84target selection after originalBZweighted sums",
       "response_recomputed_during_adoption": false,
       "historical_execution_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
-      "validation_role": "Actualformal-source six-configurationbinding457passed; zeroresponseintegration, oldmaterialandnormalizationidentitiesretained",
+      "validation_role": "Actual formal718 six-configuration binding458 passed; no response integration",
       "normalization_input_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
-      "runtime_binding_status": "FORMAL_RUNTIME_BINDING457_VERIFIED"
+      "runtime_binding_status": "ACTUAL_FORMAL718_BINDING458_VERIFIED"
     }
   ],
   "periodic_normalization_migration": {
@@ -984,31 +984,31 @@
     "clean_replay_postprocessing": "volume-aware collector and plotting loader; source, normalization and model checks; fixture validation is separate from execution evidence"
   },
   "replay_source_binding": {
-    "status": "FORMAL_RUNTIME_BINDING457_VERIFIED",
-    "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+    "status": "FORMAL_RUNTIME_BINDING458_VERIFIED",
+    "current_replay_source_manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
     "recorded_calculation_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
     "recorded_normalization_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
     "existing_425_426_430_evidence_retained": true,
     "new_response_execution": false,
     "recorded_tables_and_figures_unchanged": true,
-    "expected_runtime_role": "Actualformalpublicsource loadedandverified by457; not a new savedmaterialproducer",
-    "previous_replay_source_manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+    "expected_runtime_role": "Actual formal718 source loaded and verified by458; not a saved material producer or CI qualification",
+    "previous_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
     "binding_check": {
       "batch": "band-06-base_new30",
       "configurations": 6,
       "target": 84,
       "declared": 99,
-      "status": "ACTUAL_DEVELOPMENT_PASS457",
+      "status": "ACTUAL_DEVELOPMENT_PASS458",
       "actual_typed_predicates": 9,
       "response_integrations": 0,
       "mpi_initialized": false
     },
-    "loader_validation": "Fiveoriginal436cases/hash+unchangedbyte/source-parameterbridge retained, not reexecuted by457",
-    "source_applicability": "CodeownerBridge663reports635->657test-only plusidentitymanifests; production/dependencies/FirstUsebyteexact. No newmaterialrun is implied; oldproducer, PGWfullwindow and normalizationroles remain.",
+    "loader_validation": "Five original436 cases and unchanged-byte/parameter bridge retained; not reexecuted by458",
+    "source_applicability": "657->718 test-count compatibility helper/consumers and policy only; source manifests confirm unchanged src/ext/FirstUse/Project/Manifest. Actual formal source accepted722; no material rerun implied.",
     "actual_binding_evidence": {
-      "actual_run_id": "WN-Tutorial-final-runtime457",
-      "actual_tutorial_location": "InstalledformalTutorialsroot before thismetadata-onlyclosure",
-      "actual_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+      "actual_run_id": "WN-Tutorial-final-runtime458",
+      "actual_tutorial_location": "Installed formal Tutorials root before metadata-only closure",
+      "actual_source_manifest_sha256": "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2",
       "actual_root_exit": 0,
       "qualification": "DEVELOPMENT_PASS",
       "scientific_status": "NOT_SCIENTIFIC",
@@ -1034,18 +1034,18 @@
       "containment": "UNKNOWN",
       "actual_input_sha256": {
         "examples/16_monolayer_graphene_thg/run_valleys.jl": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d",
-        "examples/16_monolayer_graphene_thg/valley_input.toml": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800",
+        "examples/16_monolayer_graphene_thg/valley_input.toml": "37ca2275c06a5f7a99948312ef3de994f134de4d76a9b07297874602fcd07fba",
         "models/graphene/GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
       },
       "original_receipt_sha256": {
-        "binding.json": "8ea713f4fd19398d1c9ced2664ab765850cb1ed294e4238b16f25e56cc922f05",
-        "stdout.log": "71aba75e2bea31fe873e265dc0425ff90e008a606baa7e2553d3006092b9fc03",
+        "binding.json": "e8a19b3873f71351bc168bb3484ad3ed7b2c381fc12db3d8e1fc2f0758021bec",
+        "stdout.log": "7526e76dd17f1b624767cb62fb938229fff34c5886406dece981249272f907ed",
         "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "exit.json": "7bf6717ff24a90fb49f94383f08121050763439e3b89787dfc3b591341558024",
+        "exit.json": "1c112882a2a530e5054090e3ee825ab8f8b99865423d331f05dfd55ff46cbeb6",
         "qualification": "a9564736bf30b3487596df6200a19da2a7488cacec682edd6aef48f16a39bda9",
-        "strict_release": "5b5a975be4a86b4345497311108226ca2bbd0e7e40ecbc6c5ccaf1243ec599d1"
+        "strict_release": "8a865d767c4ddc4819c3c4f32376ed904e7bcced14a188b0311f912adf1b59d7"
       },
-      "final_metadata_closure": "OnlyREADME/reproduce/releaseconsumer change after execution; all3actualreadfiles andsameformalroot remain byteexact, no rerun needed",
+      "final_metadata_closure": "Only README/reproduce/release metadata after execution; same root and exact three executed inputs unchanged; no rerun",
       "new_loader_executions": 0,
       "reused_saved_loader_cases": 5,
       "reused_old_loader_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616"
@@ -1375,6 +1375,91 @@
         },
         "loader_validation": "Unchanged recorded-loader evidence436 applies through the explicit static bridge; no new loader execution claimed",
         "source_applicability": "CodeownerBridge663reports635->657test-only plusidentitymanifests; production/dependencies/FirstUsebyteexact. No newmaterialrun is implied; oldproducer, PGWfullwindow and normalizationroles remain."
+      }
+    },
+    {
+      "role": "Actual457 formal657 binding retained unchanged; not a718 execution",
+      "chapter_specific_inputs": [
+        {
+          "input": "examples/16_monolayer_graphene_thg/valley_input.toml",
+          "driver": "examples/16_monolayer_graphene_thg/run_valleys.jl",
+          "collector": "examples/16_monolayer_graphene_thg/collect_valleys.py",
+          "source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "reason": "SinglepublicTaskConfig perCartesianregion;32explicitvectors preserve executed shape,84target selection after originalBZweighted sums",
+          "response_recomputed_during_adoption": false,
+          "historical_execution_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+          "validation_role": "Actualformal-source six-configurationbinding457passed; zeroresponseintegration, oldmaterialandnormalizationidentitiesretained",
+          "normalization_input_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+          "runtime_binding_status": "FORMAL_RUNTIME_BINDING457_VERIFIED"
+        }
+      ],
+      "replay_source_binding": {
+        "status": "FORMAL_RUNTIME_BINDING457_VERIFIED",
+        "current_replay_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+        "recorded_calculation_source_manifest_sha256": "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230",
+        "recorded_normalization_validation_source_manifest_sha256": "bf3ef7627e0911225bc99fd243515a7f7c2a05722351b3f6329882b08a1c076c",
+        "existing_425_426_430_evidence_retained": true,
+        "new_response_execution": false,
+        "recorded_tables_and_figures_unchanged": true,
+        "expected_runtime_role": "Actualformalpublicsource loadedandverified by457; not a new savedmaterialproducer",
+        "previous_replay_source_manifest_sha256": "eaa641aba4f9ae8331a8abf9f74295d14be7e85f3625f3226a39c2d3f1800c41",
+        "binding_check": {
+          "batch": "band-06-base_new30",
+          "configurations": 6,
+          "target": 84,
+          "declared": 99,
+          "status": "ACTUAL_DEVELOPMENT_PASS457",
+          "actual_typed_predicates": 9,
+          "response_integrations": 0,
+          "mpi_initialized": false
+        },
+        "loader_validation": "Fiveoriginal436cases/hash+unchangedbyte/source-parameterbridge retained, not reexecuted by457",
+        "source_applicability": "CodeownerBridge663reports635->657test-only plusidentitymanifests; production/dependencies/FirstUsebyteexact. No newmaterialrun is implied; oldproducer, PGWfullwindow and normalizationroles remain.",
+        "actual_binding_evidence": {
+          "actual_run_id": "WN-Tutorial-final-runtime457",
+          "actual_tutorial_location": "InstalledformalTutorialsroot before thismetadata-onlyclosure",
+          "actual_source_manifest_sha256": "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979",
+          "actual_root_exit": 0,
+          "qualification": "DEVELOPMENT_PASS",
+          "scientific_status": "NOT_SCIENTIFIC",
+          "typed_predicate_count": 9,
+          "typed_predicates": {
+            "source_identity": true,
+            "exact_report_fields": true,
+            "actual_source": true,
+            "actual_runtime": true,
+            "no_MPI": true,
+            "six_actual_configs": true,
+            "retained_frequency_plan": true,
+            "no_response": true,
+            "original_wrapper_marker": true
+          },
+          "configs": 6,
+          "batch": "band-06-base_new30",
+          "target": 84,
+          "declared": 99,
+          "mpi_initialized": false,
+          "response_integrations": 0,
+          "strict_GONE_complete_identities": 4,
+          "containment": "UNKNOWN",
+          "actual_input_sha256": {
+            "examples/16_monolayer_graphene_thg/run_valleys.jl": "80a77459ede5294c813b202d56ddbe4195ffc08f41f86226e85b8614820eee1d",
+            "examples/16_monolayer_graphene_thg/valley_input.toml": "69409210cc9cfba7db4a6687c95668aef4a301b7125913bb9b082f06655b6800",
+            "models/graphene/GrapheneModel.jl": "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
+          },
+          "original_receipt_sha256": {
+            "binding.json": "8ea713f4fd19398d1c9ced2664ab765850cb1ed294e4238b16f25e56cc922f05",
+            "stdout.log": "71aba75e2bea31fe873e265dc0425ff90e008a606baa7e2553d3006092b9fc03",
+            "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "exit.json": "7bf6717ff24a90fb49f94383f08121050763439e3b89787dfc3b591341558024",
+            "qualification": "a9564736bf30b3487596df6200a19da2a7488cacec682edd6aef48f16a39bda9",
+            "strict_release": "5b5a975be4a86b4345497311108226ca2bbd0e7e40ecbc6c5ccaf1243ec599d1"
+          },
+          "final_metadata_closure": "OnlyREADME/reproduce/releaseconsumer change after execution; all3actualreadfiles andsameformalroot remain byteexact, no rerun needed",
+          "new_loader_executions": 0,
+          "reused_saved_loader_cases": 5,
+          "reused_old_loader_receipt_sha256": "f655401ac6f897dcf7da7af51db4a7dc9aeb98555fa29445159c24b3419fc616"
+        }
       }
     }
   ]

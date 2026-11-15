@@ -2,7 +2,7 @@
 # Six folded valley regions; chapter-specific public TaskConfig driver, not the single-task CLI.
 [reproduction]
 # Expected local-candidate runtime for a new run/--check; not a published or recorded calculation source.
-source_manifest_sha256 = "da0ed5d55d8b26d887491edaa63449af0fc53acac88a2d39566d9ffc03e49979"
+source_manifest_sha256 = "b57b26ae1b1d441a6f7935f3fe0b5dde0f79c4e320c22f10c3a96dfd85a131a2"
 historical_source_manifest_sha256 = "725ed8e66c2429c94bf299a5db38343ee39ba8b94d3c7fb0f35de6dae791d230"
 model_sha256 = "565706f663a52b7944d396cb6e369b4499c8dc243c51f8b85b6f8e716c02348e"
 
