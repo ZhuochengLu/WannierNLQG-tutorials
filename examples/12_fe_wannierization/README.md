@@ -16,7 +16,7 @@ H^{(\mathrm{W})}(\mathbf k)
 =\sum_{\mathbf R}\frac{H(\mathbf R)}{d_{\mathbf R}}
 e^{2\pi i\mathbf k_{\mathrm{frac}}\cdot\mathbf R},
 \qquad
-H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)=U(\mathbf k)\operatorname{diag}[\epsilon_n(\mathbf k)].
+H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)=U(\mathbf k)\mathrm{diag}[\epsilon_n(\mathbf k)].
 $$
 
 The positive phase uses fractional reciprocal coordinates, integer lattice vectors and the loaded real-space degeneracy weights $d_{\mathbf R}$. The phase equals $e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. A finite Wannier subspace cannot be expected to reproduce every DFT state. The supplied comparison matches the 18-band TB spectrum to a 64-band DFT energy pool.

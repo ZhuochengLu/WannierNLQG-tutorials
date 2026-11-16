@@ -12,7 +12,7 @@ Let $A=\{21,22\}$ and $B=\{19,20\}$. The Hamiltonian-gauge position block $r^a_{
 
 $$
 K_{AB}^{badc}
-=-i\operatorname{Tr}_B\left[
+=-i\mathrm{Tr}_B\left[
 r^b_{BA}\left(F_A^{dc}r^a_{AB}-r^a_{AB}F_B^{dc}\right)
 \right].
 $$
@@ -30,9 +30,9 @@ $$
 For Hermitian position and spin operators, the exchanged product is the complex conjugate. Thus the kernel's symmetric and antisymmetric pair averages give
 
 $$
-g_{A,B}^{aS_b}=\operatorname{Re}\mathcal Z_{A,B}^{aS_b},
+g_{A,B}^{aS_b}=\mathrm{Re}\,\mathcal Z_{A,B}^{aS_b},
 \qquad
-\Omega_{A,B}^{aS_b}=-2\operatorname{Im}\mathcal Z_{A,B}^{aS_b}.
+\Omega_{A,B}^{aS_b}=-2\mathrm{Im}\,\mathcal Z_{A,B}^{aS_b}.
 $$
 
 $a$ is an orbital Cartesian direction and $S_b$ labels the spin leg. Component [1,3] means $xS_z$, not an ordinary $xz$ Berry-curvature plane. For dimensionless Pauli matrices the mixed quantities have units Å. Replacing those matrices by physical spin multiplies them by $\hbar/2$; the geometry kernels in `ConventionalQuantumGeometry.jl` do not apply that conversion automatically.

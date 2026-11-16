@@ -13,9 +13,9 @@ Use the Hamiltonian-gauge position-matrix convention $r^a_{nm}=i\langle u_n|\par
 $$
 Q_n^{ab}=\langle\partial_a u_n|(1-|u_n\rangle\langle u_n|)|\partial_bu_n\rangle,
 \qquad
-g_n^{ab}=\operatorname{Re}Q_n^{ab},
+g_n^{ab}=\mathrm{Re}\,Q_n^{ab},
 \qquad
-\Omega_n^{ab}=-2\operatorname{Im}Q_n^{ab}.
+\Omega_n^{ab}=-2\mathrm{Im}\,Q_n^{ab}.
 $$
 
 The real symmetric part measures quantum-state distance; the imaginary antisymmetric part describes geometric phase. Both have units Å². The sign of $\Omega$ follows from the stated $+i$ convention.
@@ -23,10 +23,10 @@ The real symmetric part measures quantum-state distance; the imaginary antisymme
 For the example subspace $S=\{19,20\}$, let $T$ be its complement inside the Wannier window. The subspace kernels use
 
 $$
-g_{S,\mathrm{int}}^{ab}=\operatorname{Re}\sum_{n\in S,m\in T}r^a_{nm}r^b_{mn},
+g_{S,\mathrm{int}}^{ab}=\mathrm{Re}\,\sum_{n\in S,m\in T}r^a_{nm}r^b_{mn},
 \qquad
-\Omega_S^{ab}=\operatorname{Re}\operatorname{Tr}_S\mathcal F^{ab}
--2\operatorname{Im}\sum_{n\in S,m\in T}r^a_{nm}r^b_{mn}.
+\Omega_S^{ab}=\mathrm{Re}\,\mathrm{Tr}_S\mathcal F^{ab}
+-2\mathrm{Im}\,\sum_{n\in S,m\in T}r^a_{nm}r^b_{mn}.
 $$
 
 $\mathcal F^{ab}$ is the ambient Wannier-frame curvature expressed in the Hamiltonian eigenframe. The sums exclude transitions within $S$ and are **not divided by its rank**. The metric example selects only the internal finite-window contribution.
@@ -36,9 +36,9 @@ The interband examples instead average over two disjoint groups $A,B$:
 $$
 Q_{A,B}^{ab}=\frac{1}{N_A N_B}\sum_{m\in A,n\in B}r^a_{mn}r^b_{nm},
 \quad
-g_{A,B}^{ab}=\tfrac12\operatorname{Re}(Q_{A,B}^{ab}+Q_{A,B}^{ba}),
+g_{A,B}^{ab}=\tfrac12\mathrm{Re}(Q_{A,B}^{ab}+Q_{A,B}^{ba}),
 \quad
-\Omega_{A,B}^{ab}=-\operatorname{Im}(Q_{A,B}^{ab}-Q_{A,B}^{ba}).
+\Omega_{A,B}^{ab}=-\mathrm{Im}(Q_{A,B}^{ab}-Q_{A,B}^{ba}).
 $$
 
 $N_A,N_B$ are the group sizes. A pair average is not directly comparable in magnitude to a subspace trace. These geometry kernels in `ConventionalQuantumGeometry.jl` contain no occupation factor, optical resonance, or Brillouin-zone integration.

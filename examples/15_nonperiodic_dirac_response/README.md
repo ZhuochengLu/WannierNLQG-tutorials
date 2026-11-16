@@ -112,10 +112,10 @@ The available checks support the in-gap DC plateau and selected optical comparis
 For the clean, in-gap single cone on the square $[-K,K]^2$, the stated convention gives
 
 $$
-\frac{G_{xy}}{e^2/h}=-\frac{\operatorname{sgn}m}{\pi}\arctan\!\frac{(vK)^2}{|m|\sqrt{m^2+2(vK)^2}}.
+\frac{G_{xy}}{e^2/h}=-\frac{\mathrm{sgn}\,m}{\pi}\arctan\!\frac{(vK)^2}{|m|\sqrt{m^2+2(vK)^2}}.
 $$
 
-It tends to $-\operatorname{sgn}(m)/2$ only as the cutoff tends to infinity. With $m=0.2$ eV, $v=2$ eV Å and $K=32$ Å$^{-1}$ the clean finite-square value is approximately −0.498593; finite relaxation defines another reference problem. Mass reversal reverses the transverse response without reversing the longitudinal response. At zero chemical potential the interband optical threshold is $2|m|=0.4$ eV.
+It tends to $-\mathrm{sgn}(m)/2$ only as the cutoff tends to infinity. With $m=0.2$ eV, $v=2$ eV Å and $K=32$ Å$^{-1}$ the clean finite-square value is approximately −0.498593; finite relaxation defines another reference problem. Mass reversal reverses the transverse response without reversing the longitudinal response. At zero chemical potential the interband optical threshold is $2|m|=0.4$ eV.
 
 Use the matched-parameter DC/optical control when discussing a zero-frequency relation; the two main plots have different cutoffs and relaxation settings. The continuum optical reference is related to [Gusynin, Sharapov and Carbotte, arXiv:0706.3016](https://arxiv.org/abs/0706.3016). Their graphene spin/valley multiplicities must not be inserted into this single-cone model without an explicit change of convention. The failed full-axis Hall mesh check and the restricted antisymmetric-Hall reuse bound above remain in force.
 

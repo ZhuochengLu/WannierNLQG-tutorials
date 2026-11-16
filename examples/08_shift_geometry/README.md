@@ -30,10 +30,10 @@ Here the displacement is along Cartesian $k_y$. The symmetric complex logarithmi
 
 $$
 \mathcal R_h=\frac{i}{2h}\left[\log\mathcal L_+-\log\mathcal L_-\right],
-\qquad R_h=\operatorname{Re}\mathcal R_h.
+\qquad R_h=\mathrm{Re}\,\mathcal R_h.
 $$
 
-The retained Geometric-loop comparison instead uses velocity insertions. At zero photon momentum and for isolated bands, its ordered factors are $\langle v_k|v_{k+h}\rangle V^y_{vc}(k+h)\langle c_{k+h}|c_k\rangle V^y_{cv}(k)$, up to a positive constant, with $V$ the velocity vertex. This fixes the $vc$ orientation above. On a smooth branch with a nonzero transition element, $\lim_{h\to0}R_h=\operatorname{Re}R_{vc}^{y;y}$. This real-part relation does not identify the full complex velocity- and position-based logarithmic derivatives.
+The retained Geometric-loop comparison instead uses velocity insertions. At zero photon momentum and for isolated bands, its ordered factors are $\langle v_k|v_{k+h}\rangle V^y_{vc}(k+h)\langle c_{k+h}|c_k\rangle V^y_{cv}(k)$, up to a positive constant, with $V$ the velocity vertex. This fixes the $vc$ orientation above. On a smooth branch with a nonzero transition element, $\lim_{h\to0}R_h=\mathrm{Re}\,R_{vc}^{y;y}$. This real-part relation does not identify the full complex velocity- and position-based logarithmic derivatives.
 
 The Wilson product is implemented in `WilsonLoopShiftVector.jl`; the shared logarithmic derivative and pair average are defined in `GeometricLoopShiftVector.jl`. The runtime averages the complex kernel over the requested conduction–valence pairs, and the figure displays its real part. These routines fix the logarithm branch and treatment of vanishing links. Differentiating an arbitrarily unwrapped phase is not the same operation. Degenerate groups require the complete block construction, not independently assigned eigenvector phases or ratios of group-averaged matrix elements.
 

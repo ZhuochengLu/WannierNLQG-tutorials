@@ -22,7 +22,7 @@ At each point on the path, diagonalizing the Hermitian Hamiltonian gives the ban
 
 $$
 H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)
-=U(\mathbf k)\operatorname{diag}[\epsilon_n(\mathbf k)],
+=U(\mathbf k)\mathrm{diag}[\epsilon_n(\mathbf k)],
 \qquad
 \epsilon_n^{\mathrm{plot}}(\mathbf k)=\epsilon_n(\mathbf k)-E_{\mathrm{ref}}.
 $$
