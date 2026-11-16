@@ -8,36 +8,36 @@
 
 ## Physics and model
 
-Jerk current is a third-order response involving optical excitation and a static electric field. In the idealized absence of momentum relaxation and saturation, its current can grow quadratically with illumination time. The exported $G$ tensor is therefore not a steady current: its interpretation also requires the temporal, field-amplitude, and permutation conventions.
+Jerk current is a third-order response involving optical excitation and a static electric field. In the idealized absence of momentum relaxation and saturation, its current can grow quadratically with illumination time. The exported $`G`$ tensor is therefore not a steady current: its interpretation also requires the temporal, field-amplitude, and permutation conventions.
 
 The two-band Hamiltonian in [TutorialModels.jl](../../models/TutorialModels.jl) is
 
-$$
+```math
 H(k_x)=
 \begin{pmatrix}
 \Delta & t_0+t_1e^{-iak_x}\\
 t_0+t_1e^{iak_x} & -\Delta
 \end{pmatrix}.
-$$
+```
 
 Its eigenvalues are
 
-$$
+```math
 E_\pm(k_x)=\pm\sqrt{\Delta^2+t_0^2+t_1^2+2t_0t_1\cos(ak_x)}.
-$$
+```
 
-With the parameters below, the direct transition energy $E_c-E_v=2|E_+|$ ranges from $\sqrt{2}$ to $\sqrt{10}$ eV. These edges help interpret the spectral window; finite Gaussian broadening can give tails beyond the unbroadened edges.
+With the parameters below, the direct transition energy $`E_c-E_v=2|E_+|`$ ranges from $`\sqrt{2}`$ to $`\sqrt{10}`$ eV. These edges help interpret the spectral window; finite Gaussian broadening can give tails beyond the unbroadened edges.
 
-The real-space and analytic inputs describe this same model. Both orbital centers are zero, so do not substitute the Rice–Mele embedding from chapter 14. The task requests the **ordered** $G^{xxxx}$ projection; an index-symmetrized coefficient would be a different convention.
+The real-space and analytic inputs describe this same model. Both orbital centers are zero, so do not substitute the Rice–Mele embedding from chapter 14. The task requests the **ordered** $`G^{xxxx}`$ projection; an index-symmetrized coefficient would be a different convention.
 
 ## Parameters
 
 | Parameter | Two-band model | GeS pilot |
 | --- | --- | --- |
 | Model | jerk/tb or jerk/analytic | Materials/GeS/model_tb.dat |
-| $\Delta,t_0,t_1$ | 0.5, 1.0, 0.5 eV | Defined by the material model |
+| $`\Delta,t_0,t_1`$ | 0.5, 1.0, 0.5 eV | Defined by the material model |
 | Cell lengths | 4, 3, 3 Å | Defined by the material model |
-| Chain period $a$ | 4 Å | Not a one-dimensional chain model |
+| Chain period $`a`$ | 4 Å | Not a one-dimensional chain model |
 | Orbital centers | Both at 0 | Supplied by the material model |
 | Mesh | [129, 1, 1] | [7, 5, 1] |
 | spatial_dimension | 3 | 3 |
@@ -82,14 +82,14 @@ Use [ges_pilot_bulk](inputs/ges_pilot_bulk.toml) for native volume output and th
 ## Response normalization and surface conversion
 
 Periodic Jerk output is normalized by the three-dimensional cell volume and has units
-A m/(V³ s²). The GeS cell has normal height $h=25.3960572$ Å for the first two lattice
-vectors. A separately reported surface coefficient is $G_{\mathrm{surface}}=hG_{\mathrm{vol}}$,
-with $h=2.53960572\times10^{-9}$ m. This is an explicit postprocessing conversion;
+A m/(V³ s²). The GeS cell has normal height $`h=25.3960572`$ Å for the first two lattice
+vectors. A separately reported surface coefficient is $`G_{\mathrm{surface}}=hG_{\mathrm{vol}}`$,
+with $`h=2.53960572\times10^{-9}`$ m. This is an explicit postprocessing conversion;
 there is no kernel measure or thickness selector. A two-dimensional reciprocal mesh
 does not by itself change the normalization or the model's periodicity.
 
 The existing 200-point volume companion is derived from the same saved surface table
-by division by $h$, not independently calculated. Its provenance must remain intact.
+by division by $`h`$, not independently calculated. Its provenance must remain intact.
 Relative mesh differences are invariant under this constant conversion: the original
 xxxx failures of the 1% criterion remain failures. The finite-grid xxxx spectrum is presented without claiming grid convergence.
 No new convergence or material qualification is implied.
@@ -129,7 +129,7 @@ The dense two-band comparison retains its 200 photon energies and separate 257/5
 
 The supplied five-frequency two-band controls give the following complex errors relative to a common independent analytic scale. These are the stated control points, not a 200-frequency mesh scan.
 
-| Mesh $N$ | Geometry width (eV) | Relative global-scale error |
+| Mesh $`N`$ | Geometry width (eV) | Relative global-scale error |
 | --- | --- | --- |
 | 129 | 0.001 | 1.68212e-05 |
 | 129 | 0.0001 | 1.59747e-05 |
@@ -138,7 +138,7 @@ The supplied five-frequency two-band controls give the following complex errors 
 | 257 | 0.0001 | 8.55952e-09 |
 | 257 | 1.0e-5 | 9.40128e-11 |
 
-Reducing the width at N=129 reaches a sampling floor near $1.6\times10^{-5}$, whereas N=257 resolves the small-width result much more accurately. Thus width and mesh errors should be separated. [Control values and scope](data/two_band_controls358.json).
+Reducing the width at N=129 reaches a sampling floor near $`1.6\times10^{-5}`$, whereas N=257 resolves the small-width result much more accurately. Thus width and mesh errors should be separated. [Control values and scope](data/two_band_controls358.json).
 
 The supplied two-energy material pilot and the dense spectrum below are separate sampling contracts on the same unified GeS model. The pilot alone does not establish the dense spectrum or its mesh accuracy.
 
@@ -148,9 +148,9 @@ The supplied two-energy material pilot and the dense spectrum below are separate
 
 The 200 actual photon energies span 0.02–4 eV on a 400 × 400 × 1 full-BZ mesh. This is a material spectrum, in addition to the two-energy pilot above. The panels resolve the ordered xxxx and yyyy volume coefficients; the imaginary parts are retained as calculated. The unified 32-state SOC Hamiltonian and its position matrix elements use the same Convention-II frame, chemical potential −2.5 eV and replica policy `auto`. Count each explicit spinor state once: an additional spin factor 2 would double the result. The source and input identities are recorded in [the data summary](data/ges_current370/summary.json). [PDF](figures/ges_dense_current.pdf).
 
-The spectrum uses Gaussian width 0.04 eV (standard deviation $0.04/\sqrt2$ eV), a five-width transition window and geometry denominator regularization 0.001 eV. The Fourier route is Mixed, with NKFFT [5,5,1] and NKdiv [80,80,1]. Eight MPI ranks evaluated this spectrum; two independent eight-rank applications evaluated the companion 200 × 200 and 300 × 300 five-frequency controls concurrently. These are response calculations on the fixed model, not new self-consistent material calculations.
+The spectrum uses Gaussian width 0.04 eV (standard deviation $`0.04/\sqrt2`$ eV), a five-width transition window and geometry denominator regularization 0.001 eV. The Fourier route is Mixed, with NKFFT [5,5,1] and NKdiv [80,80,1]. Eight MPI ranks evaluated this spectrum; two independent eight-rank applications evaluated the companion 200 × 200 and 300 × 300 five-frequency controls concurrently. These are response calculations on the fixed model, not new self-consistent material calculations.
 
-The displayed [volume table](data/ges_current370/bulk_derived_spectrum.dat) is derived from exactly the same saved surface table by division by the cell height $25.3960572\times10^{-10}$ m. It is not an independent spectrum or an extra accuracy check. The coefficients exclude lifetimes; a measured time-dependent current also needs the illumination and relaxation model.
+The displayed [volume table](data/ges_current370/bulk_derived_spectrum.dat) is derived from exactly the same saved surface table by division by the cell height $`25.3960572\times10^{-10}`$ m. It is not an independent spectrum or an extra accuracy check. The coefficients exclude lifetimes; a measured time-dependent current also needs the illumination and relaxation model.
 
 ## Five-frequency material mesh check
 

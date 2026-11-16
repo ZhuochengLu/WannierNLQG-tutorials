@@ -10,24 +10,24 @@
 
 A Wannier model stores Hamiltonian matrix elements between localized orbitals in different cells. In the cell-periodic Fourier representation, the interpolation used here has the positive-phase convention
 
-$$
+```math
 H^{(\mathrm{W})}_{ij}(\mathbf{k})
 =\sum_{\mathbf R}\frac{H_{ij}(\mathbf R)}{d_{\mathbf R}}
 e^{2\pi i\mathbf{k}_{\mathrm{frac}}\cdot\mathbf R}.
-$$
+```
 
-Here $i,j$ label Wannier orbitals, $\mathbf R$ is an integer lattice vector, $\mathbf{k}_{\mathrm{frac}}$ is the fractional reciprocal coordinate, and $d_{\mathbf R}$ is the real-space degeneracy weight in the loaded model. The factor $2\pi$ belongs to fractional coordinates. Do not replace the model's replica weights by a different counting rule. The phase equals $e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. Center-convention transformations can change matrix representations without changing their eigenvalues.
+Here $`i,j`$ label Wannier orbitals, $`\mathbf R`$ is an integer lattice vector, $`\mathbf{k}_{\mathrm{frac}}`$ is the fractional reciprocal coordinate, and $`d_{\mathbf R}`$ is the real-space degeneracy weight in the loaded model. The factor $`2\pi`$ belongs to fractional coordinates. Do not replace the model's replica weights by a different counting rule. The phase equals $`e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}`$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. Center-convention transformations can change matrix representations without changing their eigenvalues.
 
 At each point on the path, diagonalizing the Hermitian Hamiltonian gives the band energies:
 
-$$
+```math
 H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)
 =U(\mathbf k)\mathrm{diag}[\epsilon_n(\mathbf k)],
 \qquad
 \epsilon_n^{\mathrm{plot}}(\mathbf k)=\epsilon_n(\mathbf k)-E_{\mathrm{ref}}.
-$$
+```
 
-The columns of $U$ are eigenvectors. The same $E_{\mathrm{ref}}$ is subtracted from every plotted dataset; an independently fitted offset would conceal part of the interpolation error. Energy agreement is necessary for a useful model, but does not establish accuracy of position matrix elements or optical response.
+The columns of $`U`$ are eigenvectors. The same $`E_{\mathrm{ref}}`$ is subtracted from every plotted dataset; an independently fitted offset would conceal part of the interpolation error. Energy agreement is necessary for a useful model, but does not establish accuracy of position matrix elements or optical response.
 
 ## Parameters
 
@@ -38,7 +38,7 @@ Use [band_structure.toml](inputs/band_structure.toml) after following the [mater
 | Material model | Materials/GeS/model_tb.dat | Supplied 32-orbital GeS model |
 | Path | Γ–X–S–Y–Γ | Ordered high-symmetry points |
 | Points per segment | 51 | Resolution of each path segment |
-| $E_{\mathrm{ref}}$ | −2.5 eV | Common energy reference |
+| $`E_{\mathrm{ref}}`$ | −2.5 eV | Common energy reference |
 | Sampling dimension | 2 | Current input's spatial dimension |
 | Fourier backend | direct | Real-space Fourier interpolation |
 | Replica policy | auto | Interpret replicas using the model representation |

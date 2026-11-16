@@ -12,33 +12,33 @@ Shift current probes the displacement associated with an optical transition; inj
 
 For the Conventional method, the stored charge-response kernels are
 
-$$
+```math
 K_{nm}^{abc,\mathrm{shift}}=-i\left(r_{nm}^{c;a}r_{mn}^{b}-r_{mn}^{b;a}r_{nm}^{c}\right),
-$$
+```
 
-$$
+```math
 K_{nm}^{abc,\mathrm{inj}}=\left(h_{mm}^{a}-h_{nn}^{a}\right)r_{nm}^{c}r_{mn}^{b}.
-$$
+```
 
-Here $r_{nm}^{b}=i\langle u_{n\mathbf{k}}|\partial_{k_b}u_{m\mathbf{k}}\rangle$ is the Hamiltonian-gauge position matrix element, including the Wannier-basis position contribution. Following the WannierNLQG manuscript notation, $r_{nm}^{c;a}=\partial_{k_a}r_{nm}^{c}-i(r_{nn}^{a}-r_{mm}^{a})r_{nm}^{c}$ is its generalized derivative: $c$ is the position direction and $a$ after the semicolon is the derivative direction. The indices $a,b,c$ denote the current direction and the two optical-field directions. In this orthogonal Wannier model, $h_{nn}^{a}$ is the diagonal matrix element of the Hamiltonian derivative with respect to Cartesian $k_a$, in eV Å. It is an energy slope, before conversion to a physical velocity.
+Here $`r_{nm}^{b}=i\langle u_{n\mathbf{k}}|\partial_{k_b}u_{m\mathbf{k}}\rangle`$ is the Hamiltonian-gauge position matrix element, including the Wannier-basis position contribution. Following the WannierNLQG manuscript notation, $`r_{nm}^{c;a}=\partial_{k_a}r_{nm}^{c}-i(r_{nn}^{a}-r_{mm}^{a})r_{nm}^{c}`$ is its generalized derivative: $`c`$ is the position direction and $`a`$ after the semicolon is the derivative direction. The indices $`a,b,c`$ denote the current direction and the two optical-field directions. In this orthogonal Wannier model, $`h_{nn}^{a}`$ is the diagonal matrix element of the Hamiltonian derivative with respect to Cartesian $`k_a`$, in eV Å. It is an energy slope, before conversion to a physical velocity.
 
-These are **kernels, not conductivities**: occupations, energy selection, physical prefactors, and integration normalization enter separately. The shift-kernel order follows directly by substituting $r_{mn}^{b}R_{mn}^{b;a}=i r_{mn}^{b;a}$ into $r_{mn}^{b}r_{nm}^{c}(R_{mn}^{b;a}-R_{nm}^{c;a})$. Band and optical-field labels must stay attached to their matrix elements. The expressions follow `ConventionalShiftCurrent.jl` and `ConventionalInjectionCurrent.jl` in WannierNLQG v1.2.0. In particular, the ordered-field injection-rate output does not include an external conjugate-frequency factor of two or a steady-state relaxation time.
+These are **kernels, not conductivities**: occupations, energy selection, physical prefactors, and integration normalization enter separately. The shift-kernel order follows directly by substituting $`r_{mn}^{b}R_{mn}^{b;a}=i r_{mn}^{b;a}`$ into $`r_{mn}^{b}r_{nm}^{c}(R_{mn}^{b;a}-R_{nm}^{c;a})`$. Band and optical-field labels must stay attached to their matrix elements. The expressions follow `ConventionalShiftCurrent.jl` and `ConventionalInjectionCurrent.jl` in WannierNLQG v1.2.0. In particular, the ordered-field injection-rate output does not include an external conjugate-frequency factor of two or a steady-state relaxation time.
 
 For the current inputs, omitted `broadening_type` resolves to Gaussian. The energy-selection function has the form
 
-$$
+```math
 g_\eta(x)=\frac{\exp[-(x/\eta)^2]}{\sqrt{\pi}\eta}.
-$$
+```
 
-Here $x$ is a photon-energy detuning and $\eta=0.06$ eV. This width is not a standard deviation; the Gaussian standard deviation is $\eta/\sqrt{2}$. The runtime also screens transitions, so this line shape alone is not a complete response formula.
+Here $`x`$ is a photon-energy detuning and $`\eta=0.06`$ eV. This width is not a standard deviation; the Gaussian standard deviation is $`\eta/\sqrt{2}`$. The runtime also screens transitions, so this line shape alone is not a complete response formula.
 
 The model is the GeS Wannier Hamiltonian in `Materials/GeS/model_tb.dat`; the four shift-current inputs also use the matching `Materials/GeS/operators.h5` bundle. See the [material setup guide](../../Materials/README.md) before running. A Hamiltonian alone does not establish the optical matrix elements needed by the calculation.
 
 ## Symmetry and polarization
 
-The two optical indices are ordered: $b$ multiplies the positive-frequency field and $c$ the negative-frequency field. The real symmetric combination couples to linear polarization; the imaginary antisymmetric combination couples to helicity. Consequently, an imaginary component with $b=c$ is identically zero in the physical response tensor. A nonzero ordered array entry alone does not establish an allowed macroscopic response.
+The two optical indices are ordered: $`b`$ multiplies the positive-frequency field and $`c`$ the negative-frequency field. The real symmetric combination couples to linear polarization; the imaginary antisymmetric combination couples to helicity. Consequently, an imaginary component with $`b=c`$ is identically zero in the physical response tensor. A nonzero ordered array entry alone does not establish an allowed macroscopic response.
 
-For a time-reversal-symmetric material at zero photon momentum, the integrated charge shift response can have a real symmetric part, while charge injection can have an imaginary antisymmetric part. The real charge-injection channel is forbidden: in particular, integrated injection yyy must vanish. In the GeS orthorhombic axes, the manuscript identifies the $C_{2v}$ operations $m_x$, $C_{2y}$, and $m_z$. These allow real shift yyy and, for in-plane fields, an imaginary charge-injection xxy component paired with the opposite xyx component. They do not permit a finite integrated charge-injection yyy.
+For a time-reversal-symmetric material at zero photon momentum, the integrated charge shift response can have a real symmetric part, while charge injection can have an imaginary antisymmetric part. The real charge-injection channel is forbidden: in particular, integrated injection yyy must vanish. In the GeS orthorhombic axes, the manuscript identifies the $`C_{2v}`$ operations $`m_x`$, $`C_{2y}`$, and $`m_z`$. These allow real shift yyy and, for in-plane fields, an imaginary charge-injection xxy component paired with the opposite xyx component. They do not permit a finite integrated charge-injection yyy.
 
 The injection figure below therefore selects the allowed imaginary xxy and xyx components, rather than the forbidden real yyy channel. An imaginary response coefficient is not an imaginary measured current: contracting the antisymmetric pair with the complex field amplitudes gives the real helicity-dependent current-injection rate.
 
@@ -50,7 +50,7 @@ The [main input](inputs/shift_current_conventional.toml) is the executable speci
 | --- | --- | --- |
 | spatial_dimension | 2 | Two-dimensional response calculation |
 | k_mesh | [100, 100] | Momentum points along the two sampling directions |
-| $\mu$, $T$ | −2.5 eV, 0 K | Fermi energy and electronic temperature |
+| $`\mu`$, $`T`$ | −2.5 eV, 0 K | Fermi energy and electronic temperature |
 | Photon energy | 0–4 eV, 200 points | Frequency axis expressed as photon energy |
 | broadening | 0.06 eV | Gaussian energy width; broadening_type is omitted |
 | fourier_backend | direct | Direct real-space Fourier evaluation |
@@ -82,9 +82,9 @@ Redrawing these figures reads the supplied numerical tables; it does not run a r
 
 [Original PNG](figures/shift_current_methods.png)
 
-Compare the four labeled curves for $\mathrm{Re}\,\sigma^{yyy}$ on the same native-unit scale. Conventional uses generalized position derivatives. Projector differentiates transported projectors with a central finite difference; it is not an analytic-derivative curve. Geometric loop and Wilson loop evaluate related geometric constructions through their own numerical routes.
+Compare the four labeled curves for $`\mathrm{Re}\,\sigma^{yyy}`$ on the same native-unit scale. Conventional uses generalized position derivatives. Projector differentiates transported projectors with a central finite difference; it is not an analytic-derivative curve. Geometric loop and Wilson loop evaluate related geometric constructions through their own numerical routes.
 
-On this common finite grid, the relative $L^2$ differences from Conventional are **0.342016% for Projector**, **0.371485% for Wilson loop**, and **0.800488% for Geometric loop**. Here the reported percentage is $100\,\lVert s_M-s_{\mathrm{C}}\rVert_2/\lVert s_{\mathrm{C}}\rVert_2$, where $s_M$ is the vector of real yyy values at all 200 photon energies and $\lVert x\rVert_2=\sqrt{\sum_j|x_j|^2}$. These are spectrum-wide differences, not maximum pointwise percentage errors. The [comparison record](../../manifests/shift_current_comparison.json) gives the numerical results.
+On this common finite grid, the relative $`L^2`$ differences from Conventional are **0.342016% for Projector**, **0.371485% for Wilson loop**, and **0.800488% for Geometric loop**. Here the reported percentage is $`100\,\lVert s_M-s_{\mathrm{C}}\rVert_2/\lVert s_{\mathrm{C}}\rVert_2`$, where $`s_M`$ is the vector of real yyy values at all 200 photon energies and $`\lVert x\rVert_2=\sqrt{\sum_j|x_j|^2}`$. These are spectrum-wide differences, not maximum pointwise percentage errors. The [comparison record](../../manifests/shift_current_comparison.json) gives the numerical results.
 
 This matched calculation measures agreement at one mesh and broadening; it does not establish convergence or independently certify the material response. Conventional is the comparison reference, not an independent correctness oracle. The three grouped methods use adjacent-gap chaining with a 0.002 eV response threshold: consecutive sorted eigenvalues join when their gap is below the threshold, including the implementation's numerical-equality safeguard. A chain can span more than 0.002 eV. Group weights do not average the individual transition energies or occupations. This response grouping does not replace the independent exact spectral guards or the 0.06 eV Gaussian width. [PDF](figures/shift_current_methods.pdf).
 
@@ -94,7 +94,7 @@ This matched calculation measures agreement at one mesh and broadening; it does 
 
 [Original PNG](figures/integral_injection_current_conventional.png)
 
-The curves show $\mathrm{Im}\,\eta^{xxy}$ and $\mathrm{Im}\,\eta^{xyx}$ in native ordered injection-rate units. The current flows along x, while exchanging the x/y optical slots reverses the sign. This antisymmetry is the circular-polarization channel allowed by the GeS symmetries above. No conjugate-frequency factor of two or relaxation time has been applied to these plotted coefficients. A physical injection rate requires contraction with the fields and the stated frequency-ordering convention; a steady-state current additionally requires a relaxation model. [PDF](figures/integral_injection_current_conventional.pdf).
+The curves show $`\mathrm{Im}\,\eta^{xxy}`$ and $`\mathrm{Im}\,\eta^{xyx}`$ in native ordered injection-rate units. The current flows along x, while exchanging the x/y optical slots reverses the sign. This antisymmetry is the circular-polarization channel allowed by the GeS symmetries above. No conjugate-frequency factor of two or relaxation time has been applied to these plotted coefficients. A physical injection rate requires contraction with the fields and the stated frequency-ordering convention; a steady-state current additionally requires a relaxation model. [PDF](figures/integral_injection_current_conventional.pdf).
 
 ## Plot saved results
 

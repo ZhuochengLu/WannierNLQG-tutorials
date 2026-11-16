@@ -8,40 +8,40 @@
 
 ## Physics and model
 
-Use the Hamiltonian-gauge position-matrix convention $r^a_{nm}=i\langle u_n|\partial_a u_m\rangle$, with $\partial_a=\partial/\partial k_a$ and Cartesian $k_a$ in Å$^{-1}$. For an isolated normalized Bloch state,
+Use the Hamiltonian-gauge position-matrix convention $`r^a_{nm}=i\langle u_n|\partial_a u_m\rangle`$, with $`\partial_a=\partial/\partial k_a`$ and Cartesian $`k_a`$ in Å$`^{-1}`$. For an isolated normalized Bloch state,
 
-$$
+```math
 Q_n^{ab}=\langle\partial_a u_n|(1-|u_n\rangle\langle u_n|)|\partial_bu_n\rangle,
 \qquad
 g_n^{ab}=\mathrm{Re}\,Q_n^{ab},
 \qquad
 \Omega_n^{ab}=-2\mathrm{Im}\,Q_n^{ab}.
-$$
+```
 
-The real symmetric part measures quantum-state distance; the imaginary antisymmetric part describes geometric phase. Both have units Å². The sign of $\Omega$ follows from the stated $+i$ convention.
+The real symmetric part measures quantum-state distance; the imaginary antisymmetric part describes geometric phase. Both have units Å². The sign of $`\Omega`$ follows from the stated $`+i`$ convention.
 
-For the example subspace $S=\{19,20\}$, let $T$ be its complement inside the Wannier window. The subspace kernels use
+For the example subspace $`S=\{19,20\}`$, let $`T`$ be its complement inside the Wannier window. The subspace kernels use
 
-$$
+```math
 g_{S,\mathrm{int}}^{ab}=\mathrm{Re}\,\sum_{n\in S,m\in T}r^a_{nm}r^b_{mn},
 \qquad
 \Omega_S^{ab}=\mathrm{Re}\,\mathrm{Tr}_S\mathcal F^{ab}
 -2\mathrm{Im}\,\sum_{n\in S,m\in T}r^a_{nm}r^b_{mn}.
-$$
+```
 
-$\mathcal F^{ab}$ is the ambient Wannier-frame curvature expressed in the Hamiltonian eigenframe. The sums exclude transitions within $S$ and are **not divided by its rank**. The metric example selects only the internal finite-window contribution.
+$`\mathcal F^{ab}`$ is the ambient Wannier-frame curvature expressed in the Hamiltonian eigenframe. The sums exclude transitions within $`S`$ and are **not divided by its rank**. The metric example selects only the internal finite-window contribution.
 
-The interband examples instead average over two disjoint groups $A,B$:
+The interband examples instead average over two disjoint groups $`A,B`$:
 
-$$
+```math
 Q_{A,B}^{ab}=\frac{1}{N_A N_B}\sum_{m\in A,n\in B}r^a_{mn}r^b_{nm},
 \quad
 g_{A,B}^{ab}=\tfrac12\mathrm{Re}(Q_{A,B}^{ab}+Q_{A,B}^{ba}),
 \quad
 \Omega_{A,B}^{ab}=-\mathrm{Im}(Q_{A,B}^{ab}-Q_{A,B}^{ba}).
-$$
+```
 
-$N_A,N_B$ are the group sizes. A pair average is not directly comparable in magnitude to a subspace trace. These geometry kernels in `ConventionalQuantumGeometry.jl` contain no occupation factor, optical resonance, or Brillouin-zone integration.
+$`N_A,N_B`$ are the group sizes. A pair average is not directly comparable in magnitude to a subspace trace. These geometry kernels in `ConventionalQuantumGeometry.jl` contain no occupation factor, optical resonance, or Brillouin-zone integration.
 
 ## Parameters
 
@@ -123,7 +123,7 @@ With zero denominator regularization, sharp features near small gaps require mes
 
 [PDF](figures/kslice_interband_quantum_metric_conventional.pdf)
 
-Both interband maps have units Å². Their ordered transition groups and pair average differ from the subspace trace in the first two maps: for groups of sizes $N_A,N_B$, the displayed pair quantity includes $1/(N_A N_B)$, whereas a subspace trace is not divided by its rank. Compare spatial patterns only after matching these definitions. A pair-resolved feature is not the occupied-band Hall curvature, and its integral needs the response-specific occupations and weights.
+Both interband maps have units Å². Their ordered transition groups and pair average differ from the subspace trace in the first two maps: for groups of sizes $`N_A,N_B`$, the displayed pair quantity includes $`1/(N_A N_B)`$, whereas a subspace trace is not divided by its rank. Compare spatial patterns only after matching these definitions. A pair-resolved feature is not the occupied-band Hall curvature, and its integral needs the response-specific occupations and weights.
 
 ```bash
 python examples/06_qg_pairwise/plot.py --figure=kslice_interband_berry_curvature_conventional --output=.runtime/interband-berry

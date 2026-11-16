@@ -10,28 +10,28 @@
 
 The current [model loader](../../models/TutorialModels.jl) calls [DCModel.jl](../../models/dirac/DCModel.jl). In a fixed two-orbital basis,
 
-$$
+```math
 H(\mathbf{k})=
 \begin{pmatrix}
 m & v(k_x-i k_y)\\
 v(k_x+i k_y) & -m
 \end{pmatrix}
 =v k_x\sigma_x+v k_y\sigma_y+m\sigma_z,
-$$
+```
 
-$$
+```math
 E_\pm(\mathbf{k})=\pm E(\mathbf{k}),
 \qquad E=\sqrt{m^2+v^2(k_x^2+k_y^2)}.
-$$
+```
 
-Here $k_x,k_y$ are in Å$^{-1}$, $m$ is in eV, and $v=2$ eV Å is $\hbar$ times a physical velocity, not a velocity in m/s. In the connection convention $r_{nn}^a=i\langle u_n|\partial_{k_a}u_n\rangle$, where the diagonal Hamiltonian-gauge position-matrix element is the Berry connection, the [reference implementation](reference_checks.py) uses
+Here $`k_x,k_y`$ are in Å$`^{-1}`$, $`m`$ is in eV, and $`v=2`$ eV Å is $`\hbar`$ times a physical velocity, not a velocity in m/s. In the connection convention $`r_{nn}^a=i\langle u_n|\partial_{k_a}u_n\rangle`$, where the diagonal Hamiltonian-gauge position-matrix element is the Berry connection, the [reference implementation](reference_checks.py) uses
 
-$$
+```math
 \Omega_-^{xy}(\mathbf{k})=\frac{m v^2}{2E^3},
 \qquad \Omega_+^{xy}=-\Omega_-^{xy}.
-$$
+```
 
-The curvature has units Å² and changes sign with $m$, while the energies do not. Unlike a periodic lattice band, this single cone has no finite Brillouin zone. Its integration region is explicitly $[-K,K]^2$. The infinite-plane half-integer flux is a continuum limit, not the integer Chern number of an isolated periodic lattice band.
+The curvature has units Å² and changes sign with $`m`$, while the energies do not. Unlike a periodic lattice band, this single cone has no finite Brillouin zone. Its integration region is explicitly $`[-K,K]^2`$. The infinite-plane half-integer flux is a continuum limit, not the integer Chern number of an isolated periodic lattice band.
 
 ## Parameters
 
@@ -39,9 +39,9 @@ No external material files are needed. The two orbitals have coincident centers.
 
 | Parameter | Basic DC case | Basic optical case |
 | --- | --- | --- |
-| Mass $m$ | ±0.2 eV | ±0.2 eV |
-| $v=\hbar v_F$ | 2 eV Å | 2 eV Å |
-| Region cutoff $K$ | 32 Å$^{-1}$ | 1 Å$^{-1}$ |
+| Mass $`m`$ | ±0.2 eV | ±0.2 eV |
+| $`v=\hbar v_F`$ | 2 eV Å | 2 eV Å |
+| Region cutoff $`K`$ | 32 Å$`^{-1}`$ | 1 Å$`^{-1}`$ |
 | Mesh | [6401, 6401] | [401, 401] |
 | Sampling | k_region; spatial_dimension = 2 | k_region; spatial_dimension = 2 |
 | Chemical potential | −0.8 to 0.8 eV, 161 points | 0 eV |
@@ -109,13 +109,13 @@ The available checks support the in-gap DC plateau and selected optical comparis
 
 [PDF](figures/dirac_convergence.pdf)
 
-For the clean, in-gap single cone on the square $[-K,K]^2$, the stated convention gives
+For the clean, in-gap single cone on the square $`[-K,K]^2`$, the stated convention gives
 
-$$
+```math
 \frac{G_{xy}}{e^2/h}=-\frac{\mathrm{sgn}\,m}{\pi}\arctan\!\frac{(vK)^2}{|m|\sqrt{m^2+2(vK)^2}}.
-$$
+```
 
-It tends to $-\mathrm{sgn}(m)/2$ only as the cutoff tends to infinity. With $m=0.2$ eV, $v=2$ eV Å and $K=32$ Å$^{-1}$ the clean finite-square value is approximately −0.498593; finite relaxation defines another reference problem. Mass reversal reverses the transverse response without reversing the longitudinal response. At zero chemical potential the interband optical threshold is $2|m|=0.4$ eV.
+It tends to $`-\mathrm{sgn}(m)/2`$ only as the cutoff tends to infinity. With $`m=0.2`$ eV, $`v=2`$ eV Å and $`K=32`$ Å$`^{-1}`$ the clean finite-square value is approximately −0.498593; finite relaxation defines another reference problem. Mass reversal reverses the transverse response without reversing the longitudinal response. At zero chemical potential the interband optical threshold is $`2|m|=0.4`$ eV.
 
 Use the matched-parameter DC/optical control when discussing a zero-frequency relation; the two main plots have different cutoffs and relaxation settings. The continuum optical reference is related to [Gusynin, Sharapov and Carbotte, arXiv:0706.3016](https://arxiv.org/abs/0706.3016). Their graphene spin/valley multiplicities must not be inserted into this single-cone model without an explicit change of convention. The failed full-axis Hall mesh check and the restricted antisymmetric-Hall reuse bound above remain in force.
 

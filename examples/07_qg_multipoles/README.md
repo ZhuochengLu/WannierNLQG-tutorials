@@ -8,35 +8,35 @@
 
 ## Physics and model
 
-A derivative emphasizes where geometry changes, rather than simply where it is large. Write $\partial_c=\partial/\partial k_c$, with Cartesian $k_c$ in Å$^{-1}$. For a selected subspace,
+A derivative emphasizes where geometry changes, rather than simply where it is large. Write $`\partial_c=\partial/\partial k_c`$, with Cartesian $`k_c`$ in Å$`^{-1}`$. For a selected subspace,
 
-$$
+```math
 \text{Dipoles:}\quad \partial_c\Omega_S^{ab},\ \partial_c g_S^{ab},
 \qquad
 \text{Quadrupoles:}\quad \partial_c\partial_d\Omega_S^{ab},\ \partial_c\partial_d g_S^{ab}.
-$$
+```
 
-The component arrays place the geometry indices first and derivatives last: [a,b,c] for a dipole and [a,b,c,d] for a quadrupole. Thus [1,2,2] means the $y$ derivative of $\Omega^{xy}$. The underlying geometry has units Å²; its first and second derivatives have units Å³ and Å⁴.
+The component arrays place the geometry indices first and derivatives last: [a,b,c] for a dipole and [a,b,c,d] for a quadrupole. Thus [1,2,2] means the $`y`$ derivative of $`\Omega^{xy}`$. The underlying geometry has units Å²; its first and second derivatives have units Å³ and Å⁴.
 
-The finite-difference kernels use Cartesian displacement $h$:
+The finite-difference kernels use Cartesian displacement $`h`$:
 
-$$
+```math
 \partial_c F(\mathbf k)\simeq
 \frac{F(\mathbf k+h\mathbf e_c)-F(\mathbf k-h\mathbf e_c)}{2h},
 \qquad
 \partial_c^2 F(\mathbf k)\simeq
 \frac{F(\mathbf k+h\mathbf e_c)-2F(\mathbf k)+F(\mathbf k-h\mathbf e_c)}{h^2}.
-$$
+```
 
-$F$ is a selected curvature or metric component and $\mathbf e_c$ a Cartesian unit vector. Mixed derivatives use a four-corner stencil. The implementation converts Cartesian displacements into fractional-coordinate offsets; $h$ is not a reciprocal-lattice fraction.
+$`F`$ is a selected curvature or metric component and $`\mathbf e_c`$ a Cartesian unit vector. Mixed derivatives use a four-corner stencil. The implementation converts Cartesian displacements into fractional-coordinate offsets; $`h`$ is not a reciprocal-lattice fraction.
 
 The first-kind quantum Christoffel quantity is
 
-$$
+```math
 \Gamma_{r;lj}=\tfrac12\left(\partial_j g_{lr}+\partial_l g_{rj}-\partial_r g_{lj}\right).
-$$
+```
 
-Its input order is [r,l,j] and its units are Å³. For [2,2,2], it is one half of the $y$ derivative of $g_{yy}$. No inverse metric is applied. The derivative kernels in `QuantumGeometryDerivatives.jl` fix these stencils and index conventions. The metric-related inputs here differentiate the internal metric.
+Its input order is [r,l,j] and its units are Å³. For [2,2,2], it is one half of the $`y`$ derivative of $`g_{yy}`$. No inverse metric is applied. The derivative kernels in `QuantumGeometryDerivatives.jl` fix these stencils and index conventions. The metric-related inputs here differentiate the internal metric.
 
 These local maps omit occupations and Brillouin-zone integration. They are not yet a nonlinear Hall coefficient or a magnetization response.
 
@@ -124,7 +124,7 @@ Zero regularization and small gaps can produce very sharp features. Derivatives 
 
 [PDF](figures/kslice_quantum_christoffel_symbol_conventional.pdf)
 
-The quadrupoles have units Å⁴ and the first-kind Christoffel symbol has units Å³. For the shown component, $\Gamma_{y;yy}=\tfrac12\partial_y g_{yy}$; it is not the connection obtained after multiplying by an inverse metric. First and second differences amplify short-scale structure and numerical noise differently. The supplied peak heights are finite-step, finite-grid results, so a sharper quadrupole does not by itself establish a stronger physical response. Keep the Cartesian step, the selected subspace and the momentum mesh separate when testing stability.
+The quadrupoles have units Å⁴ and the first-kind Christoffel symbol has units Å³. For the shown component, $`\Gamma_{y;yy}=\tfrac12\partial_y g_{yy}`$; it is not the connection obtained after multiplying by an inverse metric. First and second differences amplify short-scale structure and numerical noise differently. The supplied peak heights are finite-step, finite-grid results, so a sharper quadrupole does not by itself establish a stronger physical response. Keep the Cartesian step, the selected subspace and the momentum mesh separate when testing stability.
 
 ```bash
 python examples/07_qg_multipoles/plot.py --figure=kslice_berry_curvature_quadrupole_conventional --output=.runtime/berry-quadrupole

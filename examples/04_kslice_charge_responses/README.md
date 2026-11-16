@@ -12,33 +12,33 @@ Shift current probes the displacement associated with an optical transition; inj
 
 For the Conventional method, the stored charge-response kernels are
 
-$$
+```math
 K_{nm}^{abc,\mathrm{shift}}=-i\left(r_{nm}^{c;a}r_{mn}^{b}-r_{mn}^{b;a}r_{nm}^{c}\right),
-$$
+```
 
-$$
+```math
 K_{nm}^{abc,\mathrm{inj}}=\left(h_{mm}^{a}-h_{nn}^{a}\right)r_{nm}^{c}r_{mn}^{b}.
-$$
+```
 
-Here $r_{nm}^{b}=i\langle u_{n\mathbf{k}}|\partial_{k_b}u_{m\mathbf{k}}\rangle$ is the Hamiltonian-gauge position matrix element, including the Wannier-basis position contribution. Following the WannierNLQG manuscript notation, $r_{nm}^{c;a}=\partial_{k_a}r_{nm}^{c}-i(r_{nn}^{a}-r_{mm}^{a})r_{nm}^{c}$ is its generalized derivative: $c$ is the position direction and $a$ after the semicolon is the derivative direction. The indices $a,b,c$ denote the current direction and the two optical-field directions. In this orthogonal Wannier model, $h_{nn}^{a}$ is the diagonal matrix element of the Hamiltonian derivative with respect to Cartesian $k_a$, in eV Å. It is an energy slope, before conversion to a physical velocity.
+Here $`r_{nm}^{b}=i\langle u_{n\mathbf{k}}|\partial_{k_b}u_{m\mathbf{k}}\rangle`$ is the Hamiltonian-gauge position matrix element, including the Wannier-basis position contribution. Following the WannierNLQG manuscript notation, $`r_{nm}^{c;a}=\partial_{k_a}r_{nm}^{c}-i(r_{nn}^{a}-r_{mm}^{a})r_{nm}^{c}`$ is its generalized derivative: $`c`$ is the position direction and $`a`$ after the semicolon is the derivative direction. The indices $`a,b,c`$ denote the current direction and the two optical-field directions. In this orthogonal Wannier model, $`h_{nn}^{a}`$ is the diagonal matrix element of the Hamiltonian derivative with respect to Cartesian $`k_a`$, in eV Å. It is an energy slope, before conversion to a physical velocity.
 
-These are **kernels, not conductivities**: occupations, energy selection, physical prefactors, and integration normalization enter separately. The shift-kernel order follows directly by substituting $r_{mn}^{b}R_{mn}^{b;a}=i r_{mn}^{b;a}$ into $r_{mn}^{b}r_{nm}^{c}(R_{mn}^{b;a}-R_{nm}^{c;a})$. Band and optical-field labels must stay attached to their matrix elements. The expressions follow `ConventionalShiftCurrent.jl` and `ConventionalInjectionCurrent.jl` in WannierNLQG v1.2.0. In particular, the ordered-field injection-rate output does not include an external conjugate-frequency factor of two or a steady-state relaxation time.
+These are **kernels, not conductivities**: occupations, energy selection, physical prefactors, and integration normalization enter separately. The shift-kernel order follows directly by substituting $`r_{mn}^{b}R_{mn}^{b;a}=i r_{mn}^{b;a}`$ into $`r_{mn}^{b}r_{nm}^{c}(R_{mn}^{b;a}-R_{nm}^{c;a})`$. Band and optical-field labels must stay attached to their matrix elements. The expressions follow `ConventionalShiftCurrent.jl` and `ConventionalInjectionCurrent.jl` in WannierNLQG v1.2.0. In particular, the ordered-field injection-rate output does not include an external conjugate-frequency factor of two or a steady-state relaxation time.
 
 The sampling plane is specified in fractional reciprocal coordinates:
 
-$$
+```math
 \mathbf{k}_{\mathrm{frac}}(u,v)=\mathbf{o}+u\mathbf{b}_1+v\mathbf{b}_2.
-$$
+```
 
-The origin and two spanning vectors below define the plane; $u,v$ sample its periodic unit interval. The plots center this interval around zero. This is a display rearrangement, not a change to the underlying momentum points. The migrated shift-current inputs request source bands 1–20 and target bands 21–32 at the stated chemical potential and zero temperature. All 32 model bands remain available in intermediate-state sums. The supplied Conventional map used explicit endpoint lists; the supplied Projector, Geometric-loop and Wilson-loop maps used full-active-window execution that did not consume those lists. Their recorded sources and numerical arrays are retained; they are not results of the new group-filtered interface. The injection-current example keeps its separate transition selection.
+The origin and two spanning vectors below define the plane; $`u,v`$ sample its periodic unit interval. The plots center this interval around zero. This is a display rearrangement, not a change to the underlying momentum points. The migrated shift-current inputs request source bands 1–20 and target bands 21–32 at the stated chemical potential and zero temperature. All 32 model bands remain available in intermediate-state sums. The supplied Conventional map used explicit endpoint lists; the supplied Projector, Geometric-loop and Wilson-loop maps used full-active-window execution that did not consume those lists. Their recorded sources and numerical arrays are retained; they are not results of the new group-filtered interface. The injection-current example keeps its separate transition selection.
 
 The shift-current inputs use the unified GeS Wannier Hamiltonian in `Materials/GeS/model_tb.dat` and its matching `Materials/GeS/operators.h5` bundle. See the [material setup guide](../../Materials/README.md) before running. A Hamiltonian alone does not establish the optical matrix elements needed by the calculation.
 
 ## Symmetry and polarization
 
-The two optical indices are ordered: $b$ multiplies the positive-frequency field and $c$ the negative-frequency field. The real symmetric combination couples to linear polarization; the imaginary antisymmetric combination couples to helicity. Consequently, an imaginary component with $b=c$ is identically zero in the physical response tensor. A nonzero ordered array entry alone does not establish an allowed macroscopic response.
+The two optical indices are ordered: $`b`$ multiplies the positive-frequency field and $`c`$ the negative-frequency field. The real symmetric combination couples to linear polarization; the imaginary antisymmetric combination couples to helicity. Consequently, an imaginary component with $`b=c`$ is identically zero in the physical response tensor. A nonzero ordered array entry alone does not establish an allowed macroscopic response.
 
-For a time-reversal-symmetric material at zero photon momentum, the integrated charge shift response can have a real symmetric part, while charge injection can have an imaginary antisymmetric part. The real charge-injection channel is forbidden: in particular, integrated injection yyy must vanish. In the GeS orthorhombic axes, the manuscript identifies the $C_{2v}$ operations $m_x$, $C_{2y}$, and $m_z$. These allow real shift yyy and, for in-plane fields, an imaginary charge-injection xxy component paired with the opposite xyx component. They do not permit a finite integrated charge-injection yyy.
+For a time-reversal-symmetric material at zero photon momentum, the integrated charge shift response can have a real symmetric part, while charge injection can have an imaginary antisymmetric part. The real charge-injection channel is forbidden: in particular, integrated injection yyy must vanish. In the GeS orthorhombic axes, the manuscript identifies the $`C_{2v}`$ operations $`m_x`$, $`C_{2y}`$, and $`m_z`$. These allow real shift yyy and, for in-plane fields, an imaginary charge-injection xxy component paired with the opposite xyx component. They do not permit a finite integrated charge-injection yyy.
 
 Time reversal relates opposite momenta, not each point to itself. A real injection-yyy contribution can be locally nonzero and odd between symmetry-related momenta; cancellation requires complete symmetry-related sampling and band subspaces closed under the operation. This local map must not be interpreted as a finite integrated injection-yyy response.
 
@@ -50,7 +50,7 @@ The [main input](inputs/shift_current_conventional.toml) is the executable speci
 | --- | --- | --- |
 | spatial_dimension | 2 | Two-dimensional response calculation |
 | k_mesh | [200, 200] | Momentum points along the two sampling directions |
-| $\mu$, $T$ | −2.5 eV, 0 K | Fermi energy and electronic temperature |
+| $`\mu`$, $`T`$ | −2.5 eV, 0 K | Fermi energy and electronic temperature |
 | Photon energy | 3.0 eV | Energy selection |
 | broadening | 0.06 eV | Gaussian energy width; broadening_type is omitted |
 | fourier_backend | direct | Direct real-space Fourier evaluation |
@@ -61,7 +61,7 @@ The [main input](inputs/shift_current_conventional.toml) is the executable speci
 | component | [2,2,2] | yyy: current, field, field |
 | finite_difference_step | 0.0001 Å⁻¹ | Cartesian reciprocal-space step for Projector and both loop methods |
 
-For the Gaussian convention, the energy width $\eta=0.06$ eV is not its standard deviation: the latter is $\eta/\sqrt{2}$.
+For the Gaussian convention, the energy width $`\eta=0.06`$ eV is not its standard deviation: the latter is $`\eta/\sqrt{2}`$.
 
 ## Run
 
@@ -77,14 +77,14 @@ that this selection is admissible for every grouped method.
 
 
 Current slice output is a local response coefficient with the route's physical
-and cell prefactors, **without** a $1/N_k$ integration weight. On a matching
+and cell prefactors, **without** a $`1/N_k`$ integration weight. On a matching
 complete uniform Brillouin-zone mesh, integration averages these coefficients;
 a generic slice alone is not a full three-dimensional Brillouin-zone integral.
 The saved response tables and figures below instead contain the recorded
 mesh-weighted cells: on their 200 × 200 mesh, sum those saved cells once. Do not
 apply the saved tables' direct-sum rule or color scales to new output unchanged.
 For identical kernels, endpoint contributions and cell conventions, the point
-coefficient would be $N_k$ times a saved weighted cell ($N_k=40{,}000$ here).
+coefficient would be $`N_k`$ times a saved weighted cell ($`N_k=40{,}000`$ here).
 This normalization relation alone does not establish old-to-new numerical
 equivalence for the three non-Conventional selected-channel maps.
 
@@ -119,13 +119,13 @@ The four shift-current maps were computed with the recorded public 1.2.0 source,
 
 [Original PNG](figures/kslice_shift_current_conventional.png)
 
-Read the sign and location of the full-band yyy contribution. The [Projector](figures/kslice_shift_current_projector.png), [Geometric loop](figures/kslice_shift_current_geometric_loop.png), and [Wilson loop](figures/kslice_shift_current_wilson_loop.png) maps use the same full-range color limit as Conventional. The displayed numbers equal the saved mesh-weighted native response multiplied by $10^8$; no cells are removed or clipped. A local peak does not by itself identify a converged contribution to the total current.
+Read the sign and location of the full-band yyy contribution. The [Projector](figures/kslice_shift_current_projector.png), [Geometric loop](figures/kslice_shift_current_geometric_loop.png), and [Wilson loop](figures/kslice_shift_current_wilson_loop.png) maps use the same full-range color limit as Conventional. The displayed numbers equal the saved mesh-weighted native response multiplied by $`10^8`$; no cells are removed or clipped. A local peak does not by itself identify a converged contribution to the total current.
 
-The following comparisons describe the four supplied arrays. The three non-Conventional maps used full-active-window execution, so these comparisons do not validate the new external-group filter. Their relative real-array $L^2$ differences from Conventional are 0.640% for Projector, 0.642% for Wilson loop and 2.408% for Geometric loop. Summing the local cells reproduces the same-grid, single-frequency native integrals to printed-output precision; do not divide by the number of points a second time. The corresponding signed integral differences are +0.0302%, +0.0304% and −0.0960%. Positive and negative local differences partly cancel, so integral agreement is not a pointwise correctness test. Finite-step, response-group and position-regularization prescriptions still differ; no formula, threshold or physical width was adjusted to force agreement.
+The following comparisons describe the four supplied arrays. The three non-Conventional maps used full-active-window execution, so these comparisons do not validate the new external-group filter. Their relative real-array $`L^2`$ differences from Conventional are 0.640% for Projector, 0.642% for Wilson loop and 2.408% for Geometric loop. Summing the local cells reproduces the same-grid, single-frequency native integrals to printed-output precision; do not divide by the number of points a second time. The corresponding signed integral differences are +0.0302%, +0.0304% and −0.0960%. Positive and negative local differences partly cancel, so integral agreement is not a pointwise correctness test. Finite-step, response-group and position-regularization prescriptions still differ; no formula, threshold or physical width was adjusted to force agreement.
 
 For the recorded calculation source, the occupied/empty boundary was checked at all 40,000 original grid points: neither selection cuts a response block, and the occupation partition is unchanged. The minimum direct band-20/21 gap is 1.87824 eV, above the 0.002 eV response-group threshold. This checks the chosen finite-model band domain, not material or mesh convergence.
 
-Projector uses transported finite-difference projectors, with the same $h=10^{-4}$ Å⁻¹ used by the loops. Projector and both loop methods use adjacent-gap response groups with threshold 0.002 eV; this threshold is separate from Gaussian broadening and exact spectral guards. [PDF](figures/kslice_shift_current_conventional.pdf).
+Projector uses transported finite-difference projectors, with the same $`h=10^{-4}`$ Å⁻¹ used by the loops. Projector and both loop methods use adjacent-gap response groups with threshold 0.002 eV; this threshold is separate from Gaussian broadening and exact spectral guards. [PDF](figures/kslice_shift_current_conventional.pdf).
 
 ### Momentum-resolved injection current
 
@@ -155,7 +155,7 @@ These maps are examples with their stated band domains at one photon energy, not
 
 
 
-These panels share the Conventional panel's complete signed color range and display factor. A common color is therefore a common value, rather than a separate per-method peak normalization. Hot spots reflect both transition resonance and optical geometry; positive and negative regions can cancel in the integral. A large local peak need not dominate the signed spectrum. The sum of each supplied local table reproduces its corresponding single-frequency integral with the recorded grid and execution settings; this is not evidence that the old non-Conventional paths applied an external band mask, or a comparison with an independently selected-band spectrum. No extra $1/N_k$ is applied to a table whose stored values already carry that factor.
+These panels share the Conventional panel's complete signed color range and display factor. A common color is therefore a common value, rather than a separate per-method peak normalization. Hot spots reflect both transition resonance and optical geometry; positive and negative regions can cancel in the integral. A large local peak need not dominate the signed spectrum. The sum of each supplied local table reproduces its corresponding single-frequency integral with the recorded grid and execution settings; this is not evidence that the old non-Conventional paths applied an external band mask, or a comparison with an independently selected-band spectrum. No extra $`1/N_k`$ is applied to a table whose stored values already carry that factor.
 
 The injection map is a separate transition-selected example and must not be used as the endpoint-band contract for the four full-band shift-current maps.
 

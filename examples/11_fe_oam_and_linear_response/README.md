@@ -6,17 +6,17 @@ Examine three response calculations and how to interpret their results.
 
 ## Common model and settings
 
-This chapter compares modern orbital magnetization, finite-frequency optical conductivity, and Berry geometry and dc transport in the same Fe Wannier model. Install the material using the [material setup guide](../../Materials/README.md). The common model is `Materials/Fe/model_tb.dat`, with chemical potential $\mu=5.7156290716733436$ eV, direct Fourier interpolation and automatic replica handling. The H/r operator-bundle route also uses `Materials/Fe/operators.h5`. No extra spin factor or energy-zero shift is introduced in these comparisons.
+This chapter compares modern orbital magnetization, finite-frequency optical conductivity, and Berry geometry and dc transport in the same Fe Wannier model. Install the material using the [material setup guide](../../Materials/README.md). The common model is `Materials/Fe/model_tb.dat`, with chemical potential $`\mu=5.7156290716733436`$ eV, direct Fourier interpolation and automatic replica handling. The H/r operator-bundle route also uses `Materials/Fe/operators.h5`. No extra spin factor or energy-zero shift is introduced in these comparisons.
 
-The integrated examples use a $40^3$ Brillouin-zone mesh at 0 K. Conventional and Projector are compared at fixed settings. The figures and table below reuse supplied results: opening or redrawing the chapter does not compute responses.
+The integrated examples use a $`40^3`$ Brillouin-zone mesh at 0 K. Conventional and Projector are compared at fixed settings. The figures and table below reuse supplied results: opening or redrawing the chapter does not compute responses.
 
 ## Orbital magnetization
 
 Modern orbital magnetization is an integrated magnetic moment per primitive cell, not an on-site orbital-angular-momentum matrix. The implementation resolves occupied self rotation (SRocc), occupied center motion (CMocc), and
 
-$$
+```math
 \mathbf M_{\mathrm{total}}=\mathbf M_{\mathrm{SRocc}}+\mathbf M_{\mathrm{CMocc}}.
-$$
+```
 
 The names describe this implementation's decomposition and are not automatically interchangeable with another program's LC/IC convention. Conventional and Projector evaluate their own trace expressions using the same complete-velocity prescription and `denominator_regularization = 0.001` eV. Projector uses complete occupied spectral subspaces; finite-temperature traces use analytic thermal convolutions. This regularization is distinct from both optical relaxation and the zero setting in the static geometry inputs.
 
@@ -26,18 +26,18 @@ Run [Conventional 0 K](inputs/oam_conventional_T000.toml) or [Projector 0 K](inp
 
 <a href="figures/fe_orbital_magnetization_z.png"><img src="figures/fe_orbital_magnetization_z.png" alt="Fe occupied self rotation, center motion and total orbital magnetization for two methods at 0 K" width="780"></a>
 
-**Orbital moment:** $M_z^{\rm SRocc}$, $M_z^{\rm CMocc}$ and total in $\mu_B$/cell, for both methods at 0 K. At 0 K the terms are approximately −0.05922 and +0.03828, giving −0.02094 $\mu_B$/cell. Their sign follows the model's axis and moment convention. Method agreement for this fixed model and prescription does not establish convergence or an independent material benchmark. [PNG](figures/fe_orbital_magnetization_z.png) · [PDF](figures/fe_orbital_magnetization_z.pdf)
+**Orbital moment:** $`M_z^{\rm SRocc}`$, $`M_z^{\rm CMocc}`$ and total in $`\mu_B`$/cell, for both methods at 0 K. At 0 K the terms are approximately −0.05922 and +0.03828, giving −0.02094 $`\mu_B`$/cell. Their sign follows the model's axis and moment convention. Method agreement for this fixed model and prescription does not establish convergence or an independent material benchmark. [PNG](figures/fe_orbital_magnetization_z.png) · [PDF](figures/fe_orbital_magnetization_z.pdf)
 
 ## Finite-frequency linear optical conductivity
 
 The current response and exported channels are
 
-$$
+```math
 J^a(\omega)=\sum_b\sigma^{ab}(\omega)E^b(\omega),\qquad
 \sigma^{ab}_{\rm total}=\sigma^{ab}_{\rm Drude}+\sigma^{ab}_{\rm metric}+\sigma^{ab}_{\rm Berry}.
-$$
+```
 
-The Drude channel describes intraband relaxation; the metric channel is an interband geometric contribution. The Berry/Hall optical channel includes ambient contact and dispersive interband Hall contributions. It is a conductivity in S/m, not the static curvature in Å². The plots show real parts. The supplied spectra use 0–8 eV in 401 points, $\Gamma_{\rm intra}=\Gamma_{\rm inter}=0.05$ eV, and Gaussian `eta_fs_ev = 0.05` eV for the 0 K Fermi-surface regularizer. The latter is distinct from either relaxation width.
+The Drude channel describes intraband relaxation; the metric channel is an interband geometric contribution. The Berry/Hall optical channel includes ambient contact and dispersive interband Hall contributions. It is a conductivity in S/m, not the static curvature in Å². The plots show real parts. The supplied spectra use 0–8 eV in 401 points, $`\Gamma_{\rm intra}=\Gamma_{\rm inter}=0.05`$ eV, and Gaussian `eta_fs_ev = 0.05` eV for the 0 K Fermi-surface regularizer. The latter is distinct from either relaxation width.
 
 Inputs: [Conventional 0 K](inputs/linear_optical_conventional_T000.toml) and [Projector 0 K](inputs/linear_optical_projector_T000.toml). Select the corresponding case name to run one.
 
@@ -65,41 +65,41 @@ Inputs: [Conventional 0 K](inputs/linear_optical_conventional_T000.toml) and [Pr
 
 For a nondegenerate band, with Cartesian derivatives,
 
-$$
+```math
 r_{nn}^a=i\langle u_n|\partial_{k_a}u_n\rangle,\quad
 \Omega_n^{ab}=\partial_{k_a}r_{nn}^b-\partial_{k_b}r_{nn}^a,\quad
 \Omega_{\rm occ}^{ab}=\sum_n f_n\Omega_n^{ab}.
-$$
+```
 
-With $k$ in inverse Å, curvature is in Å². Degeneracies require the implementation's subspace treatment; a finite Wannier window can also carry an ambient frame contribution, so an interband sum alone must not silently replace complete curvature. The local map has no Brillouin-zone integration normalization.
+With $`k`$ in inverse Å, curvature is in Å². Degeneracies require the implementation's subspace treatment; a finite Wannier window can also carry an ambient frame contribution, so an interband sum alone must not silently replace complete curvature. The local map has no Brillouin-zone integration normalization.
 
 ### Local slice
 
-The [H/r bundle static input](inputs/berry_sos_occupied_xy.toml) and [Wannier TB static input](inputs/berry_tb_occupied_xy.toml) are two reading routes for the same occupied curvature; the TB route also contains H and r and is not an H-only approximation. Both use zero denominator regularization. Their retained $200\times200$ tables differ by at most $6.8624\times10^{-9}$ Å², with relative L2 difference $5.8075\times10^{-13}$. This is a route cross-check for these data, not a convergence test. The [TB figure](figures/berry_tb_occupied_xy.png), [PDF](figures/berry_tb_occupied_xy.pdf), input, and data remain available for reproduction; only the bundle route is displayed here.
+The [H/r bundle static input](inputs/berry_sos_occupied_xy.toml) and [Wannier TB static input](inputs/berry_tb_occupied_xy.toml) are two reading routes for the same occupied curvature; the TB route also contains H and r and is not an H-only approximation. Both use zero denominator regularization. Their retained $`200\times200`$ tables differ by at most $`6.8624\times10^{-9}`$ Å², with relative L2 difference $`5.8075\times10^{-13}`$. This is a route cross-check for these data, not a convergence test. The [TB figure](figures/berry_tb_occupied_xy.png), [PDF](figures/berry_tb_occupied_xy.pdf), input, and data remain available for reproduction; only the bundle route is displayed here.
 
 <a href="figures/berry_sos_occupied_xy.png"><img src="figures/berry_sos_occupied_xy.png" alt="Occupied static Fe Berry curvature from the H/r bundle" width="680"></a>
 
-**Static occupied $\Omega^{xy}$:** H/r bundle, 0 K. [PNG](figures/berry_sos_occupied_xy.png) · [PDF](figures/berry_sos_occupied_xy.pdf)
+**Static occupied $`\Omega^{xy}`$:** H/r bundle, 0 K. [PNG](figures/berry_sos_occupied_xy.png) · [PDF](figures/berry_sos_occupied_xy.pdf)
 
 The distinct [finite-relaxation dc slice input](inputs/berry_transport_equivalent_xy.toml) has `kind = linear_transport`. Its plotted field is
 
-$$
+```math
 \widetilde\Omega^{xy}=-K_{\rm Berry}^{xy}/[(e^2/\hbar)\times10^{-20}],
-$$
+```
 
-where the native local kernel $K_{\rm Berry}$ is in S m²; there is no additional mesh division. $\Gamma_{\rm inter}=0.05$ eV affects its interband Hall weight. The separately specified $\Gamma_{\rm intra}$ and $\eta_{\rm FS}$ concern other transport channels. This finite-width field is not pointwise equivalent to the zero-regularization static curvature.
+where the native local kernel $`K_{\rm Berry}`$ is in S m²; there is no additional mesh division. $`\Gamma_{\rm inter}=0.05`$ eV affects its interband Hall weight. The separately specified $`\Gamma_{\rm intra}`$ and $`\eta_{\rm FS}`$ concern other transport channels. This finite-width field is not pointwise equivalent to the zero-regularization static curvature.
 
 <a href="figures/berry_transport_equivalent_xy.png"><img src="figures/berry_transport_equivalent_xy.png" alt="Finite-width dc Berry Hall local kernel converted to curvature units" width="680"></a>
 
 **Finite-width dc Berry/Hall local field**, 0 K. [PNG](figures/berry_transport_equivalent_xy.png) · [PDF](figures/berry_transport_equivalent_xy.pdf)
 
-Both displayed slices use uncentered $u,v$ nodes, $k=u(-0.5,0.5,0.5)+v(0.5,0.5,-0.5)$ in fractional reciprocal coordinates, the same $\mu$ and $200\times200$ sampling. $u,v$ are not Cartesian $k_x,k_y$. Γ/H labels and black Fermi contours use the same model; the contours are interpolated zero-energy lines on the plane, not an independently converged Fermi surface. Both maps share a signed-log scale with a linear region within ±1 Å², green zero, and limits ±$10^4$ Å². A two-dimensional slice is not the full three-dimensional anomalous Hall conductivity.
+Both displayed slices use uncentered $`u,v`$ nodes, $`k=u(-0.5,0.5,0.5)+v(0.5,0.5,-0.5)`$ in fractional reciprocal coordinates, the same $`\mu`$ and $`200\times200`$ sampling. $`u,v`$ are not Cartesian $`k_x,k_y`$. Γ/H labels and black Fermi contours use the same model; the contours are interpolated zero-energy lines on the plane, not an independently converged Fermi surface. Both maps share a signed-log scale with a linear region within ±1 Å², green zero, and limits ±$`10^4`$ Å². A two-dimensional slice is not the full three-dimensional anomalous Hall conductivity.
 
 ### Full Brillouin-zone dc response
 
-The [Conventional 0 K](inputs/linear_transport_conventional_T000.toml) and [Projector 0 K](inputs/linear_transport_projector_T000.toml) inputs use $40^3$ sampling, the common $\mu$, $\Gamma_{\rm intra}=\Gamma_{\rm inter}=0.05$ eV and Gaussian $\eta_{\rm FS}=0.05$ eV. Run each using its case name. Define the antisymmetric Hall response as $\sigma_{\rm H}^{xy}=(\sigma^{xy}_{\rm total}-\sigma^{yx}_{\rm total})/2$.
+The [Conventional 0 K](inputs/linear_transport_conventional_T000.toml) and [Projector 0 K](inputs/linear_transport_projector_T000.toml) inputs use $`40^3`$ sampling, the common $`\mu`$, $`\Gamma_{\rm intra}=\Gamma_{\rm inter}=0.05`$ eV and Gaussian $`\eta_{\rm FS}=0.05`$ eV. Run each using its case name. Define the antisymmetric Hall response as $`\sigma_{\rm H}^{xy}=(\sigma^{xy}_{\rm total}-\sigma^{yx}_{\rm total})/2`$.
 
-| Method | $T$ (K) | Berry xy | total xy | total yx | Hall xy |
+| Method | $`T`$ (K) | Berry xy | total xy | total yx | Hall xy |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Conventional | 0 | −59965.66 | −57645.37 | 62285.96 | −59965.66 |
 | Projector | 0 | −59965.66 | −57645.37 | 62285.96 | −59965.66 |

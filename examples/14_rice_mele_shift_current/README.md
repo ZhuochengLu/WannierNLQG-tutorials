@@ -10,7 +10,7 @@
 
 The Rice–Mele chain has two orbitals per cell, alternating hoppings, and alternating site energies. In the periodic Convention-II basis used by [RiceMeleModel.jl](../../models/rice_mele/RiceMeleModel.jl),
 
-$$
+```math
 H(k)=
 \begin{pmatrix}
 m & t_1+t_2 e^{-ika}\\
@@ -18,28 +18,28 @@ t_1+t_2 e^{ika} & -m
 \end{pmatrix},
 \qquad
 t_1=\frac{t+\delta}{2},\quad t_2=\frac{t-\delta}{2}.
-$$
+```
 
-Here $k$ is the Cartesian wavevector along the chain, $a$ is the cell period, and $t,\delta,m$ are energies. The orbital centers are $0$ and $a/2$; their positions are supplied separately to the model and must be retained when evaluating optical geometry.
+Here $`k`$ is the Cartesian wavevector along the chain, $`a`$ is the cell period, and $`t,\delta,m`$ are energies. The orbital centers are $`0`$ and $`a/2`$; their positions are supplied separately to the model and must be retained when evaluating optical geometry.
 
-The eigenvalues follow from $E^2=m^2+|t_1+t_2e^{-ika}|^2$:
+The eigenvalues follow from $`E^2=m^2+|t_1+t_2e^{-ika}|^2`$:
 
-$$
+```math
 E_\pm(k)=\pm\sqrt{
 t^2\cos^2(ka/2)+\delta^2\sin^2(ka/2)+m^2}.
-$$
+```
 
-Changing $m$ to $-m$ leaves these energies unchanged. It does not leave the optical geometry unchanged: the polar and reversed cases illustrate how similar bands can accompany opposite shift-current responses. Setting $m=0$ gives the SSH limit; setting $\delta=0$ gives the ionic limit. These provide different inversion-symmetric controls.
+Changing $`m`$ to $`-m`$ leaves these energies unchanged. It does not leave the optical geometry unchanged: the polar and reversed cases illustrate how similar bands can accompany opposite shift-current responses. Setting $`m=0`$ gives the SSH limit; setting $`\delta=0`$ gives the ionic limit. These provide different inversion-symmetric controls.
 
-The shift vector $R_{cv}^x$ describes a transition-associated displacement, in Å. The integrated current also depends on the transition dipole, occupations, and energy selection. The independent [reference implementation](reference_checks.py) weights the product $R_{cv}^x|r_{cv}^x|^2$ with the Gaussian
+The shift vector $`R_{cv}^x`$ describes a transition-associated displacement, in Å. The integrated current also depends on the transition dipole, occupations, and energy selection. The independent [reference implementation](reference_checks.py) weights the product $`R_{cv}^x|r_{cv}^x|^2`$ with the Gaussian
 
-$$
+```math
 g_\eta(\Delta E)=\frac{\exp[-(\Delta E/\eta)^2]}{\sqrt{\pi}\eta},
 \qquad
 \Delta E=\hbar\omega-[E_c(k)-E_v(k)].
-$$
+```
 
-Here $\eta=0.05$ eV is the reference energy width, not its standard deviation. The reference sum retains terms with $|\Delta E|<5\eta$. This describes that reference function's convention; it does not assign the same line shape to every response kernel.
+Here $`\eta=0.05`$ eV is the reference energy width, not its standard deviation. The reference sum retains terms with $`|\Delta E|<5\eta`$. This describes that reference function's convention; it does not assign the same line shape to every response kernel.
 
 ## Parameters
 
@@ -47,13 +47,13 @@ The model is supplied by Julia callbacks in this repository; no external materia
 
 | Parameter | Polar example | Meaning |
 | --- | --- | --- |
-| $a$ | 4 Å | Chain period |
-| $t$ | −1.0 eV | Hopping scale |
-| $\delta$ | −0.83 eV | Hopping alternation |
-| $m$ | −0.45 eV | Alternating site energy; reversed case: +0.45 eV |
-| Orbital centers | 0, $a/2$ | Positions within the cell |
+| $`a`$ | 4 Å | Chain period |
+| $`t`$ | −1.0 eV | Hopping scale |
+| $`\delta`$ | −0.83 eV | Hopping alternation |
+| $`m`$ | −0.45 eV | Alternating site energy; reversed case: +0.45 eV |
+| Orbital centers | 0, $`a/2`$ | Positions within the cell |
 | Transverse area | 9.37 Å² | Fixed normalization for the embedded chain |
-| $\mu$, $T$ | 0 eV, 0 K | Chemical potential and temperature |
+| $`\mu`$, $`T`$ | 0 eV, 0 K | Chemical potential and temperature |
 | k mesh | [801, 1] | Actual TOML sampling; spatial_dimension = 2 |
 | Photon energies | 0–4 eV, 401 points | Current input spectrum |
 | broadening | 0.05 eV | Optical broadening; the omitted broadening_type defaults to Gaussian |
@@ -90,7 +90,7 @@ First compare the band energies, then the shift vector. Reversing the mass leave
 
 <a href="figures/rice_mele_shift_current.png"><img src="figures/rice_mele_shift_current.png" alt="Rice–Mele shift-current spectra compared with an analytic integral" width="880"></a>
 
-The curves show WannierNLQG results, and the markers show an independent analytic integral. The two panels show real-space TB and analytic-input results for $\mathrm{Re}\,\sigma^{xxx}$, in μA/V². Compare each polar/reversed curve with its reference markers. Those markers select points from the supplied reference integral; they are not new calculations performed when this page is opened. The factor $10^6$ in the plot converts A to μA, without fitting the response amplitude.
+The curves show WannierNLQG results, and the markers show an independent analytic integral. The two panels show real-space TB and analytic-input results for $`\mathrm{Re}\,\sigma^{xxx}`$, in μA/V². Compare each polar/reversed curve with its reference markers. Those markers select points from the supplied reference integral; they are not new calculations performed when this page is opened. The factor $`10^6`$ in the plot converts A to μA, without fitting the response amplitude.
 
 [Original PNG](figures/rice_mele_shift_current.png) · [PDF](figures/rice_mele_shift_current.pdf)
 
@@ -112,7 +112,7 @@ Use the [mesh comparison](figures/rice_mele_convergence.png) to examine numerica
 
 [PDF](figures/rice_mele_convergence.pdf)
 
-The band-edge transition energies are $2\sqrt{m^2+\delta^2}$ at the zone edge and $2\sqrt{m^2+t^2}$ at the zone center. For the supplied parameters these are about 1.888 and 2.193 eV; broadened spectral maxima need not lie exactly at either threshold. The two features therefore connect the spectrum to different parts of the one-dimensional band structure.
+The band-edge transition energies are $`2\sqrt{m^2+\delta^2}`$ at the zone edge and $`2\sqrt{m^2+t^2}`$ at the zone center. For the supplied parameters these are about 1.888 and 2.193 eV; broadened spectral maxima need not lie exactly at either threshold. The two features therefore connect the spectrum to different parts of the one-dimensional band structure.
 
 The independent Eq. (21) integral comparison uses the same orbital embedding, area and Gaussian width. The supplied maximum relative discrepancy is about 0.2975%; the two WannierNLQG model routes differ by about 0.1000% under their stated check. Polarization reversal changes the shift-current sign, while the inversion-symmetric controls are null within the recorded tolerance. These are distinct tests of normalization, implementation and symmetry. Mesh agreement at this width is not a statement about the zero-width spectrum.
 

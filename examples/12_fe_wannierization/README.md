@@ -11,35 +11,35 @@
 
 This lesson provides a native Wannierization input and separately evaluates an available Fe model. The band entry point does not run DFT or construct Wannier functions. The reciprocal-space Hamiltonian and its eigenvalues satisfy
 
-$$
+```math
 H^{(\mathrm{W})}(\mathbf k)
 =\sum_{\mathbf R}\frac{H(\mathbf R)}{d_{\mathbf R}}
 e^{2\pi i\mathbf k_{\mathrm{frac}}\cdot\mathbf R},
 \qquad
 H^{(\mathrm{W})}(\mathbf k)U(\mathbf k)=U(\mathbf k)\mathrm{diag}[\epsilon_n(\mathbf k)].
-$$
+```
 
-The positive phase uses fractional reciprocal coordinates, integer lattice vectors and the loaded real-space degeneracy weights $d_{\mathbf R}$. The phase equals $e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. A finite Wannier subspace cannot be expected to reproduce every DFT state. The supplied comparison matches the 18-band TB spectrum to a 64-band DFT energy pool.
+The positive phase uses fractional reciprocal coordinates, integer lattice vectors and the loaded real-space degeneracy weights $`d_{\mathbf R}`$. The phase equals $`e^{i\mathbf k_{\mathrm{cart}}\cdot\mathbf R_{\mathrm{cart}}}`$ in Cartesian coordinates; the divisor accounts for the loaded finite-file representation rather than changing the Fourier convention. A finite Wannier subspace cannot be expected to reproduce every DFT state. The supplied comparison matches the 18-band TB spectrum to a 64-band DFT energy pool.
 
 For each matched pair, define the signed energy error
 
-$$
+```math
 \Delta \epsilon_{n\mathbf k}
 =\epsilon^{\mathrm{TB}}_{n\mathbf k}
 -\epsilon^{\mathrm{DFT}}_{\mathrm{matched},n\mathbf k}.
-$$
+```
 
 Both datasets use the same energy reference. Matching is an energy-comparison procedure; it does not prove that wavefunctions or optical matrix elements agree. At each momentum, the selected states give
 
-$$
+```math
 \mathrm{RMS}(\mathbf k)
 =\sqrt{\frac{1}{N_{\mathbf k}}\sum_{n\in W_{\mathbf k}}(\Delta \epsilon_{n\mathbf k})^2},
 \qquad
 \mathrm{Max}(\mathbf k)
 =\max_{n\in W_{\mathbf k}}|\Delta \epsilon_{n\mathbf k}|.
-$$
+```
 
-$W_{\mathbf k}$ selects matched DFT energies within the comparison window and $N_{\mathbf k}$ is their count. If that set is empty, no statistic is defined there. RMS summarizes typical squared error; the maximum identifies the worst matched state.
+$`W_{\mathbf k}`$ selects matched DFT energies within the comparison window and $`N_{\mathbf k}`$ is their count. If that set is empty, no statistic is defined there. RMS summarizes typical squared error; the maximum identifies the worst matched state.
 
 ## Environment and calculation routes
 
@@ -58,9 +58,9 @@ The native example was actually run with source-manifest SHA-256 `725ed8e66c2429
 
 The [native input](wannierization/fe_native_ordinary.toml) starts from one self-consistent, spinor bcc Fe VASP calculation with 64 bands on a 10 × 10 × 10 full mesh. It requires matching POSCAR, POTCAR, INCAR, OUTCAR and WAVECAR files from that same calculation. Supply these files yourself under `inputs/` next to a working copy of the input. The tutorial does not distribute VASP wavefunctions or potential; use them only under the terms applicable to your installation and data. Do not mix files from different calculations.
 
-The input prepares native overlap, energy and Fe s/p/d projection matrices for 18 spinor Wannier functions. The outer and frozen windows are [−8, 50] eV and [−8, 20] eV. Disentanglement selects an 18-dimensional subspace by minimizing the gauge-invariant spread $\Omega_I$; localization then varies its gauge to minimize the total spread $\Omega=\Omega_I+\widetilde\Omega$. The serial streaming preparation requests a 24 GiB internal memory budget; this is a preparation setting, not a measured peak or a universal hardware requirement.
+The input prepares native overlap, energy and Fe s/p/d projection matrices for 18 spinor Wannier functions. The outer and frozen windows are [−8, 50] eV and [−8, 20] eV. Disentanglement selects an 18-dimensional subspace by minimizing the gauge-invariant spread $`\Omega_I`$; localization then varies its gauge to minimize the total spread $`\Omega=\Omega_I+\widetilde\Omega`$. The serial streaming preparation requests a 24 GiB internal memory budget; this is a preparation setting, not a measured peak or a universal hardware requirement.
 
-For each stage the input permits up to 1000 accepted steps, with tolerance $10^{-10}$ and a window of three changes. The Z test is the relative change between successive accepted $\Omega_I$ values; the U test is the absolute change in total spread in Å². Three qualifying changes require at least four accepted objective values; a previous zero Z objective is stable only if the current value is exactly zero. A stage reaching its iteration limit is not convergence. A normal process exit or an exported file alone also does not prove a qualified material: inspect both stage terminations, retained accepted state, warnings, structural checks and the output readback.
+For each stage the input permits up to 1000 accepted steps, with tolerance $`10^{-10}`$ and a window of three changes. The Z test is the relative change between successive accepted $`\Omega_I`$ values; the U test is the absolute change in total spread in Å². Three qualifying changes require at least four accepted objective values; a previous zero Z objective is stable only if the current value is exactly zero. A stage reaching its iteration limit is not convergence. A normal process exit or an exported file alone also does not prove a qualified material: inspect both stage terminations, retained accepted state, warnings, structural checks and the output readback.
 
 Use the current source and its matching installed Julia environment. From the repository root, with `WN_SOURCE` set to that source directory and user-supplied files in the working input directory:
 
@@ -96,7 +96,7 @@ The [comparison helper](wannierization/prepare_fe_comparison.py) verifies the ge
 
 ## Route 1: recorded result and band comparison
 
-The recorded run reached 1000 Z steps with a last relative change of $8.13\times10^{-9}$, above the $10^{-10}$ tolerance. U localization converged after 561 accepted steps from the retained structurally valid but nonconverged Z projector. The overall status is `MAX_ITERATIONS`, and scientific qualification is **not established**, despite successful H/r export. Structural checks passed; two PAW quality measurements passed, while eight were unavailable and retained quality-review warnings.
+The recorded run reached 1000 Z steps with a last relative change of $`8.13\times10^{-9}`$, above the $`10^{-10}`$ tolerance. U localization converged after 561 accepted steps from the retained structurally valid but nonconverged Z projector. The overall status is `MAX_ITERATIONS`, and scientific qualification is **not established**, despite successful H/r export. Structural checks passed; two PAW quality measurements passed, while eight were unavailable and retained quality-review warnings.
 
 The exported model was evaluated on the 801-point path. The following figures show that new model, not the separately supplied reference model. The plots compare energies only and do not establish model qualification.
 

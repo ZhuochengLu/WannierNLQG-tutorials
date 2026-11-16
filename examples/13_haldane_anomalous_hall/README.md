@@ -8,30 +8,30 @@
 
 ## Physics and model
 
-The model in [HaldaneModel.jl](../../models/haldane/HaldaneModel.jl) uses two orbitals and complex next-nearest-neighbor hopping. Define $u=\mathbf{k}\cdot\mathbf{a}_1$, $v=\mathbf{k}\cdot\mathbf{a}_2$, and $\Theta=\{u,v-u,-v\}$. In its periodic Convention-II basis,
+The model in [HaldaneModel.jl](../../models/haldane/HaldaneModel.jl) uses two orbitals and complex next-nearest-neighbor hopping. Define $`u=\mathbf{k}\cdot\mathbf{a}_1`$, $`v=\mathbf{k}\cdot\mathbf{a}_2`$, and $`\Theta=\{u,v-u,-v\}`$. In its periodic Convention-II basis,
 
-$$
+```math
 H(\mathbf{k})=
 \begin{pmatrix}
 h_A & f\\ f^* & h_B
 \end{pmatrix},
 \qquad
 f=t_1(1+e^{-iu}+e^{-iv}),
-$$
+```
 
-$$
+```math
 h_A=-M+2t_2\sum_{\theta\in\Theta}\cos(\theta-\phi),
 \qquad
 h_B=M+2t_2\sum_{\theta\in\Theta}\cos(\theta+\phi).
-$$
+```
 
-The sign of $M$ here follows this source: the A-site energy is $-M$. With $d_0=(h_A+h_B)/2$ and $d_z=(h_A-h_B)/2$,
+The sign of $`M`$ here follows this source: the A-site energy is $`-M`$. With $`d_0=(h_A+h_B)/2`$ and $`d_z=(h_A-h_B)/2`$,
 
-$$
+```math
 E_\pm=d_0\pm\sqrt{d_z^2+|f|^2}.
-$$
+```
 
-The gap can close at $|M|=3\sqrt{3}|t_2\sin\phi|$. This separates the trivial and topological regions for the model. Reversing $\phi$ changes the transverse response without requiring a visibly different band spectrum. The orbitals sit at $0$ and $(\mathbf{a}_1+\mathbf{a}_2)/3$; those centers are part of the optical and geometric input, not an optional plotting choice.
+The gap can close at $`|M|=3\sqrt{3}|t_2\sin\phi|`$. This separates the trivial and topological regions for the model. Reversing $`\phi`$ changes the transverse response without requiring a visibly different band spectrum. The orbitals sit at $`0`$ and $`(\mathbf{a}_1+\mathbf{a}_2)/3`$; those centers are part of the optical and geometric input, not an optional plotting choice.
 
 ## Parameters
 
@@ -39,19 +39,19 @@ No external material files are needed.
 
 | Parameter | Value | Role |
 | --- | --- | --- |
-| $\mathbf{a}_1,\mathbf{a}_2$ | $(1,0,0)$, $(1/2,\sqrt{3}/2,0)$ Å | In-plane primitive vectors |
+| $`\mathbf{a}_1,\mathbf{a}_2`$ | $`(1,0,0)`$, $`(1/2,\sqrt{3}/2,0)`$ Å | In-plane primitive vectors |
 | Auxiliary cell height | 20 Å | Embedding of the two-dimensional model |
-| $t_1,t_2$ | −1.0 eV, 0.15 eV | Nearest and next-nearest hopping |
-| Topological case $(M,\phi)$ | (0.2 eV, $\pi/2$) | Gapped topological example |
-| Trivial case $(M,\phi)$ | (1.0 eV, $\pi/2$) | Larger sublattice mass |
-| Reversed case $(M,\phi)$ | (0.2 eV, $-\pi/2$) | Reversed complex hopping phase |
+| $`t_1,t_2`$ | −1.0 eV, 0.15 eV | Nearest and next-nearest hopping |
+| Topological case $`(M,\phi)`$ | (0.2 eV, $`\pi/2`$) | Gapped topological example |
+| Trivial case $`(M,\phi)`$ | (1.0 eV, $`\pi/2`$) | Larger sublattice mass |
+| Reversed case $`(M,\phi)`$ | (0.2 eV, $`-\pi/2`$) | Reversed complex hopping phase |
 | Basic mesh | [121, 121, 1] | TOML spatial_dimension = 3; no third-direction dispersion |
 | Chemical potentials | −1.5 to 1.5 eV, 121 points | Occupation scan |
 | Temperature | 0 K | Occupation temperature |
 | Interband / intraband widths | 0.02 / 0.02 eV | Finite relaxation |
 | eta_fs_ev | 0.01 eV | Gaussian Fermi-surface width |
 
-The plotted observable is sheet Hall conductance in units of $e^2/h$. The third lattice direction is an embedding convention; it does not turn the model into a three-dimensional dispersive material.
+The plotted observable is sheet Hall conductance in units of $`e^2/h`$. The third lattice direction is an embedding convention; it does not turn the model into a three-dimensional dispersive material.
 
 ## Run
 
@@ -112,7 +112,7 @@ The sign of Hall conductance depends on the stated charge and tensor convention;
 
 
 
-Read the phase diagram first, then the bands and chemical-potential Hall plateau, and finally the numerical checks. In the sign convention used here, an insulating clean-limit plateau obeys $G_{xy}=-C e^2/h$. The finite-width topological example gives approximately −0.999884 $e^2/h$ for $C=+1$; reversing the topological mass reverses the Hall sign. A finite-width plateau need not be exactly an integer. Refining a fixed grid and narrowing relaxation are separate limits.
+Read the phase diagram first, then the bands and chemical-potential Hall plateau, and finally the numerical checks. In the sign convention used here, an insulating clean-limit plateau obeys $`G_{xy}=-C e^2/h`$. The finite-width topological example gives approximately −0.999884 $`e^2/h`$ for $`C=+1`$; reversing the topological mass reverses the Hall sign. A finite-width plateau need not be exactly an integer. Refining a fixed grid and narrowing relaxation are separate limits.
 
 The supplied independent plaquette-Chern check uses the gauge-invariant lattice construction of [Fukui, Hatsugai and Suzuki, JPSJ 74, 1674 (2005)](https://doi.org/10.1143/JPSJ.74.1674). This checks the model's integer topology independently of a broadened transport curve; it does not turn the entire finite-width spectrum into a quantized observable.
 

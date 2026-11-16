@@ -8,34 +8,34 @@
 
 ## Physics and model
 
-Let $A=\{21,22\}$ and $B=\{19,20\}$. The Hamiltonian-gauge position block $r^a_{AB}$ maps $B$ to $A$. Within a subspace $S$, the non-Abelian curvature is $F_S^{dc}=\partial_d r_S^c-\partial_c r_S^d-i[r_S^d,r_S^c]$, with $r^a_{mn}=i\langle u_m|\partial_a u_n\rangle$. The Hermitian curvature tensor measures the curvature acting on the two ends of a transition:
+Let $`A=\{21,22\}`$ and $`B=\{19,20\}`$. The Hamiltonian-gauge position block $`r^a_{AB}`$ maps $`B`$ to $`A`$. Within a subspace $`S`$, the non-Abelian curvature is $`F_S^{dc}=\partial_d r_S^c-\partial_c r_S^d-i[r_S^d,r_S^c]`$, with $`r^a_{mn}=i\langle u_m|\partial_a u_n\rangle`$. The Hermitian curvature tensor measures the curvature acting on the two ends of a transition:
 
-$$
+```math
 K_{AB}^{badc}
 =-i\mathrm{Tr}_B\left[
 r^b_{BA}\left(F_A^{dc}r^a_{AB}-r^a_{AB}F_B^{dc}\right)
 \right].
-$$
+```
 
-The input order is [b,a,d,c]: two optical legs, then the curvature-plane directions. Position has units Å and curvature Å², so $K$ has units Å⁴. The ordinary trace is **not divided by either group size**. If both curvature blocks vanish, $K$ vanishes even for a nonzero transition matrix element.
+The input order is [b,a,d,c]: two optical legs, then the curvature-plane directions. Position has units Å and curvature Å², so $`K`$ has units Å⁴. The ordinary trace is **not divided by either group size**. If both curvature blocks vanish, $`K`$ vanishes even for a nonzero transition matrix element.
 
-Zeeman geometry replaces one momentum leg with a spin-operator leg. Write $s^b_{IJ}=\langle u_I|\hat S_b|u_J\rangle$ for the supplied spin matrix, retaining its recorded normalization. The mixed position–spin tensor is
+Zeeman geometry replaces one momentum leg with a spin-operator leg. Write $`s^b_{IJ}=\langle u_I|\hat S_b|u_J\rangle`$ for the supplied spin matrix, retaining its recorded normalization. The mixed position–spin tensor is
 
-$$
+```math
 \mathcal Z_{A,B}^{aS_b}
 =\frac{1}{N_A N_B}\sum_{I\in A,J\in B}r_{JI}^{a}s_{IJ}^{b}
 =g_{A,B}^{aS_b}-\frac{i}{2}\Omega_{A,B}^{aS_b}.
-$$
+```
 
 For Hermitian position and spin operators, the exchanged product is the complex conjugate. Thus the kernel's symmetric and antisymmetric pair averages give
 
-$$
+```math
 g_{A,B}^{aS_b}=\mathrm{Re}\,\mathcal Z_{A,B}^{aS_b},
 \qquad
 \Omega_{A,B}^{aS_b}=-2\mathrm{Im}\,\mathcal Z_{A,B}^{aS_b}.
-$$
+```
 
-$a$ is an orbital Cartesian direction and $S_b$ labels the spin leg. Component [1,3] means $xS_z$, not an ordinary $xz$ Berry-curvature plane. For dimensionless Pauli matrices the mixed quantities have units Å. Replacing those matrices by physical spin multiplies them by $\hbar/2$; the geometry kernels in `ConventionalQuantumGeometry.jl` do not apply that conversion automatically.
+$`a`$ is an orbital Cartesian direction and $`S_b`$ labels the spin leg. Component [1,3] means $`xS_z`$, not an ordinary $`xz`$ Berry-curvature plane. For dimensionless Pauli matrices the mixed quantities have units Å. Replacing those matrices by physical spin multiplies them by $`\hbar/2`$; the geometry kernels in `ConventionalQuantumGeometry.jl` do not apply that conversion automatically.
 
 The mixed metric need not be positive definite. The optional triple-phase example instead averages an ordered cyclic product of three position elements over three groups. These are distinct local geometric objects, not alternative algorithms for one integrated spin-current conductivity.
 
@@ -119,11 +119,11 @@ Operator completeness and consistency with the Hamiltonian are essential. A miss
 
 The ordered triple position product averages the cyclic product over three supplied groups,
 
-$$
+```math
 T_{ABC}^{\alpha\beta\gamma}=\frac{1}{N_A N_B N_C}\sum_{a\in A,b\in B,c\in C}r^\alpha_{ba}r^\beta_{cb}r^\gamma_{ac}.
-$$
+```
 
-Each admissible triple has three distinct band indices. This generally complex quantity has units Å³ and retains the input's group and Cartesian-index order; it is not the dimensionless argument of that product or a conductivity. The mixed position–spin metric contains one position leg. For dimensionless Pauli spin matrices its units are Å, not Å²; physical-spin units require the separately stated $\hbar/2$ conversion. Neither multiplication by an extra spin degeneracy nor reinterpreting a Cartesian index as another momentum derivative is implicit in the data. The Hermitian-curvature tensor uses its ordinary block trace, with no group-size division.
+Each admissible triple has three distinct band indices. This generally complex quantity has units Å³ and retains the input's group and Cartesian-index order; it is not the dimensionless argument of that product or a conductivity. The mixed position–spin metric contains one position leg. For dimensionless Pauli spin matrices its units are Å, not Å²; physical-spin units require the separately stated $`\hbar/2`$ conversion. Neither multiplication by an extra spin degeneracy nor reinterpreting a Cartesian index as another momentum derivative is implicit in the data. The Hermitian-curvature tensor uses its ordinary block trace, with no group-size division.
 
 ## References
 

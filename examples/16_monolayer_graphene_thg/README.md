@@ -8,34 +8,34 @@
 
 ## Physics and model
 
-The [graphene model](../../models/graphene/GrapheneModel.jl) contains one spin copy of two point orbitals per cell. With carbon–carbon bond length $a$,
+The [graphene model](../../models/graphene/GrapheneModel.jl) contains one spin copy of two point orbitals per cell. With carbon–carbon bond length $`a`$,
 
-$$
+```math
 \mathbf{a}_1=(\sqrt{3}a/2,3a/2,0),\qquad
 \mathbf{a}_2=(-\sqrt{3}a/2,3a/2,0).
-$$
+```
 
 In its periodic Convention-II basis,
 
-$$
+```math
 H_{\mathrm{per}}(\mathbf{k})=
 \begin{pmatrix}0&f(\mathbf{k})\\f^*(\mathbf{k})&0\end{pmatrix},
 \quad
 f=t[1+e^{-i\mathbf{k}\cdot\mathbf{a}_1}
        +e^{-i\mathbf{k}\cdot\mathbf{a}_2}],
 \quad E_\pm=\pm|f|.
-$$
+```
 
-The orbital centers are $\boldsymbol{\tau}_A=0$ and $\boldsymbol{\tau}_B=(0,a,0)$. Including their phases with $P=\mathrm{diag}(e^{i\mathbf{k}\cdot\boldsymbol{\tau}_A},e^{i\mathbf{k}\cdot\boldsymbol{\tau}_B})$ gives $H_{\mathrm{emb}}=P^\dagger H_{\mathrm{per}}P$. For example, its off-diagonal entry is
+The orbital centers are $`\boldsymbol{\tau}_A=0`$ and $`\boldsymbol{\tau}_B=(0,a,0)`$. Including their phases with $`P=\mathrm{diag}(e^{i\mathbf{k}\cdot\boldsymbol{\tau}_A},e^{i\mathbf{k}\cdot\boldsymbol{\tau}_B})`$ gives $`H_{\mathrm{emb}}=P^\dagger H_{\mathrm{per}}P`$. For example, its off-diagonal entry is
 
-$$
+```math
 f_{\mathrm{emb}}=t\left[e^{ik_y a}
 +2e^{-ik_y a/2}\cos(\sqrt{3}k_x a/2)\right].
-$$
+```
 
 These are representations of the same model, not different dispersions. Keep orbital embedding consistent when comparing optical quantities.
 
-Third-harmonic generation couples three fields at $\omega$ to a response at $3\omega$. The examples plot the magnitude of the third-order sheet conductivity $\Sigma^{(3)}_{yyyy}$, in A m²/V³. It is not a susceptibility $\chi$; conversions require a stated Fourier and polarization convention. “A4” and “Regrouped” label the two expressions in the supplied data, not two different materials.
+Third-harmonic generation couples three fields at $`\omega`$ to a response at $`3\omega`$. The examples plot the magnitude of the third-order sheet conductivity $`\Sigma^{(3)}_{yyyy}`$, in A m²/V³. It is not a susceptibility $`\chi`$; conversions require a stated Fourier and polarization convention. “A4” and “Regrouped” label the two expressions in the supplied data, not two different materials.
 
 ## Parameters
 
@@ -51,7 +51,7 @@ No external material files are needed. The chapter input is [valley_input.toml](
 | Photon energies | 84 explicit values, 0.02–1.0331337560200193 eV |
 | Tensor and raw normalization | yyyy; volume conductivity A m/V³ and susceptibility m²/V² |
 | Quadrature | h-adaptive cubature, 32 declared vector frequency batches, six regions each |
-| Initial subdivisions / estimate controls | 16 / rtol $10^{-6}$, atol 0 |
+| Initial subdivisions / estimate controls | 16 / rtol $`10^{-6}`$, atol 0 |
 | Evaluation cap | 1,920,000 per original valley per frequency batch, distributed by rectangle area |
 | Broadening prescription | distribution_broadening, Lorentzian |
 | Resonance / low-frequency width | 0.03 / 0.01 eV |
@@ -60,7 +60,7 @@ No external material files are needed. The chapter input is [valley_input.toml](
 | Model / display spin count | One explicit model spin copy / display factor 2 |
 | Extra valley or field multiplier | 1; native field and permutation normalization retained |
 
-The adaptive nodes refine the original rectangles; the driver's placeholder `k_mesh=(4,4)` is not a fixed 4 × 4 integration grid. Every input batch keeps the same evaluation cap and initial subdivisions as its corresponding selected-valley setup. The software uses the stated resonance width at each harmonic and separate broadened low-frequency poles. This is the currently supported prescription, not a causal resolvent with cumulative widths $\eta,2\eta,3\eta$. The positive intermediate width is also retained explicitly. THG has no response-grouping threshold.
+The adaptive nodes refine the original rectangles; the driver's placeholder `k_mesh=(4,4)` is not a fixed 4 × 4 integration grid. Every input batch keeps the same evaluation cap and initial subdivisions as its corresponding selected-valley setup. The software uses the stated resonance width at each harmonic and separate broadened low-frequency poles. This is the currently supported prescription, not a causal resolvent with cumulative widths $`\eta,2\eta,3\eta`$. The positive intermediate width is also retained explicitly. THG has no response-grouping threshold.
 
 ## Run
 
@@ -95,17 +95,17 @@ The auxiliary T10/T300 inputs retain their separate 121 × 121 Gaussian settings
 ## Runtime and plotted units
 
 The periodic graphene model has a three-dimensional reference cell with normal height
-$h=10$ Å. Cartesian valley rectangles select a finite region of this periodic model;
+$`h=10`$ Å. Cartesian valley rectangles select a finite region of this periodic model;
 they do not make it a nonperiodic continuum model. Raw THG conductivity is volume
 normalized, in A m/V³, and the corresponding susceptibility is in m²/V².
 For the paper's surface-conductivity comparison, use the explicit external conversion
-$\Sigma^{(3)}=h\,\sigma^{(3)}$ with $h=10^{-9}$ m; surface susceptibility likewise
-equals $h$ times volume susceptibility. This is postprocessing, not a response option.
+$`\Sigma^{(3)}=h\,\sigma^{(3)}`$ with $`h=10^{-9}`$ m; surface susceptibility likewise
+equals $`h`$ times volume susceptibility. This is postprocessing, not a response option.
 
 Keep the six rectangles, original BZ weights and omitted outside region unchanged.
 Their summed BZ fraction is 0.5657239247980234; do not renormalize by that fraction or
 add a valley factor. For an absolute integration tolerance stated in surface units,
-the matching volume tolerance is $a_{\mathrm{vol}}=a_{\mathrm{surface}}/h$;
+the matching volume tolerance is $`a_{\mathrm{vol}}=a_{\mathrm{surface}}/h`$;
 relative tolerance is unchanged. This example uses zero absolute tolerance, so its
 value remains zero. Keep 30/10/1 meV widths and the spin/field conventions unchanged.
 
@@ -119,15 +119,15 @@ the finite-domain, finite-budget, expression or paper-prescription limitations.
 
 <a href="figures/thg_valley_magnitude.png"><img src="figures/thg_valley_magnitude.png" alt="Current WannierNLQG unregrouped and regrouped THG magnitudes with the digitized published Fig. 3(a) curve under the declared field conversion" width="1100" style="max-width:100%;height:auto;"></a>
 
-The two supplied curves evaluate the recorded unregrouped and regrouped expressions separately with resonance/low-frequency/intermediate widths of **30/10/1 meV**. The right panel resolves the same spectrum near the three-photon scale using actual calculated points, not extra interpolated WannierNLQG samples. They use the same model, rectangles, frequency batches and numerical controls. The x axis is photon energy divided by $\mu=0.35$ eV. Guides at $2/3$, 1 and 2 identify the doping-related transition scales; a broadened local maximum need not sit exactly on a guide. The plotted surface conductivities are reconstructed externally from volume-derived tables with the stated 10 Å height and include exactly two spin copies. The saved numerical results retain their original calculation identities; this unit conversion is not a new integration. The black dashed curve is the published $\mu=0.35$ eV curve from Fig. 3(a), digitized from its PDF vector path, with the field conversion below. It is not an author-supplied numerical table. Only its retained 0.07729–1.03313 eV range is drawn; no extrapolation or amplitude fit is applied. [PDF](figures/thg_valley_magnitude.pdf).
+The two supplied curves evaluate the recorded unregrouped and regrouped expressions separately with resonance/low-frequency/intermediate widths of **30/10/1 meV**. The right panel resolves the same spectrum near the three-photon scale using actual calculated points, not extra interpolated WannierNLQG samples. They use the same model, rectangles, frequency batches and numerical controls. The x axis is photon energy divided by $`\mu=0.35`$ eV. Guides at $`2/3`$, 1 and 2 identify the doping-related transition scales; a broadened local maximum need not sit exactly on a guide. The plotted surface conductivities are reconstructed externally from volume-derived tables with the stated 10 Å height and include exactly two spin copies. The saved numerical results retain their original calculation identities; this unit conversion is not a new integration. The black dashed curve is the published $`\mu=0.35`$ eV curve from Fig. 3(a), digitized from its PDF vector path, with the field conversion below. It is not an author-supplied numerical table. Only its retained 0.07729–1.03313 eV range is drawn; no extrapolation or amplitude fit is applied. [PDF](figures/thg_valley_magnitude.pdf).
 
 ### Complex response
 
 <a href="figures/thg_valley_complex.png"><img src="figures/thg_valley_complex.png" alt="Real and imaginary parts of the two THG expressions using the same selected valleys and current supported prescription" width="1100" style="max-width:100%;height:auto;"></a>
 
-Real and imaginary components are retained separately across all 84 frequencies with a common physical normalization. The signed-log ordinate is linear inside ±10⁻²² A m²/V³ and logarithmic outside. The full-spectrum relative complex $L^2$ difference is about **1.064%**, but this is dominated by the low-frequency response and does not establish pointwise agreement. At the exact three-photon energy $2\mu/3=0.2333333333333333$ eV, the relative complex difference is about **26.95%**. The largest relative value, about **138.17%**, occurs at 1.0331337560200193 eV where the two-spin magnitudes are only about $9.18\times10^{-25}$ and $1.36\times10^{-24}$ A m²/V³. Thus a large relative tail difference is not the same as a large absolute response error.
+Real and imaginary components are retained separately across all 84 frequencies with a common physical normalization. The signed-log ordinate is linear inside ±10⁻²² A m²/V³ and logarithmic outside. The full-spectrum relative complex $`L^2`$ difference is about **1.064%**, but this is dominated by the low-frequency response and does not establish pointwise agreement. At the exact three-photon energy $`2\mu/3=0.2333333333333333`$ eV, the relative complex difference is about **26.95%**. The largest relative value, about **138.17%**, occurs at 1.0331337560200193 eV where the two-spin magnitudes are only about $`9.18\times10^{-25}`$ and $`1.36\times10^{-24}`$ A m²/V³. Thus a large relative tail difference is not the same as a large absolute response error.
 
-These are differences observed under this prescription and these numerical settings; available evidence does not separate integration error from prescription or expression effects. The denominator is $\max(|u|,|r|)$ without an artificial floor, with zero assigned only when both values vanish. [Pointwise absolute and relative differences](data/valley_distribution402/formulation_differences.csv) accompany the [native one-spin conductivity and susceptibility tables](data/valley_distribution402/summary.json). Individual complex-channel magnitudes do not sum to the magnitude of their total. [PDF](figures/thg_valley_complex.pdf).
+These are differences observed under this prescription and these numerical settings; available evidence does not separate integration error from prescription or expression effects. The denominator is $`\max(|u|,|r|)`$ without an artificial floor, with zero assigned only when both values vanish. [Pointwise absolute and relative differences](data/valley_distribution402/formulation_differences.csv) accompany the [native one-spin conductivity and susceptibility tables](data/valley_distribution402/summary.json). Individual complex-channel magnitudes do not sum to the magnitude of their total. [PDF](figures/thg_valley_complex.pdf).
 
 ## Redraw saved results
 
@@ -144,33 +144,33 @@ python examples/16_monolayer_graphene_thg/plot.py --figure=thg_valley_complex402
 
 The 84-point spectrum has complete six-region source records: 174 newly executed region/vector integrations and 18 reused local region/vector integrations. Across these sources, 64 ended at the declared evaluation budget and 128 reached the backend's estimated tolerance. The 12 reused target points passed two independent external complex-stability checks (budget refinement and initial-partition refinement) at 0.1% for both expressions. The remaining 72 frequencies were not independently refined in the full-spectrum calculation; local stability cannot be extended to the whole spectrum. The embedded estimates are not rigorous error bounds; this calculation establishes neither mesh nor selected-region convergence. The finite-window formulas also retain the implementation's omission of finite-boundary corrections. Preserve this domain limitation when comparing two expressions or an independent full-BZ result.
 
-The overlaid reference is Hipólito, Taghizadeh and Pedersen, *Physical Review B* **98**, 205420 (2018), Fig. 3(a). Its 122 retained vector vertices are calibrated to the printed energy axis and $\log_{10}(|\bar\sigma_{22}^{(3)}|/\sigma_3)$ axis. Effective index $22$ denotes $yyyy$. The 122-point literature line is a digitized approximation independently redrawn from the published PDF vector path, not an author-supplied raw array. This third-party reference is excluded from the CC BY 4.0 grant on the separately distributed GeS/Fe material datasets; no publisher permission is asserted. [Reference reuse and attribution notice](data/paper_fig3a382/REUSE_NOTICE.md). [Digitized points](data/paper_fig3a382/digitized_log10.dat) and [source, calibration and convention record](data/paper_fig3a382/provenance.json) accompany the figure.
+The overlaid reference is Hipólito, Taghizadeh and Pedersen, *Physical Review B* **98**, 205420 (2018), Fig. 3(a). Its 122 retained vector vertices are calibrated to the printed energy axis and $`\log_{10}(|\bar\sigma_{22}^{(3)}|/\sigma_3)`$ axis. Effective index $`22`$ denotes $`yyyy`$. The 122-point literature line is a digitized approximation independently redrawn from the published PDF vector path, not an author-supplied raw array. This third-party reference is excluded from the CC BY 4.0 grant on the separately distributed GeS/Fe material datasets; no publisher permission is asserted. [Reference reuse and attribution notice](data/paper_fig3a382/REUSE_NOTICE.md). [Digitized points](data/paper_fig3a382/digitized_log10.dat) and [source, calibration and convention record](data/paper_fig3a382/provenance.json) accompany the figure.
 
 For a common Fourier-field coefficient, write
 
-$$
+```math
 E(t)=\mathcal E e^{-i\omega t}+\mathrm{c.c.},\qquad
 \mathcal E=E^{\mathrm{ph}}/2,\qquad
 j^{(+)}(3\omega)=\Sigma_F^{(3)}\mathcal E^3
 =\bar\sigma^{(3)}(E^{\mathrm{ph}})^3.
-$$
+```
 
-Thus, under the field convention of the paper's Eqs. (2) and (5), $\Sigma_F^{(3)}=8\bar\sigma^{(3)}$. If a digitized ordinate is $y_p$, the displayed paper magnitude is
+Thus, under the field convention of the paper's Eqs. (2) and (5), $`\Sigma_F^{(3)}=8\bar\sigma^{(3)}`$. If a digitized ordinate is $`y_p`$, the displayed paper magnitude is
 
-$$
+```math
 |\Sigma_{F,\mathrm{paper}}^{(3)}|
 =8(6.28\times10^{-26})10^{y_p}\;\mathrm{A\,m^2/V^3}.
-$$
+```
 
-The conversion uses **the printed Fig. 3 unit**, $\sigma_3=6.28\times10^{-26}$ S·m²/V². Evaluating its stated definition $e^4a_0^2/(8\gamma_0^2\hbar)$ with $e=1.602176634\times10^{-19}$ C, $\hbar=1.054571817\times10^{-34}$ J·s, $a_0=1.42\times10^{-10}$ m and $|\gamma_0|=4.806529902\times10^{-19}$ J instead gives $6.81692976\times10^{-26}$ S·m²/V², a ratio of 1.08549837. That alternative unit is recorded but **not substituted** into the plotted curve. The WannierNLQG curves remain $2|\Sigma_{F,\mathrm{one\ spin}}^{(3)}|$ exactly as before. The paper already includes spin degeneracy two. Neither curve receives another valley, factorial or mixed-index multiplicity factor: the six input permutations are averaged and are identical for equal-frequency $yyyy$.
+The conversion uses **the printed Fig. 3 unit**, $`\sigma_3=6.28\times10^{-26}`$ S·m²/V². Evaluating its stated definition $`e^4a_0^2/(8\gamma_0^2\hbar)`$ with $`e=1.602176634\times10^{-19}`$ C, $`\hbar=1.054571817\times10^{-34}`$ J·s, $`a_0=1.42\times10^{-10}`$ m and $`|\gamma_0|=4.806529902\times10^{-19}`$ J instead gives $`6.81692976\times10^{-26}`$ S·m²/V², a ratio of 1.08549837. That alternative unit is recorded but **not substituted** into the plotted curve. The WannierNLQG curves remain $`2|\Sigma_{F,\mathrm{one\ spin}}^{(3)}|`$ exactly as before. The paper already includes spin degeneracy two. Neither curve receives another valley, factorial or mixed-index multiplicity factor: the six input permutations are averaged and are identical for equal-frequency $`yyyy`$.
 
 The unit discrepancy is separate from the unresolved factor-four conflict between literal A4d and printed Eqs. (10), (11b) and (12), identified by the independent Dirac-limit coefficient audit. No factor-four correction is applied. The authors' Fig. 3 generator and raw arrays are unavailable here, so the overlay explicitly assumes that the plotted coefficient follows Eqs. (2)/(5); its absolute normalization is not independently established.
 
 | Comparison item | Paper curve | Current WannierNLQG curves |
 | --- | --- | --- |
-| Model / occupation | Gapless nearest-neighbor graphene, 1.42 Å, −3 eV; $\mu=0.35$ eV, 10 K | Same Hamiltonian and occupation values; explicit point-orbital embedding |
+| Model / occupation | Gapless nearest-neighbor graphene, 1.42 Å, −3 eV; $`\mu=0.35`$ eV, 10 K | Same Hamiltonian and occupation values; explicit point-orbital embedding |
 | Integration domain | Full-dispersion BZ sum; numerical nodes and budget not supplied | Six valley rectangles, 56.57% of the BZ; original weights, no area renormalization or finite-boundary correction |
-| Frequency prescription | Adiabatic $\omega+i\eta$, $\hbar\eta=0.01$ eV; cumulative harmonic widths | distribution_broadening/Lorentzian; resonance width 0.03 eV, low-frequency width 0.01 eV, intermediate width 0.001 eV |
+| Frequency prescription | Adiabatic $`\omega+i\eta`$, $`\hbar\eta=0.01`$ eV; cumulative harmonic widths | distribution_broadening/Lorentzian; resonance width 0.03 eV, low-frequency width 0.01 eV, intermediate width 0.001 eV |
 | Numerical evidence | Digitized published line, not original integration data | 84 source-bound frequencies, 72 new plus 12 reused; 64 source-region budget terminations |
 
 This comparison shows the published magnitude and resonance structure alongside the current calculation. It is not an exact paper reproduction or a convergence test. Differences may involve the prescription, omitted regions, numerical integration and the unresolved publication normalization; this overlay does not isolate those contributions. The retained digitization envelope is about 0.0015 eV horizontally and 0.03 in the logarithmic ordinate, not a statistical or integration error bound.

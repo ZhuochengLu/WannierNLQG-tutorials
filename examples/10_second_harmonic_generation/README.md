@@ -8,32 +8,32 @@
 
 ## Physics and model
 
-In second-harmonic generation (SHG), two incident fields at frequency $\omega$ generate a response at $2\omega$. With time dependence $e^{-i\omega t}$, define the polarization response by
+In second-harmonic generation (SHG), two incident fields at frequency $`\omega`$ generate a response at $`2\omega`$. With time dependence $`e^{-i\omega t}`$, define the polarization response by
 
-$$
+```math
 P^a(2\omega)
 =\epsilon_0\sum_{bc}\chi^{abc}(-2\omega;\omega,\omega)
 E^b(\omega)E^c(\omega).
-$$
+```
 
-Here $a$ is the output direction, $b,c$ are the incident-field directions, and $\epsilon_0$ is the vacuum permittivity. The corresponding current coefficient is defined by
+Here $`a`$ is the output direction, $`b,c`$ are the incident-field directions, and $`\epsilon_0`$ is the vacuum permittivity. The corresponding current coefficient is defined by
 
-$$
+```math
 J^a(2\omega)
 =\sum_{bc}\sigma^{abc}(-2\omega;\omega,\omega)
 E^b(\omega)E^c(\omega).
-$$
+```
 
 These definitions follow the v1.2.0 SHG theory and implementation, without an additional factorial. They specify the convention for this lesson; the manuscript does not supply a corresponding SHG derivation. The yyy component places all three directions along y. In the clean analytic theory, current is the time derivative of polarization. The finite-width implementation nevertheless evaluates conductivity and susceptibility with separate kernels: do not generate one numerical output by multiplying or dividing the other by a complex frequency.
 
 The Gaussian energy-selection kernel uses
 
-$$
+```math
 g_\gamma(x)=\frac{\exp[-(x/\gamma)^2]}{\sqrt{\pi}\gamma},
 \qquad x,\gamma\ \text{in eV}.
-$$
+```
 
-Thus $\gamma$ is the width parameter, not the Gaussian standard deviation. The response contains both one- and two-photon resonant structures. Low-frequency factors have a separate regularization and are not replaced by this Gaussian.
+Thus $`\gamma`$ is the width parameter, not the Gaussian standard deviation. The response contains both one- and two-photon resonant structures. Low-frequency factors have a separate regularization and are not replaced by this Gaussian.
 
 ## Parameters
 
@@ -44,7 +44,7 @@ Use [second_harmonic_generation_conventional.toml](inputs/second_harmonic_genera
 | Model | Materials/GeS/model_tb.dat | GeS Wannier Hamiltonian |
 | k mesh | [100, 100] | Brillouin-zone sampling in the input |
 | spatial_dimension | 3 | Cartesian response dimension |
-| Incident photon energy $\hbar\omega$ | 0–4 eV, 200 points | The plotted frequency axis |
+| Incident photon energy $`\hbar\omega`$ | 0–4 eV, 200 points | The plotted frequency axis |
 | Chemical potential | −2.5 eV | Occupation reference |
 | Temperature | 0 K | Electronic occupations |
 | broadening | 0.04 eV | Gaussian resonance width; omitted broadening_type defaults to Gaussian |
@@ -73,7 +73,7 @@ The supplied spectra illustrate the output convention. Redrawing them does not e
 
 <a href="figures/shg_sigma_yyy.png"><img src="figures/shg_sigma_yyy.png" alt="Real and imaginary parts of GeS yyy SHG conductivity" width="680"></a>
 
-Read the real and imaginary parts separately. The horizontal axis is the incident energy $\hbar\omega$, although the output is at $2\omega$. The plot converts A/V² to μA/V² with a factor $10^6$; it does not fit the amplitude.
+Read the real and imaginary parts separately. The horizontal axis is the incident energy $`\hbar\omega`$, although the output is at $`2\omega`$. The plot converts A/V² to μA/V² with a factor $`10^6`$; it does not fit the amplitude.
 
 [Original PNG](figures/shg_sigma_yyy.png) · [PDF](figures/shg_sigma_yyy.pdf)
 

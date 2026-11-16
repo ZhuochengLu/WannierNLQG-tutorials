@@ -8,43 +8,43 @@
 
 ## Physics and model
 
-For valence state $v$ and conduction state $c$, use the Hamiltonian-gauge position matrix $r^y_{mn}=i\langle u_m|\partial_yu_n\rangle$. The generalized derivative is written with the derivative direction after the semicolon. For the $vc$ matrix element used on the shifted leg of the loop,
+For valence state $`v`$ and conduction state $`c`$, use the Hamiltonian-gauge position matrix $`r^y_{mn}=i\langle u_m|\partial_yu_n\rangle`$. The generalized derivative is written with the derivative direction after the semicolon. For the $`vc`$ matrix element used on the shifted leg of the loop,
 
-$$
+```math
 r_{vc}^{y;y}=\partial_y r^y_{vc}
 -i(r^y_{vv}-r^y_{cc})r^y_{vc},
 \qquad
 R_{vc}^{y;y}=\frac{i r_{vc}^{y;y}}{r^y_{vc}}.
-$$
+```
 
-$\partial_y$ differentiates with respect to Cartesian $k_y$ in Å$^{-1}$, so $r^y_{vc}$ and $R_{vc}^{y;y}$ have units Å, while $r_{vc}^{y;y}$ has units Å². The phase-gradient and diagonal-connection terms depend separately on gauge; their combination does not. $R$ is generally complex; its real part gives the transition displacement. At a zero optical matrix element the ratio is undefined. A divergent shift vector need not produce a divergent current, because the transition weight also vanishes.
+$`\partial_y`$ differentiates with respect to Cartesian $`k_y`$ in Å$`^{-1}`$, so $`r^y_{vc}`$ and $`R_{vc}^{y;y}`$ have units Å, while $`r_{vc}^{y;y}`$ has units Å². The phase-gradient and diagonal-connection terms depend separately on gauge; their combination does not. $`R`$ is generally complex; its real part gives the transition displacement. At a zero optical matrix element the ratio is undefined. A divergent shift vector need not produce a divergent current, because the transition weight also vanishes.
 
 The main shift-vector example uses **Wilson Loop** at zero photon momentum. For an isolated transition, its closed product contains position matrix elements:
 
-$$
+```math
 \mathcal L_\pm=\langle v_k|v_{k\pm h}\rangle
 r^y_{vc}(k\pm h)\langle c_{k\pm h}|c_k\rangle r^y_{cv}(k).
-$$
+```
 
-Here the displacement is along Cartesian $k_y$. The symmetric complex logarithmic derivative is
+Here the displacement is along Cartesian $`k_y`$. The symmetric complex logarithmic derivative is
 
-$$
+```math
 \mathcal R_h=\frac{i}{2h}\left[\log\mathcal L_+-\log\mathcal L_-\right],
 \qquad R_h=\mathrm{Re}\,\mathcal R_h.
-$$
+```
 
-The retained Geometric-loop comparison instead uses velocity insertions. At zero photon momentum and for isolated bands, its ordered factors are $\langle v_k|v_{k+h}\rangle V^y_{vc}(k+h)\langle c_{k+h}|c_k\rangle V^y_{cv}(k)$, up to a positive constant, with $V$ the velocity vertex. This fixes the $vc$ orientation above. On a smooth branch with a nonzero transition element, $\lim_{h\to0}R_h=\mathrm{Re}\,R_{vc}^{y;y}$. This real-part relation does not identify the full complex velocity- and position-based logarithmic derivatives.
+The retained Geometric-loop comparison instead uses velocity insertions. At zero photon momentum and for isolated bands, its ordered factors are $`\langle v_k|v_{k+h}\rangle V^y_{vc}(k+h)\langle c_{k+h}|c_k\rangle V^y_{cv}(k)`$, up to a positive constant, with $`V`$ the velocity vertex. This fixes the $`vc`$ orientation above. On a smooth branch with a nonzero transition element, $`\lim_{h\to0}R_h=\mathrm{Re}\,R_{vc}^{y;y}`$. This real-part relation does not identify the full complex velocity- and position-based logarithmic derivatives.
 
 The Wilson product is implemented in `WilsonLoopShiftVector.jl`; the shared logarithmic derivative and pair average are defined in `GeometricLoopShiftVector.jl`. The runtime averages the complex kernel over the requested conduction–valence pairs, and the figure displays its real part. These routines fix the logarithm branch and treatment of vanishing links. Differentiating an arbitrarily unwrapped phase is not the same operation. Degenerate groups require the complete block construction, not independently assigned eigenvector phases or ratios of group-averaged matrix elements.
 
 The Conventional quantum Hermitian connection shown below has diagonal component
 
-$$
+```math
 \mathcal C_{CV}^{yyy}=
 \frac{1}{N_C N_V}\sum_{c\in C,v\in V}r_{vc}^{y;y}r^y_{cv}.
-$$
+```
 
-$C=\{21,22\}$ and $V=\{19,20\}$ give $N_C=N_V=2$. The connection kernel in `ConventionalQuantumGeometry.jl` is a generally complex pair average. It has dimensions Å³, unlike the shift vector. Neither expression includes occupation differences, resonant energy selection, or momentum integration; a local geometric map is not a shift-current spectrum.
+$`C=\{21,22\}`$ and $`V=\{19,20\}`$ give $`N_C=N_V=2`$. The connection kernel in `ConventionalQuantumGeometry.jl` is a generally complex pair average. It has dimensions Å³, unlike the shift vector. Neither expression includes occupation differences, resonant energy selection, or momentum integration; a local geometric map is not a shift-current spectrum.
 
 ## Parameters
 
@@ -79,7 +79,7 @@ must be reported rather than silently enlarged.
 
 These geometric outputs are local pair averages, not mesh-weighted response
 cells. Neither the saved QHC/shift-vector maps nor their group-key migration
-requires the response-table $N_k$ conversion discussed in chapters 04 and 05.
+requires the response-table $`N_k`$ conversion discussed in chapters 04 and 05.
 Their units remain Å³ and Å, respectively. This distinction does not assert
 basis-independent equivalence for a selection that cuts a required complete block.
 
@@ -109,9 +109,9 @@ The figures below use complete supplied calculations for the stated source, mesh
 </table>
 
 
-The core figure shows the **Wilson-loop** real $R^{y;y}$ in Å, averaged over the requested valence [19,20] and conduction [21,22] pairs. The 200 × 200 map uses $h=10^{-4}$ Å⁻¹ and a 0.002 eV adjacent-gap response-group threshold. Its symmetric logarithmic color scale is linear within ±1 Å; the full numerical range, −1321.43 to +647.89 Å, is retained without clipping. The axes follow the two sampling vectors, and pixel centers coincide with the actual sampled points.
+The core figure shows the **Wilson-loop** real $`R^{y;y}`$ in Å, averaged over the requested valence [19,20] and conduction [21,22] pairs. The 200 × 200 map uses $`h=10^{-4}`$ Å⁻¹ and a 0.002 eV adjacent-gap response-group threshold. Its symmetric logarithmic color scale is linear within ±1 Å; the full numerical range, −1321.43 to +647.89 Å, is retained without clipping. The axes follow the two sampling vectors, and pixel centers coincide with the actual sampled points.
 
-Large values near weak optical links are sensitive to the finite-difference step and logarithm branch; they should not be read as converged transition displacements. This geometric pair average has no occupation or resonant-energy weight and is not an integrated photocurrent. The [Geometric-loop comparison](figures/kslice_shift_vector_geometric_loop.png) uses the same scale and differs by 5.61% in relative real-array $L^2$ norm on this grid. This finite-grid comparison does not establish equivalence at singular links. [Original PNG](figures/kslice_shift_vector_wilson_loop.png) · [PDF](figures/kslice_shift_vector_wilson_loop.pdf).
+Large values near weak optical links are sensitive to the finite-difference step and logarithm branch; they should not be read as converged transition displacements. This geometric pair average has no occupation or resonant-energy weight and is not an integrated photocurrent. The [Geometric-loop comparison](figures/kslice_shift_vector_geometric_loop.png) uses the same scale and differs by 5.61% in relative real-array $`L^2`$ norm on this grid. This finite-grid comparison does not establish equivalence at singular links. [Original PNG](figures/kslice_shift_vector_wilson_loop.png) · [PDF](figures/kslice_shift_vector_wilson_loop.pdf).
 
 ### Quantum Hermitian connection
 
@@ -125,7 +125,7 @@ Large values near weak optical links are sensitive to the finite-difference step
 
 This map displays the real connection in Å³. The [Wilson-loop map](figures/kslice_quantum_hermitian_connection_wilson_loop.png) shares its linear full-range color limit, approximately ±56.99 Å³. The shift-vector figure uses different dimensions and a different color normalization.
 
-The Wilson-loop real array differs from Conventional by 1.02% in relative $L^2$ norm on this grid. This is a finite-model, selected-band comparison, not a material or convergence qualification. Near-degenerate selections require complete response blocks for a basis-independent subspace comparison; these retained maps do not establish such an all-point equivalence. Geometric Loop is not offered for position-defined QHC: its former velocity-insertion output represents a different object. This restriction does not remove the Geometric-loop shift-vector example above. [Original PNG](figures/kslice_quantum_hermitian_connection_conventional.png) · [PDF](figures/kslice_quantum_hermitian_connection_conventional.pdf).
+The Wilson-loop real array differs from Conventional by 1.02% in relative $`L^2`$ norm on this grid. This is a finite-model, selected-band comparison, not a material or convergence qualification. Near-degenerate selections require complete response blocks for a basis-independent subspace comparison; these retained maps do not establish such an all-point equivalence. Geometric Loop is not offered for position-defined QHC: its former velocity-insertion output represents a different object. This restriction does not remove the Geometric-loop shift-vector example above. [Original PNG](figures/kslice_quantum_hermitian_connection_conventional.png) · [PDF](figures/kslice_quantum_hermitian_connection_conventional.pdf).
 
 ## Redraw and check
 
